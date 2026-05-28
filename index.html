@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Ironman — Training Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <script src="workout-ui.js"></script>
   <style>
     :root {
-      --bg: #0a0a0f;
-      --surface: #12121a;
-      --surface-2: #1a1a26;
-      --border: #2a2a3a;
-      --text: #e4e4ef;
-      --text-muted: #8888a0;
-      --accent: #6366f1;
-      --accent-glow: rgba(99, 102, 241, 0.15);
-      --green: #22c55e;
-      --green-muted: rgba(34, 197, 94, 0.15);
-      --amber: #f59e0b;
-      --amber-muted: rgba(245, 158, 11, 0.15);
-      --red: #ef4444;
-      --cyan: #06b6d4;
-      --cyan-muted: rgba(6, 182, 212, 0.15);
+      --bg: #f5f4ed;
+      --surface: #ffffff;
+      --surface-2: #f0efe8;
+      --border: #e5e2d8;
+      --text: #1f1e1d;
+      --text-muted: #6b6560;
+      --accent: #c96442;
+      --accent-glow: rgba(201, 100, 66, 0.12);
+      --green: #2d6a4f;
+      --green-muted: rgba(45, 106, 79, 0.12);
+      --amber: #b45309;
+      --amber-muted: rgba(180, 83, 9, 0.12);
+      --red: #c44d34;
+      --cyan: #0d6e6e;
+      --cyan-muted: rgba(13, 110, 110, 0.12);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -34,7 +35,7 @@
     .header h1 span { color: var(--accent); }
     .header .subtitle { color: var(--text-muted); font-size: 1rem; }
     .phase-banner {
-      background: var(--accent-glow); border: 1px solid rgba(99,102,241,0.3); border-radius: 12px;
+      background: var(--accent-glow); border: 1px solid rgba(201,100,66,0.25); border-radius: 12px;
       padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;
     }
@@ -63,28 +64,40 @@
     td { padding: 0.6rem 1rem; font-size: 0.85rem; border-top: 1px solid var(--border); }
     tr:hover td { background: var(--surface-2); }
     .tag { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; }
-    .tag-push { background: rgba(239,68,68,0.15); color: #f87171; }
-    .tag-pull { background: rgba(99,102,241,0.15); color: #818cf8; }
-    .tag-legs { background: rgba(245,158,11,0.15); color: #fbbf24; }
-    .tag-upper { background: rgba(168,85,247,0.15); color: #c084fc; }
-    .tag-run { background: rgba(34,197,94,0.15); color: #4ade80; }
-    .tag-swim { background: rgba(6,182,212,0.15); color: #22d3ee; }
-    .tag-cycle { background: rgba(251,146,60,0.15); color: #fb923c; }
-    .tag-rest { background: rgba(136,136,160,0.1); color: #8888a0; }
-    .tag-mobility { background: rgba(168,85,247,0.1); color: #a78bfa; }
+    .tag-push { background: rgba(196,77,52,0.12); color: #a84a32; }
+    .tag-pull { background: rgba(201,100,66,0.15); color: #9a4f35; }
+    .tag-legs { background: rgba(180,83,9,0.12); color: #92400e; }
+    .tag-upper { background: rgba(139,92,60,0.12); color: #7c4a2a; }
+    .tag-run { background: var(--green-muted); color: var(--green); }
+    .tag-swim { background: var(--cyan-muted); color: var(--cyan); }
+    .tag-cycle { background: rgba(180,83,9,0.1); color: #b45309; }
+    .tag-rest { background: rgba(107,101,96,0.1); color: var(--text-muted); }
+    .tag-mobility { background: rgba(139,92,60,0.1); color: #8b5c3c; }
+    .schedule-tag { cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; }
+    .schedule-tag:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(31,30,29,0.08); }
+    .schedule-tag.selected { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .workout-detail { display: none; margin-top: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; }
+    .workout-detail.visible { display: block; }
+    .workout-detail h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; color: var(--accent); }
+    .workout-detail .workout-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
+    .exercise-list { list-style: none; }
+    .exercise-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.45rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
+    .exercise-list li:last-child { border-bottom: none; }
+    .exercise-name { font-weight: 500; }
+    .exercise-sets { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
     .week-table { font-size: 0.82rem; }
     .week-table th { padding: 0.6rem 0.75rem; }
     .week-table td { padding: 0.5rem 0.75rem; }
-    tr.deload td { background: rgba(245,158,11,0.05); }
-    tr.current-week td { background: rgba(99,102,241,0.08); }
-    tr.past-week td { opacity: 0.5; }
+    tr.deload td { background: rgba(180,83,9,0.04); }
+    tr.current-week td { background: var(--accent-glow); }
+    tr.past-week td { opacity: 0.55; }
     .deload-badge { background: var(--amber-muted); color: var(--amber); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; }
     .current-badge { background: var(--accent-glow); color: var(--accent); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; }
     .timeline { position: relative; padding-left: 2rem; }
     .timeline::before { content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
     .timeline-item { position: relative; margin-bottom: 1.25rem; }
     .timeline-item::before { content: ''; position: absolute; left: -2rem; top: 6px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg); }
-    .timeline-item.active::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 8px rgba(99,102,241,0.5); }
+    .timeline-item.active::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 8px rgba(201,100,66,0.35); }
     .timeline-item.done::before { border-color: var(--green); background: var(--green); }
     .timeline-date { font-size: 0.75rem; color: var(--text-muted); }
     .timeline-label { font-size: 0.9rem; font-weight: 500; }
@@ -112,8 +125,9 @@
     <div class="chart-card"><h3>Bench Press Progression (kg)</h3><canvas id="bench-chart"></canvas></div>
   </div>
   <div class="section">
-    <div class="section-title"><span class="dot" style="background:var(--accent)"></span> This Week's Schedule</div>
+    <div class="section-title"><span class="dot" style="background:var(--accent)"></span> This Week's Schedule <span style="font-weight:400;color:var(--text-muted);font-size:0.85rem">— click a session for sets × reps</span></div>
     <table id="schedule-table"><thead><tr><th>Day</th><th>AM</th><th>PM</th><th>Nightly</th></tr></thead><tbody id="schedule-body"></tbody></table>
+    <div class="workout-detail" id="workout-detail" aria-live="polite"></div>
   </div>
   <div class="two-col">
     <div class="section">
@@ -176,51 +190,6 @@
       else if (c) node.appendChild(c);
     });
     return node;
-  }
-
-  function tag(text, cls) {
-    return el("span", { className: "tag tag-" + cls, textContent: text });
-  }
-
-  function buildGoalCard(title, deadline, target, progress, label, color) {
-    var card = el("div", { className: "goal-card" });
-    var header = el("div", { className: "goal-header" }, [
-      el("span", { className: "goal-title", textContent: title }),
-      el("span", { className: "goal-deadline", textContent: deadline })
-    ]);
-    var tgt = el("div", { className: "goal-target", textContent: target });
-    var barBg = el("div", { className: "progress-bar-bg" });
-    var barFill = el("div", { className: "progress-bar-fill" });
-    barFill.style.width = progress + "%";
-    barFill.style.background = color;
-    barBg.appendChild(barFill);
-    var labels = el("div", { className: "progress-label" }, [
-      el("span", { textContent: label }),
-      el("span", { textContent: Math.round(progress) + "%" })
-    ]);
-    card.appendChild(header);
-    card.appendChild(tgt);
-    card.appendChild(barBg);
-    card.appendChild(labels);
-    return card;
-  }
-
-  function buildTimelineItem(dateText, labelText, state) {
-    var item = el("div", { className: "timeline-item" + (state === "active" ? " active" : "") + (state === "done" ? " done" : "") }, [
-      el("div", { className: "timeline-date", textContent: dateText }),
-      el("div", { className: "timeline-label", textContent: labelText })
-    ]);
-    return item;
-  }
-
-  function buildScheduleRow(day, amText, amTag, pmText, pmTag) {
-    var tr = el("tr", {}, [
-      el("td", {}, [el("strong", { textContent: day })]),
-      el("td", {}, [tag(amText, amTag)]),
-      el("td", {}, [tag(pmText, pmTag)]),
-      el("td", {}, [tag("Hip + Hamstring", "mobility")])
-    ]);
-    return tr;
   }
 
   function buildWeekRow(w, currentWeek, phases) {
@@ -289,17 +258,17 @@
       data: {
         labels: runWeeks.map(function(w) { return "W" + w.week; }),
         datasets: [
-          { label: "Sun Long Run", data: runWeeks.map(function(w) { return w.running.sun_long_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(34,197,94,0.7)" : "rgba(34,197,94,0.2)"; }), borderRadius: 3 },
-          { label: "Wed Quality", data: runWeeks.map(function(w) { return w.running.wed_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(99,102,241,0.7)" : "rgba(99,102,241,0.2)"; }), borderRadius: 3 },
-          { label: "Sat Easy", data: runWeeks.map(function(w) { return w.running.sat_easy_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(6,182,212,0.7)" : "rgba(6,182,212,0.2)"; }), borderRadius: 3 }
+          { label: "Sun Long Run", data: runWeeks.map(function(w) { return w.running.sun_long_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(45,106,79,0.75)" : "rgba(45,106,79,0.2)"; }), borderRadius: 3 },
+          { label: "Wed Quality", data: runWeeks.map(function(w) { return w.running.wed_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(201,100,66,0.75)" : "rgba(201,100,66,0.2)"; }), borderRadius: 3 },
+          { label: "Sat Easy", data: runWeeks.map(function(w) { return w.running.sat_easy_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(13,110,110,0.75)" : "rgba(13,110,110,0.2)"; }), borderRadius: 3 }
         ]
       },
       options: {
         responsive: true,
-        plugins: { legend: { labels: { color: "#8888a0", font: { size: 11 } } } },
+        plugins: { legend: { labels: { color: WorkoutUI.chartMuted, font: { size: 11 } } } },
         scales: {
-          x: { stacked: true, ticks: { color: "#8888a0", font: { size: 10 } }, grid: { color: "rgba(42,42,58,0.5)" } },
-          y: { stacked: true, ticks: { color: "#8888a0" }, grid: { color: "rgba(42,42,58,0.5)" }, title: { display: true, text: "km", color: "#8888a0" } }
+          x: { stacked: true, ticks: { color: WorkoutUI.chartMuted, font: { size: 10 } }, grid: { color: WorkoutUI.chartGrid } },
+          y: { stacked: true, ticks: { color: WorkoutUI.chartMuted }, grid: { color: WorkoutUI.chartGrid }, title: { display: true, text: "km", color: WorkoutUI.chartMuted } }
         }
       }
     });
@@ -311,30 +280,22 @@
       data: {
         labels: benchWeeks.map(function(w) { return "W" + w.week; }),
         datasets: [
-          { label: "Main Bench", data: benchWeeks.map(function(w) { return w.bench.main_kg; }), borderColor: "#6366f1", backgroundColor: "rgba(99,102,241,0.1)", fill: true, tension: 0.3, pointRadius: benchWeeks.map(function(w) { return w.week === currentWeek ? 6 : 3; }), pointBackgroundColor: benchWeeks.map(function(w) { return w.week <= currentWeek ? "#6366f1" : "rgba(99,102,241,0.3)"; }) },
-          { label: "Speed Bench", data: benchWeeks.map(function(w) { return w.bench.speed_kg; }), borderColor: "#06b6d4", borderDash: [4,4], tension: 0.3, pointRadius: 2, pointBackgroundColor: "#06b6d4" }
+          { label: "Main Bench", data: benchWeeks.map(function(w) { return w.bench.main_kg; }), borderColor: "#c96442", backgroundColor: "rgba(201,100,66,0.12)", fill: true, tension: 0.3, pointRadius: benchWeeks.map(function(w) { return w.week === currentWeek ? 6 : 3; }), pointBackgroundColor: benchWeeks.map(function(w) { return w.week <= currentWeek ? "#6366f1" : "rgba(201,100,66,0.25)"; }) },
+          { label: "Speed Bench", data: benchWeeks.map(function(w) { return w.bench.speed_kg; }), borderColor: "#0d6e6e", borderDash: [4,4], tension: 0.3, pointRadius: 2, pointBackgroundColor: "#0d6e6e" }
         ]
       },
       options: {
         responsive: true,
-        plugins: { legend: { labels: { color: "#8888a0", font: { size: 11 } } } },
+        plugins: { legend: { labels: { color: WorkoutUI.chartMuted, font: { size: 11 } } } },
         scales: {
-          x: { ticks: { color: "#8888a0", font: { size: 10 } }, grid: { color: "rgba(42,42,58,0.5)" } },
-          y: { ticks: { color: "#8888a0" }, grid: { color: "rgba(42,42,58,0.5)" }, title: { display: true, text: "kg", color: "#8888a0" }, suggestedMin: 50, suggestedMax: 100 }
+          x: { ticks: { color: WorkoutUI.chartMuted, font: { size: 10 } }, grid: { color: WorkoutUI.chartGrid } },
+          y: { ticks: { color: WorkoutUI.chartMuted }, grid: { color: WorkoutUI.chartGrid }, title: { display: true, text: "kg", color: WorkoutUI.chartMuted }, suggestedMin: 50, suggestedMax: 100 }
         }
       }
     });
 
-    // Schedule
-    var isPost12 = currentWeek > 12;
-    var schedBody = document.getElementById("schedule-body");
-    schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "Swim 1500\u20132000 m", "swim"));
-    schedBody.appendChild(buildScheduleRow("Tue", "Pull A", "pull", "Z2 Cycle 45 min", "cycle"));
-    schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "Quality Run", "run"));
-    schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", "Swim 1500\u20132000 m", "swim"));
-    schedBody.appendChild(buildScheduleRow("Fri", isPost12 ? "Legs + Arms" : "Legs", "legs", "Rest", "rest"));
-    schedBody.appendChild(buildScheduleRow("Sat", isPost12 ? "Easy Run 4\u20135 km" : "Pull B", isPost12 ? "run" : "pull", "Threshold Cycle", "cycle"));
-    schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "Full Rest", "rest"));
+    WorkoutUI.setContext(cw, currentWeek, data);
+    WorkoutUI.renderSchedule(currentWeek, el);
 
     // Phase timeline
     var timelineEl = document.getElementById("timeline");

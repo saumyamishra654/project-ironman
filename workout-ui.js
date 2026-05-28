@@ -2,8 +2,8 @@
 (function(global) {
   "use strict";
 
-  var chartMuted = "#6b6560";
-  var chartGrid = "rgba(107,101,96,0.2)";
+  var chartMuted = "#a89888";
+  var chartGrid = "rgba(168,152,136,0.22)";
   var selectedTag = null;
   var workoutContext = null;
 

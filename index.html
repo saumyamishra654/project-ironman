@@ -16,21 +16,21 @@
   <script>document.write('<script src="' + appUrl('workout-ui.js') + '"><\/script>');</script>
   <style>
     :root {
-      --bg: #f5f4ed;
-      --surface: #ffffff;
-      --surface-2: #f0efe8;
-      --border: #e5e2d8;
-      --text: #1f1e1d;
-      --text-muted: #6b6560;
-      --accent: #c96442;
-      --accent-glow: rgba(201, 100, 66, 0.12);
-      --green: #2d6a4f;
-      --green-muted: rgba(45, 106, 79, 0.12);
-      --amber: #b45309;
-      --amber-muted: rgba(180, 83, 9, 0.12);
-      --red: #c44d34;
-      --cyan: #0d6e6e;
-      --cyan-muted: rgba(13, 110, 110, 0.12);
+      --bg: #1a1410;
+      --surface: #2a221c;
+      --surface-2: #352c24;
+      --border: #4a3f35;
+      --text: #f0e6dc;
+      --text-muted: #a89888;
+      --accent: #d4a574;
+      --accent-glow: rgba(212, 165, 116, 0.14);
+      --green: #7cb892;
+      --green-muted: rgba(124, 184, 146, 0.18);
+      --amber: #e0b050;
+      --amber-muted: rgba(224, 176, 80, 0.16);
+      --red: #e07a5f;
+      --cyan: #6eb5b5;
+      --cyan-muted: rgba(110, 181, 181, 0.16);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -43,13 +43,13 @@
     .header h1 span { color: var(--accent); }
     .header .subtitle { color: var(--text-muted); font-size: 1rem; }
     .phase-banner {
-      background: var(--accent-glow); border: 1px solid rgba(201,100,66,0.25); border-radius: 12px;
+      background: var(--accent-glow); border: 1px solid rgba(212,165,116,0.28); border-radius: 12px;
       padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;
     }
     .phase-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; }
     .phase-name { font-size: 1.25rem; font-weight: 600; }
-    .week-badge { background: var(--accent); color: white; padding: 0.35rem 1rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; }
+    .week-badge { background: var(--accent); color: #1a1410; padding: 0.35rem 1rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; }
     .goals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
     .goal-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
     .goal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
@@ -72,17 +72,17 @@
     td { padding: 0.6rem 1rem; font-size: 0.85rem; border-top: 1px solid var(--border); }
     tr:hover td { background: var(--surface-2); }
     .tag { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; }
-    .tag-push { background: rgba(196,77,52,0.12); color: #a84a32; }
-    .tag-pull { background: rgba(201,100,66,0.15); color: #9a4f35; }
-    .tag-legs { background: rgba(180,83,9,0.12); color: #92400e; }
-    .tag-upper { background: rgba(139,92,60,0.12); color: #7c4a2a; }
+    .tag-push { background: rgba(224,122,95,0.2); color: #f0b5a0; }
+    .tag-pull { background: rgba(212,165,116,0.22); color: #e8c9a8; }
+    .tag-legs { background: rgba(224,176,80,0.18); color: #f0d090; }
+    .tag-upper { background: rgba(180,140,100,0.2); color: #dcc4a8; }
     .tag-run { background: var(--green-muted); color: var(--green); }
     .tag-swim { background: var(--cyan-muted); color: var(--cyan); }
-    .tag-cycle { background: rgba(180,83,9,0.1); color: #b45309; }
-    .tag-rest { background: rgba(107,101,96,0.1); color: var(--text-muted); }
-    .tag-mobility { background: rgba(139,92,60,0.1); color: #8b5c3c; }
+    .tag-cycle { background: rgba(224,176,80,0.15); color: #e0c080; }
+    .tag-rest { background: rgba(168,152,136,0.15); color: var(--text-muted); }
+    .tag-mobility { background: rgba(180,140,100,0.15); color: #c9b090; }
     .schedule-tag { cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; }
-    .schedule-tag:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(31,30,29,0.08); }
+    .schedule-tag:hover { transform: translateY(-1px); box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
     .schedule-tag.selected { outline: 2px solid var(--accent); outline-offset: 2px; }
     .workout-detail { display: none; margin-top: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; }
     .workout-detail.visible { display: block; }
@@ -96,7 +96,7 @@
     .week-table { font-size: 0.82rem; }
     .week-table th { padding: 0.6rem 0.75rem; }
     .week-table td { padding: 0.5rem 0.75rem; }
-    tr.deload td { background: rgba(180,83,9,0.04); }
+    tr.deload td { background: rgba(224,176,80,0.08); }
     tr.current-week td { background: var(--accent-glow); }
     tr.past-week td { opacity: 0.55; }
     .deload-badge { background: var(--amber-muted); color: var(--amber); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; }
@@ -105,7 +105,7 @@
     .timeline::before { content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
     .timeline-item { position: relative; margin-bottom: 1.25rem; }
     .timeline-item::before { content: ''; position: absolute; left: -2rem; top: 6px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg); }
-    .timeline-item.active::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 8px rgba(201,100,66,0.35); }
+    .timeline-item.active::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 10px rgba(212,165,116,0.4); }
     .timeline-item.done::before { border-color: var(--green); background: var(--green); }
     .timeline-date { font-size: 0.75rem; color: var(--text-muted); }
     .timeline-label { font-size: 0.9rem; font-weight: 500; }
@@ -302,9 +302,9 @@
       data: {
         labels: runWeeks.map(function(w) { return "W" + w.week; }),
         datasets: [
-          { label: "Sun Long Run", data: runWeeks.map(function(w) { return w.running.sun_long_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(45,106,79,0.75)" : "rgba(45,106,79,0.2)"; }), borderRadius: 3 },
-          { label: "Wed Quality", data: runWeeks.map(function(w) { return w.running.wed_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(201,100,66,0.75)" : "rgba(201,100,66,0.2)"; }), borderRadius: 3 },
-          { label: "Sat Easy", data: runWeeks.map(function(w) { return w.running.sat_easy_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(13,110,110,0.75)" : "rgba(13,110,110,0.2)"; }), borderRadius: 3 }
+          { label: "Sun Long Run", data: runWeeks.map(function(w) { return w.running.sun_long_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(124,184,146,0.85)" : "rgba(124,184,146,0.25)"; }), borderRadius: 3 },
+          { label: "Wed Quality", data: runWeeks.map(function(w) { return w.running.wed_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(212,165,116,0.9)" : "rgba(212,165,116,0.22)"; }), borderRadius: 3 },
+          { label: "Sat Easy", data: runWeeks.map(function(w) { return w.running.sat_easy_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(110,181,181,0.85)" : "rgba(110,181,181,0.25)"; }), borderRadius: 3 }
         ]
       },
       options: {
@@ -324,8 +324,8 @@
       data: {
         labels: benchWeeks.map(function(w) { return "W" + w.week; }),
         datasets: [
-          { label: "Main Bench", data: benchWeeks.map(function(w) { return w.bench.main_kg; }), borderColor: "#c96442", backgroundColor: "rgba(201,100,66,0.12)", fill: true, tension: 0.3, pointRadius: benchWeeks.map(function(w) { return w.week === currentWeek ? 6 : 3; }), pointBackgroundColor: benchWeeks.map(function(w) { return w.week <= currentWeek ? "#6366f1" : "rgba(201,100,66,0.25)"; }) },
-          { label: "Speed Bench", data: benchWeeks.map(function(w) { return w.bench.speed_kg; }), borderColor: "#0d6e6e", borderDash: [4,4], tension: 0.3, pointRadius: 2, pointBackgroundColor: "#0d6e6e" }
+          { label: "Main Bench", data: benchWeeks.map(function(w) { return w.bench.main_kg; }), borderColor: "#d4a574", backgroundColor: "rgba(212,165,116,0.15)", fill: true, tension: 0.3, pointRadius: benchWeeks.map(function(w) { return w.week === currentWeek ? 6 : 3; }), pointBackgroundColor: benchWeeks.map(function(w) { return w.week <= currentWeek ? "#d4a574" : "rgba(212,165,116,0.35)"; }) },
+          { label: "Speed Bench", data: benchWeeks.map(function(w) { return w.bench.speed_kg; }), borderColor: "#6eb5b5", borderDash: [4,4], tension: 0.3, pointRadius: 2, pointBackgroundColor: "#6eb5b5" }
         ]
       },
       options: {

@@ -192,6 +192,37 @@
     return node;
   }
 
+  function buildGoalCard(title, deadline, target, progress, label, color) {
+    var card = el("div", { className: "goal-card" });
+    var header = el("div", { className: "goal-header" }, [
+      el("span", { className: "goal-title", textContent: title }),
+      el("span", { className: "goal-deadline", textContent: deadline })
+    ]);
+    var tgt = el("div", { className: "goal-target", textContent: target });
+    var barBg = el("div", { className: "progress-bar-bg" });
+    var barFill = el("div", { className: "progress-bar-fill" });
+    barFill.style.width = progress + "%";
+    barFill.style.background = color;
+    barBg.appendChild(barFill);
+    var labels = el("div", { className: "progress-label" }, [
+      el("span", { textContent: label }),
+      el("span", { textContent: Math.round(progress) + "%" })
+    ]);
+    card.appendChild(header);
+    card.appendChild(tgt);
+    card.appendChild(barBg);
+    card.appendChild(labels);
+    return card;
+  }
+
+  function buildTimelineItem(dateText, labelText, state) {
+    var item = el("div", { className: "timeline-item" + (state === "active" ? " active" : "") + (state === "done" ? " done" : "") }, [
+      el("div", { className: "timeline-date", textContent: dateText }),
+      el("div", { className: "timeline-label", textContent: labelText })
+    ]);
+    return item;
+  }
+
   function buildWeekRow(w, currentWeek, phases) {
     var tr = el("tr");
     if (w.deload) tr.className = "deload";
@@ -224,7 +255,12 @@
     return tr;
   }
 
-  fetch("training/database.json").then(function(r) { return r.json(); }).then(function(data) {
+  fetch("training/database.json").then(function(r) {
+    if (!r.ok) throw new Error("HTTP " + r.status + " loading training/database.json");
+    return r.json();
+  }).then(function(data) {
+    if (typeof WorkoutUI === "undefined") throw new Error("workout-ui.js failed to load");
+
     var currentWeek = getCurrentWeek();
     var phase = getPhase(currentWeek, data.phases);
 
@@ -334,8 +370,15 @@
     });
 
     document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "numeric" });
-  }).catch(function() {
-    document.querySelector(".header .subtitle").textContent = "Could not load database.json \u2014 serve this directory with a local server.";
+  }).catch(function(err) {
+    var msg = err && err.message ? err.message : String(err);
+    var subtitle = document.querySelector(".header .subtitle");
+    if (msg.indexOf("JSON") !== -1 || msg.indexOf("fetch") !== -1 || msg.indexOf("Failed") !== -1) {
+      subtitle.textContent = "Could not load training/database.json \u2014 run a local server from the repo root (e.g. python3 -m http.server 8080).";
+    } else {
+      subtitle.textContent = "Dashboard error: " + msg;
+      console.error(err);
+    }
   });
 })();
 </script>

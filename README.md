@@ -12,6 +12,15 @@ training/
 └── worklog.md       # Session-by-session log — what you did, how it felt
 ```
 
+## Dashboard (GitHub Pages)
+
+The training dashboard is a static site (`index.html` + `workout-ui.js`). To publish on GitHub Pages:
+
+1. Repo **Settings → Pages → Build and deployment**: source **Deploy from a branch**, branch **main**, folder **/ (root)**.
+2. Open `https://<username>.github.io/project-ironman/` (replace with your repo name).
+
+Paths work for project sites (`/repo-name/`) and local `python3 -m http.server`. Chart.js loads from jsDelivr; no backend required.
+
 ## How to Use
 
 1. **Read the plan** — `training/plan.md` has everything: schedule, exercises, progressions, recovery rules

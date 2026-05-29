@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Ironman — Nutrition</title>
+  <style>
+    :root {
+      --bg: #1a1410;
+      --surface: #2a221c;
+      --surface-2: #352c24;
+      --border: #4a3f35;
+      --text: #f0e6dc;
+      --text-muted: #a89888;
+      --accent: #d4a574;
+      --accent-glow: rgba(212, 165, 116, 0.14);
+      --green: #7cb892;
+      --green-muted: rgba(124, 184, 146, 0.18);
+      --amber: #e0b050;
+      --amber-muted: rgba(224, 176, 80, 0.16);
+      --red: #e07a5f;
+      --cyan: #6eb5b5;
+      --cyan-muted: rgba(110, 181, 181, 0.16);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .header { text-align: center; padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
+    .header h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+    .header h1 span { color: var(--accent); }
+    .header .subtitle { color: var(--text-muted); font-size: 1rem; }
+    .nav { text-align: center; margin-bottom: 2rem; }
+    .nav a {
+      color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 100px;
+      transition: background 0.2s;
+    }
+    .nav a:hover { background: var(--accent-glow); }
+    .section { margin-bottom: 2.5rem; }
+    .section-title {
+      font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .meal-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+    }
+    .meal-card h3 { font-size: 1rem; font-weight: 600; color: var(--accent); margin-bottom: 0.15rem; }
+    .meal-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+    .ingredient-list { list-style: none; }
+    .ingredient-list li {
+      display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+      padding: 0.4rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem;
+    }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .ingredient-name { font-weight: 500; }
+    .ingredient-detail { color: var(--text-muted); font-size: 0.82rem; white-space: nowrap; }
+    table {
+      width: 100%; border-collapse: collapse; background: var(--surface);
+      border-radius: 12px; overflow: hidden; border: 1px solid var(--border); font-size: 0.85rem;
+    }
+    th {
+      text-align: left; padding: 0.65rem 1rem; font-size: 0.7rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text-muted); background: var(--surface-2); font-weight: 600;
+    }
+    td { padding: 0.55rem 1rem; border-top: 1px solid var(--border); }
+    .status-good { color: var(--green); }
+    .status-ok { color: var(--amber); }
+    .status-low { color: var(--red); }
+    .tip {
+      background: var(--accent-glow); border: 1px solid rgba(212,165,116,0.28); border-radius: 10px;
+      padding: 1rem 1.25rem; font-size: 0.88rem; margin-bottom: 1rem;
+    }
+    .tip strong { color: var(--accent); }
+    .supplement-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem;
+    }
+    .supplement-card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+      padding: 1rem; font-size: 0.85rem;
+    }
+    .supplement-card .supp-name { font-weight: 600; margin-bottom: 0.25rem; }
+    .supplement-card .supp-detail { color: var(--text-muted); font-size: 0.8rem; }
+    .footer {
+      text-align: center; padding: 2rem 0; color: var(--text-muted); font-size: 0.8rem;
+      border-top: 1px solid var(--border); margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Project <span>Ironman</span></h1>
+    <p class="subtitle">Nutrition</p>
+  </div>
+
+  <div class="nav"><a href="index.html">&larr; Back to Dashboard</a></div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--accent)"></span> Daily Targets</div>
+    <table>
+      <thead><tr><th>Macro</th><th>Target</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Protein</td><td>170&ndash;195 g</td><td>2.1&ndash;2.4 g/kg at 80 kg</td></tr>
+        <tr><td>Calories</td><td>2600&ndash;2900</td><td>Add more rice on long run + bench days</td></tr>
+        <tr><td>Fat</td><td>60&ndash;80 g</td><td>Nuts, butter, cooking oil, eggs</td></tr>
+        <tr><td>Carbs</td><td>300&ndash;400 g</td><td>Rice is the main lever &mdash; scale up on heavy days</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--green)"></span> Meals</div>
+
+    <div class="meal-card">
+      <h3>Breakfast</h3>
+      <div class="meal-meta">~55 g protein &middot; ~750 kcal</div>
+      <ul class="ingredient-list">
+        <li><span class="ingredient-name">Eggs</span><span class="ingredient-detail">2&ndash;3</span></li>
+        <li><span class="ingredient-name">Bread</span><span class="ingredient-detail">2 slices</span></li>
+        <li><span class="ingredient-name">Amul High Protein Milk</span><span class="ingredient-detail">1 pack &middot; 35 g protein</span></li>
+        <li><span class="ingredient-name">Almonds / Walnuts</span><span class="ingredient-detail">handful</span></li>
+        <li><span class="ingredient-name">Fruit</span><span class="ingredient-detail">amla or guava preferred (vitamin C)</span></li>
+        <li><span class="ingredient-name">Creatine</span><span class="ingredient-detail">5 g</span></li>
+      </ul>
+    </div>
+
+    <div class="meal-card">
+      <h3>Lunch</h3>
+      <div class="meal-meta">~65 g protein &middot; ~800 kcal &middot; dairy-free (iron absorption)</div>
+      <ul class="ingredient-list">
+        <li><span class="ingredient-name">Milkymist HP Paneer</span><span class="ingredient-detail">full block &middot; 60 g protein</span></li>
+        <li><span class="ingredient-name">Rice</span><span class="ingredient-detail">1&ndash;2 cups cooked</span></li>
+        <li><span class="ingredient-name">Palak / Methi</span><span class="ingredient-detail">iron + folate</span></li>
+        <li><span class="ingredient-name">Veggies</span><span class="ingredient-detail">mushrooms, baby corn, etc.</span></li>
+        <li><span class="ingredient-name">Sesame seeds</span><span class="ingredient-detail">sprinkle &middot; iron</span></li>
+        <li><span class="ingredient-name">Pumpkin seeds</span><span class="ingredient-detail">sprinkle &middot; iron + zinc</span></li>
+        <li><span class="ingredient-name">Garlic</span><span class="ingredient-detail">to taste</span></li>
+        <li><span class="ingredient-name">Soy sauce</span><span class="ingredient-detail">to taste</span></li>
+        <li><span class="ingredient-name">Butter</span><span class="ingredient-detail">for cooking &middot; adds fat</span></li>
+        <li><span class="ingredient-name">Lemon</span><span class="ingredient-detail">squeeze on top &middot; vitamin C boosts iron absorption</span></li>
+      </ul>
+    </div>
+
+    <div class="meal-card">
+      <h3>Evening Snack</h3>
+      <div class="meal-meta">~55 g protein &middot; ~550 kcal</div>
+      <ul class="ingredient-list">
+        <li><span class="ingredient-name">Whey protein</span><span class="ingredient-detail">2 scoops &middot; ~50 g protein</span></li>
+        <li><span class="ingredient-name">Bananas</span><span class="ingredient-detail">2&ndash;3 &middot; potassium + carbs</span></li>
+        <li><span class="ingredient-name">Nuts</span><span class="ingredient-detail">almonds / walnuts &middot; fat + omega-3</span></li>
+      </ul>
+    </div>
+
+    <div class="meal-card">
+      <h3>Dinner</h3>
+      <div class="meal-meta">~20 g protein &middot; ~500 kcal &middot; scale rice up on heavy days</div>
+      <ul class="ingredient-list">
+        <li><span class="ingredient-name">Eggs</span><span class="ingredient-detail">2&ndash;3</span></li>
+        <li><span class="ingredient-name">Rice</span><span class="ingredient-detail">1&ndash;2 cups cooked</span></li>
+        <li><span class="ingredient-name">Scallions</span><span class="ingredient-detail">to taste</span></li>
+        <li><span class="ingredient-name">Garlic</span><span class="ingredient-detail">to taste</span></li>
+        <li><span class="ingredient-name">Soy sauce</span><span class="ingredient-detail">to taste</span></li>
+        <li><span class="ingredient-name">Remaining supplements</span><span class="ingredient-detail">see below</span></li>
+      </ul>
+    </div>
+
+    <div class="tip">
+      <strong>Heavy training days</strong> (long run, bench day): add an extra cup of rice at dinner. Cheapest way to cover the calorie gap.
+    </div>
+    <div class="tip">
+      <strong>Long run days:</strong> add coconut water post-run for potassium, or a 4th banana.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--cyan)"></span> Supplements</div>
+    <div class="supplement-grid">
+      <div class="supplement-card">
+        <div class="supp-name">Creatine Monohydrate</div>
+        <div class="supp-detail">5 g daily &middot; with breakfast</div>
+      </div>
+      <div class="supplement-card">
+        <div class="supp-name">Magnesium</div>
+        <div class="supp-detail">1 tablet at night &middot; helps sleep</div>
+      </div>
+      <div class="supplement-card">
+        <div class="supp-name">Cod Liver Oil</div>
+        <div class="supp-detail">With a meal containing fat &middot; omega-3 + vit A/D</div>
+      </div>
+      <div class="supplement-card">
+        <div class="supp-name">Multivitamin</div>
+        <div class="supp-detail">1 daily &middot; insurance, not a replacement</div>
+      </div>
+      <div class="supplement-card">
+        <div class="supp-name">Electrolyte Tablets</div>
+        <div class="supp-detail">On long run days + sessions over 60 min</div>
+      </div>
+      <div class="supplement-card">
+        <div class="supp-name">Whey Protein</div>
+        <div class="supp-detail">2 scoops &middot; evening snack &middot; ~50 g protein</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--amber)"></span> Micronutrient Status</div>
+    <table>
+      <thead><tr><th>Nutrient</th><th>Estimated Daily</th><th>Target</th><th>Status</th><th>Key Sources</th></tr></thead>
+      <tbody>
+        <tr><td>Calcium</td><td>~1400 mg</td><td>1000 mg</td><td class="status-good">Good</td><td>Paneer, HP milk, dahi</td></tr>
+        <tr><td>Iron</td><td>~18 mg</td><td>14&ndash;18 mg</td><td class="status-ok">Monitor</td><td>Palak, seeds, eggs, lemon boosts absorption</td></tr>
+        <tr><td>Zinc</td><td>~14 mg</td><td>11 mg</td><td class="status-good">Good</td><td>Eggs, pumpkin seeds, paneer</td></tr>
+        <tr><td>Magnesium</td><td>~550 mg</td><td>400&ndash;500 mg</td><td class="status-good">Good</td><td>Supplement + nuts + bananas</td></tr>
+        <tr><td>Vitamin D</td><td>~18 mcg</td><td>15&ndash;25 mcg</td><td class="status-good">Good</td><td>Cod liver oil + multi + eggs</td></tr>
+        <tr><td>B12</td><td>~7 mcg</td><td>2.4 mcg</td><td class="status-good">Good</td><td>Eggs, milk, dahi</td></tr>
+        <tr><td>Folate</td><td>~550 mcg</td><td>400 mcg</td><td class="status-good">Good</td><td>Palak, eggs</td></tr>
+        <tr><td>Vitamin C</td><td>~130 mg</td><td>200+ mg</td><td class="status-ok">Add amla/guava</td><td>Lemon, fruit &mdash; 1 amla = 300+ mg</td></tr>
+        <tr><td>Potassium</td><td>~3200 mg</td><td>3400+ mg</td><td class="status-ok">Borderline</td><td>Bananas, coconut water on run days</td></tr>
+        <tr><td>Omega-3</td><td>~800 mg + ALA</td><td>1000+ mg</td><td class="status-ok">Adequate</td><td>Cod liver oil + walnuts</td></tr>
+        <tr><td>Selenium</td><td>~90 mcg</td><td>55 mcg</td><td class="status-good">Good</td><td>Eggs</td></tr>
+        <tr><td>Choline</td><td>~700 mg</td><td>550 mg</td><td class="status-good">Good</td><td>Eggs (star source)</td></tr>
+        <tr><td>Vitamin K</td><td>~450 mcg</td><td>120 mcg</td><td class="status-good">Good</td><td>Palak</td></tr>
+        <tr><td>Vitamin A</td><td>~1500 mcg</td><td>900 mcg</td><td class="status-good">Good</td><td>Cod liver oil, eggs, palak</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--red)"></span> Iron Boosters</div>
+    <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:1rem;">
+      Most dietary iron is non-heme (low absorption). These foods and habits improve iron intake.
+      Keep iron-rich meals dairy-free and pair with vitamin C.
+    </p>
+    <table>
+      <thead><tr><th>Food</th><th>Iron / serving</th><th>Cost</th><th>How to use</th></tr></thead>
+      <tbody>
+        <tr><td>Jaggery (gur)</td><td>~3 mg / 20 g</td><td>~5 rs</td><td>Post-meal, or in milk</td></tr>
+        <tr><td>Rajma</td><td>~5 mg / cup</td><td>~15 rs</td><td>Swap rice meal 3&ndash;4x/week</td></tr>
+        <tr><td>Chana / Chole</td><td>~4.5 mg / cup</td><td>~15 rs</td><td>Same as rajma</td></tr>
+        <tr><td>Methi leaves</td><td>~4 mg / 100 g</td><td>~10 rs</td><td>Rotate with palak</td></tr>
+        <tr><td>Chaulai (amaranth leaves)</td><td>~5 mg / 100 g</td><td>~10 rs</td><td>Saut&eacute; with garlic</td></tr>
+        <tr><td>Sesame seeds (til)</td><td>~4 mg / 2 tbsp</td><td>~5 rs</td><td>Sprinkle on rice or dahi</td></tr>
+        <tr><td>Poha (beaten rice)</td><td>~5&ndash;8 mg / 100 g</td><td>~10 rs</td><td>Occasional breakfast</td></tr>
+        <tr><td>Ragi</td><td>~3.5 mg / 100 g</td><td>~10 rs</td><td>Porridge option</td></tr>
+        <tr><td>Dates (khajoor)</td><td>~1.5 mg / 3&ndash;4</td><td>~15 rs</td><td>Pre-run snack</td></tr>
+        <tr><td>Pumpkin seeds</td><td>~4 mg / 30 g</td><td>~25 rs</td><td>Sprinkle on meals</td></tr>
+        <tr><td>Cast iron kadai</td><td>Adds iron to food</td><td>One-time</td><td>Cook tomato-based gravies in it</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--accent)"></span> Rules</div>
+    <div class="meal-card">
+      <ul class="ingredient-list">
+        <li><span class="ingredient-name">Separate dairy from iron meals</span><span class="ingredient-detail">calcium blocks iron absorption</span></li>
+        <li><span class="ingredient-name">Lemon on iron-rich food</span><span class="ingredient-detail">vitamin C boosts absorption 2&ndash;6x</span></li>
+        <li><span class="ingredient-name">No tea/coffee with meals</span><span class="ingredient-detail">tannins block iron</span></li>
+        <li><span class="ingredient-name">More rice on heavy days</span><span class="ingredient-detail">long run, bench day &mdash; add 1 extra cup</span></li>
+        <li><span class="ingredient-name">Coconut water on long run days</span><span class="ingredient-detail">potassium + hydration</span></li>
+        <li><span class="ingredient-name">Magnesium at night</span><span class="ingredient-detail">helps sleep quality</span></li>
+        <li><span class="ingredient-name">Cod liver oil with fat-containing meal</span><span class="ingredient-detail">fat-soluble vitamins need dietary fat</span></li>
+        <li><span class="ingredient-name">6 eggs per day is fine</span><span class="ingredient-detail">no cardiovascular concern for active individuals</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--green)"></span> Daily Budget</div>
+    <table>
+      <thead><tr><th>Item</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Milkymist HP Paneer</td><td>~150 rs</td></tr>
+        <tr><td>4&ndash;6 eggs</td><td>~50&ndash;70 rs</td></tr>
+        <tr><td>2 scoops whey</td><td>~120 rs</td></tr>
+        <tr><td>Amul HP Milk</td><td>~99 rs</td></tr>
+        <tr><td>Rice, bread, bananas, veggies, seeds, butter, fruit</td><td>~100&ndash;150 rs</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>~520&ndash;590 rs</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer">Project Ironman &middot; Nutrition Plan</div>
+
+</div>
+</body>
+</html>

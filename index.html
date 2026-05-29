@@ -151,7 +151,7 @@
     <div class="section-title"><span class="dot" style="background:var(--cyan)"></span> Full 31-Week Overview</div>
     <div style="overflow-x:auto">
       <table class="week-table" id="week-table">
-        <thead><tr><th>Wk</th><th>Phase</th><th>Wed Run</th><th>Wed km</th><th>Sat km</th><th>Sun Long</th><th>Total km</th><th>Bench kg</th><th>Bench Sets</th><th>Notes</th></tr></thead>
+        <thead><tr><th>Wk</th><th>Phase</th><th>Wed Run</th><th>Wed km</th><th>Sat km</th><th>Sun Long</th><th>Total km</th><th>Bench kg</th><th>Bench Sets</th><th>Ashwa</th><th>Notes</th></tr></thead>
         <tbody id="week-body"></tbody>
       </table>
     </div>
@@ -259,6 +259,12 @@
     tr.appendChild(el("td", {}, [el("strong", { textContent: String(w.running.total_km) })]));
     tr.appendChild(el("td", { textContent: w.bench.main_kg || "\u2014" }));
     tr.appendChild(el("td", { textContent: w.bench.sets_reps || "\u2014" }));
+    var ashwaOn = (w.week >= 1 && w.week <= 8) || (w.week >= 11 && w.week <= 18) || (w.week >= 21 && w.week <= 28);
+    var ashwaCell = el("td", { textContent: ashwaOn ? "ON" : "OFF" });
+    ashwaCell.style.color = ashwaOn ? "var(--green)" : "var(--text-muted)";
+    ashwaCell.style.fontWeight = "600";
+    ashwaCell.style.fontSize = "0.75rem";
+    tr.appendChild(ashwaCell);
     tr.appendChild(el("td", { textContent: w.notes || "" }));
     return tr;
   }

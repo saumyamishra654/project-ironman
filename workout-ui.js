@@ -131,55 +131,79 @@
         ]
       },
       "swim": {
-        title: "Swim", meta: "Week " + currentWeek,
+        title: "Swim", meta: "Week " + currentWeek + " \u00B7 30\u201340 min in water",
         exercises: [
           { name: "Warm-up", sets: "200 m easy freestyle" },
-          { name: "Main set", sets: "1500\u20132000 m easy (30\u201340 min)" },
+          { name: "Main set", sets: "1500\u20132000 m easy Z2 pace" },
+          { name: "Mix strokes", sets: "Optional \u2014 feel and base, not structured" },
           { name: "Cool-down", sets: "100\u2013200 m easy backstroke" }
         ]
       },
       "cycle-z2": {
-        title: "Z2 Cycle", meta: "Week " + currentWeek,
+        title: "Z2 Cycle", meta: "Week " + currentWeek + " \u00B7 First session to cut if fatigued",
         exercises: [
-          { name: "Duration", sets: "45 min conversational" },
+          { name: "Warm-up", sets: "5 min easy spinning, low resistance" },
+          { name: "Main", sets: "45 min fully conversational" },
           { name: "Intensity", sets: "HR Zone 2 (~130\u2013145 bpm)" },
-          { name: "Cadence", sets: "85\u201395 rpm" }
+          { name: "Cadence", sets: "85\u201395 rpm, smooth and relaxed" },
+          { name: "Cool-down", sets: "5 min easy spinning" }
         ]
       },
       "threshold-cycle": {
-        title: "Threshold Cycle", meta: "Week " + currentWeek,
+        title: "Threshold Cycle", meta: "Week " + currentWeek + " \u00B7 45\u201360 min",
         exercises: [
-          { name: "Structure", sets: getCycleStructure(currentWeek, data.cycling_threshold_progression) }
+          { name: "Warm-up", sets: "5 min easy spinning" },
+          { name: "Structure", sets: getCycleStructure(currentWeek, data.cycling_threshold_progression) },
+          { name: "RPE", sets: "6\u20138 during work, 3\u20134 during recovery" },
+          { name: "Cool-down", sets: "5 min easy spinning" }
         ]
       },
       "quality-run": {
         title: "Quality Run (Wed PM)",
         meta: "Week " + currentWeek + (run.wed_km ? " \u00B7 " + run.wed_km + " km" : ""),
         exercises: [
+          { name: "Warm-up: walk", sets: "5 min" },
+          { name: "Warm-up: easy jog", sets: "5 min @ 8:00+ /km" },
+          { name: "Dynamic stretches", sets: "Leg swings, hip circles, lunges, high knees, butt kicks" },
+          { name: "Easy jog to start", sets: "2\u20133 min" },
           { name: "Session", sets: formatWedRun(run.wed_type) },
-          { name: "Paces", sets: data.running_zones ? "Easy " + data.running_zones.easy_long + " \u00B7 Tempo " + data.running_zones.tempo : "See plan" }
+          { name: "Paces", sets: data.running_zones ? "Easy " + data.running_zones.easy_long + " \u00B7 Tempo " + data.running_zones.tempo : "See plan" },
+          { name: "Cool-down", sets: "5 min easy jog \u2192 5 min walk" },
+          { name: "Stretch", sets: "Calves, hip flexors, quads \u2014 30 sec each" }
         ]
       },
       "easy-run": {
         title: "Easy Run (Sat AM)", meta: "Week " + currentWeek,
         exercises: [
+          { name: "Warm-up", sets: "Walk 2 min, then start jogging" },
           { name: "Distance", sets: (run.sat_easy_km || "4\u20135") + " km" },
-          { name: "Pace", sets: data.running_zones ? data.running_zones.easy_long : "Easy pace" }
+          { name: "Pace", sets: data.running_zones ? data.running_zones.easy_long : "Easy pace" },
+          { name: "Note", sets: "No formal warm-up needed \u2014 the run itself is easy enough" }
         ]
       },
       "long-run": {
         title: "Long Run (Sun AM)", meta: "Week " + currentWeek,
         exercises: [
+          { name: "Warm-up: walk", sets: "5 min" },
+          { name: "First 1\u20132 km", sets: "8:00+ /km \u2014 this IS the warm-up" },
+          { name: "Settle into pace", sets: "By km 2\u20133" },
           { name: "Distance", sets: (run.sun_long_km || "\u2014") + " km" },
           { name: "Pace", sets: data.running_zones ? data.running_zones.easy_long : "7:15\u20138:00 /km" },
+          { name: "Cool-down", sets: "Walk until HR < 120 bpm" },
+          { name: "Stretch", sets: "Hip flexors, quads, calves, hamstrings \u2014 30\u201345 sec each" },
           { name: "Weekly total", sets: (run.total_km != null ? run.total_km : "\u2014") + " km running" }
         ]
       },
       "mobility": {
-        title: "Nightly Mobility", meta: "Every evening",
+        title: "Nightly Hip + Hamstring Routine", meta: "Every evening \u00B7 10\u201315 min \u00B7 no equipment",
         exercises: [
-          { name: "Hip mobility", sets: "5\u201310 min" },
-          { name: "Hamstring stretch", sets: "2\u00D730\u201345 sec each side" }
+          { name: "90/90 Hip Switches", sets: "10 each side" },
+          { name: "Pigeon Stretch", sets: "60 sec each side" },
+          { name: "Couch Stretch (hip flexor)", sets: "60 sec each side" },
+          { name: "Standing Hamstring Stretch", sets: "60 sec each side (foot on chair)" },
+          { name: "Supine Figure-4 Stretch", sets: "60 sec each side" },
+          { name: "Deep Squat Hold", sets: "60 sec (heels down, elbows push knees)" },
+          { name: "Hip CARs", sets: "5 each direction, each side" }
         ]
       },
       "rest": {
@@ -194,7 +218,7 @@
     if (!workoutContext) return;
     var w = resolveWorkout(workoutId, workoutContext.cw, workoutContext.currentWeek, workoutContext.data);
     var panel = document.getElementById("workout-detail");
-    panel.innerHTML = "";
+    while (panel.firstChild) panel.removeChild(panel.firstChild);
     panel.appendChild(el("h4", { textContent: w.title }));
     panel.appendChild(el("p", { className: "workout-meta", textContent: w.meta }));
     var list = el("ul", { className: "exercise-list" });

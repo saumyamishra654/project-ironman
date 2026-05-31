@@ -20,6 +20,7 @@ This file is the live state document. Update it after every session or at minimu
 
 | Date | Milestone |
 |------|-----------|
+| 2026-05-31 | Week 1 complete — 12 km running (7k + 5k) |
 | 2026-05-27 | 7 km at 7:24 /km RPE 8 |
 | 2026-03 | 10k in 1:07:00 |
 

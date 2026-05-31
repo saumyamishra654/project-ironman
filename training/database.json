@@ -30,10 +30,10 @@
   ],
   "weeks": [
     {
-      "week": 1, "phase": 0, "start": "2026-05-25", "deload": false,
-      "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 8, "total_km": 8 },
+      "week": 1, "phase": 0, "start": "2026-05-25", "deload": false, "status": "completed",
+      "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 8, "total_km": 8, "actual_km": 12 },
       "bench": { "speed_kg": 55, "main_kg": 72.5, "sets_reps": "3x6" },
-      "notes": "First week — ease in"
+      "notes": "Complete — 7k + 5k (12 km actual)"
     },
     {
       "week": 2, "phase": 0, "start": "2026-06-01", "deload": false,

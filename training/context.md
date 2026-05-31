@@ -8,9 +8,9 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 1 |
+| Current week | 2 |
 | Current phase | 0 — Pre-Job |
-| Week start date | 2026-05-25 |
+| Week start date | 2026-06-01 |
 | Bodyweight | 80 kg |
 | Sleep quality | — |
 | Overall fatigue (1–10) | — |
@@ -37,7 +37,8 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Last long run | 7 km (May 27) |
+| Last long run | 5 km (May 31 — substituted for planned 8 km) |
+| Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
 | Current easy pace | ~7:24 /km |
 | Last quality session | — |
 | Current running zones | See database.json |
@@ -70,7 +71,7 @@ This file is the live state document. Update it after every session or at minimu
 
 List any deviations from the plan here:
 
-- None yet
+- **Week 1 (May 25–31):** Skipped planned Sun May 31 long run (8 km); ran 5 km that day instead. Extra 7 km Wed May 27 (not on plan — week 1 has no Wed quality run).
 
 ## Decision Log
 

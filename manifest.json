@@ -1,7 +1,7 @@
 {
   "name": "Project Ironman",
   "short_name": "Ironman",
-  "description": "Training dashboard — Marathon, Bench, Half-Ironman",
+  "description": "Training dashboard — Procam Slam, Bench, Goa 70.3",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#1a1410",

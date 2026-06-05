@@ -7,10 +7,17 @@
     "caloric_target": "maintenance or above"
   },
   "goals": [
-    { "id": "marathon", "target": "Completion", "deadline": "2026-11-29", "status": "in_progress" },
-    { "id": "bench_100", "target": "100 kg 1RM (floor)", "deadline": "2026-12-27", "status": "in_progress" },
-    { "id": "bench_105", "target": "105 kg 1RM (reach)", "deadline": "2026-12-27", "status": "in_progress" },
-    { "id": "him", "target": "Half-Ironman completion", "deadline": "2027", "status": "not_started" }
+    { "id": "slam", "target": "Procam Slam completion (4 races)", "deadline": "2027-04-25", "status": "in_progress" },
+    { "id": "bench_100", "target": "100 kg 1RM (floor)", "deadline": "2027-02-14", "status": "in_progress" },
+    { "id": "bench_105", "target": "105 kg 1RM (reach)", "deadline": "2027-02-14", "status": "in_progress" },
+    { "id": "goa_703", "target": "Goa 70.3 completion", "deadline": "2027-11", "status": "not_started" }
+  ],
+  "races": [
+    { "id": "vdhm", "name": "Vedanta Delhi Half Marathon", "date": "2026-10-18", "distance_km": 21.1, "week": 21, "role": "Race at honest effort" },
+    { "id": "kolkata_25k", "name": "Tata Steel World 25K Kolkata", "date": "2026-12-20", "distance_km": 25, "week": 30, "role": "Controlled — protect bench + Mumbai" },
+    { "id": "mumbai_marathon", "name": "Tata Mumbai Marathon", "date": "2027-01-17", "distance_km": 42.2, "week": 34, "role": "Completion with Nov long-run base" },
+    { "id": "tcs_10k", "name": "TCS World 10K Bengaluru", "date": "2027-04-25", "distance_km": 10, "week": 48, "role": "Slam closer" },
+    { "id": "goa_703", "name": "Ironman 70.3 Goa", "date": "2027-11", "distance_km": 113, "week": null, "role": "A-race (TBD)" }
   ],
   "baselines": {
     "date": "2026-05-28",
@@ -28,10 +35,14 @@
   "phases": [
     { "id": 0, "name": "Pre-Job", "weeks": [1, 3], "dates": ["2026-05-25", "2026-06-14"] },
     { "id": 1, "name": "Job Adjustment", "weeks": [4, 8], "dates": ["2026-06-15", "2026-07-19"] },
-    { "id": 2, "name": "Main Build", "weeks": [9, 16], "dates": ["2026-07-20", "2026-09-13"] },
-    { "id": 3, "name": "Peak", "weeks": [17, 24], "dates": ["2026-09-14", "2026-11-08"] },
-    { "id": 4, "name": "Taper + Race", "weeks": [25, 27], "dates": ["2026-11-09", "2026-11-29"] },
-    { "id": 5, "name": "Recovery + Bench Test", "weeks": [28, 31], "dates": ["2026-12-01", "2026-12-27"] }
+    { "id": 2, "name": "Build", "weeks": [9, 16], "dates": ["2026-07-20", "2026-09-13"] },
+    { "id": 3, "name": "HM Peak", "weeks": [17, 21], "dates": ["2026-09-14", "2026-10-18"] },
+    { "id": 4, "name": "Marathon Durability", "weeks": [22, 29], "dates": ["2026-10-19", "2026-12-13"] },
+    { "id": 5, "name": "Kolkata + Hold", "weeks": [30, 31], "dates": ["2026-12-14", "2026-12-27"] },
+    { "id": 6, "name": "Mumbai Taper + Race", "weeks": [32, 34], "dates": ["2026-12-28", "2027-01-17"] },
+    { "id": 7, "name": "Bench Peak", "weeks": [35, 38], "dates": ["2027-01-18", "2027-02-14"] },
+    { "id": 8, "name": "10k Sharpen", "weeks": [39, 48], "dates": ["2027-02-15", "2027-04-25"] },
+    { "id": 9, "name": "Goa 70.3 Build", "weeks": [49, null], "dates": ["2027-05", "2027-11"] }
   ],
   "weeks": [
     {
@@ -110,7 +121,7 @@
       "week": 13, "phase": 2, "start": "2026-08-17", "deload": false,
       "running": { "wed_type": "intervals_8x400", "wed_km": 8, "sat_easy_km": 4, "sun_long_km": 20, "total_km": 32 },
       "bench": { "speed_kg": 62.5, "main_kg": 82.5, "sets_reps": "3x5" },
-      "notes": "3rd run starts — schedule shifts to 5 lifting days"
+      "notes": "3rd run starts — schedule shifts to 4 lifting days"
     },
     {
       "week": 14, "phase": 2, "start": "2026-08-24", "deload": false,
@@ -128,7 +139,7 @@
       "week": 16, "phase": 2, "start": "2026-09-07", "deload": false,
       "running": { "wed_type": "intervals_5x1k", "wed_km": 9, "sat_easy_km": 5, "sun_long_km": 23, "total_km": 37 },
       "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "3x4" },
-      "notes": "Decide Mussoorie vs Pune by now"
+      "notes": null
     },
     {
       "week": 17, "phase": 3, "start": "2026-09-14", "deload": true,
@@ -138,87 +149,189 @@
     },
     {
       "week": 18, "phase": 3, "start": "2026-09-21", "deload": false,
-      "running": { "wed_type": "intervals_5x1k", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 25, "total_km": 38 },
+      "running": { "wed_type": "hm_pace", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 21, "total_km": 34 },
       "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "3x4" },
-      "notes": "Running is heavy — hold bench"
+      "notes": "HM race-pace session"
     },
     {
       "week": 19, "phase": 3, "start": "2026-09-28", "deload": false,
-      "running": { "wed_type": "easy", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 27, "total_km": 40 },
+      "running": { "wed_type": "intervals_5x1k", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 18, "total_km": 31 },
       "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "3x4-5" },
       "notes": null
     },
     {
       "week": 20, "phase": 3, "start": "2026-10-05", "deload": false,
-      "running": { "wed_type": "tempo", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 22, "total_km": 35 },
+      "running": { "wed_type": "hm_pace", "wed_km": 6, "sat_easy_km": 4, "sun_long_km": 14, "total_km": 24 },
       "bench": { "speed_kg": 65, "main_kg": 90, "sets_reps": "3x3-4" },
-      "notes": "Step-back long run. BENCH DECISION POINT: if 90 kg is clean → push for 105"
+      "notes": "HM taper begins"
     },
     {
-      "week": 21, "phase": 3, "start": "2026-10-12", "deload": false,
-      "running": { "wed_type": "intervals", "wed_km": 9, "sat_easy_km": 5, "sun_long_km": 29, "total_km": 43 },
+      "week": 21, "phase": 3, "start": "2026-10-12", "deload": false, "race": "vdhm",
+      "running": { "wed_type": "shakeout", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 21.1, "total_km": 25.1 },
       "bench": { "speed_kg": 67.5, "main_kg": 90, "sets_reps": "3x3-4" },
-      "notes": null
+      "notes": "RACE — VDHM Oct 18"
     },
     {
-      "week": 22, "phase": 3, "start": "2026-10-19", "deload": true,
+      "week": 22, "phase": 4, "start": "2026-10-19", "deload": true,
+      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 10, "total_km": 15 },
+      "bench": { "speed_kg": null, "main_kg": 72.5, "sets_reps": "2x5" },
+      "notes": "DELOAD — post-VDHM recovery"
+    },
+    {
+      "week": 23, "phase": 4, "start": "2026-10-26", "deload": false,
+      "running": { "wed_type": "tempo", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 25, "total_km": 38 },
+      "bench": { "speed_kg": 67.5, "main_kg": 90, "sets_reps": "3x4" },
+      "notes": "Resume building"
+    },
+    {
+      "week": 24, "phase": 4, "start": "2026-11-02", "deload": false,
+      "running": { "wed_type": "intervals_5x1k", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 27, "total_km": 40 },
+      "bench": { "speed_kg": 67.5, "main_kg": 92.5, "sets_reps": "3x3" },
+      "notes": "e1RM ≈ 100–102 kg"
+    },
+    {
+      "week": 25, "phase": 4, "start": "2026-11-09", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 29, "total_km": 42 },
+      "bench": { "speed_kg": 67.5, "main_kg": 90, "sets_reps": "3x4" },
+      "notes": "Hold"
+    },
+    {
+      "week": 26, "phase": 4, "start": "2026-11-16", "deload": true,
       "running": { "wed_type": "tempo", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 14, "total_km": 19 },
       "bench": { "speed_kg": null, "main_kg": 72.5, "sets_reps": "2x5" },
       "notes": "DELOAD"
     },
     {
-      "week": 23, "phase": 3, "start": "2026-10-26", "deload": false,
-      "running": { "wed_type": "easy", "wed_km": 9, "sat_easy_km": 5, "sun_long_km": 30, "total_km": 44 },
-      "bench": { "speed_kg": 67.5, "main_kg": 90, "sets_reps": "3x4" },
+      "week": 27, "phase": 4, "start": "2026-11-23", "deload": false,
+      "running": { "wed_type": "intervals", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 30, "total_km": 43 },
+      "bench": { "speed_kg": 67.5, "main_kg": 90, "sets_reps": "3x3-4" },
       "notes": null
     },
     {
-      "week": 24, "phase": 3, "start": "2026-11-02", "deload": false,
-      "running": { "wed_type": "intervals", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 32, "total_km": 45 },
+      "week": 28, "phase": 4, "start": "2026-11-30", "deload": false,
+      "running": { "wed_type": "tempo", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 32, "total_km": 45 },
       "bench": { "speed_kg": 67.5, "main_kg": 92.5, "sets_reps": "3x3" },
-      "notes": "PEAK WEEK — e1RM ~100-102 kg"
+      "notes": "PEAK WEEK — peak long run 32 km, projected 100 confirmed"
     },
     {
-      "week": 25, "phase": 4, "start": "2026-11-09", "deload": false,
-      "running": { "wed_type": "tempo", "wed_km": 6, "sat_easy_km": 4, "sun_long_km": 21, "total_km": 31 },
+      "week": 29, "phase": 4, "start": "2026-12-07", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 7, "sat_easy_km": 4, "sun_long_km": 22, "total_km": 33 },
       "bench": { "speed_kg": 65, "main_kg": 90, "sets_reps": "2x3" },
-      "notes": "Taper begins"
+      "notes": "Step-back"
     },
     {
-      "week": 26, "phase": 4, "start": "2026-11-16", "deload": false,
-      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 13, "total_km": 18 },
-      "bench": { "speed_kg": null, "main_kg": 87.5, "sets_reps": "2x3" },
+      "week": 30, "phase": 5, "start": "2026-12-14", "deload": false, "race": "kolkata_25k",
+      "running": { "wed_type": "easy", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 25, "total_km": 29 },
+      "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "2x3" },
+      "notes": "RACE — Kolkata 25k Dec 20"
+    },
+    {
+      "week": 31, "phase": 5, "start": "2026-12-21", "deload": true,
+      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 8, "total_km": 13 },
+      "bench": { "speed_kg": null, "main_kg": 72.5, "sets_reps": "2x5" },
+      "notes": "Post-Kolkata recovery"
+    },
+    {
+      "week": 32, "phase": 6, "start": "2026-12-28", "deload": false,
+      "running": { "wed_type": "tempo", "wed_km": 6, "sat_easy_km": 4, "sun_long_km": 16, "total_km": 26 },
+      "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "2x3" },
+      "notes": "Resume"
+    },
+    {
+      "week": 33, "phase": 6, "start": "2027-01-04", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 10, "total_km": 15 },
+      "bench": { "speed_kg": null, "main_kg": 85, "sets_reps": "2x3" },
       "notes": "Taper"
     },
     {
-      "week": 27, "phase": 4, "start": "2026-11-23", "deload": false,
+      "week": 34, "phase": 6, "start": "2027-01-11", "deload": false, "race": "mumbai_marathon",
       "running": { "wed_type": "shakeout", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 42.2, "total_km": 46.2 },
       "bench": { "speed_kg": null, "main_kg": null, "sets_reps": null },
-      "notes": "RACE WEEK — marathon Nov 29"
+      "notes": "RACE — Mumbai Marathon Jan 17"
     },
     {
-      "week": 28, "phase": 5, "start": "2026-12-01", "deload": true,
+      "week": 35, "phase": 7, "start": "2027-01-18", "deload": true,
       "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 0, "total_km": 0 },
       "bench": { "speed_kg": null, "main_kg": 72.5, "sets_reps": "2x5" },
-      "notes": "Recovery — easy aerobic only, no running"
+      "notes": "Marathon recovery — no running"
     },
     {
-      "week": 29, "phase": 5, "start": "2026-12-08", "deload": false,
-      "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 0, "total_km": 0 },
+      "week": 36, "phase": 7, "start": "2027-01-25", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 0, "total_km": 4 },
       "bench": { "speed_kg": 60, "main_kg": 82.5, "sets_reps": "3x5" },
-      "notes": "Recovery continues — easy jog if it feels good"
+      "notes": "Easy jog if legs feel OK — bench ramp"
     },
     {
-      "week": 30, "phase": 5, "start": "2026-12-15", "deload": false,
-      "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 0, "total_km": 0 },
+      "week": 37, "phase": 7, "start": "2027-02-01", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 5, "total_km": 10 },
       "bench": { "speed_kg": 65, "main_kg": 90, "sets_reps": "3x3" },
-      "notes": "Bench ramp — preparing for 1RM test"
+      "notes": "Easy jogging resumes — bench peak"
     },
     {
-      "week": 31, "phase": 5, "start": "2026-12-22", "deload": false,
+      "week": 38, "phase": 7, "start": "2027-02-08", "deload": false,
       "running": { "wed_type": null, "wed_km": 0, "sat_easy_km": 0, "sun_long_km": 0, "total_km": 0 },
       "bench": { "speed_kg": null, "main_kg": null, "sets_reps": "1RM_TEST" },
-      "notes": "1RM TEST — target 100-105 kg"
+      "notes": "1RM TEST — target 100–105 kg"
+    },
+    {
+      "week": 39, "phase": 8, "start": "2027-02-15", "deload": true,
+      "running": { "wed_type": "easy", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 6, "total_km": 11 },
+      "bench": { "speed_kg": null, "main_kg": 72.5, "sets_reps": "2x5" },
+      "notes": "Post-bench recovery, resume running"
+    },
+    {
+      "week": 40, "phase": 8, "start": "2027-02-22", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 6, "sat_easy_km": 0, "sun_long_km": 8, "total_km": 14 },
+      "bench": { "speed_kg": 57.5, "main_kg": 80, "sets_reps": "3x5" },
+      "notes": "Rebuild easy volume"
+    },
+    {
+      "week": 41, "phase": 8, "start": "2027-03-01", "deload": false,
+      "running": { "wed_type": "intervals_6x400", "wed_km": 6, "sat_easy_km": 4, "sun_long_km": 10, "total_km": 20 },
+      "bench": { "speed_kg": 57.5, "main_kg": 82.5, "sets_reps": "3x5" },
+      "notes": "Speed block starts"
+    },
+    {
+      "week": 42, "phase": 8, "start": "2027-03-08", "deload": false,
+      "running": { "wed_type": "tempo", "wed_km": 7, "sat_easy_km": 4, "sun_long_km": 10, "total_km": 21 },
+      "bench": { "speed_kg": null, "main_kg": 67.5, "sets_reps": "2x5" },
+      "notes": "DELOAD bench"
+    },
+    {
+      "week": 43, "phase": 8, "start": "2027-03-15", "deload": false,
+      "running": { "wed_type": "intervals_8x400", "wed_km": 7, "sat_easy_km": 4, "sun_long_km": 10, "total_km": 21 },
+      "bench": { "speed_kg": 60, "main_kg": 82.5, "sets_reps": "3x5" },
+      "notes": null
+    },
+    {
+      "week": 44, "phase": 8, "start": "2027-03-22", "deload": true,
+      "running": { "wed_type": "tempo", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 8, "total_km": 13 },
+      "bench": { "speed_kg": 60, "main_kg": 85, "sets_reps": "3x5" },
+      "notes": "DELOAD running"
+    },
+    {
+      "week": 45, "phase": 8, "start": "2027-03-29", "deload": false,
+      "running": { "wed_type": "intervals_5x1k", "wed_km": 7, "sat_easy_km": 4, "sun_long_km": 10, "total_km": 21 },
+      "bench": { "speed_kg": 60, "main_kg": 85, "sets_reps": "3x5" },
+      "notes": "10k race-pace work"
+    },
+    {
+      "week": 46, "phase": 8, "start": "2027-04-05", "deload": false,
+      "running": { "wed_type": "10k_pace", "wed_km": 6, "sat_easy_km": 4, "sun_long_km": 10, "total_km": 20 },
+      "bench": { "speed_kg": null, "main_kg": 67.5, "sets_reps": "2x5" },
+      "notes": "DELOAD bench, race-specific running"
+    },
+    {
+      "week": 47, "phase": 8, "start": "2027-04-12", "deload": false,
+      "running": { "wed_type": "easy", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 6, "total_km": 10 },
+      "bench": { "speed_kg": 60, "main_kg": 82.5, "sets_reps": "3x5" },
+      "notes": "Taper"
+    },
+    {
+      "week": 48, "phase": 8, "start": "2027-04-19", "deload": false, "race": "tcs_10k",
+      "running": { "wed_type": "shakeout", "wed_km": 3, "sat_easy_km": 0, "sun_long_km": 10, "total_km": 13 },
+      "bench": { "speed_kg": 60, "main_kg": 82.5, "sets_reps": "3x5" },
+      "notes": "RACE — TCS 10k BLR Apr 25"
     }
   ],
   "cycling_threshold_progression": [
@@ -229,16 +342,26 @@
     { "weeks": [9, 12], "structure": "2x15 min RPE 7-8, 5 min easy between" },
     { "weeks": [13, 16], "structure": "2x20 min RPE 7, 5 min easy between" },
     { "weeks": [17, 17], "structure": "Z2 only — deload" },
-    { "weeks": [18, 22], "structure": "2x20 min RPE 7, 5 min easy between" },
-    { "weeks": [23, 24], "structure": "3x8 min RPE 6-7 — peak running weeks" },
-    { "weeks": [25, 27], "structure": "Z2 or skip — taper" }
+    { "weeks": [18, 21], "structure": "2x20 min RPE 7, 5 min easy between" },
+    { "weeks": [22, 22], "structure": "Z2 only — post-VDHM recovery" },
+    { "weeks": [23, 25], "structure": "2x20 min RPE 7, 5 min easy between" },
+    { "weeks": [26, 26], "structure": "Z2 only — deload" },
+    { "weeks": [27, 29], "structure": "2x20 min RPE 7, 5 min easy between" },
+    { "weeks": [30, 31], "structure": "Z2 or easy — race period" },
+    { "weeks": [32, 34], "structure": "Z2 only — marathon taper" },
+    { "weeks": [35, 38], "structure": "Z2 only — bench peak" },
+    { "weeks": [39, 42], "structure": "3x8 min RPE 6-7 — rebuilding" },
+    { "weeks": [43, 46], "structure": "2x15 min RPE 7-8, 5 min easy between" },
+    { "weeks": [47, 48], "structure": "Z2 or easy — 10k taper" }
   ],
   "running_zones": {
     "as_of": "2026-05-28",
     "easy_long": "7:15-8:00 /km",
+    "hm_pace": "6:30-6:50 /km",
     "tempo": "6:10-6:30 /km",
     "intervals_400m": "5:30-5:50 /km",
     "intervals_1km": "5:40-6:00 /km",
-    "note": "Reassess after week 8 time trial"
+    "ten_k_pace": "TBD — reassess post-Mumbai",
+    "note": "Reassess after week 8 time trial, after VDHM, and after Mumbai"
   }
 }

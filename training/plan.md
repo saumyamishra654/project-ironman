@@ -1,8 +1,8 @@
 # Hybrid Strength + Endurance Training Plan
 
 **Athlete:** Saumya Mishra · 80 kg · 6' · Age: ~22
-**Plan duration:** 31 weeks (May 25 – Dec 27, 2026)
-**Created:** May 28, 2026
+**Plan duration:** 48 weeks (May 25, 2026 – Apr 25, 2027) + Goa 70.3 build TBD
+**Created:** May 28, 2026 · **Updated:** Jun 5, 2026
 
 ---
 
@@ -10,12 +10,21 @@
 
 | Goal | Target | Deadline |
 |------|--------|----------|
-| Marathon | Completion (no time goal) | Nov 29, 2026 |
-| Bench 1RM | 100 kg (floor) / 105 kg (reach) | Late December 2026 |
-| Half-Ironman | Completion | 2027 |
+| Procam Slam | Complete all 4 races (Delhi–Bengaluru cycle) | Oct 2026 – Apr 2027 |
+| Bench 1RM | 100 kg (floor) / 105 kg (reach) | ~Feb 2027 |
+| Goa 70.3 | Completion | ~Nov 2027 (TBD) |
 | Body composition | Leaner at ~80 kg | Ongoing |
 
-**Priority order:** Marathon and swimming development first. Bench second. Everything else is noise.
+**Priority order:** Slam completion first. Bench second (projected 100 by Dec, real 1RM after Mumbai). Goa build after Slam.
+
+### Procam Slam — Delhi–Bengaluru Cycle
+
+| # | Race | Date | Distance | Cut-off | Role |
+|---|------|------|----------|---------|------|
+| 1 | Vedanta Delhi Half Marathon | Oct 18, 2026 | 21.1 km | 3:30 | Race at honest effort |
+| 2 | Tata Steel World 25K Kolkata | Dec 20, 2026 | 25 km | 3:45 | Controlled — protect bench + Mumbai |
+| 3 | Tata Mumbai Marathon | Jan 17, 2027 | 42.2 km | 6:30 | Completion with Nov long-run base |
+| 4 | TCS World 10K Bengaluru | Apr 25, 2027 | 10 km | 1:25 | Slam closer — optional speed play |
 
 ---
 
@@ -40,16 +49,20 @@
 |-------|-------|-------|-------|
 | 0 — Pre-Job | 1–3 | May 25 – Jun 14 | Establish routine, base building |
 | 1 — Job Adjustment | 4–8 | Jun 15 – Jul 19 | Adapt to work + training, hold gains |
-| 2 — Main Build | 9–16 | Jul 20 – Sep 13 | Volume climbs, 3rd run added week 13 |
-| 3 — Peak | 17–24 | Sep 14 – Nov 8 | Highest volumes, bench holds intensity |
-| 4 — Taper + Race | 25–27 | Nov 9 – Nov 29 | Sharp volume cut, marathon Nov 29 |
-| 5 — Recovery + Bench Test | 28–31 | Dec 1 – Dec 27 | Easy aerobic, bench peaks, 1RM test |
+| 2 — Build | 9–16 | Jul 20 – Sep 13 | Volume climbs, 3rd run added week 13 |
+| 3 — HM Peak | 17–21 | Sep 14 – Oct 18 | HM-specific sharpening → race VDHM Oct 18 |
+| 4 — Marathon Durability | 22–29 | Oct 19 – Dec 13 | Long runs 25→32 km, bench → projected 100 |
+| 5 — Kolkata + Hold | 30–31 | Dec 14 – Dec 27 | Race Kolkata 25k Dec 20, bench maintains |
+| 6 — Mumbai Taper + Race | 32–34 | Dec 28 – Jan 17 | Short taper → race Mumbai Marathon Jan 17 |
+| 7 — Bench Peak | 35–38 | Jan 18 – Feb 14 | Recovery → ramp → 1RM test |
+| 8 — 10k Sharpen | 39–48 | Feb 15 – Apr 25 | Speed work → race TCS 10k BLR Apr 25 |
+| 9 — Goa 70.3 Build | TBD | May – Nov 2027 | Tri-specific build (details TBD) |
 
 ---
 
 ## Weekly Schedule
 
-### Weeks 1–12: 6 lifting days, 2 runs
+### Weeks 1–12: 5 lifting days, 2 runs
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
@@ -61,7 +74,7 @@
 | Sat | Pull B | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
-### Weeks 13–27: 5 lifting days, 3 runs
+### Weeks 13–34: 4 lifting days, 3 runs
 
 Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
 
@@ -75,6 +88,34 @@ Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
 | Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
+### Weeks 35–38: 4 lifting days, minimal running (Bench Peak)
+
+Same lifting template as weeks 13+. Running drops to easy jogs only — bench is the priority.
+
+| Day | AM (before work) | PM (after work) | Nightly |
+|-----|-------------------|-----------------|---------|
+| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Wed | Rest | Easy Jog (20–30 min, optional) | Hip + Hamstring |
+| Thu | Upper B — Push + Pull | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Fri | Legs + Arms | Rest | Hip + Hamstring |
+| Sat | Rest | Rest | Hip + Hamstring |
+| Sun | Easy Jog or Rest | Full Rest | Hip + Hamstring |
+
+### Weeks 39–48: 4 lifting days, 2–3 runs (10k Sharpen)
+
+Friday Legs become lighter (no heavy squats/deadlifts) to keep legs fresh for speed work.
+
+| Day | AM (before work) | PM (after work) | Nightly |
+|-----|-------------------|-----------------|---------|
+| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Wed | Rest | Speed Run | Hip + Hamstring |
+| Thu | Upper B — Push + Pull | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Fri | Legs (light) | Rest | Hip + Hamstring |
+| Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
+| Sun | Easy Run (8–12 km) | Full Rest | Hip + Hamstring |
+
 **Session count:** 10–12 per week depending on phase, plus nightly mobility.
 
 **Tuesday Z2 cycle is the first session to cut** if work or fatigue is high.
@@ -83,16 +124,18 @@ Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
 
 ## Running Zones
 
-Based on: 7 km at 7:24 /km RPE 8, 10k 1:07. Reassess after the week 8 time trial.
+Based on: 7 km at 7:24 /km RPE 8, 10k 1:07. Reassess after the week 8 time trial and again after each race.
 
 | Zone | Pace | Use |
 |------|------|-----|
 | Easy / Long | 7:15–8:00 /km | Saturday easy runs, Sunday long runs |
+| HM Race Pace | 6:30–6:50 /km | Phase 3 Wednesday HM-pace sessions |
 | Tempo | 6:10–6:30 /km | Wednesday tempo sessions |
 | 400 m intervals | 5:30–5:50 /km | Wednesday interval sessions |
 | 1 km intervals | 5:40–6:00 /km | Build phase interval sessions |
+| 10k Race Pace | TBD (reassess post-Mumbai) | Phase 8 Wednesday race-pace sessions |
 
-Paces will improve over the block. Expected race-day easy pace: 6:30–7:15 /km.
+Paces will improve over the block. Reassess zones after the week 8 TT, after VDHM, and after Mumbai.
 
 ---
 
@@ -117,18 +160,39 @@ Paces will improve over the block. Expected race-day easy pace: 6:30–7:15 /km.
 | 15 | 2 | Easy | 7 | 5 | 22 | **34** | |
 | 16 | 2 | Intervals 5×1k | 9 | 5 | 23 | **37** | |
 | 17 | 3 | Tempo | 5 | — | 14 | **19** | DELOAD |
-| 18 | 3 | Intervals 5×1k | 8 | 5 | 25 | **38** | |
-| 19 | 3 | Easy | 8 | 5 | 27 | **40** | |
-| 20 | 3 | Tempo | 8 | 5 | 22 | **35** | Step-back long run |
-| 21 | 3 | Intervals | 9 | 5 | 29 | **43** | |
-| 22 | 3 | Tempo | 5 | — | 14 | **19** | DELOAD |
-| 23 | 3 | Easy | 9 | 5 | 30 | **44** | |
-| 24 | 3 | Intervals | 8 | 5 | 32 | **45** | PEAK WEEK |
-| 25 | 4 | Tempo | 6 | 4 | 21 | **31** | Taper begins |
-| 26 | 4 | Easy | 5 | — | 13 | **18** | Taper |
-| 27 | 4 | Shakeout | 4 | — | RACE 42.2 | — | Marathon day Nov 29 |
+| 18 | 3 | HM Pace | 8 | 5 | 21 | **34** | HM race-pace session |
+| 19 | 3 | Intervals 5×1k | 8 | 5 | 18 | **31** | |
+| 20 | 3 | HM Pace | 6 | 4 | 14 | **24** | HM taper begins |
+| 21 | 3 | Shakeout | 4 | — | RACE 21.1 | — | **RACE — VDHM Oct 18** |
+| 22 | 4 | Easy | 5 | — | 10 | **15** | Post-VDHM recovery |
+| 23 | 4 | Tempo | 8 | 5 | 25 | **38** | Resume building |
+| 24 | 4 | Intervals 5×1k | 8 | 5 | 27 | **40** | |
+| 25 | 4 | Easy | 8 | 5 | 29 | **42** | |
+| 26 | 4 | Tempo | 5 | — | 14 | **19** | DELOAD |
+| 27 | 4 | Intervals | 8 | 5 | 30 | **43** | |
+| 28 | 4 | Tempo | 8 | 5 | 32 | **45** | PEAK WEEK — peak long run |
+| 29 | 4 | Easy | 7 | 4 | 22 | **33** | Step-back |
+| 30 | 5 | Easy | 4 | — | RACE 25 | — | **RACE — Kolkata 25k Dec 20** |
+| 31 | 5 | Easy | 5 | — | 8 | **13** | Post-Kolkata recovery |
+| 32 | 6 | Tempo | 6 | 4 | 16 | **26** | Resume |
+| 33 | 6 | Easy | 5 | — | 10 | **15** | Taper |
+| 34 | 6 | Shakeout | 4 | — | RACE 42.2 | — | **RACE — Mumbai Marathon Jan 17** |
+| 35 | 7 | — | — | — | — | **0** | Marathon recovery — no running |
+| 36 | 7 | Easy | 4 | — | — | **4** | Easy jog if legs feel OK |
+| 37 | 7 | Easy | 5 | — | 5 | **10** | Easy jogging resumes |
+| 38 | 7 | — | — | — | — | **0** | 1RM TEST week — full rest |
+| 39 | 8 | Easy | 5 | — | 6 | **11** | Post-bench recovery, resume running |
+| 40 | 8 | Easy | 6 | — | 8 | **14** | Rebuild easy volume |
+| 41 | 8 | Intervals 6×400 | 6 | 4 | 10 | **20** | Speed block starts |
+| 42 | 8 | Tempo | 7 | 4 | 10 | **21** | |
+| 43 | 8 | Intervals 8×400 | 7 | 4 | 10 | **21** | |
+| 44 | 8 | Tempo | 5 | — | 8 | **13** | DELOAD |
+| 45 | 8 | Intervals 5×1k | 7 | 4 | 10 | **21** | 10k race-pace work |
+| 46 | 8 | 10k Pace | 6 | 4 | 10 | **20** | Race-specific |
+| 47 | 8 | Easy | 4 | — | 6 | **10** | Taper |
+| 48 | 8 | Shakeout | 3 | — | RACE 10 | — | **RACE — TCS 10k BLR Apr 25** |
 
-**Peak long run:** 32 km (week 24). **Peak weekly volume:** 45 km (week 24).
+**Peak long run:** 32 km (week 28). **Peak weekly volume:** 45 km (week 28).
 
 ### Wednesday Session Details
 
@@ -137,21 +201,10 @@ Paces will improve over the block. Expected race-day easy pace: 6:30–7:15 /km.
 | 400 m repeats | 5:30–5:50 /km pace · 90 sec jog recovery |
 | Tempo blocks | 6:10–6:30 /km sustained |
 | 1 km repeats | 5:40–6:00 per rep · 2 min jog recovery |
+| HM Pace | 6:30–6:50 /km sustained · 3–5 km at goal HM effort |
+| 10k Pace | TBD (reassess post-Mumbai) · 3–4 km at goal 10k effort |
 | Easy | 7:15–8:00 /km throughout |
 | Time trial | All-out 5k — use for pace recalibration |
-
-### Mussoorie vs. Pune
-
-Decide by **week 16** (mid-September).
-
-| Factor | Pune | Mussoorie |
-|--------|------|-----------|
-| Terrain | Flat/rolling | Significant elevation |
-| Finish time impact | 4:15–4:35 realistic | Add 20–40 min for hills |
-| Training adjustment | None | Hill repeats on Wed, hilly long runs |
-| Weather (late Nov) | Warm, possibly hot | Cool, ideal running temps |
-
-If Mussoorie: swap 2–3 Wednesday sessions for hill repeats during weeks 13–21, and run at least 3–4 long runs on hilly routes.
 
 ---
 
@@ -179,20 +232,37 @@ Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
 | 15 | 2 | 62.5 kg | 85 kg | 3×5 | |
 | 16 | 2 | 65 kg | 87.5 kg | 3×4 | |
 | 17 | 3 | — | 70 kg | 2×5 | DELOAD |
-| 18 | 3 | 65 kg | 87.5 kg | 3×4 | Running is heavy — hold bench |
+| 18 | 3 | 65 kg | 87.5 kg | 3×4 | Hold — HM peak running |
 | 19 | 3 | 65 kg | 87.5 kg | 3×4–5 | |
-| 20 | 3 | 65 kg | 90 kg | 3×3–4 | DECISION POINT: if clean → push for 105 |
-| 21 | 3 | 67.5 kg | 90 kg | 3×3–4 | |
-| 22 | 3 | — | 72.5 kg | 2×5 | DELOAD |
-| 23 | 3 | 67.5 kg | 90 kg | 3×4 | |
-| 24 | 3 | 67.5 kg | 92.5 kg | 3×3 | e1RM ≈ 100–102 kg |
-| 25 | 4 | 65 kg | 90 kg | 2×3 | Taper — hold intensity, cut volume |
-| 26 | 4 | — | 87.5 kg | 2×3 | Minimal |
-| 27 | 4 | — | — | — | Race week — skip bench |
-| 28 | 5 | — | 72.5 kg | 2×5 | Recovery |
-| 29 | 5 | 60 kg | 82.5 kg | 3×5 | Ramp back |
-| 30 | 5 | 65 kg | 90 kg | 3×3 | Peak |
-| 31 | 5 | — | **1RM TEST** | — | **Target: 100–105 kg** |
+| 20 | 3 | 65 kg | 90 kg | 3×3–4 | |
+| 21 | 3 | 67.5 kg | 90 kg | 3×3–4 | HM race week — bench continues |
+| 22 | 4 | — | 72.5 kg | 2×5 | DELOAD — post-VDHM |
+| 23 | 4 | 67.5 kg | 90 kg | 3×4 | |
+| 24 | 4 | 67.5 kg | 92.5 kg | 3×3 | e1RM ≈ 100–102 kg |
+| 25 | 4 | 67.5 kg | 90 kg | 3×4 | Hold |
+| 26 | 4 | — | 72.5 kg | 2×5 | DELOAD |
+| 27 | 4 | 67.5 kg | 90 kg | 3×3–4 | |
+| 28 | 4 | 67.5 kg | 92.5 kg | 3×3 | Projected 100 confirmed |
+| 29 | 4 | 65 kg | 90 kg | 2×3 | Maintain — running priority |
+| 30 | 5 | 65 kg | 87.5 kg | 2×3 | Race week — hold |
+| 31 | 5 | — | 72.5 kg | 2×5 | Post-Kolkata easy |
+| 32 | 6 | 65 kg | 87.5 kg | 2×3 | Hold |
+| 33 | 6 | — | 85 kg | 2×3 | Minimal |
+| 34 | 6 | — | — | — | Race week — skip bench |
+| 35 | 7 | — | 72.5 kg | 2×5 | Recovery |
+| 36 | 7 | 60 kg | 82.5 kg | 3×5 | Ramp |
+| 37 | 7 | 65 kg | 90 kg | 3×3 | Peak |
+| 38 | 7 | — | **1RM TEST** | — | **Target: 100–105 kg** |
+| 39 | 8 | — | 72.5 kg | 2×5 | Post-test recovery |
+| 40 | 8 | 57.5 kg | 80 kg | 3×5 | Maintenance |
+| 41 | 8 | 57.5 kg | 82.5 kg | 3×5 | Maintenance |
+| 42 | 8 | — | 67.5 kg | 2×5 | DELOAD |
+| 43 | 8 | 60 kg | 82.5 kg | 3×5 | Maintenance |
+| 44 | 8 | 60 kg | 85 kg | 3×5 | Maintenance |
+| 45 | 8 | 60 kg | 85 kg | 3×5 | Maintenance |
+| 46 | 8 | — | 67.5 kg | 2×5 | DELOAD |
+| 47 | 8 | 60 kg | 82.5 kg | 3×5 | Maintenance |
+| 48 | 8 | 60 kg | 82.5 kg | 3×5 | Race week — bench normal |
 
 **Overload rule:** add 2.5 kg only when all prescribed sets and reps complete and the last rep of the last set does not visibly slow. Miss reps → repeat the weight. Do not chase load.
 
@@ -251,7 +321,7 @@ No formal cool-down needed.
 
 ---
 
-### Thursday AM — Upper B (Weeks 13–27)
+### Thursday AM — Upper B (Weeks 13–48)
 
 **Warm-up:** 5 min general → push press ramp
 
@@ -291,7 +361,7 @@ No formal cool-down needed.
 
 ---
 
-### Friday AM — Legs + Arms (Weeks 13–27)
+### Friday AM — Legs + Arms (Weeks 13–38)
 
 Same leg work as above, plus arm supersets at the end:
 
@@ -301,6 +371,25 @@ Same leg work as above, plus arm supersets at the end:
 | 2 | Hammer Curl — 2×10–12 | Tricep Pushdowns — 2×12–15 |
 
 Supersets: no rest between A and B, 60–90 sec rest between pairs. Total session: ~55 min.
+
+---
+
+### Friday AM — Legs Light (Weeks 39–48)
+
+No heavy squats or deadlifts — keep legs fresh for Wednesday speed work.
+
+| Block | Exercise | Sets × Reps |
+|-------|----------|-------------|
+| Unilateral | Bulgarian Split Squat | 2×8 each leg |
+| Unilateral | Step-Ups | 2×10 each leg (slow eccentric) |
+| Accessory | Hamstring Curl | 2×10–12 |
+| Lower Leg | Seated Calf Raise | 2×15 |
+| Lower Leg | Tibialis Raise | 2×15–20 |
+| Stability | Copenhagen Plank | 2 sets |
+| Arms | Barbell Curl / OH Extension | 2×10–12 each (superset) |
+| Arms | Hammer Curl / Pushdowns | 2×10–15 each (superset) |
+
+~16 working sets, 35–40 min.
 
 ---
 
@@ -322,7 +411,7 @@ Supersets: no rest between A and B, 60–90 sec rest between pairs. Total sessio
 
 ## Swimming
 
-**Weeks 1–27:** Monday PM + Thursday PM.
+**Weeks 1–48:** Monday PM + Thursday PM.
 - 1500–2000 m per session, easy Z2 aerobic pace
 - Mix strokes if desired
 - 30–40 min in the water
@@ -330,7 +419,7 @@ Supersets: no rest between A and B, 60–90 sec rest between pairs. Total sessio
 **Warm-up:** 200 m easy freestyle.
 **Cool-down:** 100–200 m easy backstroke.
 
-No structured sets in this block. The goal is water conditioning and aerobic base for the HIM build next year. Technique is not a bottleneck (state-level qualification, Olympic-level coaching background).
+No structured sets in this block. The goal is water conditioning and aerobic base for the Goa 70.3 build next year. Technique is not a bottleneck (state-level qualification, Olympic-level coaching background).
 
 ---
 
@@ -356,9 +445,17 @@ No structured sets in this block. The goal is water conditioning and aerobic bas
 | 9–12 | Hard threshold | 2×15 min RPE 7–8, 5 min easy between |
 | 13–16 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
 | 17 | Z2 only | Deload |
-| 18–22 | Repeat weeks 13–16 | |
-| 23–24 | Moderate | 3×8 min RPE 6–7 — peak running weeks |
-| 25–27 | Z2 or skip | Taper — cycling is noise |
+| 18–21 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
+| 22 | Z2 only | Post-VDHM recovery |
+| 23–25 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
+| 26 | Z2 only | Deload |
+| 27–29 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
+| 30–31 | Z2 or easy | Race period |
+| 32–34 | Z2 only | Marathon taper |
+| 35–38 | Z2 only | Bench peak — cycling is maintenance |
+| 39–42 | Tempo blocks | 3×8 min RPE 6–7 — rebuilding |
+| 43–46 | Hard threshold | 2×15 min RPE 7–8, 5 min easy between |
+| 47–48 | Z2 or easy | 10k taper |
 
 **Warm-up:** 5 min easy spinning.
 **Cool-down:** 5 min easy spinning.
@@ -440,7 +537,11 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 | Mechanics | 1–8 | Landing quality, stiffness, low-amplitude work |
 | Reactivity | 9–16 | Bounds, aggressive rebound, elastic loading |
 | Intensity | 17–24 | Maximal intent, faster contacts, lower total volume |
-| Taper | 25–27 | Maintain with reduced volume |
+| Maintain | 25–29 | Maintain with reduced volume |
+| Race Period | 30–34 | Skip plyos — racing every 2–4 weeks |
+| Bench Peak | 35–38 | Skip plyos |
+| Rebuild | 39–44 | Moderate volume, reactive focus |
+| Taper | 45–48 | Maintain with reduced volume |
 
 ---
 
@@ -457,31 +558,62 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 3. **If knees flare:** cut plyometrics first, reduce cycling, keep swimming.
 4. **If bench stalls 3+ weeks:** check sleep and protein. If both solid, add close-grip bench on Friday temporarily.
 5. **If a long run goes badly (bonk, injury scare, RPE 9+):** next week's long run stays same or drops.
-6. **Post-marathon (weeks 28–29):** easy aerobic only. No running until easy jogging feels easy. No heavy lifting until week 29.
+6. **Race week rules:** no quality run in race week. Wednesday = shakeout or rest. Drop all accessories. Keep bench if race is a run.
+7. **Post-Mumbai (weeks 35–36):** easy aerobic only. No running until easy jogging feels easy. No heavy lifting until week 36.
 
 ---
 
-## Marathon Race Strategy
+## Race Strategies
 
-**Target:** Completion. Realistic finish: 4:15–4:45 (flat), 4:35–5:10 (hilly/Mussoorie).
+### VDHM — Half Marathon (Oct 18, 2026)
+
+**Target:** Honest race effort. Realistic finish: 2:15–2:25 (sub-2:10 stretch).
+
+- Start at ~6:40–6:50 /km for the first 5 km — do not go out fast in Delhi heat/pollution
+- Settle into 6:20–6:40 /km by km 5 if conditions allow
+- Walk aid stations if needed
+- Negative split if possible — save energy for the second half
+- Race week: sleep, hydrate. Nothing done in race week improves fitness.
+
+### Kolkata 25k (Dec 20, 2026)
+
+**Target:** Controlled Slam checkpoint. Run at 5:30–6:00 /km (well inside 3:45 cut-off).
+
+- Do not race this hard — protect legs for Mumbai (4 weeks later)
+- Treat it as a fast long run at moderate effort (RPE 5–6)
+- Flat course, December weather should be cool
+
+### Mumbai Marathon (Jan 17, 2027)
+
+**Target:** Completion. Realistic finish: 4:15–4:45.
 
 - Go out at 6:15–6:20 /km for the first half
 - Do not go faster than 6:00 /km in the first 10 km regardless of how good you feel
 - Walk aid stations if needed
 - If the first half felt controlled, hold pace through 30 km, then survive
-- Race week: sleep, hydrate, carb load 2–3 days before. Nothing done in race week improves fitness.
+- Race week: sleep, hydrate, carb load 2–3 days before
+
+### TCS 10k Bengaluru (Apr 25, 2027)
+
+**Target:** Slam closer. Optional: race for time / leaderboard.
+
+- Warm up properly (15 min easy jog + strides)
+- Go out at goal pace from km 1 — no negative split at 10k
+- Paces TBD based on post-Mumbai fitness reassessment
+- Well inside 1:25 cut-off regardless
 
 ---
 
-## Block 2 Preview — Post-Marathon (2027)
+## Block 2 — Goa 70.3 Build (TBD)
 
-### Recovery (Weeks 28–31)
-Covered above. 1RM bench test at week 31.
+After TCS 10k (Apr 25, 2027), the plan transitions to a dedicated triathlon build targeting Goa 70.3 (~Nov 2027, date TBD).
 
-### HIM Build (January – November 2027)
+### High-Level Direction
 
-- **Swimming:** 3×/week, 2000–3500 m, structured sets. Open water sessions when available.
-- **Cycling:** Long ride builds: 60 → 90 → 120 → 180 min. Brick workouts (bike → 20–30 min run) from month 2.
-- **Running:** Maintain 18–22 km long run. Brick runs are more specific than standalone long runs.
-- **Lifting:** Drops to 2×/week (Push A + Pull A). Bench maintained. Legs sessions cut entirely.
-- **HIM target:** Swim ~35–40 min · Bike ~2:45–3:00 · Run ~2:00–2:10 · Total ~5:30–5:55.
+- **Swim:** 2–3×/week, build to 2.5–3 km sessions. 1.9 km open water is not a limiter given state-level background.
+- **Bike:** 3×/week — 1 long Z2 (90→150 min), 1 threshold/tempo, 1 easy. Bike volume is the main growth lever. Aim 180–220 km/week by peak.
+- **Run:** 2–3×/week off-the-bike. Long run caps at 14–18 km — not marathon volume.
+- **Lift:** 3 days (Mon push, Wed pull, Fri legs). Bench maintenance only — no second peak until after Goa.
+- **Target splits:** Swim ~35–40 min · Bike ~2:45–3:00 · Run ~2:00–2:10 · Total ~5:30–5:55.
+
+Detailed week-by-week plan will be written after the Slam is complete and current fitness is reassessed.

@@ -123,7 +123,7 @@
 <div class="container">
   <div class="header">
     <h1>Project <span>Ironman</span></h1>
-    <p class="subtitle">Marathon · 100 kg Bench · Half-Ironman</p>
+    <p class="subtitle">Procam Slam · 100 kg Bench · Goa 70.3</p>
   </div>
   <div class="phase-banner" id="phase-banner">
     <div>
@@ -153,7 +153,7 @@
     </div>
   </div>
   <div class="section">
-    <div class="section-title"><span class="dot" style="background:var(--cyan)"></span> Full 31-Week Overview</div>
+    <div class="section-title"><span class="dot" style="background:var(--cyan)"></span> Full 48-Week Overview</div>
     <div style="overflow-x:auto">
       <table class="week-table" id="week-table">
         <thead><tr><th>Wk</th><th>Phase</th><th>Wed Run</th><th>Wed km</th><th>Sat km</th><th>Sun Long</th><th>Total km</th><th>Bench kg</th><th>Bench Sets</th><th>Ashwa</th><th>Notes</th></tr></thead>
@@ -170,7 +170,7 @@
 
   function getCurrentWeek() {
     var diff = Date.now() - PLAN_START.getTime();
-    return Math.max(1, Math.min(31, Math.ceil(diff / 604800000)));
+    return Math.max(1, Math.min(48, Math.ceil(diff / 604800000)));
   }
 
   function getPhase(week, phases) {
@@ -264,7 +264,7 @@
     tr.appendChild(el("td", {}, [el("strong", { textContent: String(w.running.total_km) })]));
     tr.appendChild(el("td", { textContent: w.bench.main_kg || "\u2014" }));
     tr.appendChild(el("td", { textContent: w.bench.sets_reps || "\u2014" }));
-    var ashwaOn = (w.week >= 1 && w.week <= 8) || (w.week >= 11 && w.week <= 18) || (w.week >= 21 && w.week <= 28);
+    var ashwaOn = (w.week >= 1 && w.week <= 8) || (w.week >= 11 && w.week <= 18) || (w.week >= 21 && w.week <= 28) || (w.week >= 31 && w.week <= 38) || (w.week >= 41 && w.week <= 48);
     var ashwaCell = el("td", { textContent: ashwaOn ? "ON" : "OFF" });
     ashwaCell.style.color = ashwaOn ? "var(--green)" : "var(--text-muted)";
     ashwaCell.style.fontWeight = "600";
@@ -284,13 +284,13 @@
     var phase = getPhase(currentWeek, data.phases);
 
     document.getElementById("phase-name").textContent = "Phase " + phase.id + " \u2014 " + phase.name;
-    document.getElementById("week-badge").textContent = "Week " + currentWeek + " of 31";
+    document.getElementById("week-badge").textContent = "Week " + currentWeek + " of 48";
 
     // Goals
     var goalsEl = document.getElementById("goals-grid");
     var cw = null;
     for (var i = 0; i < data.weeks.length; i++) {
-      if (data.weeks[i].week === Math.min(currentWeek, 31)) { cw = data.weeks[i]; break; }
+      if (data.weeks[i].week === Math.min(currentWeek, 48)) { cw = data.weeks[i]; break; }
     }
     var bestLong = 0;
     for (var j = 0; j < data.weeks.length; j++) {
@@ -301,13 +301,24 @@
     var benchProgress = (cw && cw.bench.main_kg) ? ((cw.bench.main_kg - 72.5) / (92.5 - 72.5)) * 100 : 0;
     var benchLabel = "Working: " + ((cw && cw.bench.main_kg) ? cw.bench.main_kg + " kg" : "\u2014");
 
-    goalsEl.appendChild(buildGoalCard("Marathon", "Nov 29, 2026", "Completion", Math.min(100, ((currentWeek - 1) / 27) * 100), weeksUntil("2026-11-29") + " weeks to go", "var(--green)"));
-    goalsEl.appendChild(buildGoalCard("Bench 1RM", "Dec 2026", "100\u2013105 kg", Math.min(100, benchProgress), benchLabel, "var(--accent)"));
-    goalsEl.appendChild(buildGoalCard("Peak Long Run", "Week 24", "32 km", Math.min(100, (bestLong / 32) * 100), "Best so far: " + bestLong + " km", "var(--cyan)"));
-    goalsEl.appendChild(buildGoalCard("Half-Ironman", "2027", "~5:30\u20135:55", Math.min(100, ((currentWeek - 1) / 31) * 15), "Block 2 \u2014 next year", "var(--amber)"));
+    var nextRace = null;
+    if (data.races) {
+      for (var r = 0; r < data.races.length; r++) {
+        if (data.races[r].week && data.races[r].week >= currentWeek) { nextRace = data.races[r]; break; }
+      }
+    }
+    var nextRaceLabel = nextRace ? nextRace.name.replace(/^(Vedanta |Tata (Steel )?|Tata |TCS )/, "") : "Slam";
+    var nextRaceDate = nextRace ? nextRace.date : "2027";
+    var slamDone = 0;
+    if (data.races) { for (var s = 0; s < data.races.length; s++) { if (data.races[s].week && data.races[s].week < currentWeek) slamDone++; } }
+
+    goalsEl.appendChild(buildGoalCard("Procam Slam", "Oct 2026 \u2013 Apr 2027", slamDone + "/4 races", Math.min(100, (slamDone / 4) * 100), nextRace ? "Next: " + nextRaceLabel + " (wk " + nextRace.week + ")" : "Complete!", "var(--green)"));
+    goalsEl.appendChild(buildGoalCard("Bench 1RM", "Feb 2027", "100\u2013105 kg", Math.min(100, benchProgress), benchLabel, "var(--accent)"));
+    goalsEl.appendChild(buildGoalCard("Peak Long Run", "Week 28", "32 km", Math.min(100, (bestLong / 32) * 100), "Best so far: " + bestLong + " km", "var(--cyan)"));
+    goalsEl.appendChild(buildGoalCard("Goa 70.3", "Nov 2027", "~5:30\u20135:55", Math.min(100, Math.max(0, ((currentWeek - 1) / 48) * 20)), "Tri build after Slam", "var(--amber)"));
 
     // Running chart
-    var runWeeks = data.weeks.filter(function(w) { return w.week <= 27; });
+    var runWeeks = data.weeks;
     new Chart(document.getElementById("running-chart").getContext("2d"), {
       type: "bar",
       data: {
@@ -369,13 +380,13 @@
       { date: "Jun 15", label: "Job starts", week: 4 },
       { date: "Jul 13\u201319", label: "5k Time Trial \u2014 reassess paces", week: 8 },
       { date: "Aug 17", label: "3rd run added, schedule shifts", week: 13 },
-      { date: "Sep 14", label: "Peak phase begins", week: 17 },
-      { date: "Mid-Sep", label: "Decide Mussoorie vs Pune", week: 16 },
-      { date: "Oct 5", label: "Bench decision point \u2014 100 or 105?", week: 20 },
-      { date: "Nov 2", label: "Peak week \u2014 32 km long run", week: 24 },
-      { date: "Nov 9", label: "Taper begins", week: 25 },
-      { date: "Nov 29", label: "MARATHON", week: 27 },
-      { date: "Dec 22\u201327", label: "Bench 1RM Test", week: 31 }
+      { date: "Sep 14", label: "HM peak phase begins", week: 17 },
+      { date: "Oct 18", label: "\uD83C\uDFC1 VDHM \u2014 Half Marathon (Delhi)", week: 21 },
+      { date: "Nov 30", label: "Peak week \u2014 32 km long run", week: 28 },
+      { date: "Dec 20", label: "\uD83C\uDFC1 Kolkata 25k", week: 30 },
+      { date: "Jan 17", label: "\uD83C\uDFC1 Mumbai Marathon", week: 34 },
+      { date: "Feb 8\u201314", label: "Bench 1RM Test", week: 38 },
+      { date: "Apr 25", label: "\uD83C\uDFC1 TCS 10k BLR \u2014 Slam complete!", week: 48 }
     ];
     milestones.forEach(function(m) {
       var state = (currentWeek === m.week) ? "active" : (currentWeek > m.week ? "done" : "");

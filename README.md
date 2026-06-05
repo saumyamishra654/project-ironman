@@ -1,6 +1,6 @@
 # Project Ironman
 
-Hybrid strength + endurance training plan targeting a marathon (Nov 2026), 100 kg bench (Dec 2026), and half-Ironman (2027).
+Hybrid strength + endurance training plan targeting the Procam Slam (Oct 2026 – Apr 2027), 100 kg bench (~Feb 2027), and Goa 70.3 (~Nov 2027).
 
 ## File Structure
 
@@ -9,7 +9,8 @@ training/
 ├── plan.md          # Full training plan — phases, sessions, week-by-week progressions
 ├── database.json    # Structured week-by-week data for all modalities (machine-readable)
 ├── context.md       # Live athlete state — update weekly, read by AI trainer for context
-└── worklog.md       # Session-by-session log — what you did, how it felt
+├── worklog.md       # Session-by-session log — what you did, how it felt
+└── nutrition-log.md # Nutrition tracking
 ```
 
 ## Dashboard (GitHub Pages)
@@ -34,6 +35,9 @@ Paths work for project sites (`/repo-name/`) and local `python3 -m http.server`.
 |-------|------|
 | Plan start | May 25, 2026 |
 | Job starts | Jun 15, 2026 |
-| Marathon | Nov 29, 2026 |
-| Bench 1RM test | ~Dec 22–27, 2026 |
-| HIM build begins | Jan 2027 |
+| Vedanta Delhi Half Marathon | Oct 18, 2026 |
+| Tata Steel World 25K Kolkata | Dec 20, 2026 |
+| Tata Mumbai Marathon | Jan 17, 2027 |
+| Bench 1RM test | ~Feb 8–14, 2027 |
+| TCS World 10K Bengaluru | Apr 25, 2027 |
+| Goa 70.3 | ~Nov 2027 (TBD) |

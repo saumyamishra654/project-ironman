@@ -16,6 +16,8 @@
       intervals: "Intervals",
       tempo: "Tempo run",
       easy: "Easy run",
+      hm_pace: "HM race-pace run",
+      "10k_pace": "10k race-pace run",
       "5k_time_trial": "5k time trial",
       shakeout: "Shakeout"
     };
@@ -264,14 +266,23 @@
 
   function renderSchedule(currentWeek, el) {
     var isPost12 = currentWeek > 12;
+    var isBenchPeak = currentWeek >= 35 && currentWeek <= 38;
+    var is10kSharpen = currentWeek >= 39;
     var schedBody = document.getElementById("schedule-body");
     schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Swim 1500\u20132000 m", "swim", "swim", el));
     schedBody.appendChild(buildScheduleRow("Tue", "Pull A", "pull", "pull-a", "Z2 Cycle 45 min", "cycle", "cycle-z2", el));
-    schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", "Quality Run", "run", "quality-run", el));
+    var wedPm = isBenchPeak ? "Easy Jog (optional)" : (is10kSharpen ? "Speed Run" : "Quality Run");
+    schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", wedPm, "run", "quality-run", el));
     schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", isPost12 ? "upper-b" : "push-b", "Swim 1500\u20132000 m", "swim", "swim", el));
-    schedBody.appendChild(buildScheduleRow("Fri", isPost12 ? "Legs + Arms" : "Legs", "legs", isPost12 ? "legs-arms" : "legs", "Rest", "rest", "rest", el));
-    schedBody.appendChild(buildScheduleRow("Sat", isPost12 ? "Easy Run 4\u20135 km" : "Pull B", isPost12 ? "run" : "pull", isPost12 ? "easy-run" : "pull-b", "Threshold Cycle", "cycle", "threshold-cycle", el));
-    schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
+    var friAm = is10kSharpen ? "Legs (light)" : (isPost12 ? "Legs + Arms" : "Legs");
+    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", isPost12 ? "legs-arms" : "legs", "Rest", "rest", "rest", el));
+    if (isBenchPeak) {
+      schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "Easy Jog or Rest", "run", "easy-run", "Full Rest", "rest", "rest", el));
+    } else {
+      schedBody.appendChild(buildScheduleRow("Sat", isPost12 ? "Easy Run 4\u20135 km" : "Pull B", isPost12 ? "run" : "pull", isPost12 ? "easy-run" : "pull-b", "Threshold Cycle", "cycle", "threshold-cycle", el));
+      schedBody.appendChild(buildScheduleRow("Sun", is10kSharpen ? "Easy Run 8\u201312 km" : "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
+    }
   }
 
   global.WorkoutUI = {

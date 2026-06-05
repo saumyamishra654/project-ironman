@@ -16,6 +16,17 @@ This file is the live state document. Update it after every session or at minimu
 | Overall fatigue (1–10) | — |
 | Injury / pain notes | None |
 
+## Race Calendar
+
+| # | Race | Date | Week |
+|---|------|------|------|
+| 1 | Vedanta Delhi Half Marathon | Oct 18, 2026 | 21 |
+| 2 | Tata Steel World 25K Kolkata | Dec 20, 2026 | 30 |
+| 3 | Tata Mumbai Marathon | Jan 17, 2027 | 34 |
+| 4 | TCS World 10K Bengaluru | Apr 25, 2027 | 48 |
+| — | Bench 1RM test | ~Feb 8–14, 2027 | 38 |
+| — | Goa 70.3 | ~Nov 2027 | TBD |
+
 ## Recent PRs / Milestones
 
 | Date | Milestone |
@@ -32,6 +43,8 @@ This file is the live state document. Update it after every session or at minimu
 | Last tested 1RM | 85 kg |
 | Projected 1RM | 93 kg (from volume) |
 | Stall weeks | 0 |
+| Year-end target | Projected 100 kg by Dec (92.5×3 / 90×4) |
+| Real 1RM target | 100–105 kg, test ~Feb 2027 (after Mumbai) |
 
 ## Running Status
 
@@ -42,7 +55,7 @@ This file is the live state document. Update it after every session or at minimu
 | Current easy pace | ~7:24 /km |
 | Last quality session | — |
 | Current running zones | See database.json |
-| Race decision (Pune/Mussoorie) | Undecided — decide by week 16 |
+| Next race | VDHM Oct 18 (week 21) |
 
 ## Swimming Status
 
@@ -78,6 +91,7 @@ List any deviations from the plan here:
 | Date | Decision | Rationale |
 |------|----------|-----------|
 | 2026-05-28 | Plan created | 31-week hybrid plan targeting marathon Nov 29 + bench 100 kg Dec |
+| 2026-06-05 | Plan restructured for Procam Slam | Replaced standalone marathon with 4-race Slam cycle (VDHM → Kolkata → Mumbai → TCS 10k). Bench 1RM moved to ~Feb 2027 (after Mumbai). Goa 70.3 ~Nov 2027 becomes the A-race. Plan extended to 48 weeks through Apr 2027; Goa build TBD. |
 
 ---
 

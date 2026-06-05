@@ -169,7 +169,12 @@
           { name: "Dynamic stretches", sets: "Leg swings, hip circles, lunges, high knees, butt kicks" },
           { name: "Easy jog to start", sets: "2\u20133 min" },
           { name: "Session", sets: formatWedRun(run.wed_type) },
-          { name: "Paces", sets: data.running_zones ? "Easy " + data.running_zones.easy_long + " \u00B7 Tempo " + data.running_zones.tempo : "See plan" },
+          { name: "Paces", sets: data.running_zones ? [
+            "Easy " + data.running_zones.easy_long,
+            data.running_zones.hm_pace ? "HM " + data.running_zones.hm_pace : null,
+            "Tempo " + data.running_zones.tempo,
+            data.running_zones.ten_k_pace && data.running_zones.ten_k_pace.indexOf("TBD") === -1 ? "10k " + data.running_zones.ten_k_pace : null
+          ].filter(Boolean).join(" \u00B7 ") : "See plan" },
           { name: "Cool-down", sets: "5 min easy jog \u2192 5 min walk" },
           { name: "Stretch", sets: "Calves, hip flexors, quads \u2014 30 sec each" }
         ]

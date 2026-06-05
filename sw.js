@@ -1,4 +1,4 @@
-var CACHE_NAME = "ironman-v1";
+var CACHE_NAME = "ironman-v2";
 
 var SHELL_FILES = [
   "./index.html",
@@ -7,6 +7,13 @@ var SHELL_FILES = [
   "./manifest.json",
   "./icon-192.svg",
   "./icon-512.svg"
+];
+
+var NETWORK_FIRST = [
+  "index.html",
+  "workout-ui.js",
+  "nutrition.html",
+  "database.json"
 ];
 
 self.addEventListener("install", function(e) {
@@ -34,13 +41,14 @@ self.addEventListener("activate", function(e) {
 
 self.addEventListener("fetch", function(e) {
   var url = new URL(e.request.url);
+  var path = url.pathname.split("/").pop();
 
   var isData = url.pathname.indexOf("database.json") !== -1 ||
                url.pathname.indexOf("context.md") !== -1 ||
                url.pathname.indexOf("worklog.md") !== -1 ||
                url.pathname.indexOf("nutrition-log.md") !== -1;
 
-  if (isData) {
+  if (isData || NETWORK_FIRST.indexOf(path) !== -1) {
     e.respondWith(networkFirst(e.request));
   } else {
     e.respondWith(staleWhileRevalidate(e.request));

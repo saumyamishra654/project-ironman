@@ -122,25 +122,67 @@ Peak running begins. Make sure rice intake scales up.
 
 ---
 
-## Week 24 — Nov 2–8 (Peak week)
+## Week 24 — Nov 2–8
 
-Highest running volume. Eat more. Do not cut calories this week.
-
----
-
-## Week 25 — Nov 9–15 (Taper)
+Bench pushing toward projected 100. Long runs building — eat at or above maintenance.
 
 ---
 
-## Week 26 — Nov 16–22 (Taper)
-
-Carb load the last 2–3 days of this week heading into race week.
+## Week 25 — Nov 9–15
 
 ---
 
-## Week 27 — Nov 23–29 (Race week)
+## Week 26 — Nov 16–22 (Deload)
 
-Carb load Mon–Thu. Race day Nov 29. Hydrate. Sleep.
+---
+
+## Week 27 — Nov 23–29
+
+---
+
+## Week 28 — Nov 30 – Dec 6 (Peak week)
+
+Peak long run 32 km. Highest running volume — eat more, do not cut calories.
+
+---
+
+## Week 29 — Dec 7–13
+
+Projected 100 kg bench target by end of year (volume, not 1RM test).
+
+---
+
+## Week 30 — Dec 14–20 (Kolkata 25k race week)
+
+Race Dec 20 — controlled effort. Normal eating; no aggressive deficit.
+
+---
+
+## Week 31 — Dec 21–27 (Post-Kolkata recovery)
+
+---
+
+## Week 32–33 — Dec 28 – Jan 10 (Mumbai taper)
+
+Carb load the last 2–3 days before race week.
+
+---
+
+## Week 34 — Jan 11–17 (Mumbai Marathon race week)
+
+Carb load Mon–Thu. Race day Jan 17. Hydrate. Sleep.
+
+---
+
+## Week 35–38 — Jan 18 – Feb 14 (Bench peak)
+
+Post-marathon recovery then bench 1RM test ~week 38. Prioritise protein; running minimal.
+
+---
+
+## Week 39–48 — Feb 15 – Apr 25 (10k sharpen → TCS 10k)
+
+Light speed block. Race Apr 25 — Slam complete.
 
 ---
 

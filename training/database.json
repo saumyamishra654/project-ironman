@@ -1,4 +1,18 @@
 {
+  "plan": {
+    "start": "2026-05-25",
+    "total_weeks": 48,
+    "updated": "2026-06-05"
+  },
+  "milestones": [
+    { "date": "2026-06-15", "label": "Job starts", "week": 4 },
+    { "date": "2026-07-13", "label": "5k Time Trial — reassess paces", "week": 8 },
+    { "date": "2026-08-17", "label": "3rd run added, schedule shifts", "week": 13 },
+    { "date": "2026-09-14", "label": "HM peak phase begins", "week": 17 },
+    { "date": "2026-11-30", "label": "Peak week — 32 km long run", "week": 28 },
+    { "date": "2026-12-31", "label": "Projected 100 kg bench (volume)", "week": 29 },
+    { "date": "2027-02-08", "label": "Bench 1RM test", "week": 38 }
+  ],
   "athlete": {
     "name": "Saumya Mishra",
     "weight_kg": 80,
@@ -42,7 +56,7 @@
     { "id": 6, "name": "Mumbai Taper + Race", "weeks": [32, 34], "dates": ["2026-12-28", "2027-01-17"] },
     { "id": 7, "name": "Bench Peak", "weeks": [35, 38], "dates": ["2027-01-18", "2027-02-14"] },
     { "id": 8, "name": "10k Sharpen", "weeks": [39, 48], "dates": ["2027-02-15", "2027-04-25"] },
-    { "id": 9, "name": "Goa 70.3 Build", "weeks": [49, null], "dates": ["2027-05", "2027-11"] }
+    { "id": 9, "name": "Goa 70.3 Build", "weeks": [49, 99], "dates": ["2027-05", "2027-11"], "status": "tbd" }
   ],
   "weeks": [
     {

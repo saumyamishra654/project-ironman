@@ -33,6 +33,40 @@
     return "See plan";
   }
 
+  function getSwimProg(week, data) {
+    if (!data || !data.swim_progression) return null;
+    for (var i = 0; i < data.swim_progression.length; i++) {
+      var p = data.swim_progression[i];
+      if (week >= p.weeks[0] && week <= p.weeks[1]) return p;
+    }
+    return null;
+  }
+
+  function getSwimEnduranceInfo(week, data) {
+    var p = getSwimProg(week, data);
+    return p ? "~" + p.endurance_total_m + " m" : "~1800 m";
+  }
+
+  function getSwimEnduranceMain(week, data) {
+    var p = getSwimProg(week, data);
+    return p ? p.endurance_main + " \u2014 RPE 5\u20136" : "3\u00D7300 m steady \u2014 RPE 5\u20136";
+  }
+
+  function getSwimTechTotal(week, data) {
+    var p = getSwimProg(week, data);
+    return p ? p.tech_speed_total_m : 1500;
+  }
+
+  function getSwimTechAlt(week) {
+    var isBenchPeak = week >= 35 && week <= 38;
+    return isBenchPeak ? "8\u00D750 m alternating easy/fast \u2014 10 sec rest" : "12\u00D750 m alternating easy/fast \u2014 10 sec rest";
+  }
+
+  function getSwimTechThreshold(week) {
+    var isBenchPeak = week >= 35 && week <= 38;
+    return isBenchPeak ? "2\u00D7100 m easy" : "4\u00D7100 m @ RPE 7 \u2014 15\u201320 sec rest";
+  }
+
   function resolveWorkout(workoutId, cw, currentWeek, data) {
     var bench = cw ? cw.bench : {};
     var run = cw ? cw.running : {};
@@ -132,13 +166,45 @@
           { name: "Rear Delt Flyes", sets: "2\u00D715" }
         ]
       },
+      "swim-endurance": {
+        title: "Swim 1 \u2014 Endurance (Mon PM)",
+        meta: "Week " + currentWeek + " \u00B7 " + getSwimEnduranceInfo(currentWeek, data),
+        exercises: [
+          { name: "Warm-up", sets: "300 m easy freestyle" },
+          { name: "Build", sets: "4\u00D750 m (each slightly faster) \u2014 15 sec rest" },
+          { name: "Main set", sets: getSwimEnduranceMain(currentWeek, data) },
+          { name: "Moderate", sets: "6\u00D750 m moderate \u2014 15 sec rest" },
+          { name: "Cool-down", sets: "200 m easy backstroke" }
+        ]
+      },
+      "swim-tech-speed": {
+        title: "Swim 2 \u2014 Technique + Speed (Thu PM)",
+        meta: "Week " + currentWeek + " \u00B7 ~" + getSwimTechTotal(currentWeek, data) + " m",
+        exercises: [
+          { name: "Warm-up", sets: "300 m easy freestyle" },
+          { name: "Drill", sets: "4\u00D750 m (catch-up, fingertip drag, or choice)" },
+          { name: "Alternating", sets: getSwimTechAlt(currentWeek) },
+          { name: "Threshold", sets: getSwimTechThreshold(currentWeek) },
+          { name: "Cool-down", sets: "200 m easy backstroke" }
+        ]
+      },
       "swim": {
         title: "Swim", meta: "Week " + currentWeek + " \u00B7 30\u201340 min in water",
         exercises: [
-          { name: "Warm-up", sets: "200 m easy freestyle" },
-          { name: "Main set", sets: "1500\u20132000 m easy Z2 pace" },
-          { name: "Mix strokes", sets: "Optional \u2014 feel and base, not structured" },
-          { name: "Cool-down", sets: "100\u2013200 m easy backstroke" }
+          { name: "Warm-up", sets: "300 m easy freestyle" },
+          { name: "Main set", sets: "See Swim 1 or Swim 2" },
+          { name: "Cool-down", sets: "200 m easy backstroke" }
+        ]
+      },
+      "row-z2": {
+        title: "Row Z2 (after Tue Pull A)", meta: "Week " + currentWeek + " \u00B7 Weeks 1\u20138 only",
+        exercises: [
+          { name: "When", sets: "After Pull A \u2014 last thing in the session" },
+          { name: "Easy warm-up", sets: "5 min easy rowing" },
+          { name: "Main", sets: "10\u201315 min steady Z2 (~18\u201322 spm)" },
+          { name: "Intensity", sets: "RPE 5\u20136, fully conversational" },
+          { name: "Cool-down", sets: "2 min easy" },
+          { name: "Drop rule", sets: "First thing to cut if fatigued" }
         ]
       },
       "cycle-z2": {
@@ -270,20 +336,34 @@
   }
 
   function renderSchedule(currentWeek, el) {
+    var noBike = currentWeek <= 8;
     var isPost12 = currentWeek > 12;
     var isBenchPeak = currentWeek >= 35 && currentWeek <= 38;
     var is10kSharpen = currentWeek >= 39;
     var schedBody = document.getElementById("schedule-body");
-    schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Swim 1500\u20132000 m", "swim", "swim", el));
-    schedBody.appendChild(buildScheduleRow("Tue", "Pull A", "pull", "pull-a", "Z2 Cycle 45 min", "cycle", "cycle-z2", el));
+
+    schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", el));
+
+    if (noBike) {
+      schedBody.appendChild(buildScheduleRow("Tue", "Pull A + Row Z2", "pull", "pull-a", "Rest", "rest", "row-z2", el));
+    } else {
+      schedBody.appendChild(buildScheduleRow("Tue", "Pull A", "pull", "pull-a", "Z2 Cycle 45 min", "cycle", "cycle-z2", el));
+    }
+
     var wedPm = isBenchPeak ? "Easy Jog (optional)" : (is10kSharpen ? "Speed Run" : "Quality Run");
     schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", wedPm, "run", "quality-run", el));
-    schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", isPost12 ? "upper-b" : "push-b", "Swim 1500\u20132000 m", "swim", "swim", el));
+
+    schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", isPost12 ? "upper-b" : "push-b", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
+
     var friAm = is10kSharpen ? "Legs (light)" : (isPost12 ? "Legs + Arms" : "Legs");
     schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", isPost12 ? "legs-arms" : "legs", "Rest", "rest", "rest", el));
+
     if (isBenchPeak) {
       schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sun", "Easy Jog or Rest", "run", "easy-run", "Full Rest", "rest", "rest", el));
+    } else if (noBike) {
+      schedBody.appendChild(buildScheduleRow("Sat", "Pull B", "pull", "pull-b", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
     } else {
       schedBody.appendChild(buildScheduleRow("Sat", isPost12 ? "Easy Run 4\u20135 km" : "Pull B", isPost12 ? "run" : "pull", isPost12 ? "easy-run" : "pull-b", "Threshold Cycle", "cycle", "threshold-cycle", el));
       schedBody.appendChild(buildScheduleRow("Sun", is10kSharpen ? "Easy Run 8\u201312 km" : "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));

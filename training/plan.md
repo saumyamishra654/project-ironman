@@ -2,7 +2,7 @@
 
 **Athlete:** Saumya Mishra · 80 kg · 6' · Age: ~22
 **Plan duration:** 48 weeks (May 25, 2026 – Apr 25, 2027) + Goa 70.3 build TBD
-**Created:** May 28, 2026 · **Updated:** Jun 5, 2026
+**Created:** May 28, 2026 · **Updated:** Jun 8, 2026
 
 ---
 
@@ -62,14 +62,30 @@
 
 ## Weekly Schedule
 
-### Weeks 1–12: 5 lifting days, 2 runs
+### Weeks 1–8: 5 lifting days, 2 runs, no bike
+
+No bike available. Row Z2 tacked onto Tuesday Pull A. Saturday PM is rest (5 cardio sessions total).
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Mon | Push A — Bench Focus | Swim 1 — Endurance (~1800 m) | Hip + Hamstring |
+| Tue | Pull A + Row Z2 (15–20 min) | Rest | Hip + Hamstring |
+| Wed | Rest | Quality Run | Hip + Hamstring |
+| Thu | Push B — Explosive Push | Swim 2 — Technique + Speed (~1500 m) | Hip + Hamstring |
+| Fri | Legs | Rest | Hip + Hamstring |
+| Sat | Pull B | Rest | Hip + Hamstring |
+| Sun | Long Run | Full Rest | Hip + Hamstring |
+
+### Weeks 9–12: 5 lifting days, 2 runs, bike restored
+
+Bike available from week 9. Two bike sessions resume (6 cardio sessions).
+
+| Day | AM (before work) | PM (after work) | Nightly |
+|-----|-------------------|-----------------|---------|
+| Mon | Push A — Bench Focus | Swim 1 — Endurance (~1800 m) | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Quality Run | Hip + Hamstring |
-| Thu | Push B — Explosive Push | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Thu | Push B — Explosive Push | Swim 2 — Technique + Speed (~1500 m) | Hip + Hamstring |
 | Fri | Legs | Rest | Hip + Hamstring |
 | Sat | Pull B | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
@@ -80,24 +96,24 @@ Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Mon | Push A — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Quality Run | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
 | Fri | Legs + Arms | Rest | Hip + Hamstring |
 | Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
 ### Weeks 35–38: 4 lifting days, minimal running (Bench Peak)
 
-Same lifting template as weeks 13+. Running drops to easy jogs only — bench is the priority.
+Same lifting template as weeks 13+. Running drops to easy jogs only — bench is the priority. Swim shortened.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Mon | Push A — Bench Focus | Swim 1 — Endurance (shortened) | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Easy Jog (20–30 min, optional) | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed (shortened) | Hip + Hamstring |
 | Fri | Legs + Arms | Rest | Hip + Hamstring |
 | Sat | Rest | Rest | Hip + Hamstring |
 | Sun | Easy Jog or Rest | Full Rest | Hip + Hamstring |
@@ -108,10 +124,10 @@ Friday Legs become lighter (no heavy squats/deadlifts) to keep legs fresh for sp
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Mon | Push A — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Speed Run | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim (1500–2000 m Z2) | Hip + Hamstring |
+| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
 | Fri | Legs (light) | Rest | Hip + Hamstring |
 | Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Easy Run (8–12 km) | Full Rest | Hip + Hamstring |
@@ -411,21 +427,70 @@ No heavy squats or deadlifts — keep legs fresh for Wednesday speed work.
 
 ## Swimming
 
-**Weeks 1–48:** Monday PM + Thursday PM.
-- 1500–2000 m per session, easy Z2 aerobic pace
-- Mix strokes if desired
-- 30–40 min in the water
+**Schedule:** Monday PM (Swim 1 — Endurance) + Thursday PM (Swim 2 — Technique + Speed).
 
-**Warm-up:** 200 m easy freestyle.
-**Cool-down:** 100–200 m easy backstroke.
+Technique is not a bottleneck (state-level background). The goal is structured water conditioning and aerobic base for the Goa 70.3 build.
 
-No structured sets in this block. The goal is water conditioning and aerobic base for the Goa 70.3 build next year. Technique is not a bottleneck (state-level qualification, Olympic-level coaching background).
+### Swim 1 — Endurance (Monday PM)
+
+**Default set (~1800 m):**
+
+| Set | Distance | Pace / Notes |
+|-----|----------|--------------|
+| Warm-up | 300 m easy freestyle | |
+| Build | 4×50 m (each 50 slightly faster) | 15 sec rest |
+| Main | 3×300 m steady | RPE 5–6 · 30 sec rest |
+| Moderate | 6×50 m moderate | RPE 6 · 15 sec rest |
+| Cool-down | 200 m easy backstroke | |
+
+**Progression (main set only):**
+
+| Weeks | Main set | Notes |
+|-------|----------|-------|
+| 1–21 | 3×300 m steady | Default — low end through VDHM |
+| 22–24 | 2×500 m steady (20 sec rest) | Post-VDHM, start building |
+| 25–27 | 1×1000 m continuous + 4×100 m moderate | |
+| 28–29 | 1500–1800 m continuous (occasional) | Longest endurance before race block |
+| 30–34 | Hold 3×300 m or 2×500 m | Race block — don't increase |
+| 35–38 | 2×300 m easy (~1200 m total) | Bench peak — shortened |
+| 39–48 | 3×300 m steady (back to default) | Maintenance through 10k |
+
+### Swim 2 — Technique + Speed (Thursday PM)
+
+**Default set (~1500–1800 m):**
+
+| Set | Distance | Pace / Notes |
+|-----|----------|--------------|
+| Warm-up | 300 m easy freestyle | |
+| Drill | 4×50 m (catch-up, fingertip drag, or choice) | Focus on form |
+| Alternating | 12×50 m alternating easy/fast | 10 sec rest |
+| Threshold | 4×100 m @ RPE 7 | 15–20 sec rest |
+| Cool-down | 200 m easy backstroke | |
+
+**Race weeks / deloads:** cut to 8×50 alternating + 2×100 threshold. Keep drills.
+
+**Bench peak (weeks 35–38):** cut to 8×50 alternating + 2×100 easy (~1200 m total).
 
 ---
 
 ## Cycling
 
-### Tuesday PM — Z2 Cycle
+### Weeks 1–8: No Bike — Row Z2
+
+No bike available. 15–20 min row Z2 tacked onto the end of Tuesday Pull A. Saturday PM is rest.
+
+| Detail | Value |
+|--------|-------|
+| When | After Tuesday Pull A (last thing in the session) |
+| Duration | 5 min easy → 10–15 min steady Z2 → 2 min easy |
+| Intensity | RPE 5–6, ~18–22 spm, conversational |
+| Drop rule | First thing to cut if fatigued |
+
+### Weeks 9–48: Z2 + Threshold Cycle
+
+Bike available from week 9.
+
+#### Tuesday PM — Z2 Cycle
 
 - 45 min, fully conversational, HR Zone 2 (~130–145 bpm)
 - Cadence: 85–95 rpm
@@ -434,14 +499,12 @@ No structured sets in this block. The goal is water conditioning and aerobic bas
 **Warm-up:** 5 min easy spinning.
 **Cool-down:** 5 min easy spinning.
 
-### Saturday PM — Threshold Cycle
+Deload weeks: 30 min Z2 only.
+
+#### Saturday PM — Threshold Cycle
 
 | Weeks | Structure | Detail |
 |-------|-----------|--------|
-| 1–3 | Tempo blocks | 3×8 min RPE 6–7, 3 min easy between |
-| 4 | Z2 only | 45 min easy — deload |
-| 5–7 | Threshold intervals | 4×6 min RPE 7–8, 3 min easy between |
-| 8 | Z2 only | 30 min easy — deload |
 | 9–12 | Hard threshold | 2×15 min RPE 7–8, 5 min easy between |
 | 13–16 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
 | 17 | Z2 only | Deload |
@@ -498,12 +561,16 @@ No static stretching before lifting.
 
 No formal warm-up. Walk 2 min, start jogging.
 
-### Swimming
+### Swimming (both sessions)
 
-**Warm-up:** 200 m easy freestyle.
-**Cool-down:** 100–200 m easy backstroke.
+**Warm-up:** 300 m easy freestyle (included in session total).
+**Cool-down:** 200 m easy backstroke (included in session total).
 
-### Cycling
+### Rowing (weeks 1–8, after Tue Pull A)
+
+**Warm-up:** 5 min easy rowing. **Cool-down:** 2 min easy.
+
+### Cycling (weeks 9+)
 
 **Warm-up:** 5 min easy spinning (low resistance, 85+ rpm).
 **Cool-down:** 5 min easy spinning.
@@ -549,17 +616,18 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 1. **If only one session can happen:** prioritise PM cardio on Wed/Sun (running is primary). All other days, prioritise AM lift.
 2. **Fatigue triage order (cut first → last):**
-   - Tuesday Z2 cycle
-   - Saturday threshold cycle → convert to Z2
+   - Tuesday row (wk 1–8) or Tuesday Z2 cycle (wk 9+)
+   - Saturday threshold cycle → convert to Z2 or skip
    - Lifting accessories (keep main lifts)
    - Saturday easy run
-   - Swimming volume (shorten, don't skip)
+   - Swim volume (shorten main set — drop 6×50 moderate, keep the main block — never skip both swims)
    - **Never cut:** Long run, Quality run, Bench press
-3. **If knees flare:** cut plyometrics first, reduce cycling, keep swimming.
-4. **If bench stalls 3+ weeks:** check sleep and protein. If both solid, add close-grip bench on Friday temporarily.
-5. **If a long run goes badly (bonk, injury scare, RPE 9+):** next week's long run stays same or drops.
-6. **Race week rules:** no quality run in race week. Wednesday = shakeout or rest. Drop all accessories. Keep bench if race is a run.
-7. **Post-Mumbai (weeks 35–36):** easy aerobic only. No running until easy jogging feels easy. No heavy lifting until week 36.
+3. **Swim shorten rule:** drop the last accessory set first (6×50 moderate or 12×50 alternating). If still too much, cut main set by 1 rep (e.g. 3×300 → 2×300). Keep warm-up and cool-down.
+4. **If knees flare:** cut plyometrics first, reduce cycling, keep swimming.
+5. **If bench stalls 3+ weeks:** check sleep and protein. If both solid, add close-grip bench on Friday temporarily.
+6. **If a long run goes badly (bonk, injury scare, RPE 9+):** next week's long run stays same or drops.
+7. **Race week rules:** no quality run in race week. Wednesday = shakeout or rest. Drop all accessories. Keep bench if race is a run.
+8. **Post-Mumbai (weeks 35–36):** easy aerobic only. No running until easy jogging feels easy. No heavy lifting until week 36.
 
 ---
 
@@ -604,16 +672,71 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 ---
 
+## Fatigue & Volume Management
+
+### Session counts by phase
+
+| Phase | Weeks | Lift | Run | Swim | Bike/Row | Total cardio |
+|-------|-------|------|-----|------|----------|-------------|
+| Pre-Job / Job Adj (no bike) | 1–8 | 5 | 2 | 2 | 1 row | **5** |
+| Build (bike restored) | 9–12 | 5 | 2 | 2 | 2 bike | **6** |
+| Build → HM → Marathon | 13–34 | 4 | 3 | 2 | 2 bike | **7** |
+| Bench Peak | 35–38 | 4 | 0–2 | 2 (short) | 2 bike (Z2) | **4–6** |
+| 10k Sharpen | 39–48 | 4 | 2–3 | 2 | 2 bike | **6–7** |
+
+### Volume drop triggers
+
+If **overall fatigue > 7/10** or sleep < 6 hrs for 3+ consecutive nights:
+
+1. Drop Tuesday bike/row entirely
+2. Convert Saturday threshold → Z2 or skip
+3. Shorten both swims by 1 main-set rep
+4. If still too much: drop Saturday easy run, keep Wednesday quality + Sunday long
+
+If **fatigue persists 2+ weeks after drops:** pull a full deload week regardless of the plan. Cut all volume by ~40%, keep intensity on bench and one quality run.
+
+### Race week volume
+
+| Race | Run volume | Swim | Bike | Bench |
+|------|-----------|------|------|-------|
+| VDHM (wk 21) | Shakeout Wed + race Sun | Normal | Normal | Normal |
+| Kolkata (wk 30) | Easy Wed + race Sun | Normal | Z2 only | Hold |
+| Mumbai (wk 34) | Shakeout Wed + race Sun | Normal | Z2 only | Skip |
+| TCS 10k (wk 48) | Shakeout Wed + race Sun | Normal | Z2 or skip | Normal |
+
+---
+
 ## Block 2 — Goa 70.3 Build (TBD)
 
 After TCS 10k (Apr 25, 2027), the plan transitions to a dedicated triathlon build targeting Goa 70.3 (~Nov 2027, date TBD).
 
 ### High-Level Direction
 
-- **Swim:** 2–3×/week, build to 2.5–3 km sessions. 1.9 km open water is not a limiter given state-level background.
-- **Bike:** 3×/week — 1 long Z2 (90→150 min), 1 threshold/tempo, 1 easy. Bike volume is the main growth lever. Aim 180–220 km/week by peak.
-- **Run:** 2–3×/week off-the-bike. Long run caps at 14–18 km — not marathon volume.
+- **Swim:** 2–3×/week, evolve endurance to 2000 m continuous, add open water when available. 1.9 km is not a limiter given state-level background.
+- **Bike:** 3×/week — 1 long Z2 (90→150 min), 1 threshold/tempo, 1 easy/brick. Bike volume is the **main growth lever**. Aim 150–200 km/week by peak.
+- **Run:** 2–3×/week off-the-bike. Long run caps at 14–18 km. Brick runs (bike → 20–30 min run) are more specific than standalone long runs.
 - **Lift:** 3 days (Mon push, Wed pull, Fri legs). Bench maintenance only — no second peak until after Goa.
 - **Target splits:** Swim ~35–40 min · Bike ~2:45–3:00 · Run ~2:00–2:10 · Total ~5:30–5:55.
+
+### Rough phase outline
+
+| Period | Dates | Focus |
+|--------|-------|-------|
+| Recovery + base | May 2027 | Easy everything, assess post-Slam fitness |
+| Tri base build | Jun–Jul 2027 | Bike volume ramps, swim adds 3rd session, run stays easy |
+| Tri main build | Aug–Sep 2027 | Peak bike volume, brick long runs, threshold swim |
+| Tri peak | Oct 2027 | Highest brick volume, race simulations |
+| Tri taper | Late Oct – race day | Sharp volume cut, intensity holds |
+| Race | ~Nov 2027 | Goa 70.3 |
+
+### Volume progression (approximate)
+
+| Phase | Swim km/wk | Bike km/wk | Run km/wk | Lift days |
+|-------|-----------|-----------|----------|-----------|
+| Recovery | 3–4 | 40–60 | 10–15 | 3 |
+| Base build | 5–6 | 80–120 | 15–25 | 3 |
+| Main build | 6–8 | 120–180 | 20–30 | 3 |
+| Peak | 6–8 | 150–200 | 25–35 | 2–3 |
+| Taper | 3–4 | 60–80 | 10–15 | 2 |
 
 Detailed week-by-week plan will be written after the Slam is complete and current fitness is reassessed.

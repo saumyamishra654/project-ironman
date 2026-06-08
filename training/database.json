@@ -2,7 +2,7 @@
   "plan": {
     "start": "2026-05-25",
     "total_weeks": 48,
-    "updated": "2026-06-05"
+    "updated": "2026-06-08"
   },
   "milestones": [
     { "date": "2026-06-15", "label": "Job starts", "week": 4 },
@@ -349,10 +349,7 @@
     }
   ],
   "cycling_threshold_progression": [
-    { "weeks": [1, 3], "structure": "3x8 min RPE 6-7, 3 min easy between" },
-    { "weeks": [4, 4], "structure": "Z2 only 45 min — deload" },
-    { "weeks": [5, 7], "structure": "4x6 min RPE 7-8, 3 min easy between" },
-    { "weeks": [8, 8], "structure": "Z2 only 30 min — deload" },
+    { "weeks": [1, 8], "structure": "No bike — row Z2 after Tue Pull A" },
     { "weeks": [9, 12], "structure": "2x15 min RPE 7-8, 5 min easy between" },
     { "weeks": [13, 16], "structure": "2x20 min RPE 7, 5 min easy between" },
     { "weeks": [17, 17], "structure": "Z2 only — deload" },
@@ -367,6 +364,15 @@
     { "weeks": [39, 42], "structure": "3x8 min RPE 6-7 — rebuilding" },
     { "weeks": [43, 46], "structure": "2x15 min RPE 7-8, 5 min easy between" },
     { "weeks": [47, 48], "structure": "Z2 or easy — 10k taper" }
+  ],
+  "swim_progression": [
+    { "weeks": [1, 21], "endurance_main": "3x300 steady", "endurance_total_m": 1800, "tech_speed_total_m": 1500 },
+    { "weeks": [22, 24], "endurance_main": "2x500 steady", "endurance_total_m": 2000, "tech_speed_total_m": 1500 },
+    { "weeks": [25, 27], "endurance_main": "1x1000 + 4x100", "endurance_total_m": 2200, "tech_speed_total_m": 1500 },
+    { "weeks": [28, 29], "endurance_main": "1500-1800 continuous", "endurance_total_m": 2400, "tech_speed_total_m": 1500 },
+    { "weeks": [30, 34], "endurance_main": "3x300 or 2x500 (hold)", "endurance_total_m": 1800, "tech_speed_total_m": 1500 },
+    { "weeks": [35, 38], "endurance_main": "2x300 easy (shortened)", "endurance_total_m": 1200, "tech_speed_total_m": 1200 },
+    { "weeks": [39, 48], "endurance_main": "3x300 steady (default)", "endurance_total_m": 1800, "tech_speed_total_m": 1500 }
   ],
   "running_zones": {
     "as_of": "2026-05-28",

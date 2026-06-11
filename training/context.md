@@ -92,6 +92,8 @@ List any deviations from the plan here:
 |------|----------|-----------|
 | 2026-05-28 | Plan created | 31-week hybrid plan targeting marathon Nov 29 + bench 100 kg Dec |
 | 2026-06-05 | Plan restructured for Procam Slam | Replaced standalone marathon with 4-race Slam cycle (VDHM → Kolkata → Mumbai → TCS 10k). Bench 1RM moved to ~Feb 2027 (after Mumbai). Goa 70.3 ~Nov 2027 becomes the A-race. Plan extended to 48 weeks through Apr 2027; Goa build TBD. |
+| 2026-06-11 | Plan revised after expert review | Easy/long zone slowed to 8:00–8:45 /km (May 27 run showed old band was RPE 8, not easy). Tempo corrected to 6:45–7:00 (old band was faster than 10k pace); 1 km reps to 6:00–6:20. Peak long run capped at 28 km / ~3:30 (was 32 km); Sat easy runs grow to 4–8 km to backfill volume. Week 13 long run staged at 18 km. Friday legs becomes maintenance template (no trap bar DL) during marathon block (wk 22–34). Heavy singles added wk 36–37 before 1RM test. Fueling protocol added (45–60 g carbs/hr on long runs ≥22 km from wk 23; 60 g/hr at Mumbai). Monthly full rest Wednesday added. |
+| 2026-06-11 | Peak long-run time cap extended | Weeks 27–28 cap raised from 3:30 to 3:45 (28 km or 3:45, whichever first) — more time-on-feet for Mumbai prep without adding hybrid load. At faster easy pace by Nov, may reach 28–30 km before the clock. |
 
 ---
 

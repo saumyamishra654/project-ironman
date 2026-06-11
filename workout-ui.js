@@ -154,6 +154,21 @@
           { name: "Hammer Curl / Pushdowns", sets: "2\u00D710\u201315 each (superset)" }
         ]
       },
+      "legs-maintenance": {
+        title: "Legs Maintenance \u2014 Marathon Block", meta: "Week " + currentWeek + " \u00B7 ~40\u201345 min \u00B7 no trap bar deadlift",
+        exercises: [
+          { name: "Box Jumps", sets: "2\u00D73 (step down, full reset)" },
+          { name: "Front Squat", sets: "2\u00D75 (moderate \u2014 2\u20133 reps in reserve)" },
+          { name: "Bulgarian Split Squat", sets: "2\u00D78 each leg" },
+          { name: "Step-Ups", sets: "2\u00D710 each leg (slow eccentric)" },
+          { name: "Hamstring Curl", sets: "2\u00D710\u201312" },
+          { name: "Seated Calf Raise", sets: "2\u00D715" },
+          { name: "Tibialis Raise", sets: "2\u00D715\u201320" },
+          { name: "Copenhagen Plank", sets: "2 sets" },
+          { name: "Barbell Curl / OH Extension", sets: "2\u00D710\u201312 each (superset)" },
+          { name: "Hammer Curl / Pushdowns", sets: "2\u00D710\u201315 each (superset)" }
+        ]
+      },
       "pull-b": {
         title: "Pull B", meta: "Week " + currentWeek,
         exercises: [
@@ -231,7 +246,7 @@
         meta: "Week " + currentWeek + (run.wed_km ? " \u00B7 " + run.wed_km + " km" : ""),
         exercises: [
           { name: "Warm-up: walk", sets: "5 min" },
-          { name: "Warm-up: easy jog", sets: "5 min @ 8:00+ /km" },
+          { name: "Warm-up: easy jog", sets: "5 min @ 8:45+ /km" },
           { name: "Dynamic stretches", sets: "Leg swings, hip circles, lunges, high knees, butt kicks" },
           { name: "Easy jog to start", sets: "2\u20133 min" },
           { name: "Session", sets: formatWedRun(run.wed_type) },
@@ -258,14 +273,16 @@
         title: "Long Run (Sun AM)", meta: "Week " + currentWeek,
         exercises: [
           { name: "Warm-up: walk", sets: "5 min" },
-          { name: "First 1\u20132 km", sets: "8:00+ /km \u2014 this IS the warm-up" },
+          { name: "First 1\u20132 km", sets: "8:45+ /km \u2014 this IS the warm-up" },
           { name: "Settle into pace", sets: "By km 2\u20133" },
           { name: "Distance", sets: (run.sun_long_km || "\u2014") + " km" },
-          { name: "Pace", sets: data.running_zones ? data.running_zones.easy_long : "7:15\u20138:00 /km" },
+          { name: "Pace", sets: data.running_zones ? data.running_zones.easy_long : "8:00\u20138:45 /km" },
           { name: "Cool-down", sets: "Walk until HR < 120 bpm" },
           { name: "Stretch", sets: "Hip flexors, quads, calves, hamstrings \u2014 30\u201345 sec each" },
           { name: "Weekly total", sets: (run.total_km != null ? run.total_km : "\u2014") + " km running" }
-        ]
+        ].concat(currentWeek >= 23 && run.sun_long_km >= 22 ? [
+          { name: "Fueling rehearsal", sets: "45\u201360 g carbs/hr \u2014 first at ~40 min, then every 25\u201330 min \u00B7 400\u2013700 ml fluid/hr (+ electrolytes > 2 hrs)" }
+        ] : [])
       },
       "mobility": {
         title: "Nightly Hip + Hamstring Routine", meta: "Every evening \u00B7 10\u201315 min \u00B7 no equipment",
@@ -355,8 +372,10 @@
 
     schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", isPost12 ? "upper-b" : "push-b", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
 
-    var friAm = is10kSharpen ? "Legs (light)" : (isPost12 ? "Legs + Arms" : "Legs");
-    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", isPost12 ? "legs-arms" : "legs", "Rest", "rest", "rest", el));
+    var isLegsMaintenance = currentWeek >= 22 && currentWeek <= 34;
+    var friAm = is10kSharpen ? "Legs (light)" : (isLegsMaintenance ? "Legs Maintenance" : (isPost12 ? "Legs + Arms" : "Legs"));
+    var friWorkout = isLegsMaintenance ? "legs-maintenance" : (isPost12 ? "legs-arms" : "legs");
+    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", friWorkout, "Rest", "rest", "rest", el));
 
     if (isBenchPeak) {
       schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));

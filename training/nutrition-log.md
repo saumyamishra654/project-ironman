@@ -142,7 +142,7 @@ Bench pushing toward projected 100. Long runs building — eat at or above maint
 
 ## Week 28 — Nov 30 – Dec 6 (Peak week)
 
-Peak long run 32 km. Highest running volume — eat more, do not cut calories.
+Peak long run 28 km (time-capped ~3:45). Highest running volume — eat more, do not cut calories. Long run is a fueling rehearsal: 45–60 g carbs/hr.
 
 ---
 

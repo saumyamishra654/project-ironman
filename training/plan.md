@@ -2,7 +2,7 @@
 
 **Athlete:** Saumya Mishra · 80 kg · 6' · Age: ~22
 **Plan duration:** 48 weeks (May 25, 2026 – Apr 25, 2027) + Goa 70.3 build TBD
-**Created:** May 28, 2026 · **Updated:** Jun 8, 2026
+**Created:** May 28, 2026 · **Updated:** Jun 11, 2026
 
 ---
 
@@ -51,7 +51,7 @@
 | 1 — Job Adjustment | 4–8 | Jun 15 – Jul 19 | Adapt to work + training, hold gains |
 | 2 — Build | 9–16 | Jul 20 – Sep 13 | Volume climbs, 3rd run added week 13 |
 | 3 — HM Peak | 17–21 | Sep 14 – Oct 18 | HM-specific sharpening → race VDHM Oct 18 |
-| 4 — Marathon Durability | 22–29 | Oct 19 – Dec 13 | Long runs 25→32 km, bench → projected 100 |
+| 4 — Marathon Durability | 22–29 | Oct 19 – Dec 13 | Long runs 24→28 km (time-capped), bench → projected 100 |
 | 5 — Kolkata + Hold | 30–31 | Dec 14 – Dec 27 | Race Kolkata 25k Dec 20, bench maintains |
 | 6 — Mumbai Taper + Race | 32–34 | Dec 28 – Jan 17 | Short taper → race Mumbai Marathon Jan 17 |
 | 7 — Bench Peak | 35–38 | Jan 18 – Feb 14 | Recovery → ramp → 1RM test |
@@ -101,8 +101,10 @@ Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
 | Wed | Rest | Quality Run | Hip + Hamstring |
 | Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
 | Fri | Legs + Arms | Rest | Hip + Hamstring |
-| Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
+| Sat | Easy Run (4–8 km, per weekly table) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
+
+Weeks 22–34: Friday switches to the Legs Maintenance (Marathon block) template — see lifting templates.
 
 ### Weeks 35–38: 4 lifting days, minimal running (Bench Peak)
 
@@ -144,14 +146,14 @@ Based on: 7 km at 7:24 /km RPE 8, 10k 1:07. Reassess after the week 8 time trial
 
 | Zone | Pace | Use |
 |------|------|-----|
-| Easy / Long | 7:15–8:00 /km | Saturday easy runs, Sunday long runs |
-| HM Race Pace | 6:30–6:50 /km | Phase 3 Wednesday HM-pace sessions |
-| Tempo | 6:10–6:30 /km | Wednesday tempo sessions |
+| Easy / Long | 8:00–8:45 /km | Saturday easy runs, Sunday long runs — conversational, HR-capped (~below 150 bpm); if you can't speak in sentences, slow down |
+| HM Race Pace | 6:40–7:00 /km now → 6:30–6:50 target by Oct | Phase 3 Wednesday HM-pace sessions |
+| Tempo | 6:45–7:00 /km | Wednesday tempo sessions — ~current 10k effort sustained — true threshold |
 | 400 m intervals | 5:30–5:50 /km | Wednesday interval sessions |
-| 1 km intervals | 5:40–6:00 /km | Build phase interval sessions |
+| 1 km intervals | 6:00–6:20 /km | Build phase interval sessions |
 | 10k Race Pace | TBD (reassess post-Mumbai) | Phase 8 Wednesday race-pace sessions |
 
-Paces will improve over the block. Reassess zones after the week 8 TT, after VDHM, and after Mumbai.
+Paces will improve over the block. Reassess zones after the week 8 TT, after VDHM, and after Mumbai. These zones are deliberately conservative — the May 27 run (7:24/km at RPE 8) shows the previous easy band was too fast.
 
 ---
 
@@ -171,23 +173,23 @@ Paces will improve over the block. Reassess zones after the week 8 TT, after VDH
 | 10 | 2 | Intervals 8×400 | 8 | — | 17 | **25** | |
 | 11 | 2 | Easy | 7 | — | 18 | **25** | |
 | 12 | 2 | Tempo | 5 | — | 10 | **15** | DELOAD |
-| 13 | 2 | Intervals 8×400 | 8 | 4 | 20 | **32** | 3rd run starts |
-| 14 | 2 | Tempo | 8 | 5 | 21 | **34** | Half-marathon distance |
-| 15 | 2 | Easy | 7 | 5 | 22 | **34** | |
-| 16 | 2 | Intervals 5×1k | 9 | 5 | 23 | **37** | |
+| 13 | 2 | Intervals 8×400 | 8 | 4 | 18 | **30** | 3rd run starts — long run held at 18 to stage the jump |
+| 14 | 2 | Tempo | 8 | 5 | 20 | **33** | |
+| 15 | 2 | Easy | 7 | 5 | 21 | **33** | Half-marathon distance |
+| 16 | 2 | Intervals 5×1k | 9 | 6 | 22 | **37** | |
 | 17 | 3 | Tempo | 5 | — | 14 | **19** | DELOAD |
 | 18 | 3 | HM Pace | 8 | 5 | 21 | **34** | HM race-pace session |
 | 19 | 3 | Intervals 5×1k | 8 | 5 | 18 | **31** | |
 | 20 | 3 | HM Pace | 6 | 4 | 14 | **24** | HM taper begins |
 | 21 | 3 | Shakeout | 4 | — | RACE 21.1 | — | **RACE — VDHM Oct 18** |
 | 22 | 4 | Easy | 5 | — | 10 | **15** | Post-VDHM recovery |
-| 23 | 4 | Tempo | 8 | 5 | 25 | **38** | Resume building |
-| 24 | 4 | Intervals 5×1k | 8 | 5 | 27 | **40** | |
-| 25 | 4 | Easy | 8 | 5 | 29 | **42** | |
+| 23 | 4 | Tempo | 8 | 6 | 24 | **38** | Resume building — fueling rehearsal starts (see Fueling) |
+| 24 | 4 | Intervals 5×1k | 8 | 7 | 26 | **41** | |
+| 25 | 4 | Easy | 8 | 7 | 27 | **42** | |
 | 26 | 4 | Tempo | 5 | — | 14 | **19** | DELOAD |
-| 27 | 4 | Intervals | 8 | 5 | 30 | **43** | |
-| 28 | 4 | Tempo | 8 | 5 | 32 | **45** | PEAK WEEK — peak long run |
-| 29 | 4 | Easy | 7 | 4 | 22 | **33** | Step-back |
+| 27 | 4 | Intervals | 8 | 7 | 28 | **43** | Long run: 28 km or 3:45, whichever comes first |
+| 28 | 4 | Tempo | 9 | 8 | 28 | **45** | PEAK WEEK — 28 km or 3:45, whichever comes first |
+| 29 | 4 | Easy | 7 | 5 | 20 | **32** | Step-back |
 | 30 | 5 | Easy | 4 | — | RACE 25 | — | **RACE — Kolkata 25k Dec 20** |
 | 31 | 5 | Easy | 5 | — | 8 | **13** | Post-Kolkata recovery |
 | 32 | 6 | Tempo | 6 | 4 | 16 | **26** | Resume |
@@ -208,18 +210,18 @@ Paces will improve over the block. Reassess zones after the week 8 TT, after VDH
 | 47 | 8 | Easy | 4 | — | 6 | **10** | Taper |
 | 48 | 8 | Shakeout | 3 | — | RACE 10 | — | **RACE — TCS 10k BLR Apr 25** |
 
-**Peak long run:** 32 km (week 28). **Peak weekly volume:** 45 km (week 28).
+**Peak long run:** 28 km or 3:45, whichever comes first (weeks 27–28 only) — at 8:00–8:45 /km easy, 3:45 is ~26–29 km; if fitness improves and easy pace drops toward 8:00/km, you may reach 28–30 km before the clock. Distance in the table is a planning target, not a mandate. **Peak weekly volume:** 45 km (week 28). Kolkata 25k (week 30) acts as a third supported long effort. Long-run share of weekly volume stays high (~60%) because of the 3-run structure — mitigated by the time cap and strictly easy pacing.
 
 ### Wednesday Session Details
 
 | Type | Target |
 |------|--------|
 | 400 m repeats | 5:30–5:50 /km pace · 90 sec jog recovery |
-| Tempo blocks | 6:10–6:30 /km sustained |
-| 1 km repeats | 5:40–6:00 per rep · 2 min jog recovery |
+| Tempo blocks | 6:45–7:00 /km sustained |
+| 1 km repeats | 6:00–6:20 per rep · 2 min jog recovery |
 | HM Pace | 6:30–6:50 /km sustained · 3–5 km at goal HM effort |
 | 10k Pace | TBD (reassess post-Mumbai) · 3–4 km at goal 10k effort |
-| Easy | 7:15–8:00 /km throughout |
+| Easy | 8:00–8:45 /km throughout |
 | Time trial | All-out 5k — use for pace recalibration |
 
 ---
@@ -266,8 +268,8 @@ Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
 | 33 | 6 | — | 85 kg | 2×3 | Minimal |
 | 34 | 6 | — | — | — | Race week — skip bench |
 | 35 | 7 | — | 72.5 kg | 2×5 | Recovery |
-| 36 | 7 | 60 kg | 82.5 kg | 3×5 | Ramp |
-| 37 | 7 | 65 kg | 90 kg | 3×3 | Peak |
+| 36 | 7 | 60 kg | 82.5 kg | 3×5 | Ramp + 1 heavy single @ 87.5–90 kg (RPE 7–8) after main sets |
+| 37 | 7 | 65 kg | 90 kg + single 92.5–95 | 3×3 | Peak — work to single @ 92.5–95 kg (RPE 8), then 90 kg 3×2–3 |
 | 38 | 7 | — | **1RM TEST** | — | **Target: 100–105 kg** |
 | 39 | 8 | — | 72.5 kg | 2×5 | Post-test recovery |
 | 40 | 8 | 57.5 kg | 80 kg | 3×5 | Maintenance |
@@ -281,6 +283,8 @@ Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
 | 48 | 8 | 60 kg | 82.5 kg | 3×5 | Race week — bench normal |
 
 **Overload rule:** add 2.5 kg only when all prescribed sets and reps complete and the last rep of the last set does not visibly slow. Miss reps → repeat the weight. Do not chase load.
+
+**Peak singles rule:** weeks 36–37 include one heavy single (RPE 7–8) so the 1RM test is not the first near-max exposure in months. Never grind these singles.
 
 ---
 
@@ -377,7 +381,7 @@ No formal cool-down needed.
 
 ---
 
-### Friday AM — Legs + Arms (Weeks 13–38)
+### Friday AM — Legs + Arms (Weeks 13–21 & 35–38)
 
 Same leg work as above, plus arm supersets at the end:
 
@@ -387,6 +391,26 @@ Same leg work as above, plus arm supersets at the end:
 | 2 | Hammer Curl — 2×10–12 | Tricep Pushdowns — 2×12–15 |
 
 Supersets: no rest between A and B, 60–90 sec rest between pairs. Total session: ~55 min.
+
+---
+
+### Friday AM — Legs Maintenance (Weeks 22–34, Marathon Block)
+
+Heavy bilateral hinging is dropped while long-run volume peaks — the long run is the leg stimulus. Keep moving well, stop accumulating axial fatigue.
+
+| Block | Exercise | Sets × Reps |
+|-------|----------|-------------|
+| Power | Box Jumps | 2×3 (step down, full reset) |
+| Squat | Front Squat | 2×5 (moderate — leave 2–3 reps in reserve) |
+| Unilateral | Bulgarian Split Squat | 2×8 each leg |
+| Unilateral | Step-Ups | 2×10 each leg (slow eccentric) |
+| Accessory | Hamstring Curl | 2×10–12 |
+| Lower Leg | Seated Calf Raise | 2×15 |
+| Lower Leg | Tibialis Raise | 2×15–20 |
+| Stability | Copenhagen Plank | 2 sets |
+| Arms | Same supersets as Legs + Arms | |
+
+No trap bar deadlift in this block. ~40–45 min.
 
 ---
 
@@ -628,6 +652,7 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 6. **If a long run goes badly (bonk, injury scare, RPE 9+):** next week's long run stays same or drops.
 7. **Race week rules:** no quality run in race week. Wednesday = shakeout or rest. Drop all accessories. Keep bench if race is a run.
 8. **Post-Mumbai (weeks 35–36):** easy aerobic only. No running until easy jogging feels easy. No heavy lifting until week 36.
+9. **Monthly full rest day:** once every ~4 weeks (on a non-deload week), make Wednesday a complete day off — no run, no mobility obligations. The schedule has no true rest day otherwise; take one before the plan forces it. This is the one sanctioned exception to rule 2's 'never cut the quality run' — prefer scheduling it on a step-back or post-race week.
 
 ---
 
@@ -635,17 +660,17 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 ### VDHM — Half Marathon (Oct 18, 2026)
 
-**Target:** Honest race effort. Realistic finish: 2:15–2:25 (sub-2:10 stretch).
+**Target:** Honest race effort. Realistic finish: 2:20–2:30 (sub-2:15 stretch) — recalibrate after the week-8 TT.
 
-- Start at ~6:40–6:50 /km for the first 5 km — do not go out fast in Delhi heat/pollution
-- Settle into 6:20–6:40 /km by km 5 if conditions allow
+- Start at ~6:55–7:05 /km for the first 5 km — do not go out fast in Delhi heat/pollution
+- Settle into 6:35–6:50 /km by km 5 if conditions allow
 - Walk aid stations if needed
 - Negative split if possible — save energy for the second half
 - Race week: sleep, hydrate. Nothing done in race week improves fitness.
 
 ### Kolkata 25k (Dec 20, 2026)
 
-**Target:** Controlled Slam checkpoint. Run at 5:30–6:00 /km (well inside 3:45 cut-off).
+**Target:** Controlled Slam checkpoint. Run at 7:00–7:30 /km (well inside 3:45 cut-off — that needs only 9:00 /km).
 
 - Do not race this hard — protect legs for Mumbai (4 weeks later)
 - Treat it as a fast long run at moderate effort (RPE 5–6)
@@ -653,13 +678,14 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 ### Mumbai Marathon (Jan 17, 2027)
 
-**Target:** Completion. Realistic finish: 4:15–4:45.
+**Target:** Completion. Realistic finish: 4:45–5:15 (sub-4:45 stretch) — recalibrate after VDHM.
 
-- Go out at 6:15–6:20 /km for the first half
-- Do not go faster than 6:00 /km in the first 10 km regardless of how good you feel
+- Go out at 6:50–7:05 /km for the first half
+- Do not go faster than 6:40 /km in the first 10 km regardless of how good you feel
 - Walk aid stations if needed
 - If the first half felt controlled, hold pace through 30 km, then survive
 - Race week: sleep, hydrate, carb load 2–3 days before
+- Fuel per the Fueling section — 60 g carbs/hr, first gel by 40 min
 
 ### TCS 10k Bengaluru (Apr 25, 2027)
 
@@ -669,6 +695,24 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 - Go out at goal pace from km 1 — no negative split at 10k
 - Paces TBD based on post-Mumbai fitness reassessment
 - Well inside 1:25 cut-off regardless
+
+---
+
+## Fueling
+
+### Long-Run Fueling Rehearsal (weeks 23+)
+
+Every long run ≥ 22 km is a fueling rehearsal, not just a running session:
+- 45–60 g carbs/hour (gels, dates, banana, sports drink — whatever race day will use)
+- Start fueling at ~40 min, then every 25–30 min
+- 400–700 ml fluid/hour depending on heat; add electrolytes for runs > 2 hrs
+- Practice the exact brands/flavours planned for Mumbai. Gut tolerance is trainable; race day is not the day to experiment.
+
+### Mumbai Marathon Race Fueling
+- Carb load: 8–10 g/kg/day for 2 days before (~640–800 g/day at 80 kg)
+- Race: target 60 g carbs/hr — first gel at 30–40 min, then every 25–30 min
+- Drink at every aid station; don't wait for thirst
+- Nothing new on race day — only rehearsed fuel
 
 ---
 

@@ -18,7 +18,7 @@
   window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
 })();
 </script>
-  <script>document.write('<script src="' + appUrl('workout-ui.js?v=2') + '"><\/script>');</script>
+  <script>document.write('<script src="' + appUrl('workout-ui.js?v=3') + '"><\/script>');</script>
   <style>
     :root {
       --bg: #1a1410;
@@ -387,7 +387,7 @@
 
     goalsEl.appendChild(buildGoalCard("Procam Slam", "Oct 2026 \u2013 Apr 2027", slamDone + "/4 races", Math.min(100, (slamDone / 4) * 100), nextRace ? "Next: " + nextRaceLabel + " (wk " + nextRace.week + ")" : "Complete!", "var(--green)"));
     goalsEl.appendChild(buildGoalCard("Bench 1RM", "Feb 2027", "100\u2013105 kg", Math.min(100, benchProgress), benchLabel, "var(--accent)"));
-    goalsEl.appendChild(buildGoalCard("Peak Long Run", "Week 28", "32 km", Math.min(100, (bestLong / 32) * 100), "Best so far: " + bestLong + " km", "var(--cyan)"));
+    goalsEl.appendChild(buildGoalCard("Peak Long Run", "Week 28", "28 km", Math.min(100, (bestLong / 28) * 100), "Best so far: " + bestLong + " km", "var(--cyan)"));
     goalsEl.appendChild(buildGoalCard("Goa 70.3", "Nov 2027", "~5:30\u20135:55", Math.min(100, Math.max(0, ((currentWeek - 1) / totalWeeks) * 20)), "Tri build after Slam", "var(--amber)"));
 
     // Running chart
@@ -485,7 +485,7 @@
 </script>
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register(appUrl("sw.js?v=2")).catch(function() {});
+  navigator.serviceWorker.register(appUrl("sw.js?v=3")).catch(function() {});
 }
 </script>
 </body>

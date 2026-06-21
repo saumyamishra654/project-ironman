@@ -62,7 +62,7 @@
 
 ## Weekly Schedule
 
-### Weeks 1–8: 5 lifting days, 2 runs, no bike
+### Weeks 1–3: 5 lifting days, 2 runs, no bike
 
 No bike available. Row Z2 tacked onto Tuesday Pull A. Saturday PM is rest (5 cardio sessions total).
 
@@ -76,31 +76,49 @@ No bike available. Row Z2 tacked onto Tuesday Pull A. Saturday PM is rest (5 car
 | Sat | Pull B | Rest | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
-### Weeks 9–12: 5 lifting days, 2 runs, bike restored
+### Weeks 4–8: 5 lifting days, 2 runs, bike + sled available
 
-Bike available from week 9. Two bike sessions resume (6 cardio sessions).
+Bike and pool found (10 min walk). Cycle replaces row. Wednesday becomes a brick (Z2 cycle → quality run). Second Z2 cycle on Tuesday. Sled finisher added to Friday legs. No bike computer — use HR for intensity.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
 | Mon | Push A — Bench Focus | Swim 1 — Endurance (~1800 m) | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
-| Wed | Rest | Quality Run | Hip + Hamstring |
+| Wed | Rest | **Brick: Z2 Cycle (30 min) → Quality Run** | Hip + Hamstring |
 | Thu | Push B — Explosive Push | Swim 2 — Technique + Speed (~1500 m) | Hip + Hamstring |
-| Fri | Legs | Rest | Hip + Hamstring |
+| Fri | Legs + **Sled** (finisher) | Rest | Hip + Hamstring |
+| Sat | Pull B | Rest | Hip + Hamstring |
+| Sun | Long Run | Full Rest | Hip + Hamstring |
+
+**Wednesday Brick protocol:** 5 min easy spin → 25 min Z2 (HR ~130–145 bpm) → dismount → start run within 3–5 min (change shoes, quick drink). The run follows the normal Wednesday session plan for that week. The cycle should feel easy — the run is the quality effort.
+
+**Friday Sled finisher:** 3–4 sets × 20–30 m heavy sled push, 90 sec rest between sets. Concentric-only — minimal DOMS, good conditioning stimulus. Place after all leg work is done.
+
+### Weeks 9–12: 5 lifting days, 2 runs, threshold cycle added
+
+Threshold cycle added on Saturday PM (7 cardio sessions). Wednesday brick and sled continue.
+
+| Day | AM (before work) | PM (after work) | Nightly |
+|-----|-------------------|-----------------|---------|
+| Mon | Push A — Bench Focus | Swim 1 — Endurance (~1800 m) | Hip + Hamstring |
+| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Wed | Rest | **Brick: Z2 Cycle (30 min) → Quality Run** | Hip + Hamstring |
+| Thu | Push B — Explosive Push | Swim 2 — Technique + Speed (~1500 m) | Hip + Hamstring |
+| Fri | Legs + Sled (finisher) | Rest | Hip + Hamstring |
 | Sat | Pull B | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
 ### Weeks 13–34: 4 lifting days, 3 runs
 
-Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run.
+Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run. Wednesday brick continues.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
 | Mon | Push A — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
 | Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
-| Wed | Rest | Quality Run | Hip + Hamstring |
+| Wed | Rest | **Brick: Z2 Cycle (30 min) → Quality Run** | Hip + Hamstring |
 | Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
-| Fri | Legs + Arms | Rest | Hip + Hamstring |
+| Fri | Legs + Arms + Sled | Rest | Hip + Hamstring |
 | Sat | Easy Run (4–8 km, per weekly table) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
@@ -499,7 +517,7 @@ Technique is not a bottleneck (state-level background). The goal is structured w
 
 ## Cycling
 
-### Weeks 1–8: No Bike — Row Z2
+### Weeks 1–3: No Bike — Row Z2
 
 No bike available. 15–20 min row Z2 tacked onto the end of Tuesday Pull A. Saturday PM is rest.
 
@@ -510,9 +528,9 @@ No bike available. 15–20 min row Z2 tacked onto the end of Tuesday Pull A. Sat
 | Intensity | RPE 5–6, ~18–22 spm, conversational |
 | Drop rule | First thing to cut if fatigued |
 
-### Weeks 9–48: Z2 + Threshold Cycle
+### Weeks 4–48: Z2 + Brick + Threshold Cycle
 
-Bike available from week 9.
+Bike available from week 4 (stationary cycle at gym, no power meter — HR-guided only).
 
 #### Tuesday PM — Z2 Cycle
 
@@ -640,7 +658,7 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 1. **If only one session can happen:** prioritise PM cardio on Wed/Sun (running is primary). All other days, prioritise AM lift.
 2. **Fatigue triage order (cut first → last):**
-   - Tuesday row (wk 1–8) or Tuesday Z2 cycle (wk 9+)
+   - Tuesday row (wk 1–3) or Tuesday Z2 cycle (wk 4+)
    - Saturday threshold cycle → convert to Z2 or skip
    - Lifting accessories (keep main lifts)
    - Saturday easy run
@@ -722,8 +740,9 @@ Every long run ≥ 22 km is a fueling rehearsal, not just a running session:
 
 | Phase | Weeks | Lift | Run | Swim | Bike/Row | Total cardio |
 |-------|-------|------|-----|------|----------|-------------|
-| Pre-Job / Job Adj (no bike) | 1–8 | 5 | 2 | 2 | 1 row | **5** |
-| Build (bike restored) | 9–12 | 5 | 2 | 2 | 2 bike | **6** |
+| Pre-Job (no bike) | 1–3 | 5 | 2 | 2 | 1 row | **5** |
+| Job Adj (bike available) | 4–8 | 5 | 2 | 2 | 2 bike (Tue Z2 + Wed brick) | **6** |
+| Build (threshold added) | 9–12 | 5 | 2 | 2 | 3 bike (Tue Z2 + Wed brick + Sat threshold) | **7** |
 | Build → HM → Marathon | 13–34 | 4 | 3 | 2 | 2 bike | **7** |
 | Bench Peak | 35–38 | 4 | 0–2 | 2 (short) | 2 bike (Z2) | **4–6** |
 | 10k Sharpen | 39–48 | 4 | 2–3 | 2 | 2 bike | **6–7** |

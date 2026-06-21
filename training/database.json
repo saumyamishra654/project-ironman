@@ -17,8 +17,9 @@
     "name": "Saumya Mishra",
     "weight_kg": 80,
     "height_cm": 183,
-    "daily_protein_g": "140-180",
-    "caloric_target": "maintenance or above"
+    "daily_protein_g": "165-170",
+    "caloric_target": "2500 kcal (mild deficit, targeting 75 kg)",
+    "weight_target_kg": 75
   },
   "goals": [
     { "id": "slam", "target": "Procam Slam completion (4 races)", "deadline": "2027-04-25", "status": "in_progress" },
@@ -81,7 +82,9 @@
       "week": 4, "phase": 1, "start": "2026-06-15", "deload": true,
       "running": { "wed_type": "tempo", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 7, "total_km": 11 },
       "bench": { "speed_kg": null, "main_kg": 62.5, "sets_reps": "2x5" },
-      "notes": "DELOAD — job starts Jun 15"
+      "cycling": { "tue_z2_min": 45, "wed_brick_min": 30, "sat_threshold": false },
+      "sled": true,
+      "notes": "DELOAD — job starts Jun 15. Bike + pool + sled now available."
     },
     {
       "week": 5, "phase": 1, "start": "2026-06-22", "deload": false,

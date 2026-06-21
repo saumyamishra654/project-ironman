@@ -8,13 +8,15 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 2 |
-| Current phase | 0 — Pre-Job |
-| Week start date | 2026-06-01 |
-| Bodyweight | 80 kg |
-| Sleep quality | — |
+| Current week | 4 |
+| Current phase | 1 — Job Adjustment |
+| Week start date | 2026-06-15 |
+| Bodyweight | ~80 kg |
+| Sleep quality | Poor (job week 1) |
 | Overall fatigue (1–10) | — |
 | Injury / pain notes | None |
+| Weight target | 75 kg over ~3–4 months (mild deficit) |
+| Calorie target | 2500 kcal/day |
 
 ## Race Calendar
 
@@ -64,6 +66,7 @@ This file is the live state document. Update it after every session or at minimu
 | Sessions this week | 0 |
 | Typical distance | — (starting 1500–2000 m) |
 | Notes | Technique is not a bottleneck — state-level background |
+| Pool | Found — 10 min walk from apartment, has gym with stationary cycle |
 
 ## Cycling Status
 
@@ -71,20 +74,28 @@ This file is the live state document. Update it after every session or at minimu
 |-------|-------|
 | Z2 sessions this week | 0 |
 | Threshold sessions this week | 0 |
-| Notes | — |
+| Equipment | Stationary cycle at gym — no power meter, HR-guided only |
+| Notes | Bike available from week 4. Tue Z2 + Wed brick cycle added to schedule. |
 
 ## Nutrition Notes
 
-- Eating at or above maintenance
-- Indian household — exact calorie counting is impractical
-- Protein: 140–180 g/day
+- **Mild deficit:** targeting 2500 kcal/day to cut from ~80 kg → 75 kg over 3–4 months
+- Protein: ~169 g/day (6 eggs + paneer block + Amul HP milk + 1 scoop whey)
+- 3 meals, no snack: breakfast (protein anchor, ~42g), lunch (calorie anchor, ~55g), dinner (light/sleep-friendly, ~72g)
+- HP milk (35g protein) is at dinner, not breakfast
+- Chia seeds: 25 g with water every morning (breakfast)
+- If weight loss stalls after 3 weeks, drop to 2400 kcal. Do not go below 2300.
 - Prioritise protein and carbs around long run days and heavy bench days
+- If bench stalls, re-evaluate deficit before dropping calories further
 
 ## Active Adjustments
 
 List any deviations from the plan here:
 
 - **Week 1 (May 25–31):** Skipped planned Sun May 31 long run (8 km); ran 5 km that day instead. Extra 7 km Wed May 27 (not on plan — week 1 has no Wed quality run).
+- **Weeks 2–3:** Long run missed both weeks. Other training happened (fast mile Monday, 45 min Z2 cycle).
+- **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (10 min walk). Sled available.
+- **From week 4:** Schedule updated — Wed becomes brick (Z2 cycle → quality run), Tue gets Z2 cycle, Fri legs gets sled finisher. Row Z2 dropped. Nutrition shifted to 2500 kcal deficit. Chia seeds added to breakfast.
 
 ## Decision Log
 
@@ -94,6 +105,8 @@ List any deviations from the plan here:
 | 2026-06-05 | Plan restructured for Procam Slam | Replaced standalone marathon with 4-race Slam cycle (VDHM → Kolkata → Mumbai → TCS 10k). Bench 1RM moved to ~Feb 2027 (after Mumbai). Goa 70.3 ~Nov 2027 becomes the A-race. Plan extended to 48 weeks through Apr 2027; Goa build TBD. |
 | 2026-06-11 | Plan revised after expert review | Easy/long zone slowed to 8:00–8:45 /km (May 27 run showed old band was RPE 8, not easy). Tempo corrected to 6:45–7:00 (old band was faster than 10k pace); 1 km reps to 6:00–6:20. Peak long run capped at 28 km / ~3:30 (was 32 km); Sat easy runs grow to 4–8 km to backfill volume. Week 13 long run staged at 18 km. Friday legs becomes maintenance template (no trap bar DL) during marathon block (wk 22–34). Heavy singles added wk 36–37 before 1RM test. Fueling protocol added (45–60 g carbs/hr on long runs ≥22 km from wk 23; 60 g/hr at Mumbai). Monthly full rest Wednesday added. |
 | 2026-06-11 | Peak long-run time cap extended | Weeks 27–28 cap raised from 3:30 to 3:45 (28 km or 3:45, whichever first) — more time-on-feet for Mumbai prep without adding hybrid load. At faster easy pace by Nov, may reach 28–30 km before the clock. |
+| 2026-06-21 | Bike + sled available from week 4 | Found gym with pool + stationary cycle (no power meter) + sled, 10 min walk. Pulled bike sessions forward from week 9 to week 4. Wed quality run becomes brick (30 min Z2 cycle → run). Tue gets Z2 cycle. Sled finisher added to Fri legs. Row Z2 dropped. |
+| 2026-06-21 | Mild caloric deficit started | Target 2500 kcal/day to cut from ~80 → 75 kg over 3–4 months. Protein stays at ~165–170 g/day. Chia seeds (25 g) added to breakfast. Review at 3 weeks — if no weight loss, drop to 2400. If bench stalls, re-evaluate deficit first. |
 
 ---
 

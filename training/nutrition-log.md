@@ -17,7 +17,6 @@ Log meals here daily from June 15 onwards. Keep it brief — just what you ate, 
 ### [Date] — [Day]
 - **Breakfast:** 
 - **Lunch:** 
-- **Snack:** 
 - **Dinner:** 
 - **Supplements:** all / missed ___
 - **Water:** roughly ___ L

@@ -145,6 +145,10 @@
     <table id="schedule-table"><thead><tr><th>Day</th><th>AM</th><th>PM</th><th>Nightly</th></tr></thead><tbody id="schedule-body"></tbody></table>
     <div class="workout-detail" id="workout-detail" aria-live="polite"></div>
   </div>
+  <div class="section" id="next-week-section" style="display:none">
+    <div class="section-title"><span class="dot" style="background:var(--text-muted)"></span> <span id="next-week-title">Next Week</span> <span style="font-weight:400;color:var(--text-muted);font-size:0.85rem" id="next-week-label"></span></div>
+    <table><thead><tr><th>Day</th><th>AM</th><th>PM</th><th>Nightly</th></tr></thead><tbody id="next-schedule-body"></tbody></table>
+  </div>
   <div class="two-col">
     <div class="section">
       <div class="section-title"><span class="dot" style="background:var(--green)"></span> Phase Timeline</div>
@@ -434,7 +438,24 @@
     });
 
     WorkoutUI.setContext(cw, currentWeek, data);
-    WorkoutUI.renderSchedule(currentWeek, el);
+    WorkoutUI.renderSchedule(currentWeek, el, "schedule-body");
+
+    var nextWeek = currentWeek + 1;
+    if (nextWeek <= totalWeeks) {
+      var nw = null;
+      for (var ni = 0; ni < data.weeks.length; ni++) {
+        if (data.weeks[ni].week === nextWeek) { nw = data.weeks[ni]; break; }
+      }
+      if (nw) {
+        var nextPhase = getPhase(nextWeek, data.phases);
+        document.getElementById("next-week-title").textContent = "Week " + nextWeek;
+        document.getElementById("next-week-label").textContent = nw.deload ? "— Deload" : (nextPhase ? "— " + nextPhase.name : "");
+        WorkoutUI.setContext(nw, nextWeek, data);
+        WorkoutUI.renderSchedule(nextWeek, el, "next-schedule-body");
+        WorkoutUI.setContext(cw, currentWeek, data);
+        document.getElementById("next-week-section").style.display = "";
+      }
+    }
 
     // Phase timeline
     var timelineEl = document.getElementById("timeline");

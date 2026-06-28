@@ -2,12 +2,12 @@
   "plan": {
     "start": "2026-05-25",
     "total_weeks": 48,
-    "updated": "2026-06-11"
+    "updated": "2026-06-28"
   },
   "milestones": [
     { "date": "2026-06-15", "label": "Job starts", "week": 4 },
     { "date": "2026-07-13", "label": "5k Time Trial — reassess paces", "week": 8 },
-    { "date": "2026-08-17", "label": "3rd run added, schedule shifts", "week": 13 },
+    { "date": "2026-08-17", "label": "Phase 2 close — review single-session structure", "week": 13 },
     { "date": "2026-09-14", "label": "HM peak phase begins", "week": 17 },
     { "date": "2026-11-30", "label": "Peak week — 28 km long run (time-capped ~3:45)", "week": 28 },
     { "date": "2026-12-31", "label": "Projected 100 kg bench (volume)", "week": 29 },
@@ -82,7 +82,7 @@
       "week": 4, "phase": 1, "start": "2026-06-15", "deload": true,
       "running": { "wed_type": "tempo", "wed_km": 4, "sat_easy_km": 0, "sun_long_km": 7, "total_km": 11 },
       "bench": { "speed_kg": null, "main_kg": 62.5, "sets_reps": "2x5" },
-      "cycling": { "tue_z2_min": 45, "wed_brick_min": 30, "sat_threshold": false },
+      "cycling": { "tue_z2_min": 45, "sat_threshold": false },
       "sled": true,
       "notes": "DELOAD — job starts Jun 15. Bike + pool + sled now available."
     },
@@ -136,25 +136,25 @@
     },
     {
       "week": 13, "phase": 2, "start": "2026-08-17", "deload": false,
-      "running": { "wed_type": "intervals_8x400", "wed_km": 8, "sat_easy_km": 4, "sun_long_km": 18, "total_km": 30 },
+      "running": { "wed_type": "intervals_8x400", "wed_km": 8, "sat_easy_km": 0, "sun_long_km": 18, "total_km": 26 },
       "bench": { "speed_kg": 62.5, "main_kg": 82.5, "sets_reps": "3x5" },
-      "notes": "3rd run starts — long run held at 18 to stage the jump; schedule shifts to 4 lifting days"
+      "notes": "Single-session structure continues — 3rd run deferred to Phase 3 review"
     },
     {
       "week": 14, "phase": 2, "start": "2026-08-24", "deload": false,
-      "running": { "wed_type": "tempo", "wed_km": 8, "sat_easy_km": 5, "sun_long_km": 20, "total_km": 33 },
+      "running": { "wed_type": "tempo", "wed_km": 8, "sat_easy_km": 0, "sun_long_km": 20, "total_km": 28 },
       "bench": { "speed_kg": 62.5, "main_kg": 85, "sets_reps": "3x4-5" },
       "notes": null
     },
     {
       "week": 15, "phase": 2, "start": "2026-08-31", "deload": false,
-      "running": { "wed_type": "easy", "wed_km": 7, "sat_easy_km": 5, "sun_long_km": 21, "total_km": 33 },
+      "running": { "wed_type": "easy", "wed_km": 7, "sat_easy_km": 0, "sun_long_km": 21, "total_km": 28 },
       "bench": { "speed_kg": 62.5, "main_kg": 85, "sets_reps": "3x5" },
       "notes": "Half-marathon distance long run"
     },
     {
       "week": 16, "phase": 2, "start": "2026-09-07", "deload": false,
-      "running": { "wed_type": "intervals_5x1k", "wed_km": 9, "sat_easy_km": 6, "sun_long_km": 22, "total_km": 37 },
+      "running": { "wed_type": "intervals_5x1k", "wed_km": 9, "sat_easy_km": 0, "sun_long_km": 22, "total_km": 31 },
       "bench": { "speed_kg": 65, "main_kg": 87.5, "sets_reps": "3x4" },
       "notes": null
     },

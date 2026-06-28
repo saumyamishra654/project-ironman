@@ -354,11 +354,27 @@
 
   function renderSchedule(currentWeek, el, targetBodyId) {
     var noBike = currentWeek <= 3;
-    var hasBikeNoThreshold = currentWeek >= 4 && currentWeek <= 8;
+    var singleSession = currentWeek >= 4 && currentWeek <= 16;
     var isPost12 = currentWeek > 12;
     var isBenchPeak = currentWeek >= 35 && currentWeek <= 38;
     var is10kSharpen = currentWeek >= 39;
+    var hasThreshold = currentWeek >= 9 && currentWeek <= 16;
     var schedBody = document.getElementById(targetBodyId || "schedule-body");
+
+    if (singleSession) {
+      // Single session per day — weeks 4–16
+      schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Tue", hasThreshold ? "Threshold Cycle" : "Z2 Cycle 45 min", "cycle", hasThreshold ? "threshold-cycle" : "cycle-z2", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", "Quality Run", "run", "quality-run", el));
+      schedBody.appendChild(buildScheduleRow("Thu", "Upper B \u2014 Push + Pull", "upper", "upper-b", "Rest", "rest", "rest", el));
+
+      var friLabel = "Legs + Sled";
+      var friWorkout = currentWeek > 12 ? "legs-arms" : "legs";
+      schedBody.appendChild(buildScheduleRow("Fri", friLabel, "legs", friWorkout, "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
+      return;
+    }
 
     schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", el));
 
@@ -371,14 +387,14 @@
     var wedPm = isBenchPeak ? "Easy Jog (optional)" : (is10kSharpen ? "Speed Run" : (noBike ? "Quality Run" : "Brick: Cycle \u2192 Run"));
     schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", wedPm, "run", "quality-run", el));
 
-    schedBody.appendChild(buildScheduleRow("Thu", isPost12 ? "Upper B \u2014 Push + Pull" : "Push B \u2014 Explosive", isPost12 ? "upper" : "push", isPost12 ? "upper-b" : "push-b", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
+    schedBody.appendChild(buildScheduleRow("Thu", "Upper B \u2014 Push + Pull", "upper", "upper-b", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
 
     var isLegsMaintenance = currentWeek >= 22 && currentWeek <= 34;
     var hasSled = currentWeek >= 4;
-    var friAm = is10kSharpen ? "Legs (light)" : (isLegsMaintenance ? "Legs Maintenance" : (isPost12 ? "Legs + Arms" : "Legs"));
+    var friAm = is10kSharpen ? "Legs (light)" : (isLegsMaintenance ? "Legs Maintenance" : "Legs + Arms");
     if (hasSled && !is10kSharpen) friAm += " + Sled";
-    var friWorkout = isLegsMaintenance ? "legs-maintenance" : (isPost12 ? "legs-arms" : "legs");
-    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", friWorkout, "Rest", "rest", "rest", el));
+    var friWorkoutPost = isLegsMaintenance ? "legs-maintenance" : "legs-arms";
+    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", friWorkoutPost, "Rest", "rest", "rest", el));
 
     if (isBenchPeak) {
       schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
@@ -386,11 +402,8 @@
     } else if (noBike) {
       schedBody.appendChild(buildScheduleRow("Sat", "Pull B", "pull", "pull-b", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
-    } else if (hasBikeNoThreshold) {
-      schedBody.appendChild(buildScheduleRow("Sat", "Pull B", "pull", "pull-b", "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
     } else {
-      schedBody.appendChild(buildScheduleRow("Sat", isPost12 ? "Easy Run 4\u20135 km" : "Pull B", isPost12 ? "run" : "pull", isPost12 ? "easy-run" : "pull-b", "Threshold Cycle", "cycle", "threshold-cycle", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Easy Run 4\u20135 km", "run", "easy-run", "Threshold Cycle", "cycle", "threshold-cycle", el));
       schedBody.appendChild(buildScheduleRow("Sun", is10kSharpen ? "Easy Run 8\u201312 km" : "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
     }
   }

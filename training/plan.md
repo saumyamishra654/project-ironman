@@ -2,7 +2,7 @@
 
 **Athlete:** Saumya Mishra · 80 kg · 6' · Age: ~22
 **Plan duration:** 48 weeks (May 25, 2026 – Apr 25, 2027) + Goa 70.3 build TBD
-**Created:** May 28, 2026 · **Updated:** Jun 28, 2026
+**Created:** May 28, 2026 · **Updated:** Jun 11, 2026
 
 ---
 
@@ -76,119 +76,64 @@ No bike available. Row Z2 tacked onto Tuesday Pull A. Saturday PM is rest (5 car
 | Sat | Pull B | Rest | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
-### Weeks 4–8: 1 session/day — 2 upper, 1 lower, 2 runs, 1 swim, 1 cycle
+### Weeks 4–16: 1 session/day — 2 upper, 1 lower, 2 runs, 1 swim, 1 cycle + arms
 
-One session per day. Upper B template replaces the separate Push B / Pull B split from week 4 onwards — all pull volume absorbed into Thursday Upper B. No double days.
+Single-session days to fit around office hours. Arms move to Saturday cycle day. Sled finisher on Friday.
 
-| Day | Session | Type |
-|-----|---------|------|
-| Mon | Push A — Bench Focus | Upper 1 |
-| Tue | Z2 Cycle (45 min) | Cycle |
-| Wed | Quality Run | Run 1 |
-| Thu | Upper B — Push + Pull | Upper 2 |
-| Fri | Legs + Sled | Lower |
-| Sat | Swim 1 — Endurance (~1800 m) | Swim |
-| Sun | Long Run | Run 2 |
-| (Optional) | Arms / Delts / Calves — 30–40 min | Accessory |
+| Day | Session | Nightly |
+|-----|---------|---------|
+| Mon | Upper 1 — Bench Focus | Hip + Hamstring |
+| Tue | Quality Run | Hip + Hamstring |
+| Wed | Swim — Endurance (~1800 m) | Hip + Hamstring |
+| Thu | Upper 2 — Pullup + OHP Focus | Hip + Hamstring |
+| Fri | Legs + Sled | Hip + Hamstring |
+| Sat | Cycle (Z2 or Threshold) + Arms superset | Hip + Hamstring |
+| Sun | Long Run | Hip + Hamstring |
 
-**Wednesday:** standalone quality run — no cycle prefix. Cycle has its own slot on Tuesday.
-**Thursday Upper B:** absorbs all pull volume previously split across Tuesday Pull A and Saturday Pull B. Follow the Upper B template.
-**Optional accessory:** curls, tricep work, lateral raises, calves, tibialis. Tag onto any session as a finisher or do standalone. Not counted in session total.
+**Saturday Arms protocol:** after cycling, 2 supersets — Barbell Curl / OH Extension (2×10–12 each) + Hammer Curl / Pushdowns (2×10–15 each). No rest between A and B, 60–90 sec between pairs.
 
-**Friday Sled finisher:** 3–4 sets × 20–30 m heavy sled push, 90 sec rest between sets. Concentric-only — minimal DOMS. Place after all leg work is done.
+**Friday Sled finisher:** 3–4 sets × 20–30 m heavy sled push, 90 sec rest between sets. Concentric-only — minimal DOMS, good conditioning stimulus. Place after all leg work is done.
 
-### Weeks 9–12: 1 session/day — threshold added to cycle slot
+### Weeks 13–34: 2 upper days, 1 lower, 3 runs, 2 swims, 1 cycle (AM/PM resumes)
 
-Same 7-session structure as weeks 4–8. Tuesday cycle upgrades from Z2 to threshold intervals from week 9.
-
-| Day | Session | Type |
-|-----|---------|------|
-| Mon | Push A — Bench Focus | Upper 1 |
-| Tue | Cycle — Threshold | Cycle |
-| Wed | Quality Run | Run 1 |
-| Thu | Upper B — Push + Pull | Upper 2 |
-| Fri | Legs + Sled | Lower |
-| Sat | Swim 1 — Endurance (~1800 m) | Swim |
-| Sun | Long Run | Run 2 |
-| (Optional) | Arms / Delts / Calves — 30–40 min | Accessory |
-
-**Tuesday cycle progression (weeks 9–12):**
-
-| Week | Structure |
-|------|-----------|
-| 9 | Hard threshold — 2×15 min RPE 7–8, 5 min easy between |
-| 10 | Hard threshold — 2×15 min RPE 7–8, 5 min easy between |
-| 11 | Sustained threshold — 2×20 min RPE 7, 5 min easy between |
-| 12 | Deload — 30 min Z2 only |
-
-### Weeks 13–16: 1 session/day — Phase 2 close
-
-Same layout as weeks 9–12 with sustained threshold on the cycle slot. Third run (Saturday easy) is deferred to Phase 3 — the 7-session single-day structure holds through end of Phase 2.
-
-| Day | Session | Type |
-|-----|---------|------|
-| Mon | Push A — Bench Focus | Upper 1 |
-| Tue | Cycle — Threshold | Cycle |
-| Wed | Quality Run | Run 1 |
-| Thu | Upper B — Push + Pull | Upper 2 |
-| Fri | Legs + Sled | Lower |
-| Sat | Swim 1 — Endurance (~1800 m) | Swim |
-| Sun | Long Run | Run 2 |
-| (Optional) | Arms / Delts / Calves — 30–40 min | Accessory |
-
-**Tuesday cycle (weeks 13–16):**
-
-| Week | Structure |
-|------|-----------|
-| 13 | Sustained threshold — 2×20 min RPE 7, 5 min easy between |
-| 14 | Sustained threshold — 2×20 min RPE 7, 5 min easy between |
-| 15 | Sustained threshold — 2×20 min RPE 7, 5 min easy between |
-| 16 | Deload — 30 min Z2 only |
-
-Review and refactor weeks 17+ structure before entering Phase 3.
-
-### Weeks 17–34: 4 lifting days, 3 runs
-
-> **Note:** This section retains the original double-session format and has not yet been refactored for single-session days. Review before entering Phase 3 (week 17).
-
-Pull B folds into Thursday (Upper B). Saturday AM becomes the easy run. Wednesday brick continues.
+Third run added on Saturday. AM/PM dual-session format resumes as schedule allows.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
-| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Mon | Upper 1 — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
+| Tue | Upper 2 — Pullup + OHP Focus | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | **Brick: Z2 Cycle (30 min) → Quality Run** | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
-| Fri | Legs + Arms + Sled | Rest | Hip + Hamstring |
+| Thu | Rest | Swim 2 — Technique + Speed | Hip + Hamstring |
+| Fri | Legs + Sled | Rest | Hip + Hamstring |
 | Sat | Easy Run (4–8 km, per weekly table) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Long Run | Full Rest | Hip + Hamstring |
 
 Weeks 22–34: Friday switches to the Legs Maintenance (Marathon block) template — see lifting templates.
 
-### Weeks 35–38: 4 lifting days, minimal running (Bench Peak)
+### Weeks 35–38: 2 upper days, 1 lower, minimal running (Bench Peak)
 
-Same lifting template as weeks 13+. Running drops to easy jogs only — bench is the priority. Swim shortened.
+Same lifting template. Running drops to easy jogs only — bench is the priority. Swim shortened.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim 1 — Endurance (shortened) | Hip + Hamstring |
-| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Mon | Upper 1 — Bench Focus | Swim 1 — Endurance (shortened) | Hip + Hamstring |
+| Tue | Upper 2 — Pullup + OHP Focus | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Easy Jog (20–30 min, optional) | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed (shortened) | Hip + Hamstring |
-| Fri | Legs + Arms | Rest | Hip + Hamstring |
+| Thu | Rest | Swim 2 — Technique + Speed (shortened) | Hip + Hamstring |
+| Fri | Legs | Rest | Hip + Hamstring |
 | Sat | Rest | Rest | Hip + Hamstring |
 | Sun | Easy Jog or Rest | Full Rest | Hip + Hamstring |
 
-### Weeks 39–48: 4 lifting days, 2–3 runs (10k Sharpen)
+### Weeks 39–48: 2 upper days, 1 lower, 2–3 runs (10k Sharpen)
 
 Friday Legs become lighter (no heavy squats/deadlifts) to keep legs fresh for speed work.
 
 | Day | AM (before work) | PM (after work) | Nightly |
 |-----|-------------------|-----------------|---------|
-| Mon | Push A — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
-| Tue | Pull A | Z2 Cycle (45 min) | Hip + Hamstring |
+| Mon | Upper 1 — Bench Focus | Swim 1 — Endurance | Hip + Hamstring |
+| Tue | Upper 2 — Pullup + OHP Focus | Z2 Cycle (45 min) | Hip + Hamstring |
 | Wed | Rest | Speed Run | Hip + Hamstring |
-| Thu | Upper B — Push + Pull | Swim 2 — Technique + Speed | Hip + Hamstring |
+| Thu | Rest | Swim 2 — Technique + Speed | Hip + Hamstring |
 | Fri | Legs (light) | Rest | Hip + Hamstring |
 | Sat | Easy Run (4–5 km) | Threshold Cycle (45–60 min) | Hip + Hamstring |
 | Sun | Easy Run (8–12 km) | Full Rest | Hip + Hamstring |
@@ -232,10 +177,10 @@ Paces will improve over the block. Reassess zones after the week 8 TT, after VDH
 | 10 | 2 | Intervals 8×400 | 8 | — | 17 | **25** | |
 | 11 | 2 | Easy | 7 | — | 18 | **25** | |
 | 12 | 2 | Tempo | 5 | — | 10 | **15** | DELOAD |
-| 13 | 2 | Intervals 8×400 | 8 | — | 18 | **26** | 3rd run deferred — 2-run structure holds through Phase 2 |
-| 14 | 2 | Tempo | 8 | — | 20 | **28** | |
-| 15 | 2 | Easy | 7 | — | 21 | **28** | Half-marathon distance |
-| 16 | 2 | Intervals 5×1k | 9 | — | 22 | **31** | |
+| 13 | 2 | Intervals 8×400 | 8 | 4 | 18 | **30** | 3rd run starts — long run held at 18 to stage the jump |
+| 14 | 2 | Tempo | 8 | 5 | 20 | **33** | |
+| 15 | 2 | Easy | 7 | 5 | 21 | **33** | Half-marathon distance |
+| 16 | 2 | Intervals 5×1k | 9 | 6 | 22 | **37** | |
 | 17 | 3 | Tempo | 5 | — | 14 | **19** | DELOAD |
 | 18 | 3 | HM Pace | 8 | 5 | 21 | **34** | HM race-pace session |
 | 19 | 3 | Intervals 5×1k | 8 | 5 | 18 | **31** | |
@@ -287,8 +232,8 @@ Paces will improve over the block. Reassess zones after the week 8 TT, after VDH
 
 ## Bench — Week by Week
 
-Push A: Speed Bench (3×3) + Main Bench (3×4–6).
-Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
+Push A: Speed Bench (3×3) + Main Bench (3×4–6) — on Upper 1 day.
+Upper 2: Push Press + Weighted Dips (bench stimulus comes from Upper 1).
 
 | Wk | Phase | Speed Bench | Main Bench | Sets × Reps | Notes |
 |----|-------|-------------|------------|-------------|-------|
@@ -351,7 +296,7 @@ Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
 
 ---
 
-### Monday AM — Push A (Bench Focus)
+### Upper 1 — Bench Focus (Mon)
 
 **Warm-up:** 5 min general (jump rope / rowing / brisk walk) → bench ramp (bar ×10, 50% ×5, 70% ×3, 85% ×1–2)
 
@@ -360,67 +305,37 @@ Push B / Upper B: Push Press + Weighted Dips (bench stimulus comes from Push A).
 | Plyo | Plyo Push-ups | 2×5 |
 | Power | Speed Bench | 3×3 |
 | Strength | Bench Press | 3×4–6 |
+| Pull | Pendlay Row | 4×3–5 (explosive, full reset each rep) |
+| Pull | Weighted Pull-ups | 2×4–6 |
 | Accessory | DB Shoulder Press | 2×6–10 |
-| Accessory | Lateral Raises | 2×15 |
-| Accessory | Tricep Pushdowns | 2×10–15 |
-| Accessory | Chest Flyes | 2×10–15 |
-
-No formal cool-down needed.
-
----
-
-### Tuesday AM — Pull A
-
-**Warm-up:** 5 min general → Pendlay row ramp (50% ×5, 70% ×3)
-
-| Block | Exercise | Sets × Reps |
-|-------|----------|-------------|
-| Power | Pendlay Row | 4×3–5 (explosive, full reset each rep) |
-| Strength | Weighted Pull-ups | 2×4–6 |
-| Strength | Heavy Chest-Supported Row | 2×5–8 |
-| Strength | Lat Pulldown | 2×8–10 |
 | Accessory | Face Pulls | 2×15–20 |
-| Accessory | Bayesian Curls | 2×10–15 |
-
----
-
-### Thursday AM — Push B (Weeks 1–12)
-
-**Warm-up:** 5 min general → push press ramp (bar ×5, 50% ×3, 70% ×2)
-
-| Block | Exercise | Sets × Reps |
-|-------|----------|-------------|
-| Plyo | Med Ball Throws | 2×5 |
-| Power | Push Press | 5×3 |
-| Strength | Weighted Dips | 2×5–8 |
-| Strength | Incline DB Bench | 2×8 |
-| Accessory | Lateral Raises | 2×15 |
+| Accessory | Cross-Body Hammer Curls | 2×10–12 |
 | Accessory | Overhead Tricep Extension | 2×12 |
-| Accessory | Hanging Leg Raises | 2–3 sets |
+
+~22 working sets, 55–65 min.
 
 ---
 
-### Thursday AM — Upper B (Weeks 4–48)
+### Upper 2 — Pullup + OHP Focus (Thu)
 
-**Warm-up:** 5 min general → push press ramp
+**Warm-up:** 5 min general → pull-up warm-up (1–2 easy sets) → push press ramp (bar ×5, 50% ×3, 70% ×2)
 
 | Block | Exercise | Sets × Reps |
 |-------|----------|-------------|
-| Plyo | Med Ball Throws | 2×5 |
-| Power | Push Press | 4×3 |
+| Power | Explosive Pull-ups / High Pulls | 3×3 |
+| Strength | Weighted Pull-ups | 2 sets near failure |
+| Push | Push Press | 4×3 |
 | Push | Weighted Dips | 2×5–8 |
-| Push | Incline DB Bench | 2×8 |
-| Pull | Pull-ups | 2 sets near failure |
-| Pull | Cable Row | 2×8–12 |
+| Pull | Heavy Row (machine or chest-supported) | 2×6–8 |
 | Accessory | Lateral Raises | 2×15 |
 | Accessory | Face Pulls | 2×15 |
-| Accessory | Curls (any variation) | 2×10–12 |
+| Accessory | Chest Flyes | 2×10–15 |
 
-~18 working sets, 50–55 min.
+~20 working sets, 50–60 min.
 
 ---
 
-### Friday AM — Legs (Weeks 1–12)
+### Friday AM — Legs (Weeks 4–12)
 
 **Warm-up:** 5 min general → front squat ramp (bar ×10, 50% ×5, 70% ×3)
 
@@ -454,75 +369,6 @@ Supersets: no rest between A and B, 60–90 sec rest between pairs. Total sessio
 ---
 
 ### Friday AM — Legs Maintenance (Weeks 22–34, Marathon Block)
-
-Heavy bilateral hinging is dropped while long-run volume peaks — the long run is the leg stimulus. Keep moving well, stop accumulating axial fatigue.
-
-| Block | Exercise | Sets × Reps |
-|-------|----------|-------------|
-| Power | Box Jumps | 2×3 (step down, full reset) |
-| Squat | Front Squat | 2×5 (moderate — leave 2–3 reps in reserve) |
-| Unilateral | Bulgarian Split Squat | 2×8 each leg |
-| Unilateral | Step-Ups | 2×10 each leg (slow eccentric) |
-| Accessory | Hamstring Curl | 2×10–12 |
-| Lower Leg | Seated Calf Raise | 2×15 |
-| Lower Leg | Tibialis Raise | 2×15–20 |
-| Stability | Copenhagen Plank | 2 sets |
-| Arms | Same supersets as Legs + Arms | |
-
-No trap bar deadlift in this block. ~40–45 min.
-
----
-
-### Friday AM — Legs Light (Weeks 39–48)
-
-No heavy squats or deadlifts — keep legs fresh for Wednesday speed work.
-
-| Block | Exercise | Sets × Reps |
-|-------|----------|-------------|
-| Unilateral | Bulgarian Split Squat | 2×8 each leg |
-| Unilateral | Step-Ups | 2×10 each leg (slow eccentric) |
-| Accessory | Hamstring Curl | 2×10–12 |
-| Lower Leg | Seated Calf Raise | 2×15 |
-| Lower Leg | Tibialis Raise | 2×15–20 |
-| Stability | Copenhagen Plank | 2 sets |
-| Arms | Barbell Curl / OH Extension | 2×10–12 each (superset) |
-| Arms | Hammer Curl / Pushdowns | 2×10–15 each (superset) |
-
-~16 working sets, 35–40 min.
-
----
-
-### Saturday AM — Pull B (Weeks 1–12)
-
-**Warm-up:** 5 min general → pull-up warm-up (1–2 easy sets)
-
-| Block | Exercise | Sets × Reps |
-|-------|----------|-------------|
-| Power | Explosive Pull-ups / High Pulls | 3×3 |
-| Strength | Pull-ups | 2 sets near failure |
-| Strength | Heavy Machine Row | 2×6–8 |
-| Strength | Single-Arm Cable Row | 2×8–12 |
-| Accessory | Face Pulls | 2×15–20 |
-| Accessory | Hammer Curls | 2×10–12 |
-| Accessory | Rear Delt Flyes | 2×15 |
-
----
-
-### Optional — Arms / Delts / Calves (30–40 min)
-
-Not a mandatory day. Do when energy and schedule allow — tag onto any session as a finisher or run standalone. Does not replace any of the 7 main sessions.
-
-| Exercise | Sets × Reps |
-|----------|-------------|
-| Barbell or DB Curl | 3×10–12 |
-| Hammer Curl | 2×10–12 |
-| Overhead Tricep Extension | 2×12 |
-| Tricep Pushdowns | 2×12–15 |
-| Lateral Raises | 3×15 |
-| Seated Calf Raise | 3×15–20 |
-| Tibialis Raise | 2×15–20 |
-
-~10–12 working sets, 30–40 min. No formal warm-up needed beyond a few easy reps.
 
 ---
 
@@ -587,32 +433,27 @@ No bike available. 15–20 min row Z2 tacked onto the end of Tuesday Pull A. Sat
 | Intensity | RPE 5–6, ~18–22 spm, conversational |
 | Drop rule | First thing to cut if fatigued |
 
-### Weeks 4–48: Cycle Session
+### Weeks 4–48: Z2 + Brick + Threshold Cycle
 
 Bike available from week 4 (stationary cycle at gym, no power meter — HR-guided only).
 
-**Weeks 4–16:** one cycle session per week, always on Tuesday. Progresses from Z2 base to threshold as the phase advances.
+#### Tuesday PM — Z2 Cycle
 
-#### Tuesday — Cycle Session (Weeks 4–48)
+- 45 min, fully conversational, HR Zone 2 (~130–145 bpm)
+- Cadence: 85–95 rpm
+- **This is the first session to drop** if work or fatigue is high
 
-**Weeks 4–8:** 45 min Z2, fully conversational, HR Zone 2 (~130–145 bpm), cadence 85–95 rpm.
-
-**Weeks 9–16:** threshold progression (per weekly schedule tables).
-
-**From week 17:** Tuesday cycle role subject to review. Original Saturday threshold structure below remains the reference until that refactor.
-
-**Warm-up:** 5 min easy spinning. **Cool-down:** 5 min easy spinning.
+**Warm-up:** 5 min easy spinning.
+**Cool-down:** 5 min easy spinning.
 
 Deload weeks: 30 min Z2 only.
 
-**This is the first session to drop** if work or fatigue is high.
-
-#### Saturday PM — Threshold Cycle (Weeks 17+ only)
-
-Weeks 4–16 threshold work is handled by the Tuesday slot above. The table below applies from week 17 onward (part of the double-session structure not yet refactored).
+#### Saturday PM — Threshold Cycle
 
 | Weeks | Structure | Detail |
 |-------|-----------|--------|
+| 9–12 | Hard threshold | 2×15 min RPE 7–8, 5 min easy between |
+| 13–16 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
 | 17 | Z2 only | Deload |
 | 18–21 | Sustained threshold | 2×20 min RPE 7, 5 min easy between |
 | 22 | Z2 only | Post-VDHM recovery |
@@ -780,35 +621,6 @@ Total contacts per session: 10–30. All plyo work performed fully fresh before 
 
 ---
 
-## Weekly Nutrition Strategy
-
-Track calories weekly, not daily. The goal is a consistent weekly deficit even when eating out — bank on home-cooking days, absorb eating-out days without guilt.
-
-### Weekly calorie budget
-
-- **Target average:** ~2,500 kcal/day → 17,500 kcal/week
-- **Home cooking days:** 2,200–2,400 kcal, ~150–180 g carbs
-- **Eating-out days:** up to ~3,000 kcal; no tracking required — eat protein-first, sensibly
-- **Protein:** 165–170 g on every day, regardless of day type — this number does not flex
-- **Fat floor:** ≥ 60 g fat on all days; do not simultaneously cut both carbs and fat
-
-### Protected training days — do not reduce carbs
-
-| Day | Reason |
-|-----|--------|
-| Monday | Bench focus — needs glycogen |
-| Wednesday | Quality run — needs carbs pre-session |
-| Saturday (pre-long run) | Long run is Sunday — top up the night before |
-
-### Rules
-
-1. If eating out was unplanned, treat it as an eating-out day and return to home-day targets the next day. Do not compensate by under-eating.
-2. If weight stalls for 3+ weeks: remove one eating-out meal per week before dropping home-day calories.
-3. Hard floor: do not go below 2,200 kcal on any day.
-4. If bench stalls: re-evaluate the deficit before cutting further — performance is the signal.
-
----
-
 ## Fueling
 
 ### Long-Run Fueling Rehearsal (weeks 23+)
@@ -834,12 +646,10 @@ Every long run ≥ 22 km is a fueling rehearsal, not just a running session:
 | Phase | Weeks | Lift | Run | Swim | Bike/Row | Total cardio |
 |-------|-------|------|-----|------|----------|-------------|
 | Pre-Job (no bike) | 1–3 | 5 | 2 | 2 | 1 row | **5** |
-| Job Adj — 1 session/day | 4–8 | 3 | 2 | 1 | 1 bike (Tue Z2) | **4** |
-| Build early — 1 session/day | 9–12 | 3 | 2 | 1 | 1 bike (Tue threshold) | **4** |
-| Build close — 1 session/day | 13–16 | 3 | 2 | 1 | 1 bike (Tue threshold) | **4** |
-| Build → HM → Marathon | 17–34 | 4 | 3 | 2 | 2 bike | **7** |
-| Bench Peak | 35–38 | 4 | 0–2 | 2 (short) | 2 bike (Z2) | **4–6** |
-| 10k Sharpen | 39–48 | 4 | 2–3 | 2 | 2 bike | **6–7** |
+| Job Adj + Build (1/day) | 4–16 | 3 | 2 | 1 | 1 bike + arms | **4** |
+| Build → HM → Marathon | 13–34 | 3 | 3 | 2 | 2 bike | **7** |
+| Bench Peak | 35–38 | 3 | 0–2 | 2 (short) | 1 bike (Z2) | **3–5** |
+| 10k Sharpen | 39–48 | 3 | 2–3 | 2 | 2 bike | **6–7** |
 
 ### Volume drop triggers
 

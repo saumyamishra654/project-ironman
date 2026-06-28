@@ -79,20 +79,16 @@ This file is the live state document. Update it after every session or at minimu
 
 ## Nutrition Notes
 
-## Nutrition Notes
-
-- **Weekly calorie budget:** ~17,500 kcal/week (average 2,500/day) — track weekly, not daily
-- **Home cooking days:** 2,200–2,400 kcal, ~150–180 g carbs; builds the buffer for eating-out days
-- **Eating-out days:** up to ~3,000 kcal; no tracking required — eat protein-first, sensibly
-- **Protein:** 165–170 g regardless of day type — does not flex
-- **Fat floor:** ≥ 60 g fat on all days; never cut both carbs and fat simultaneously
-- **Protected carb days (no reduction):** Monday (bench), Wednesday (quality run), Saturday (pre-long run)
-- If eating out unexpectedly: treat as eating-out day, return to home-day targets next day — no compensation
-- If weight stalls 3+ weeks: remove one eating-out meal per week before dropping home-day calories
-- Hard floor: do not go below 2,200 kcal on any day
-- If bench stalls: re-evaluate deficit before cutting further
-- Protein sources: 6 eggs + paneer block + Amul HP milk + 1 scoop whey (~169 g/day base)
+- **Mild deficit:** targeting 2500 kcal/day average to cut from ~80 kg → 75 kg over 3–4 months
+- **Carb cycling:** reduce carbs on non-eating-out days so weekly average stays in deficit even with 2 higher-calorie social meals. On training days keep ~30–40 g carbs peri-workout; cut starchy carbs from other meals on low days. Protein and fats stay constant.
+- Protein: ~169 g/day (6 eggs + paneer block + Amul HP milk + 1 scoop whey)
+- 3 meals, no snack: breakfast (protein anchor, ~42g), lunch (calorie anchor, ~55g), dinner (light/sleep-friendly, ~72g)
+- HP milk (35g protein) is at dinner, not breakfast
 - Chia seeds: 25 g with water every morning (breakfast)
+- If weight loss stalls after 3 weeks, drop to 2400 kcal average. Do not go below 2300.
+- Prioritise protein and carbs around long run days and heavy bench days
+- If bench stalls, re-evaluate deficit before dropping calories further
+- **Eating-out buffer:** ~2 days/week at 3000–3200 kcal; remaining 5 days at ~2200–2300 kcal to average out to ~2500
 
 ## Active Adjustments
 
@@ -100,9 +96,8 @@ List any deviations from the plan here:
 
 - **Week 1 (May 25–31):** Skipped planned Sun May 31 long run (8 km); ran 5 km that day instead. Extra 7 km Wed May 27 (not on plan — week 1 has no Wed quality run).
 - **Weeks 2–3:** Long run missed both weeks. Other training happened (fast mile Monday, 45 min Z2 cycle).
-- **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (no power meter) + sled, 10 min walk.
-- **From week 4 (Jun 28 refactor):** Moved to 1 session/day for Phases 1 and 2. Schedule: Mon Push A, Tue Z2 Cycle, Wed Quality Run, Thu Upper B, Fri Legs + Sled, Sat Swim, Sun Long Run. Optional accessory day (arms/delts/calves) added. Upper B template applies from week 4 (not week 13). Wednesday brick dropped. Swim reduced to 1 per week. Third run deferred to Phase 3 review.
-- **Nutrition (Jun 28):** Shifted from flat 2,500 kcal/day to weekly budget model. Home days 2,200–2,400 kcal with reduced carbs; eating-out days up to ~3,000 kcal. Protein floor unchanged. Protected carb days: Mon, Wed, Sat.
+- **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (10 min walk). Sled available.
+- **From week 4:** Schedule updated — Wed becomes brick (Z2 cycle → quality run), Tue gets Z2 cycle, Fri legs gets sled finisher. Row Z2 dropped. Nutrition shifted to 2500 kcal deficit. Chia seeds added to breakfast.
 
 ## Decision Log
 
@@ -114,8 +109,8 @@ List any deviations from the plan here:
 | 2026-06-11 | Peak long-run time cap extended | Weeks 27–28 cap raised from 3:30 to 3:45 (28 km or 3:45, whichever first) — more time-on-feet for Mumbai prep without adding hybrid load. At faster easy pace by Nov, may reach 28–30 km before the clock. |
 | 2026-06-21 | Bike + sled available from week 4 | Found gym with pool + stationary cycle (no power meter) + sled, 10 min walk. Pulled bike sessions forward from week 9 to week 4. Wed quality run becomes brick (30 min Z2 cycle → run). Tue gets Z2 cycle. Sled finisher added to Fri legs. Row Z2 dropped. |
 | 2026-06-21 | Mild caloric deficit started | Target 2500 kcal/day to cut from ~80 → 75 kg over 3–4 months. Protein stays at ~165–170 g/day. Chia seeds (25 g) added to breakfast. Review at 3 weeks — if no weight loss, drop to 2400. If bench stalls, re-evaluate deficit first. |
-| 2026-06-28 | Phases 1 & 2 refactored to 1 session/day | Office realities: double sessions unsustainable. New 7-day structure: Mon Push A, Tue Cycle, Wed Quality Run, Thu Upper B, Fri Legs + Sled, Sat Swim, Sun Long Run + optional accessory day. Upper B moved forward to week 4. Wednesday brick dropped. Swim reduced to 1/week. Third run deferred to Phase 3 review. Session count: 7 mandatory + optional. |
-| 2026-06-28 | Nutrition shifted to weekly calorie budget model | Flat daily target replaced with home-day / eating-out day split. Home days 2,200–2,400 kcal (~150–180 g carbs), eating-out days up to ~3,000 kcal. Weekly average target unchanged at ~2,500. Protein floor fixed at 165–170 g. Protected carb days: Mon (bench), Wed (quality run), Sat (pre-long run). |
+| 2026-06-28 | Phases 1–2 restructured to 1 session/day | Merged 4 upper days (Push A, Pull A, Push B, Pull B) into 2 full upper days (Upper 1 bench-focus, Upper 2 pullup/OHP-focus). Weekly structure: Mon Upper 1, Tue Run, Wed Swim, Thu Upper 2, Fri Legs, Sat Cycle + Arms, Sun Long Run. Arms moved to Saturday cycle day. Reduces total gym sessions from 5 to 3 lifting + 1 cycle, better fit with office schedule. |
+| 2026-06-28 | Carb cycling adopted | Drop carbs on 5 non-eating-out days (~2200–2300 kcal) to buffer 2 higher-calorie social days (~3000–3200 kcal). Weekly average stays at ~2500 kcal deficit. Protein stays constant. Peri-workout carbs preserved. |
 
 ---
 

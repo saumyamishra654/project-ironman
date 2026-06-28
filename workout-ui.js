@@ -74,54 +74,33 @@
     var mainKg = bench.main_kg;
     var speedKg = bench.speed_kg;
     var templates = {
-      "push-a": {
-        title: "Push A \u2014 Bench Focus",
+      "upper-1": {
+        title: "Upper 1 \u2014 Bench Focus",
         meta: "Week " + currentWeek + (mainKg ? " \u00B7 Main bench " + mainKg + " kg (" + sr + ")" : ""),
         exercises: [
           { name: "Plyo Push-ups", sets: "2\u00D75" },
           { name: "Speed Bench", sets: speedKg ? "3\u00D73 @ " + speedKg + " kg" : "3\u00D73 (deload / skip)" },
           { name: "Bench Press", sets: mainKg ? sr + " @ " + mainKg + " kg" : sr },
-          { name: "DB Shoulder Press", sets: "2\u00D76\u201310" },
-          { name: "Lateral Raises", sets: "2\u00D715" },
-          { name: "Tricep Pushdowns", sets: "2\u00D710\u201315" },
-          { name: "Chest Flyes", sets: "2\u00D710\u201315" }
-        ]
-      },
-      "pull-a": {
-        title: "Pull A", meta: "Week " + currentWeek,
-        exercises: [
           { name: "Pendlay Row", sets: "4\u00D73\u20135 (explosive)" },
           { name: "Weighted Pull-ups", sets: "2\u00D74\u20136" },
-          { name: "Heavy Chest-Supported Row", sets: "2\u00D75\u20138" },
-          { name: "Lat Pulldown", sets: "2\u00D78\u201310" },
+          { name: "DB Shoulder Press", sets: "2\u00D76\u201310" },
           { name: "Face Pulls", sets: "2\u00D715\u201320" },
-          { name: "Bayesian Curls", sets: "2\u00D710\u201315" }
+          { name: "Cross-Body Hammer Curls", sets: "2\u00D710\u201312" },
+          { name: "Overhead Tricep Extension", sets: "2\u00D712" }
         ]
       },
-      "push-b": {
-        title: "Push B \u2014 Explosive", meta: "Week " + currentWeek,
+      "upper-2": {
+        title: "Upper 2 \u2014 Pullup + OHP Focus",
+        meta: "Week " + currentWeek + " \u00B7 ~20 working sets",
         exercises: [
-          { name: "Med Ball Throws", sets: "2\u00D75" },
-          { name: "Push Press", sets: "5\u00D73" },
-          { name: "Weighted Dips", sets: "2\u00D75\u20138" },
-          { name: "Incline DB Bench", sets: "2\u00D78" },
-          { name: "Lateral Raises", sets: "2\u00D715" },
-          { name: "Overhead Tricep Extension", sets: "2\u00D712" },
-          { name: "Hanging Leg Raises", sets: "2\u20133 sets" }
-        ]
-      },
-      "upper-b": {
-        title: "Upper B \u2014 Push + Pull", meta: "Week " + currentWeek + " \u00B7 ~18 working sets",
-        exercises: [
-          { name: "Med Ball Throws", sets: "2\u00D75" },
+          { name: "Explosive Pull-ups / High Pulls", sets: "3\u00D73" },
+          { name: "Weighted Pull-ups", sets: "2 sets near failure" },
           { name: "Push Press", sets: "4\u00D73" },
           { name: "Weighted Dips", sets: "2\u00D75\u20138" },
-          { name: "Incline DB Bench", sets: "2\u00D78" },
-          { name: "Pull-ups", sets: "2 sets near failure" },
-          { name: "Cable Row", sets: "2\u00D78\u201312" },
+          { name: "Heavy Row", sets: "2\u00D76\u20138" },
           { name: "Lateral Raises", sets: "2\u00D715" },
           { name: "Face Pulls", sets: "2\u00D715" },
-          { name: "Curls", sets: "2\u00D710\u201312" }
+          { name: "Chest Flyes", sets: "2\u00D710\u201315" }
         ]
       },
       "legs": {
@@ -230,6 +209,19 @@
           { name: "Intensity", sets: "HR Zone 2 (~130\u2013145 bpm)" },
           { name: "Cadence", sets: "85\u201395 rpm, smooth and relaxed" },
           { name: "Cool-down", sets: "5 min easy spinning" }
+        ]
+      },
+      "cycle-arms": {
+        title: "Cycle + Arms (Sat)", meta: "Week " + currentWeek + " \u00B7 Cycle then arm supersets",
+        exercises: [
+          { name: "Warm-up", sets: "5 min easy spinning, low resistance" },
+          { name: "Main", sets: "45 min fully conversational" },
+          { name: "Intensity", sets: "HR Zone 2 (~130\u2013145 bpm)" },
+          { name: "Cadence", sets: "85\u201395 rpm, smooth and relaxed" },
+          { name: "Cool-down", sets: "5 min easy spinning" },
+          { name: "\u2014 Arms \u2014", sets: "" },
+          { name: "Barbell Curl / OH Extension", sets: "2\u00D710\u201312 each (superset)" },
+          { name: "Hammer Curl / Pushdowns", sets: "2\u00D710\u201315 each (superset)" }
         ]
       },
       "threshold-cycle": {
@@ -354,56 +346,50 @@
 
   function renderSchedule(currentWeek, el, targetBodyId) {
     var noBike = currentWeek <= 3;
-    var singleSession = currentWeek >= 4 && currentWeek <= 16;
+    var isOneSessionPhase = currentWeek >= 4 && currentWeek <= 16;
     var isPost12 = currentWeek > 12;
     var isBenchPeak = currentWeek >= 35 && currentWeek <= 38;
     var is10kSharpen = currentWeek >= 39;
-    var hasThreshold = currentWeek >= 9 && currentWeek <= 16;
     var schedBody = document.getElementById(targetBodyId || "schedule-body");
 
-    if (singleSession) {
-      // Single session per day — weeks 4–16
-      schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Tue", hasThreshold ? "Threshold Cycle" : "Z2 Cycle 45 min", "cycle", hasThreshold ? "threshold-cycle" : "cycle-z2", "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", "Quality Run", "run", "quality-run", el));
-      schedBody.appendChild(buildScheduleRow("Thu", "Upper B \u2014 Push + Pull", "upper", "upper-b", "Rest", "rest", "rest", el));
-
-      var friLabel = "Legs + Sled";
-      var friWorkout = currentWeek > 12 ? "legs-arms" : "legs";
-      schedBody.appendChild(buildScheduleRow("Fri", friLabel, "legs", friWorkout, "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Sat", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
+    if (isOneSessionPhase) {
+      schedBody.appendChild(buildScheduleRow("Mon", "Upper 1 \u2014 Bench Focus", "push", "upper-1", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Tue", "Quality Run", "run", "quality-run", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Wed", "Swim", "swim", "swim-endurance", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Thu", "Upper 2 \u2014 Pullup + OHP", "pull", "upper-2", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Fri", "Legs" + (currentWeek >= 4 ? " + Sled" : ""), "legs", "legs", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Cycle + Arms", "cycle", "cycle-arms", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Rest", "rest", "rest", el));
       return;
     }
 
-    schedBody.appendChild(buildScheduleRow("Mon", "Push A \u2014 Bench Focus", "push", "push-a", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", el));
+    schedBody.appendChild(buildScheduleRow("Mon", "Upper 1 \u2014 Bench Focus", "push", "upper-1", "Swim 1 \u2014 Endurance", "swim", "swim-endurance", el));
 
     if (noBike) {
-      schedBody.appendChild(buildScheduleRow("Tue", "Pull A + Row Z2", "pull", "pull-a", "Rest", "rest", "row-z2", el));
+      schedBody.appendChild(buildScheduleRow("Tue", "Upper 2 \u2014 Pullup + OHP", "pull", "upper-2", "Rest", "rest", "rest", el));
     } else {
-      schedBody.appendChild(buildScheduleRow("Tue", "Pull A", "pull", "pull-a", "Z2 Cycle 45 min", "cycle", "cycle-z2", el));
+      schedBody.appendChild(buildScheduleRow("Tue", "Upper 2 \u2014 Pullup + OHP", "pull", "upper-2", "Z2 Cycle 45 min", "cycle", "cycle-z2", el));
     }
 
     var wedPm = isBenchPeak ? "Easy Jog (optional)" : (is10kSharpen ? "Speed Run" : (noBike ? "Quality Run" : "Brick: Cycle \u2192 Run"));
     schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", wedPm, "run", "quality-run", el));
 
-    schedBody.appendChild(buildScheduleRow("Thu", "Upper B \u2014 Push + Pull", "upper", "upper-b", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
+    schedBody.appendChild(buildScheduleRow("Thu", "Rest", "rest", "rest", "Swim 2 \u2014 Tech + Speed", "swim", "swim-tech-speed", el));
 
     var isLegsMaintenance = currentWeek >= 22 && currentWeek <= 34;
-    var hasSled = currentWeek >= 4;
-    var friAm = is10kSharpen ? "Legs (light)" : (isLegsMaintenance ? "Legs Maintenance" : "Legs + Arms");
-    if (hasSled && !is10kSharpen) friAm += " + Sled";
-    var friWorkoutPost = isLegsMaintenance ? "legs-maintenance" : "legs-arms";
-    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", friWorkoutPost, "Rest", "rest", "rest", el));
+    var friAm = is10kSharpen ? "Legs (light)" : (isLegsMaintenance ? "Legs Maintenance" : "Legs");
+    if (!is10kSharpen) friAm += " + Sled";
+    var friWorkout = isLegsMaintenance ? "legs-maintenance" : "legs";
+    schedBody.appendChild(buildScheduleRow("Fri", friAm, "legs", friWorkout, "Rest", "rest", "rest", el));
 
     if (isBenchPeak) {
       schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sun", "Easy Jog or Rest", "run", "easy-run", "Full Rest", "rest", "rest", el));
     } else if (noBike) {
-      schedBody.appendChild(buildScheduleRow("Sat", "Pull B", "pull", "pull-b", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
     } else {
-      schedBody.appendChild(buildScheduleRow("Sat", "Easy Run 4\u20135 km", "run", "easy-run", "Threshold Cycle", "cycle", "threshold-cycle", el));
+      schedBody.appendChild(buildScheduleRow("Sat", is10kSharpen ? "Easy Run 4\u20135 km" : "Easy Run", is10kSharpen ? "run" : "run", "easy-run", "Threshold Cycle", "cycle", "threshold-cycle", el));
       schedBody.appendChild(buildScheduleRow("Sun", is10kSharpen ? "Easy Run 8\u201312 km" : "Long Run", "run", "long-run", "Full Rest", "rest", "rest", el));
     }
   }

@@ -291,6 +291,75 @@
       "rest": {
         title: "Rest", meta: "Recovery",
         exercises: [{ name: "No structured session", sets: "\u2014" }]
+      },
+      "lower-shin": {
+        title: "Lower Lift \u2014 Shin Bridge", meta: "Week " + currentWeek + " \u00b7 ~65\u201370 min \u00b7 RPE 7\u20138, 2 reps in reserve",
+        exercises: [
+          { name: "Zercher Squat", sets: "3\u00d76\u20138" },
+          { name: "Barbell RDL", sets: "3\u00d78" },
+          { name: "Bulgarian Split Squat", sets: "3\u00d78 each leg" },
+          { name: "Single-Leg RDL", sets: "3\u00d78 each leg" },
+          { name: "Sissy Squat", sets: "2\u20133\u00d78\u201312" },
+          { name: "Seated Leg Curl", sets: "2\u20133\u00d710\u201312" },
+          { name: "Straight-Leg Calf Raise", sets: "3\u00d710\u201312, slow 3s lowering" },
+          { name: "Bent-Knee (Soleus) Calf Raise", sets: "3\u00d712\u201315 \u2014 shin-protection exercise, do not skip" },
+          { name: "Tibialis Raises (loaded)", sets: "3\u00d715\u201320" },
+          { name: "Copenhagen Plank", sets: "2\u00d720\u201330s each side" },
+          { name: "Single-Leg Glute Bridge (paused)", sets: "2\u20133\u00d712\u201315 each leg \u2014 left first, 2s pause" }
+        ]
+      },
+      "bike-easy": {
+        title: "Bike Easy (Shin Bridge)", meta: "Week " + currentWeek + " \u00b7 Leg-neutral flush after Tue quality run",
+        exercises: [
+          { name: "Warm-up", sets: "5 min easy spinning, low resistance" },
+          { name: "Main", sets: "45 min fully conversational" },
+          { name: "Intensity", sets: "HR Zone 2 (~130\u2013145 bpm)" },
+          { name: "Cool-down", sets: "5 min easy spinning" }
+        ]
+      },
+      "quality-run-hm": {
+        title: "Quality Run (Tue)", meta: "Week " + currentWeek + (run.quality ? " \u00b7 " + run.quality : ""),
+        exercises: [
+          { name: "Warm-up: walk", sets: "5 min" },
+          { name: "Warm-up: easy jog", sets: "5 min @ 8:45+ /km" },
+          { name: "Session", sets: run.quality || "See plan" },
+          { name: "Paces", sets: "Threshold 5:55\u20136:05 /km \u00b7 VO2 5:05\u20135:15 /km \u00b7 Goal HM 6:00 /km" },
+          { name: "Cool-down", sets: "5 min easy jog \u2192 5 min walk" }
+        ]
+      },
+      "easy-wed-hm": {
+        title: "Short Easy + Strides (Wed)", meta: "Week " + currentWeek,
+        exercises: [
+          { name: "Distance", sets: (run.wed_easy_km || "\u2014") + " km easy" },
+          { name: "Pace", sets: "6:45\u20137:30 /km" },
+          { name: "Finish", sets: "4\u20136 \u00d7 20s strides \u2014 skip if legs are cooked" }
+        ]
+      },
+      "easy-fri-hm": {
+        title: "Longer Easy Run (Fri)", meta: "Week " + currentWeek,
+        exercises: [
+          { name: "Distance", sets: (run.fri_easy_km || "\u2014") + " km easy" },
+          { name: "Pace", sets: "6:45\u20137:30 /km" },
+          { name: "Note", sets: "Standalone session \u2014 the harder run to time gets its own day" }
+        ]
+      },
+      "long-run-hm": {
+        title: "Long Run (Sun)", meta: "Week " + currentWeek + (run.sun_long_km ? " \u00b7 " + run.sun_long_km + " km" : ""),
+        exercises: [
+          { name: "Warm-up: walk", sets: "5 min" },
+          { name: "First 1\u20132 km", sets: "settle in, don't chase pace" },
+          { name: "Distance", sets: (run.sun_long_km || "\u2014") + " km" },
+          { name: "Pace", sets: "Easy 6:45\u20137:30 /km \u2014 goal-pace blocks added in back half of block per plan doc" },
+          { name: "Cool-down", sets: "Walk until HR < 120 bpm" }
+        ].concat(run.long_note ? [{ name: "Note", sets: run.long_note }] : [])
+      },
+      "race-hm": {
+        title: "RACE \u2014 Vedanta Delhi Half Marathon", meta: "Week " + currentWeek + " \u00b7 21.1 km",
+        exercises: [
+          { name: "Pacing", sets: "First 5 km @ 6:15, settle to 6:10 through halfway" },
+          { name: "If comfortable + cool", sets: "Drop toward 6:00 for the last 8 km \u2014 negative split, don't go out at 6:00" },
+          { name: "Fuel/hydrate", sets: "Take fluid at every station; use the practiced race-morning breakfast" }
+        ]
       }
     };
     return templates[workoutId] || { title: "Workout", meta: "", exercises: [{ name: "Details", sets: "See training/plan.md" }] };

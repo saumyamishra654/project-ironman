@@ -6,11 +6,13 @@ Hybrid strength + endurance training plan targeting the Procam Slam (Oct 2026 �
 
 ```
 training/
-├── plan.md          # Full training plan — phases, sessions, week-by-week progressions
-├── database.json    # Structured week-by-week data for all modalities (machine-readable)
-├── context.md       # Live athlete state — update weekly, read by AI trainer for context
-├── worklog.md       # Session-by-session log — what you did, how it felt
-└── nutrition-log.md # Nutrition tracking
+├── plan.md                  # Full training plan — phases, sessions, week-by-week progressions
+├── database.json            # Structured week-by-week data for all modalities (machine-readable)
+├── context.md                # Live athlete state — update weekly, read by AI trainer for context
+├── worklog.md                # Session-by-session log — what you did, how it felt
+├── nutrition-log.md          # Nutrition tracking
+├── hm-plan-delhi-oct18.md    # Standalone 14-week Vedanta Delhi HM plan (reference doc)
+└── hm-plan-shin-bridge.md    # Symptom-gated shin-recovery prelude to the HM plan (reference doc)
 ```
 
 ## Dashboard (GitHub Pages)

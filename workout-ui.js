@@ -413,7 +413,72 @@
     ]);
   }
 
+  function hmBlockStageData(hmBlock) {
+    if (hmBlock.mode === "bridge") return hmBlock.bridge.stages[hmBlock.bridge.current_stage];
+    return hmBlock.main.weeks[hmBlock.main.current_week_n - 1];
+  }
+
+  function hmBlockRunning(hmBlock, stage) {
+    if (hmBlock.mode === "bridge") {
+      return {
+        sun_long_km: stage.long_km,
+        quality: hmBlock.bridge.quality_session.structure + " — " + hmBlock.bridge.quality_session.pace
+      };
+    }
+    return {
+      sun_long_km: stage.long_km,
+      long_note: stage.long_note || null,
+      quality: stage.quality,
+      wed_easy_km: stage.short_easy_km,
+      fri_easy_km: stage.longer_easy_km
+    };
+  }
+
+  function renderHmBlockSchedule(hmBlock, cw, el, targetBodyId) {
+    var schedBody = document.getElementById(targetBodyId || "schedule-body");
+    var stage = hmBlockStageData(hmBlock);
+    var running = hmBlockRunning(hmBlock, stage);
+    var syntheticCw = { bench: cw ? cw.bench : {}, running: running };
+    var label = hmBlock.mode === "bridge" ? hmBlock.bridge.current_stage : hmBlock.main.current_week_n;
+    workoutContext = { cw: syntheticCw, currentWeek: label, data: {} };
+
+    if (hmBlock.mode === "main" && stage.race) {
+      schedBody.appendChild(buildScheduleRow("Mon", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Tue", "Easy 6 km + 4 strides", "run", "easy-wed-hm", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Wed", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Thu", "Easy 5 km", "run", "easy-fri-hm", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Fri", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Rest", "rest", "rest", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "RACE — 21.1 km", "run", "race-hm", "Rest", "rest", "rest", el));
+      return;
+    }
+
+    if (hmBlock.mode === "bridge") {
+      schedBody.appendChild(buildScheduleRow("Mon", "Swim", "swim", "swim", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Tue", "Quality Run", "run", "quality-run-hm", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Wed", "Upper A — Pullup + OHP", "pull", "upper-2", "Bike Easy", "cycle", "bike-easy", el));
+      schedBody.appendChild(buildScheduleRow("Thu", "Lower Lift", "legs", "lower-shin", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Fri", "Swim (or rest)", "swim", "swim", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sat", "Upper B — Bench Focus", "push", "upper-1", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run-hm", "Rest", "rest", "rest", el));
+      return;
+    }
+
+    schedBody.appendChild(buildScheduleRow("Mon", "Swim", "swim", "swim", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Tue", "Quality Run", "run", "quality-run-hm", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Wed", "Upper A — Pullup + OHP", "pull", "upper-2", "Short Easy + Strides", "run", "easy-wed-hm", el));
+    schedBody.appendChild(buildScheduleRow("Thu", "Lower Lift", "legs", "lower-shin", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Fri", "Longer Easy Run", "run", "easy-fri-hm", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Sat", "Upper B — Bench Focus", "push", "upper-1", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run-hm", "Rest", "rest", "rest", el));
+  }
+
   function renderSchedule(currentWeek, el, targetBodyId) {
+    var hmData = workoutContext ? workoutContext.data : null;
+    if (hmData && hmData.hm_block && hmData.hm_block.active) {
+      renderHmBlockSchedule(hmData.hm_block, workoutContext.cw, el, targetBodyId);
+      return;
+    }
     var noBike = currentWeek <= 3;
     var isOneSessionPhase = currentWeek >= 4 && currentWeek <= 16;
     var isPost12 = currentWeek > 12;

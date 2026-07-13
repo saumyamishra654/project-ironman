@@ -18,7 +18,7 @@
   window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
 })();
 </script>
-  <script>document.write('<script src="' + appUrl('workout-ui.js?v=3') + '"><\/script>');</script>
+  <script>document.write('<script src="' + appUrl('workout-ui.js?v=4') + '"><\/script>');</script>
   <style>
     :root {
       --bg: #1a1410;
@@ -353,8 +353,19 @@
     var currentWeek = getCurrentWeek(data);
     var phase = getPhase(currentWeek, data.phases);
 
-    document.getElementById("phase-name").textContent = "Phase " + phase.id + " \u2014 " + phase.name;
-    document.getElementById("week-badge").textContent = "Week " + currentWeek + " of " + totalWeeks;
+    if (data.hm_block && data.hm_block.active) {
+      var hb = data.hm_block;
+      if (hb.mode === "bridge") {
+        document.getElementById("phase-name").textContent = "Shin Bridge \u2014 Stage " + hb.bridge.current_stage;
+        document.getElementById("week-badge").textContent = "Symptom-gated";
+      } else {
+        document.getElementById("phase-name").textContent = "Vedanta HM Block";
+        document.getElementById("week-badge").textContent = "Week " + hb.main.current_week_n + " of 14";
+      }
+    } else {
+      document.getElementById("phase-name").textContent = "Phase " + phase.id + " \u2014 " + phase.name;
+      document.getElementById("week-badge").textContent = "Week " + currentWeek + " of " + totalWeeks;
+    }
     document.getElementById("overview-title").textContent = "Full " + totalWeeks + "-Week Overview";
 
     // Goals
@@ -440,20 +451,22 @@
     WorkoutUI.setContext(cw, currentWeek, data);
     WorkoutUI.renderSchedule(currentWeek, el, "schedule-body");
 
-    var nextWeek = currentWeek + 1;
-    if (nextWeek <= totalWeeks) {
-      var nw = null;
-      for (var ni = 0; ni < data.weeks.length; ni++) {
-        if (data.weeks[ni].week === nextWeek) { nw = data.weeks[ni]; break; }
-      }
-      if (nw) {
-        var nextPhase = getPhase(nextWeek, data.phases);
-        document.getElementById("next-week-title").textContent = "Week " + nextWeek;
-        document.getElementById("next-week-label").textContent = nw.deload ? "— Deload" : (nextPhase ? "— " + nextPhase.name : "");
-        WorkoutUI.setContext(nw, nextWeek, data);
-        WorkoutUI.renderSchedule(nextWeek, el, "next-schedule-body");
-        WorkoutUI.setContext(cw, currentWeek, data);
-        document.getElementById("next-week-section").style.display = "";
+    if (!(data.hm_block && data.hm_block.active)) {
+      var nextWeek = currentWeek + 1;
+      if (nextWeek <= totalWeeks) {
+        var nw = null;
+        for (var ni = 0; ni < data.weeks.length; ni++) {
+          if (data.weeks[ni].week === nextWeek) { nw = data.weeks[ni]; break; }
+        }
+        if (nw) {
+          var nextPhase = getPhase(nextWeek, data.phases);
+          document.getElementById("next-week-title").textContent = "Week " + nextWeek;
+          document.getElementById("next-week-label").textContent = nw.deload ? "— Deload" : (nextPhase ? "— " + nextPhase.name : "");
+          WorkoutUI.setContext(nw, nextWeek, data);
+          WorkoutUI.renderSchedule(nextWeek, el, "next-schedule-body");
+          WorkoutUI.setContext(cw, currentWeek, data);
+          document.getElementById("next-week-section").style.display = "";
+        }
       }
     }
 
@@ -506,7 +519,7 @@
 </script>
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register(appUrl("sw.js?v=3")).catch(function() {});
+  navigator.serviceWorker.register(appUrl("sw.js?v=4")).catch(function() {});
 }
 </script>
 </body>

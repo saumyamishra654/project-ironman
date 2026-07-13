@@ -8,13 +8,13 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 4 |
-| Current phase | 1 — Job Adjustment |
-| Week start date | 2026-06-15 |
+| Current week | 8 |
+| Current phase | 1 — Job Adjustment (hm_block active — see below) |
+| Week start date | 2026-07-13 |
 | Bodyweight | ~80 kg |
-| Sleep quality | Poor (job week 1) |
+| Sleep quality | — |
 | Overall fatigue (1–10) | — |
-| Injury / pain notes | Diffuse mid-shin ache, post-run only — shin bridge active (see hm_block in database.json, currently stage B1) |
+| Injury / pain notes | Shin bridge active (hm_block, stage B1). Jul 12 10k: no pain during/after; dull non-painful sensation at a point next morning — not focal, watching it. Not a tripwire. |
 | Weight target | 75 kg over ~3–4 months (mild deficit) |
 | Calorie target | 2500 kcal/day |
 
@@ -52,7 +52,7 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Last long run | 5 km (May 31 — substituted for planned 8 km) |
+| Last long run | 10 km (Jul 12 — B1 baseline, shin clean, no tripwires) |
 | Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
 | Current easy pace | ~7:24 /km |
 | Last quality session | — |
@@ -99,6 +99,7 @@ List any deviations from the plan here:
 - **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (10 min walk). Sled available.
 - **From week 4:** Schedule updated — Wed becomes brick (Z2 cycle → quality run), Tue gets Z2 cycle, Fri legs gets sled finisher. Row Z2 dropped. Nutrition shifted to 2500 kcal deficit. Chia seeds added to breakfast.
 - **From week 8 (Jul 13):** Running/lower-lift schedule for weeks 8–21 now driven by `hm_block` in `database.json` (see `training/hm-plan-shin-bridge.md`, `training/hm-plan-delhi-oct18.md`) — shin bridge first (symptom-gated, currently stage B1), then the Vedanta 14-week HM plan once cleared. Upper 1/Upper 2 and bench progression unaffected. Update `hm_block.bridge.current_stage` (or switch `mode` to `"main"` once rejoined) as each week is reported.
+- **Jul 12:** B1 baseline long run (10 km) — clean, no pain during or after. Dull non-painful sensation at a point the next morning; not focal, not a tripwire, just watching it. Held at B1 — gate needs a full symptom-free week, not one run. Also noted: consciously engaging the left glute improved how the foot felt mid-run — consistent with the shin bridge doc's flagged weak-left-hip / pelvic-drop pattern.
 
 ## Decision Log
 

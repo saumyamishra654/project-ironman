@@ -82,3 +82,25 @@ Weeks run **Monday → Sunday** (matches `plan.md` and the dashboard schedule).
 ### Session Log
 
 <!-- Add sessions below -->
+
+---
+
+## Week 8 — Shin Bridge B1 (Jul 13 – Jul 19)
+
+Schedule now driven by `hm_block` in `database.json` (bridge mode, stage B1) — see `training/hm-plan-shin-bridge.md`. Bench progression and Upper 1/Upper 2 unaffected.
+
+### Session Log
+
+**Jul 12 (Sun, day before week 8) — Run — B1 baseline long run**
+- 10 km
+- RPE: —
+- Shin: no pain during or after the run. Dull (non-painful) sensation at a point the next morning — not focal pain, watching it, not treating as a tripwire.
+- Notes: Matches B1's 10 km long-run target. Foot felt notably better when consciously engaging the left glute — consistent with the shin bridge doc's noted rightward pelvic drop / weak left hip. Not yet a "symptom-free week" (gate requires a full clean week, not one run) — holding at B1 until the rest of this week is clean.
+
+<!-- Copy this template for each session:
+
+**[Date] — [Session Name]**
+- Exercises / distances / weights
+- RPE:
+- Notes:
+-->

@@ -454,17 +454,17 @@
     }
 
     if (hmBlock.mode === "bridge") {
-      schedBody.appendChild(buildScheduleRow("Mon", "Swim", "swim", "swim", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Mon", "Swim 1 — Endurance", "swim", "swim-endurance", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Tue", "Quality Run", "run", "quality-run-hm", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Wed", "Upper A — Pullup + OHP", "pull", "upper-2", "Bike Easy", "cycle", "bike-easy", el));
       schedBody.appendChild(buildScheduleRow("Thu", "Lower Lift", "legs", "lower-shin", "Rest", "rest", "rest", el));
-      schedBody.appendChild(buildScheduleRow("Fri", "Swim (or rest)", "swim", "swim", "Rest", "rest", "rest", el));
+      schedBody.appendChild(buildScheduleRow("Fri", "Swim 2 — Tech + Speed (or rest)", "swim", "swim-tech-speed", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sat", "Upper B — Bench Focus", "push", "upper-1", "Rest", "rest", "rest", el));
       schedBody.appendChild(buildScheduleRow("Sun", "Long Run", "run", "long-run-hm", "Rest", "rest", "rest", el));
       return;
     }
 
-    schedBody.appendChild(buildScheduleRow("Mon", "Swim", "swim", "swim", "Rest", "rest", "rest", el));
+    schedBody.appendChild(buildScheduleRow("Mon", "Swim 1 — Endurance", "swim", "swim-endurance", "Rest", "rest", "rest", el));
     schedBody.appendChild(buildScheduleRow("Tue", "Quality Run", "run", "quality-run-hm", "Rest", "rest", "rest", el));
     schedBody.appendChild(buildScheduleRow("Wed", "Upper A — Pullup + OHP", "pull", "upper-2", "Short Easy + Strides", "run", "easy-wed-hm", el));
     schedBody.appendChild(buildScheduleRow("Thu", "Lower Lift", "legs", "lower-shin", "Rest", "rest", "rest", el));

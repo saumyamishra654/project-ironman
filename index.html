@@ -18,7 +18,7 @@
   window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
 })();
 </script>
-  <script>document.write('<script src="' + appUrl('workout-ui.js?v=4') + '"><\/script>');</script>
+  <script>document.write('<script src="' + appUrl('workout-ui.js?v=5') + '"><\/script>');</script>
   <style>
     :root {
       --bg: #1a1410;
@@ -519,7 +519,7 @@
 </script>
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register(appUrl("sw.js?v=4")).catch(function() {});
+  navigator.serviceWorker.register(appUrl("sw.js?v=5")).catch(function() {});
 }
 </script>
 </body>

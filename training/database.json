@@ -106,9 +106,9 @@
     },
     {
       "week": 8, "phase": 1, "start": "2026-07-13", "deload": true,
-      "running": { "wed_type": "5k_time_trial", "wed_km": 5, "sat_easy_km": 0, "sun_long_km": 10, "total_km": 15 },
+      "running": { "wed_type": null, "wed_km": null, "sat_easy_km": 0, "sun_long_km": 10, "total_km": 17 },
       "bench": { "speed_kg": null, "main_kg": 65, "sets_reps": "2x5" },
-      "notes": "DELOAD — reassess running paces after TT"
+      "notes": "Shin bridge B1 — see hm_block. Bench progression unaffected; running/lower-lift schedule driven by hm_block."
     },
     {
       "week": 9, "phase": 2, "start": "2026-07-20", "deload": false,

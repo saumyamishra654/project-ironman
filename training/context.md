@@ -14,7 +14,7 @@ This file is the live state document. Update it after every session or at minimu
 | Bodyweight | ~80 kg |
 | Sleep quality | Poor (job week 1) |
 | Overall fatigue (1–10) | — |
-| Injury / pain notes | None |
+| Injury / pain notes | Diffuse mid-shin ache, post-run only — shin bridge active (see hm_block in database.json, currently stage B1) |
 | Weight target | 75 kg over ~3–4 months (mild deficit) |
 | Calorie target | 2500 kcal/day |
 
@@ -98,6 +98,7 @@ List any deviations from the plan here:
 - **Weeks 2–3:** Long run missed both weeks. Other training happened (fast mile Monday, 45 min Z2 cycle).
 - **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (10 min walk). Sled available.
 - **From week 4:** Schedule updated — Wed becomes brick (Z2 cycle → quality run), Tue gets Z2 cycle, Fri legs gets sled finisher. Row Z2 dropped. Nutrition shifted to 2500 kcal deficit. Chia seeds added to breakfast.
+- **From week 8 (Jul 13):** Running/lower-lift schedule for weeks 8–21 now driven by `hm_block` in `database.json` (see `training/hm-plan-shin-bridge.md`, `training/hm-plan-delhi-oct18.md`) — shin bridge first (symptom-gated, currently stage B1), then the Vedanta 14-week HM plan once cleared. Upper 1/Upper 2 and bench progression unaffected. Update `hm_block.bridge.current_stage` (or switch `mode` to `"main"` once rejoined) as each week is reported.
 
 ## Decision Log
 

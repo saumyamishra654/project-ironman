@@ -97,6 +97,30 @@ Schedule now driven by `hm_block` in `database.json` (bridge mode, stage B1) —
 - Shin: no pain during or after the run. Dull (non-painful) sensation at a point the next morning — not focal pain, watching it, not treating as a tripwire.
 - Notes: Matches B1's 10 km long-run target. Foot felt notably better when consciously engaging the left glute — consistent with the shin bridge doc's noted rightward pelvic drop / weak left hip. Not yet a "symptom-free week" (gate requires a full clean week, not one run) — holding at B1 until the rest of this week is clean.
 
+**Jul 19 (Sun) — Run — long run 14.6 km**
+- 14.56 km, 1:54, avg HR 172, max 194, avg pace 7:52 /km, cadence 153 spm, TE 4.1 ("Lactate Threshold"), training load 206
+- RPE: 70 (Garmin), felt good
+- Notes: **Intensity analysis (Garmin device zones, already calibrated to observed max ~203): 90% of the run in Z4 (161–180), only ~8 min below Z3. This was a threshold session, not an easy long run.** Pace band was fine; HR was the problem. Started 16:47 in Bengaluru heat — evening heat inflating HR ~10–15 bpm. Action: govern long runs by HR (≤162, avg 150–158), run mornings. Note cadence 153 is low (overstriding, 82 cm stride) — nudge toward 165–170. Caveat: watch only ~2–3 weeks old, still calibrating (HRV/VO₂max flagged ONBOARDING) — treat zone/max-HR estimates as provisional until the Week-8 5k TT reset.
+
+---
+
+## Week 9 — Phase 2 Build (Jul 20 – Jul 26)
+
+Shin cleared — treating running normally from here (no longer symptom-gating). Plan target: Wed tempo 7 km + Sun long 16 km (total ~23 km).
+
+**Plan change (Jul 23):** Easy/long-run HR cap in `plan.md` individualised from a flat 150 → **~162 bpm (70% HRR)** off observed max HR ~203 / RHR 62. Rationale logged in `plan.md` Running Zones note. The fix is effort discipline (govern by HR, run mornings), not less distance.
+
+### Session Log
+
+**Jul 22 (Tue) — Run — "7K Threshold" 6.0 km**
+- 5.97 km, avg HR 166, max 202, moving pace 6:51 /km
+- RPE: —
+- Notes: Moving pace 6:51 sits right in the tempo band (6:45–7:00) — this one was correctly run as a quality session. Also set the current observed max HR of 202.
+
+**Jul 26 (Sun) — Run — long run [PLANNED]**
+- Target: 15–16 km, HR-governed (≤162, avg 150–158), morning start, run-walk as needed. Fuel + electrolytes.
+- Success metric: post-run TE ~2.5–3.5 (aerobic base), bulk of time in Z2–Z3 rather than Z4.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

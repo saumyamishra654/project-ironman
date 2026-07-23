@@ -388,7 +388,7 @@
     "note": "Reassess after week 8 time trial, after VDHM, and after Mumbai. Zones slowed Jun 11 — previous easy band (7:15-8:00) was too fast (May 27 run: 7:24/km at RPE 8)."
   },
   "hm_block": {
-    "active": true,
+    "active": false,
     "race_id": "vdhm",
     "week_offset": 7,
     "mode": "bridge",

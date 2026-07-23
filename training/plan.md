@@ -150,14 +150,14 @@ Based on: 7 km at 7:24 /km RPE 8, 10k 1:07. Reassess after the week 8 time trial
 
 | Zone | Pace | Use |
 |------|------|-----|
-| Easy / Long | 8:00–8:45 /km | Saturday easy runs, Sunday long runs — conversational, HR-capped (~below 150 bpm); if you can't speak in sentences, slow down |
+| Easy / Long | 8:00–8:45 /km | Saturday easy runs, Sunday long runs — conversational, **HR-capped ~162 bpm (70% HRR / Garmin Z2–low-Z3); ceiling, not a target — aim to average 150–158.** Individualised to observed max HR ~203, RHR 62 (the old flat 150 cap was too strict). If you can't speak in sentences, slow down. In evening heat, use walk breaks to hold HR under 162 rather than pushing pace |
 | HM Race Pace | 6:40–7:00 /km now → 6:30–6:50 target by Oct | Phase 3 Wednesday HM-pace sessions |
 | Tempo | 6:45–7:00 /km | Wednesday tempo sessions — ~current 10k effort sustained — true threshold |
 | 400 m intervals | 5:30–5:50 /km | Wednesday interval sessions |
 | 1 km intervals | 6:00–6:20 /km | Build phase interval sessions |
 | 10k Race Pace | TBD (reassess post-Mumbai) | Phase 8 Wednesday race-pace sessions |
 
-Paces will improve over the block. Reassess zones after the week 8 TT, after VDHM, and after Mumbai. These zones are deliberately conservative — the May 27 run (7:24/km at RPE 8) shows the previous easy band was too fast.
+Paces will improve over the block. Reassess zones after the week 8 TT, after VDHM, and after Mumbai. These zones are deliberately conservative — the May 27 run (7:24/km at RPE 8) shows the previous easy band was too fast. **Easy-run HR cap updated Jul 23, 2026:** individualised to ~162 bpm (70% HRR) off observed max HR ~203 / RHR 62 — the Jul 19 long run sat 90% of its time in Garmin Z4 (161+), i.e. it was a threshold run in disguise. The pace band (8:00–8:45) is roughly right; the fix is governing by HR, not pace, and running mornings over evenings to cut heat-inflated HR.
 
 ---
 

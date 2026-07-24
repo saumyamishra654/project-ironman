@@ -112,10 +112,10 @@ Shin cleared — treating running normally from here (no longer symptom-gating).
 
 ### Session Log
 
-**Jul 22 (Tue) — Run — "7K Threshold" 6.0 km**
-- 5.97 km, avg HR 166, max 202, moving pace 6:51 /km
-- RPE: —
-- Notes: Moving pace 6:51 sits right in the tempo band (6:45–7:00) — this one was correctly run as a quality session. Also set the current observed max HR of 202.
+**Jul 22 (Tue) — Run — Quality: 4×1k intervals @ 6:00 target**
+- 5.97 km total (warmup + 4×1k reps + jog recoveries + cooldown). Rep paces (moving): 5:47, 6:06, 6:01, then final rep sent at **~4:53/km** (peak 4:25/km). HR per rep climbed 175 → 179 → 179 → 187, final rep to **max 202**.
+- RPE: hard on final rep (max effort)
+- Notes: First three reps bang-on the 6:00 target; last one full send. NOTE: the whole-session average pace (6:51/km) is misleading — it includes warmup/recoveries/cooldown, NOT rep pace. **VO₂max check:** the 4:53/km final rep (~44–45 ml/kg/min demand) reaching max HR, plus peak 4:25/km (~49 ml/kg/min), implies true VO₂max ~mid-40s — so Garmin's 41 is believable, likely slightly conservative (new watch still calibrating + high easy-run HR dragging the estimate). Top-end/engine is strong; the limiter is aerobic base (172 HR at easy pace), not the VO₂max number.
 
 **Jul 26 (Sun) — Run — long run [PLANNED]**
 - Target: 15–16 km, HR-governed (≤162, avg 150–158), morning start, run-walk as needed. Fuel + electrolytes.

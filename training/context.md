@@ -41,10 +41,11 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current working weight | — (starting 72.5 kg week 1) |
-| Last tested 1RM | 85 kg |
-| Projected 1RM | 93 kg (from volume) |
-| Stall weeks | 0 |
+| Current working weight | 77 kg × 6 (clean, Jun 30 + Jul 6) → 80 kg 3×5 planned this week (wk 9) |
+| Last tested 1RM | 85 kg (stale — likely underrated) |
+| Projected 1RM | ~93 kg — confirmed from Hevy: 80×3 and 77×6 both give e1RM ≈ 93 |
+| Stall weeks | 0 (e1RM has held 90–93 since late Mar; the real climb to 100 starts with the wk 9–28 ramp) |
+| Data source | Hevy manual export (`training/hevy-export.csv`, 55 sessions Mar 1 – Jul 20 2026) |
 | Year-end target | Projected 100 kg by Dec (92.5×3 / 90×4) |
 | Real 1RM target | 100–105 kg, test ~Feb 2027 (after Mumbai) |
 

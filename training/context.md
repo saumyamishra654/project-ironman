@@ -8,13 +8,13 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 8 |
-| Current phase | 1 — Job Adjustment (hm_block active — see below) |
-| Week start date | 2026-07-13 |
+| Current week | 9 |
+| Current phase | 2 — Build |
+| Week start date | 2026-07-20 |
 | Bodyweight | ~80 kg |
 | Sleep quality | — |
 | Overall fatigue (1–10) | — |
-| Injury / pain notes | Shin bridge active (hm_block, stage B1). Jul 12 10k: no pain during/after; dull non-painful sensation at a point next morning — not focal, watching it. Not a tripwire. |
+| Injury / pain notes | Shin cleared — no longer symptom-gating running (hm_block can be retired). |
 | Weight target | 75 kg over ~3–4 months (mild deficit) |
 | Calorie target | 2500 kcal/day |
 
@@ -41,10 +41,11 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current working weight | — (starting 72.5 kg week 1) |
-| Last tested 1RM | 85 kg |
-| Projected 1RM | 93 kg (from volume) |
-| Stall weeks | 0 |
+| Current working weight | 77 kg × 6 (clean, Jun 30 + Jul 6) → 80 kg 3×5 planned this week (wk 9) |
+| Last tested 1RM | 85 kg (stale — likely underrated) |
+| Projected 1RM | ~93 kg — confirmed from Hevy: 80×3 and 77×6 both give e1RM ≈ 93 |
+| Stall weeks | 0 (e1RM has held 90–93 since late Mar; the real climb to 100 starts with the wk 9–28 ramp) |
+| Data source | Hevy manual export (`training/hevy-export.csv`, 55 sessions Mar 1 – Jul 20 2026) |
 | Year-end target | Projected 100 kg by Dec (92.5×3 / 90×4) |
 | Real 1RM target | 100–105 kg, test ~Feb 2027 (after Mumbai) |
 
@@ -52,11 +53,13 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Last long run | 10 km (Jul 12 — B1 baseline, shin clean, no tripwires) |
+| Last long run | 14.6 km (Jul 19) — but ran 90% in Z4 (avg HR 172); was a threshold effort, not easy. Fix: HR-govern long runs (≤162). |
 | Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
-| Current easy pace | ~7:24 /km |
-| Last quality session | — |
-| Current running zones | See database.json |
+| Current easy pace | ~7:24 /km (but HR too high at this pace — see easy HR cap below) |
+| Last quality session | Jul 22 "7K Threshold" — 6 km, moving 6:51/km, in-band tempo. Correctly run. |
+| Easy/long HR cap | ~162 bpm (70% HRR), aim avg 150–158. Individualised Jul 23 off observed max ~203 / RHR 62 (was flat 150). See plan.md. |
+| Watch note | Garmin only ~2–3 weeks old, still calibrating — VO₂max 41 & zone/max-HR estimates provisional. Reset zones at the Week-8 5k TT. |
+| Current running zones | See plan.md Running Zones + database.json |
 | Next race | VDHM Oct 18 (week 21) |
 
 ## Swimming Status
@@ -100,6 +103,8 @@ List any deviations from the plan here:
 - **From week 4:** Schedule updated — Wed becomes brick (Z2 cycle → quality run), Tue gets Z2 cycle, Fri legs gets sled finisher. Row Z2 dropped. Nutrition shifted to 2500 kcal deficit. Chia seeds added to breakfast.
 - **From week 8 (Jul 13):** Running/lower-lift schedule for weeks 8–21 now driven by `hm_block` in `database.json` (see `training/hm-plan-shin-bridge.md`, `training/hm-plan-delhi-oct18.md`) — shin bridge first (symptom-gated, currently stage B1), then the Vedanta 14-week HM plan once cleared. Upper 1/Upper 2 and bench progression unaffected. Update `hm_block.bridge.current_stage` (or switch `mode` to `"main"` once rejoined) as each week is reported.
 - **Jul 12:** B1 baseline long run (10 km) — clean, no pain during or after. Dull non-painful sensation at a point the next morning; not focal, not a tripwire, just watching it. Held at B1 — gate needs a full symptom-free week, not one run. Also noted: consciously engaging the left glute improved how the foot felt mid-run — consistent with the shin bridge doc's flagged weak-left-hip / pelvic-drop pattern.
+- **Jul 23 (week 9):** Shin cleared — no longer symptom-gating. `hm_block.active` set to `false` in `database.json`, restoring normal calendar-driven Build-phase schedule (weeks 9–16). NOTE: phase notes in `database.json` (phases 1–3) and `plan.md` still reference "superseded by hm_block" — clean up when convenient. Running now follows `plan.md`'s week-by-week table directly.
+- **Jul 23:** Easy/long HR cap individualised 150 → ~162 bpm (70% HRR) off observed max ~203 / RHR 62. Garmin only ~2–3 weeks old and still calibrating, so zone/VO₂max/max-HR figures are provisional — reset at the Week-8 5k TT. Jul 19 "long run" was 90% Z4 (threshold, not easy); fix is to govern long runs by HR and run mornings, not evenings.
 
 ## Decision Log
 
@@ -113,6 +118,8 @@ List any deviations from the plan here:
 | 2026-06-21 | Mild caloric deficit started | Target 2500 kcal/day to cut from ~80 → 75 kg over 3–4 months. Protein stays at ~165–170 g/day. Chia seeds (25 g) added to breakfast. Review at 3 weeks — if no weight loss, drop to 2400. If bench stalls, re-evaluate deficit first. |
 | 2026-06-28 | Phases 1–2 restructured to 1 session/day | Merged 4 upper days (Push A, Pull A, Push B, Pull B) into 2 full upper days (Upper 1 bench-focus, Upper 2 pullup/OHP-focus). Weekly structure: Mon Upper 1, Tue Run, Wed Swim, Thu Upper 2, Fri Legs, Sat Cycle + Arms, Sun Long Run. Arms moved to Saturday cycle day. Reduces total gym sessions from 5 to 3 lifting + 1 cycle, better fit with office schedule. |
 | 2026-06-28 | Carb cycling adopted | Drop carbs on 5 non-eating-out days (~2200–2300 kcal) to buffer 2 higher-calorie social days (~3000–3200 kcal). Weekly average stays at ~2500 kcal deficit. Protein stays constant. Peri-workout carbs preserved. |
+| 2026-07-23 | Shin bridge retired | Shin cleared; `hm_block.active → false`. Running resumes normal Build-phase calendar (weeks 9–16). |
+| 2026-07-23 | Easy/long HR cap individualised | Flat 150 → ~162 bpm (70% HRR) off observed max HR ~203 / RHR 62. Jul 19 long run was 90% Z4 (threshold in disguise). Govern long runs by HR, run mornings. Watch still calibrating (~2–3 wks) — treat zones as provisional, reset at Week-8 5k TT. |
 
 ---
 

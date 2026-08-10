@@ -8,9 +8,9 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 9 |
+| Current week | 11 |
 | Current phase | 2 — Build |
-| Week start date | 2026-07-20 |
+| Week start date | 2026-08-03 |
 | Bodyweight | ~80 kg |
 | Sleep quality | — |
 | Overall fatigue (1–10) | — |
@@ -18,16 +18,18 @@ This file is the live state document. Update it after every session or at minimu
 | Weight target | 75 kg over ~3–4 months (mild deficit) |
 | Calorie target | 2500 kcal/day |
 
-## Race Calendar
+## Race Calendar — revised 2026-08-09 (Procam Slam cancelled)
 
-| # | Race | Date | Week |
-|---|------|------|------|
-| 1 | Vedanta Delhi Half Marathon | Oct 18, 2026 | 21 |
-| 2 | Tata Steel World 25K Kolkata | Dec 20, 2026 | 30 |
-| 3 | Tata Mumbai Marathon | Jan 17, 2027 | 34 |
-| 4 | TCS World 10K Bengaluru | Apr 25, 2027 | 48 |
-| — | Bench 1RM test | ~Feb 8–14, 2027 | 38 |
-| — | Goa 70.3 | ~Nov 2027 | TBD |
+**Pivot:** dropped the Procam Slam; now training directly for the Goa 70.3 half-ironman. No runs past 21k for the foreseeable future. See `CLAUDE.md` Goals for detail.
+
+| # | Race | Date | Notes |
+|---|------|------|-------|
+| 1 | **Bangalore Half Marathon** | **Dec 13, 2026** | Near-term focus. Local, ideal temp, no travel. |
+| — | Bench 1RM test | ~Feb 8–14, 2027 | Strength goal (100 kg) still stands. |
+| A | **Goa 70.3 (half-ironman)** | ~Nov 2027 (TBD) | A-race — direct target of the whole plan. |
+| opt | Sprinkled HM / 10k tune-ups | TBD | Optional road races en route to the HIM. |
+
+~~Vedanta Delhi HM (Oct 18) · Kolkata 25k (Dec 20) · Mumbai Marathon (Jan 17) · TCS 10k (Apr 25)~~ — **cancelled with the Procam Slam.**
 
 ## Recent PRs / Milestones
 
@@ -53,14 +55,15 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Last long run | 14.6 km (Jul 19) — but ran 90% in Z4 (avg HR 172); was a threshold effort, not easy. Fix: HR-govern long runs (≤162). |
+| Last long run | **15.0 km (Aug 9)** — HR-governed progression, held sub-172 the whole way (avg 161, max 179). Big discipline win vs Jul 19 (which was 90% Z4). Comp-pace block ~7:37/km at HR ≤171. TE 3.9 tempo, anaerobic 0.0 (by design). |
+| Competition pace (HM) | **~7:35 /km** working anchor (revised down from 7:10 after Aug 9 run). Aug 9 progression: at the sub-172 HR ceiling, comp-pace block held ~7:37/km — the 7:09 predictor requires threshold HR. Train off 7:35; the predictor pace is a goal to earn as easy HR drops. Garmin predictor (Aug 7): HM 2:30:51 (7:09/km), 10K 1:03:19, 5K 29:14. LTHR 182 (Jul 25). VO₂max 43 (Aug 9). |
 | Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
 | Current easy pace | ~7:24 /km (but HR too high at this pace — see easy HR cap below) |
 | Last quality session | Jul 22 "7K Threshold" — 6 km, moving 6:51/km, in-band tempo. Correctly run. |
 | Easy/long HR cap | ~162 bpm (70% HRR), aim avg 150–158. Individualised Jul 23 off observed max ~203 / RHR 62 (was flat 150). See plan.md. |
 | Watch note | Garmin only ~2–3 weeks old, still calibrating — VO₂max 41 & zone/max-HR estimates provisional. Reset zones at the Week-8 5k TT. |
 | Current running zones | See plan.md Running Zones + database.json |
-| Next race | VDHM Oct 18 (week 21) |
+| Next race | Bangalore HM — Dec 13, 2026 (was VDHM Oct 18, cancelled with Procam Slam) |
 
 ## Swimming Status
 

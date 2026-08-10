@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "Project Ironman",
+    "subtitle": "Half-Ironman build · next stop Bangalore HM",
+    "block_name": "Block 1 — HIM Base → Build",
+    "block_start": "2026-08-10",
+    "block_weeks": 12,
+    "updated": "2026-08-09",
+    "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
+  },
+  "athlete": {
+    "name": "Saumya Mishra",
+    "age": 22,
+    "bodyweight_kg": 80,
+    "weight_target_kg": 75,
+    "location": "Bengaluru — run mornings (heat)"
+  },
+  "metrics": [
+    { "id": "vo2max", "label": "VO₂max", "value": "43", "unit": "", "sport": "run", "trend": "up", "note": "41→43 after Aug 9 long run" },
+    { "id": "comp_pace", "label": "Comp pace", "value": "7:35", "unit": "/km", "sport": "run", "note": "sub-threshold sustainable (Aug 9)" },
+    { "id": "lt_pace", "label": "LT pace", "value": "5:50", "unit": "/km", "sport": "run", "note": "short-rep target" },
+    { "id": "lthr", "label": "LTHR", "value": "182", "unit": "bpm", "sport": "run", "note": "long-run cap 172 · easy cap 162" },
+    { "id": "swim_css", "label": "Swim CSS", "value": "—", "unit": "/100m", "sport": "swim", "note": "test in wk 1–2 (400+200 TT)" },
+    { "id": "bench", "label": "Bench", "value": "82.5", "unit": "kg", "sport": "strength", "target": 100, "from": 82.5, "note": "working → 100 kg (~Feb 2027)" }
+  ],
+  "races": [
+    { "id": "blr_hm", "name": "Bangalore Half Marathon", "short": "Bangalore HM", "date": "2026-12-13", "distance_km": 21.1, "priority": "B", "role": "Near-term target · local, ideal temp" },
+    { "id": "goa703", "name": "Goa 70.3 (Half-Ironman)", "short": "Goa 70.3", "date": "2027-11-01", "distance_km": 113, "priority": "A", "role": "A-race — the whole plan points here" }
+  ],
+  "week_template": [
+    { "day": "Mon", "sessions": [ { "sport": "run", "title": "Easy / recovery run", "detail": "AM · HR ≤150–158" } ] },
+    { "day": "Tue", "sessions": [ { "sport": "strength", "title": "Upper (bench)", "detail": "bench focus" } ] },
+    { "day": "Wed", "sessions": [ { "sport": "swim", "slot": "AM", "title": "Swim", "detail": "aerobic" }, { "sport": "run", "slot": "PM", "title": "Speed run", "detail": "LT intervals" } ] },
+    { "day": "Thu", "sessions": [ { "sport": "strength", "title": "Lower / full", "detail": "auto-regulate" } ] },
+    { "day": "Fri", "sessions": [ { "sport": "swim", "slot": "AM", "title": "Swim", "detail": "aerobic" }, { "sport": "strength", "slot": "PM", "title": "Upper", "detail": "bench" } ] },
+    { "day": "Sat", "sessions": [ { "sport": "rest", "title": "Rest", "detail": "nothing scheduled" } ] },
+    { "day": "Sun", "sessions": [ { "sport": "run", "title": "Long run", "detail": "HR ≤172" } ] }
+  ],
+  "phases": [
+    { "id": "A", "name": "Reset & Base", "weeks": [1, 4], "note": "Re-establish the triplet; ramp swim volume; easy long runs." },
+    { "id": "B", "name": "Build", "weeks": [5, 8], "note": "Threshold volume, longer reps, long runs to 20k." },
+    { "id": "C", "name": "HM-Specific", "weeks": [9, 12], "note": "Race-pace long-run segments, LT cruise work, long continuous swims." }
+  ],
+  "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
+  "block": [
+    { "week": 1, "start": "2026-08-10", "phase": "A", "deload": false,
+      "run": { "long_km": 15, "long_note": "repeat the Aug 9 HR-capped progression (5+5+5)", "speed": "6×800 @ 5:50–5:55", "easy_km": 6 },
+      "swim": { "total_m": 4000, "sessions": 2, "split": "1.8k + 2.2k", "note": "hold at 2 sessions wk 1–2" },
+      "strength": { "focus": "Upper (bench) + Lower", "bench": "82.5 × 3×5" } },
+    { "week": 2, "start": "2026-08-17", "phase": "A", "deload": false,
+      "run": { "long_km": 16, "long_note": "HR ≤172, mostly easy", "speed": "5×1000 @ 5:55", "easy_km": 6 },
+      "swim": { "total_m": 4500, "sessions": 2, "split": "2.0k + 2.5k", "note": "CSS test this week (400+200 TT)" },
+      "strength": { "focus": "Upper + Lower", "bench": "85 × 3×4–5" } },
+    { "week": 3, "start": "2026-08-24", "phase": "A", "deload": false,
+      "run": { "long_km": 18, "long_note": "HR ≤172", "speed": "4×1200 @ 5:55", "easy_km": 7 },
+      "swim": { "total_m": 5000, "sessions": 3, "split": "1.5 / 2.0 / 1.5k", "note": "add 3rd swim session" },
+      "strength": { "focus": "Upper + Lower", "bench": "85 × 3×5" } },
+    { "week": 4, "start": "2026-08-31", "phase": "A", "deload": true,
+      "run": { "long_km": 12, "long_note": "easy deload", "speed": "5×400 @ 5:20 (sharp, low vol)", "easy_km": 5 },
+      "swim": { "total_m": 3500, "sessions": 3, "split": "1.0 / 1.5 / 1.0k", "note": "deload volume" },
+      "strength": { "focus": "Deload", "bench": "67.5 × 2×5" } },
+    { "week": 5, "start": "2026-09-07", "phase": "B", "deload": false,
+      "run": { "long_km": 17, "long_note": "HR ≤172", "speed": "5×1000 @ 5:50", "easy_km": 7 },
+      "swim": { "total_m": 5000, "sessions": 3, "split": "1.3 / 2.0 / 1.7k", "note": "" },
+      "strength": { "focus": "Upper + Lower", "bench": "85 × 3×5" } },
+    { "week": 6, "start": "2026-09-14", "phase": "B", "deload": false,
+      "run": { "long_km": 19, "long_note": "HR ≤172", "speed": "3×2000 cruise (HR <182)", "easy_km": 7 },
+      "swim": { "total_m": 5500, "sessions": 3, "split": "1.4 / 2.2 / 1.9k", "note": "" },
+      "strength": { "focus": "Upper + Lower", "bench": "87.5 × 3×4" } },
+    { "week": 7, "start": "2026-09-21", "phase": "B", "deload": false,
+      "run": { "long_km": 20, "long_note": "HR ≤172", "speed": "6×1000 @ 5:50", "easy_km": 8 },
+      "swim": { "total_m": 6000, "sessions": 3, "split": "1.5 / 2.5 / 2.0k", "note": "" },
+      "strength": { "focus": "Upper + Lower", "bench": "87.5 × 3×4" } },
+    { "week": 8, "start": "2026-09-28", "phase": "B", "deload": true,
+      "run": { "long_km": 13, "long_note": "easy deload", "speed": "5×400 @ 5:15", "easy_km": 5 },
+      "swim": { "total_m": 4000, "sessions": 3, "split": "1.0 / 1.5 / 1.5k", "note": "deload volume" },
+      "strength": { "focus": "Deload", "bench": "70 × 2×5" } },
+    { "week": 9, "start": "2026-10-05", "phase": "C", "deload": false,
+      "run": { "long_km": 19, "long_note": "last 4k @ comp pace (~7:35)", "speed": "4×1600 @ 6:00", "easy_km": 8 },
+      "swim": { "total_m": 6000, "sessions": 3, "split": "1.5 / 2.5 / 2.0k", "note": "bias to long continuous (HIM prep)" },
+      "strength": { "focus": "Upper + Lower", "bench": "90 × 3×3–4" } },
+    { "week": 10, "start": "2026-10-12", "phase": "C", "deload": false,
+      "run": { "long_km": 21, "long_note": "full HM distance, HR-capped", "speed": "5×1000 @ 5:45", "easy_km": 8 },
+      "swim": { "total_m": 6500, "sessions": 3, "split": "1.5 / 2.5 / 2.5k", "note": "" },
+      "strength": { "focus": "Upper + Lower", "bench": "90 × 3×3" } },
+    { "week": 11, "start": "2026-10-19", "phase": "C", "deload": false,
+      "run": { "long_km": 18, "long_note": "8k @ comp pace inside", "speed": "3×2000 @ 6:00 + strides", "easy_km": 8 },
+      "swim": { "total_m": 7000, "sessions": 3, "split": "1.5 / 3.0 / 2.5k", "note": "peak swim volume" },
+      "strength": { "focus": "Upper + Lower", "bench": "92.5 × 3×3" } },
+    { "week": 12, "start": "2026-10-26", "phase": "C", "deload": true,
+      "run": { "long_km": 12, "long_note": "deload; transition to HM sharpen", "speed": "short sharpening reps", "easy_km": 5 },
+      "swim": { "total_m": 4500, "sessions": 3, "split": "1.0 / 2.0 / 1.5k", "note": "deload volume" },
+      "strength": { "focus": "Deload", "bench": "70 × 2×5" } }
+  ],
+  "swim": {
+    "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400−200 dist) ÷ (400time − 200time). Sets the threshold pace for quality reps.",
+    "zones": [
+      { "id": "easy", "label": "Easy / recovery", "pace": "2:15–2:25 /100m", "rpe": "4–5", "use": "Tue swim, warm-ups, cool-downs" },
+      { "id": "aerobic", "label": "Aerobic / steady", "pace": "2:05–2:15 /100m", "rpe": "6", "use": "Thu main-volume swim" },
+      { "id": "quality", "label": "Threshold / quality", "pace": "1:55–2:05 /100m", "rpe": "7–8", "use": "Sat quality swim reps" }
+    ],
+    "templates": [
+      { "id": "easy", "title": "Easy aerobic (Tue, ~1.5k)", "role": "Recovery / technique",
+        "sets": ["WU 200 easy mixed", "Main 800–1000 smooth — 4×200 @ RPE 4–5 (15s rest), + 2×50 drill", "CD 100 easy"] },
+      { "id": "aerobic", "title": "Main aerobic (Thu, ~2.5k)", "role": "Volume builder",
+        "sets": ["WU 300 (swim + 4×50 build)", "Main ~1600–1800 — 3×400 @ RPE 6 (20s rest) → 2×600 / 1×1000 as weeks progress", "CD 200 easy"] },
+      { "id": "quality", "title": "Quality (Sat, ~2.0k)", "role": "The one hard swim",
+        "sets": ["WU 300 + 6×50 build", "Main ~1200–1400 — 8×100 @ RPE 7–8 (15–20s rest) → or 4×200 hard / 10×100 descending", "CD 200 easy"] }
+    ]
+  },
+  "run_targets": {
+    "easy": { "label": "Easy / recovery", "hr": "≤150–158", "note": "mornings; slow pace to hold HR" },
+    "long": { "label": "Long run", "hr": "≤172", "note": "start easy; race-pace segments only from wk 9" },
+    "speed_short": { "label": "Speed — short reps (400–1000m)", "pace": "~5:50 /km", "note": "LT pace; honest at this distance" },
+    "speed_cruise": { "label": "Speed — cruise (1600–3000m)", "pace": "HR just under 182", "note": "let pace land ~6:00–6:20; don't force 5:50" }
+  }
+}

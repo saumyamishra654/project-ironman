@@ -1,11 +1,11 @@
 {
   "name": "Project Ironman",
   "short_name": "Ironman",
-  "description": "Training dashboard — Procam Slam, Bench, Goa 70.3",
+  "description": "Half-Ironman training dashboard — Bangalore HM, Goa 70.3, 100 kg bench",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#1a1410",
-  "theme_color": "#1a1410",
+  "background_color": "#0f1620",
+  "theme_color": "#0f1620",
   "orientation": "portrait-primary",
   "icons": [
     { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" },

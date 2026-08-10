@@ -1,9 +1,7 @@
-var CACHE_NAME = "ironman-v5";
+var CACHE_NAME = "ironman-v8";
 
 var SHELL_FILES = [
   "./index.html",
-  "./nutrition.html",
-  "./workout-ui.js",
   "./manifest.json",
   "./icon-192.svg",
   "./icon-512.svg"
@@ -11,8 +9,7 @@ var SHELL_FILES = [
 
 var NETWORK_FIRST = [
   "index.html",
-  "workout-ui.js",
-  "nutrition.html",
+  "plan-him.json",
   "database.json"
 ];
 
@@ -43,7 +40,8 @@ self.addEventListener("fetch", function(e) {
   var url = new URL(e.request.url);
   var path = url.pathname.split("/").pop();
 
-  var isData = url.pathname.indexOf("database.json") !== -1 ||
+  var isData = url.pathname.indexOf("plan-him.json") !== -1 ||
+               url.pathname.indexOf("database.json") !== -1 ||
                url.pathname.indexOf("context.md") !== -1 ||
                url.pathname.indexOf("worklog.md") !== -1 ||
                url.pathname.indexOf("nutrition-log.md") !== -1;

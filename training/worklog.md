@@ -121,6 +121,34 @@ Shin cleared — treating running normally from here (no longer symptom-gating).
 - Target: 15–16 km, HR-governed (≤162, avg 150–158), morning start, run-walk as needed. Fuel + electrolytes.
 - Success metric: post-run TE ~2.5–3.5 (aerobic base), bulk of time in Z2–Z3 rather than Z4.
 
+---
+
+## Week 11 — Phase 2 Build (Aug 3 – Aug 9)
+
+Rebuild week off a deep late-July recovery dip (TSB spiked to +257 on Aug 2, ATL crashed ~184). Load reloading cleanly — as of Aug 7: CTL ~444, ATL 408, TSB +36, ACWR 0.9 (optimal), status Maintaining, VO₂max 41.
+
+### Session Log
+
+**Aug 3 (Mon) — Strength (upper) + walk** — 45 min, avg HR 114; + 3 km evening walk.
+**Aug 4 (Tue) — Badminton** — 57 min, avg HR 138.
+**Aug 5 (Wed) — Swim + treadmill run** — 1.0 km swim (35 min) AM; 3.57 km treadmill PM (avg HR 150). NOTE: treadmill speed sensor way off — displayed pace bogus, actual ~10:00/km. Discard as a fitness signal.
+**Aug 6 (Thu) — Strength** — 45 min, avg HR 146.
+**Aug 7 (Fri) — Strength (upper)** [planned].
+**Aug 8 (Sat) — Swim 2k + rock climbing** [planned] — upper/grip focus, legs preserved for Sunday.
+
+**Aug 9 (Sun) — Run — long progression [DONE ✅]**
+- 15.03 km, avg HR 161, max 179, TE 3.9 ("Tempo"), aerobic 3.9 / **anaerobic 0.0**, training load 160. Ran 16:48 (evening heat again — plan says mornings).
+- Block-by-block (watch auto-lapped 1k):
+  - Block 1 easy (km1–5): ~8:12/km, HR 145–154 — target ≤155 ✅
+  - Block 2 steady (km6–10): ~7:54/km, HR 160–165 — target 158–165 ✅
+  - Block 3 comp pace (km11–15): ~7:37/km, HR 166–171 (max 179 only final km) — cap 172 ✅
+- **WIN: HR discipline held the whole run — block 3 avg never crossed 172.** Complete reversal of the Jul 19 Z4 blow-up. This is the behaviour change that matters.
+- **Reality check: at the sub-172 ceiling, comp-pace pace was ~7:37/km, NOT the 7:10 target.** True sub-threshold sustainable pace ≈ 7:35 right now. The 7:09 predictor requires threshold HR. Limiters: aerobic base (HR runs high for pace) + evening heat. → comp-pace anchor revised 7:10 → ~7:35 (see context.md).
+- Anaerobic 0.0 is correct/by-design for an HR-capped sub-threshold run — not a deficiency. Monthly load balance (Aug 9) is ON_TARGET with anaerobic 268 (within 86–346); anaerobic stimulus comes from dedicated speed work, not long runs.
+- Cadence improved across blocks (133 → 150) but block 1 low (~133, overstriding) — keep nudging toward 165+.
+- VO₂max ticked 41 → 43 after this run; status → Productive.
+- Load note: Sat double (2k swim + climb) + this 15k spiked ATL 360→744, ACWR 1.5 (HIGH), TSB −262. Productive overload — next 1–2 days easy/off before any quality.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

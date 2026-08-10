@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1a1410">
+  <meta name="theme-color" content="#0f1620">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" href="icon-192.svg">
-  <title>Project Ironman — Training Dashboard</title>
+  <title>Project Ironman — HIM Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <script>
 (function() {
@@ -17,510 +20,447 @@
   window.APP_BASE = parts.length ? "/" + parts.join("/") + "/" : "/";
   window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
 })();
-</script>
-  <script>document.write('<script src="' + appUrl('workout-ui.js?v=5') + '"><\/script>');</script>
+  </script>
   <style>
     :root {
-      --bg: #1a1410;
-      --surface: #2a221c;
-      --surface-2: #352c24;
-      --border: #4a3f35;
-      --text: #f0e6dc;
-      --text-muted: #a89888;
-      --accent: #d4a574;
-      --accent-glow: rgba(212, 165, 116, 0.14);
-      --green: #7cb892;
-      --green-muted: rgba(124, 184, 146, 0.18);
-      --amber: #e0b050;
-      --amber-muted: rgba(224, 176, 80, 0.16);
-      --red: #e07a5f;
-      --cyan: #6eb5b5;
-      --cyan-muted: rgba(110, 181, 181, 0.16);
+      --bg: #0f1620;
+      --surface: #16212e;
+      --surface-2: #1d2b3a;
+      --surface-3: #24384a;
+      --border: #2a3b4d;
+      --text: #e8f0f7;
+      --muted: #8ba3b8;
+      --faint: #5f7488;
+      --accent: #22d3ee;
+      --accent-glow: rgba(34, 211, 238, 0.12);
+      --run: #4ade80;
+      --swim: #22d3ee;
+      --bike: #fbbf24;
+      --strength: #a78bfa;
+      --rest: #64748b;
+      --amber: #fbbf24;
+      --red: #f0785f;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
+      font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+      background: var(--bg);
+      color: var(--text); line-height: 1.55; min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
-    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
-    .header { text-align: center; padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
-    .header h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
-    .header h1 span { color: var(--accent); }
-    .header .subtitle { color: var(--text-muted); font-size: 1rem; }
-    .phase-banner {
-      background: var(--accent-glow); border: 1px solid rgba(212,165,116,0.28); border-radius: 12px;
-      padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center;
-      flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;
+    .container { max-width: 1180px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    a { color: var(--accent); }
+
+    /* Header */
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1rem 0 1.25rem; }
+    .brand { display: flex; align-items: center; gap: 0.7rem; }
+    .brand h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+    .brand h1 span { color: var(--accent); }
+    .brand .sub { color: var(--muted); font-size: 0.82rem; margin-top: 0.1rem; }
+    .legend { display: flex; gap: 0.9rem; align-items: center; flex-wrap: wrap; }
+    .legend .pill { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+    .legend .swatch { width: 9px; height: 9px; border-radius: 3px; }
+    .weekchip { background: var(--accent); color: #04141a; font-weight: 800; font-size: 0.85rem; padding: 0.45rem 0.9rem; border-radius: 6px; white-space: nowrap; }
+
+    .section { margin-top: 2.25rem; }
+    .section > h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em; color: var(--muted); font-weight: 700; margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .section > h2 .rule { flex: 1; height: 1px; background: var(--border); }
+
+    /* This week */
+    .week-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.85rem; flex-wrap: wrap; }
+    .week-head .phase { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+    .week-head .phase small { color: var(--muted); font-weight: 500; font-size: 0.85rem; margin-left: 0.5rem; }
+    .week-head .focus { color: var(--muted); font-size: 0.85rem; }
+    .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.6rem; }
+    @media (max-width: 820px) { .week-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 460px) { .week-grid { grid-template-columns: 1fr; } }
+    .day {
+      background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.8rem 0.75rem;
+      position: relative; overflow: hidden; min-height: 132px; display: flex; flex-direction: column;
     }
-    .phase-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 600; }
-    .phase-name { font-size: 1.25rem; font-weight: 600; }
-    .week-badge { background: var(--accent); color: #1a1410; padding: 0.35rem 1rem; border-radius: 100px; font-weight: 600; font-size: 0.9rem; }
-    .goals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
-    .goal-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
-    .goal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
-    .goal-title { font-weight: 600; font-size: 0.95rem; }
-    .goal-deadline { color: var(--text-muted); font-size: 0.8rem; }
-    .goal-target { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; }
-    .progress-bar-bg { height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
-    .progress-bar-fill { height: 100%; border-radius: 3px; transition: width 0.6s ease; }
-    .progress-label { display: flex; justify-content: space-between; margin-top: 0.4rem; font-size: 0.75rem; color: var(--text-muted); }
-    .section { margin-bottom: 2.5rem; }
-    .section-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
-    .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
-    .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
-    @media (max-width: 600px) { .charts-grid { grid-template-columns: 1fr; } }
-    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
-    .chart-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
-    .chart-card canvas { max-height: 280px; }
-    table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
-    th { text-align: left; padding: 0.75rem 1rem; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); background: var(--surface-2); font-weight: 600; }
-    td { padding: 0.6rem 1rem; font-size: 0.85rem; border-top: 1px solid var(--border); }
+    .day::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--sport, var(--border)); }
+    .day.today { border-color: var(--accent); }
+    .day .dow { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--faint); font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+    .day.today .dow .now { color: var(--accent); }
+    .day .sessions { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.55rem; }
+    .sess { }
+    .sess + .sess { border-top: 1px solid var(--border); padding-top: 0.5rem; }
+    .sess-head { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.63rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sport); }
+    .sess-head .ico { font-size: 0.82rem; }
+    .sess-head .slot { color: var(--faint); margin-left: 0.15rem; }
+    .sess-ttl { font-size: 0.84rem; font-weight: 600; line-height: 1.22; margin: 0.15rem 0 0.2rem; }
+    .sess-tgt { font-size: 0.72rem; color: var(--muted); line-height: 1.35; }
+
+    /* Metrics */
+    .grid-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
+    .metric { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; position: relative; }
+    .metric .ml { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; display: flex; align-items: center; gap: 0.35rem; }
+    .metric .mv { font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; margin-top: 0.2rem; }
+    .metric .mv .u { font-size: 0.8rem; font-weight: 600; color: var(--muted); margin-left: 0.15rem; }
+    .metric .mv .up { color: var(--run); font-size: 0.95rem; margin-left: 0.25rem; }
+    .metric .mn { font-size: 0.7rem; color: var(--faint); margin-top: 0.3rem; line-height: 1.35; }
+    .metric .bar { height: 5px; background: var(--surface-3); border-radius: 3px; margin-top: 0.55rem; overflow: hidden; }
+    .metric .bar > span { display: block; height: 100%; border-radius: 3px; background: var(--strength); }
+    .metric .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sport, var(--accent)); }
+
+    .grid-races { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.75rem; margin-top: 0.75rem; }
+    .race { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.15rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .race .rl .pri { font-size: 0.64rem; font-weight: 800; letter-spacing: 0.05em; padding: 0.1rem 0.45rem; border-radius: 6px; }
+    .race .rl .pri.A { background: rgba(240,120,95,0.18); color: var(--red); }
+    .race .rl .pri.B { background: var(--accent-glow); color: var(--accent); }
+    .race .rl .rn { font-weight: 700; font-size: 1rem; margin-top: 0.3rem; }
+    .race .rl .rr { font-size: 0.74rem; color: var(--muted); margin-top: 0.15rem; }
+    .race .cd { text-align: right; }
+    .race .cd .n { font-size: 1.9rem; font-weight: 800; line-height: 1; letter-spacing: -0.03em; }
+    .race .cd .l { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+    /* Block */
+    .phase-bands { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+    @media (max-width: 720px) { .phase-bands { grid-template-columns: 1fr; } }
+    .band { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.85rem 1rem; border-top: 3px solid var(--accent); }
+    .band.active { background: var(--accent-glow); border-color: var(--accent); }
+    .band .bp { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; }
+    .band .bn { font-size: 1.05rem; font-weight: 700; margin: 0.15rem 0 0.3rem; }
+    .band .bnote { font-size: 0.74rem; color: var(--muted); }
+
+    .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+    @media (max-width: 720px) { .charts { grid-template-columns: 1fr; } }
+    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
+    .chart-card h3 { font-size: 0.82rem; font-weight: 650; margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.4rem; }
+    .chart-card canvas { max-height: 240px; }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 0.82rem; min-width: 640px; }
+    th { text-align: left; padding: 0.6rem 0.85rem; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); background: var(--surface-2); font-weight: 700; white-space: nowrap; }
+    td { padding: 0.55rem 0.85rem; border-top: 1px solid var(--border); vertical-align: top; }
     tr:hover td { background: var(--surface-2); }
-    .tag { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; }
-    .tag-push { background: rgba(224,122,95,0.2); color: #f0b5a0; }
-    .tag-pull { background: rgba(212,165,116,0.22); color: #e8c9a8; }
-    .tag-legs { background: rgba(224,176,80,0.18); color: #f0d090; }
-    .tag-upper { background: rgba(180,140,100,0.2); color: #dcc4a8; }
-    .tag-run { background: var(--green-muted); color: var(--green); }
-    .tag-swim { background: var(--cyan-muted); color: var(--cyan); }
-    .tag-cycle { background: rgba(224,176,80,0.15); color: #e0c080; }
-    .tag-rest { background: rgba(168,152,136,0.15); color: var(--text-muted); }
-    .tag-mobility { background: rgba(180,140,100,0.15); color: #c9b090; }
-    .schedule-tag { cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; }
-    .schedule-tag:hover { transform: translateY(-1px); box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
-    .schedule-tag.selected { outline: 2px solid var(--accent); outline-offset: 2px; }
-    .workout-detail { display: none; margin-top: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; }
-    .workout-detail.visible { display: block; }
-    .workout-detail h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; color: var(--accent); }
-    .workout-detail .workout-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem; }
-    .exercise-list { list-style: none; }
-    .exercise-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 0.45rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
-    .exercise-list li:last-child { border-bottom: none; }
-    .exercise-name { font-weight: 500; }
-    .exercise-sets { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-    .week-table { font-size: 0.82rem; }
-    .week-table th { padding: 0.6rem 0.75rem; }
-    .week-table td { padding: 0.5rem 0.75rem; }
-    tr.deload td { background: rgba(224,176,80,0.08); }
-    tr.current-week td { background: var(--accent-glow); }
-    tr.past-week td { opacity: 0.55; }
-    tr.race-week td { background: rgba(124, 184, 146, 0.1); }
-    tr.race-week td:first-child strong { color: var(--green); }
-    .race-badge { background: var(--green-muted); color: var(--green); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; margin-left: 0.35rem; }
-    .deload-badge { background: var(--amber-muted); color: var(--amber); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; }
-    .current-badge { background: var(--accent-glow); color: var(--accent); padding: 0.1rem 0.5rem; border-radius: 100px; font-size: 0.65rem; font-weight: 600; }
-    .timeline { position: relative; padding-left: 2rem; }
-    .timeline::before { content: ''; position: absolute; left: 7px; top: 4px; bottom: 4px; width: 2px; background: var(--border); }
-    .timeline-item { position: relative; margin-bottom: 1.25rem; }
-    .timeline-item::before { content: ''; position: absolute; left: -2rem; top: 6px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg); }
-    .timeline-item.active::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 10px rgba(212,165,116,0.4); }
-    .timeline-item.done::before { border-color: var(--green); background: var(--green); }
-    .timeline-date { font-size: 0.75rem; color: var(--text-muted); }
-    .timeline-label { font-size: 0.9rem; font-weight: 500; }
-    .footer { text-align: center; padding: 2rem 0; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+    tr.deload td { background: rgba(251,191,36,0.06); }
+    tr.current td { background: var(--accent-glow); }
+    tr.current td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+    tr.past td { opacity: 0.5; }
+    .badge { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.04em; padding: 0.08rem 0.4rem; border-radius: 5px; margin-left: 0.35rem; }
+    .badge.now { background: var(--accent); color: #04141a; }
+    .badge.dl { background: rgba(251,191,36,0.18); color: var(--amber); }
+    .sp { color: var(--run); font-weight: 600; }
+    .sw { color: var(--swim); font-weight: 600; }
+
+    /* Swim reference */
+    .swim-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 720px) { .swim-cols { grid-template-columns: 1fr; } }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; }
+    .card h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.6rem; color: var(--swim); }
+    .zone-row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .zone-row:last-child { border-bottom: none; }
+    .zone-row .zl { font-weight: 600; font-size: 0.85rem; }
+    .zone-row .zl small { display: block; color: var(--faint); font-weight: 400; font-size: 0.72rem; }
+    .zone-row .zp { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--swim); white-space: nowrap; }
+    .zone-row .zr { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+    .css-box { background: var(--surface-2); border: 1px dashed var(--border); border-radius: 10px; padding: 0.75rem 0.9rem; font-size: 0.78rem; color: var(--muted); margin-top: 0.5rem; }
+    .css-box b { color: var(--text); }
+    .tmpl { margin-top: 0.9rem; }
+    .tmpl h4 { font-size: 0.82rem; font-weight: 650; }
+    .tmpl h4 small { color: var(--faint); font-weight: 400; margin-left: 0.4rem; }
+    .tmpl ul { list-style: none; margin-top: 0.35rem; }
+    .tmpl li { font-size: 0.78rem; color: var(--muted); padding: 0.22rem 0 0.22rem 1rem; position: relative; }
+    .tmpl li::before { content: '▸'; position: absolute; left: 0; color: var(--swim); }
+
+    .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--amber); border-radius: 10px; padding: 0.8rem 1rem; font-size: 0.8rem; color: var(--muted); margin-top: 1rem; }
+
+    .footer { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--faint); font-size: 0.78rem; }
+    .footer a.btn { display: inline-block; color: var(--accent); text-decoration: none; font-weight: 600; border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 100px; margin-bottom: 0.9rem; }
+    .footer a.btn:hover { border-color: var(--accent); }
+    .err { background: rgba(240,120,95,0.1); border: 1px solid rgba(240,120,95,0.3); color: #f5b9aa; padding: 1rem; border-radius: 12px; margin-top: 1rem; font-size: 0.85rem; }
   </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>Project <span>Ironman</span></h1>
-    <p class="subtitle">Procam Slam · 100 kg Bench · Goa 70.3</p>
-  </div>
-  <div class="phase-banner" id="phase-banner">
-    <div>
-      <div class="phase-label">Current Phase</div>
-      <div class="phase-name" id="phase-name">Loading…</div>
+  <div class="topbar">
+    <div class="brand">
+      <div>
+        <h1>Project <span>Ironman</span></h1>
+        <div class="sub" id="subtitle">Loading…</div>
+      </div>
     </div>
-    <div class="week-badge" id="week-badge">Week —</div>
-  </div>
-  <div class="goals-grid" id="goals-grid"></div>
-  <div class="charts-grid">
-    <div class="chart-card"><h3>Running Volume (km / week)</h3><canvas id="running-chart"></canvas></div>
-    <div class="chart-card"><h3>Bench Press Progression (kg)</h3><canvas id="bench-chart"></canvas></div>
-  </div>
-  <div class="section">
-    <div class="section-title"><span class="dot" style="background:var(--accent)"></span> This Week's Schedule <span style="font-weight:400;color:var(--text-muted);font-size:0.85rem">— click a session for sets × reps</span></div>
-    <table id="schedule-table"><thead><tr><th>Day</th><th>AM</th><th>PM</th><th>Nightly</th></tr></thead><tbody id="schedule-body"></tbody></table>
-    <div class="workout-detail" id="workout-detail" aria-live="polite"></div>
-  </div>
-  <div class="section" id="next-week-section" style="display:none">
-    <div class="section-title"><span class="dot" style="background:var(--text-muted)"></span> <span id="next-week-title">Next Week</span> <span style="font-weight:400;color:var(--text-muted);font-size:0.85rem" id="next-week-label"></span></div>
-    <table><thead><tr><th>Day</th><th>AM</th><th>PM</th><th>Nightly</th></tr></thead><tbody id="next-schedule-body"></tbody></table>
-  </div>
-  <div class="two-col">
-    <div class="section">
-      <div class="section-title"><span class="dot" style="background:var(--green)"></span> Phase Timeline</div>
-      <div class="timeline" id="timeline"></div>
-    </div>
-    <div class="section">
-      <div class="section-title"><span class="dot" style="background:var(--amber)"></span> Key Milestones</div>
-      <div class="timeline" id="milestones"></div>
+    <div class="legend">
+      <span class="pill"><span class="swatch" style="background:var(--swim)"></span>Swim</span>
+      <span class="pill"><span class="swatch" style="background:var(--bike)"></span>Bike</span>
+      <span class="pill"><span class="swatch" style="background:var(--run)"></span>Run</span>
+      <span class="pill"><span class="swatch" style="background:var(--strength)"></span>Strength</span>
+      <span class="weekchip" id="weekchip">Week —</span>
     </div>
   </div>
-  <div class="section">
-    <div class="section-title"><span class="dot" style="background:var(--cyan)"></span> <span id="overview-title">Full Plan Overview</span></div>
-    <div style="overflow-x:auto">
-      <table class="week-table" id="week-table">
-        <thead><tr><th>Wk</th><th>Phase</th><th>Wed Run</th><th>Wed km</th><th>Sat km</th><th>Sun Long</th><th>Total km</th><th>Bench kg</th><th>Bench Sets</th><th>Ashwa</th><th>Notes</th></tr></thead>
-        <tbody id="week-body"></tbody>
-      </table>
-    </div>
+
+  <div id="app"></div>
+
+  <div class="footer">
+    Project Ironman · <span id="updated"></span> · driven by <code>training/plan-him.json</code>
   </div>
-  <div class="footer"><a href="nutrition.html" style="color:var(--accent);text-decoration:none;font-weight:500;border:1px solid var(--border);padding:0.4rem 1rem;border-radius:100px;">Nutrition Plan</a><br><br>Project Ironman · <span id="last-updated"></span> · Data from <code>training/database.json</code></div>
 </div>
+
 <script>
 (function() {
   "use strict";
-  function getPlanStart(data) {
-    return new Date((data.plan && data.plan.start) || "2026-05-25");
-  }
-
-  function getTotalWeeks(data) {
-    if (data.plan && data.plan.total_weeks) return data.plan.total_weeks;
-    return data.weeks ? data.weeks.length : 48;
-  }
-
-  function getCurrentWeek(data) {
-    var total = getTotalWeeks(data);
-    var diff = Date.now() - getPlanStart(data).getTime();
-    return Math.max(1, Math.min(total, Math.ceil(diff / 604800000)));
-  }
-
-  function getPhase(week, phases) {
-    for (var i = 0; i < phases.length; i++) {
-      var start = phases[i].weeks[0];
-      var end = phases[i].weeks[1];
-      if (week >= start && end != null && week <= end) return phases[i];
-    }
-    for (var j = phases.length - 1; j >= 0; j--) {
-      if (phases[j].status !== "tbd" && week >= phases[j].weeks[0]) return phases[j];
-    }
-    return phases[0];
-  }
-
-  function formatPhaseRange(p) {
-    if (p.status === "tbd") return "TBD \u00B7 " + p.dates[0] + " \u2192 " + p.dates[1];
-    return "Weeks " + p.weeks[0] + "\u2013" + p.weeks[1] + " \u00B7 " + p.dates[0] + " \u2192 " + p.dates[1];
-  }
-
-  function formatShortDate(dateStr) {
-    if (!dateStr || dateStr.indexOf("TBD") !== -1) return dateStr;
-    var d = new Date(dateStr);
-    if (isNaN(d.getTime())) return dateStr;
-    return d.toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" });
-  }
-
-  function buildMilestones(data) {
-    var items = [];
-    if (data.milestones) {
-      data.milestones.forEach(function(m) {
-        items.push({ date: m.date, label: m.label, week: m.week, kind: "training" });
-      });
-    }
-    if (data.races) {
-      data.races.forEach(function(r) {
-        if (!r.week) return;
-        items.push({
-          date: r.date,
-          label: "RACE \u2014 " + r.name,
-          week: r.week,
-          kind: "race"
-        });
-      });
-    }
-    items.sort(function(a, b) {
-      return a.week - b.week || String(a.date).localeCompare(String(b.date));
-    });
-    return items;
-  }
-
-  function milestoneState(currentWeek, week) {
-    if (currentWeek > week) return "done";
-    if (currentWeek === week) return "active";
-    return "";
-  }
-
-  function weeksUntil(dateStr) {
-    return Math.max(0, Math.ceil((new Date(dateStr).getTime() - Date.now()) / 604800000));
-  }
-
-  function getPhaseName(phaseId, phases) {
-    for (var i = 0; i < phases.length; i++) {
-      if (phases[i].id === phaseId) return phases[i].name;
-    }
-    return "Phase " + phaseId;
-  }
+  var WEEK_MS = 604800000;
+  var DOW = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
   function el(tag, attrs, children) {
-    var node = document.createElement(tag);
+    var n = document.createElement(tag);
     if (attrs) Object.keys(attrs).forEach(function(k) {
-      if (k === "className") node.className = attrs[k];
-      else if (k === "textContent") node.textContent = attrs[k];
-      else node.setAttribute(k, attrs[k]);
+      if (k === "class") n.className = attrs[k];
+      else if (k === "html") n.innerHTML = attrs[k];
+      else if (k === "text") n.textContent = attrs[k];
+      else if (k === "style") n.setAttribute("style", attrs[k]);
+      else n.setAttribute(k, attrs[k]);
     });
-    if (children) children.forEach(function(c) {
-      if (typeof c === "string") node.appendChild(document.createTextNode(c));
-      else if (c) node.appendChild(c);
+    (children || []).forEach(function(c) { if (c == null) return; n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function h2(label) { return el("h2", {}, [label, el("span", { class: "rule" })]); }
+  function daysUntil(dateStr) { return Math.ceil((new Date(dateStr).getTime() - Date.now()) / 86400000); }
+  function fmtDate(s) { var d = new Date(s); return isNaN(d) ? s : d.toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" }); }
+
+  function currentBlockWeek(data) {
+    var start = new Date(data.meta.block_start).getTime();
+    var diff = Date.now() - start;
+    if (diff < 0) return 1;
+    return Math.max(1, Math.min(data.meta.block_weeks, Math.floor(diff / WEEK_MS) + 1));
+  }
+  function phaseFor(wk, phases) {
+    for (var i = 0; i < phases.length; i++) if (wk >= phases[i].weeks[0] && wk <= phases[i].weeks[1]) return phases[i];
+    return phases[phases.length - 1];
+  }
+  function todayIndex(data) {
+    // 0=Mon..6=Sun; only meaningful once the block has started
+    if (Date.now() < new Date(data.meta.block_start).getTime()) return -1;
+    var d = new Date().getDay(); // 0=Sun..6=Sat
+    return d === 0 ? 6 : d - 1;
+  }
+
+  function sessTarget(day, s, wkData) {
+    if (!wkData) return s.detail;
+    if (s.sport === "run") {
+      if (day === "Sun") return "HR ≤172 · " + wkData.run.long_km + "k — " + wkData.run.long_note;
+      if (day === "Wed") return wkData.run.speed;
+      if (day === "Mon") return "HR ≤150–158 · ~" + wkData.run.easy_km + "k";
+    }
+    if (s.sport === "swim") return "aerobic swim";
+    if (s.sport === "strength") return s.title.indexOf("Upper") !== -1 ? wkData.strength.bench : "lower / full";
+    return s.detail;
+  }
+
+  function renderThisWeek(data, wk) {
+    var wkData = null;
+    for (var i = 0; i < data.block.length; i++) if (data.block[i].week === wk) wkData = data.block[i];
+    var phase = phaseFor(wk, data.phases);
+    var tIdx = todayIndex(data);
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("This Week"));
+
+    var head = el("div", { class: "week-head" });
+    head.appendChild(el("div", { class: "phase", html: "Phase " + phase.id + " — " + phase.name + (wkData && wkData.deload ? " <small>· deload week</small>" : "") }));
+    if (wkData) {
+      head.appendChild(el("div", { class: "focus", html:
+        '<span class="sp">Run</span> long ' + wkData.run.long_km + 'k · speed ' + wkData.run.speed +
+        ' &nbsp;·&nbsp; <span class="sw">Swim</span> ' + (wkData.swim.total_m / 1000).toFixed(1) + 'k this week' }));
+    }
+    sec.appendChild(head);
+
+    var grid = el("div", { class: "week-grid" });
+    data.week_template.forEach(function(t, idx) {
+      var isToday = idx === tIdx;
+      var primary = t.sessions[0].sport;
+      var day = el("div", { class: "day" + (isToday ? " today" : ""), style: "--sport:var(--" + primary + ")" });
+      day.appendChild(el("div", { class: "dow" }, [ el("span", { text: t.day }), isToday ? el("span", { class: "now", text: "TODAY" }) : null ]));
+      var sessions = el("div", { class: "sessions" });
+      t.sessions.forEach(function(s) {
+        var sess = el("div", { class: "sess", style: "--sport:var(--" + s.sport + ")" });
+        sess.appendChild(el("div", { class: "sess-head" }, [
+          s.sport,
+          s.slot ? el("span", { class: "slot", text: s.slot }) : null
+        ]));
+        sess.appendChild(el("div", { class: "sess-ttl", text: s.title }));
+        sess.appendChild(el("div", { class: "sess-tgt", text: sessTarget(t.day, s, wkData) }));
+        sessions.appendChild(sess);
+      });
+      day.appendChild(sessions);
+      grid.appendChild(day);
     });
-    return node;
+    sec.appendChild(grid);
+    if (wkData && wkData.swim.note) sec.appendChild(el("div", { class: "callout", html: "Swim note (wk " + wk + "): " + wkData.swim.note }));
+    return sec;
   }
 
-  function buildGoalCard(title, deadline, target, progress, label, color) {
-    var card = el("div", { className: "goal-card" });
-    var header = el("div", { className: "goal-header" }, [
-      el("span", { className: "goal-title", textContent: title }),
-      el("span", { className: "goal-deadline", textContent: deadline })
-    ]);
-    var tgt = el("div", { className: "goal-target", textContent: target });
-    var barBg = el("div", { className: "progress-bar-bg" });
-    var barFill = el("div", { className: "progress-bar-fill" });
-    barFill.style.width = progress + "%";
-    barFill.style.background = color;
-    barBg.appendChild(barFill);
-    var labels = el("div", { className: "progress-label" }, [
-      el("span", { textContent: label }),
-      el("span", { textContent: Math.round(progress) + "%" })
-    ]);
-    card.appendChild(header);
-    card.appendChild(tgt);
-    card.appendChild(barBg);
-    card.appendChild(labels);
-    return card;
+  function renderMetrics(data) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Metrics & Race Countdown"));
+    var grid = el("div", { class: "grid-metrics" });
+    data.metrics.forEach(function(m) {
+      var card = el("div", { class: "metric", style: "--sport:var(--" + m.sport + ")" });
+      card.appendChild(el("div", { class: "ml" }, [ el("span", { class: "dot" }), m.label ]));
+      var mv = el("div", { class: "mv" }, [ m.value, m.unit ? el("span", { class: "u", text: m.unit }) : null, m.trend === "up" ? el("span", { class: "up", text: "↑" }) : null ]);
+      card.appendChild(mv);
+      if (m.target && m.from != null) {
+        var pct = Math.max(6, Math.min(100, ((parseFloat(m.value) - 72.5) / (m.target - 72.5)) * 100));
+        var bar = el("div", { class: "bar" }); bar.appendChild(el("span", { style: "width:" + pct + "%" })); card.appendChild(bar);
+      }
+      if (m.note) card.appendChild(el("div", { class: "mn", text: m.note }));
+      grid.appendChild(card);
+    });
+    sec.appendChild(grid);
+
+    var races = el("div", { class: "grid-races" });
+    data.races.forEach(function(r) {
+      var d = daysUntil(r.date);
+      var weeks = Math.floor(d / 7);
+      var race = el("div", { class: "race" });
+      var rl = el("div", { class: "rl" });
+      rl.appendChild(el("span", { class: "pri " + r.priority, text: r.priority === "A" ? "A-RACE" : "TARGET" }));
+      rl.appendChild(el("div", { class: "rn", text: r.name }));
+      rl.appendChild(el("div", { class: "rr", text: fmtDate(r.date) + " · " + r.role }));
+      race.appendChild(rl);
+      var cd = el("div", { class: "cd" });
+      cd.appendChild(el("div", { class: "n", text: d > 0 ? (weeks >= 3 ? weeks : d) : "—" }));
+      cd.appendChild(el("div", { class: "l", text: d > 0 ? (weeks >= 3 ? "weeks out" : "days out") : "done" }));
+      race.appendChild(cd);
+      races.appendChild(race);
+    });
+    sec.appendChild(races);
+    return sec;
   }
 
-  function buildTimelineItem(dateText, labelText, state) {
-    var item = el("div", { className: "timeline-item" + (state === "active" ? " active" : "") + (state === "done" ? " done" : "") }, [
-      el("div", { className: "timeline-date", textContent: dateText }),
-      el("div", { className: "timeline-label", textContent: labelText })
-    ]);
-    return item;
+  function renderSwim(data) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Swim — CSS & Pace Zones"));
+    var cols = el("div", { class: "swim-cols" });
+
+    var left = el("div", { class: "card" });
+    left.appendChild(el("h3", { text: "Pace zones (per 100m)" }));
+    data.swim.zones.forEach(function(z) {
+      var row = el("div", { class: "zone-row" });
+      row.appendChild(el("div", { class: "zl", html: z.label + "<small>" + z.use + "</small>" }));
+      row.appendChild(el("div", {}, [ el("div", { class: "zp", text: z.pace }), el("div", { class: "zr", text: "RPE " + z.rpe }) ]));
+      left.appendChild(row);
+    });
+    left.appendChild(el("div", { class: "css-box", html: "<b>CSS test:</b> " + data.swim.css_test }));
+    cols.appendChild(left);
+
+    var right = el("div", { class: "card" });
+    right.appendChild(el("h3", { text: "Session templates" }));
+    data.swim.templates.forEach(function(t) {
+      var tm = el("div", { class: "tmpl" });
+      tm.appendChild(el("h4", { html: t.title + "<small>" + t.role + "</small>" }));
+      var ul = el("ul"); t.sets.forEach(function(s) { ul.appendChild(el("li", { text: s })); });
+      tm.appendChild(ul);
+      right.appendChild(tm);
+    });
+    cols.appendChild(right);
+    sec.appendChild(cols);
+    return sec;
   }
 
-  function buildWeekRow(w, currentWeek, phases) {
-    var tr = el("tr");
-    var rowClass = "";
-    if (w.race) rowClass = "race-week";
-    else if (w.deload) rowClass = "deload";
-    else if (w.week === currentWeek) rowClass = "current-week";
-    else if (w.week < currentWeek) rowClass = "past-week";
-    if (rowClass) tr.className = rowClass;
+  function renderBlock(data, wk) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("The Block — " + data.meta.block_name));
 
-    var weekCell = el("td", {}, [el("strong", { textContent: String(w.week) })]);
-    if (w.week === currentWeek) {
-      weekCell.appendChild(document.createTextNode(" "));
-      weekCell.appendChild(el("span", { className: "current-badge", textContent: "NOW" }));
-    }
-    if (w.race) {
-      weekCell.appendChild(document.createTextNode(" "));
-      weekCell.appendChild(el("span", { className: "race-badge", textContent: "RACE" }));
-    }
+    var bands = el("div", { class: "phase-bands" });
+    var curPhase = phaseFor(wk, data.phases);
+    data.phases.forEach(function(p) {
+      var band = el("div", { class: "band" + (p.id === curPhase.id ? " active" : "") });
+      band.appendChild(el("div", { class: "bp", text: "Phase " + p.id + " · wk " + p.weeks[0] + "–" + p.weeks[1] }));
+      band.appendChild(el("div", { class: "bn", text: p.name }));
+      band.appendChild(el("div", { class: "bnote", text: p.note }));
+      bands.appendChild(band);
+    });
+    sec.appendChild(bands);
 
-    var phaseText = getPhaseName(w.phase, phases);
-    var phaseCell = el("td", { textContent: phaseText });
-    if (w.deload) {
-      phaseCell.appendChild(document.createTextNode(" "));
-      phaseCell.appendChild(el("span", { className: "deload-badge", textContent: "DELOAD" }));
-    }
+    var charts = el("div", { class: "charts" });
+    var c1 = el("div", { class: "chart-card" });
+    c1.appendChild(el("h3", { html: '<span class="swatch" style="width:9px;height:9px;border-radius:3px;background:var(--run);display:inline-block"></span> Long-run build (km)' }));
+    c1.appendChild(el("canvas", { id: "runChart" }));
+    charts.appendChild(c1);
+    var c2 = el("div", { class: "chart-card" });
+    c2.appendChild(el("h3", { html: '<span class="swatch" style="width:9px;height:9px;border-radius:3px;background:var(--swim);display:inline-block"></span> Swim volume ramp (km/wk)' }));
+    c2.appendChild(el("canvas", { id: "swimChart" }));
+    charts.appendChild(c2);
+    sec.appendChild(charts);
 
-    tr.appendChild(weekCell);
-    tr.appendChild(phaseCell);
-    tr.appendChild(el("td", { textContent: w.running.wed_type || "\u2014" }));
-    tr.appendChild(el("td", { textContent: w.running.wed_km || "\u2014" }));
-    tr.appendChild(el("td", { textContent: w.running.sat_easy_km || "\u2014" }));
-    tr.appendChild(el("td", { textContent: w.running.sun_long_km || "\u2014" }));
-    tr.appendChild(el("td", {}, [el("strong", { textContent: String(w.running.total_km) })]));
-    tr.appendChild(el("td", { textContent: w.bench.main_kg || "\u2014" }));
-    tr.appendChild(el("td", { textContent: w.bench.sets_reps || "\u2014" }));
-    var ashwaOn = (w.week >= 1 && w.week <= 8) || (w.week >= 11 && w.week <= 18) || (w.week >= 21 && w.week <= 28) || (w.week >= 31 && w.week <= 38) || (w.week >= 41 && w.week <= 48);
-    var ashwaCell = el("td", { textContent: ashwaOn ? "ON" : "OFF" });
-    ashwaCell.style.color = ashwaOn ? "var(--green)" : "var(--text-muted)";
-    ashwaCell.style.fontWeight = "600";
-    ashwaCell.style.fontSize = "0.75rem";
-    tr.appendChild(ashwaCell);
-    tr.appendChild(el("td", { textContent: w.notes || "" }));
-    return tr;
+    var wrap = el("div", { class: "table-wrap" });
+    var table = el("table");
+    table.appendChild(el("thead", {}, [ el("tr", {}, [
+      el("th", { text: "Wk" }), el("th", { text: "Phase" }), el("th", { text: "Long run" }),
+      el("th", { text: "Speed" }), el("th", { text: "Swim" }), el("th", { text: "Bench" }), el("th", { text: "Long-run note" })
+    ]) ]));
+    var tb = el("tbody");
+    data.block.forEach(function(b) {
+      var cls = b.deload ? "deload" : (b.week === wk ? "current" : (b.week < wk ? "past" : ""));
+      var tr = el("tr", cls ? { class: cls } : {});
+      var wkCell = el("td", {}, [ el("strong", { text: "W" + b.week }) ]);
+      if (b.week === wk) wkCell.appendChild(el("span", { class: "badge now", text: "NOW" }));
+      else if (b.deload) wkCell.appendChild(el("span", { class: "badge dl", text: "DL" }));
+      tr.appendChild(wkCell);
+      tr.appendChild(el("td", { text: b.phase }));
+      tr.appendChild(el("td", {}, [ el("span", { class: "sp", text: b.run.long_km + " km" }) ]));
+      tr.appendChild(el("td", { text: b.run.speed }));
+      tr.appendChild(el("td", {}, [ el("span", { class: "sw", text: (b.swim.total_m / 1000).toFixed(1) + "k" }) ]));
+      tr.appendChild(el("td", { text: b.strength.bench }));
+      tr.appendChild(el("td", { text: b.run.long_note }));
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    wrap.appendChild(table);
+    sec.appendChild(wrap);
+    sec.appendChild(el("div", { class: "callout", html: "→ " + data.next_phase_note }));
+    return sec;
   }
 
-  fetch(appUrl("training/database.json")).then(function(r) {
-    if (!r.ok) throw new Error("HTTP " + r.status + " loading training/database.json");
+  function drawCharts(data, wk) {
+    if (typeof Chart === "undefined") return;
+    var muted = "#8ba3b8", grid = "rgba(138,163,184,0.12)";
+    var labels = data.block.map(function(b) { return "W" + b.week; });
+    var runColors = data.block.map(function(b) { return b.deload ? "rgba(251,191,36,0.55)" : (b.week <= wk ? "rgba(74,222,128,0.9)" : "rgba(74,222,128,0.32)"); });
+    new Chart(document.getElementById("runChart"), {
+      type: "bar",
+      data: { labels: labels, datasets: [{ label: "Long run", data: data.block.map(function(b) { return b.run.long_km; }), backgroundColor: runColors, borderRadius: 4 }] },
+      options: { responsive: true, plugins: { legend: { display: false } },
+        scales: { x: { ticks: { color: muted, font: { size: 10 } }, grid: { display: false } },
+          y: { ticks: { color: muted }, grid: { color: grid }, suggestedMax: 22, title: { display: true, text: "km", color: muted } } } }
+    });
+    new Chart(document.getElementById("swimChart"), {
+      type: "line",
+      data: { labels: labels, datasets: [{ label: "Swim km", data: data.block.map(function(b) { return b.swim.total_m / 1000; }),
+        borderColor: "#22d3ee", backgroundColor: "rgba(34,211,238,0.14)", fill: true, tension: 0.35,
+        pointRadius: data.block.map(function(b) { return b.week === wk ? 6 : 3; }),
+        pointBackgroundColor: data.block.map(function(b) { return b.deload ? "#fbbf24" : "#22d3ee"; }) }] },
+      options: { responsive: true, plugins: { legend: { display: false } },
+        scales: { x: { ticks: { color: muted, font: { size: 10 } }, grid: { display: false } },
+          y: { ticks: { color: muted }, grid: { color: grid }, suggestedMin: 3, suggestedMax: 7.5, title: { display: true, text: "km / week", color: muted } } } }
+    });
+  }
+
+  fetch(appUrl("training/plan-him.json")).then(function(r) {
+    if (!r.ok) throw new Error("HTTP " + r.status);
     return r.json();
   }).then(function(data) {
-    if (typeof WorkoutUI === "undefined") throw new Error("workout-ui.js failed to load");
+    var wk = currentBlockWeek(data);
+    document.getElementById("subtitle").textContent = data.meta.subtitle;
+    document.getElementById("weekchip").textContent = "Week " + wk + " / " + data.meta.block_weeks;
+    document.getElementById("updated").textContent = "updated " + fmtDate(data.meta.updated);
 
-    var totalWeeks = getTotalWeeks(data);
-    var currentWeek = getCurrentWeek(data);
-    var phase = getPhase(currentWeek, data.phases);
-
-    if (data.hm_block && data.hm_block.active) {
-      var hb = data.hm_block;
-      if (hb.mode === "bridge") {
-        document.getElementById("phase-name").textContent = "Shin Bridge \u2014 Stage " + hb.bridge.current_stage;
-        document.getElementById("week-badge").textContent = "Symptom-gated";
-      } else {
-        document.getElementById("phase-name").textContent = "Vedanta HM Block";
-        document.getElementById("week-badge").textContent = "Week " + hb.main.current_week_n + " of 14";
-      }
-    } else {
-      document.getElementById("phase-name").textContent = "Phase " + phase.id + " \u2014 " + phase.name;
-      document.getElementById("week-badge").textContent = "Week " + currentWeek + " of " + totalWeeks;
-    }
-    document.getElementById("overview-title").textContent = "Full " + totalWeeks + "-Week Overview";
-
-    // Goals
-    var goalsEl = document.getElementById("goals-grid");
-    var cw = null;
-    for (var i = 0; i < data.weeks.length; i++) {
-      if (data.weeks[i].week === Math.min(currentWeek, totalWeeks)) { cw = data.weeks[i]; break; }
-    }
-    var bestLong = 0;
-    for (var j = 0; j < data.weeks.length; j++) {
-      if (data.weeks[j].week <= currentWeek && data.weeks[j].running.sun_long_km > bestLong) {
-        bestLong = data.weeks[j].running.sun_long_km;
-      }
-    }
-    var benchProgress = (cw && cw.bench.main_kg) ? ((cw.bench.main_kg - 72.5) / (92.5 - 72.5)) * 100 : 0;
-    var benchLabel = "Working: " + ((cw && cw.bench.main_kg) ? cw.bench.main_kg + " kg" : "\u2014");
-
-    var nextRace = null;
-    if (data.races) {
-      for (var r = 0; r < data.races.length; r++) {
-        if (data.races[r].id === "goa_703") continue;
-        if (data.races[r].week && data.races[r].week >= currentWeek) { nextRace = data.races[r]; break; }
-      }
-    }
-    var nextRaceLabel = nextRace ? nextRace.name.replace(/^(Vedanta |Tata (Steel )?|Tata |TCS )/, "") : "Slam";
-    var nextRaceDate = nextRace ? nextRace.date : "2027";
-    var slamDone = 0;
-    if (data.races) {
-      for (var s = 0; s < data.races.length; s++) {
-        if (data.races[s].id === "goa_703") continue;
-        if (data.races[s].week && data.races[s].week < currentWeek) slamDone++;
-      }
-    }
-
-    goalsEl.appendChild(buildGoalCard("Procam Slam", "Oct 2026 \u2013 Apr 2027", slamDone + "/4 races", Math.min(100, (slamDone / 4) * 100), nextRace ? "Next: " + nextRaceLabel + " (wk " + nextRace.week + ")" : "Complete!", "var(--green)"));
-    goalsEl.appendChild(buildGoalCard("Bench 1RM", "Feb 2027", "100\u2013105 kg", Math.min(100, benchProgress), benchLabel, "var(--accent)"));
-    goalsEl.appendChild(buildGoalCard("Peak Long Run", "Week 28", "28 km", Math.min(100, (bestLong / 28) * 100), "Best so far: " + bestLong + " km", "var(--cyan)"));
-    goalsEl.appendChild(buildGoalCard("Goa 70.3", "Nov 2027", "~5:30\u20135:55", Math.min(100, Math.max(0, ((currentWeek - 1) / totalWeeks) * 20)), "Tri build after Slam", "var(--amber)"));
-
-    // Running chart
-    var runWeeks = data.weeks;
-    new Chart(document.getElementById("running-chart").getContext("2d"), {
-      type: "bar",
-      data: {
-        labels: runWeeks.map(function(w) { return "W" + w.week; }),
-        datasets: [
-          { label: "Sun Long Run", data: runWeeks.map(function(w) { return w.running.sun_long_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(124,184,146,0.85)" : "rgba(124,184,146,0.25)"; }), borderRadius: 3 },
-          { label: "Wed Quality", data: runWeeks.map(function(w) { return w.running.wed_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(212,165,116,0.9)" : "rgba(212,165,116,0.22)"; }), borderRadius: 3 },
-          { label: "Sat Easy", data: runWeeks.map(function(w) { return w.running.sat_easy_km; }), backgroundColor: runWeeks.map(function(w) { return w.week <= currentWeek ? "rgba(110,181,181,0.85)" : "rgba(110,181,181,0.25)"; }), borderRadius: 3 }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { labels: { color: WorkoutUI.chartMuted, font: { size: 11 } } } },
-        scales: {
-          x: { stacked: true, ticks: { color: WorkoutUI.chartMuted, font: { size: 10 } }, grid: { color: WorkoutUI.chartGrid } },
-          y: { stacked: true, ticks: { color: WorkoutUI.chartMuted }, grid: { color: WorkoutUI.chartGrid }, title: { display: true, text: "km", color: WorkoutUI.chartMuted } }
-        }
-      }
-    });
-
-    // Bench chart
-    var benchWeeks = data.weeks.filter(function(w) { return w.bench.main_kg !== null; });
-    new Chart(document.getElementById("bench-chart").getContext("2d"), {
-      type: "line",
-      data: {
-        labels: benchWeeks.map(function(w) { return "W" + w.week; }),
-        datasets: [
-          { label: "Main Bench", data: benchWeeks.map(function(w) { return w.bench.main_kg; }), borderColor: "#d4a574", backgroundColor: "rgba(212,165,116,0.15)", fill: true, tension: 0.3, pointRadius: benchWeeks.map(function(w) { return w.week === currentWeek ? 6 : 3; }), pointBackgroundColor: benchWeeks.map(function(w) { return w.week <= currentWeek ? "#d4a574" : "rgba(212,165,116,0.35)"; }) },
-          { label: "Speed Bench", data: benchWeeks.map(function(w) { return w.bench.speed_kg; }), borderColor: "#6eb5b5", borderDash: [4,4], tension: 0.3, pointRadius: 2, pointBackgroundColor: "#6eb5b5" }
-        ]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { labels: { color: WorkoutUI.chartMuted, font: { size: 11 } } } },
-        scales: {
-          x: { ticks: { color: WorkoutUI.chartMuted, font: { size: 10 } }, grid: { color: WorkoutUI.chartGrid } },
-          y: { ticks: { color: WorkoutUI.chartMuted }, grid: { color: WorkoutUI.chartGrid }, title: { display: true, text: "kg", color: WorkoutUI.chartMuted }, suggestedMin: 50, suggestedMax: 105 }
-        }
-      }
-    });
-
-    WorkoutUI.setContext(cw, currentWeek, data);
-    WorkoutUI.renderSchedule(currentWeek, el, "schedule-body");
-
-    if (!(data.hm_block && data.hm_block.active)) {
-      var nextWeek = currentWeek + 1;
-      if (nextWeek <= totalWeeks) {
-        var nw = null;
-        for (var ni = 0; ni < data.weeks.length; ni++) {
-          if (data.weeks[ni].week === nextWeek) { nw = data.weeks[ni]; break; }
-        }
-        if (nw) {
-          var nextPhase = getPhase(nextWeek, data.phases);
-          document.getElementById("next-week-title").textContent = "Week " + nextWeek;
-          document.getElementById("next-week-label").textContent = nw.deload ? "— Deload" : (nextPhase ? "— " + nextPhase.name : "");
-          WorkoutUI.setContext(nw, nextWeek, data);
-          WorkoutUI.renderSchedule(nextWeek, el, "next-schedule-body");
-          WorkoutUI.setContext(cw, currentWeek, data);
-          document.getElementById("next-week-section").style.display = "";
-        }
-      }
-    }
-
-    // Phase timeline
-    var timelineEl = document.getElementById("timeline");
-    data.phases.forEach(function(p) {
-      var state = "";
-      if (p.status === "tbd") {
-        state = currentWeek >= totalWeeks ? "" : "";
-      } else if (currentWeek >= p.weeks[0] && currentWeek <= p.weeks[1]) {
-        state = "active";
-      } else if (currentWeek > p.weeks[1]) {
-        state = "done";
-      }
-      timelineEl.appendChild(buildTimelineItem(
-        formatPhaseRange(p),
-        "Phase " + p.id + " \u2014 " + p.name + (p.status === "tbd" ? " (TBD)" : ""),
-        state
-      ));
-    });
-
-    // Milestones — from database.json (single source of truth)
-    var milestonesEl = document.getElementById("milestones");
-    buildMilestones(data).forEach(function(m) {
-      milestonesEl.appendChild(buildTimelineItem(
-        formatShortDate(m.date) + " \u00B7 Week " + m.week,
-        m.label,
-        milestoneState(currentWeek, m.week)
-      ));
-    });
-
-    // Full week table
-    var weekBody = document.getElementById("week-body");
-    data.weeks.forEach(function(w) {
-      weekBody.appendChild(buildWeekRow(w, currentWeek, data.phases));
-    });
-
-    document.getElementById("last-updated").textContent = new Date().toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "numeric" });
+    var app = document.getElementById("app");
+    app.appendChild(renderThisWeek(data, wk));
+    app.appendChild(renderMetrics(data));
+    app.appendChild(renderBlock(data, wk));
+    app.appendChild(renderSwim(data));
+    drawCharts(data, wk);
   }).catch(function(err) {
-    var msg = err && err.message ? err.message : String(err);
-    var subtitle = document.querySelector(".header .subtitle");
-    if (msg.indexOf("JSON") !== -1 || msg.indexOf("fetch") !== -1 || msg.indexOf("Failed") !== -1) {
-      subtitle.textContent = "Could not load training/database.json \u2014 check that training/database.json is deployed (GitHub Pages: enable Pages from the main branch / root).";
-    } else {
-      subtitle.textContent = "Dashboard error: " + msg;
-      console.error(err);
-    }
+    document.getElementById("app").appendChild(el("div", { class: "err",
+      text: "Could not load training/plan-him.json — " + (err && err.message ? err.message : err) + ". On GitHub Pages, ensure the file is deployed (Pages → main branch / root)." }));
+    document.getElementById("subtitle").textContent = "Load error";
   });
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register(appUrl("sw.js?v=5")).catch(function() {});
-}
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=8")).catch(function() {}); }
 </script>
 </body>
 </html>

@@ -91,6 +91,30 @@
     .sess-ttl { font-size: 0.84rem; font-weight: 600; line-height: 1.22; margin: 0.15rem 0 0.2rem; }
     .sess-tgt { font-size: 0.72rem; color: var(--muted); line-height: 1.35; }
 
+    /* Session log & insights */
+    .log-list { display: flex; flex-direction: column; gap: 0.6rem; }
+    .log { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    .log[open] { border-color: var(--sport, var(--border)); }
+    .log > summary { list-style: none; cursor: pointer; padding: 0.8rem 1rem 0.8rem 1.15rem; display: flex; align-items: center; gap: 0.85rem; position: relative; }
+    .log > summary::-webkit-details-marker { display: none; }
+    .log > summary::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--sport, var(--border)); }
+    .log .ld { font-size: 0.68rem; color: var(--faint); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; min-width: 3.4rem; }
+    .log .lt { font-weight: 600; font-size: 0.88rem; flex: 1; line-height: 1.2; }
+    .log .lt small { display: block; color: var(--faint); font-weight: 400; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.1rem; }
+    .log .lv { font-size: 0.68rem; color: var(--sport); font-weight: 700; text-align: right; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.03em; }
+    .log .chev { color: var(--faint); font-size: 0.8rem; transition: transform 0.15s ease; }
+    .log[open] .chev { transform: rotate(90deg); }
+    @media (max-width: 560px) { .log .lv { display: none; } }
+    .log-body { padding: 0 1.15rem 1rem; }
+    .log-stats { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.1rem 0 0.85rem; }
+    .log-stats .st { background: var(--surface-2); border: 1px solid var(--border); border-radius: 7px; padding: 0.28rem 0.55rem; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+    .log-stats .st span { color: var(--muted); }
+    .log-stats .st b { color: var(--text); font-weight: 700; margin-left: 0.25rem; }
+    .log-hl { font-size: 0.82rem; color: var(--text); font-weight: 600; line-height: 1.4; margin-bottom: 0.55rem; }
+    .log-insight { list-style: none; }
+    .log-insight li { font-size: 0.79rem; color: var(--muted); padding: 0.28rem 0 0.28rem 1.1rem; position: relative; line-height: 1.48; }
+    .log-insight li::before { content: '▸'; position: absolute; left: 0; color: var(--sport); }
+
     /* Metrics */
     .grid-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
     .metric { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; position: relative; }
@@ -218,6 +242,7 @@
   function h2(label) { return el("h2", {}, [label, el("span", { class: "rule" })]); }
   function daysUntil(dateStr) { return Math.ceil((new Date(dateStr).getTime() - Date.now()) / 86400000); }
   function fmtDate(s) { var d = new Date(s); return isNaN(d) ? s : d.toLocaleDateString("en-IN", { month: "short", day: "numeric", year: "numeric" }); }
+  function fmtShort(s) { var d = new Date(s); return isNaN(d) ? s : d.toLocaleDateString("en-IN", { month: "short", day: "numeric" }); }
 
   function currentBlockWeek(data) {
     var start = new Date(data.meta.block_start).getTime();
@@ -287,6 +312,40 @@
     });
     sec.appendChild(grid);
     if (wkData && wkData.swim.note) sec.appendChild(el("div", { class: "callout", html: "Swim note (wk " + wk + "): " + wkData.swim.note }));
+    return sec;
+  }
+
+  function renderSessions(data) {
+    if (!data.sessions || !data.sessions.length) return null;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Session Log & Insights"));
+    var list = el("div", { class: "log-list" });
+    data.sessions.forEach(function(s, i) {
+      var det = el("details", { class: "log", style: "--sport:var(--" + s.sport + ")" });
+      if (i === 0) det.setAttribute("open", "");
+      var sum = el("summary", {}, [
+        el("span", { class: "ld", text: fmtShort(s.date) }),
+        el("div", { class: "lt", html: s.title + "<small>" + (s.week ? "Wk " + s.week + " · " : "") + s.sport + "</small>" }),
+        s.verdict ? el("span", { class: "lv", text: s.verdict }) : null,
+        el("span", { class: "chev", text: "▸" })
+      ]);
+      det.appendChild(sum);
+      var body = el("div", { class: "log-body" });
+      if (s.stats && s.stats.length) {
+        var st = el("div", { class: "log-stats" });
+        s.stats.forEach(function(x) { st.appendChild(el("div", { class: "st", html: "<span>" + x.l + "</span><b>" + x.v + "</b>" })); });
+        body.appendChild(st);
+      }
+      if (s.headline) body.appendChild(el("div", { class: "log-hl", text: s.headline }));
+      if (s.insight && s.insight.length) {
+        var ul = el("ul", { class: "log-insight" });
+        s.insight.forEach(function(p) { ul.appendChild(el("li", { text: p })); });
+        body.appendChild(ul);
+      }
+      det.appendChild(body);
+      list.appendChild(det);
+    });
+    sec.appendChild(list);
     return sec;
   }
 
@@ -448,6 +507,8 @@
 
     var app = document.getElementById("app");
     app.appendChild(renderThisWeek(data, wk));
+    var logSec = renderSessions(data);
+    if (logSec) app.appendChild(logSec);
     app.appendChild(renderMetrics(data));
     app.appendChild(renderBlock(data, wk));
     app.appendChild(renderSwim(data));
@@ -460,7 +521,7 @@
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=8")).catch(function() {}); }
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=9")).catch(function() {}); }
 </script>
 </body>
 </html>

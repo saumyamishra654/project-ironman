@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-09",
+    "updated": "2026-08-12",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -91,6 +91,34 @@
       "run": { "long_km": 12, "long_note": "deload; transition to HM sharpen", "speed": "short sharpening reps", "easy_km": 5 },
       "swim": { "total_m": 4500, "sessions": 3, "split": "1.0 / 2.0 / 1.5k", "note": "deload volume" },
       "strength": { "focus": "Deload", "bench": "70 × 2×5" } }
+  ],
+  "sessions": [
+    { "date": "2026-08-12", "sport": "run", "week": 1, "title": "Speed repeats (fartlek)", "verdict": "Strong top-end · overshot pace",
+      "stats": [ { "l": "Dist", "v": "5.0k" }, { "l": "Avg HR", "v": "148" }, { "l": "Max HR", "v": "189" }, { "l": "TE", "v": "3.1a / 2.8an" }, { "l": "Load", "v": "153" } ],
+      "headline": "Ignoring compliance — an encouraging session. Top-end is in better shape than easy-run HR suggests.",
+      "insight": [
+        "First non-zero anaerobic TE (2.8) in ages — the fartlek does what HR-capped long runs structurally can't.",
+        "Held 4:40–5:00/km reps at HR only 165–172 (under 182 LTHR) — genuine speed produced sub-threshold. Confirms the limiter is aerobic base, not top-end.",
+        "Cadence hit 163–168 on the good reps (vs habitual 143); power 340–410W. Mechanics wake up when you ask for speed.",
+        "Overshot nearly every rep — ran 20–40s/km faster than target. 'Not hard physiologically' tricked you into pushing. Load 153 ≈ a 15k long run.",
+        "Fix is a skill: aim for the SLOW end of the band. Pacing accuracy > pace. Next quality = 5×1000 @ 5:55 (distance polices the overshoot)."
+      ] },
+    { "date": "2026-08-10", "sport": "run", "week": 1, "title": "Recovery run (HR-capped)", "verdict": "Textbook restraint",
+      "stats": [ { "l": "Dist", "v": "2.7k" }, { "l": "Avg HR", "v": "134" }, { "l": "Max HR", "v": "145" }, { "l": "TE", "v": "0.9 Recovery" }, { "l": "Load", "v": "12" } ],
+      "headline": "The easy-day discipline that's been the hard part — nailed.",
+      "insight": [
+        "Avg HR 134, max 145 — never near the 150–158 cap, one day off a 15k. Exactly the restraint that was missing pre-pivot.",
+        "Load 11.7 aids recovery rather than adding fatigue. Pace ~10:40/km is an output here, not a fitness signal.",
+        "Cadence 143 — low-stakes on recovery days, but the standing nudge toward 155+ still applies."
+      ] },
+    { "date": "2026-08-09", "sport": "run", "week": 0, "title": "Long progression (5+5+5)", "verdict": "HR discipline held — the breakthrough",
+      "stats": [ { "l": "Dist", "v": "15.0k" }, { "l": "Avg HR", "v": "161" }, { "l": "Max HR", "v": "179" }, { "l": "TE", "v": "3.9a / 0.0an" }, { "l": "Load", "v": "160" } ],
+      "headline": "The behaviour change that matters: sub-172 held for the whole run.",
+      "insight": [
+        "Block 3 comp-pace avg never crossed 172 — a complete reversal of the Jul 19 Z4 blow-up.",
+        "At the sub-172 ceiling, comp pace was ~7:37/km (not the 7:10 predictor) — sustainable pace anchored to 7:35.",
+        "Anaerobic 0.0 is correct by design for an HR-capped sub-threshold run. VO₂max ticked 41→43; status Productive."
+      ] }
   ],
   "swim": {
     "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400−200 dist) ÷ (400time − 200time). Sets the threshold pace for quality reps.",

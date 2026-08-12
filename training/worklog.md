@@ -149,6 +149,27 @@ Rebuild week off a deep late-July recovery dip (TSB spiked to +257 on Aug 2, ATL
 - VO₂max ticked 41 → 43 after this run; status → Productive.
 - Load note: Sat double (2k swim + climb) + this 15k spiked ATL 360→744, ACWR 1.5 (HIGH), TSB −262. Productive overload — next 1–2 days easy/off before any quality.
 
+---
+
+## Block 1 · Week 1 — Phase A Reset & Base (Aug 10 – Aug 16)
+
+First week of the HIM block (block_start Aug 10). Triplet re-established: Mon recovery / Wed speed / Sun long, swim ×2.
+
+### Session Log
+
+**Aug 10 (Mon) — Run — recovery [DONE ✅]**
+- 2.73 km (2.0k active + WU/CD), avg HR 134, max 145, ~10:40/km active, TE 0.9 ("Recovery"), aerobic 0.9 / anaerobic 0.0, load 11.7. Structured workout (WU / 2×1000 / CD), evening start 19:36.
+- **WIN: HR discipline held — avg 134, max 145, never near the 150–158 cap.** Day after the Aug 9 15k; textbook recovery effort (66% of max HR). Load 11.7 aids recovery, doesn't add fatigue.
+- Pace slow (~10:40/km) by design — HR-governed, 1 day off a long run with ATL elevated. Not a fitness signal.
+- Cadence 143 on active laps — same overstride note; low-stakes on recovery days but worth nudging toward 155+.
+
+**Aug 11 (Tue) — Strength (upper, bench) [DONE ✅]**
+- Morning session (moved to AM; event tonight, lights-out early). Felt sleepy throughout but decent quality.
+- Context: poor sleep prior night — 5.9 h, sleep score 58 (Poor), readiness 36 (Low, "find time to relax"). Note: watch reported REM ~6 min but that's almost certainly a staging misread (long vivid dreams reported; wrist REM detection unreliable). Deep sleep held (59 min) and overnight HRV 54 (above 37 weekly avg) — deficit is acute duration, not autonomic stress.
+
+**Aug 11 (Tue) — Weigh-in — new low**
+- 81.1 kg (from 81.8 Aug 5 → 81.3 Aug 6 → 81.1). Steady downtrend toward 75 kg target. Morning-after-short-sleep reading so some water weight, but 3-point trend is real.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

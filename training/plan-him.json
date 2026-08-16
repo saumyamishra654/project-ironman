@@ -1069,5 +1069,85 @@
         }
       ]
     }
+  ],
+  "week_template_wk2": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "sport": "run",
+          "title": "Easy / recovery run",
+          "detail": "AM · HR ≤150–158"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Anterior (bench)",
+          "detail": "bench focus"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "sport": "swim",
+          "slot": "AM",
+          "title": "Swim",
+          "detail": "aerobic"
+        },
+        {
+          "sport": "run",
+          "slot": "PM",
+          "title": "Speed run",
+          "detail": "LT intervals"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Posterior",
+          "detail": "auto-regulate"
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "sport": "swim",
+          "slot": "AM",
+          "title": "Swim",
+          "detail": "aerobic"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Upper",
+          "detail": "rep-focused bench"
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "sport": "run",
+          "title": "Long run",
+          "detail": "HR ≤172"
+        }
+      ]
+    }
   ]
 }

@@ -67,6 +67,23 @@
     .weeknav button:disabled { opacity: 0.3; cursor: default; }
     .weeknav .weekchip.other { background: var(--surface-3); color: var(--text); cursor: pointer; }
     .weeknav .weekchip.other:hover { color: var(--accent); }
+    .today-btn { font-family: inherit; background: var(--accent); color: #04141a; border: none; border-radius: 6px; padding: 0.45rem 0.9rem; font-weight: 800; font-size: 0.78rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.04em; }
+    .today-btn:hover { filter: brightness(1.08); }
+    .today-btn.active { background: var(--surface-3); color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+
+    /* Today panel */
+    .today-panel { margin-top: 1.25rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1.1rem 1.25rem; }
+    .today-panel .th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); font-weight: 700; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    .today-panel .th .td { color: var(--faint); font-weight: 600; letter-spacing: 0.04em; }
+    .today-card { border-left: 3px solid var(--sport, var(--accent)); background: var(--surface-2); border-radius: 8px; padding: 0.7rem 0.9rem; margin-top: 0.65rem; }
+    .today-card .tc-h { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--sport); }
+    .today-card .tc-h .slot { color: var(--faint); margin-left: 0.35rem; }
+    .today-card .tc-t { font-weight: 700; font-size: 0.95rem; margin: 0.15rem 0 0.15rem; }
+    .today-card .tc-d { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+    .today-card ul { list-style: none; margin-top: 0.4rem; }
+    .today-card li { font-size: 0.79rem; color: var(--muted); padding: 0.24rem 0 0.24rem 1.05rem; position: relative; line-height: 1.4; }
+    .today-card li::before { content: '▸'; position: absolute; left: 0; color: var(--sport); }
+    .today-card li b { color: var(--text); font-weight: 700; }
 
     .section { margin-top: 2.25rem; }
     .section > h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em; color: var(--muted); font-weight: 700; margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -238,6 +255,7 @@
       <span class="pill"><span class="swatch" style="background:var(--bike)"></span>Bike</span>
       <span class="pill"><span class="swatch" style="background:var(--run)"></span>Run</span>
       <span class="pill"><span class="swatch" style="background:var(--strength)"></span>Strength</span>
+      <button class="today-btn" id="todayBtn" type="button">Today</button>
       <div class="weeknav" id="weeknav"><span class="weekchip">Week —</span></div>
     </div>
   </div>
@@ -287,6 +305,18 @@
     if (Date.now() < new Date(data.meta.block_start).getTime()) return -1;
     var d = new Date().getDay(); // 0=Sun..6=Sat
     return d === 0 ? 6 : d - 1;
+  }
+
+  function layoutFor(data, wk) {
+    if (wk >= 3 && data.week_template_full) return data.week_template_full;
+    if (wk === 2 && data.week_template_wk2) return data.week_template_wk2;
+    return data.week_template;
+  }
+  function weekDates(wkData) {
+    if (!wkData || !wkData.start) return "";
+    var s = new Date(wkData.start);
+    var e = new Date(s.getTime() + 6 * 86400000);
+    return fmtShort(s.toISOString()) + " – " + fmtShort(e.toISOString());
   }
 
   function swimTargetFor(s, wkData, data) {
@@ -342,15 +372,16 @@
     sec.appendChild(h2(heading));
 
     var head = el("div", { class: "week-head" });
-    head.appendChild(el("div", { class: "phase", html: "Phase " + phase.id + " — " + phase.name + (wkData && wkData.deload ? " <small>· deload week</small>" : "") }));
+    var dates = weekDates(wkData);
+    head.appendChild(el("div", { class: "phase", html: "Phase " + phase.id + " — " + phase.name + (dates ? ' <small>· ' + dates + '</small>' : "") + (wkData && wkData.deload ? " <small>· deload week</small>" : "") }));
     if (wkData) {
       head.appendChild(el("div", { class: "focus", html:
         '<span class="sp">Run</span> long ' + wkData.run.long_km + 'k · speed ' + wkData.run.speed +
-        ' &nbsp;·&nbsp; <span class="sw">Swim</span> ' + (wkData.swim.total_m / 1000).toFixed(1) + 'k this week' }));
+        ' &nbsp;·&nbsp; <span class="sw">Swim</span> ' + (wkData.swim.total_m / 1000).toFixed(1) + 'k · ' + wkData.swim.sessions + ' sessions' }));
     }
     sec.appendChild(head);
 
-    var template = (wk >= 3 && data.week_template_full) ? data.week_template_full : data.week_template;
+    var template = layoutFor(data, wk);
     var grid = el("div", { class: "week-grid" });
     template.forEach(function(t, idx) {
       var isToday = idx === tIdx;
@@ -375,6 +406,68 @@
     });
     sec.appendChild(grid);
     if (wkData && wkData.swim.note) sec.appendChild(el("div", { class: "callout", html: "Swim note (wk " + wk + "): " + wkData.swim.note }));
+    return sec;
+  }
+
+  function swimDetailLines(s, wkData, data) {
+    if (!s.swim_id || !data.swim_sessions) return [];
+    var def = null;
+    for (var i = 0; i < data.swim_sessions.length; i++) if (data.swim_sessions[i].id === s.swim_id) def = data.swim_sessions[i];
+    if (!def) return [];
+    var lines = def.fixed.slice();
+    if (wkData && wkData.swim && wkData.swim.reps) {
+      var n = wkData.swim.reps[def.scaled.key];
+      if (n != null) {
+        var main = "main: " + def.scaled.label.replace("{n}", n) + ((wkData.swim.reps.deload && s.swim_id === "S3") ? " (easy — no sprint today)" : "");
+        lines.splice(lines.length - 1, 0, main);
+      }
+    }
+    return lines;
+  }
+  function strengthLines(title, wkData, data) {
+    if (!data.strength_split) return [];
+    var name = title.split(" ")[0];
+    var day = null;
+    data.strength_split.days.forEach(function(dd) { if (dd.name === name) day = dd; });
+    if (!day) return [];
+    var lines = [];
+    if (name === "Anterior" && wkData && wkData.strength) lines.push("Bench today: " + wkData.strength.bench);
+    day.lifts.forEach(function(x) { lines.push(x.n + " · " + x.s + " set" + (parseInt(x.s, 10) > 1 ? "s" : "") + (x.tag ? " (" + x.tag + ")" : "")); });
+    return lines;
+  }
+
+  function renderToday(data, curWk) {
+    var sec = el("div", { class: "section today-panel", id: "todaypanel", style: "display:none" });
+    var tIdx = todayIndex(data);
+    var now = new Date();
+    var header = el("div", { class: "th" }, [
+      el("span", { text: "Today's session" }),
+      el("span", { class: "td", text: now.toLocaleDateString("en-IN", { weekday: "long", month: "short", day: "numeric" }) })
+    ]);
+    sec.appendChild(header);
+    if (tIdx < 0) { sec.appendChild(el("div", { class: "today-card" }, [ el("div", { class: "tc-d", text: "The block hasn't started yet." }) ])); return sec; }
+
+    var wkData = null;
+    for (var i = 0; i < data.block.length; i++) if (data.block[i].week === curWk) wkData = data.block[i];
+    var day = layoutFor(data, curWk)[tIdx];
+
+    day.sessions.forEach(function(s) {
+      var card = el("div", { class: "today-card", style: "--sport:var(--" + s.sport + ")" });
+      card.appendChild(el("div", { class: "tc-h" }, [ s.sport, s.slot ? el("span", { class: "slot", text: s.slot }) : null ]));
+      card.appendChild(el("div", { class: "tc-t", text: s.title }));
+      card.appendChild(el("div", { class: "tc-d", text: sessTarget(day.day, s, wkData, data) }));
+      var lines = s.sport === "swim" ? swimDetailLines(s, wkData, data)
+                : s.sport === "strength" ? strengthLines(s.title, wkData, data) : [];
+      if (lines.length) {
+        var ul = el("ul");
+        lines.forEach(function(l) { ul.appendChild(el("li", { html: l })); });
+        card.appendChild(ul);
+      }
+      sec.appendChild(card);
+    });
+    if (day.sessions.length === 1 && day.sessions[0].sport === "rest") {
+      // rest day already shown as a card
+    }
     return sec;
   }
 
@@ -632,15 +725,25 @@
     renderWeekNav();
 
     var app = document.getElementById("app");
+    app.appendChild(renderToday(data, wk));
     app.appendChild(renderThisWeek(data, viewWk, wk));
-    var logSec = renderSessions(data);
-    if (logSec) app.appendChild(logSec);
     app.appendChild(renderMetrics(data));
     app.appendChild(renderBlock(data, wk));
     var strSec = renderStrength(data);
     if (strSec) app.appendChild(strSec);
     app.appendChild(renderSwim(data));
+    var logSec = renderSessions(data);
+    if (logSec) app.appendChild(logSec);
     drawCharts(data, wk);
+
+    document.getElementById("todayBtn").onclick = function() {
+      var p = document.getElementById("todaypanel");
+      if (!p) return;
+      var show = p.style.display === "none";
+      p.style.display = show ? "" : "none";
+      this.classList.toggle("active", show);
+      if (show) p.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
   }).catch(function(err) {
     document.getElementById("app").appendChild(el("div", { class: "err",
       text: "Could not load training/plan-him.json — " + (err && err.message ? err.message : err) + ". On GitHub Pages, ensure the file is deployed (Pages → main branch / root)." }));
@@ -649,7 +752,7 @@
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=12")).catch(function() {}); }
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=13")).catch(function() {}); }
 </script>
 </body>
 </html>

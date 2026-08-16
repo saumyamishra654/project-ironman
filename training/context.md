@@ -108,6 +108,7 @@ List any deviations from the plan here:
 - **Jul 12:** B1 baseline long run (10 km) — clean, no pain during or after. Dull non-painful sensation at a point the next morning; not focal, not a tripwire, just watching it. Held at B1 — gate needs a full symptom-free week, not one run. Also noted: consciously engaging the left glute improved how the foot felt mid-run — consistent with the shin bridge doc's flagged weak-left-hip / pelvic-drop pattern.
 - **Jul 23 (week 9):** Shin cleared — no longer symptom-gating. `hm_block.active` set to `false` in `database.json`, restoring normal calendar-driven Build-phase schedule (weeks 9–16). NOTE: phase notes in `database.json` (phases 1–3) and `plan.md` still reference "superseded by hm_block" — clean up when convenient. Running now follows `plan.md`'s week-by-week table directly.
 - **Jul 23:** Easy/long HR cap individualised 150 → ~162 bpm (70% HRR) off observed max ~203 / RHR 62. Garmin only ~2–3 weeks old and still calibrating, so zone/VO₂max/max-HR figures are provisional — reset at the Week-8 5k TT. Jul 19 "long run" was 90% Z4 (threshold, not easy); fix is to govern long runs by HR and run mornings, not evenings.
+- **Aug 16:** Lifting split changed to **Posterior / Anterior / Upper** (kinetic-chain), retiring the Upper 1 / Upper 2 / Legs layout. Full exercise list in `training/posterior-anterior-upper-split.md`; framework summary in `CLAUDE.md`. 2 sets/exercise except barbell bench = 3 on the Anterior day. Lopsided by design (swimming floods back, so gym protects press/arms). Bench stays actual barbell on both exposures. Keep heavy leg work off long-run / hardest-swim days. 4-day P/A/P/A deferred to off-season/maintenance (too much recovery load mid-cut with pool volume climbing). Built with Claude web.
 
 ## Decision Log
 
@@ -123,6 +124,7 @@ List any deviations from the plan here:
 | 2026-06-28 | Carb cycling adopted | Drop carbs on 5 non-eating-out days (~2200–2300 kcal) to buffer 2 higher-calorie social days (~3000–3200 kcal). Weekly average stays at ~2500 kcal deficit. Protein stays constant. Peri-workout carbs preserved. |
 | 2026-07-23 | Shin bridge retired | Shin cleared; `hm_block.active → false`. Running resumes normal Build-phase calendar (weeks 9–16). |
 | 2026-07-23 | Easy/long HR cap individualised | Flat 150 → ~162 bpm (70% HRR) off observed max HR ~203 / RHR 62. Jul 19 long run was 90% Z4 (threshold in disguise). Govern long runs by HR, run mornings. Watch still calibrating (~2–3 wks) — treat zones as provisional, reset at Week-8 5k TT. |
+| 2026-08-16 | Lifting split → Posterior / Anterior / Upper | Retired Upper 1 / Upper 2 / Legs for a kinetic-chain P/A/U split (`posterior-anterior-upper-split.md`). 2 sets/exercise, bench 3 on Anterior day. Lopsided by design — swimming already floods back, so gym protects press/arms. Bench actual barbell both days. 4-day P/A/P/A the better program but deferred: too much recovery load mid-cut with swim volume climbing. Built with Claude web. |
 
 ---
 

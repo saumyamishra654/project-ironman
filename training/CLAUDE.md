@@ -51,9 +51,13 @@ Next race: **Bangalore Half Marathon, Dec 13, 2026** (in Bengaluru itself — id
 - **Target race for pace validation is now the Bangalore HM, Dec 13, 2026** (was Delhi HM Oct 18, cancelled). HM race goal remains aspirational, not yet earned: Garmin predicts 7:09/km (2:30:51); Riegel off the March 10K gives ~6:41/km; earlier 6:40 and 6:00 targets both over-project (6:00 was derived from 4×1k intervals, which don't extend to 21 km). The gap between ~7:35 sustainable and ~7:09 predicted *is* the aerobic-base deficit — closing it is the block's job.
 - **Still provisional** — no clean race-effort time trial exists yet. Pace zones in `plan.md` / `hm-plan-delhi-oct18.md` remain unvalidated.
 
+### Lifting split — changed 2026-08-16 (Posterior / Anterior / Upper)
+
+Retired the old 2-upper (Upper 1 bench / Upper 2 pullup-OHP) + 1-lower layout in favour of a **kinetic-chain Posterior / Anterior / Upper split** — see `training/posterior-anterior-upper-split.md` for the full exercise list. Framework: Posterior = back/triceps/glutes-hams/rear-delt/calves; Anterior = chest/delts/biceps/quads/tib/abs; Upper = second bench exposure + back-heavy day + third arm hit. **Set rule: 2 sets/exercise except barbell bench = 3 on the Anterior (primary) day** (it drives the 100 kg goal). Deliberately lopsided: swimming (2–3×/wk) already floods back/lats/rear-delt, so the gym protects pressing and arms and keeps standalone back leaner than it looks. Bench must be actual barbell on both exposures (machine incline/dips don't drive a barbell 1RM). Don't stack heavy leg work against the long run or hardest swim. A 4-day P/A/P/A is the better *program* (everything 2× frequency) but the worse *fit mid-cut with pool volume climbing* — deferred to maintenance/off-season. Discussed and built with Claude web.
+
 ### Training week structure — changed 2026-07-27
 
-Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, Wed swim AM + easy run PM, Thu lower, Fri swim AM + Upper B PM, Sat rest, Sun long run. This is essentially layout A2 from `hm-plan-delhi-oct18.md` plus a second swim, running 3 runs instead of 4 — the 4th run (R3, midweek longer easy) is deliberately deferred to ~mid-August as a shin-reintroduction step.
+Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, Wed swim AM + easy run PM, Thu lower, Fri swim AM + Upper B PM, Sat rest, Sun long run. This is essentially layout A2 from `hm-plan-delhi-oct18.md` plus a second swim, running 3 runs instead of 4 — the 4th run (R3, midweek longer easy) is deliberately deferred to ~mid-August as a shin-reintroduction step. **(Lifting content within this frame superseded 2026-08-16 by the P/A/U split above — the 3 gym days are now Posterior / Anterior / Upper.)**
 
 ---
 

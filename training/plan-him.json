@@ -225,7 +225,48 @@
       "strength": {
         "focus": "Upper (bench) + Lower",
         "bench": "82.5 × 3×5"
-      }
+      },
+      "actuals": [
+        {
+          "day": "Mon",
+          "sport": "run",
+          "status": "done",
+          "tgt": "2.7k recovery · avg HR 134 (textbook)"
+        },
+        {
+          "day": "Tue",
+          "sport": "strength",
+          "status": "done",
+          "tgt": "bench (Aug 11, on low sleep)"
+        },
+        {
+          "day": "Wed",
+          "sport": "swim",
+          "slot": "AM",
+          "status": "modified",
+          "badge": "600 m",
+          "tgt": "600 m only — short session"
+        },
+        {
+          "day": "Wed",
+          "sport": "run",
+          "slot": "PM",
+          "status": "done",
+          "tgt": "fartlek · overshot pace, strong effort"
+        },
+        {
+          "day": "Fri",
+          "sport": "swim",
+          "slot": "AM",
+          "status": "missed"
+        },
+        {
+          "day": "Sun",
+          "sport": "run",
+          "status": "done",
+          "tgt": "17k · avg HR 156 · morning, post-illness"
+        }
+      ]
     },
     {
       "week": 2,

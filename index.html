@@ -61,6 +61,12 @@
     .legend .pill { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
     .legend .swatch { width: 9px; height: 9px; border-radius: 3px; }
     .weekchip { background: var(--accent); color: #04141a; font-weight: 800; font-size: 0.85rem; padding: 0.45rem 0.9rem; border-radius: 6px; white-space: nowrap; }
+    .weeknav { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .weeknav button { font-family: inherit; background: var(--surface-2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; width: 1.8rem; height: 1.8rem; cursor: pointer; font-size: 1rem; line-height: 1; display: inline-flex; align-items: center; justify-content: center; padding: 0; }
+    .weeknav button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+    .weeknav button:disabled { opacity: 0.3; cursor: default; }
+    .weeknav .weekchip.other { background: var(--surface-3); color: var(--text); cursor: pointer; }
+    .weeknav .weekchip.other:hover { color: var(--accent); }
 
     .section { margin-top: 2.25rem; }
     .section > h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em; color: var(--muted); font-weight: 700; margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -88,8 +94,14 @@
     .sess-head { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.63rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sport); }
     .sess-head .ico { font-size: 0.82rem; }
     .sess-head .slot { color: var(--faint); margin-left: 0.15rem; }
+    .sess-head { display: flex; }
     .sess-ttl { font-size: 0.84rem; font-weight: 600; line-height: 1.22; margin: 0.15rem 0 0.2rem; }
     .sess-tgt { font-size: 0.72rem; color: var(--muted); line-height: 1.35; }
+    .sess-status { font-size: 0.56rem; font-weight: 800; letter-spacing: 0.03em; padding: 0.08rem 0.32rem; border-radius: 4px; margin-left: auto; text-transform: uppercase; white-space: nowrap; align-self: flex-start; }
+    .sess-status.done { background: rgba(74,222,128,0.18); color: var(--run); }
+    .sess-status.missed { background: rgba(240,120,95,0.18); color: var(--red); }
+    .sess-status.modified { background: rgba(251,191,36,0.18); color: var(--amber); }
+    .sess.missed .sess-ttl, .sess.missed .sess-tgt { text-decoration: line-through; opacity: 0.5; }
 
     /* Session log & insights */
     .log-list { display: flex; flex-direction: column; gap: 0.6rem; }
@@ -226,7 +238,7 @@
       <span class="pill"><span class="swatch" style="background:var(--bike)"></span>Bike</span>
       <span class="pill"><span class="swatch" style="background:var(--run)"></span>Run</span>
       <span class="pill"><span class="swatch" style="background:var(--strength)"></span>Strength</span>
-      <span class="weekchip" id="weekchip">Week —</span>
+      <div class="weeknav" id="weeknav"><span class="weekchip">Week —</span></div>
     </div>
   </div>
 
@@ -294,13 +306,28 @@
     return s.detail;
   }
 
-  function renderThisWeek(data, wk) {
+  function findActual(wkData, day, s) {
+    if (!wkData || !wkData.actuals) return null;
+    for (var i = 0; i < wkData.actuals.length; i++) {
+      var a = wkData.actuals[i];
+      if (a.day === day && a.sport === s.sport && (a.slot == null || a.slot === s.slot)) return a;
+    }
+    return null;
+  }
+  function statusBadge(a) {
+    if (a.badge) return a.badge;
+    return a.status; // "done" / "missed" / "modified"
+  }
+
+  function renderThisWeek(data, wk, curWk) {
     var wkData = null;
     for (var i = 0; i < data.block.length; i++) if (data.block[i].week === wk) wkData = data.block[i];
     var phase = phaseFor(wk, data.phases);
-    var tIdx = todayIndex(data);
-    var sec = el("div", { class: "section" });
-    sec.appendChild(h2("This Week"));
+    var isCurrent = wk === curWk;
+    var tIdx = isCurrent ? todayIndex(data) : -1;
+    var sec = el("div", { class: "section", id: "thisweek" });
+    var heading = isCurrent ? "This Week" : (wk < curWk ? "Week " + wk + " — recap" : "Week " + wk + " — planned");
+    sec.appendChild(h2(heading));
 
     var head = el("div", { class: "week-head" });
     head.appendChild(el("div", { class: "phase", html: "Phase " + phase.id + " — " + phase.name + (wkData && wkData.deload ? " <small>· deload week</small>" : "") }));
@@ -319,13 +346,15 @@
       day.appendChild(el("div", { class: "dow" }, [ el("span", { text: t.day }), isToday ? el("span", { class: "now", text: "TODAY" }) : null ]));
       var sessions = el("div", { class: "sessions" });
       t.sessions.forEach(function(s) {
-        var sess = el("div", { class: "sess", style: "--sport:var(--" + s.sport + ")" });
+        var act = findActual(wkData, t.day, s);
+        var sess = el("div", { class: "sess" + (act && act.status ? " " + act.status : ""), style: "--sport:var(--" + s.sport + ")" });
         sess.appendChild(el("div", { class: "sess-head" }, [
           s.sport,
-          s.slot ? el("span", { class: "slot", text: s.slot }) : null
+          s.slot ? el("span", { class: "slot", text: s.slot }) : null,
+          act && act.status ? el("span", { class: "sess-status " + act.status, text: statusBadge(act) }) : null
         ]));
         sess.appendChild(el("div", { class: "sess-ttl", text: s.title }));
-        sess.appendChild(el("div", { class: "sess-tgt", text: sessTarget(t.day, s, wkData) }));
+        sess.appendChild(el("div", { class: "sess-tgt", text: (act && act.tgt) ? act.tgt : sessTarget(t.day, s, wkData) }));
         sessions.appendChild(sess);
       });
       day.appendChild(sessions);
@@ -550,12 +579,34 @@
     return r.json();
   }).then(function(data) {
     var wk = currentBlockWeek(data);
+    var viewWk = wk;
     document.getElementById("subtitle").textContent = data.meta.subtitle;
-    document.getElementById("weekchip").textContent = "Week " + wk + " / " + data.meta.block_weeks;
     document.getElementById("updated").textContent = "updated " + fmtDate(data.meta.updated);
 
+    var weeknav = document.getElementById("weeknav");
+    function renderWeekNav() {
+      weeknav.innerHTML = "";
+      var prev = el("button", { type: "button", "aria-label": "Previous week" }, ["‹"]);
+      prev.disabled = viewWk <= 1;
+      prev.onclick = function() { if (viewWk > 1) { viewWk--; refreshWeek(); } };
+      var chip = el("span", { class: "weekchip" + (viewWk !== wk ? " other" : ""),
+        title: viewWk !== wk ? "Back to current week" : "" }, ["Week " + viewWk + " / " + data.meta.block_weeks]);
+      if (viewWk !== wk) chip.onclick = function() { viewWk = wk; refreshWeek(); };
+      var next = el("button", { type: "button", "aria-label": "Next week" }, ["›"]);
+      next.disabled = viewWk >= data.meta.block_weeks;
+      next.onclick = function() { if (viewWk < data.meta.block_weeks) { viewWk++; refreshWeek(); } };
+      weeknav.appendChild(prev); weeknav.appendChild(chip); weeknav.appendChild(next);
+    }
+    function refreshWeek() {
+      renderWeekNav();
+      var fresh = renderThisWeek(data, viewWk, wk);
+      var old = document.getElementById("thisweek");
+      old.parentNode.replaceChild(fresh, old);
+    }
+    renderWeekNav();
+
     var app = document.getElementById("app");
-    app.appendChild(renderThisWeek(data, wk));
+    app.appendChild(renderThisWeek(data, viewWk, wk));
     var logSec = renderSessions(data);
     if (logSec) app.appendChild(logSec);
     app.appendChild(renderMetrics(data));
@@ -572,7 +623,7 @@
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=10")).catch(function() {}); }
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=11")).catch(function() {}); }
 </script>
 </body>
 </html>

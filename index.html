@@ -289,14 +289,26 @@
     return d === 0 ? 6 : d - 1;
   }
 
-  function sessTarget(day, s, wkData) {
+  function swimTargetFor(s, wkData, data) {
+    if (!s.swim_id || !wkData.swim || !wkData.swim.reps || !data.swim_sessions) return "aerobic swim";
+    var def = null;
+    for (var i = 0; i < data.swim_sessions.length; i++) if (data.swim_sessions[i].id === s.swim_id) def = data.swim_sessions[i];
+    if (!def) return "aerobic swim";
+    var n = wkData.swim.reps[def.scaled.key];
+    if (n == null) return def.name;
+    var main = def.scaled.label.replace("{n}", n);
+    var easy = (wkData.swim.reps.deload && s.swim_id === "S3") ? " (easy)" : "";
+    return def.name + " · " + main + easy;
+  }
+
+  function sessTarget(day, s, wkData, data) {
     if (!wkData) return s.detail;
     if (s.sport === "run") {
       if (day === "Sun") return "HR ≤172 · " + wkData.run.long_km + "k — " + wkData.run.long_note;
       if (day === "Wed") return wkData.run.speed;
       if (day === "Mon") return "HR ≤150–158 · ~" + wkData.run.easy_km + "k";
     }
-    if (s.sport === "swim") return "aerobic swim";
+    if (s.sport === "swim") return swimTargetFor(s, wkData, data);
     if (s.sport === "strength") {
       if (s.title.indexOf("Anterior") !== -1) return "chest · quads · arms · bench " + wkData.strength.bench;
       if (s.title.indexOf("Posterior") !== -1) return "back · hams · triceps · rear delt";
@@ -338,8 +350,9 @@
     }
     sec.appendChild(head);
 
+    var template = (wk >= 3 && data.week_template_full) ? data.week_template_full : data.week_template;
     var grid = el("div", { class: "week-grid" });
-    data.week_template.forEach(function(t, idx) {
+    template.forEach(function(t, idx) {
       var isToday = idx === tIdx;
       var primary = t.sessions[0].sport;
       var day = el("div", { class: "day" + (isToday ? " today" : ""), style: "--sport:var(--" + primary + ")" });
@@ -354,7 +367,7 @@
           act && act.status ? el("span", { class: "sess-status " + act.status, text: statusBadge(act) }) : null
         ]));
         sess.appendChild(el("div", { class: "sess-ttl", text: s.title }));
-        sess.appendChild(el("div", { class: "sess-tgt", text: (act && act.tgt) ? act.tgt : sessTarget(t.day, s, wkData) }));
+        sess.appendChild(el("div", { class: "sess-tgt", text: (act && act.tgt) ? act.tgt : sessTarget(t.day, s, wkData, data) }));
         sessions.appendChild(sess);
       });
       day.appendChild(sessions);
@@ -482,14 +495,27 @@
     cols.appendChild(left);
 
     var right = el("div", { class: "card" });
-    right.appendChild(el("h3", { text: "Session templates" }));
-    data.swim.templates.forEach(function(t) {
-      var tm = el("div", { class: "tmpl" });
-      tm.appendChild(el("h4", { html: t.title + "<small>" + t.role + "</small>" }));
-      var ul = el("ul"); t.sets.forEach(function(s) { ul.appendChild(el("li", { text: s })); });
-      tm.appendChild(ul);
-      right.appendChild(tm);
-    });
+    if (data.swim_sessions && data.swim_sessions.length) {
+      right.appendChild(el("h3", { text: "3-session week (from wk 3)" }));
+      data.swim_sessions.forEach(function(ss) {
+        var tm = el("div", { class: "tmpl" });
+        tm.appendChild(el("h4", { html: ss.id + " — " + ss.name + "<small>" + ss.slot + " · " + ss.focus + "</small>" }));
+        var ul = el("ul");
+        ss.fixed.forEach(function(f) { ul.appendChild(el("li", { text: f })); });
+        ul.appendChild(el("li", { html: "<b>main: " + ss.scaled.label.replace("{n}", "N") + "</b> — " + ss.scaled.range }));
+        tm.appendChild(ul);
+        right.appendChild(tm);
+      });
+    } else {
+      right.appendChild(el("h3", { text: "Session templates" }));
+      data.swim.templates.forEach(function(t) {
+        var tm = el("div", { class: "tmpl" });
+        tm.appendChild(el("h4", { html: t.title + "<small>" + t.role + "</small>" }));
+        var ul = el("ul"); t.sets.forEach(function(s) { ul.appendChild(el("li", { text: s })); });
+        tm.appendChild(ul);
+        right.appendChild(tm);
+      });
+    }
     cols.appendChild(right);
     sec.appendChild(cols);
     return sec;
@@ -623,7 +649,7 @@
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=11")).catch(function() {}); }
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=12")).catch(function() {}); }
 </script>
 </body>
 </html>

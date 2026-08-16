@@ -1,4 +1,4 @@
-var CACHE_NAME = "ironman-v11";
+var CACHE_NAME = "ironman-v12";
 
 var SHELL_FILES = [
   "./index.html",

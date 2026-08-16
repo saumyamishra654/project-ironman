@@ -302,10 +302,16 @@
         "easy_km": 7
       },
       "swim": {
-        "total_m": 5000,
+        "total_m": 6100,
         "sessions": 3,
         "split": "1.5 / 2.0 / 1.5k",
-        "note": "add 3rd swim session"
+        "note": "add 3rd swim session",
+        "reps": {
+          "s1_200": 2,
+          "s2_800": 1,
+          "s3_100": 5,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -324,10 +330,16 @@
         "easy_km": 5
       },
       "swim": {
-        "total_m": 3500,
+        "total_m": 6000,
         "sessions": 3,
         "split": "1.0 / 1.5 / 1.0k",
-        "note": "deload volume"
+        "note": "deload volume",
+        "reps": {
+          "s1_200": 2,
+          "s2_800": 1,
+          "s3_100": 4,
+          "deload": true
+        }
       },
       "strength": {
         "focus": "Deload",
@@ -346,10 +358,16 @@
         "easy_km": 7
       },
       "swim": {
-        "total_m": 5000,
+        "total_m": 6400,
         "sessions": 3,
         "split": "1.3 / 2.0 / 1.7k",
-        "note": ""
+        "note": "",
+        "reps": {
+          "s1_200": 3,
+          "s2_800": 1,
+          "s3_100": 6,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -368,10 +386,16 @@
         "easy_km": 7
       },
       "swim": {
-        "total_m": 5500,
+        "total_m": 7200,
         "sessions": 3,
         "split": "1.4 / 2.2 / 1.9k",
-        "note": ""
+        "note": "",
+        "reps": {
+          "s1_200": 3,
+          "s2_800": 2,
+          "s3_100": 6,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -390,10 +414,16 @@
         "easy_km": 8
       },
       "swim": {
-        "total_m": 6000,
+        "total_m": 7400,
         "sessions": 3,
         "split": "1.5 / 2.5 / 2.0k",
-        "note": ""
+        "note": "",
+        "reps": {
+          "s1_200": 3,
+          "s2_800": 2,
+          "s3_100": 8,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -412,10 +442,16 @@
         "easy_km": 5
       },
       "swim": {
-        "total_m": 4000,
+        "total_m": 6100,
         "sessions": 3,
         "split": "1.0 / 1.5 / 1.5k",
-        "note": "deload volume"
+        "note": "deload volume",
+        "reps": {
+          "s1_200": 2,
+          "s2_800": 1,
+          "s3_100": 5,
+          "deload": true
+        }
       },
       "strength": {
         "focus": "Deload",
@@ -434,10 +470,16 @@
         "easy_km": 8
       },
       "swim": {
-        "total_m": 6000,
+        "total_m": 8000,
         "sessions": 3,
         "split": "1.5 / 2.5 / 2.0k",
-        "note": "bias to long continuous (HIM prep)"
+        "note": "bias to long continuous (HIM prep)",
+        "reps": {
+          "s1_200": 3,
+          "s2_800": 3,
+          "s3_100": 6,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -456,10 +498,16 @@
         "easy_km": 8
       },
       "swim": {
-        "total_m": 6500,
+        "total_m": 8400,
         "sessions": 3,
         "split": "1.5 / 2.5 / 2.5k",
-        "note": ""
+        "note": "",
+        "reps": {
+          "s1_200": 4,
+          "s2_800": 3,
+          "s3_100": 8,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -478,10 +526,16 @@
         "easy_km": 8
       },
       "swim": {
-        "total_m": 7000,
+        "total_m": 8400,
         "sessions": 3,
         "split": "1.5 / 3.0 / 2.5k",
-        "note": "peak swim volume"
+        "note": "peak swim volume",
+        "reps": {
+          "s1_200": 4,
+          "s2_800": 3,
+          "s3_100": 8,
+          "deload": false
+        }
       },
       "strength": {
         "focus": "Upper + Lower",
@@ -500,10 +554,16 @@
         "easy_km": 5
       },
       "swim": {
-        "total_m": 4500,
+        "total_m": 6900,
         "sessions": 3,
         "split": "1.0 / 2.0 / 1.5k",
-        "note": "deload volume"
+        "note": "deload volume",
+        "reps": {
+          "s1_200": 2,
+          "s2_800": 2,
+          "s3_100": 5,
+          "deload": true
+        }
       },
       "strength": {
         "focus": "Deload",
@@ -714,6 +774,58 @@
       }
     ]
   },
+  "swim_sessions": [
+    {
+      "id": "S1",
+      "name": "Technique",
+      "slot": "Mon AM",
+      "focus": "technique + aerobic, easy",
+      "fixed": [
+        "400 wu easy",
+        "8×50 drills (catch-up · single-arm · fist · scull) 15s",
+        "6×100 pull buoy+paddles 20s",
+        "200 cd"
+      ],
+      "scaled": {
+        "key": "s1_200",
+        "label": "{n}×200 smooth 20s",
+        "range": "2 → 4 reps across the block"
+      }
+    },
+    {
+      "id": "S2",
+      "name": "Endurance",
+      "slot": "Fri AM",
+      "focus": "aerobic base — the keeper for HIM",
+      "fixed": [
+        "400 + 4×50 build wu",
+        "400 pull easy (buoy)",
+        "200 cd"
+      ],
+      "scaled": {
+        "key": "s2_800",
+        "label": "{n}×800 continuous 30s",
+        "range": "1 → 3 reps across the block"
+      }
+    },
+    {
+      "id": "S3",
+      "name": "Threshold + speed",
+      "slot": "Wed AM",
+      "focus": "quality — pairs with PM speed run (one hard day)",
+      "fixed": [
+        "400 + 4×50 build wu",
+        "6×50 sprint 20s",
+        "400 pull+paddles strong",
+        "300 cd"
+      ],
+      "scaled": {
+        "key": "s3_100",
+        "label": "{n}×100 @ threshold 15–20s (hold pace)",
+        "range": "4 → 8 reps; deloads go easy, no sprint"
+      }
+    }
+  ],
   "strength_split": {
     "framework": "Posterior / Anterior / Upper",
     "rule": "2 sets per exercise — except barbell bench, which gets 3 on the Anterior day (the lift driving the 100 kg goal).",
@@ -806,7 +918,7 @@
       },
       {
         "name": "Upper",
-        "slot": "Fri",
+        "slot": "Sat",
         "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
         "lifts": [
           {
@@ -841,7 +953,8 @@
             "n": "Hanging Leg Raise",
             "s": "2"
           }
-        ]
+        ],
+        "note": "wk3+ (was Fri while at 2 swims)"
       }
     ]
   },
@@ -866,5 +979,95 @@
       "pace": "HR just under 182",
       "note": "let pace land ~6:00–6:20; don't force 5:50"
     }
-  }
+  },
+  "week_template_full": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "sport": "swim",
+          "slot": "AM",
+          "title": "Swim — technique",
+          "swim_id": "S1",
+          "detail": "easy/technique"
+        },
+        {
+          "sport": "run",
+          "slot": "PM",
+          "title": "Easy / recovery run",
+          "detail": "HR ≤150–158, short"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Anterior (bench)",
+          "detail": "bench focus"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "sport": "swim",
+          "slot": "AM",
+          "title": "Swim — threshold",
+          "swim_id": "S3",
+          "detail": "threshold/speed"
+        },
+        {
+          "sport": "run",
+          "slot": "PM",
+          "title": "Speed run",
+          "detail": "LT intervals"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Posterior",
+          "detail": "auto-regulate"
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "sport": "swim",
+          "slot": "AM",
+          "title": "Swim — endurance",
+          "swim_id": "S2",
+          "detail": "aerobic base"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "sport": "strength",
+          "title": "Upper",
+          "detail": "rep-focused bench"
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "sport": "run",
+          "title": "Long run",
+          "detail": "HR ≤172"
+        }
+      ]
+    }
+  ]
 }

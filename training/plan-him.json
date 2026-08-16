@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-12",
+    "updated": "2026-08-16",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -44,7 +44,7 @@
   "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
   "block": [
     { "week": 1, "start": "2026-08-10", "phase": "A", "deload": false,
-      "run": { "long_km": 15, "long_note": "repeat the Aug 9 HR-capped progression (5+5+5)", "speed": "6×800 @ 5:50–5:55", "easy_km": 6 },
+      "run": { "long_km": 17, "long_note": "HR ≤172, bias aerobic (post-illness) — 12k easy ≤160, last 5k may drift toward 172", "speed": "6×800 @ 5:50–5:55", "easy_km": 6 },
       "swim": { "total_m": 4000, "sessions": 2, "split": "1.8k + 2.2k", "note": "hold at 2 sessions wk 1–2" },
       "strength": { "focus": "Upper (bench) + Lower", "bench": "82.5 × 3×5" } },
     { "week": 2, "start": "2026-08-17", "phase": "A", "deload": false,
@@ -93,6 +93,15 @@
       "strength": { "focus": "Deload", "bench": "70 × 2×5" } }
   ],
   "sessions": [
+    { "date": "2026-08-16", "sport": "run", "week": 1, "title": "Long run 17k (HR-capped, aerobic)", "verdict": "Longer and lower HR — base trending right",
+      "stats": [ { "l": "Distance", "v": "17.0 km" }, { "l": "Avg HR", "v": "156" }, { "l": "Pace", "v": "~7:50/km" }, { "l": "TE", "v": "4.1 Aerobic" }, { "l": "Load", "v": "185" } ],
+      "headline": "Ran 2k longer than Aug 9 at a lower average HR — post-illness, in the morning. The aerobic base is trending exactly right.",
+      "insight": [
+        "First morning-start run of the block: no evening-heat HR tax, so this is the cleanest aerobic read yet.",
+        "Block 1 easy (km1-12) avg HR 154 at ~7:55/km; Block 2 steady (km13-17) avg HR 163 at ~7:39/km. HR discipline held on both.",
+        "17k at avg HR 156 vs the Aug 9 15k at 161: longer AND lower — the aerobic-base signal these runs are built to produce.",
+        "Cadence 138 avg (overstriding on easy pace) but climbed to 150+ on the faster kms. Keep nudging easy-pace turnover toward 155+."
+      ] },
     { "date": "2026-08-12", "sport": "run", "week": 1, "title": "Speed repeats (fartlek)", "verdict": "Strong top-end · overshot pace",
       "stats": [ { "l": "Dist", "v": "5.0k" }, { "l": "Avg HR", "v": "148" }, { "l": "Max HR", "v": "189" }, { "l": "TE", "v": "3.1a / 2.8an" }, { "l": "Load", "v": "153" } ],
       "headline": "Ignoring compliance — an encouraging session. Top-end is in better shape than easy-run HR suggests.",

@@ -170,6 +170,14 @@ First week of the HIM block (block_start Aug 10). Triplet re-established: Mon re
 **Aug 11 (Tue) — Weigh-in — new low**
 - 81.1 kg (from 81.8 Aug 5 → 81.3 Aug 6 → 81.1). Steady downtrend toward 75 kg target. Morning-after-short-sleep reading so some water weight, but 3-point trend is real.
 
+**Aug 16 (Sun) — Run — long run 17k (HR-capped, aerobic) [DONE]**
+- 17.01 km, avg HR 156, max 174, TE 4.1 ("Aerobic Base"), anaerobic 0.6, load 185. Morning start 07:12 (Mysuru, flat, 57 m gain) — FIRST run this block actually executed in the morning per plan, removing the evening-heat HR tax.
+- Two-block structure held: Block 1 easy (km1–12, cap ≤160): avg HR 153.6, pace ~7:55/km, every km at/under 160. Block 2 steady (km13–17, cap ≤172): avg HR 163, pace ~7:39/km, max 174 on a single km but block averages never crossed 166.
+- WIN: ran 2k LONGER than the Aug 9 15k (17k vs 15k) at a LOWER average HR (156 vs 161). Longer + lower HR = the aerobic-base signal these runs exist to produce — and delivered post-illness, 4 days after the Aug 13 dehydration crash, with no lingering HR inflation.
+- Clean (heat-free) pace-per-HR read confirms the Aug 9 reality check: ~7:55/km at HR 154, ~7:39/km at HR 163. Honest sub-threshold sustainable pace ~7:35–7:40; aerobic base remains the limiter, trending right.
+- Cadence avg 138 (stride 90 cm) — still overstriding on easy blocks, BUT climbed to 150–151 on the faster block-2 kms (km13, km16). Mechanics are available; defaulting to long low-turnover stride when slow. Keep nudging easy-pace cadence toward 155+. NOTE: avg cadence/pace are blended down by deliberate walk breaks taken to hold HR under cap — running-only cadence/pace are higher (analysis pending).
+- Feel: strong (100), RPE 70.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

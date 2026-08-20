@@ -1,11 +1,11 @@
 {
   "meta": {
     "title": "Project Ironman",
-    "subtitle": "Half-Ironman build · next stop Bangalore HM",
-    "block_name": "Block 1 — HIM Base → Build",
+    "subtitle": "Half-Ironman build \u00b7 next stop Bangalore HM",
+    "block_name": "Block 1 \u2014 HIM Base \u2192 Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-16",
+    "updated": "2026-08-20",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -13,17 +13,17 @@
     "age": 22,
     "bodyweight_kg": 80,
     "weight_target_kg": 75,
-    "location": "Bengaluru — run mornings (heat)"
+    "location": "Bengaluru \u2014 run mornings (heat)"
   },
   "metrics": [
     {
       "id": "vo2max",
-      "label": "VO₂max",
+      "label": "VO\u2082max",
       "value": "43",
       "unit": "",
       "sport": "run",
       "trend": "up",
-      "note": "41→43 after Aug 9 long run"
+      "note": "41\u219243 after Aug 9 long run"
     },
     {
       "id": "comp_pace",
@@ -47,15 +47,15 @@
       "value": "182",
       "unit": "bpm",
       "sport": "run",
-      "note": "long-run cap 172 · easy cap 162"
+      "note": "long-run cap 172 \u00b7 easy cap 162"
     },
     {
       "id": "swim_css",
       "label": "Swim CSS",
-      "value": "—",
+      "value": "\u2014",
       "unit": "/100m",
       "sport": "swim",
-      "note": "test in wk 1–2 (400+200 TT)"
+      "note": "test in wk 1\u20132 (400+200 TT)"
     },
     {
       "id": "bench",
@@ -65,7 +65,7 @@
       "sport": "strength",
       "target": 100,
       "from": 82.5,
-      "note": "working → 100 kg (~Feb 2027)"
+      "note": "working \u2192 100 kg (~Feb 2027)"
     }
   ],
   "races": [
@@ -76,7 +76,7 @@
       "date": "2026-12-13",
       "distance_km": 21.1,
       "priority": "B",
-      "role": "Near-term target · local, ideal temp"
+      "role": "Near-term target \u00b7 local, ideal temp"
     },
     {
       "id": "goa703",
@@ -85,7 +85,7 @@
       "date": "2027-11-01",
       "distance_km": 113,
       "priority": "A",
-      "role": "A-race — the whole plan points here"
+      "role": "A-race \u2014 the whole plan points here"
     }
   ],
   "week_template": [
@@ -95,7 +95,7 @@
         {
           "sport": "run",
           "title": "Easy / recovery run",
-          "detail": "AM · HR ≤150–158"
+          "detail": "AM \u00b7 HR \u2264150\u2013158"
         }
       ]
     },
@@ -169,7 +169,7 @@
         {
           "sport": "run",
           "title": "Long run",
-          "detail": "HR ≤172"
+          "detail": "HR \u2264172"
         }
       ]
     }
@@ -203,7 +203,7 @@
       "note": "Race-pace long-run segments, LT cruise work, long continuous swims."
     }
   ],
-  "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
+  "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 \u2013 Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
   "block": [
     {
       "week": 1,
@@ -212,26 +212,26 @@
       "deload": false,
       "run": {
         "long_km": 17,
-        "long_note": "HR ≤172, bias aerobic (post-illness) — 12k easy ≤160, last 5k may drift toward 172",
-        "speed": "6×800 @ 5:50–5:55",
+        "long_note": "HR \u2264172, bias aerobic (post-illness) \u2014 12k easy \u2264160, last 5k may drift toward 172",
+        "speed": "6\u00d7800 @ 5:50\u20135:55",
         "easy_km": 6
       },
       "swim": {
         "total_m": 4000,
         "sessions": 2,
         "split": "1.8k + 2.2k",
-        "note": "hold at 2 sessions wk 1–2"
+        "note": "hold at 2 sessions wk 1\u20132"
       },
       "strength": {
         "focus": "Upper (bench) + Lower",
-        "bench": "82.5 × 3×5"
+        "bench": "82.5 \u00d7 3\u00d75"
       },
       "actuals": [
         {
           "day": "Mon",
           "sport": "run",
           "status": "done",
-          "tgt": "2.7k recovery · avg HR 134 (textbook)"
+          "tgt": "2.7k recovery \u00b7 avg HR 134 (textbook)"
         },
         {
           "day": "Tue",
@@ -245,14 +245,14 @@
           "slot": "AM",
           "status": "modified",
           "badge": "600 m",
-          "tgt": "600 m only — short session"
+          "tgt": "600 m only \u2014 short session"
         },
         {
           "day": "Wed",
           "sport": "run",
           "slot": "PM",
           "status": "done",
-          "tgt": "fartlek · overshot pace, strong effort"
+          "tgt": "fartlek \u00b7 overshot pace, strong effort"
         },
         {
           "day": "Fri",
@@ -264,7 +264,7 @@
           "day": "Sun",
           "sport": "run",
           "status": "done",
-          "tgt": "17k · avg HR 156 · morning, post-illness"
+          "tgt": "17k \u00b7 avg HR 156 \u00b7 morning, post-illness"
         }
       ]
     },
@@ -275,8 +275,8 @@
       "deload": false,
       "run": {
         "long_km": 16,
-        "long_note": "HR ≤172, mostly easy",
-        "speed": "5×1000 @ 5:55",
+        "long_note": "HR \u2264172, mostly easy",
+        "speed": "5\u00d71000 @ 5:55",
         "easy_km": 6
       },
       "swim": {
@@ -287,7 +287,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "85 × 3×4–5"
+        "bench": "85 \u00d7 3\u00d74\u20135"
       }
     },
     {
@@ -297,8 +297,8 @@
       "deload": false,
       "run": {
         "long_km": 18,
-        "long_note": "HR ≤172",
-        "speed": "4×1200 @ 5:55",
+        "long_note": "HR \u2264172",
+        "speed": "4\u00d71200 @ 5:55",
         "easy_km": 7
       },
       "swim": {
@@ -315,7 +315,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "85 × 3×5"
+        "bench": "85 \u00d7 3\u00d75"
       }
     },
     {
@@ -326,7 +326,7 @@
       "run": {
         "long_km": 12,
         "long_note": "easy deload",
-        "speed": "5×400 @ 5:20 (sharp, low vol)",
+        "speed": "5\u00d7400 @ 5:20 (sharp, low vol)",
         "easy_km": 5
       },
       "swim": {
@@ -343,7 +343,7 @@
       },
       "strength": {
         "focus": "Deload",
-        "bench": "67.5 × 2×5"
+        "bench": "67.5 \u00d7 2\u00d75"
       }
     },
     {
@@ -353,8 +353,8 @@
       "deload": false,
       "run": {
         "long_km": 17,
-        "long_note": "HR ≤172",
-        "speed": "5×1000 @ 5:50",
+        "long_note": "HR \u2264172",
+        "speed": "5\u00d71000 @ 5:50",
         "easy_km": 7
       },
       "swim": {
@@ -371,7 +371,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "85 × 3×5"
+        "bench": "85 \u00d7 3\u00d75"
       }
     },
     {
@@ -381,8 +381,8 @@
       "deload": false,
       "run": {
         "long_km": 19,
-        "long_note": "HR ≤172",
-        "speed": "3×2000 cruise (HR <182)",
+        "long_note": "HR \u2264172",
+        "speed": "3\u00d72000 cruise (HR <182)",
         "easy_km": 7
       },
       "swim": {
@@ -399,7 +399,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "87.5 × 3×4"
+        "bench": "87.5 \u00d7 3\u00d74"
       }
     },
     {
@@ -409,8 +409,8 @@
       "deload": false,
       "run": {
         "long_km": 20,
-        "long_note": "HR ≤172",
-        "speed": "6×1000 @ 5:50",
+        "long_note": "HR \u2264172",
+        "speed": "6\u00d71000 @ 5:50",
         "easy_km": 8
       },
       "swim": {
@@ -427,7 +427,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "87.5 × 3×4"
+        "bench": "87.5 \u00d7 3\u00d74"
       }
     },
     {
@@ -438,7 +438,7 @@
       "run": {
         "long_km": 13,
         "long_note": "easy deload",
-        "speed": "5×400 @ 5:15",
+        "speed": "5\u00d7400 @ 5:15",
         "easy_km": 5
       },
       "swim": {
@@ -455,7 +455,7 @@
       },
       "strength": {
         "focus": "Deload",
-        "bench": "70 × 2×5"
+        "bench": "70 \u00d7 2\u00d75"
       }
     },
     {
@@ -466,7 +466,7 @@
       "run": {
         "long_km": 19,
         "long_note": "last 4k @ comp pace (~7:35)",
-        "speed": "4×1600 @ 6:00",
+        "speed": "4\u00d71600 @ 6:00",
         "easy_km": 8
       },
       "swim": {
@@ -483,7 +483,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "90 × 3×3–4"
+        "bench": "90 \u00d7 3\u00d73\u20134"
       }
     },
     {
@@ -494,7 +494,7 @@
       "run": {
         "long_km": 21,
         "long_note": "full HM distance, HR-capped",
-        "speed": "5×1000 @ 5:45",
+        "speed": "5\u00d71000 @ 5:45",
         "easy_km": 8
       },
       "swim": {
@@ -511,7 +511,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "90 × 3×3"
+        "bench": "90 \u00d7 3\u00d73"
       }
     },
     {
@@ -522,7 +522,7 @@
       "run": {
         "long_km": 18,
         "long_note": "8k @ comp pace inside",
-        "speed": "3×2000 @ 6:00 + strides",
+        "speed": "3\u00d72000 @ 6:00 + strides",
         "easy_km": 8
       },
       "swim": {
@@ -539,7 +539,7 @@
       },
       "strength": {
         "focus": "Upper + Lower",
-        "bench": "92.5 × 3×3"
+        "bench": "92.5 \u00d7 3\u00d73"
       }
     },
     {
@@ -567,17 +567,91 @@
       },
       "strength": {
         "focus": "Deload",
-        "bench": "70 × 2×5"
+        "bench": "70 \u00d7 2\u00d75"
       }
     }
   ],
   "sessions": [
     {
+      "date": "2026-08-20",
+      "sport": "swim",
+      "week": 2,
+      "title": "Swim \u2014 endurance + speed (NOT the CSS test)",
+      "verdict": "Even-paced main set on a tired body; CSS test still pending",
+      "stats": [
+        {
+          "l": "Distance",
+          "v": "1616 m"
+        },
+        {
+          "l": "Main set",
+          "v": "2\u00d7272 m"
+        },
+        {
+          "l": "Pace",
+          "v": "~2:16/100m"
+        },
+        {
+          "l": "Avg HR",
+          "v": "152"
+        },
+        {
+          "l": "SWOLF",
+          "v": "31"
+        }
+      ],
+      "headline": "Endurance + speed swim the morning after the train-sleep run. The two big reps were paced beautifully; efficiency held. This was NOT a valid CSS test \u2014 that 400+200 TT is still owed on a rested day.",
+      "insight": [
+        "Highlight: 2\u00d7272 m at 2:16.3 and 2:16.8/100m \u2014 half a second apart across 272 m each. Same pacing discipline as the run reps, now showing in the pool too.",
+        "Efficiency held: SWOLF 31 on both big reps (no decay under distance) \u2014 technique held, not just muscled.",
+        "Speed set 5\u00d732 m descended then wobbled (1:40\u21921:47\u21921:52\u21922:01\u21921:45), HR to 178 \u2014 mid-set fade is fatigue from the week, not form.",
+        "NOT a CSS test: the session was controlled 272 m reps, not the maximal 400+200 TT the plan wants. No valid CSS number produced. Testing max on a depleted body would give a garbage number anyway \u2014 do it rested this week.",
+        "Load flag: VO2 run at 188 bpm on no sleep + this swim (TE 3.3 aerobic / 2.2 anaerobic) inside ~24 h. System is stacking \u2014 keep the Posterior lift light and tomorrow genuinely easy."
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "sport": "run",
+      "week": 2,
+      "title": "Speed 5\u00d71000 @ 5:55 (LT reps)",
+      "verdict": "Textbook even pacing \u2014 but run on no sleep, HR redlined",
+      "stats": [
+        {
+          "l": "Reps",
+          "v": "5\u00d71000"
+        },
+        {
+          "l": "Pace",
+          "v": "5:56\u20136:01"
+        },
+        {
+          "l": "Rep HR",
+          "v": "182\u2013189"
+        },
+        {
+          "l": "TE",
+          "v": "4.2 VO2max"
+        },
+        {
+          "l": "Load",
+          "v": "190"
+        }
+      ],
+      "headline": "Ran the same session from a few weeks ago on a wrecked battery (slept upright on a train). Pacing was near-perfect; HR blew past threshold because of the sleep debt \u2014 not a fitness read.",
+      "insight": [
+        "Pacing was the win: 5:58 / 6:01 / 5:58 / 5:59 / 5:56 \u2014 dead-even, no rep-1 surge, no fade. The pacing discipline held.",
+        "HR was the story: reps ran 182\u2013189 avg (LTHR 182), maxing 196 \u2014 at/above threshold the whole time. Garmin logged it VO2max (TE 4.2), i.e. run harder than the sub-LT cruise it was written as.",
+        "Cause: no real sleep (train) + evening heat + AM load. Same pace cost far more cardiovascularly. Effort read is invalid as a fitness signal \u2014 discard the bad execution score.",
+        "Cadence decayed under fatigue: 158\u2192162\u2192156\u2192154\u2192154, dropping under the 155 floor on the last two reps while pace held \u2014 i.e. overstriding crept in (GCT 287 ms). A fatigue signature, not a form regression.",
+        "Re-test value pending: when rested, expect this exact session at LOWER HR with cadence held >155. Today's is too compromised to compare fairly."
+      ]
+    },
+    {
       "date": "2026-08-16",
       "sport": "run",
       "week": 1,
       "title": "Long run 17k (HR-capped, aerobic)",
-      "verdict": "Longer and lower HR — base trending right",
+      "verdict": "Longer and lower HR \u2014 base trending right",
       "stats": [
         {
           "l": "Distance",
@@ -600,11 +674,11 @@
           "v": "185"
         }
       ],
-      "headline": "Ran 2k longer than Aug 9 at a lower average HR — post-illness, in the morning. The aerobic base is trending exactly right.",
+      "headline": "Ran 2k longer than Aug 9 at a lower average HR \u2014 post-illness, in the morning. The aerobic base is trending exactly right.",
       "insight": [
         "First morning-start run of the block: no evening-heat HR tax, so this is the cleanest aerobic read yet.",
         "Block 1 easy (km1-12) avg HR 154 at ~7:55/km; Block 2 steady (km13-17) avg HR 163 at ~7:39/km. HR discipline held on both.",
-        "17k at avg HR 156 vs the Aug 9 15k at 161: longer AND lower — the aerobic-base signal these runs are built to produce.",
+        "17k at avg HR 156 vs the Aug 9 15k at 161: longer AND lower \u2014 the aerobic-base signal these runs are built to produce.",
         "Cadence 138 avg (overstriding on easy pace) but climbed to 150+ on the faster kms. Keep nudging easy-pace turnover toward 155+."
       ]
     },
@@ -613,7 +687,7 @@
       "sport": "run",
       "week": 1,
       "title": "Speed repeats (fartlek)",
-      "verdict": "Strong top-end · overshot pace",
+      "verdict": "Strong top-end \u00b7 overshot pace",
       "stats": [
         {
           "l": "Dist",
@@ -636,13 +710,13 @@
           "v": "153"
         }
       ],
-      "headline": "Ignoring compliance — an encouraging session. Top-end is in better shape than easy-run HR suggests.",
+      "headline": "Ignoring compliance \u2014 an encouraging session. Top-end is in better shape than easy-run HR suggests.",
       "insight": [
-        "First non-zero anaerobic TE (2.8) in ages — the fartlek does what HR-capped long runs structurally can't.",
-        "Held 4:40–5:00/km reps at HR only 165–172 (under 182 LTHR) — genuine speed produced sub-threshold. Confirms the limiter is aerobic base, not top-end.",
-        "Cadence hit 163–168 on the good reps (vs habitual 143); power 340–410W. Mechanics wake up when you ask for speed.",
-        "Overshot nearly every rep — ran 20–40s/km faster than target. 'Not hard physiologically' tricked you into pushing. Load 153 ≈ a 15k long run.",
-        "Fix is a skill: aim for the SLOW end of the band. Pacing accuracy > pace. Next quality = 5×1000 @ 5:55 (distance polices the overshoot)."
+        "First non-zero anaerobic TE (2.8) in ages \u2014 the fartlek does what HR-capped long runs structurally can't.",
+        "Held 4:40\u20135:00/km reps at HR only 165\u2013172 (under 182 LTHR) \u2014 genuine speed produced sub-threshold. Confirms the limiter is aerobic base, not top-end.",
+        "Cadence hit 163\u2013168 on the good reps (vs habitual 143); power 340\u2013410W. Mechanics wake up when you ask for speed.",
+        "Overshot nearly every rep \u2014 ran 20\u201340s/km faster than target. 'Not hard physiologically' tricked you into pushing. Load 153 \u2248 a 15k long run.",
+        "Fix is a skill: aim for the SLOW end of the band. Pacing accuracy > pace. Next quality = 5\u00d71000 @ 5:55 (distance polices the overshoot)."
       ]
     },
     {
@@ -673,11 +747,11 @@
           "v": "12"
         }
       ],
-      "headline": "The easy-day discipline that's been the hard part — nailed.",
+      "headline": "The easy-day discipline that's been the hard part \u2014 nailed.",
       "insight": [
-        "Avg HR 134, max 145 — never near the 150–158 cap, one day off a 15k. Exactly the restraint that was missing pre-pivot.",
+        "Avg HR 134, max 145 \u2014 never near the 150\u2013158 cap, one day off a 15k. Exactly the restraint that was missing pre-pivot.",
         "Load 11.7 aids recovery rather than adding fatigue. Pace ~10:40/km is an output here, not a fitness signal.",
-        "Cadence 143 — low-stakes on recovery days, but the standing nudge toward 155+ still applies."
+        "Cadence 143 \u2014 low-stakes on recovery days, but the standing nudge toward 155+ still applies."
       ]
     },
     {
@@ -685,7 +759,7 @@
       "sport": "run",
       "week": 0,
       "title": "Long progression (5+5+5)",
-      "verdict": "HR discipline held — the breakthrough",
+      "verdict": "HR discipline held \u2014 the breakthrough",
       "stats": [
         {
           "l": "Dist",
@@ -710,34 +784,34 @@
       ],
       "headline": "The behaviour change that matters: sub-172 held for the whole run.",
       "insight": [
-        "Block 3 comp-pace avg never crossed 172 — a complete reversal of the Jul 19 Z4 blow-up.",
-        "At the sub-172 ceiling, comp pace was ~7:37/km (not the 7:10 predictor) — sustainable pace anchored to 7:35.",
-        "Anaerobic 0.0 is correct by design for an HR-capped sub-threshold run. VO₂max ticked 41→43; status Productive."
+        "Block 3 comp-pace avg never crossed 172 \u2014 a complete reversal of the Jul 19 Z4 blow-up.",
+        "At the sub-172 ceiling, comp pace was ~7:37/km (not the 7:10 predictor) \u2014 sustainable pace anchored to 7:35.",
+        "Anaerobic 0.0 is correct by design for an HR-capped sub-threshold run. VO\u2082max ticked 41\u219243; status Productive."
       ]
     }
   ],
   "swim": {
-    "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400−200 dist) ÷ (400time − 200time). Sets the threshold pace for quality reps.",
+    "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400\u2212200 dist) \u00f7 (400time \u2212 200time). Sets the threshold pace for quality reps.",
     "zones": [
       {
         "id": "easy",
         "label": "Easy / recovery",
-        "pace": "2:15–2:25 /100m",
-        "rpe": "4–5",
+        "pace": "2:15\u20132:25 /100m",
+        "rpe": "4\u20135",
         "use": "Tue swim, warm-ups, cool-downs"
       },
       {
         "id": "aerobic",
         "label": "Aerobic / steady",
-        "pace": "2:05–2:15 /100m",
+        "pace": "2:05\u20132:15 /100m",
         "rpe": "6",
         "use": "Thu main-volume swim"
       },
       {
         "id": "quality",
         "label": "Threshold / quality",
-        "pace": "1:55–2:05 /100m",
-        "rpe": "7–8",
+        "pace": "1:55\u20132:05 /100m",
+        "rpe": "7\u20138",
         "use": "Sat quality swim reps"
       }
     ],
@@ -748,7 +822,7 @@
         "role": "Recovery / technique",
         "sets": [
           "WU 200 easy mixed",
-          "Main 800–1000 smooth — 4×200 @ RPE 4–5 (15s rest), + 2×50 drill",
+          "Main 800\u20131000 smooth \u2014 4\u00d7200 @ RPE 4\u20135 (15s rest), + 2\u00d750 drill",
           "CD 100 easy"
         ]
       },
@@ -757,8 +831,8 @@
         "title": "Main aerobic (Thu, ~2.5k)",
         "role": "Volume builder",
         "sets": [
-          "WU 300 (swim + 4×50 build)",
-          "Main ~1600–1800 — 3×400 @ RPE 6 (20s rest) → 2×600 / 1×1000 as weeks progress",
+          "WU 300 (swim + 4\u00d750 build)",
+          "Main ~1600\u20131800 \u2014 3\u00d7400 @ RPE 6 (20s rest) \u2192 2\u00d7600 / 1\u00d71000 as weeks progress",
           "CD 200 easy"
         ]
       },
@@ -767,8 +841,8 @@
         "title": "Quality (Sat, ~2.0k)",
         "role": "The one hard swim",
         "sets": [
-          "WU 300 + 6×50 build",
-          "Main ~1200–1400 — 8×100 @ RPE 7–8 (15–20s rest) → or 4×200 hard / 10×100 descending",
+          "WU 300 + 6\u00d750 build",
+          "Main ~1200\u20131400 \u2014 8\u00d7100 @ RPE 7\u20138 (15\u201320s rest) \u2192 or 4\u00d7200 hard / 10\u00d7100 descending",
           "CD 200 easy"
         ]
       }
@@ -782,60 +856,60 @@
       "focus": "technique + aerobic, easy",
       "fixed": [
         "400 wu easy",
-        "8×50 drills (catch-up · single-arm · fist · scull) 15s",
-        "6×100 pull buoy+paddles 20s",
+        "8\u00d750 drills (catch-up \u00b7 single-arm \u00b7 fist \u00b7 scull) 15s",
+        "6\u00d7100 pull buoy+paddles 20s",
         "200 cd"
       ],
       "scaled": {
         "key": "s1_200",
-        "label": "{n}×200 smooth 20s",
-        "range": "2 → 4 reps across the block"
+        "label": "{n}\u00d7200 smooth 20s",
+        "range": "2 \u2192 4 reps across the block"
       }
     },
     {
       "id": "S2",
       "name": "Endurance",
       "slot": "Fri AM",
-      "focus": "aerobic base — the keeper for HIM",
+      "focus": "aerobic base \u2014 the keeper for HIM",
       "fixed": [
-        "400 + 4×50 build wu",
+        "400 + 4\u00d750 build wu",
         "400 pull easy (buoy)",
         "200 cd"
       ],
       "scaled": {
         "key": "s2_800",
-        "label": "{n}×800 continuous 30s",
-        "range": "1 → 3 reps across the block"
+        "label": "{n}\u00d7800 continuous 30s",
+        "range": "1 \u2192 3 reps across the block"
       }
     },
     {
       "id": "S3",
       "name": "Threshold + speed",
       "slot": "Wed AM",
-      "focus": "quality — pairs with PM speed run (one hard day)",
+      "focus": "quality \u2014 pairs with PM speed run (one hard day)",
       "fixed": [
-        "400 + 4×50 build wu",
-        "6×50 sprint 20s",
+        "400 + 4\u00d750 build wu",
+        "6\u00d750 sprint 20s",
         "400 pull+paddles strong",
         "300 cd"
       ],
       "scaled": {
         "key": "s3_100",
-        "label": "{n}×100 @ threshold 15–20s (hold pace)",
-        "range": "4 → 8 reps; deloads go easy, no sprint"
+        "label": "{n}\u00d7100 @ threshold 15\u201320s (hold pace)",
+        "range": "4 \u2192 8 reps; deloads go easy, no sprint"
       }
     }
   ],
   "strength_split": {
     "framework": "Posterior / Anterior / Upper",
-    "rule": "2 sets per exercise — except barbell bench, which gets 3 on the Anterior day (the lift driving the 100 kg goal).",
+    "rule": "2 sets per exercise \u2014 except barbell bench, which gets 3 on the Anterior day (the lift driving the 100 kg goal).",
     "note": "Built lopsided on purpose: swimming (2-3x/wk) already floods back, lats and rear delts, so the gym protects pressing and arms. Bench stays actual barbell on both exposures; keep heavy leg work off long-run and hardest-swim days.",
     "volume_note": "Back (~8 gym sets + 2-3 swims) is by far the most-trained region. If shoulders feel stacked, the Upper-day pulldown is the first thing to trim.",
     "days": [
       {
         "name": "Posterior",
         "slot": "Thu",
-        "focus": "back · triceps · glutes/hams · rear delt · calves",
+        "focus": "back \u00b7 triceps \u00b7 glutes/hams \u00b7 rear delt \u00b7 calves",
         "lifts": [
           {
             "n": "Weighted Pull-Up",
@@ -875,12 +949,12 @@
       {
         "name": "Anterior",
         "slot": "Tue",
-        "focus": "chest · delts · biceps · quads · tib · abs",
+        "focus": "chest \u00b7 delts \u00b7 biceps \u00b7 quads \u00b7 tib \u00b7 abs",
         "lifts": [
           {
             "n": "Barbell Bench Press",
             "s": "3",
-            "tag": "primary — 100 kg driver"
+            "tag": "primary \u2014 100 kg driver"
           },
           {
             "n": "Butterfly (Pec Deck)",
@@ -919,7 +993,7 @@
       {
         "name": "Upper",
         "slot": "Sat",
-        "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
+        "focus": "2nd bench exposure \u00b7 back-heavy \u00b7 3rd arm hit",
         "lifts": [
           {
             "n": "Barbell Bench (rep-focused, lighter)",
@@ -961,23 +1035,23 @@
   "run_targets": {
     "easy": {
       "label": "Easy / recovery",
-      "hr": "≤150–158",
+      "hr": "\u2264150\u2013158",
       "note": "mornings; slow pace to hold HR"
     },
     "long": {
       "label": "Long run",
-      "hr": "≤172",
+      "hr": "\u2264172",
       "note": "start easy; race-pace segments only from wk 9"
     },
     "speed_short": {
-      "label": "Speed — short reps (400–1000m)",
+      "label": "Speed \u2014 short reps (400\u20131000m)",
       "pace": "~5:50 /km",
       "note": "LT pace; honest at this distance"
     },
     "speed_cruise": {
-      "label": "Speed — cruise (1600–3000m)",
+      "label": "Speed \u2014 cruise (1600\u20133000m)",
       "pace": "HR just under 182",
-      "note": "let pace land ~6:00–6:20; don't force 5:50"
+      "note": "let pace land ~6:00\u20136:20; don't force 5:50"
     }
   },
   "week_template_full": [
@@ -987,7 +1061,7 @@
         {
           "sport": "swim",
           "slot": "AM",
-          "title": "Swim — technique",
+          "title": "Swim \u2014 technique",
           "swim_id": "S1",
           "detail": "easy/technique"
         },
@@ -995,7 +1069,7 @@
           "sport": "run",
           "slot": "PM",
           "title": "Easy / recovery run",
-          "detail": "HR ≤150–158, short"
+          "detail": "HR \u2264150\u2013158, short"
         }
       ]
     },
@@ -1015,7 +1089,7 @@
         {
           "sport": "swim",
           "slot": "AM",
-          "title": "Swim — threshold",
+          "title": "Swim \u2014 threshold",
           "swim_id": "S3",
           "detail": "threshold/speed"
         },
@@ -1043,7 +1117,7 @@
         {
           "sport": "swim",
           "slot": "AM",
-          "title": "Swim — endurance",
+          "title": "Swim \u2014 endurance",
           "swim_id": "S2",
           "detail": "aerobic base"
         }
@@ -1065,7 +1139,7 @@
         {
           "sport": "run",
           "title": "Long run",
-          "detail": "HR ≤172"
+          "detail": "HR \u2264172"
         }
       ]
     }
@@ -1077,7 +1151,7 @@
         {
           "sport": "run",
           "title": "Easy / recovery run",
-          "detail": "AM · HR ≤150–158"
+          "detail": "AM \u00b7 HR \u2264150\u2013158"
         }
       ]
     },
@@ -1145,7 +1219,7 @@
         {
           "sport": "run",
           "title": "Long run",
-          "detail": "HR ≤172"
+          "detail": "HR \u2264172"
         }
       ]
     }

@@ -180,6 +180,31 @@ First week of the HIM block (block_start Aug 10). Triplet re-established: Mon re
 - Walk breaks only shed ~3 bpm (154 walking vs 157 running) — costing lots of pace, buying little HR relief. Next long run: try fewer/longer/slower walk breaks so HR actually recovers per break.
 - Feel: strong (100), RPE 70.
 
+---
+
+## Block 1 · Week 2 — Phase A Reset & Base (Aug 17 – Aug 23)
+
+### Session Log
+
+**Aug 19 (Wed) — Run — speed 5×1000 @ 5:55 (LT reps) [DONE]**
+- 7.60 km total (5×1000 work + WU/CD), avg HR 172, max 196, TE 4.2 ("VO2max"), anaerobic 1.2, load 190. Evening start 19:37.
+- **Context that governs the whole read: slept upright on a train the night before, very tired, "felt like dogshit."** Everything below is a run on a wrecked battery — discard the bad Garmin execution score, it's not a fitness signal.
+- **Pacing was the win:** reps 5:58 / 6:01 / 5:58 / 5:59 / 5:56 — dead-even, right on the 5:55 target, no rep-1 surge and no fade. The pacing discipline we've been chasing held even while exhausted.
+- **HR was the problem, and it's explained by the sleep debt:** reps ran 182–189 avg (LTHR 182), maxing 196 — at/above threshold the whole time. Garmin labelled it VO2max (TE 4.2), i.e. run far harder than the sub-LT cruise it was written as. Same pace, inflated cost, because no sleep.
+- **Recoveries never recovered:** ~90 s but he barely moved (cadence 36–46, near-standing), yet HR only fell to 165–176 and never reached a real recovery — so each rep started with HR already elevated, compounding upward. Second half of why the execution score tanked.
+- **Cadence decayed under fatigue:** 158 → 162 → 156 → 154 → 154, dropping under the 155 floor on reps 4–5 while pace held — i.e. stride lengthened to hold pace = overstriding crept in (GCT 287 ms). A fatigue signature, not a form regression; on fresh legs cadence holds.
+- This was the same session run "a few weeks ago" — intended as a re-test, but today's is too sleep-compromised to compare fairly. Re-run rested and expect LOWER HR at 5:55 with cadence held >155.
+- Feel 75, RPE 80.
+
+**Aug 20 (Thu) — Swim — endurance + speed (NOT the CSS test) [DONE]**
+- 1616 m, ~38 min moving / 49 min elapsed, avg HR 152, max 181, TE 3.3 ("Aerobic Base"), anaerobic 2.2, load 134. Morning start 07:36 — the morning after the train-sleep run, so still a tired body.
+- Session shape: WU 256 m easy → short 32–48 m activation → 96 + 176 build → **main: 2×272 m** → speed 5×32 m → CD 192 m.
+- **Highlight — main set paced beautifully:** 272 m #1 = 2:16.3/100m (HR 160), 272 m #2 = 2:16.8/100m (HR 162) — half a second per 100 m apart across 272 m each. Same even-pacing discipline as the run reps, now showing in the pool.
+- **Efficiency held:** SWOLF 31 on both big reps — no decay under distance, technique held rather than muscled.
+- Speed set 5×32 m descended then wobbled: 1:40 → 1:47 → 1:52 → 2:01 → 1:45, HR climbing to 175–178. Mid-set fade (rep 4) is week-fatigue, not form.
+- **NOT a valid CSS test.** Week 2's plan calls for the maximal 400+200 TT to set CSS pace; this was controlled sub-max 272 m reps, so no CSS number was produced. **CSS test remains owed — do it on a rested day this week.** (Testing max on a depleted body would give a garbage number anyway.)
+- **Load flag:** VO2 run at 188 bpm on no sleep (Aug 19) + this swim inside ~24 h — system is stacking. Recommendation: keep the Aug 20 Posterior lift light or push it, and make tomorrow genuinely easy. Scheduling-level adjustment within the locked plan, not a plan change.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

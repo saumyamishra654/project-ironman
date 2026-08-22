@@ -205,6 +205,27 @@ First week of the HIM block (block_start Aug 10). Triplet re-established: Mon re
 - **NOT a valid CSS test.** Week 2's plan calls for the maximal 400+200 TT to set CSS pace; this was controlled sub-max 272 m reps, so no CSS number was produced. **CSS test remains owed — do it on a rested day this week.** (Testing max on a depleted body would give a garbage number anyway.)
 - **Load flag:** VO2 run at 188 bpm on no sleep (Aug 19) + this swim inside ~24 h — system is stacking. Recommendation: keep the Aug 20 Posterior lift light or push it, and make tomorrow genuinely easy. Scheduling-level adjustment within the locked plan, not a plan change.
 
+**Aug 22 (Sat) — Swim — CSS TEST + 3×336 aerobic [DONE]**
+- 2512 m, 69 min, avg HR 155, max 190, 693 kcal. Evening start 17:16. Structure: 400 WU → 4×48 build → **400 m TT** → full recovery → **192 m TT** → 3×336 continuous aerobic → 192 CD.
+- **CSS RESULT — first real swim benchmark:**
+  - **400 TT: 8:35 (2:08.8/100m)**, avg HR 173 / max 185.
+  - **192 TT: 3:47 (1:58.3/100m)**, avg HR 171 / max 190.
+  - Recovery between dropped to HR 140 (full) — second TT uncontaminated.
+  - **CSS = 0.722 m/s = 2:18/100m.** This is the threshold anchor; see swim training paces below.
+- **Interpretation:** 11 s/100m spread between the 400 (2:09) and 192 (1:58) paces = big fatigue slope. Top-end speed is there; *fatigue resistance over distance* is the developing quality — exactly the profile (state-level technique, aerobic conditioning is the block's job). As base builds, the 400 pace creeps toward the 192 and CSS drops.
+- **Validity:** clean. Breaststroke that day was confined to half the WU, the first 336 rep, and the final ~120 m CD — **none of it touched the two TTs**, which were freestyle and all-out.
+- **Best qualitative note:** "most unbroken I've swum — rest between sets, not within." Continuous hold of form/pace is the aerobic quality we want, worth more than any single fast split. 3×336 done continuous.
+- **Feedback given:** keep the 3×336 (and any aerobic filler) freestyle going forward so the pace actually means something — breaststroke there just makes it easier filler and won't build the freestyle engine.
+
+### Swim training paces (from Aug 22 CSS = 2:18/100m)
+| Zone | Pace /100m | Per 16 m length |
+|------|-----------|-----------------|
+| Speed / reps | ~2:14 | ~21.5 s |
+| **Threshold (CSS)** | **2:18** | **~22 s** |
+| Endurance / aerobic base | ~2:26 | ~23.5 s |
+
+Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS. Replaces prior guesswork.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

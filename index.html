@@ -70,6 +70,8 @@
     .today-btn { font-family: inherit; background: var(--accent); color: #04141a; border: none; border-radius: 6px; padding: 0.45rem 0.9rem; font-weight: 800; font-size: 0.78rem; cursor: pointer; text-transform: uppercase; letter-spacing: 0.04em; }
     .today-btn:hover { filter: brightness(1.08); }
     .today-btn.active { background: var(--surface-3); color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+    .plan5k-btn { font-family: inherit; display: inline-flex; align-items: center; gap: 0.35rem; text-decoration: none; background: var(--surface-2); color: var(--amber); border: 1px solid rgba(251,191,36,0.4); border-radius: 6px; padding: 0.45rem 0.8rem; font-weight: 700; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+    .plan5k-btn:hover { border-color: var(--amber); filter: brightness(1.1); }
 
     /* Today panel */
     .today-panel { margin-top: 1.25rem; background: var(--surface); border: 1px solid var(--accent); border-radius: 12px; padding: 1.1rem 1.25rem; }
@@ -255,6 +257,7 @@
       <span class="pill"><span class="swatch" style="background:var(--bike)"></span>Bike</span>
       <span class="pill"><span class="swatch" style="background:var(--run)"></span>Run</span>
       <span class="pill"><span class="swatch" style="background:var(--strength)"></span>Strength</span>
+      <a class="plan5k-btn" href="plan-5k.html" title="Tentative next-block draft">◆ 5K Plan Draft</a>
       <button class="today-btn" id="todayBtn" type="button">Today</button>
       <div class="weeknav" id="weeknav"><span class="weekchip">Week —</span></div>
     </div>
@@ -752,7 +755,7 @@
 })();
 </script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=13")).catch(function() {}); }
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=14")).catch(function() {}); }
 </script>
 </body>
 </html>

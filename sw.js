@@ -1,7 +1,8 @@
-var CACHE_NAME = "ironman-v13";
+var CACHE_NAME = "ironman-v14";
 
 var SHELL_FILES = [
   "./index.html",
+  "./plan-5k.html",
   "./manifest.json",
   "./icon-192.svg",
   "./icon-512.svg"

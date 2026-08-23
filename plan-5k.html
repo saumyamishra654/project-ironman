@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1620">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="icon-192.svg">
+  <title>5K Speed Block — Draft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1620; --surface: #16212e; --surface-2: #1d2b3a; --surface-3: #24384a;
+      --border: #2a3b4d; --text: #e8f0f7; --muted: #8ba3b8; --faint: #5f7488;
+      --accent: #22d3ee; --accent-glow: rgba(34, 211, 238, 0.12);
+      --run: #4ade80; --strength: #a78bfa; --amber: #fbbf24; --red: #f0785f;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+      background: var(--bg); color: var(--text); line-height: 1.55; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    a { color: var(--accent); }
+
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 0.5rem 0 1rem; }
+    .brand h1 { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; }
+    .brand h1 span { color: var(--run); }
+    .brand .sub { color: var(--muted); font-size: 0.8rem; margin-top: 0.15rem; }
+    .backbtn { font-family: inherit; display: inline-flex; align-items: center; gap: 0.4rem; background: var(--surface-2);
+      color: var(--text); border: 1px solid var(--border); border-radius: 100px; padding: 0.45rem 1rem; font-weight: 600;
+      font-size: 0.78rem; text-decoration: none; white-space: nowrap; }
+    .backbtn:hover { border-color: var(--accent); color: var(--accent); }
+
+    .draft-banner { background: rgba(251,191,36,0.09); border: 1px solid rgba(251,191,36,0.35); border-left: 3px solid var(--amber);
+      border-radius: 12px; padding: 0.9rem 1.1rem; margin-bottom: 1.6rem; }
+    .draft-banner .dt { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); }
+    .draft-banner .db { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; line-height: 1.5; }
+    .draft-banner .db b { color: var(--text); }
+
+    .section { margin-top: 2rem; }
+    .section > h2 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em; color: var(--muted); font-weight: 700;
+      margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .section > h2 .rule { flex: 1; height: 1px; background: var(--border); }
+    .lead { font-size: 0.9rem; color: var(--text); line-height: 1.55; margin-bottom: 0.6rem; }
+    .lead.muted { color: var(--muted); font-size: 0.85rem; }
+
+    .cards2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 720px) { .cards2 { grid-template-columns: 1fr; } }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; }
+    .card.run { border-top: 3px solid var(--run); }
+    .card.strength { border-top: 3px solid var(--strength); }
+    .card.accent { border-top: 3px solid var(--accent); }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem; }
+    .card h3 .tag { font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--faint);
+      background: var(--surface-2); padding: 0.15rem 0.5rem; border-radius: 5px; margin-left: 0.5rem; vertical-align: middle; }
+    .card .lim { font-size: 0.8rem; color: var(--muted); line-height: 1.5; margin-top: 0.5rem; }
+    .card .lim b { color: var(--text); }
+    .card .fix { font-size: 0.78rem; color: var(--run); font-weight: 600; margin-top: 0.55rem; line-height: 1.45; }
+    .card.strength .fix { color: var(--strength); }
+
+    ul.bul { list-style: none; margin-top: 0.5rem; }
+    ul.bul li { font-size: 0.8rem; color: var(--muted); padding: 0.28rem 0 0.28rem 1.1rem; position: relative; line-height: 1.5; }
+    ul.bul li::before { content: '▸'; position: absolute; left: 0; color: var(--run); }
+    ul.bul li b { color: var(--text); font-weight: 700; }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 0.82rem; min-width: 420px; }
+    th { text-align: left; padding: 0.6rem 0.85rem; font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.07em;
+      color: var(--muted); background: var(--surface-2); font-weight: 700; white-space: nowrap; }
+    td { padding: 0.55rem 0.85rem; border-top: 1px solid var(--border); vertical-align: top; }
+    td.wk { font-weight: 700; color: var(--faint); white-space: nowrap; }
+    tr:hover td { background: var(--surface-2); }
+    .pace { color: var(--run); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    .paces-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
+    .pcell { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; }
+    .pcell .pl { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+    .pcell .pv { font-size: 1.35rem; font-weight: 800; color: var(--run); margin-top: 0.25rem; font-variant-numeric: tabular-nums; }
+    .pcell .pn { font-size: 0.7rem; color: var(--faint); margin-top: 0.25rem; line-height: 1.4; }
+
+    .callout { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+      border-radius: 10px; padding: 0.85rem 1.05rem; font-size: 0.82rem; color: var(--muted); margin-top: 1rem; line-height: 1.55; }
+    .callout b { color: var(--text); }
+    .callout.amber { border-left-color: var(--amber); }
+
+    .fork { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.6rem; }
+    @media (max-width: 720px) { .fork { grid-template-columns: 1fr; } }
+    .opt { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.1rem; }
+    .opt.rec { border-color: var(--run); box-shadow: inset 0 0 0 1px rgba(74,222,128,0.25); }
+    .opt .oh { font-size: 0.9rem; font-weight: 700; }
+    .opt .oh .rec-tag { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.05em; color: #04141a; background: var(--run);
+      padding: 0.1rem 0.45rem; border-radius: 5px; margin-left: 0.5rem; vertical-align: middle; }
+    .opt .od { font-size: 0.79rem; color: var(--muted); margin-top: 0.4rem; line-height: 1.5; }
+
+    .footer { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--faint); font-size: 0.78rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="brand">
+      <h1>5K Speed <span>Block</span></h1>
+      <div class="sub">Tentative next-block draft · not active</div>
+    </div>
+    <a class="backbtn" href="index.html">‹ Back to HIM dashboard</a>
+  </div>
+
+  <div class="draft-banner">
+    <div class="dt">◆ Draft — for after the current block</div>
+    <div class="db">This is a <b>tentative plan for the block that starts after the current HIM block ends (~early Nov 2026)</b>.
+      It is <b>not live</b> and changes nothing about the locked HIM plan. Paces below are provisional and get set by an opening 5K
+      time trial. One calendar decision (how the Dec 13 Bangalore HM fits) is still open — see the bottom.</div>
+  </div>
+
+  <div class="section">
+    <h2>Why this block <span class="rule"></span></h2>
+    <p class="lead">Keeps the existing <b>3-run week</b>. The goal is a faster, more economical 5K — which is not a detour from the
+      Goa 70.3, it's foundational to it: your run-leg limiter is <b>running economy + velocity at threshold + cadence under fatigue</b>,
+      and those are exactly what a 5K block builds. A faster 5K lifts every longer pace underneath it.</p>
+    <p class="lead muted">Structure adapted from the plan Saumya flagged: Run 1 = sub-target intervals, Run 2 = a growing tempo ladder at
+      10K pace, Run 3 = long run with race-pace intervals — mapped onto the current speed / quality / long-run week.</p>
+  </div>
+
+  <div class="section">
+    <h2>The two limiters <span class="rule"></span></h2>
+    <div class="cards2">
+      <div class="card strength">
+        <h3>Hips / cadence <span class="tag">biomechanical</span></h3>
+        <div class="lim">Years of <b>quad-dominant</b> running mean that under fatigue you reach with the quads and turnover collapses
+          instead of driving from the hips/glutes. Seen in every run — cadence decays as you tire, sits stuck ~153.</div>
+        <div class="fix">Fix: turnover training (strides, cadence cues) + posterior-chain strength — already fed by the Posterior lift day.
+          Bonus: higher cadence / shorter stride is also shin insurance.</div>
+      </div>
+      <div class="card run">
+        <h3>Holding pace <span class="tag">cardiovascular</span></h3>
+        <div class="lim">Can hit 6:00/km but not hold it past ~2 km. That pace currently sits <b>above threshold</b>, so it turns
+          anaerobic fast and lactate accumulates faster than it clears — hence the 2 km cliff.</div>
+        <div class="fix">Fix: drag threshold up toward 6:00 (tempo at 10K pace) and lift the VO₂ ceiling above it (the 5:30 intervals).
+          The tempo ladder is the single biggest lever here.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Run 1 — Speed / VO₂ <span class="rule"></span></h2>
+    <p class="lead muted">Faster than goal pace (~5:30–5:45/km) to raise the ceiling and teach turnover. Full-ish recoveries — quality, not
+      threshold. If form breaks on a rep, the session is done.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Wk</th><th>Session</th><th>Pace</th></tr></thead>
+        <tbody>
+          <tr><td class="wk">1</td><td>5–6 × 600, jog 90s</td><td class="pace">5:35</td></tr>
+          <tr><td class="wk">2</td><td>5 × 800</td><td class="pace">5:35</td></tr>
+          <tr><td class="wk">3</td><td>6 × 800 / 5 × 1000</td><td class="pace">5:40</td></tr>
+          <tr><td class="wk">4</td><td>4 × 1000 <b>(down week — cut a rep)</b></td><td class="pace">5:40</td></tr>
+          <tr><td class="wk">5</td><td>5 × 1000</td><td class="pace">5:45</td></tr>
+          <tr><td class="wk">6</td><td>3 × 1200</td><td class="pace">5:45</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Run 2 — Threshold / tempo ladder <span class="rule"></span></h2>
+    <p class="lead muted">Continuous tempo at 10K pace (~6:20–6:35/km), volume growing each week. This is what fixes the 2 km cliff — teaching
+      the body to clear lactate at pace over rising distance.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Wk</th><th>Tempo volume</th><th>Pace</th></tr></thead>
+        <tbody>
+          <tr><td class="wk">1</td><td>2 km continuous</td><td class="pace">6:20–6:35</td></tr>
+          <tr><td class="wk">2</td><td>3 km</td><td class="pace">6:20–6:35</td></tr>
+          <tr><td class="wk">3</td><td>2 × 2 km (60–90s float)</td><td class="pace">6:20–6:35</td></tr>
+          <tr><td class="wk">4</td><td>4 km</td><td class="pace">6:20–6:35</td></tr>
+          <tr><td class="wk">5</td><td>2 × 2.5 km</td><td class="pace">6:20–6:35</td></tr>
+          <tr><td class="wk">6</td><td>5 km, or 3 × 2 km</td><td class="pace">6:20–6:35</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Run 3 — Long run + race-pace <span class="rule"></span></h2>
+    <p class="lead muted">Stays aerobic and HR-capped (base discipline holds), but sprinkle goal 5K pace into the back half so 6:00 starts
+      to feel normal, not frantic. Well within the 21 km cap.</p>
+    <ul class="bul">
+      <li><b>Early weeks:</b> last 3 km as 3 × 1 km @ 6:00, easy 400 m between.</li>
+      <li><b>Later weeks:</b> 5–6 × (1 km @ race pace / 1 km easy).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Add-ons that punch above their weight <span class="rule"></span></h2>
+    <div class="cards2">
+      <div class="card accent">
+        <h3>Strides <span class="tag">2× / week</span></h3>
+        <div class="lim">6–8 × 20s at ~mile effort, full recovery, after an easy portion. The cheapest economy + cadence gains there are,
+          and the most direct antidote to the hip/turnover problem. Shin-friendly.</div>
+      </div>
+      <div class="card accent">
+        <h3>Cadence cues <span class="tag">each easy run</span></h3>
+        <div class="lim">One metronome / "quick feet" segment at 165–170 spm in short bursts, until faster turnover is default rather than
+          something you have to think about. Don't force pace — just turn the legs over a hair quicker.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Provisional paces <span class="rule"></span></h2>
+    <p class="lead muted">Assumes a first goal around sub-30 / ~6:00 per km. <b>Set for real by the opening TT</b> — no test, no paces.</p>
+    <div class="paces-grid">
+      <div class="pcell"><div class="pl">Goal 5K / race pace</div><div class="pv">6:00</div><div class="pn">long-run race-pace reps</div></div>
+      <div class="pcell"><div class="pl">Threshold (10K pace)</div><div class="pv">6:20–6:35</div><div class="pn">the tempo ladder</div></div>
+      <div class="pcell"><div class="pl">VO₂ / speed reps</div><div class="pv">5:30–5:45</div><div class="pn">Run 1 intervals</div></div>
+      <div class="pcell"><div class="pl">Easy / recovery</div><div class="pv">HR ≤150–158</div><div class="pn">unchanged base discipline</div></div>
+    </div>
+    <div class="callout"><b>Bookend with time trials.</b> A clean 5K in week 0 sets every pace above; a re-test at the end proves the block
+      worked. Same principle the swim CSS test just gave you.</div>
+  </div>
+
+  <div class="section">
+    <h2>Open decision — how Dec 13 fits <span class="rule"></span></h2>
+    <p class="lead muted">This block ends ~early Nov; the Bangalore HM is Dec 13. That collision shapes the back end — pick one:</p>
+    <div class="fork">
+      <div class="opt rec">
+        <div class="oh">A · 5K block, HM as a tune-up <span class="rec-tag">Lean</span></div>
+        <div class="od">Race Dec 13 off sharp legs and a raised speed ceiling, no HM-specific long tempo. Fine, since the HM is a B-race
+          tune-up, not the A-race — and this keeps the 5K development clean.</div>
+      </div>
+      <div class="opt">
+        <div class="oh">B · Convert final ~3 weeks to HM-specific</div>
+        <div class="od">Run the 5K emphasis early, then swap the last ~3 weeks to longer threshold + race-pace-over-distance work to sharpen
+          specifically for the half.</div>
+      </div>
+    </div>
+    <div class="callout amber">Still to lock before this goes live: <b>target 5K time</b>, whether Dec 13 is "race it" or "just run it",
+      then the exact paces, down-week/taper placement, and the opening TT date.</div>
+  </div>
+
+  <div class="footer">
+    5K Speed Block · tentative draft · not part of the locked HIM plan · <a href="index.html">back to dashboard</a>
+  </div>
+</div>
+</body>
+</html>

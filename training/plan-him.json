@@ -5,7 +5,7 @@
     "block_name": "Block 1 \u2014 HIM Base \u2192 Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-22",
+    "updated": "2026-08-23",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -573,6 +573,42 @@
     }
   ],
   "sessions": [
+    {
+      "date": "2026-08-23",
+      "sport": "run",
+      "week": 2,
+      "title": "Long run 16k \u2014 two-block HR-capped (base)",
+      "verdict": "Textbook execution: block 1 sat at 151, clean negative split. Target behavior, repeated.",
+      "stats": [
+        {
+          "l": "Distance",
+          "v": "16.0 km"
+        },
+        {
+          "l": "Avg HR",
+          "v": "153"
+        },
+        {
+          "l": "Block 1",
+          "v": "7:59 @ 151"
+        },
+        {
+          "l": "Block 2",
+          "v": "7:05 @ 166"
+        },
+        {
+          "l": "Pace",
+          "v": "7:49/km"
+        }
+      ],
+      "headline": "The two-block structure held almost exactly as drawn. Block 1 sat at 151 avg across 9 km \u2014 dead center of target \u2014 then a clean negative split into a stronger block 2. Second disciplined HR-capped long run in a row; the Jul 19 Z4 blow-up is firmly in the past.",
+      "insight": [
+        "Block 1 easy base (km3-11, 9k): 7:59/km @ avg HR 151, max 168 \u2014 bang on the 150-158 band, cap 160. The bulk of the run held the number the whole way.",
+        "Block 2 steady (km12-16, 5k): 7:05/km @ avg HR 166 under the 172 cap. 7:05 at 166 is quicker than the Aug 9 comp pace (7:37 at 171) \u2014 base work showing up as pace-at-HR.",
+        "Walk-recovery fix worked: ~70 short walks let HR settle to ~150 before running again (vs Aug 16's tag-and-go), so block 1 held instead of sawtoothing. Self-diagnosed and applied.",
+        "Flags: a max-195 (Z5) spike late in block 2 \u2014 a hill or finish surge, brief but 'steady' means no near-max pops. And ~29 min total walking = easy running pace still drives HR to the ceiling; aerobic base is still the limiter, so watch for walking LESS as the block progresses."
+      ]
+    },
     {
       "date": "2026-08-22",
       "sport": "swim",

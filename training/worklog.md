@@ -229,6 +229,17 @@ First week of the HIM block (block_start Aug 10). Triplet re-established: Mon re
 
 Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS. Replaces prior guesswork.
 
+**Aug 23 (Sun) — Run — long run 16k, two-block HR-capped (base) [DONE]**
+- 16.0 km, 2:05:09, avg pace 7:49/km, avg HR 153, max 195, 1238 kcal, 55 m gain. Morning start 08:51. Ran off the pushed structured workout (warmup / block1 ≤160 / block2 ≤172).
+- **Block execution — held almost exactly as drawn:**
+  - Warmup km1–2: 8:50/km, avg HR 138 (max 153) — textbook easy ease-in, under 150.
+  - **Block 1 easy base km3–11 (9k): 7:59/km, avg HR 151 (max 168) — dead center of the 150–158 target, cap 160.** The 9k bulk sat at 151 the whole way.
+  - **Block 2 steady km12–16 (5k): 7:05/km, avg HR 166 (max 195), cap 172.** Held under the ceiling on average.
+- **Clean negative split:** 7:59 → 7:05. 7:05/km at 166 HR is quicker than the Aug 9 comp pace (7:37 at 171) — base work showing up as pace-at-HR.
+- **Walk-recovery fix applied.** 70 short walks (~24s avg, ~29 min total) but this time they let HR settle before running again — block 1 held instead of sawtoothing. Contrast Aug 16, where "tag the ceiling and immediately run" made walks look worthless. Saumya self-diagnosed the fix (walk to ~150, ignore the beep going silent) and it worked.
+- **Flags:** (1) max 195 (Z5) spike in block 2 — a hill or a finishing surge; brief (avg stayed 166) but "steady" means no near-max pops. (2) ~29 min total walking is a lot — the honest signal that easy *running* pace still drives HR to the ceiling, i.e. aerobic base is still the limiter. Right tool for now; the trend to watch is walking LESS as the easy pace naturally slows HR over the coming weeks.
+- **Verdict:** target behavior, repeated. Two disciplined HR-capped long runs back to back (Aug 16 17k, Aug 23 16k). The Jul 19 90%-Z4 blow-up is firmly in the past.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

@@ -32,6 +32,13 @@
       color: var(--text); border: 1px solid var(--border); border-radius: 100px; padding: 0.45rem 1rem; font-weight: 600;
       font-size: 0.78rem; text-decoration: none; white-space: nowrap; }
     .backbtn:hover { border-color: var(--accent); color: var(--accent); }
+    .topnav { display: flex; gap: 0.35rem; flex-wrap: wrap; align-items: center; }
+    .navlink { font-family: inherit; text-decoration: none; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: 7px; padding: 0.5rem 0.9rem; white-space: nowrap; }
+    .navlink:hover { color: var(--text); border-color: var(--faint); }
+    .navlink.alt { color: var(--amber); border-color: rgba(251,191,36,0.4); }
+    .navlink.alt.active { color: #1a1204; background: var(--amber); border-color: var(--amber); }
+    @media (max-width: 560px) { .topnav { width: 100%; } .navlink { flex: 1; text-align: center; } }
 
     .draft-banner { background: rgba(251,191,36,0.09); border: 1px solid rgba(251,191,36,0.35); border-left: 3px solid var(--amber);
       border-radius: 12px; padding: 0.9rem 1.1rem; margin-bottom: 1.6rem; }
@@ -99,13 +106,18 @@
 </head>
 <body>
 <div class="container">
-  <div class="topbar">
+  <header class="topbar">
     <div class="brand">
       <h1>5K Speed <span>Block</span></h1>
       <div class="sub">Tentative next-block draft · not active</div>
     </div>
-    <a class="backbtn" href="index.html">‹ Back to HIM dashboard</a>
-  </div>
+    <nav class="topnav">
+      <a class="navlink" href="index.html">Dashboard</a>
+      <a class="navlink" href="plan.html">Plan</a>
+      <a class="navlink" href="log.html">Log</a>
+      <a class="navlink alt active" href="plan-5k.html" aria-current="page">5K Draft</a>
+    </nav>
+  </header>
 
   <div class="draft-banner">
     <div class="dt">◆ Draft — for after the current block</div>

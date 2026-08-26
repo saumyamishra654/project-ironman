@@ -1,8 +1,12 @@
-var CACHE_NAME = "ironman-v15";
+var CACHE_NAME = "ironman-v17";
 
 var SHELL_FILES = [
   "./index.html",
+  "./plan.html",
+  "./log.html",
   "./plan-5k.html",
+  "./app.css",
+  "./app.js",
   "./manifest.json",
   "./icon-192.svg",
   "./icon-512.svg"
@@ -10,7 +14,11 @@ var SHELL_FILES = [
 
 var NETWORK_FIRST = [
   "index.html",
+  "plan.html",
+  "log.html",
   "plan-5k.html",
+  "app.css",
+  "app.js",
   "plan-him.json",
   "database.json"
 ];

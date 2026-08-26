@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" href="icon-192.svg">
-  <title>Project Ironman — Dashboard</title>
+  <title>Project Ironman — Plan &amp; Reference</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
   if (parts.length && parts[parts.length - 1].indexOf(".") !== -1) parts.pop();
   window.APP_BASE = parts.length ? "/" + parts.join("/") + "/" : "/";
   window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
-  window.IRONMAN_PAGE = "dashboard";
+  window.IRONMAN_PAGE = "plan";
 })();
   </script>
   <link rel="stylesheet" href="app.css?v=17">
@@ -30,13 +30,12 @@
     <div class="brand">
       <div>
         <h1>Project <span>Ironman</span></h1>
-        <div class="sub" id="subtitle">Loading…</div>
+        <div class="sub" id="subtitle">Plan &amp; reference</div>
       </div>
     </div>
     <nav class="topnav" id="topnav"></nav>
   </header>
 
-  <div id="toolbar"></div>
   <div id="app"></div>
 
   <div class="footer">

@@ -240,6 +240,26 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Flags:** (1) max 195 (Z5) spike in block 2 — a hill or a finishing surge; brief (avg stayed 166) but "steady" means no near-max pops. (2) ~29 min total walking is a lot — the honest signal that easy *running* pace still drives HR to the ceiling, i.e. aerobic base is still the limiter. Right tool for now; the trend to watch is walking LESS as the easy pace naturally slows HR over the coming weeks.
 - **Verdict:** target behavior, repeated. Two disciplined HR-capped long runs back to back (Aug 16 17k, Aug 23 16k). The Jul 19 90%-Z4 blow-up is firmly in the past.
 
+## Block 1 · Week 3 — Phase A Reset & Base (Aug 24 – Aug 30)
+
+### Session Log
+
+**Aug 24 (Mon) — Run — easy / recovery, HR-capped (VO2-safe) [DONE]**
+- 4.73 km total (4.23 km running + 0.48 km walk + stands), 45:47, evening start 19:44. Ran off the pushed structured recovery workout (warmup 1k / easy 5k, HR cap 150) the day after the 16k long run. Readiness LOW/25.
+- **Cap honored perfectly:** running blocks avg HR 142, **max 157** — never near the 160 ceiling, sat under the 150 easy cap. Exactly the VO2-safe easy run that was scheduled; Firstbeat generated **no VO2max data point** (as intended — the whole reason it was capped).
+- Running-only cadence **145.5 spm** (good for recovery pace, cleaner than walk-diluted long-run numbers); form held — GCT 330 ms, vertical ratio 10.6, power 206 W.
+- Running-only pace ~9:10/km (moving) — slow, but pace is irrelevant on a capped recovery day; muggy Bengaluru evening also taxed it.
+- **Legs, not lungs, ended it.** 18 short walk breaks and stopped at 4.7 of the planned 6k — but max HR only 157, so the walks were leg fatigue carried over from the 16k, **not** HR-ceiling driven. Bailing early on tired legs the day after a long run was the correct call, not a miss.
+- **Verdict:** textbook recovery execution. Did its one job (flush + protect Wednesday's speed session) and nothing more.
+
+**Aug 25 (Tue) — Swim — Technique Day (muggy-air morning) [DONE]**
+- 1.30 km, 43:40, morning start 07:27, open-air rooftop pool (13th floor, Hebbal). Avg HR 138, max 184. Structure: warmup 12.4 min (HR 120) / 13 active reps 19.4 min (avg HR 150, max 184) / 14 rests 8.9 min (HR 133) / cooldown.
+- **HR ran hot for the effort.** Active-work 150 avg / 184 max is high for technique/drill swimming (should sit low 130s), and rests stayed elevated (133 avg, **177 max**) instead of dropping fast — the physiological fingerprint of harder-to-move air, not threshold effort.
+- **Environmental cause — confirmed, not fitness.** Whole pool (plus a swimmer in a neighbouring complex's pool) was out of breath. Traced to: overcast, low-pressure monsoon morning, 23°C / 73% RH (dew point ~18°C) + Hebbal AQI ~140 / elevated PM2.5, at 07:27 (peak morning-inversion window) in an open-air pool. Open-air + two separate pools rules out chloramine/ventilation/personal fitness. (Web-checked against forecast + AQICN.)
+- **Not hypoxia.** Barometric dips shave only ~1–2% off O2 partial pressure; it's the *perception* of air hunger (humidity + particulate irritation) that drives breathing rate and HR up. Bengaluru's ~920 m baseline amplifies the dip felt vs. a lowland city.
+- **Takeaway / protocol:** on still, overcast monsoon mornings, glance at PM2.5 before an open-air swim — if 130+, treat it as an easy/technique day by default and ignore the elevated HR (it's the air, not a fitness red flag).
+- **Verdict:** low-quality air day handled correctly as technique work; no read on fitness either way.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

@@ -55,8 +55,8 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Last long run | **15.0 km (Aug 9)** — HR-governed progression, held sub-172 the whole way (avg 161, max 179). Big discipline win vs Jul 19 (which was 90% Z4). Comp-pace block ~7:37/km at HR ≤171. TE 3.9 tempo, anaerobic 0.0 (by design). |
-| Competition pace (HM) | **~7:35 /km** working anchor (revised down from 7:10 after Aug 9 run). Aug 9 progression: at the sub-172 HR ceiling, comp-pace block held ~7:37/km — the 7:09 predictor requires threshold HR. Train off 7:35; the predictor pace is a goal to earn as easy HR drops. Garmin predictor (Aug 7): HM 2:30:51 (7:09/km), 10K 1:03:19, 5K 29:14. LTHR 182 (Jul 25). VO₂max 43 (Aug 9). |
+| Last long run | **16.0 km (Aug 23)** — two-block HR-capped. Block 1 (9k) avg HR 151, block 2 (5k) **7:05/km @ avg HR 166** (under 172), clean negative split. Prior: 15.0k Aug 9 (avg 161, comp block 7:37/km @ ≤171). |
+| Competition pace (HM) | **~7:00 /km** working anchor @ HR ≤172 (revised down from 7:35 on Aug 26). Basis: Aug 23 long run held **7:05/km at avg HR 166** on tired km12–16 legs, i.e. pace-at-HR dropped ~30 s/km in two weeks — base arriving fast. Govern comp/long-run segments by *"7:00 or 172, whichever comes first"*, not by a fixed number. **Do NOT use the Garmin race pace for long-run segments** — that's a maximal threshold effort (~182 HR). Garmin predictor (Aug 26): HM **2:22:58 (6:47/km)**, 10K 1:01:25, 5K 28:34 — up ~8 min on the HM vs Aug 7 (2:30:51); still a watch projection, not a proven TT. LTHR 182. VO₂max 43 (trending up, 39→43 over 6 wk). |
 | Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
 | Current easy pace | ~7:24 /km (but HR too high at this pace — see easy HR cap below) |
 | Last quality session | Jul 22 "7K Threshold" — 6 km, moving 6:51/km, in-band tempo. Correctly run. |
@@ -100,6 +100,8 @@ This file is the live state document. Update it after every session or at minimu
 
 List any deviations from the plan here:
 
+- **Aug 26 (week 3) — comp-pace anchor updated + week-3 long-run deviation.** (1) HM comp anchor revised 7:35 → **~7:00/km @ ≤172** off the Aug 23 long run (7:05 @ 166); Garmin HM prediction now 2:22:58 (6:47/km, up from 2:30:51). (2) **Deviation, athlete-requested & flagged:** adding comp-pace segments to the week-3 18k long run — the plan reserves race-pace for wk 9+. Kept minimal & controlled: **3×1km @ ~7:00 (6:55–7:10), HARD cap HR 172**, 1km easy floats, back-half only (km 11–16), easy 2k finish, bail to 2 reps or pure base if readiness LOW / air bad. I pushed back (would be the 3rd quality day this week); athlete chose to proceed with the minimal dose.
+- **Aug 26 (week 3) — swim reschedules (scheduling only, plan intact):** Wed S3 threshold swim → **Thu Aug 27**; Fri S2 endurance swim → **Sat Aug 29**. Wed speed run (4×1200 @ **5:40**, faster than planned 5:55) stays Wed. All pushed to the watch via Garmin MCP.
 - **Week 1 (May 25–31):** Skipped planned Sun May 31 long run (8 km); ran 5 km that day instead. Extra 7 km Wed May 27 (not on plan — week 1 has no Wed quality run).
 - **Weeks 2–3:** Long run missed both weeks. Other training happened (fast mile Monday, 45 min Z2 cycle).
 - **Week 4 (Jun 15–21):** Job started. Sleep was poor. Food stayed on track. Settled into final apartment. Found pool + gym with stationary cycle (10 min walk). Sled available.

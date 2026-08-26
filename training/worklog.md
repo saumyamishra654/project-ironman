@@ -260,6 +260,14 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Takeaway / protocol:** on still, overcast monsoon mornings, glance at PM2.5 before an open-air swim — if 130+, treat it as an easy/technique day by default and ignore the elevated HR (it's the air, not a fitness red flag).
 - **Verdict:** low-quality air day handled correctly as technique work; no read on fitness either way.
 
+**Aug 26 (Wed) — Run — speed 4×1200 @ 5:40 (faster than planned 5:55) [DONE]**
+- Evening start 19:14. Reps averaged **5:42/km** against a 5:40 target (5:35–5:45 band) — dead on. Rep-by-rep: R1 5:35 (cad 167), R2 5:41 (cad 172), R3 5:45 (cad 161, fall), R4 5:47 (cad 162). Reps avg HR **180**, max 193.
+- **On-target execution of a self-chosen faster pace.** Held the band across all four with only a slight fatigue drift (5:35 → 5:47) — a clean, controlled positive split, not a fade.
+- **Cadence was excellent and his in-run feel was exactly right:** 167 → 172 spm early (vs ~145 easy), settling to 161 late. Stride opened to ~105 cm in the reps (vs ~74 easy). The short-distance turnover he keeps saying is underused showed up on the clock.
+- **Fell + scraped knee in rep 3 — cost almost nothing.** Extra standing in the following recovery, then came back and ran R4 at 5:47 with HR to 193. Resilient; no rep blew up.
+- **Genuine VO2 stimulus → new highs.** Reps at HR 180 (=new LTHR) / max 193 drove **VO₂max 43 → 44** (new high), LTHR recalculated 182 → 180, running FTP 326 → 333 W. LT pace now ~5:40/km.
+- **Verdict:** breakthrough-quality speed session. Hit a faster-than-planned target on the number, with strong cadence and mechanics, and shrugged off a fall. The engine is climbing.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

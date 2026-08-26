@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-26",
+    "updated": "2026-08-27",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -54,35 +54,35 @@
     {
       "id": "vo2max",
       "label": "VO₂max",
-      "value": "43",
+      "value": "44",
       "unit": "",
       "sport": "run",
       "trend": "up",
-      "note": "41→43 after Aug 9 long run"
+      "note": "41→43→44 · Aug 26 speed run"
     },
     {
       "id": "comp_pace",
       "label": "Comp pace",
-      "value": "7:35",
+      "value": "7:00",
       "unit": "/km",
       "sport": "run",
-      "note": "sub-threshold sustainable (Aug 9)"
+      "note": "sub-172 sustainable · Aug 23 long run 7:05 @ HR166"
     },
     {
       "id": "lt_pace",
       "label": "LT pace",
-      "value": "5:50",
+      "value": "5:40",
       "unit": "/km",
       "sport": "run",
-      "note": "short-rep target"
+      "note": "4×1200 Aug 26 @ 5:42/km, HR 180 (=LTHR)"
     },
     {
       "id": "lthr",
       "label": "LTHR",
-      "value": "182",
+      "value": "180",
       "unit": "bpm",
       "sport": "run",
-      "note": "long-run cap 172 · easy cap 162"
+      "note": "Aug 26 · long-run cap 172 · easy cap 162"
     },
     {
       "id": "swim_css",
@@ -608,6 +608,46 @@
     }
   ],
   "sessions": [
+    {
+      "date": "2026-08-26",
+      "sport": "run",
+      "week": 3,
+      "title": "Speed 4×1200 @ 5:40 — nailed it, VO2 up to 44",
+      "verdict": "Hit a self-chosen faster target on the number (5:42 avg), strong cadence, shrugged off a fall. Breakthrough-quality.",
+      "stats": [
+        {
+          "l": "Reps",
+          "v": "4×1200"
+        },
+        {
+          "l": "Avg pace",
+          "v": "5:42/km"
+        },
+        {
+          "l": "Target",
+          "v": "5:40"
+        },
+        {
+          "l": "Cadence",
+          "v": "167–172 early"
+        },
+        {
+          "l": "Avg HR",
+          "v": "180 (max 193)"
+        },
+        {
+          "l": "VO₂max",
+          "v": "43 → 44"
+        }
+      ],
+      "headline": "This is what the top-end you keep talking about looks like on the clock. You asked to run it faster than planned and then did exactly that — 5:42 against a 5:40 target, right in the band on all four reps. Cadence hit 167–172 (your easy runs sit ~145), stride opened to ~105 cm, and you drove VO2max to a new high of 44. You even fell in rep 3 and still closed rep 4 at 5:47. Genuinely strong day.",
+      "insight": [
+        "On target, all four: R1 5:35 (cad 167) / R2 5:41 (cad 172) / R3 5:45 (cad 161, the fall) / R4 5:47 (cad 162). A controlled positive split from fatigue, not a fade — you held the band even after going down.",
+        "Your in-run feel was spot on: cadence WAS best early (167→172) and settled to 161 late. Reading your own turnover that accurately is a real skill, and 167+ at speed is a big step up from ~145 easy.",
+        "Real VO2 stimulus: reps at HR 180 (your new recalculated LTHR) with a 193 max is exactly the intensity that pushes the number UP — hence 43→44 (new high), plus LTHR 182→180 and FTP 326→333 W. The engine is climbing.",
+        "Resilience banked: fell and scraped the knee in rep 3, took the hit, and still ran rep 4 on pace. That's the kind of day that builds more than fitness."
+      ]
+    },
     {
       "date": "2026-08-25",
       "sport": "swim",

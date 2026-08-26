@@ -47,7 +47,7 @@ Next race: **Bangalore Half Marathon, Dec 13, 2026** (in Bengaluru itself — id
 
 ### Goal / training pace — revised 2026-08-09
 
-- **Comp-pace training anchor is now ~7:35/km**, off the Aug 9 15k progression: at the HR ceiling (≤172, below LTHR 182) sustainable pace was ~7:37/km. Train comp-pace work off ~7:35 until easy HR drops.
+- **Comp-pace training anchor is now ~7:00/km @ HR ≤172** (revised Aug 26, down from 7:35). The Aug 23 16k long run held **7:05/km at avg HR 166** on tired km12–16 legs — pace-at-HR dropped ~30 s/km in two weeks, base arriving fast. Govern comp/long-run segments by *"7:00 or 172, whichever comes first,"* not a fixed number; on hot/humid mornings HR caps it and pace gives. **Do not use the Garmin race-prediction pace for long-run segments** — that assumes a maximal, rested threshold effort (~182 HR), a different session.
 - **Target race for pace validation is now the Bangalore HM, Dec 13, 2026** (was Delhi HM Oct 18, cancelled). HM race goal remains aspirational, not yet earned: Garmin predicts 7:09/km (2:30:51); Riegel off the March 10K gives ~6:41/km; earlier 6:40 and 6:00 targets both over-project (6:00 was derived from 4×1k intervals, which don't extend to 21 km). The gap between ~7:35 sustainable and ~7:09 predicted *is* the aerobic-base deficit — closing it is the block's job.
 - **Still provisional** — no clean race-effort time trial exists yet. Pace zones in `plan.md` / `hm-plan-delhi-oct18.md` remain unvalidated.
 
@@ -67,25 +67,25 @@ Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, 
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| VO₂max (running) | **43** (Aug 9) | Ticked 41 → 43 after the Aug 9 HR-disciplined long run. Still likely a touch conservative (1k rep @ 4:53/km reaching max HR implies mid-40s), but the base work is now registering. |
+| VO₂max (running) | **44** (Aug 26) | 41 → 43 (Aug 9) → 44 after the Aug 26 4×1200 @ 5:42/km speed session (reps avg HR 180, max 193 — a genuine VO2 stimulus). Engine still climbing. |
 | Max HR (observed) | **~202–203** | Higher than age-predicted (~198). Hit 202 on Jul 22 final interval. |
 | Resting HR | **~58–62** | 58 on Jul 28 (lowest observed), 7-day avg 62. Ranged 58–67 across Jul 16–28. |
 | HRV (weekly avg) | **38 ms** (Jul 28) | Ranged 35–44 across Jul 22–28; status BALANCED except one UNBALANCED day (Jul 26). |
-| Lactate threshold HR | **182** (Jul 25) | = ~90% of max; top of device Z4. |
+| Lactate threshold HR | **180** (Aug 26) | Recalculated off the 4×1200 speed run (was 182, Jul 25). LT pace ~5:40/km (held 5:42 @ HR 180 across the reps). |
 | Threshold / LT pace | **~6:00/km** | From 4×1k intervals (reps 5:47–6:06/km). Does **not** project cleanly to half-marathon distance — see Goal Pace note below. |
-| Running FTP (power) | **326 W** (Aug 6) | 4.01 W/kg. |
+| Running FTP (power) | **333 W** (Aug 26) | 4.19 W/kg (was 326 W / 4.01, Aug 6). |
 | Training status | **Productive** | Chronic load ~548. Acute load **347** on Jul 28 (448 on Jul 27; ~630 on Jul 23) → **ACWR ~0.63** — carrying notably less fatigue than baseline following the Jul 23–26 disruption. Was ACWR ~1.1 (optimal) on Jul 23. VO₂max trend +2 over the window (partly calibration). |
 
-### Garmin race predictions (2026-08-07)
+### Garmin race predictions (2026-08-26)
 
-| Distance | Predicted time |
-|----------|----------------|
-| 5K | 29:14 |
-| 10K | 1:03:19 |
-| Half Marathon | 2:30:51 (7:09/km) |
-| Marathon | 5:54:00 |
+| Distance | Predicted time | (was Aug 7) |
+|----------|----------------|-------------|
+| 5K | 28:34 | 29:14 |
+| 10K | 1:01:25 | 1:03:19 |
+| Half Marathon | **2:22:58 (6:47/km)** | 2:30:51 (7:09/km) |
+| Marathon | 5:30:13 | 5:54:00 |
 
-> Caveat: still watch-derived. The Aug 9 long run is a useful reality check — the predictor's 7:09/km HM pace requires *threshold* HR; sustainable sub-threshold pace is currently ~7:35/km. Treat the predictor as a goal to earn, not a current capability.
+> Caveat: still watch-derived — no clean race-effort TT exists, so treat as an encouraging projection, not a banked time. The predictor's 6:47/km HM pace requires *threshold* HR (~182); sustainable sub-172 pace off the Aug 23 long run is **~7:00–7:05/km**. Train long-run/comp segments off ~7:00 @ ≤172; the predictor pace is a goal to earn.
 
 ### Heart-rate zones (Garmin device zones)
 

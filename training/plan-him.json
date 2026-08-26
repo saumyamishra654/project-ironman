@@ -61,6 +61,15 @@
       "note": "41→43→44 · Aug 26 speed run"
     },
     {
+      "id": "endurance",
+      "label": "Endurance Score",
+      "value": "5119",
+      "unit": "",
+      "sport": "run",
+      "trend": "up",
+      "note": "Intermediate · crossed 5100 tier (Aug 26); 4809→5119 this month"
+    },
+    {
       "id": "comp_pace",
       "label": "Comp pace",
       "value": "7:00",

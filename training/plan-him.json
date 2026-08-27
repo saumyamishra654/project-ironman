@@ -371,7 +371,7 @@
       "run": {
         "long_km": 12,
         "long_note": "easy deload",
-        "speed": "5×400 @ 5:20 (sharp, low vol)",
+        "speed": "5K TT — 28:30 target (replaces reps)",
         "easy_km": 5
       },
       "swim": {
@@ -399,7 +399,7 @@
       "run": {
         "long_km": 17,
         "long_note": "HR ≤172",
-        "speed": "5×1000 @ 5:50",
+        "speed": "5×1000 @ 5:30",
         "easy_km": 7
       },
       "swim": {
@@ -427,7 +427,7 @@
       "run": {
         "long_km": 19,
         "long_note": "HR ≤172",
-        "speed": "3×2000 cruise (HR <182)",
+        "speed": "3×2000 cruise @ ~5:50 (HR <182)",
         "easy_km": 7
       },
       "swim": {
@@ -455,7 +455,7 @@
       "run": {
         "long_km": 20,
         "long_note": "HR ≤172",
-        "speed": "6×1000 @ 5:50",
+        "speed": "6×1000 @ 5:30",
         "easy_km": 8
       },
       "swim": {
@@ -483,7 +483,7 @@
       "run": {
         "long_km": 13,
         "long_note": "easy deload",
-        "speed": "5×400 @ 5:15",
+        "speed": "5×400 @ 5:00",
         "easy_km": 5
       },
       "swim": {
@@ -511,7 +511,7 @@
       "run": {
         "long_km": 19,
         "long_note": "last 4k @ comp pace (~7:35)",
-        "speed": "4×1600 @ 6:00",
+        "speed": "4×1600 @ 5:45",
         "easy_km": 8
       },
       "swim": {
@@ -539,7 +539,7 @@
       "run": {
         "long_km": 21,
         "long_note": "full HM distance, HR-capped",
-        "speed": "5×1000 @ 5:45",
+        "speed": "5×1000 @ 5:25",
         "easy_km": 8
       },
       "swim": {
@@ -567,7 +567,7 @@
       "run": {
         "long_km": 18,
         "long_note": "8k @ comp pace inside",
-        "speed": "3×2000 @ 6:00 + strides",
+        "speed": "3×2000 @ 5:50 + strides",
         "easy_km": 8
       },
       "swim": {
@@ -595,7 +595,7 @@
       "run": {
         "long_km": 12,
         "long_note": "deload; transition to HM sharpen",
-        "speed": "short sharpening reps",
+        "speed": "short sharpening reps @ ~5:00",
         "easy_km": 5
       },
       "swim": {

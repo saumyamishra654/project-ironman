@@ -587,35 +587,37 @@
     return sec;
   }
 
-  function renderHrZones() {
+  function renderHrZones(data) {
+    var rz = (data && data.run_zones) || {};
+    var hr = rz.hr || [
+      { z: "Z2 · Easy", use: "true easy", r: "122–140" },
+      { z: "Z3 · Aerobic", use: "long-run sweet spot", r: "141–160" },
+      { z: "Z4 · Sub-threshold", use: "steady → LT", r: "161–180" },
+      { z: "Z5 · VO2 / anaerobic", use: "intervals · surges", r: "181+" }
+    ];
+    var paces = rz.paces || [];
     var sec = el("div", { class: "section" });
     sec.appendChild(h2("Run — HR Zones & Pace Anchors"));
     var cols = el("div", { class: "swim-cols" });
     var left = el("div", { class: "card" });
     left.appendChild(el("h3", { text: "Heart-rate zones" }));
-    [ { l: "Z2 · Easy", u: "true easy", r: "122–140" },
-      { l: "Z3 · Aerobic", u: "long-run sweet spot", r: "141–160" },
-      { l: "Z4 · Sub-threshold", u: "steady → LT (180)", r: "161–180" },
-      { l: "Z5 · VO2 / anaerobic", u: "intervals · surges", r: "181+" } ].forEach(function(z) {
+    hr.forEach(function(z) {
       var row = el("div", { class: "zone-row" });
-      row.appendChild(el("div", { class: "zl", html: z.l + "<small>" + z.u + "</small>" }));
+      row.appendChild(el("div", { class: "zl", html: z.z + "<small>" + z.use + "</small>" }));
       row.appendChild(el("div", { class: "zp", text: z.r }));
       left.appendChild(row);
     });
-    left.appendChild(el("div", { class: "css-box", html: "<b>Easy / long-run cap ~162</b> (aim 150–158 avg, govern by HR not pace). LTHR 182 · max ~203 · RHR ~60." }));
+    if (rz.hr_note) left.appendChild(el("div", { class: "css-box", html: rz.hr_note }));
     cols.appendChild(left);
     var right = el("div", { class: "card" });
-    right.appendChild(el("h3", { text: "Pace anchors (provisional)" }));
-    [ { l: "Comp-pace (sub-threshold)", v: "~7:35/km" },
-      { l: "HM target (to earn)", v: "~7:09/km" },
-      { l: "Threshold (1k reps)", v: "~6:00/km" },
-      { l: "Easy / long", v: "HR-governed" } ].forEach(function(p) {
+    right.appendChild(el("h3", { text: "Pace anchors" }));
+    paces.forEach(function(p) {
       var row = el("div", { class: "zone-row" });
       row.appendChild(el("div", { class: "zl", text: p.l }));
       row.appendChild(el("div", { class: "zp", text: p.v }));
       right.appendChild(row);
     });
-    right.appendChild(el("div", { class: "css-box", html: "Anchored to the Aug 9 HR-disciplined long run. Re-validate after a clean time-trial." }));
+    if (rz.pace_note) right.appendChild(el("div", { class: "css-box", html: rz.pace_note }));
     cols.appendChild(right);
     sec.appendChild(cols);
     return sec;
@@ -645,7 +647,7 @@
       var strSec = renderStrength(data);
       if (strSec) app.appendChild(strSec);
       app.appendChild(renderSwim(data));
-      app.appendChild(renderHrZones());
+      app.appendChild(renderHrZones(data));
       drawCharts(data, wk);
       return;
     }

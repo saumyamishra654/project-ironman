@@ -1284,6 +1284,50 @@
       "note": "let pace land ~6:00–6:20; don't force 5:50"
     }
   },
+  "run_zones": {
+    "hr": [
+      {
+        "z": "Z2 · Easy",
+        "use": "true easy",
+        "r": "122–140"
+      },
+      {
+        "z": "Z3 · Aerobic",
+        "use": "long-run sweet spot",
+        "r": "141–160"
+      },
+      {
+        "z": "Z4 · Sub-threshold",
+        "use": "steady → LT (180)",
+        "r": "161–180"
+      },
+      {
+        "z": "Z5 · VO2 / anaerobic",
+        "use": "intervals · surges",
+        "r": "181+"
+      }
+    ],
+    "hr_note": "<b>Easy / long-run cap ~162</b> (aim 150–158 avg, govern by HR not pace). LTHR 180 · max ~203 · RHR ~60.",
+    "paces": [
+      {
+        "l": "Comp-pace (sub-172)",
+        "v": "~7:00/km"
+      },
+      {
+        "l": "HM (to earn)",
+        "v": "~6:47/km"
+      },
+      {
+        "l": "Threshold / LT",
+        "v": "~5:40/km"
+      },
+      {
+        "l": "Easy / long",
+        "v": "HR-governed"
+      }
+    ],
+    "pace_note": "Off the Aug 26 speed run (LT 5:40) + Aug 23 long run. Re-validate after the Sep 2 5K TT."
+  },
   "week_template_full": [
     {
       "day": "Mon",

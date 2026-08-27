@@ -4,9 +4,9 @@
 
 > Not to be confused with the repo-root `CLAUDE.md`, which is code-guidance for the dashboard app.
 
-**Read order for coaching:** this file (background) → `context.md` (live weekly state) → `plan.md` (the plan) → `database.json` (machine-readable plan) → `worklog.md` (session history).
+**Read order for coaching:** this file (background) → `context.md` (live weekly state) → `plan-him.json` (the current HIM plan, machine-readable) → `worklog.md` (session history) → `lifting.json` (strength history). (`plan.md` / `database.json` are archived pre-pivot legacy — see repo-root `CLAUDE.md`.)
 
-**Data sources:** Garmin (via MCP — cardio, HR, sleep, VO₂max, training status) + `hevy-export.csv` (manual Hevy export — every lifting set/rep/weight/RPE, 55 sessions Mar 1 – Jul 20 2026; re-export periodically to refresh).
+**Data sources:** Garmin (via MCP — cardio, HR, sleep, VO₂max, training status) + `training/hevy-export.csv` (manual Hevy export — every lifting set/rep/weight/RPE, **61 lifting sessions Mar 1 – Aug 27 2026**, 105 exercises, ~445 t cumulative tonnage; re-export periodically to refresh). Re-run `python3 training/build_lifting.py` after each fresh export to regenerate `training/lifting.json`, which drives the **Lifting dashboard page** (`lifting.html`).
 
 ---
 
@@ -26,7 +26,7 @@
 ## Athletic Background
 
 - **Swimming — strongest discipline.** State-level background. Technique is *not* a bottleneck; the 1.9 km Goa 70.3 swim is not a limiter. Swim work in the current block is aerobic conditioning/maintenance, not skill acquisition.
-- **Strength — well-developed.** Bench 1RM tested at **85 kg**, projected ~93 kg from volume; targeting a real **100 kg** 1RM (~Feb 2027). Trains as a genuine hybrid athlete.
+- **Strength — well-developed.** Bench 1RM tested at **85 kg**; best barbell-bench e1RM **~93 kg** (touched Mar, Jun 30, Jul 27). Targeting a real **100 kg** 1RM (~Feb 2027). **Honest read of the Hevy data (Mar–Aug):** bench e1RM has *oscillated 84–93 kg for 6 months — a maintenance plateau, not progression*, which is expected given the cut + climbing run/swim volume. Working sets have drifted from 80×3 (Jul) to 70–75×6 (Aug) as bodyweight fell ~82→79.5. The 100 kg goal needs barbell-bench intensity/frequency *protected* through the cut, or it slips. Meanwhile the **posterior chain is genuinely progressing** (single-leg RDL and loaded calf work climbing hard through Aug) — directly useful for running durability. Trains as a genuine hybrid athlete; split consolidated to **Posterior / Anterior / Upper** from ~Aug 18.
 - **Running — the developing discipline.** Good raw engine and top-end speed (see physiology), but **aerobic base and running economy are the weak points** — carries lifting mass (80–81 kg) that taxes economy, and historically runs easy efforts too hard. This is the main growth area of the current block.
 
 ## Goals — repriotised 2026-08-09 (Procam Slam cancelled)

@@ -483,6 +483,7 @@
     var items = [
       { id: "dashboard", label: "Dashboard", href: "index.html" },
       { id: "plan", label: "Plan", href: "plan.html" },
+      { id: "lifting", label: "Lifting", href: "lifting.html" },
       { id: "log", label: "Log", href: "log.html" },
       { id: "plan5k", label: "5K Draft", href: "plan-5k.html", alt: true }
     ];
@@ -624,6 +625,254 @@
   }
 
   /* ============================================================
+     Lifting dashboard (reads training/lifting.json)
+     ============================================================ */
+  var GROUP_META = {
+    chest:     { label: "Chest",     color: "#f0785f" },
+    back:      { label: "Back",      color: "#22d3ee" },
+    shoulders: { label: "Shoulders", color: "#fbbf24" },
+    biceps:    { label: "Biceps",    color: "#a78bfa" },
+    triceps:   { label: "Triceps",   color: "#f472b6" },
+    quads:     { label: "Quads",     color: "#4ade80" },
+    posterior: { label: "Posterior", color: "#34d399" },
+    calves:    { label: "Calves",    color: "#818cf8" },
+    tibialis:  { label: "Tibialis",  color: "#60a5fa" },
+    core:      { label: "Core",      color: "#facc15" },
+    other:     { label: "Other",     color: "#64748b" }
+  };
+  var KEY_LIFT_COLORS = {
+    "Bench Press (Barbell)": "#f0785f",
+    "Bent Over Row (Barbell)": "#22d3ee",
+    "Overhead Press (Barbell)": "#fbbf24",
+    "Push Press": "#a78bfa",
+    "Single Leg Romanian Deadlift (Dumbbell)": "#4ade80",
+    "Pull Up (Weighted)": "#f472b6"
+  };
+  function shortLift(n) {
+    return n.replace(" (Barbell)", "").replace(" (Dumbbell)", " (DB)")
+            .replace("Single Leg Romanian Deadlift", "SL-RDL")
+            .replace("Overhead Press", "OHP").replace("Bent Over Row", "BB Row");
+  }
+  function statChips(pairs) {
+    var chips = el("div", { class: "log-stats", style: "margin:0 0 1.1rem" });
+    pairs.forEach(function(p) {
+      chips.appendChild(el("div", { class: "st", html: "<span>" + p[0] + "</span><b>" + p[1] + "</b>" }));
+    });
+    return chips;
+  }
+
+  function renderLiftHeader(L) {
+    var m = L.meta;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Lifting — " + m.first_session.slice(0, 7) + " → " + m.last_session.slice(0, 7)));
+    var months = Math.max(1, m.span_days / 30.4);
+    sec.appendChild(statChips([
+      ["Sessions", String(m.session_count)],
+      ["Total tonnage", (m.total_tonnage / 1000).toFixed(0) + " t"],
+      ["Exercises", String(m.unique_exercises)],
+      ["Span", (m.span_days / 7).toFixed(0) + " wk"],
+      ["Freq", (m.session_count / (m.span_days / 7)).toFixed(1) + " /wk"],
+      ["Avg session", (m.total_tonnage / m.session_count / 1000).toFixed(1) + " t"]
+    ]));
+    return sec;
+  }
+
+  function renderBenchGoal(L, plan) {
+    var traj = L.trajectories["Bench Press (Barbell)"];
+    if (!traj || !traj.length) return null;
+    var cur = traj[traj.length - 1].e1rm;
+    var best = traj.reduce(function(a, p) { return Math.max(a, p.e1rm); }, 0);
+    var goal = 100;
+    var pct = Math.max(4, Math.min(100, (cur / goal) * 100));
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Bench → 100 kg"));
+    var card = el("div", { class: "chart-card" });
+    card.appendChild(el("div", { class: "goalrow" }, [
+      el("div", {}, [
+        el("div", { class: "goalnum", html: cur + '<span class="u"> kg e1RM</span>' }),
+        el("div", { class: "goalsub", text: "current (best " + best + ") · goal " + goal + " · gap " + (goal - cur).toFixed(1) })
+      ])
+    ]));
+    var bar = el("div", { class: "goalbar" });
+    bar.appendChild(el("span", { style: "width:" + pct + "%" }));
+    bar.appendChild(el("i", { class: "goalmark", style: "left:" + (best / goal * 100) + "%", title: "best " + best }));
+    card.appendChild(bar);
+    card.appendChild(el("div", { class: "css-box", html: "e1RM has oscillated <b>84–93 kg since March</b> — a maintenance plateau, not progression, expected through a cut (bodyweight ~82→79.5). To reach 100, barbell-bench intensity must be protected as bodyweight falls." }));
+    sec.appendChild(card);
+    return sec;
+  }
+
+  function renderTrajectories(L) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Strength Trajectories — est. 1RM (Epley)"));
+    var card = el("div", { class: "chart-card" });
+    var legend = el("div", { class: "chartlegend" });
+    Object.keys(L.trajectories).forEach(function(lift) {
+      var c = KEY_LIFT_COLORS[lift] || "#8ba3b8";
+      legend.appendChild(el("span", { class: "cl" }, [
+        el("i", { style: "background:" + c }), shortLift(lift)
+      ]));
+    });
+    card.appendChild(legend);
+    card.appendChild(el("canvas", { id: "trajChart" }));
+    card.appendChild(el("div", { class: "css-box", html: "Est. 1RM from top set each session (weight × [1 + reps/30]). Watch the <b>slope</b>, not day-to-day noise — the posterior-chain lines climb, bench is flat." }));
+    sec.appendChild(card);
+    return sec;
+  }
+
+  function renderVolumeByPart(L) {
+    var totals = {};
+    L.weekly_volume.forEach(function(w) {
+      Object.keys(w.groups).forEach(function(g) { totals[g] = (totals[g] || 0) + w.groups[g]; });
+    });
+    var order = Object.keys(totals).sort(function(a, b) { return totals[b] - totals[a]; });
+    var grand = order.reduce(function(a, g) { return a + totals[g]; }, 0) || 1;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Volume by Body Part — 6-month share"));
+
+    var bars = el("div", { class: "partbars" });
+    order.forEach(function(g) {
+      var meta = GROUP_META[g] || { label: g, color: "#64748b" };
+      var pc = totals[g] / grand * 100;
+      var row = el("div", { class: "partrow" });
+      row.appendChild(el("div", { class: "partlabel", text: meta.label }));
+      var track = el("div", { class: "parttrack" });
+      track.appendChild(el("span", { style: "width:" + pc + "%;background:" + meta.color }));
+      row.appendChild(track);
+      row.appendChild(el("div", { class: "partval", text: (totals[g] / 1000).toFixed(1) + "t · " + pc.toFixed(0) + "%" }));
+      bars.appendChild(row);
+    });
+    sec.appendChild(bars);
+
+    var card = el("div", { class: "chart-card", style: "margin-top:1rem" });
+    card.appendChild(el("h3", { text: "Weekly tonnage by body part" }));
+    card.appendChild(el("canvas", { id: "volChart" }));
+    sec.appendChild(card);
+    return sec;
+  }
+
+  function renderExerciseTable(L, limit) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Exercise Log — most trained"));
+    var wrap = el("div", { class: "table-wrap" });
+    var table = el("table");
+    table.appendChild(el("thead", {}, [ el("tr", {}, [
+      el("th", { text: "Exercise" }), el("th", { text: "Group" }), el("th", { text: "Sets" }),
+      el("th", { text: "Best e1RM" }), el("th", { text: "Last top set" }), el("th", { text: "Last done" })
+    ]) ]));
+    var tb = el("tbody");
+    L.exercises.slice(0, limit).forEach(function(e) {
+      var meta = GROUP_META[e.group] || { label: e.group, color: "#64748b" };
+      var top = e.last_top;
+      var topStr = top ? (top.w > 0 ? top.w + "×" + top.reps : "BW×" + top.reps) : "—";
+      var tr = el("tr");
+      tr.appendChild(el("td", {}, [ el("strong", { text: shortLift(e.name) }) ]));
+      tr.appendChild(el("td", {}, [ el("span", { class: "gtag", style: "color:" + meta.color + ";border-color:" + meta.color, text: meta.label }) ]));
+      tr.appendChild(el("td", { text: String(e.sets) }));
+      tr.appendChild(el("td", { text: e.best_e1rm > 0 ? e.best_e1rm + " kg" : "—" }));
+      tr.appendChild(el("td", { text: topStr }));
+      tr.appendChild(el("td", { text: fmtShort(e.last) }));
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    wrap.appendChild(table);
+    sec.appendChild(wrap);
+    if (L.exercises.length > limit) sec.appendChild(el("div", { class: "mn", style: "margin-top:0.6rem", text: "+ " + (L.exercises.length - limit) + " more exercises in the full log." }));
+    return sec;
+  }
+
+  function renderHybridInsights(L, plan) {
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Hybrid Read — lifting × triathlon"));
+    var pts = [
+      "<b>Posterior chain is the win.</b> Single-leg RDL and loaded calf work have climbed hard since early Aug — the exact tissue (hamstrings, glutes, calves/Achilles) that builds running durability and protects the shins. Lifting is actively feeding the run, not competing with it.",
+      "<b>Bench is holding, not building.</b> e1RM flat at 84–93 kg for 6 months. That's the correct trade during a cut + rising endurance volume — but the 100 kg goal (~Feb 2027) needs barbell-bench intensity protected. Don't let it become all machine incline press.",
+      "<b>Volume is back/shoulder heavy by design.</b> Pressing + arms are protected while standalone back stays leaner than it looks, because swimming (2×/wk) already floods lats/rear-delt. The body-part shares reflect that intentional lopsidedness.",
+      "<b>Watch the collision points.</b> Heavy posterior-chain days (SL-RDL, calves) share tissue with running. Keep the Thursday Posterior lift off-max in the 48 h before the Sunday long run, and never stack a hard leg day into a quality run day.",
+      "<b>Frequency is realistic.</b> ~2.4 lifting sessions/week through a demanding run block — sustainable hybrid load, not overreaching. The cut is being paid for out of bench numbers, which is the right muscle to sacrifice temporarily."
+    ];
+    var ul = el("ul", { class: "log-insight", style: "--sport:var(--strength)" });
+    pts.forEach(function(p) { ul.appendChild(el("li", { html: p })); });
+    var card = el("div", { class: "chart-card" });
+    card.appendChild(ul);
+    sec.appendChild(card);
+    return sec;
+  }
+
+  function drawLiftingCharts(L) {
+    if (typeof Chart === "undefined") return;
+    var muted = "#8ba3b8", grid = "rgba(138,163,184,0.12)";
+
+    // strength trajectories (multi-line, time x-axis)
+    var tctx = document.getElementById("trajChart");
+    if (tctx) {
+      var datasets = Object.keys(L.trajectories).map(function(lift) {
+        var c = KEY_LIFT_COLORS[lift] || "#8ba3b8";
+        return {
+          label: shortLift(lift), borderColor: c, backgroundColor: c,
+          data: L.trajectories[lift].map(function(p) { return { x: new Date(p.date).getTime(), y: p.e1rm }; }),
+          tension: 0.25, pointRadius: 2, borderWidth: 2, fill: false, spanGaps: true
+        };
+      });
+      new Chart(tctx, {
+        type: "line", data: { datasets: datasets },
+        options: { responsive: true, interaction: { mode: "nearest", intersect: false },
+          plugins: { legend: { display: false },
+            tooltip: { callbacks: {
+              title: function(i) { return new Date(i[0].parsed.x).toLocaleDateString("en-IN", { month: "short", day: "numeric" }); },
+              label: function(c) { return c.dataset.label + ": " + c.parsed.y + " kg"; } } } },
+          scales: {
+            x: { type: "linear", ticks: { color: muted, font: { size: 10 }, maxRotation: 0, autoSkipPadding: 20,
+              callback: function(v) { return new Date(v).toLocaleDateString("en-IN", { month: "short" }); } }, grid: { display: false } },
+            y: { ticks: { color: muted }, grid: { color: grid }, title: { display: true, text: "kg (e1RM)", color: muted } } } }
+      });
+    }
+
+    // weekly volume stacked bar by body part
+    var vctx = document.getElementById("volChart");
+    if (vctx) {
+      var weeks = L.weekly_volume.map(function(w) { return w.week; });
+      var groups = {};
+      L.weekly_volume.forEach(function(w) { Object.keys(w.groups).forEach(function(g) { groups[g] = 1; }); });
+      var gkeys = Object.keys(GROUP_META).filter(function(g) { return groups[g]; });
+      var ds = gkeys.map(function(g) {
+        return {
+          label: GROUP_META[g].label, backgroundColor: GROUP_META[g].color,
+          data: L.weekly_volume.map(function(w) { return Math.round((w.groups[g] || 0) / 1000 * 10) / 10; }),
+          stack: "v", borderWidth: 0
+        };
+      });
+      new Chart(vctx, {
+        type: "bar",
+        data: { labels: weeks.map(function(w) { return new Date(w).toLocaleDateString("en-IN", { month: "short", day: "numeric" }); }), datasets: ds },
+        options: { responsive: true, plugins: { legend: { display: false },
+            tooltip: { callbacks: { label: function(c) { return c.dataset.label + ": " + c.parsed.y + " t"; } } } },
+          scales: {
+            x: { stacked: true, ticks: { color: muted, font: { size: 9 }, maxRotation: 45, autoSkip: true, autoSkipPadding: 6 }, grid: { display: false } },
+            y: { stacked: true, ticks: { color: muted }, grid: { color: grid }, title: { display: true, text: "tonnage (t)", color: muted } } } }
+      });
+    }
+  }
+
+  function mountLifting(plan) {
+    var app = document.getElementById("app");
+    fetch(appUrl("training/lifting.json")).then(function(r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }).then(function(L) {
+      app.appendChild(renderLiftHeader(L));
+      var bg = renderBenchGoal(L, plan); if (bg) app.appendChild(bg);
+      app.appendChild(renderTrajectories(L));
+      app.appendChild(renderVolumeByPart(L));
+      app.appendChild(renderHybridInsights(L, plan));
+      app.appendChild(renderExerciseTable(L, 30));
+      drawLiftingCharts(L);
+    }).catch(function(err) {
+      app.appendChild(el("div", { class: "err", text: "Could not load training/lifting.json — " + (err && err.message ? err.message : err) + ". Run: python3 training/build_lifting.py" }));
+    });
+  }
+
+  /* ============================================================
      Page mount
      ============================================================ */
   var PAGE = window.IRONMAN_PAGE || "dashboard";
@@ -649,6 +898,10 @@
       app.appendChild(renderSwim(data));
       app.appendChild(renderHrZones(data));
       drawCharts(data, wk);
+      return;
+    }
+    if (PAGE === "lifting") {
+      mountLifting(data);
       return;
     }
     if (PAGE === "log") {

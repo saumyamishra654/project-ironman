@@ -509,6 +509,24 @@
     tb.appendChild(right);
   }
 
+  function renderNotice(data) {
+    var n = data.notice;
+    if (!n) return null;
+    var box = el("div", { class: "notice", style: "--sport:var(--" + (n.sport || "strength") + ")" });
+    box.appendChild(el("div", { class: "notice-h" }, [
+      el("span", { class: "notice-tag", text: n.tag || "ACTION" }),
+      n.when ? el("span", { class: "notice-when", text: n.when }) : null
+    ]));
+    box.appendChild(el("div", { class: "notice-t", text: n.title }));
+    if (n.body) box.appendChild(el("div", { class: "notice-b", html: n.body }));
+    if (n.steps && n.steps.length) {
+      var ul = el("ul", { class: "notice-steps" });
+      n.steps.forEach(function(s) { ul.appendChild(el("li", { html: s })); });
+      box.appendChild(ul);
+    }
+    return box;
+  }
+
   function renderRaceStrip(data) {
     if (!data.races || !data.races.length) return null;
     var sec = el("div", { class: "section", id: "racestrip" });
@@ -935,6 +953,7 @@
     }
     renderWeekNav();
 
+    var nt = renderNotice(data); if (nt) app.appendChild(nt);
     app.appendChild(renderToday(data, wk));
     app.appendChild(renderThisWeek(data, viewWk, wk));
     var rs = renderRaceStrip(data); if (rs) app.appendChild(rs);

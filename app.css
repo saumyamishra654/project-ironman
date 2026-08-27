@@ -261,3 +261,16 @@
 
     .gtag { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; padding: 0.08rem 0.4rem; border: 1px solid; border-radius: 5px; opacity: 0.9; }
     @media (max-width: 560px) { .partrow { grid-template-columns: 4.5rem 1fr 4.5rem; } }
+
+    /* ---- Dashboard notice / action banner ---- */
+    .notice { margin-top: 0.5rem; background: var(--surface); border: 1px solid var(--sport, var(--accent)); border-left: 3px solid var(--sport, var(--accent)); border-radius: 12px; padding: 0.9rem 1.1rem; }
+    .notice-h { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+    .notice-tag { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #04141a; background: var(--sport, var(--accent)); padding: 0.12rem 0.5rem; border-radius: 5px; }
+    .notice-when { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--faint); }
+    .notice-t { font-weight: 700; font-size: 0.98rem; margin: 0.35rem 0 0.2rem; }
+    .notice-b { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .notice-b b { color: var(--text); }
+    .notice-steps { list-style: none; margin-top: 0.5rem; }
+    .notice-steps li { font-size: 0.8rem; color: var(--muted); padding: 0.26rem 0 0.26rem 1.15rem; position: relative; line-height: 1.45; }
+    .notice-steps li::before { content: '▸'; position: absolute; left: 0; color: var(--sport, var(--accent)); }
+    .notice-steps li b { color: var(--text); }

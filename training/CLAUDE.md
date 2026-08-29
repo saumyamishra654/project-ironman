@@ -29,6 +29,16 @@
 - **Strength — well-developed.** Bench 1RM tested at **85 kg**; best barbell-bench e1RM **~93 kg** (touched Mar, Jun 30, Jul 27). Targeting a real **100 kg** 1RM (~Feb 2027). **Honest read of the Hevy data (Mar–Aug):** bench e1RM has *oscillated 84–93 kg for 6 months — a maintenance plateau, not progression*, which is expected given the cut + climbing run/swim volume. Working sets have drifted from 80×3 (Jul) to 70–75×6 (Aug) as bodyweight fell ~82→79.5. The 100 kg goal needs barbell-bench intensity/frequency *protected* through the cut, or it slips. Meanwhile the **posterior chain is genuinely progressing** (single-leg RDL and loaded calf work climbing hard through Aug) — directly useful for running durability. Trains as a genuine hybrid athlete; split consolidated to **Posterior / Anterior / Upper** from ~Aug 18.
 - **Running — the developing discipline.** Good raw engine and top-end speed (see physiology), but **aerobic base and running economy are the weak points** — carries lifting mass (80–81 kg) that taxes economy, and historically runs easy efforts too hard. This is the main growth area of the current block.
 
+### Full running history (recovered Aug 2026 from Huawei + Garmin)
+
+**Started running ~Feb 2026** (Nov '25 / Jan '26 were false starts). ~7-month journey as of Aug 2026, ~350 km total. Pre-Garmin data came from the Huawei Watch GT 5 via Apple Health + per-run screenshots; Garmin from Jul 2026. **Data caveat:** the Apple Health export triple-logged every run (Huawei + Strava + Runna), so raw monthly totals were ~3× inflated — always de-duplicate. Huawei's own monthly cards are authoritative (Mar run = **56.4 km**, not the 154 the raw export implied).
+
+Monthly run volume (km): Feb ~32 → **Mar ~56 (peak, first 10k)** → **Apr 16 (patellar-tendon reset — the "too much too soon" crash)** → May ~30 → Jun ~35 → Jul ~59 → **Aug ~98 (biggest ever, first 17–18k long runs)**. The April collapse was a **patellar tendon problem** (jumper's knee, NOT shins — the shin issue is a separate, later thing managed via the Jul "shin bridge"). Recovering from the patellar tendinopathy is what made him **cadence-conscious** — higher cadence / shorter stride reduces the patellar load, which is why cadence has been a deliberate focus ever since. The summer is the disciplined rebuild.
+
+**KEY FINDING — he ran hot from day one.** HR recovered off 13 pre-Garmin run detail pages shows **every run at avg HR 160–180 regardless of pace** — a 9:28/km shuffle at HR 161, a 7:28/km "easy" run at **HR 180 (threshold)**. There is not one genuinely easy-HR run in the entire Feb–Jun set. So the "runs easy days too hard" flaw is **not new** (not just the Jul 19 Z4 blow-up) — it is how he has *always* run, dating to his first runs. Pacing discipline, not the engine, was always the limiter. The Garmin-era HR-capped long runs (153–156 avg) are the correction, and it's genuinely new behaviour.
+
+**Efficiency arc (pace at matched ~166 HR):** March ~7:20–7:30/km → Aug 23 **7:05/km @ 166** (faster at same HR) and Aug 16 7:50/km @ **156** (~12 bpm lower at same pace). Real aerobic-efficiency gain *and* new discipline, both. Huawei VO₂max sat flat at **35–37 all spring** while running hard, then climbed 39 → 44 (Garmin) once training got disciplined — the plateau→climb visible across two watch algorithms. Full detail in `plan-him.json` `pre_garmin_runs` / `efficiency` (rendered as the dashboard "Running Journey" section + pace-at-HR scatter).
+
 ## Goals — repriotised 2026-08-09 (Procam Slam cancelled)
 
 > **PLAN PIVOT (2026-08-09):** The **Procam Slam is cancelled** — Delhi HM (Oct 18), Kolkata 25k, Mumbai Marathon, and TCS 10k are no longer the training spine. The plan now prepares **directly for the Goa 70.3 half-ironman** (A-race, ~Nov 2027). Road HMs/10ks may be sprinkled in as tune-ups on the way. **No running past 21 km for the foreseeable future** unless a marathon is later chosen — HM is the long-run cap. (Open, deferred idea: race HMs repeatedly to get very good at them as the run leg matures toward the HIM.)
@@ -144,7 +154,8 @@ The long-deferred calibration 5K time trial is scheduled for **2026-07-28** (eve
 
 ## Injury History
 
-- **Shin (2026):** flagged mid-block; managed with a symptom-gated "shin bridge." **Cleared Jul 2026** — no longer symptom-gating. Associated finding: engaging the **left glute** improved foot feel mid-run (weak-left-hip / pelvic-drop pattern) — worth maintaining hip/glute work.
+- **Patellar tendon (Apr 2026):** jumper's knee, triggered by the too-fast Feb→Mar volume ramp (32 → 56 km, jumping to 10k long runs). Caused the April volume collapse (56 → 16 km). **This is what made him cadence-conscious** — quicker turnover / shorter stride cuts the patellar load, so cadence has been a deliberate focus since. Distinct from the shin issue below.
+- **Shin (2026):** flagged mid-block (later than the patellar issue); managed with a symptom-gated "shin bridge." **Cleared Jul 2026** — no longer symptom-gating. Associated finding: engaging the **left glute** improved foot feel mid-run (weak-left-hip / pelvic-drop pattern) — worth maintaining hip/glute work.
 
 ## Nutrition (summary — see `context.md` for detail)
 

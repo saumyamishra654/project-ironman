@@ -1655,7 +1655,7 @@
         "m": "Apr",
         "km": 16.3,
         "longest": 9.6,
-        "flag": "shin reset"
+        "flag": "patellar tendon"
       },
       {
         "m": "May",
@@ -1679,6 +1679,275 @@
         "km": 98.1,
         "longest": 18.0,
         "flag": "biggest ever"
+      }
+    ]
+  },
+  "pre_garmin_runs": [
+    {
+      "date": "2026-02-28",
+      "km": 7.1,
+      "pace": "7:37",
+      "hr": 164,
+      "max": 191,
+      "cad": 140,
+      "gct": 330,
+      "vo2": 35,
+      "note": "first real ~7k — baseline"
+    },
+    {
+      "date": "2026-03-12",
+      "km": 7.7,
+      "pace": "8:05",
+      "hr": 169,
+      "max": 192,
+      "cad": 142,
+      "gct": 329,
+      "vo2": 35,
+      "note": ""
+    },
+    {
+      "date": "2026-03-21",
+      "km": 10.1,
+      "pace": "7:29",
+      "hr": 167,
+      "max": 186,
+      "cad": 147,
+      "gct": 326,
+      "vo2": 36,
+      "note": "first-ever 10k"
+    },
+    {
+      "date": "2026-03-23",
+      "km": 7.1,
+      "pace": "7:57",
+      "hr": 161,
+      "max": 175,
+      "cad": 144,
+      "gct": 332,
+      "vo2": 36,
+      "note": ""
+    },
+    {
+      "date": "2026-03-25",
+      "km": 9.1,
+      "pace": "7:21",
+      "hr": 165,
+      "max": 187,
+      "cad": 142,
+      "gct": 310,
+      "vo2": 36,
+      "note": ""
+    },
+    {
+      "date": "2026-03-29",
+      "km": 9.9,
+      "pace": "6:51",
+      "hr": 173,
+      "max": 194,
+      "cad": 150,
+      "gct": 312,
+      "vo2": 37,
+      "note": "fastest longish run — but HR 173 = hard, near threshold"
+    },
+    {
+      "date": "2026-04-17",
+      "km": 9.6,
+      "pace": "7:54",
+      "hr": 172,
+      "max": 198,
+      "cad": 135,
+      "gct": 313,
+      "vo2": 37,
+      "note": "patellar-tendon month — high HR, laboring"
+    },
+    {
+      "date": "2026-05-08",
+      "km": 5.9,
+      "pace": "9:28",
+      "hr": 161,
+      "max": 181,
+      "cad": 135,
+      "gct": 343,
+      "vo2": 37,
+      "note": "slow shuffle — yet still HR 161"
+    },
+    {
+      "date": "2026-05-27",
+      "km": 7.4,
+      "pace": "7:28",
+      "hr": 180,
+      "max": 194,
+      "cad": 151,
+      "gct": 323,
+      "vo2": 35,
+      "note": "HR 180 (threshold) for an easy run"
+    },
+    {
+      "date": "2026-05-31",
+      "km": 5.0,
+      "pace": "7:28",
+      "hr": 169,
+      "max": 189,
+      "cad": 143,
+      "gct": 319,
+      "vo2": 35,
+      "note": ""
+    },
+    {
+      "date": "2026-06-05",
+      "km": 7.9,
+      "pace": "8:59",
+      "hr": 165,
+      "max": 187,
+      "cad": 143,
+      "gct": 342,
+      "vo2": 35,
+      "note": "slow + hot HR"
+    },
+    {
+      "date": "2026-06-15",
+      "km": 2.0,
+      "pace": "6:44",
+      "hr": 161,
+      "max": 180,
+      "cad": 145,
+      "gct": 315,
+      "vo2": 35,
+      "note": "short + fast top-end"
+    },
+    {
+      "date": "2026-06-24",
+      "km": 6.2,
+      "pace": "7:39",
+      "hr": 162,
+      "max": 183,
+      "cad": 139,
+      "gct": 327,
+      "vo2": 36,
+      "note": "last run before Garmin"
+    }
+  ],
+  "efficiency": {
+    "note": "Each point = one aerobic run (avg HR vs avg pace). Huawei era (Feb–Jun) in amber, Garmin era (Jul–Aug) in green. The story: pre-Garmin every run sat at HR 160–180 regardless of pace (ran hot from day one); Garmin-era long runs cluster at 153–156 — the discipline shift — AND run faster for a given HR (efficiency).",
+    "points": [
+      {
+        "d": "Feb 28",
+        "hr": 164,
+        "s": 457,
+        "km": 7.1,
+        "era": "huawei"
+      },
+      {
+        "d": "Mar 12",
+        "hr": 169,
+        "s": 485,
+        "km": 7.7,
+        "era": "huawei"
+      },
+      {
+        "d": "Mar 21",
+        "hr": 167,
+        "s": 449,
+        "km": 10.1,
+        "era": "huawei"
+      },
+      {
+        "d": "Mar 23",
+        "hr": 161,
+        "s": 477,
+        "km": 7.1,
+        "era": "huawei"
+      },
+      {
+        "d": "Mar 25",
+        "hr": 165,
+        "s": 441,
+        "km": 9.1,
+        "era": "huawei"
+      },
+      {
+        "d": "Mar 29",
+        "hr": 173,
+        "s": 411,
+        "km": 9.9,
+        "era": "huawei"
+      },
+      {
+        "d": "Apr 17",
+        "hr": 172,
+        "s": 474,
+        "km": 9.6,
+        "era": "huawei"
+      },
+      {
+        "d": "May 8",
+        "hr": 161,
+        "s": 568,
+        "km": 5.9,
+        "era": "huawei"
+      },
+      {
+        "d": "May 27",
+        "hr": 180,
+        "s": 448,
+        "km": 7.4,
+        "era": "huawei"
+      },
+      {
+        "d": "May 31",
+        "hr": 169,
+        "s": 448,
+        "km": 5.0,
+        "era": "huawei"
+      },
+      {
+        "d": "Jun 5",
+        "hr": 165,
+        "s": 539,
+        "km": 7.9,
+        "era": "huawei"
+      },
+      {
+        "d": "Jun 24",
+        "hr": 162,
+        "s": 459,
+        "km": 6.2,
+        "era": "huawei"
+      },
+      {
+        "d": "Jul 19",
+        "hr": 172,
+        "s": 472,
+        "km": 14.6,
+        "era": "garmin"
+      },
+      {
+        "d": "Aug 9",
+        "hr": 161,
+        "s": 478,
+        "km": 15.0,
+        "era": "garmin"
+      },
+      {
+        "d": "Aug 16",
+        "hr": 156,
+        "s": 470,
+        "km": 17.0,
+        "era": "garmin"
+      },
+      {
+        "d": "Aug 23",
+        "hr": 153,
+        "s": 469,
+        "km": 16.0,
+        "era": "garmin"
+      },
+      {
+        "d": "Aug 29",
+        "hr": 156,
+        "s": 504,
+        "km": 18.0,
+        "era": "garmin"
       }
     ]
   }

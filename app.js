@@ -540,8 +540,73 @@
     card.appendChild(el("h3", { html: '<span class="swatch" style="width:9px;height:9px;border-radius:3px;background:var(--run);display:inline-block"></span> Monthly run volume (km) · line = longest run' }));
     card.appendChild(el("canvas", { id: "runHistChart" }));
     sec.appendChild(card);
-    sec.appendChild(el("div", { class: "callout", html: "<b>The arc:</b> Feb start → ~56 km March peak (first 10k) → <b>April shin reset</b> (16 km, the too-much-too-soon lesson) → disciplined rebuild → biggest-ever August (98 km, first 17–18k long runs). HR/efficiency data exists from the Garmin era (Jul+) only; pre-Garmin is volume-only." }));
+    sec.appendChild(el("div", { class: "callout", html: "<b>The arc:</b> Feb start → ~56 km March peak (first 10k) → <b>April patellar-tendon reset</b> (16 km, the too-much-too-soon lesson — sparked the cadence focus) → disciplined rebuild → biggest-ever August (98 km, first 17–18k long runs)." }));
+
+    // efficiency scatter
+    if (data.efficiency && data.efficiency.points) {
+      var effCard = el("div", { class: "chart-card", style: "margin-top:1rem" });
+      effCard.appendChild(el("h3", { html: '<span class="cl" style="display:inline-flex;gap:0.5rem"><i style="width:9px;height:9px;border-radius:2px;background:#fbbf24;display:inline-block"></i>Huawei (Feb–Jun) &nbsp;<i style="width:9px;height:9px;border-radius:2px;background:#4ade80;display:inline-block"></i>Garmin (Jul–Aug)</span>' }));
+      effCard.appendChild(el("canvas", { id: "effChart" }));
+      effCard.appendChild(el("div", { class: "css-box", html: "<b>How to read it:</b> each dot is a run — avg HR (x) vs pace (y, faster = higher). Pre-Garmin dots all sit right of HR 160 (<b>ran hot from day one</b>, regardless of pace). Garmin long runs cluster left at 153–156 — the discipline shift — and faster for a given HR." }));
+      sec.appendChild(effCard);
+    }
+
+    // detailed pre-Garmin run table
+    if (data.pre_garmin_runs && data.pre_garmin_runs.length) {
+      var det = el("details", { class: "log", style: "--sport:var(--run);margin-top:1rem" });
+      det.appendChild(el("summary", {}, [
+        el("span", { class: "ld", text: "Feb–Jun" }),
+        el("div", { class: "lt", html: "Pre-Garmin runs — HR-backed detail<small>" + data.pre_garmin_runs.length + " runs recovered from Huawei</small>" }),
+        el("span", { class: "chev", text: "▸" })
+      ]));
+      var body = el("div", { class: "log-body" });
+      var wrap = el("div", { class: "table-wrap" });
+      var table = el("table");
+      table.appendChild(el("thead", {}, [ el("tr", {}, [
+        el("th", { text: "Date" }), el("th", { text: "km" }), el("th", { text: "Pace" }),
+        el("th", { text: "Avg HR" }), el("th", { text: "Max" }), el("th", { text: "Cad" }), el("th", { text: "Note" })
+      ]) ]));
+      var tb = el("tbody");
+      data.pre_garmin_runs.forEach(function(r) {
+        var tr = el("tr");
+        tr.appendChild(el("td", {}, [ el("strong", { text: fmtShort(r.date) }) ]));
+        tr.appendChild(el("td", { text: r.km.toFixed(1) }));
+        tr.appendChild(el("td", {}, [ el("span", { class: "sp", text: r.pace } ) ]));
+        tr.appendChild(el("td", {}, [ el("strong", { style: r.hr >= 172 ? "color:var(--red)" : "", text: String(r.hr) }) ]));
+        tr.appendChild(el("td", { text: String(r.max) }));
+        tr.appendChild(el("td", { text: String(r.cad) }));
+        tr.appendChild(el("td", { text: r.note || "" }));
+        tb.appendChild(tr);
+      });
+      table.appendChild(tb); wrap.appendChild(table); body.appendChild(wrap);
+      det.appendChild(body);
+      sec.appendChild(det);
+    }
     return sec;
+  }
+  function drawEfficiencyChart(data) {
+    if (typeof Chart === "undefined" || !data.efficiency) return;
+    var elC = document.getElementById("effChart");
+    if (!elC) return;
+    var muted = "#8ba3b8", grid = "rgba(138,163,184,0.12)";
+    function fmtPace(s) { var m = Math.floor(s / 60); var ss = Math.round(s % 60); return m + ":" + (ss < 10 ? "0" : "") + ss; }
+    var hua = data.efficiency.points.filter(function(p) { return p.era === "huawei"; });
+    var gar = data.efficiency.points.filter(function(p) { return p.era === "garmin"; });
+    function ds(pts) { return pts.map(function(p) { return { x: p.hr, y: p.s, d: p.d, km: p.km }; }); }
+    new Chart(elC, {
+      type: "scatter",
+      data: { datasets: [
+        { label: "Huawei", data: ds(hua), backgroundColor: "#fbbf24", pointRadius: 5 },
+        { label: "Garmin", data: ds(gar), backgroundColor: "#4ade80", pointRadius: 6 }
+      ] },
+      options: { responsive: true,
+        plugins: { legend: { display: false },
+          tooltip: { callbacks: { label: function(c) { return c.raw.d + ": " + fmtPace(c.raw.y) + "/km @ " + c.raw.x + " bpm (" + c.raw.km + "k)"; } } } },
+        scales: {
+          x: { title: { display: true, text: "avg HR (bpm)", color: muted }, ticks: { color: muted }, grid: { color: grid } },
+          y: { reverse: true, title: { display: true, text: "pace /km (faster ↑)", color: muted },
+            ticks: { color: muted, callback: function(v) { return fmtPace(v); } }, grid: { color: grid } } } }
+    });
   }
   function drawRunHistChart(data) {
     if (typeof Chart === "undefined" || !data.running_history) return;
@@ -550,7 +615,7 @@
     var muted = "#8ba3b8", grid = "rgba(138,163,184,0.12)";
     var m = data.running_history.monthly;
     var colors = m.map(function(x) {
-      if (x.flag === "shin reset") return "rgba(240,120,95,0.85)";
+      if (x.flag === "patellar tendon") return "rgba(240,120,95,0.85)";
       if (x.flag === "Garmin era" || x.flag === "biggest ever") return "rgba(74,222,128,0.9)";
       return "rgba(74,222,128,0.45)";
     });
@@ -1047,6 +1112,7 @@
     var recent = renderRecentSessions(data, 3); if (recent) app.appendChild(recent);
     drawWeightChart(data);
     drawRunHistChart(data);
+    drawEfficiencyChart(data);
 
     var tBtn = document.getElementById("todayBtn");
     if (tBtn) tBtn.onclick = function() {

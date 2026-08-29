@@ -618,6 +618,47 @@
   ],
   "sessions": [
     {
+      "date": "2026-08-29",
+      "sport": "run",
+      "week": 3,
+      "title": "Long run 18k — two-block, humid rain, strong negative split",
+      "verdict": "18k clean aerobic (TE 3.6, Z5 zero) in oppressive rain; HR ran hot for pace (weather), then negative-split into a good-feeling steady 6k.",
+      "stats": [
+        {
+          "l": "Distance",
+          "v": "18.0 km"
+        },
+        {
+          "l": "Time",
+          "v": "2:31 (2:29 mov)"
+        },
+        {
+          "l": "Avg HR",
+          "v": "156 (max 176)"
+        },
+        {
+          "l": "Block 1 (10k)",
+          "v": "~8:36 @ 153"
+        },
+        {
+          "l": "Block 2 (6k)",
+          "v": "~7:37 @ 168"
+        },
+        {
+          "l": "TE",
+          "v": "3.6 aerobic"
+        }
+      ],
+      "headline": "18k banked in genuinely bad air — 26C, dew point 20, light rain. HR ran hot at slow paces for the first 10k (the humidity tax, self-diagnosed), then he found rhythm and negative-split the steady 6k at 7:37 @ 168 with cadence jumping to 153. Fully aerobic (Z5 zero, anaerobic TE 0.0), HR-disciplined, and a strong-feeling finish. Slower than a cool day, but that's the weather, not fitness.",
+      "insight": [
+        "Block 1 (easy 10k): ~8:36/km moving @ HR 153 — high HR for that slow a pace, the fingerprint of 26C + dew point 20 + rain (saturated air, no evaporative cooling). ~2.27 km of walk-breaks to hold the cap, all in this half.",
+        "Block 2 (steady 6k): ~7:37/km @ HR 168 under the 172 cap, cadence up to 153 — a clean ~1 min/km negative split. This is the half that 'felt good,' and the data agrees.",
+        "Humidity tax quantified: block 2 today 7:37 @ 168 vs Aug 23 block 2 7:05 @ 166 — same effort, ~30 s/km slower purely from conditions. Don't read the slower pace as lost fitness.",
+        "Fully aerobic quality: TE 3.6 'TEMPO', anaerobic 0.0, Z5 time zero, load 135, Body Battery only −12. Comp surges dropped for the healing knee; the ≤172 steady finish kept the stimulus without high-force turnover.",
+        "Ongoing limiter: ~2.27 km walking again shows easy running still pushes HR to the cap in heat — aerobic base is still the thing being built. On track."
+      ]
+    },
+    {
       "date": "2026-08-26",
       "sport": "run",
       "week": 3,

@@ -275,6 +275,17 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Action taken:** Anterior is now the bench day — heavy comp-style main + **paused-bench accessory** (swapped in for the pec-deck fly). A weekly bench progression (double-progression, e1RM target 87→96 across the block) added to plan-him.json + Plan-page dashboard. Aimless lifting → targets every session.
 - **Verdict:** textbook diagnostic. Athlete self-called the weak link; the numbers confirmed it cleanly. Now has a structure and targets.
 
+**Aug 29 (Sat) — Run — long run 18k, two-block (easy 10k → steady 6k ≤172) [DONE]**
+- 18.01 km, **2:31:05 elapsed (2:29 moving)**, avg pace ~8:24/km, avg HR 156, max 176, min 111, 1375 kcal. Evening start 16:44, in **light rain, 26.1°C, dew point 20, 69% RH** (oppressive saturated air). Elev +85/−66.
+- **Block execution (moving pace):**
+  - Warmup km1–2: ~8:40/km, HR 138.
+  - **Block 1 easy 10k: ~8:36/km moving @ avg HR 153, cadence ~140.** HR ran hot for the pace — running 8:30–9:00/km at 150–155. Heavy walk-breaking (~2.27 km walked, 76 micro-breaks, all in block 1) to hold the cap.
+  - **Block 2 steady 6k: ~7:37/km @ avg HR 168 (cap 172), cadence jumped to 153.** Clean ~1 min/km negative split; a couple brief max pokes to 176 but avg held ~168.
+- **HR-for-pace tax = weather, not fitness.** 26°C + dew point 20 + light rain = saturated air, no evaporative cooling; body spent extra cardiac output on thermoregulation, so HR sat high at slow paces. Athlete self-diagnosed the humidity cause mid-run. Context: block 2 today 7:37 @ 168 vs Aug 23 block 2 **7:05 @ 166** — same effort, ~30 s/km slower purely from the conditions.
+- **Metrics:** TE **3.6 aerobic ("TEMPO"), anaerobic 0.0**, load 135, Body Battery −12. HR zones: Z3 87 min / Z4 46 min / **Z5 0** — fully aerobic, uncontaminated. Cadence lifted 135→153 into block 2 (rhythm found); GCT 307 ms, vertical ratio ~9.6, power 223/NP 238.
+- **Flags:** ~2.27 km walking again — easy running still drives HR up in the heat, so the aerobic-base limiter persists (expected, on track). Comp surges were deliberately dropped (knee scrape from the Aug 26 fall); the ≤172 steady finish kept it aerobic without high-force turnover.
+- **Verdict:** strong close to Week 3. Banked 18k of clean aerobic work in bad air, held HR discipline, and negative-split into a good-feeling steady finish with sharp cadence. Slower paces are the humidity tax, not regression.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

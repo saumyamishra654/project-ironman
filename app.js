@@ -524,6 +524,53 @@
     }
     return box;
   }
+  function renderRunningHistory(data) {
+    var rh = data.running_history;
+    if (!rh || !rh.monthly || !rh.monthly.length) return null;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2("Running Journey — 7-month volume"));
+    var mx = rh.monthly.reduce(function(a, m) { return Math.max(a, m.km); }, 0);
+    var chips = el("div", { class: "log-stats", style: "margin:0 0 1rem" });
+    var totalKm = rh.monthly.reduce(function(a, m) { return a + m.km; }, 0);
+    [["Started", "Feb '26"], ["Total run", Math.round(totalKm) + " km"], ["Peak month", "Aug · 98 km"], ["Longest", "18.0 km"]].forEach(function(p) {
+      chips.appendChild(el("div", { class: "st", html: "<span>" + p[0] + "</span><b>" + p[1] + "</b>" }));
+    });
+    sec.appendChild(chips);
+    var card = el("div", { class: "chart-card" });
+    card.appendChild(el("h3", { html: '<span class="swatch" style="width:9px;height:9px;border-radius:3px;background:var(--run);display:inline-block"></span> Monthly run volume (km) · line = longest run' }));
+    card.appendChild(el("canvas", { id: "runHistChart" }));
+    sec.appendChild(card);
+    sec.appendChild(el("div", { class: "callout", html: "<b>The arc:</b> Feb start → ~56 km March peak (first 10k) → <b>April shin reset</b> (16 km, the too-much-too-soon lesson) → disciplined rebuild → biggest-ever August (98 km, first 17–18k long runs). HR/efficiency data exists from the Garmin era (Jul+) only; pre-Garmin is volume-only." }));
+    return sec;
+  }
+  function drawRunHistChart(data) {
+    if (typeof Chart === "undefined" || !data.running_history) return;
+    var el0 = document.getElementById("runHistChart");
+    if (!el0) return;
+    var muted = "#8ba3b8", grid = "rgba(138,163,184,0.12)";
+    var m = data.running_history.monthly;
+    var colors = m.map(function(x) {
+      if (x.flag === "shin reset") return "rgba(240,120,95,0.85)";
+      if (x.flag === "Garmin era" || x.flag === "biggest ever") return "rgba(74,222,128,0.9)";
+      return "rgba(74,222,128,0.45)";
+    });
+    new Chart(el0, {
+      data: {
+        labels: m.map(function(x) { return x.m; }),
+        datasets: [
+          { type: "bar", label: "Run km", data: m.map(function(x) { return x.km; }), backgroundColor: colors, borderRadius: 4, order: 2, yAxisID: "y" },
+          { type: "line", label: "Longest run", data: m.map(function(x) { return x.longest; }), borderColor: "#fbbf24", backgroundColor: "#fbbf24", borderWidth: 2, tension: 0.3, pointRadius: 3, order: 1, yAxisID: "y1" }
+        ]
+      },
+      options: { responsive: true, plugins: { legend: { display: false },
+          tooltip: { callbacks: { label: function(c) { return c.dataset.label + ": " + c.parsed.y + (c.dataset.label === "Run km" ? " km" : " km longest"); } } } },
+        scales: {
+          x: { ticks: { color: muted, font: { size: 10 } }, grid: { display: false } },
+          y: { position: "left", ticks: { color: muted }, grid: { color: grid }, title: { display: true, text: "km / month", color: muted } },
+          y1: { position: "right", ticks: { color: "#fbbf24" }, grid: { display: false }, title: { display: true, text: "longest (km)", color: "#fbbf24" }, suggestedMax: 22 } } }
+    });
+  }
+
   function renderNotice(data) {
     var list = data.notices || (data.notice ? [data.notice] : []);
     if (!list.length) return null;
@@ -996,8 +1043,10 @@
     var rs = renderRaceStrip(data); if (rs) app.appendChild(rs);
     app.appendChild(renderMetricsGrid(data));
     var wtSec = renderWeight(data); if (wtSec) app.appendChild(wtSec);
+    var rhSec = renderRunningHistory(data); if (rhSec) app.appendChild(rhSec);
     var recent = renderRecentSessions(data, 3); if (recent) app.appendChild(recent);
     drawWeightChart(data);
+    drawRunHistChart(data);
 
     var tBtn = document.getElementById("todayBtn");
     if (tBtn) tBtn.onclick = function() {

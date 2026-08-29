@@ -268,6 +268,13 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Genuine VO2 stimulus → new highs.** Reps at HR 180 (=new LTHR) / max 193 drove **VO₂max 43 → 44** (new high), LTHR recalculated 182 → 180, running FTP 326 → 333 W. LT pace now ~5:40/km.
 - **Verdict:** breakthrough-quality speed session. Hit a faster-than-planned target on the number, with strong cadence and mechanics, and shrugged off a fall. The engine is climbing.
 
+**Aug 29 (Sat) — Upper — bench weak-link TEST + lift [DONE]**
+- Bench test to diagnose the plateau. **Feet-up bench, 2-ct pause: 70×4, 65×5, 65×5. Close-grip bench, legs-up 3-ct pause: 60×12, 60×8.** Rest: Smith row 85×10, rev-grip pulldown 75×8, lat raise 35×12,12, cross-body hammer 40×10,9, OH tricep ext 45×10, machine crunch 25×10,8.
+- **Weak link = bottom-end / starting strength. CONFIRMED.** Feet-up (no leg drive) + pause tanked him to **70×4** vs his normal **70×9 touch-and-go** — losing ~5 reps at the same load isolates raw pressing off the chest, stripped of leg drive + stretch reflex. Directly explains the "don't go down all the way when it's heavy" instinct.
+- **Triceps/lockout are NOT the limiter.** Close-grip paused 60×12 (with a 3-ct pause) is strong — if triceps were the gap this collapses. It didn't. Triceps are a strength.
+- **Action taken:** Anterior is now the bench day — heavy comp-style main + **paused-bench accessory** (swapped in for the pec-deck fly). A weekly bench progression (double-progression, e1RM target 87→96 across the block) added to plan-him.json + Plan-page dashboard. Aimless lifting → targets every session.
+- **Verdict:** textbook diagnostic. Athlete self-called the weak link; the numbers confirmed it cleanly. Now has a structure and targets.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

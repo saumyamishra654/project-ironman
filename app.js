@@ -647,6 +647,35 @@
     return sec;
   }
 
+  function renderBenchProgression(data, curWk) {
+    var bp = data.bench_progression;
+    if (!bp || !bp.weeks) return null;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2(bp.title || "Bench Progression"));
+    if (bp.why) sec.appendChild(el("div", { class: "callout", style: "margin-top:0;margin-bottom:0.8rem", html: "<b>Weak link:</b> " + bp.why }));
+    var wrap = el("div", { class: "table-wrap" });
+    var table = el("table");
+    table.appendChild(el("thead", {}, [ el("tr", {}, bp.cols.map(function(c) { return el("th", { text: c }); })) ]));
+    var tb = el("tbody");
+    bp.weeks.forEach(function(w) {
+      var cls = w.deload ? "deload" : (w.wk === curWk ? "current" : (w.wk < curWk ? "past" : ""));
+      var tr = el("tr", cls ? { class: cls } : {});
+      var wkCell = el("td", {}, [ el("strong", { text: "W" + w.wk }) ]);
+      if (w.wk === curWk) wkCell.appendChild(el("span", { class: "badge now", text: "NOW" }));
+      else if (w.deload) wkCell.appendChild(el("span", { class: "badge dl", text: "DL" }));
+      tr.appendChild(wkCell);
+      tr.appendChild(el("td", {}, [ el("strong", { style: "color:var(--strength)", text: w.main }) ]));
+      tr.appendChild(el("td", { text: w.paused }));
+      tr.appendChild(el("td", { text: w.upper }));
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    wrap.appendChild(table);
+    sec.appendChild(wrap);
+    if (bp.how) sec.appendChild(el("div", { class: "callout", html: "<b>How to run it:</b> " + bp.how }));
+    return sec;
+  }
+
   /* ============================================================
      Lifting dashboard (reads training/lifting.json)
      ============================================================ */
@@ -918,6 +947,8 @@
       app.appendChild(renderBlock(data, wk));
       var strSec = renderStrength(data);
       if (strSec) app.appendChild(strSec);
+      var bpSec = renderBenchProgression(data, wk);
+      if (bpSec) app.appendChild(bpSec);
       app.appendChild(renderSwim(data));
       app.appendChild(renderHrZones(data));
       drawCharts(data, wk);

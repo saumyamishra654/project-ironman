@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-27",
+    "updated": "2026-08-29",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -1132,7 +1132,7 @@
   ],
   "strength_split": {
     "framework": "Posterior / Anterior / Upper",
-    "rule": "2 sets per exercise — except barbell bench, which gets 3 on the Anterior day (the lift driving the 100 kg goal).",
+    "rule": "Bench is the priority lift, trained 2x/wk: Anterior = HEAVY (comp-style main + paused-bench accessory for the bottom-end weak link), Upper = VOLUME/rep. 2 sets/exercise except main bench = 3 on Anterior.",
     "note": "Built lopsided on purpose: swimming (2-3x/wk) already floods back, lats and rear delts, so the gym protects pressing and arms. Bench stays actual barbell on both exposures; keep heavy leg work off long-run and hardest-swim days.",
     "volume_note": "Back (~8 gym sets + 2-3 swims) is by far the most-trained region. If shoulders feel stacked, the Upper-day pulldown is the first thing to trim.",
     "days": [
@@ -1179,16 +1179,17 @@
       {
         "name": "Anterior",
         "slot": "Tue",
-        "focus": "chest · delts · biceps · quads · tib · abs",
+        "focus": "BENCH DAY · chest · delts · biceps · quads · tib · abs",
         "lifts": [
           {
             "n": "Barbell Bench Press",
             "s": "3",
-            "tag": "primary — 100 kg driver"
+            "tag": "primary — HEAVY, comp-style (leg drive), full ROM"
           },
           {
-            "n": "Butterfly (Pec Deck)",
-            "s": "2"
+            "n": "Paused Bench Press",
+            "s": "2",
+            "tag": "bottom-end weak link — 2-3s dead stop"
           },
           {
             "n": "Shoulder Press (DB) / Push Press",
@@ -1226,7 +1227,7 @@
         "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
         "lifts": [
           {
-            "n": "Barbell Bench (rep-focused, lighter)",
+            "n": "Barbell Bench (volume/rep, comp-style, full ROM)",
             "s": "2"
           },
           {
@@ -1507,18 +1508,81 @@
       "body": "Protecting the healing knee scrape: <b>Fri Aug 28 recovery 5k</b> and the <b>S3 threshold swim</b> skipped. Everything else this week done. Weekend as planned: <b>18k long run + S2 endurance swim</b>."
     },
     {
-      "tag": "Bench test",
-      "when": "Upper day (~Aug 29)",
+      "tag": "Bench focus",
+      "when": "From Week 4",
       "sport": "strength",
-      "title": "Bench weak-link test — paused vs touch-and-go",
-      "body": "Confirming the bottom-end weakness before we make Anterior a bench-accessory day. Do this on Upper day at a <b>submaximal</b> load — you're measuring the dropoff, not maxing.",
-      "steps": [
-        "<b>Work up to a tough set of 3 touch-and-go</b> (your normal bench) — note the load.",
-        "<b>Then a set of 3 paused</b> — 3s dead stop on the chest, no bounce, full ROM. Same or lighter load.",
-        "<b>Report the dropoff.</b> If paused is >10–15% harder/lighter → bottom-end weakness confirmed → paused bench becomes the accessory.",
-        "<b>Film one heavy set from the side</b> — check you're actually touching chest (the depth-cheating is the tell).",
-        "Every rep touches the chest today, heavy or not. Partial reps don't count."
-      ]
+      "title": "Bench weak link = bottom-end (confirmed). New structure live.",
+      "body": "Test Aug 29: feet-up paused <b>70×4</b> vs <b>70×9</b> touch-and-go = big drop; close-grip paused 60×12 strong → starting strength off the chest is the gap, not triceps. <b>Anterior is now the bench day</b> (heavy comp-style main + paused-bench accessory); Upper stays the volume exposure. Weekly targets on the <b>Plan page → Bench Progression</b>."
     }
-  ]
+  ],
+  "bench_progression": {
+    "title": "Bench Progression — Weekly Targets",
+    "why": "Weak link confirmed Aug 29: bottom-end / starting strength (feet-up paused 70×4 vs 70×9 touch-and-go; close-grip paused 60×12 strong = triceps fine). Fix = paused-bench accessory + a real progression to aim at.",
+    "how": "Double progression. Anterior main bench is comp-style (feet planted, use leg drive), full ROM every rep. Hit the top rep target at a load → add 2.5 kg next session. In a cut: aim high, but if a set stalls, REPEAT the weight next week rather than grind — goal is a heavy signal + steady climb, primed to jump to 100 kg post-cut. e1RM climbs 87→96 across the block.",
+    "cols": [
+      "Wk",
+      "Anterior — main bench (3 sets)",
+      "Paused bench (2 sets)",
+      "Upper — volume bench (2 sets)"
+    ],
+    "weeks": [
+      {
+        "wk": 4,
+        "deload": true,
+        "main": "72.5×4 · 67.5×5,5",
+        "paused": "60×4,4",
+        "upper": "65×6,6"
+      },
+      {
+        "wk": 5,
+        "main": "77.5×4 · 72.5×5,5",
+        "paused": "62.5×4,4",
+        "upper": "70×6,6"
+      },
+      {
+        "wk": 6,
+        "main": "77.5×5 · 72.5×6,6",
+        "paused": "62.5×5,5",
+        "upper": "70×7,7"
+      },
+      {
+        "wk": 7,
+        "main": "80×4 · 75×5,5",
+        "paused": "65×4,4",
+        "upper": "72.5×6,6"
+      },
+      {
+        "wk": 8,
+        "deload": true,
+        "main": "72.5×3 · 65×5,5",
+        "paused": "60×4,4",
+        "upper": "65×6,6"
+      },
+      {
+        "wk": 9,
+        "main": "80×5 · 75×6,6",
+        "paused": "65×5,5",
+        "upper": "72.5×7,7"
+      },
+      {
+        "wk": 10,
+        "main": "82.5×4 · 77.5×5,5",
+        "paused": "67.5×4,4",
+        "upper": "75×6,6"
+      },
+      {
+        "wk": 11,
+        "main": "82.5×5 · 77.5×6,6",
+        "paused": "67.5×5,5",
+        "upper": "75×7,7"
+      },
+      {
+        "wk": 12,
+        "deload": true,
+        "main": "work to heavy 3 @ 85 (e1RM check) · 70×5",
+        "paused": "— (or light)",
+        "upper": "65×6,6"
+      }
+    ]
+  }
 }

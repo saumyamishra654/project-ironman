@@ -749,7 +749,7 @@
     bar.appendChild(el("span", { style: "width:" + pct + "%" }));
     bar.appendChild(el("i", { class: "goalmark", style: "left:" + (best / goal * 100) + "%", title: "best " + best }));
     card.appendChild(bar);
-    card.appendChild(el("div", { class: "css-box", html: "e1RM has oscillated <b>84–93 kg since March</b> — a maintenance plateau, not progression, expected through a cut (bodyweight ~82→79.5). To reach 100, barbell-bench intensity must be protected as bodyweight falls." }));
+    card.appendChild(el("div", { class: "css-box", html: "e1RM oscillated <b>84–93 kg since March</b> — a maintenance plateau through the cut. <b>Weak link (tested Aug 29): bottom-end / starting strength</b> (feet-up paused 70×4 vs 70×9 touch-and-go; close-grip paused 60×12 = triceps fine). Fix: paused-bench accessory + the weekly progression below." }));
     sec.appendChild(card);
     return sec;
   }
@@ -914,6 +914,7 @@
     }).then(function(L) {
       app.appendChild(renderLiftHeader(L));
       var bg = renderBenchGoal(L, plan); if (bg) app.appendChild(bg);
+      var bp = renderBenchProgression(plan, currentBlockWeek(plan)); if (bp) app.appendChild(bp);
       app.appendChild(renderTrajectories(L));
       app.appendChild(renderVolumeByPart(L));
       app.appendChild(renderHybridInsights(L, plan));

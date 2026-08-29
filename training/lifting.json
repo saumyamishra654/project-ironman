@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generated": "2026-08-27",
+  "generated": "2026-08-29",
   "source": "hevy-export.csv",
   "first_session": "2026-03-01",
-  "last_session": "2026-08-27",
-  "span_days": 179,
-  "session_count": 61,
-  "total_tonnage": 444664,
-  "unique_exercises": 105
+  "last_session": "2026-08-29",
+  "span_days": 181,
+  "session_count": 62,
+  "total_tonnage": 452874,
+  "unique_exercises": 108
  },
  "sessions": [
   {
@@ -144,7 +144,7 @@
       {
        "w": 0.0,
        "reps": 10,
-       "rpe": null
+       "rpe": "Upper"
       }
      ]
     }
@@ -8090,6 +8090,147 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-08-29",
+   "title": "Upper",
+   "sets": 17,
+   "tonnage": 8210,
+   "exercises": [
+    {
+     "name": "Feet Up Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 65.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 65.0,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Bent Over Row (Smith Machine)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 70.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 85.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Bench Press - Close Grip (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 60.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 60.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Reverse Grip Lat Pulldown (Cable)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 70.0,
+       "reps": 11,
+       "rpe": null
+      },
+      {
+       "w": 75.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Lateral Raise (Machine)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Cross Body Hammer Curl",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 40.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 40.0,
+       "reps": 9,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Overhead Triceps Extension (Cable)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 40.0,
+       "reps": 11,
+       "rpe": null
+      },
+      {
+       "w": 45.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Crunch (Machine)",
+     "group": "core",
+     "sets": [
+      {
+       "w": 25.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 25.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    }
+   ]
   }
  ],
  "weekly_volume": [
@@ -8393,14 +8534,15 @@
   {
    "week": "2026-08-24",
    "groups": {
-    "back": 3025,
-    "biceps": 1200,
+    "back": 6445,
+    "biceps": 1960,
     "calves": 3200,
-    "chest": 3380,
+    "chest": 5230,
+    "core": 450,
     "posterior": 2400,
     "quads": 1150,
-    "shoulders": 2060,
-    "triceps": 1930
+    "shoulders": 2900,
+    "triceps": 2820
    }
   }
  ],
@@ -8690,6 +8832,19 @@
    }
   },
   {
+   "name": "Overhead Triceps Extension (Cable)",
+   "sets": 25,
+   "best_e1rm": 67.5,
+   "group": "triceps",
+   "first": "2026-03-01",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 45.0,
+    "reps": 10,
+    "date": "2026-08-29"
+   }
+  },
+  {
    "name": "Push Press",
    "sets": 25,
    "best_e1rm": 59.4,
@@ -8703,6 +8858,19 @@
    }
   },
   {
+   "name": "Lateral Raise (Machine)",
+   "sets": 24,
+   "best_e1rm": 67.6,
+   "group": "shoulders",
+   "first": "2026-03-14",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 35.0,
+    "reps": 12,
+    "date": "2026-08-29"
+   }
+  },
+  {
    "name": "Incline Bench Press (Dumbbell)",
    "sets": 24,
    "best_e1rm": 74.0,
@@ -8713,32 +8881,6 @@
     "w": 50.0,
     "reps": 10,
     "date": "2026-06-18"
-   }
-  },
-  {
-   "name": "Overhead Triceps Extension (Cable)",
-   "sets": 23,
-   "best_e1rm": 67.5,
-   "group": "triceps",
-   "first": "2026-03-01",
-   "last": "2026-07-13",
-   "last_top": {
-    "w": 30.0,
-    "reps": 14,
-    "date": "2026-07-13"
-   }
-  },
-  {
-   "name": "Lateral Raise (Machine)",
-   "sets": 22,
-   "best_e1rm": 67.6,
-   "group": "shoulders",
-   "first": "2026-03-14",
-   "last": "2026-08-25",
-   "last_top": {
-    "w": 35.0,
-    "reps": 13,
-    "date": "2026-08-25"
    }
   },
   {
@@ -8791,6 +8933,19 @@
     "w": 40.0,
     "reps": 8,
     "date": "2026-08-21"
+   }
+  },
+  {
+   "name": "Bent Over Row (Smith Machine)",
+   "sets": 19,
+   "best_e1rm": 120.0,
+   "group": "back",
+   "first": "2026-07-27",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 85.0,
+    "reps": 10,
+    "date": "2026-08-29"
    }
   },
   {
@@ -8855,19 +9010,6 @@
    "last_top": {
     "w": 25.0,
     "reps": 14,
-    "date": "2026-08-27"
-   }
-  },
-  {
-   "name": "Bent Over Row (Smith Machine)",
-   "sets": 16,
-   "best_e1rm": 120.0,
-   "group": "back",
-   "first": "2026-07-27",
-   "last": "2026-08-27",
-   "last_top": {
-    "w": 90.0,
-    "reps": 10,
     "date": "2026-08-27"
    }
   },
@@ -9015,6 +9157,19 @@
    }
   },
   {
+   "name": "Cross Body Hammer Curl",
+   "sets": 12,
+   "best_e1rm": 53.3,
+   "group": "biceps",
+   "first": "2026-06-20",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 40.0,
+    "reps": 10,
+    "date": "2026-08-29"
+   }
+  },
+  {
    "name": "Lat Pulldown (Machine)",
    "sets": 11,
    "best_e1rm": 108.0,
@@ -9051,19 +9206,6 @@
     "w": 30.0,
     "reps": 10,
     "date": "2026-06-18"
-   }
-  },
-  {
-   "name": "Cross Body Hammer Curl",
-   "sets": 10,
-   "best_e1rm": 46.7,
-   "group": "biceps",
-   "first": "2026-06-20",
-   "last": "2026-08-03",
-   "last_top": {
-    "w": 30.0,
-    "reps": 16,
-    "date": "2026-08-03"
    }
   },
   {
@@ -9483,6 +9625,19 @@
    }
   },
   {
+   "name": "Reverse Grip Lat Pulldown (Cable)",
+   "sets": 4,
+   "best_e1rm": 101.3,
+   "group": "back",
+   "first": "2026-08-18",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 70.0,
+    "reps": 11,
+    "date": "2026-08-29"
+   }
+  },
+  {
    "name": "Triceps Rope Pushdown",
    "sets": 4,
    "best_e1rm": 66.0,
@@ -9873,19 +10028,6 @@
    }
   },
   {
-   "name": "Reverse Grip Lat Pulldown (Cable)",
-   "sets": 2,
-   "best_e1rm": 101.3,
-   "group": "back",
-   "first": "2026-08-18",
-   "last": "2026-08-18",
-   "last_top": {
-    "w": 80.0,
-    "reps": 8,
-    "date": "2026-08-18"
-   }
-  },
-  {
    "name": "Triceps Kickback (Dumbbell)",
    "sets": 2,
    "best_e1rm": 9.0,
@@ -9935,6 +10077,45 @@
     "w": 80.0,
     "reps": 20,
     "date": "2026-08-27"
+   }
+  },
+  {
+   "name": "Feet Up Bench Press (Barbell)",
+   "sets": 2,
+   "best_e1rm": 75.8,
+   "group": "chest",
+   "first": "2026-08-29",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 65.0,
+    "reps": 5,
+    "date": "2026-08-29"
+   }
+  },
+  {
+   "name": "Bench Press - Close Grip (Barbell)",
+   "sets": 2,
+   "best_e1rm": 84.0,
+   "group": "chest",
+   "first": "2026-08-29",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 60.0,
+    "reps": 12,
+    "date": "2026-08-29"
+   }
+  },
+  {
+   "name": "Crunch (Machine)",
+   "sets": 2,
+   "best_e1rm": 33.3,
+   "group": "core",
+   "first": "2026-08-29",
+   "last": "2026-08-29",
+   "last_top": {
+    "w": 25.0,
+    "reps": 10,
+    "date": "2026-08-29"
    }
   },
   {

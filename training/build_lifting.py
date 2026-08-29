@@ -18,7 +18,8 @@ OUT = os.path.join(HERE, "lifting.json")
 # Primary muscle bucket per exercise (for volume-by-bodypart). Cardio excluded.
 GROUP = {
     "chest": [
-        "Bench Press (Barbell)", "Incline Bench Press (Dumbbell)",
+        "Bench Press (Barbell)", "Feet Up Bench Press (Barbell)",
+        "Bench Press - Close Grip (Barbell)", "Incline Bench Press (Dumbbell)",
         "Incline Bench Press (Smith Machine)", "Incline Chest Press (Machine)",
         "Chest Press (Machine)", "Butterfly (Pec Deck)", "Chest Fly (Dumbbell)",
         "Cable Fly Crossovers", "Seated Chest Flys (Cable)", "Chest Dip",
@@ -77,7 +78,7 @@ GROUP = {
     "tibialis": ["Tibialis Raise"],
     "core": [
         "Hanging Leg Raise", "Hanging Knee Raise", "Cable Crunch",
-        "Decline Crunch (Weighted)", "Plank", "Side Plank",
+        "Crunch (Machine)", "Decline Crunch (Weighted)", "Plank", "Side Plank",
     ],
     "other": [
         "Farmers Walk", "Seated Wrist Extension (Barbell)", "Wrist Roller",

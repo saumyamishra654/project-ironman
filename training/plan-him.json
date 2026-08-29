@@ -1498,18 +1498,27 @@
       ]
     }
   ],
-  "notice": {
-    "tag": "Bench test",
-    "when": "Upper day (~Aug 29)",
-    "sport": "strength",
-    "title": "Bench weak-link test — paused vs touch-and-go",
-    "body": "Confirming the bottom-end weakness before we make Anterior a bench-accessory day. Do this on Upper day at a <b>submaximal</b> load — you're measuring the dropoff, not maxing.",
-    "steps": [
-      "<b>Work up to a tough set of 3 touch-and-go</b> (your normal bench) — note the load.",
-      "<b>Then a set of 3 paused</b> — 3s dead stop on the chest, no bounce, full ROM. Same or lighter load.",
-      "<b>Report the dropoff.</b> If paused is >10–15% harder/lighter → bottom-end weakness confirmed → paused bench becomes the accessory.",
-      "<b>Film one heavy set from the side</b> — check you're actually touching chest (the depth-cheating is the tell).",
-      "Every rep touches the chest today, heavy or not. Partial reps don't count."
-    ]
-  }
+  "notices": [
+    {
+      "tag": "This week",
+      "when": "Week 3",
+      "sport": "run",
+      "title": "Knee — skipped Fri easy run + threshold swim",
+      "body": "Protecting the healing knee scrape: <b>Fri Aug 28 recovery 5k</b> and the <b>S3 threshold swim</b> skipped. Everything else this week done. Weekend as planned: <b>18k long run + S2 endurance swim</b>."
+    },
+    {
+      "tag": "Bench test",
+      "when": "Upper day (~Aug 29)",
+      "sport": "strength",
+      "title": "Bench weak-link test — paused vs touch-and-go",
+      "body": "Confirming the bottom-end weakness before we make Anterior a bench-accessory day. Do this on Upper day at a <b>submaximal</b> load — you're measuring the dropoff, not maxing.",
+      "steps": [
+        "<b>Work up to a tough set of 3 touch-and-go</b> (your normal bench) — note the load.",
+        "<b>Then a set of 3 paused</b> — 3s dead stop on the chest, no bounce, full ROM. Same or lighter load.",
+        "<b>Report the dropoff.</b> If paused is >10–15% harder/lighter → bottom-end weakness confirmed → paused bench becomes the accessory.",
+        "<b>Film one heavy set from the side</b> — check you're actually touching chest (the depth-cheating is the tell).",
+        "Every rep touches the chest today, heavy or not. Partial reps don't count."
+      ]
+    }
+  ]
 }

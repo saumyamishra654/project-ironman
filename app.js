@@ -509,9 +509,7 @@
     tb.appendChild(right);
   }
 
-  function renderNotice(data) {
-    var n = data.notice;
-    if (!n) return null;
+  function noticeBox(n) {
     var box = el("div", { class: "notice", style: "--sport:var(--" + (n.sport || "strength") + ")" });
     box.appendChild(el("div", { class: "notice-h" }, [
       el("span", { class: "notice-tag", text: n.tag || "ACTION" }),
@@ -525,6 +523,13 @@
       box.appendChild(ul);
     }
     return box;
+  }
+  function renderNotice(data) {
+    var list = data.notices || (data.notice ? [data.notice] : []);
+    if (!list.length) return null;
+    var wrap = el("div", { class: "notice-stack" });
+    list.forEach(function(n) { wrap.appendChild(noticeBox(n)); });
+    return wrap;
   }
 
   function renderRaceStrip(data) {

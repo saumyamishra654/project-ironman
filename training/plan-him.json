@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-29",
+    "updated": "2026-08-30",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -1538,22 +1538,6 @@
           "detail": "HR ≤172"
         }
       ]
-    }
-  ],
-  "notices": [
-    {
-      "tag": "This week",
-      "when": "Week 3",
-      "sport": "run",
-      "title": "Knee — skipped Fri easy run + threshold swim",
-      "body": "Protecting the healing knee scrape: <b>Fri Aug 28 recovery 5k</b> and the <b>S3 threshold swim</b> skipped. Everything else this week done. Weekend as planned: <b>18k long run + S2 endurance swim</b>."
-    },
-    {
-      "tag": "Bench focus",
-      "when": "From Week 4",
-      "sport": "strength",
-      "title": "Bench weak link = bottom-end (confirmed). New structure live.",
-      "body": "Test Aug 29: feet-up paused <b>70×4</b> vs <b>70×9</b> touch-and-go = big drop; close-grip paused 60×12 strong → starting strength off the chest is the gap, not triceps. <b>Anterior is now the bench day</b> (heavy comp-style main + paused-bench accessory); Upper stays the volume exposure. Weekly targets on the <b>Plan page → Bench Progression</b>."
     }
   ],
   "bench_progression": {

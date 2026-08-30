@@ -64,9 +64,11 @@
   function sessTarget(day, s, wkData, data) {
     if (!wkData) return s.detail;
     if (s.sport === "run") {
-      if (day === "Sun") return "HR ≤172 · " + wkData.run.long_km + "k — " + wkData.run.long_note;
-      if (day === "Wed") return wkData.run.speed;
-      if (day === "Mon") return "HR ≤150–158 · ~" + wkData.run.easy_km + "k";
+      var t = s.title || "";
+      if (t.indexOf("Long") !== -1) return "HR ≤172 · " + wkData.run.long_km + "k — " + wkData.run.long_note;
+      if (t.indexOf("Speed") !== -1) return wkData.run.speed;
+      if (t.indexOf("Sprint") !== -1) return "6×12s hill sprints · full recovery + easy volume";
+      return "HR ≤150–158 · ~" + wkData.run.easy_km + "k easy";
     }
     if (s.sport === "swim") return swimTargetFor(s, wkData, data);
     if (s.sport === "strength") {

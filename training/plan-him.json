@@ -1375,17 +1375,9 @@
       "day": "Mon",
       "sessions": [
         {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim — technique",
-          "swim_id": "S1",
-          "detail": "easy/technique"
-        },
-        {
           "sport": "run",
-          "slot": "PM",
-          "title": "Easy / recovery run",
-          "detail": "HR ≤150–158, short"
+          "title": "Sprint session",
+          "detail": "6×12s hill sprints + easy volume (wk5+)"
         }
       ]
     },
@@ -1436,6 +1428,12 @@
           "title": "Swim — endurance",
           "swim_id": "S2",
           "detail": "aerobic base"
+        },
+        {
+          "sport": "run",
+          "slot": "PM",
+          "title": "Easy / recovery run",
+          "detail": "HR ≤150–158, short"
         }
       ]
     },
@@ -1443,7 +1441,14 @@
       "day": "Sat",
       "sessions": [
         {
+          "sport": "run",
+          "slot": "AM",
+          "title": "Long run",
+          "detail": "HR ≤172 (run AM for the heat)"
+        },
+        {
           "sport": "strength",
+          "slot": "PM",
           "title": "Upper",
           "detail": "rep-focused bench"
         }
@@ -1453,9 +1458,10 @@
       "day": "Sun",
       "sessions": [
         {
-          "sport": "run",
-          "title": "Long run",
-          "detail": "HR ≤172"
+          "sport": "swim",
+          "title": "Swim — technique",
+          "swim_id": "S1",
+          "detail": "easy/recovery swim"
         }
       ]
     }

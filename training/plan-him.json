@@ -1980,5 +1980,44 @@
         "era": "garmin"
       }
     ]
+  },
+  "speed_block": {
+    "title": "100m Speed Block — Monday sprint progression",
+    "why": "Athlete-driven side-quest: develop a genuine 100m. Baseline (Aug 31) confirmed real sprint gear — GCT 167ms, vertical ratio 4.0%, peak 842W. Now periodize: acceleration → max velocity → test. Runs in the Monday slot, ~5k total, low recovery cost (Body Battery ~−3). Injury frame: hills/sled protect the patellar knee on accel weeks; flat max-velocity flying sprints are the hamstring-risk piece — ramp in, thorough warmup, small doses. Not a plan change to the HIM block; a bolt-on that shares the Monday slot.",
+    "warmup": "Every session: 2–2.5k easy + drills (A-skips, wall drives, 3–4 build-up strides 70→90%). Never sprint cold — hamstring protection.",
+    "cols": [
+      "Wk",
+      "Focus",
+      "Session",
+      "Start type"
+    ],
+    "weeks": [
+      {
+        "wk": 5,
+        "focus": "Acceleration",
+        "session": "6×20m standing-start sprints, full recovery (~2.5min)",
+        "start": "standing (hill/ramp)"
+      },
+      {
+        "wk": 6,
+        "focus": "Max velocity (intro)",
+        "session": "4–6×20m flying sprints (15m jog-in → 20m max), full recovery",
+        "start": "flying (flat)"
+      },
+      {
+        "wk": 7,
+        "focus": "Acceleration + power",
+        "session": "5×20m standing starts + 4–6 sled pushes (gym)",
+        "start": "standing + sled"
+      },
+      {
+        "wk": 8,
+        "focus": "Speed + TEST",
+        "session": "2×accel + 2×flying, then 1× timed 100m (measured flat) — first benchmark",
+        "start": "mixed + test"
+      }
+    ],
+    "support": "Anterior day: keep jump squats / add broad jumps (explosive, low volume) — feeds the drive phase. Mechanics drills in every warmup. Track peak power + GCT + (from wk8) the 100m time.",
+    "note": "Re-assess after the wk8 100m test; build the next block off a real time."
   }
 }

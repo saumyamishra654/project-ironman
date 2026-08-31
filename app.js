@@ -790,6 +790,35 @@
     return sec;
   }
 
+  function renderSpeedBlock(data, curWk) {
+    var sb = data.speed_block;
+    if (!sb || !sb.weeks) return null;
+    var sec = el("div", { class: "section" });
+    sec.appendChild(h2(sb.title || "Speed Block"));
+    if (sb.why) sec.appendChild(el("div", { class: "callout", style: "margin-top:0;margin-bottom:0.8rem", html: "<b>Why:</b> " + sb.why }));
+    if (sb.warmup) sec.appendChild(el("div", { class: "css-box", style: "margin-bottom:0.8rem", html: "<b>Warmup (every session):</b> " + sb.warmup }));
+    var wrap = el("div", { class: "table-wrap" });
+    var table = el("table");
+    table.appendChild(el("thead", {}, [ el("tr", {}, sb.cols.map(function(c) { return el("th", { text: c }); })) ]));
+    var tb = el("tbody");
+    sb.weeks.forEach(function(w) {
+      var cls = w.wk === curWk ? "current" : (w.wk < curWk ? "past" : "");
+      var tr = el("tr", cls ? { class: cls } : {});
+      var wkCell = el("td", {}, [ el("strong", { text: "W" + w.wk }) ]);
+      if (w.wk === curWk) wkCell.appendChild(el("span", { class: "badge now", text: "NOW" }));
+      tr.appendChild(wkCell);
+      tr.appendChild(el("td", {}, [ el("strong", { style: "color:var(--run)", text: w.focus }) ]));
+      tr.appendChild(el("td", { text: w.session }));
+      tr.appendChild(el("td", { text: w.start }));
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb); wrap.appendChild(table);
+    sec.appendChild(wrap);
+    if (sb.support) sec.appendChild(el("div", { class: "css-box", html: "<b>Support work:</b> " + sb.support }));
+    if (sb.note) sec.appendChild(el("div", { class: "callout", html: "→ " + sb.note }));
+    return sec;
+  }
+
   /* ============================================================
      Lifting dashboard (reads training/lifting.json)
      ============================================================ */
@@ -1064,6 +1093,8 @@
       if (strSec) app.appendChild(strSec);
       var bpSec = renderBenchProgression(data, wk);
       if (bpSec) app.appendChild(bpSec);
+      var sbSec = renderSpeedBlock(data, wk);
+      if (sbSec) app.appendChild(sbSec);
       app.appendChild(renderSwim(data));
       app.appendChild(renderHrZones(data));
       drawCharts(data, wk);

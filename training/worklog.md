@@ -286,6 +286,22 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Flags:** ~2.27 km walking again — easy running still drives HR up in the heat, so the aerobic-base limiter persists (expected, on track). Comp surges were deliberately dropped (knee scrape from the Aug 26 fall); the ≤172 steady finish kept it aerobic without high-force turnover.
 - **Verdict:** strong close to Week 3. Banked 18k of clean aerobic work in bad air, held HR discipline, and negative-split into a good-feeling steady finish with sharp cadence. Slower paces are the humidity tax, not regression.
 
+**Aug 31 (Mon) — Run — Short Sprint Session 6×12s (BASELINE) [DONE]**
+- First-ever max sprint session. Evening, flat ground (elev ~0 — hill governor not in play, so true top-end). 2.5k WU → 6×12s → CD. Ran the full 6 (not the priming-4 I'd suggested; knee was fine). Cooldown flush logged as a separate 0.43k activity.
+- **Per-rep AVG pace over full 12s (watch Intervals — the honest number, incl. standstill start):** 4:15 → 3:06 → 3:11 → 2:57 → **2:44 (best)** → 3:07 /km. ~60–70m covered per rep. By whole-rep average the fastest was R5, not R4.
+- **Per-rep peak/max GPS speed (SOFT — single-sample instantaneous, flattering):** R1 5.46 → R2 7.34 → R3 7.66 → R4 8.33 → R5 7.50 → R6 7.01 m/s. My earlier "R4 peaked" read was a max-speed artifact; the watch's per-rep *average* (above) is more honest and puts R5 on top.
+- **Rep timing:** 12s window each, but moving-duration only ~8–9s (standstill accel + setup eats 3–4s). Effective sprint ~8–9s. Consider a rolling start next time for cleaner data + less patellar load on the first step.
+- **RUNNING DYNAMICS (accelerometer-derived, RELIABLE — the real evidence) — sprint aggregate vs warmup:**
+  - **Ground contact 167 ms** (vs 311 easy) — elite-adjacent, barely touching down.
+  - **Stride 178 cm** (vs 72) — 2.5× range of motion at speed.
+  - **Vertical ratio 4.0%** (vs 10.6) — excellent; power driven forward, not up.
+  - **Vertical oscillation 6.7 cm** — actually *dropped* vs easy (7.6); flatter at speed, rare + good.
+  - **Peak power 842 W · max cadence 234 spm.**
+- **Session metrics:** TE aerobic 2.0 / anaerobic 2.7, label **SPEED** (Garmin correctly IDs neuromuscular work). Load 87. **Body Battery −3** — near-zero cost, sustainable weekly.
+- **Read:** the GPS speed is soft, but the form data independently confirms a genuine, biomechanically-legit sprint gear (you can't fake 167ms GCT + 4.0% vertical ratio). Same signature as the swim/1200s: big top-end, **repeatable-speed endurance is the developing quality** (reps 5–6 fade). Cadence in the aggregate reads artificially low (98) because standstill-start steps skew it — 234 max is the true ceiling.
+- **BASELINE LOCKED:** peak 8.33 m/s (soft) / **842 W peak power** / 167 ms GCT. Track session-best power + GCT week to week (more reliable than GPS speed). Knee: reportedly fine during + after.
+- **Verdict:** most encouraging dataset he's produced. Real sprint ability, confirmed by hard form metrics, at near-zero recovery cost. The "underused sprint" thesis is now data-backed.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

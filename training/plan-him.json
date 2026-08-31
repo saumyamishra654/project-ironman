@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-30",
+    "updated": "2026-08-31",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -617,6 +617,46 @@
     }
   ],
   "sessions": [
+    {
+      "date": "2026-08-31",
+      "sport": "run",
+      "week": 4,
+      "title": "Sprint session 6×12s — baseline. Real sprint gear, confirmed.",
+      "verdict": "First max sprints. GPS speed soft, but form data is elite-flavoured (167ms GCT, 4.0% vertical ratio) — a genuine, biomechanically-legit sprint gear at near-zero cost.",
+      "stats": [
+        {
+          "l": "Reps",
+          "v": "6×12s"
+        },
+        {
+          "l": "Peak power",
+          "v": "842 W"
+        },
+        {
+          "l": "Ground contact",
+          "v": "167 ms"
+        },
+        {
+          "l": "Stride",
+          "v": "178 cm"
+        },
+        {
+          "l": "Vert ratio",
+          "v": "4.0%"
+        },
+        {
+          "l": "Max cadence",
+          "v": "234 spm"
+        }
+      ],
+      "headline": "You said you can book it — the form data screams it. First-ever max sprint session, flat ground, and the accelerometer metrics (which don't lie, unlike the GPS speed) are genuinely fast-athlete territory: ground contact halved to 167ms, stride opened to 178cm, vertical ratio a superb 4.0%, peak power 842W. And it cost almost nothing — Body Battery −3. The underused sprint ability isn't a feeling; it's measurable and real.",
+      "insight": [
+        "Form dynamics (reliable, accelerometer-derived) vs easy pace: GCT 167ms (vs 311), stride 178cm (vs 72), vertical ratio 4.0% (vs 10.6%), oscillation actually dropped to 6.7cm. You can't fake these — they're the signature of a genuinely fast athlete.",
+        "Per-rep AVG pace over the full 12s (watch Intervals — the honest number, incl. standstill start): 4:15 → 3:06 → 3:11 → 2:57 → 2:44 (best) → 3:07 /km. Peak instantaneous speed hit ~8.3 m/s (2:00/km) but that's a flattering single-sample max. Fastest whole rep was #5; a rolling start would push all of these quicker by skipping the acceleration tax.",
+        "Garmin labeled it SPEED (aerobic TE 2.0 / anaerobic 2.7) — correct. Body Battery −3, load 87: a high-value neuromuscular stimulus at near-zero recovery cost. Repeatable weekly, no dent to the endurance work.",
+        "Housekeeping: reps were 12s windows but ~8–9s of actual sprinting (standstill start eats time). A rolling start next time = cleaner data + gentler on the patellar tendon. Track peak power + GCT week to week, not the wobbly GPS speed."
+      ]
+    },
     {
       "date": "2026-08-29",
       "sport": "run",

@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-08-31",
+    "updated": "2026-09-01",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -617,6 +617,42 @@
     }
   ],
   "sessions": [
+    {
+      "date": "2026-09-01",
+      "sport": "run",
+      "week": 4,
+      "title": "Shakeout cut short — leg niggle + poor sleep (TT go/no-go)",
+      "verdict": "Stopped ~950m in: DOMS from Mon's first sprints (quad/adductor) + a proximal-medial-tibia niggle. No bony tenderness = stress-reaction unlikely. TT gated on tomorrow's warmup jog.",
+      "stats": [
+        {
+          "l": "Distance",
+          "v": "0.95 km"
+        },
+        {
+          "l": "Avg HR",
+          "v": "140"
+        },
+        {
+          "l": "Sleep",
+          "v": "5.1h · POOR"
+        },
+        {
+          "l": "Readiness",
+          "v": "POOR / 17"
+        },
+        {
+          "l": "HRV",
+          "v": "42 (good)"
+        }
+      ],
+      "headline": "Pre-TT shakeout, stopped early when the leg complained. Triaged: mid-quad + adductor SORENESS is benign DOMS from Monday's first-ever max sprints; the flag was a 'bone' spot at the proximal medial tibia (where the adductor/gracilis inserts) — but it does NOT hurt on firm palpation, which makes a bone stress-reaction unlikely and points to adductor insertional traction instead. Poor sleep (5.1h) drove readiness to 17, but HRV is fine (42), so it's acute sleep-debt, not overreaching.",
+      "insight": [
+        "Muscle soreness (rectus femoris + adductors) = expected DOMS 2 days after the first max sprint session; fades, does not stop a TT.",
+        "The deciding factor is the inner-shin bony spot — NO pain on pressing it (key: pinpoint bony tenderness is the stress-reaction hallmark, and it's absent), so most likely gracilis/adductor traction at the pes-anserine insertion, not bone stress.",
+        "Sleep protocol in place (caffeine cutoff <12pm, big carby dinner, magnesium, early night) + HRV already good → should wake recovered. Sleep is no longer the gate; the leg is.",
+        "TT DECISION: kept on Wed. Final gate = tomorrow's warmup jog. If legs loosen and the bony spot stays quiet WHILE running → send the PR. If that spot sharpens specifically during running → postpone a few days (no cost to a benchmark TT). Lean: green."
+      ]
+    },
     {
       "date": "2026-08-31",
       "sport": "run",

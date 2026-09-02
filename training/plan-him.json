@@ -2069,31 +2069,31 @@
     ],
     "weeks": [
       {
-        "wk": 5,
+        "wk": 6,
         "focus": "Acceleration",
-        "session": "6×20m standing-start sprints, full recovery (~2.5min) — Fri this week (after Wed TT); Mon = easy",
+        "session": "6×20m standing-start sprints, full recovery (~2.5min)",
         "start": "standing (hill/ramp)"
       },
       {
-        "wk": 6,
+        "wk": 7,
         "focus": "Max velocity (intro)",
         "session": "4–6×20m flying sprints (15m jog-in → 20m max), full recovery",
         "start": "flying (flat)"
       },
       {
-        "wk": 7,
+        "wk": 8,
         "focus": "Acceleration + power",
         "session": "5×20m standing starts + 4–6 sled pushes (gym)",
         "start": "standing + sled"
       },
       {
-        "wk": 8,
+        "wk": 9,
         "focus": "Speed + TEST",
         "session": "2×accel + 2×flying, then 1× timed 100m (measured flat) — first benchmark",
         "start": "mixed + test"
       }
     ],
     "support": "Anterior day: keep jump squats / add broad jumps (explosive, low volume) — feeds the drive phase. Mechanics drills in every warmup. Track peak power + GCT + (from wk8) the 100m time.",
-    "note": "Re-assess after the wk8 100m test; build the next block off a real time."
+    "note": "Starts Week 6 (Mon Sep 14) — Week 5 skips the standalone sprint since the 5K TT is that week's speed work. Re-assess after the wk9 100m test; build the next block off a real time."
   }
 }

@@ -1296,7 +1296,7 @@
       {
         "name": "Posterior",
         "slot": "Thu",
-        "focus": "back · triceps · glutes/hams · rear delt · calves",
+        "focus": "back · triceps · glutes/hams · rear delt · calves · adductor prehab",
         "lifts": [
           {
             "n": "Weighted Pull-Up",
@@ -1310,6 +1310,11 @@
             "n": "Single-Leg RDL (DB)",
             "s": "2",
             "tag": "left-hip / weak-glute work"
+          },
+          {
+            "n": "Copenhagen Plank",
+            "s": "2",
+            "tag": "adductor prehab — starting BENT-KNEE; begin once sprint soreness clears, build lever slowly"
           },
           {
             "n": "Back Extension (Weighted)",

@@ -1296,7 +1296,7 @@
       {
         "name": "Posterior",
         "slot": "Thu",
-        "focus": "back · triceps · glutes/hams · rear delt · calves · adductor prehab",
+        "focus": "back · triceps · glutes/hams · rear delt · calves · adductor + hamstring prehab",
         "lifts": [
           {
             "n": "Weighted Pull-Up",
@@ -1315,6 +1315,11 @@
             "n": "Copenhagen Plank",
             "s": "2",
             "tag": "adductor prehab — starting BENT-KNEE; begin once sprint soreness clears, build lever slowly"
+          },
+          {
+            "n": "Nordic Hamstring Curl",
+            "s": "2",
+            "tag": "hamstring prehab (sprint injury #1) — start band-assisted / top-range only"
           },
           {
             "n": "Back Extension (Weighted)",
@@ -2100,5 +2105,18 @@
     ],
     "support": "Anterior day: keep jump squats / add broad jumps (explosive, low volume) — feeds the drive phase. Mechanics drills in every warmup. Track peak power + GCT + (from wk8) the 100m time.",
     "note": "Starts Week 6 (Mon Sep 14) — Week 5 skips the standalone sprint since the 5K TT is that week's speed work. Re-assess after the wk9 100m test; build the next block off a real time."
+  },
+  "run_prep": {
+    "warmup": [
+      "Glute-med activation: banded lateral walks OR 10 single-leg glute bridges/side (wake the left hip)",
+      "Leg swings + easy dynamic mobility",
+      "3–4 build-up strides (70→90%) before any quality/speed"
+    ],
+    "cues": [
+      "Arm drive: punch the ELBOW BACK (not hands forward) — 'elbow to hip pocket'",
+      "Arms front-to-back, never cross the midline; shoulders down, hands loose",
+      "Quick cadence, light feet — shorter stride protects the patellar tendon",
+      "Easy = 'hip to lip' arm swing · Sprint/finish = aggressive 'cheek to pocket'"
+    ]
   }
 }

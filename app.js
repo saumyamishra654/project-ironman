@@ -197,6 +197,28 @@
       }
       sec.appendChild(card);
     });
+
+    // Run prep (warmup + form cues) — shown whenever today has a run
+    var hasRun = day.sessions.some(function(s) { return s.sport === "run"; });
+    if (hasRun && data.run_prep) {
+      var rp = data.run_prep;
+      var prep = el("div", { class: "today-card runprep", style: "--sport:var(--run)" });
+      prep.appendChild(el("div", { class: "tc-h" }, [ "Run prep", el("span", { class: "slot", text: "warmup + cues" }) ]));
+      if (rp.warmup && rp.warmup.length) {
+        prep.appendChild(el("div", { class: "rp-lbl", text: "Warmup" }));
+        var wu = el("ul", { class: "rp-list" });
+        rp.warmup.forEach(function(l) { wu.appendChild(el("li", { html: l })); });
+        prep.appendChild(wu);
+      }
+      if (rp.cues && rp.cues.length) {
+        prep.appendChild(el("div", { class: "rp-lbl", text: "Form cues" }));
+        var cu = el("ul", { class: "rp-list cues" });
+        rp.cues.forEach(function(l) { cu.appendChild(el("li", { html: l })); });
+        prep.appendChild(cu);
+      }
+      sec.appendChild(prep);
+    }
+
     if (day.sessions.length === 1 && day.sessions[0].sport === "rest") {
       // rest day already shown as a card
     }

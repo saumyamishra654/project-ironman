@@ -277,3 +277,12 @@
 
     .notice-stack { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem; }
     .notice-stack .notice { margin-top: 0; }
+
+    /* ---- Run prep panel (Today) ---- */
+    .today-card.runprep { border-left-color: var(--run); background: var(--surface-2); }
+    .runprep .rp-lbl { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: var(--run); margin: 0.5rem 0 0.15rem; }
+    .runprep .rp-list { list-style: none; }
+    .runprep .rp-list li { font-size: 0.79rem; color: var(--muted); padding: 0.22rem 0 0.22rem 1.05rem; position: relative; line-height: 1.4; }
+    .runprep .rp-list li::before { content: '▸'; position: absolute; left: 0; color: var(--run); }
+    .runprep .rp-list.cues li::before { content: '◆'; font-size: 0.7rem; }
+    .runprep .rp-list li b { color: var(--text); }

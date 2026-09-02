@@ -5,7 +5,7 @@
     "block_name": "Block 1 — HIM Base → Build",
     "block_start": "2026-08-10",
     "block_weeks": 12,
-    "updated": "2026-09-01",
+    "updated": "2026-09-02",
     "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
   },
   "athlete": {
@@ -47,6 +47,10 @@
       {
         "date": "2026-08-26",
         "kg": 79.9
+      },
+      {
+        "date": "2026-09-01",
+        "kg": 79.7
       }
     ]
   },
@@ -617,6 +621,42 @@
     }
   ],
   "sessions": [
+    {
+      "date": "2026-09-02",
+      "sport": "run",
+      "week": 4,
+      "title": "5K TT aborted at 1.8k — legs cooked, not cardio. Right call.",
+      "verdict": "Warmup + first 1.5k felt good cardio-wise, but legs were muscularly shot from Mon's first sprints. Stopped at 1.8k. HR only 150 at 'TT' effort = legs quit before the engine. Postpone, no loss.",
+      "stats": [
+        {
+          "l": "Reached",
+          "v": "1.8 km"
+        },
+        {
+          "l": "Avg HR",
+          "v": "150"
+        },
+        {
+          "l": "Max HR",
+          "v": "184"
+        },
+        {
+          "l": "Then",
+          "v": "432m easy swim"
+        },
+        {
+          "l": "Weight",
+          "v": "79.7"
+        }
+      ],
+      "headline": "Toed the line, warmed up, ran the first ~1.5k feeling fine aerobically — but the legs were still cooked from Monday's first-ever max sprint session (peak DOMS at 48h). Called it at 1.8k. The tell: avg HR only 150 at max-TT intent (would be 175+ if the engine were the limiter) — the legs stopped him, not the cardio. Textbook right decision; a max effort on dead legs is a bad number and an injury risk for nothing.",
+      "insight": [
+        "Not a fitness signal — a fatigue-stacking one. First sprint session (novel stimulus) + poor sleep the night before = legs not available for a 5K max. The engine was fine (HR sat low).",
+        "Bony inner-shin spot: no longer flagged (didn't hurt on palpation yesterday, didn't stop the run today) — it was adductor/insertional soreness, now settling.",
+        "TT postponed. Rebook it fresh: 2+ good nights AND legs recovered from sprint DOMS — realistically early-mid Week 5. It's a benchmark, not a race; costs nothing to slide, and he'll run faster rested.",
+        "Rest of the deload (through Sep 6) kept very easy, as intended. Good discipline pulling the plug rather than grinding a junk TT."
+      ]
+    },
     {
       "date": "2026-09-01",
       "sport": "run",

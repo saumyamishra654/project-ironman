@@ -1,2122 +1,2369 @@
 {
-  "meta": {
-    "title": "Project Ironman",
-    "subtitle": "Half-Ironman build · next stop Bangalore HM",
-    "block_name": "Block 1 — HIM Base → Build",
-    "block_start": "2026-08-10",
-    "block_weeks": 12,
-    "updated": "2026-09-02",
-    "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
+ "meta": {
+  "title": "Project Ironman",
+  "subtitle": "Half-Ironman build · next stop Bangalore HM",
+  "block_name": "Block 1 — HIM Base → Build",
+  "block_start": "2026-08-10",
+  "block_weeks": 12,
+  "updated": "2026-09-02",
+  "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
+ },
+ "athlete": {
+  "name": "Saumya Mishra",
+  "age": 22,
+  "bodyweight_kg": 80,
+  "weight_target_kg": 75,
+  "location": "Bengaluru — run mornings (heat)"
+ },
+ "weight": {
+  "unit": "kg",
+  "since": "2026-08-03",
+  "note": "Manual scale weigh-ins. Jul 4 profile default excluded.",
+  "points": [
+   {
+    "date": "2026-08-03",
+    "kg": 82.0
+   },
+   {
+    "date": "2026-08-05",
+    "kg": 81.8
+   },
+   {
+    "date": "2026-08-06",
+    "kg": 81.3
+   },
+   {
+    "date": "2026-08-11",
+    "kg": 81.1
+   },
+   {
+    "date": "2026-08-21",
+    "kg": 80.3
+   },
+   {
+    "date": "2026-08-25",
+    "kg": 80.1
+   },
+   {
+    "date": "2026-08-26",
+    "kg": 79.9
+   },
+   {
+    "date": "2026-09-01",
+    "kg": 79.7
+   }
+  ]
+ },
+ "metrics": [
+  {
+   "id": "vo2max",
+   "label": "VO₂max",
+   "value": "45",
+   "unit": "",
+   "sport": "run",
+   "trend": "up",
+   "note": "43→44→45 (precise 44.6) · Sep 12 threshold run; Productive"
   },
-  "athlete": {
-    "name": "Saumya Mishra",
-    "age": 22,
-    "bodyweight_kg": 80,
-    "weight_target_kg": 75,
-    "location": "Bengaluru — run mornings (heat)"
+  {
+   "id": "endurance",
+   "label": "Endurance Score",
+   "value": "5119",
+   "unit": "",
+   "sport": "run",
+   "trend": "up",
+   "note": "Intermediate · crossed 5100 tier (Aug 26); 4809→5119 this month"
   },
-  "weight": {
-    "unit": "kg",
-    "since": "2026-08-03",
-    "note": "Manual scale weigh-ins. Jul 4 profile default excluded.",
-    "points": [
-      {
-        "date": "2026-08-03",
-        "kg": 82.0
-      },
-      {
-        "date": "2026-08-05",
-        "kg": 81.8
-      },
-      {
-        "date": "2026-08-06",
-        "kg": 81.3
-      },
-      {
-        "date": "2026-08-11",
-        "kg": 81.1
-      },
-      {
-        "date": "2026-08-21",
-        "kg": 80.3
-      },
-      {
-        "date": "2026-08-25",
-        "kg": 80.1
-      },
-      {
-        "date": "2026-08-26",
-        "kg": 79.9
-      },
-      {
-        "date": "2026-09-01",
-        "kg": 79.7
-      }
-    ]
+  {
+   "id": "comp_pace",
+   "label": "Comp pace",
+   "value": "7:00",
+   "unit": "/km",
+   "sport": "run",
+   "note": "sub-172 sustainable · Aug 23 long run 7:05 @ HR166"
   },
-  "metrics": [
-    {
-      "id": "vo2max",
-      "label": "VO₂max",
-      "value": "44",
-      "unit": "",
-      "sport": "run",
-      "trend": "up",
-      "note": "41→43→44 · Aug 26 speed run"
-    },
-    {
-      "id": "endurance",
-      "label": "Endurance Score",
-      "value": "5119",
-      "unit": "",
-      "sport": "run",
-      "trend": "up",
-      "note": "Intermediate · crossed 5100 tier (Aug 26); 4809→5119 this month"
-    },
-    {
-      "id": "comp_pace",
-      "label": "Comp pace",
-      "value": "7:00",
-      "unit": "/km",
-      "sport": "run",
-      "note": "sub-172 sustainable · Aug 23 long run 7:05 @ HR166"
-    },
-    {
-      "id": "lt_pace",
-      "label": "LT pace",
-      "value": "5:40",
-      "unit": "/km",
-      "sport": "run",
-      "note": "4×1200 Aug 26 @ 5:42/km, HR 180 (=LTHR)"
-    },
-    {
-      "id": "lthr",
-      "label": "LTHR",
-      "value": "180",
-      "unit": "bpm",
-      "sport": "run",
-      "note": "Aug 26 · long-run cap 172 · easy cap 162"
-    },
-    {
-      "id": "swim_css",
-      "label": "Swim CSS",
-      "value": "2:18",
-      "unit": "/100m",
-      "sport": "swim",
-      "trend": "flat",
-      "note": "Aug 22 test · 400 8:35 / 192 3:47 · endur ~2:26, thresh 2:18, speed ~2:14"
-    },
-    {
-      "id": "bench",
-      "label": "Bench",
-      "value": "82.5",
-      "unit": "kg",
-      "sport": "strength",
-      "target": 100,
-      "from": 82.5,
-      "note": "working → 100 kg (~Feb 2027)"
-    }
-  ],
-  "races": [
-    {
-      "id": "blr_hm",
-      "name": "Bangalore Half Marathon",
-      "short": "Bangalore HM",
-      "date": "2026-12-13",
-      "distance_km": 21.1,
-      "priority": "B",
-      "role": "Near-term target · local, ideal temp"
-    },
-    {
-      "id": "goa703",
-      "name": "Goa 70.3 (Half-Ironman)",
-      "short": "Goa 70.3",
-      "date": "2027-11-01",
-      "distance_km": 113,
-      "priority": "A",
-      "role": "A-race — the whole plan points here"
-    }
-  ],
-  "week_template": [
-    {
-      "day": "Mon",
-      "sessions": [
-        {
-          "sport": "run",
-          "title": "Easy / recovery run",
-          "detail": "AM · HR ≤150–158"
-        }
-      ]
-    },
-    {
-      "day": "Tue",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Anterior (bench)",
-          "detail": "bench focus"
-        }
-      ]
-    },
-    {
-      "day": "Wed",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim",
-          "detail": "aerobic"
-        },
-        {
-          "sport": "run",
-          "slot": "PM",
-          "title": "Speed run",
-          "detail": "LT intervals"
-        }
-      ]
-    },
-    {
-      "day": "Thu",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Posterior",
-          "detail": "auto-regulate"
-        }
-      ]
-    },
-    {
-      "day": "Fri",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim",
-          "detail": "aerobic"
-        },
-        {
-          "sport": "strength",
-          "slot": "PM",
-          "title": "Upper",
-          "detail": "bench"
-        }
-      ]
-    },
-    {
-      "day": "Sat",
-      "sessions": [
-        {
-          "sport": "rest",
-          "title": "Rest",
-          "detail": "nothing scheduled"
-        }
-      ]
-    },
-    {
-      "day": "Sun",
-      "sessions": [
-        {
-          "sport": "run",
-          "title": "Long run",
-          "detail": "HR ≤172"
-        }
-      ]
-    }
-  ],
-  "phases": [
-    {
-      "id": "A",
-      "name": "Reset & Base",
-      "weeks": [
-        1,
-        4
-      ],
-      "note": "Re-establish the triplet; ramp swim volume; easy long runs."
-    },
-    {
-      "id": "B",
-      "name": "Build",
-      "weeks": [
-        5,
-        8
-      ],
-      "note": "Threshold volume, longer reps, long runs to 20k."
-    },
-    {
-      "id": "C",
-      "name": "HM-Specific",
-      "weeks": [
-        9,
-        12
-      ],
-      "note": "Race-pace long-run segments, LT cruise work, long continuous swims."
-    }
-  ],
-  "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
-  "block": [
-    {
-      "week": 1,
-      "start": "2026-08-10",
-      "phase": "A",
-      "deload": false,
-      "run": {
-        "long_km": 17,
-        "long_note": "HR ≤172, bias aerobic (post-illness) — 12k easy ≤160, last 5k may drift toward 172",
-        "speed": "6×800 @ 5:50–5:55",
-        "easy_km": 6
-      },
-      "swim": {
-        "total_m": 4000,
-        "sessions": 2,
-        "split": "1.8k + 2.2k",
-        "note": "hold at 2 sessions wk 1–2"
-      },
-      "strength": {
-        "focus": "Upper (bench) + Lower",
-        "bench": "82.5 × 3×5"
-      },
-      "actuals": [
-        {
-          "day": "Mon",
-          "sport": "run",
-          "status": "done",
-          "tgt": "2.7k recovery · avg HR 134 (textbook)"
-        },
-        {
-          "day": "Tue",
-          "sport": "strength",
-          "status": "done",
-          "tgt": "bench (Aug 11, on low sleep)"
-        },
-        {
-          "day": "Wed",
-          "sport": "swim",
-          "slot": "AM",
-          "status": "modified",
-          "badge": "600 m",
-          "tgt": "600 m only — short session"
-        },
-        {
-          "day": "Wed",
-          "sport": "run",
-          "slot": "PM",
-          "status": "done",
-          "tgt": "fartlek · overshot pace, strong effort"
-        },
-        {
-          "day": "Fri",
-          "sport": "swim",
-          "slot": "AM",
-          "status": "missed"
-        },
-        {
-          "day": "Sun",
-          "sport": "run",
-          "status": "done",
-          "tgt": "17k · avg HR 156 · morning, post-illness"
-        }
-      ]
-    },
-    {
-      "week": 2,
-      "start": "2026-08-17",
-      "phase": "A",
-      "deload": false,
-      "run": {
-        "long_km": 16,
-        "long_note": "HR ≤172, mostly easy",
-        "speed": "5×1000 @ 5:55",
-        "easy_km": 6
-      },
-      "swim": {
-        "total_m": 4500,
-        "sessions": 2,
-        "split": "2.0k + 2.5k",
-        "note": "CSS test this week (400+200 TT)"
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "85 × 3×4–5"
-      }
-    },
-    {
-      "week": 3,
-      "start": "2026-08-24",
-      "phase": "A",
-      "deload": false,
-      "run": {
-        "long_km": 18,
-        "long_note": "HR ≤172",
-        "speed": "4×1200 @ 5:55",
-        "easy_km": 7
-      },
-      "swim": {
-        "total_m": 6100,
-        "sessions": 3,
-        "split": "1.5 / 2.0 / 1.5k",
-        "note": "add 3rd swim session",
-        "reps": {
-          "s1_200": 2,
-          "s2_800": 1,
-          "s3_100": 5,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "85 × 3×5"
-      }
-    },
-    {
-      "week": 4,
-      "start": "2026-08-31",
-      "phase": "A",
-      "deload": true,
-      "run": {
-        "long_km": 12,
-        "long_note": "easy deload",
-        "speed": "5K TT — 28:30 target (replaces reps)",
-        "easy_km": 5
-      },
-      "swim": {
-        "total_m": 6000,
-        "sessions": 3,
-        "split": "1.0 / 1.5 / 1.0k",
-        "note": "deload volume",
-        "reps": {
-          "s1_200": 2,
-          "s2_800": 1,
-          "s3_100": 4,
-          "deload": true
-        }
-      },
-      "strength": {
-        "focus": "Deload",
-        "bench": "67.5 × 2×5"
-      }
-    },
-    {
-      "week": 5,
-      "start": "2026-09-07",
-      "phase": "B",
-      "deload": false,
-      "run": {
-        "long_km": 17,
-        "long_note": "HR ≤172",
-        "speed": "5×1000 @ 5:30",
-        "easy_km": 7
-      },
-      "swim": {
-        "total_m": 6400,
-        "sessions": 3,
-        "split": "1.3 / 2.0 / 1.7k",
-        "note": "",
-        "reps": {
-          "s1_200": 3,
-          "s2_800": 1,
-          "s3_100": 6,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "85 × 3×5"
-      }
-    },
-    {
-      "week": 6,
-      "start": "2026-09-14",
-      "phase": "B",
-      "deload": false,
-      "run": {
-        "long_km": 19,
-        "long_note": "HR ≤172",
-        "speed": "3×2000 cruise @ ~5:50 (HR <182)",
-        "easy_km": 7
-      },
-      "swim": {
-        "total_m": 7200,
-        "sessions": 3,
-        "split": "1.4 / 2.2 / 1.9k",
-        "note": "",
-        "reps": {
-          "s1_200": 3,
-          "s2_800": 2,
-          "s3_100": 6,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "87.5 × 3×4"
-      }
-    },
-    {
-      "week": 7,
-      "start": "2026-09-21",
-      "phase": "B",
-      "deload": false,
-      "run": {
-        "long_km": 20,
-        "long_note": "HR ≤172",
-        "speed": "6×1000 @ 5:30",
-        "easy_km": 8
-      },
-      "swim": {
-        "total_m": 7400,
-        "sessions": 3,
-        "split": "1.5 / 2.5 / 2.0k",
-        "note": "",
-        "reps": {
-          "s1_200": 3,
-          "s2_800": 2,
-          "s3_100": 8,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "87.5 × 3×4"
-      }
-    },
-    {
-      "week": 8,
-      "start": "2026-09-28",
-      "phase": "B",
-      "deload": true,
-      "run": {
-        "long_km": 13,
-        "long_note": "easy deload",
-        "speed": "5×400 @ 5:00",
-        "easy_km": 5
-      },
-      "swim": {
-        "total_m": 6100,
-        "sessions": 3,
-        "split": "1.0 / 1.5 / 1.5k",
-        "note": "deload volume",
-        "reps": {
-          "s1_200": 2,
-          "s2_800": 1,
-          "s3_100": 5,
-          "deload": true
-        }
-      },
-      "strength": {
-        "focus": "Deload",
-        "bench": "70 × 2×5"
-      }
-    },
-    {
-      "week": 9,
-      "start": "2026-10-05",
-      "phase": "C",
-      "deload": false,
-      "run": {
-        "long_km": 19,
-        "long_note": "last 4k @ comp pace (~7:35)",
-        "speed": "4×1600 @ 5:45",
-        "easy_km": 8
-      },
-      "swim": {
-        "total_m": 8000,
-        "sessions": 3,
-        "split": "1.5 / 2.5 / 2.0k",
-        "note": "bias to long continuous (HIM prep)",
-        "reps": {
-          "s1_200": 3,
-          "s2_800": 3,
-          "s3_100": 6,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "90 × 3×3–4"
-      }
-    },
-    {
-      "week": 10,
-      "start": "2026-10-12",
-      "phase": "C",
-      "deload": false,
-      "run": {
-        "long_km": 21,
-        "long_note": "full HM distance, HR-capped",
-        "speed": "5×1000 @ 5:25",
-        "easy_km": 8
-      },
-      "swim": {
-        "total_m": 8400,
-        "sessions": 3,
-        "split": "1.5 / 2.5 / 2.5k",
-        "note": "",
-        "reps": {
-          "s1_200": 4,
-          "s2_800": 3,
-          "s3_100": 8,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "90 × 3×3"
-      }
-    },
-    {
-      "week": 11,
-      "start": "2026-10-19",
-      "phase": "C",
-      "deload": false,
-      "run": {
-        "long_km": 18,
-        "long_note": "8k @ comp pace inside",
-        "speed": "3×2000 @ 5:50 + strides",
-        "easy_km": 8
-      },
-      "swim": {
-        "total_m": 8400,
-        "sessions": 3,
-        "split": "1.5 / 3.0 / 2.5k",
-        "note": "peak swim volume",
-        "reps": {
-          "s1_200": 4,
-          "s2_800": 3,
-          "s3_100": 8,
-          "deload": false
-        }
-      },
-      "strength": {
-        "focus": "Upper + Lower",
-        "bench": "92.5 × 3×3"
-      }
-    },
-    {
-      "week": 12,
-      "start": "2026-10-26",
-      "phase": "C",
-      "deload": true,
-      "run": {
-        "long_km": 12,
-        "long_note": "deload; transition to HM sharpen",
-        "speed": "short sharpening reps @ ~5:00",
-        "easy_km": 5
-      },
-      "swim": {
-        "total_m": 6900,
-        "sessions": 3,
-        "split": "1.0 / 2.0 / 1.5k",
-        "note": "deload volume",
-        "reps": {
-          "s1_200": 2,
-          "s2_800": 2,
-          "s3_100": 5,
-          "deload": true
-        }
-      },
-      "strength": {
-        "focus": "Deload",
-        "bench": "70 × 2×5"
-      }
-    }
-  ],
-  "sessions": [
-    {
-      "date": "2026-09-02",
-      "sport": "run",
-      "week": 4,
-      "title": "5K TT aborted at 1.8k — legs cooked, not cardio. Right call.",
-      "verdict": "Warmup + first 1.5k felt good cardio-wise, but legs were muscularly shot from Mon's first sprints. Stopped at 1.8k. HR only 150 at 'TT' effort = legs quit before the engine. Postpone, no loss.",
-      "stats": [
-        {
-          "l": "Reached",
-          "v": "1.8 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "150"
-        },
-        {
-          "l": "Max HR",
-          "v": "184"
-        },
-        {
-          "l": "Then",
-          "v": "432m easy swim"
-        },
-        {
-          "l": "Weight",
-          "v": "79.7"
-        }
-      ],
-      "headline": "Toed the line, warmed up, ran the first ~1.5k feeling fine aerobically — but the legs were still cooked from Monday's first-ever max sprint session (peak DOMS at 48h). Called it at 1.8k. The tell: avg HR only 150 at max-TT intent (would be 175+ if the engine were the limiter) — the legs stopped him, not the cardio. Textbook right decision; a max effort on dead legs is a bad number and an injury risk for nothing.",
-      "insight": [
-        "Not a fitness signal — a fatigue-stacking one. First sprint session (novel stimulus) + poor sleep the night before = legs not available for a 5K max. The engine was fine (HR sat low).",
-        "Bony inner-shin spot: no longer flagged (didn't hurt on palpation yesterday, didn't stop the run today) — it was adductor/insertional soreness, now settling.",
-        "TT postponed. Rebook it fresh: 2+ good nights AND legs recovered from sprint DOMS — realistically early-mid Week 5. It's a benchmark, not a race; costs nothing to slide, and he'll run faster rested.",
-        "Rest of the deload (through Sep 6) kept very easy, as intended. Good discipline pulling the plug rather than grinding a junk TT."
-      ]
-    },
-    {
-      "date": "2026-09-01",
-      "sport": "run",
-      "week": 4,
-      "title": "Shakeout cut short — leg niggle + poor sleep (TT go/no-go)",
-      "verdict": "Stopped ~950m in: DOMS from Mon's first sprints (quad/adductor) + a proximal-medial-tibia niggle. No bony tenderness = stress-reaction unlikely. TT gated on tomorrow's warmup jog.",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "0.95 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "140"
-        },
-        {
-          "l": "Sleep",
-          "v": "5.1h · POOR"
-        },
-        {
-          "l": "Readiness",
-          "v": "POOR / 17"
-        },
-        {
-          "l": "HRV",
-          "v": "42 (good)"
-        }
-      ],
-      "headline": "Pre-TT shakeout, stopped early when the leg complained. Triaged: mid-quad + adductor SORENESS is benign DOMS from Monday's first-ever max sprints; the flag was a 'bone' spot at the proximal medial tibia (where the adductor/gracilis inserts) — but it does NOT hurt on firm palpation, which makes a bone stress-reaction unlikely and points to adductor insertional traction instead. Poor sleep (5.1h) drove readiness to 17, but HRV is fine (42), so it's acute sleep-debt, not overreaching.",
-      "insight": [
-        "Muscle soreness (rectus femoris + adductors) = expected DOMS 2 days after the first max sprint session; fades, does not stop a TT.",
-        "The deciding factor is the inner-shin bony spot — NO pain on pressing it (key: pinpoint bony tenderness is the stress-reaction hallmark, and it's absent), so most likely gracilis/adductor traction at the pes-anserine insertion, not bone stress.",
-        "Sleep protocol in place (caffeine cutoff <12pm, big carby dinner, magnesium, early night) + HRV already good → should wake recovered. Sleep is no longer the gate; the leg is.",
-        "TT DECISION: kept on Wed. Final gate = tomorrow's warmup jog. If legs loosen and the bony spot stays quiet WHILE running → send the PR. If that spot sharpens specifically during running → postpone a few days (no cost to a benchmark TT). Lean: green."
-      ]
-    },
-    {
-      "date": "2026-08-31",
-      "sport": "run",
-      "week": 4,
-      "title": "Sprint session 6×12s — baseline. Real sprint gear, confirmed.",
-      "verdict": "First max sprints. GPS speed soft, but form data is elite-flavoured (167ms GCT, 4.0% vertical ratio) — a genuine, biomechanically-legit sprint gear at near-zero cost.",
-      "stats": [
-        {
-          "l": "Reps",
-          "v": "6×12s"
-        },
-        {
-          "l": "Peak power",
-          "v": "842 W"
-        },
-        {
-          "l": "Ground contact",
-          "v": "167 ms"
-        },
-        {
-          "l": "Stride",
-          "v": "178 cm"
-        },
-        {
-          "l": "Vert ratio",
-          "v": "4.0%"
-        },
-        {
-          "l": "Max cadence",
-          "v": "234 spm"
-        }
-      ],
-      "headline": "You said you can book it — the form data screams it. First-ever max sprint session, flat ground, and the accelerometer metrics (which don't lie, unlike the GPS speed) are genuinely fast-athlete territory: ground contact halved to 167ms, stride opened to 178cm, vertical ratio a superb 4.0%, peak power 842W. And it cost almost nothing — Body Battery −3. The underused sprint ability isn't a feeling; it's measurable and real.",
-      "insight": [
-        "Form dynamics (reliable, accelerometer-derived) vs easy pace: GCT 167ms (vs 311), stride 178cm (vs 72), vertical ratio 4.0% (vs 10.6%), oscillation actually dropped to 6.7cm. You can't fake these — they're the signature of a genuinely fast athlete.",
-        "Per-rep AVG pace over the full 12s (watch Intervals — the honest number, incl. standstill start): 4:15 → 3:06 → 3:11 → 2:57 → 2:44 (best) → 3:07 /km. Peak instantaneous speed hit ~8.3 m/s (2:00/km) but that's a flattering single-sample max. Fastest whole rep was #5; a rolling start would push all of these quicker by skipping the acceleration tax.",
-        "Garmin labeled it SPEED (aerobic TE 2.0 / anaerobic 2.7) — correct. Body Battery −3, load 87: a high-value neuromuscular stimulus at near-zero recovery cost. Repeatable weekly, no dent to the endurance work.",
-        "Housekeeping: reps were 12s windows but ~8–9s of actual sprinting (standstill start eats time). A rolling start next time = cleaner data + gentler on the patellar tendon. Track peak power + GCT week to week, not the wobbly GPS speed."
-      ]
-    },
-    {
-      "date": "2026-08-29",
-      "sport": "run",
-      "week": 3,
-      "title": "Long run 18k — two-block, humid rain, strong negative split",
-      "verdict": "18k clean aerobic (TE 3.6, Z5 zero) in oppressive rain; HR ran hot for pace (weather), then negative-split into a good-feeling steady 6k.",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "18.0 km"
-        },
-        {
-          "l": "Time",
-          "v": "2:31 (2:29 mov)"
-        },
-        {
-          "l": "Avg HR",
-          "v": "156 (max 176)"
-        },
-        {
-          "l": "Block 1 (10k)",
-          "v": "~8:36 @ 153"
-        },
-        {
-          "l": "Block 2 (6k)",
-          "v": "~7:37 @ 168"
-        },
-        {
-          "l": "TE",
-          "v": "3.6 aerobic"
-        }
-      ],
-      "headline": "18k banked in genuinely bad air — 26C, dew point 20, light rain. HR ran hot at slow paces for the first 10k (the humidity tax, self-diagnosed), then he found rhythm and negative-split the steady 6k at 7:37 @ 168 with cadence jumping to 153. Fully aerobic (Z5 zero, anaerobic TE 0.0), HR-disciplined, and a strong-feeling finish. Slower than a cool day, but that's the weather, not fitness.",
-      "insight": [
-        "Block 1 (easy 10k): ~8:36/km moving @ HR 153 — high HR for that slow a pace, the fingerprint of 26C + dew point 20 + rain (saturated air, no evaporative cooling). ~2.27 km of walk-breaks to hold the cap, all in this half.",
-        "Block 2 (steady 6k): ~7:37/km @ HR 168 under the 172 cap, cadence up to 153 — a clean ~1 min/km negative split. This is the half that 'felt good,' and the data agrees.",
-        "Humidity tax quantified: block 2 today 7:37 @ 168 vs Aug 23 block 2 7:05 @ 166 — same effort, ~30 s/km slower purely from conditions. Don't read the slower pace as lost fitness.",
-        "Fully aerobic quality: TE 3.6 'TEMPO', anaerobic 0.0, Z5 time zero, load 135, Body Battery only −12. Comp surges dropped for the healing knee; the ≤172 steady finish kept the stimulus without high-force turnover.",
-        "Ongoing limiter: ~2.27 km walking again shows easy running still pushes HR to the cap in heat — aerobic base is still the thing being built. On track."
-      ]
-    },
-    {
-      "date": "2026-08-26",
-      "sport": "run",
-      "week": 3,
-      "title": "Speed 4×1200 @ 5:40 — nailed it, VO2 up to 44",
-      "verdict": "Hit a self-chosen faster target on the number (5:42 avg), strong cadence, shrugged off a fall. Breakthrough-quality.",
-      "stats": [
-        {
-          "l": "Reps",
-          "v": "4×1200"
-        },
-        {
-          "l": "Avg pace",
-          "v": "5:42/km"
-        },
-        {
-          "l": "Target",
-          "v": "5:40"
-        },
-        {
-          "l": "Cadence",
-          "v": "167–172 early"
-        },
-        {
-          "l": "Avg HR",
-          "v": "180 (max 193)"
-        },
-        {
-          "l": "VO₂max",
-          "v": "43 → 44"
-        }
-      ],
-      "headline": "This is what the top-end you keep talking about looks like on the clock. You asked to run it faster than planned and then did exactly that — 5:42 against a 5:40 target, right in the band on all four reps. Cadence hit 167–172 (your easy runs sit ~145), stride opened to ~105 cm, and you drove VO2max to a new high of 44. You even fell in rep 3 and still closed rep 4 at 5:47. Genuinely strong day.",
-      "insight": [
-        "On target, all four: R1 5:35 (cad 167) / R2 5:41 (cad 172) / R3 5:45 (cad 161, the fall) / R4 5:47 (cad 162). A controlled positive split from fatigue, not a fade — you held the band even after going down.",
-        "Your in-run feel was spot on: cadence WAS best early (167→172) and settled to 161 late. Reading your own turnover that accurately is a real skill, and 167+ at speed is a big step up from ~145 easy.",
-        "Real VO2 stimulus: reps at HR 180 (your new recalculated LTHR) with a 193 max is exactly the intensity that pushes the number UP — hence 43→44 (new high), plus LTHR 182→180 and FTP 326→333 W. The engine is climbing.",
-        "Resilience banked: fell and scraped the knee in rep 3, took the hit, and still ran rep 4 on pace. That's the kind of day that builds more than fitness."
-      ]
-    },
-    {
-      "date": "2026-08-25",
-      "sport": "swim",
-      "week": 3,
-      "title": "Technique Day 1.3k — muggy-air morning",
-      "verdict": "Easy technique work but HR ran hot (active 150 avg, 184 max). Environmental, not fitness — confirmed muggy low-pressure + Hebbal PM2.5 morning.",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "1.30 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "138"
-        },
-        {
-          "l": "Active HR",
-          "v": "150 (max 184)"
-        },
-        {
-          "l": "Active time",
-          "v": "19 min"
-        },
-        {
-          "l": "Air",
-          "v": "AQI ~140"
-        }
-      ],
-      "headline": "Technique/drill session where the whole pool — and a swimmer in a neighbouring complex — was out of breath. HR sat high for the low effort, traced to a humid, overcast, low-pressure morning with elevated particulate at a 7:27am open-air rooftop pool. Not a fitness red flag.",
-      "insight": [
-        "Active-work HR 150 avg / 184 max is high for technique swimming (should sit low 130s); rests also stayed up (133 avg, 177 max) instead of dropping fast — the fingerprint of harder-to-move air, not threshold effort.",
-        "Environmental cause confirmed (web-checked): overcast 23C / 73% RH (dew point ~18C) low-pressure morning + Hebbal AQI ~140 at 07:27, peak inversion window, open-air 13th-floor pool. Neighbouring-complex swimmer felt identical — rules out pool chloramine, ventilation, and personal fitness.",
-        "Not hypoxia: barometric dips shave only ~1-2% off O2 partial pressure; it's the perception of air hunger (humidity + particulate) driving breathing rate and HR up. Bengaluru's ~920m baseline amplifies the dip vs a lowland city.",
-        "Protocol: on still, overcast monsoon mornings, check PM2.5 before an open-air swim. If 130+, treat as easy/technique by default and ignore the elevated HR."
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "sport": "run",
-      "week": 3,
-      "title": "Easy / recovery run 4.7k — HR-capped (VO2-safe)",
-      "verdict": "Cap honored perfectly (142 avg / 157 max). Stopped at 4.7 of 6k on tired legs — correct call the day after the 16k, not a miss.",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "4.7 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "142"
-        },
-        {
-          "l": "Max HR",
-          "v": "157"
-        },
-        {
-          "l": "Cadence",
-          "v": "146 spm"
-        },
-        {
-          "l": "Pace",
-          "v": "~9:10/km"
-        }
-      ],
-      "headline": "Day-after-16k recovery run, executed exactly as designed. HR never came near the ceiling so the watch generated no VO2max data point — legs, not lungs, were the limiter, and stopping early was the right call.",
-      "insight": [
-        "HR discipline: running blocks 142 avg / max 157, fully under the 150 easy cap and the 160 ceiling. This is the VO2-safe easy run we scheduled — no VO2max data point generated, as intended.",
-        "Legs, not lungs, ended it: 18 short walk breaks and stopped at 4.7 of 6k, but max HR only 157 — so the walks were leg fatigue from the 16k, not HR-ceiling driven. Bailing early on tired legs was correct, not a miss.",
-        "Running-only cadence 145.5 spm — solid for recovery pace and cleaner than walk-diluted long-run numbers; form held (GCT 330ms, vertical ratio 10.6, 206W).",
-        "Pace ~9:10/km (running) is slow, but pace is irrelevant on a capped recovery day — HR and how the legs feel are the only metrics. Muggy Bengaluru evening also taxed it."
-      ]
-    },
-    {
-      "date": "2026-08-23",
-      "sport": "run",
-      "week": 2,
-      "title": "Long run 16k — two-block HR-capped (base)",
-      "verdict": "Textbook execution: block 1 sat at 151, clean negative split. Target behavior, repeated.",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "16.0 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "153"
-        },
-        {
-          "l": "Block 1",
-          "v": "7:59 @ 151"
-        },
-        {
-          "l": "Block 2",
-          "v": "7:05 @ 166"
-        },
-        {
-          "l": "Pace",
-          "v": "7:49/km"
-        }
-      ],
-      "headline": "The two-block structure held almost exactly as drawn. Block 1 sat at 151 avg across 9 km — dead center of target — then a clean negative split into a stronger block 2. Second disciplined HR-capped long run in a row; the Jul 19 Z4 blow-up is firmly in the past.",
-      "insight": [
-        "Block 1 easy base (km3-11, 9k): 7:59/km @ avg HR 151, max 168 — bang on the 150-158 band, cap 160. The bulk of the run held the number the whole way.",
-        "Block 2 steady (km12-16, 5k): 7:05/km @ avg HR 166 under the 172 cap. 7:05 at 166 is quicker than the Aug 9 comp pace (7:37 at 171) — base work showing up as pace-at-HR.",
-        "Walk-recovery fix worked: ~70 short walks let HR settle to ~150 before running again (vs Aug 16's tag-and-go), so block 1 held instead of sawtoothing. Self-diagnosed and applied.",
-        "Flags: a max-195 (Z5) spike late in block 2 — a hill or finish surge, brief but 'steady' means no near-max pops. And ~29 min total walking = easy running pace still drives HR to the ceiling; aerobic base is still the limiter, so watch for walking LESS as the block progresses."
-      ]
-    },
-    {
-      "date": "2026-08-22",
-      "sport": "swim",
-      "week": 2,
-      "title": "CSS TEST — 400 + 192 TT (+ 3×336 aerobic)",
-      "verdict": "First real swim benchmark: CSS = 2:18/100m. Clean, valid test.",
-      "stats": [
-        {
-          "l": "CSS",
-          "v": "2:18/100m"
-        },
-        {
-          "l": "400 TT",
-          "v": "8:35 (2:09)"
-        },
-        {
-          "l": "192 TT",
-          "v": "3:47 (1:58)"
-        },
-        {
-          "l": "Distance",
-          "v": "2512 m"
-        },
-        {
-          "l": "Avg HR",
-          "v": "155"
-        }
-      ],
-      "headline": "The number this whole exercise was for: CSS = 2:18/100m. Both TTs honest (HR 171–173, redlined to 190 on the 192), full recovery between so they didn't contaminate each other. Breaststroke stayed in the WU/first-336/CD — never the TTs — so the test is clean.",
-      "insight": [
-        "Training paces off CSS: speed ~2:14, threshold (CSS) 2:18, endurance ~2:26 per 100m (per 16 m length: ~21.5 / ~22 / ~23.5 s). Apply S2 @ ~2:26, S3 @ ~2:18, speed reps just under CSS.",
-        "11 s/100m spread between the 400 (2:09) and 192 (1:58) = big fatigue slope. Top-end speed is there; fatigue resistance over distance is the developing quality — exactly the profile. As base builds, the 400 pace creeps toward the 192 and CSS drops.",
-        "Best qualitative note: 'most unbroken I've swum — rest between sets, not within.' Continuous hold of form and pace IS the aerobic quality we want, worth more than any single fast split. 3×336 done continuous.",
-        "3×336 pace vs HR (20s rest): rep2 2:20/100m @ HR 168, rep3 ~2:24 @ HR 158. Pace sat at CSS but effort didn't — rep3 was cleanly aerobic (13–15 bpm under threshold HR), so the set was mixed, not a threshold grind. It felt easy because it was broken, swim HR reads low, and it's his best discipline — in the pool, trust pace + HR over RPE.",
-        "Feedback: keep the 3×336 and any aerobic filler freestyle so the pace means something — breaststroke there just makes it easier filler and won't build the freestyle engine."
-      ]
-    },
-    {
-      "date": "2026-08-20",
-      "sport": "swim",
-      "week": 2,
-      "title": "Swim — endurance + speed (NOT the CSS test)",
-      "verdict": "Even-paced main set on a tired body; CSS test still pending",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "1616 m"
-        },
-        {
-          "l": "Main set",
-          "v": "2×272 m"
-        },
-        {
-          "l": "Pace",
-          "v": "~2:16/100m"
-        },
-        {
-          "l": "Avg HR",
-          "v": "152"
-        },
-        {
-          "l": "SWOLF",
-          "v": "31"
-        }
-      ],
-      "headline": "Endurance + speed swim the morning after the train-sleep run. The two big reps were paced beautifully; efficiency held. This was NOT a valid CSS test — that 400+200 TT is still owed on a rested day.",
-      "insight": [
-        "Highlight: 2×272 m at 2:16.3 and 2:16.8/100m — half a second apart across 272 m each. Same pacing discipline as the run reps, now showing in the pool too.",
-        "Efficiency held: SWOLF 31 on both big reps (no decay under distance) — technique held, not just muscled.",
-        "Speed set 5×32 m descended then wobbled (1:40→1:47→1:52→2:01→1:45), HR to 178 — mid-set fade is fatigue from the week, not form.",
-        "NOT a CSS test: the session was controlled 272 m reps, not the maximal 400+200 TT the plan wants. No valid CSS number produced. Testing max on a depleted body would give a garbage number anyway — do it rested this week.",
-        "Load flag: VO2 run at 188 bpm on no sleep + this swim (TE 3.3 aerobic / 2.2 anaerobic) inside ~24 h. System is stacking — keep the Posterior lift light and tomorrow genuinely easy."
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "sport": "run",
-      "week": 2,
-      "title": "Speed 5×1000 @ 5:55 (LT reps)",
-      "verdict": "Textbook even pacing — but run on no sleep, HR redlined",
-      "stats": [
-        {
-          "l": "Reps",
-          "v": "5×1000"
-        },
-        {
-          "l": "Pace",
-          "v": "5:56–6:01"
-        },
-        {
-          "l": "Rep HR",
-          "v": "182–189"
-        },
-        {
-          "l": "TE",
-          "v": "4.2 VO2max"
-        },
-        {
-          "l": "Load",
-          "v": "190"
-        }
-      ],
-      "headline": "Ran the same session from a few weeks ago on a wrecked battery (slept upright on a train). Pacing was near-perfect; HR blew past threshold because of the sleep debt — not a fitness read.",
-      "insight": [
-        "Pacing was the win: 5:58 / 6:01 / 5:58 / 5:59 / 5:56 — dead-even, no rep-1 surge, no fade. The pacing discipline held.",
-        "HR was the story: reps ran 182–189 avg (LTHR 182), maxing 196 — at/above threshold the whole time. Garmin logged it VO2max (TE 4.2), i.e. run harder than the sub-LT cruise it was written as.",
-        "Cause: no real sleep (train) + evening heat + AM load. Same pace cost far more cardiovascularly. Effort read is invalid as a fitness signal — discard the bad execution score.",
-        "Cadence decayed under fatigue: 158→162→156→154→154, dropping under the 155 floor on the last two reps while pace held — i.e. overstriding crept in (GCT 287 ms). A fatigue signature, not a form regression.",
-        "Re-test value pending: when rested, expect this exact session at LOWER HR with cadence held >155. Today's is too compromised to compare fairly."
-      ]
-    },
-    {
-      "date": "2026-08-16",
-      "sport": "run",
-      "week": 1,
-      "title": "Long run 17k (HR-capped, aerobic)",
-      "verdict": "Longer and lower HR — base trending right",
-      "stats": [
-        {
-          "l": "Distance",
-          "v": "17.0 km"
-        },
-        {
-          "l": "Avg HR",
-          "v": "156"
-        },
-        {
-          "l": "Pace",
-          "v": "~7:50/km"
-        },
-        {
-          "l": "TE",
-          "v": "4.1 Aerobic"
-        },
-        {
-          "l": "Load",
-          "v": "185"
-        }
-      ],
-      "headline": "Ran 2k longer than Aug 9 at a lower average HR — post-illness, in the morning. The aerobic base is trending exactly right.",
-      "insight": [
-        "First morning-start run of the block: no evening-heat HR tax, so this is the cleanest aerobic read yet.",
-        "Block 1 easy (km1-12) avg HR 154 at ~7:55/km; Block 2 steady (km13-17) avg HR 163 at ~7:39/km. HR discipline held on both.",
-        "17k at avg HR 156 vs the Aug 9 15k at 161: longer AND lower — the aerobic-base signal these runs are built to produce.",
-        "Cadence 138 avg (overstriding on easy pace) but climbed to 150+ on the faster kms. Keep nudging easy-pace turnover toward 155+."
-      ]
-    },
-    {
-      "date": "2026-08-12",
-      "sport": "run",
-      "week": 1,
-      "title": "Speed repeats (fartlek)",
-      "verdict": "Strong top-end · overshot pace",
-      "stats": [
-        {
-          "l": "Dist",
-          "v": "5.0k"
-        },
-        {
-          "l": "Avg HR",
-          "v": "148"
-        },
-        {
-          "l": "Max HR",
-          "v": "189"
-        },
-        {
-          "l": "TE",
-          "v": "3.1a / 2.8an"
-        },
-        {
-          "l": "Load",
-          "v": "153"
-        }
-      ],
-      "headline": "Ignoring compliance — an encouraging session. Top-end is in better shape than easy-run HR suggests.",
-      "insight": [
-        "First non-zero anaerobic TE (2.8) in ages — the fartlek does what HR-capped long runs structurally can't.",
-        "Held 4:40–5:00/km reps at HR only 165–172 (under 182 LTHR) — genuine speed produced sub-threshold. Confirms the limiter is aerobic base, not top-end.",
-        "Cadence hit 163–168 on the good reps (vs habitual 143); power 340–410W. Mechanics wake up when you ask for speed.",
-        "Overshot nearly every rep — ran 20–40s/km faster than target. 'Not hard physiologically' tricked you into pushing. Load 153 ≈ a 15k long run.",
-        "Fix is a skill: aim for the SLOW end of the band. Pacing accuracy > pace. Next quality = 5×1000 @ 5:55 (distance polices the overshoot)."
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "sport": "run",
-      "week": 1,
-      "title": "Recovery run (HR-capped)",
-      "verdict": "Textbook restraint",
-      "stats": [
-        {
-          "l": "Dist",
-          "v": "2.7k"
-        },
-        {
-          "l": "Avg HR",
-          "v": "134"
-        },
-        {
-          "l": "Max HR",
-          "v": "145"
-        },
-        {
-          "l": "TE",
-          "v": "0.9 Recovery"
-        },
-        {
-          "l": "Load",
-          "v": "12"
-        }
-      ],
-      "headline": "The easy-day discipline that's been the hard part — nailed.",
-      "insight": [
-        "Avg HR 134, max 145 — never near the 150–158 cap, one day off a 15k. Exactly the restraint that was missing pre-pivot.",
-        "Load 11.7 aids recovery rather than adding fatigue. Pace ~10:40/km is an output here, not a fitness signal.",
-        "Cadence 143 — low-stakes on recovery days, but the standing nudge toward 155+ still applies."
-      ]
-    },
-    {
-      "date": "2026-08-09",
-      "sport": "run",
-      "week": 0,
-      "title": "Long progression (5+5+5)",
-      "verdict": "HR discipline held — the breakthrough",
-      "stats": [
-        {
-          "l": "Dist",
-          "v": "15.0k"
-        },
-        {
-          "l": "Avg HR",
-          "v": "161"
-        },
-        {
-          "l": "Max HR",
-          "v": "179"
-        },
-        {
-          "l": "TE",
-          "v": "3.9a / 0.0an"
-        },
-        {
-          "l": "Load",
-          "v": "160"
-        }
-      ],
-      "headline": "The behaviour change that matters: sub-172 held for the whole run.",
-      "insight": [
-        "Block 3 comp-pace avg never crossed 172 — a complete reversal of the Jul 19 Z4 blow-up.",
-        "At the sub-172 ceiling, comp pace was ~7:37/km (not the 7:10 predictor) — sustainable pace anchored to 7:35.",
-        "Anaerobic 0.0 is correct by design for an HR-capped sub-threshold run. VO₂max ticked 41→43; status Productive."
-      ]
-    }
-  ],
-  "swim": {
-    "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400−200 dist) ÷ (400time − 200time). Sets the threshold pace for quality reps.",
-    "zones": [
-      {
-        "id": "easy",
-        "label": "Easy / recovery",
-        "pace": "2:15–2:25 /100m",
-        "rpe": "4–5",
-        "use": "Tue swim, warm-ups, cool-downs"
-      },
-      {
-        "id": "aerobic",
-        "label": "Aerobic / steady",
-        "pace": "2:05–2:15 /100m",
-        "rpe": "6",
-        "use": "Thu main-volume swim"
-      },
-      {
-        "id": "quality",
-        "label": "Threshold / quality",
-        "pace": "1:55–2:05 /100m",
-        "rpe": "7–8",
-        "use": "Sat quality swim reps"
-      }
-    ],
-    "templates": [
-      {
-        "id": "easy",
-        "title": "Easy aerobic (Tue, ~1.5k)",
-        "role": "Recovery / technique",
-        "sets": [
-          "WU 200 easy mixed",
-          "Main 800–1000 smooth — 4×200 @ RPE 4–5 (15s rest), + 2×50 drill",
-          "CD 100 easy"
-        ]
-      },
-      {
-        "id": "aerobic",
-        "title": "Main aerobic (Thu, ~2.5k)",
-        "role": "Volume builder",
-        "sets": [
-          "WU 300 (swim + 4×50 build)",
-          "Main ~1600–1800 — 3×400 @ RPE 6 (20s rest) → 2×600 / 1×1000 as weeks progress",
-          "CD 200 easy"
-        ]
-      },
-      {
-        "id": "quality",
-        "title": "Quality (Sat, ~2.0k)",
-        "role": "The one hard swim",
-        "sets": [
-          "WU 300 + 6×50 build",
-          "Main ~1200–1400 — 8×100 @ RPE 7–8 (15–20s rest) → or 4×200 hard / 10×100 descending",
-          "CD 200 easy"
-        ]
-      }
-    ]
+  {
+   "id": "lt_pace",
+   "label": "LT pace",
+   "value": "5:40",
+   "unit": "/km",
+   "sport": "run",
+   "note": "4×1200 Aug 26 @ 5:42/km, HR 180 (=LTHR)"
   },
-  "swim_sessions": [
-    {
-      "id": "S1",
-      "name": "Technique",
-      "slot": "Mon AM",
-      "focus": "technique + aerobic, easy",
-      "fixed": [
-        "400 wu easy",
-        "8×50 drills (catch-up · single-arm · fist · scull) 15s",
-        "6×100 pull buoy+paddles 20s",
-        "200 cd"
-      ],
-      "scaled": {
-        "key": "s1_200",
-        "label": "{n}×200 smooth 20s",
-        "range": "2 → 4 reps across the block"
-      }
-    },
-    {
-      "id": "S2",
-      "name": "Endurance",
-      "slot": "Fri AM",
-      "focus": "aerobic base — the keeper for HIM",
-      "fixed": [
-        "400 + 4×50 build wu",
-        "400 pull easy (buoy)",
-        "200 cd"
-      ],
-      "scaled": {
-        "key": "s2_800",
-        "label": "{n}×800 continuous 30s",
-        "range": "1 → 3 reps across the block"
-      }
-    },
-    {
-      "id": "S3",
-      "name": "Threshold + speed",
-      "slot": "Wed AM",
-      "focus": "quality — pairs with PM speed run (one hard day)",
-      "fixed": [
-        "400 + 4×50 build wu",
-        "6×50 sprint 20s",
-        "400 pull+paddles strong",
-        "300 cd"
-      ],
-      "scaled": {
-        "key": "s3_100",
-        "label": "{n}×100 @ threshold 15–20s (hold pace)",
-        "range": "4 → 8 reps; deloads go easy, no sprint"
-      }
-    }
-  ],
-  "strength_split": {
-    "framework": "Posterior / Anterior / Upper",
-    "rule": "Bench is the priority lift, trained 2x/wk: Anterior = HEAVY (comp-style main + paused-bench accessory for the bottom-end weak link), Upper = VOLUME/rep. 2 sets/exercise except main bench = 3 on Anterior.",
-    "note": "Built lopsided on purpose: swimming (2-3x/wk) already floods back, lats and rear delts, so the gym protects pressing and arms. Bench stays actual barbell on both exposures; keep heavy leg work off long-run and hardest-swim days.",
-    "volume_note": "Back (~8 gym sets + 2-3 swims) is by far the most-trained region. If shoulders feel stacked, the Upper-day pulldown is the first thing to trim.",
-    "days": [
-      {
-        "name": "Posterior",
-        "slot": "Thu",
-        "focus": "back · triceps · glutes/hams · rear delt · calves · adductor + hamstring prehab",
-        "lifts": [
-          {
-            "n": "Weighted Pull-Up",
-            "s": "2"
-          },
-          {
-            "n": "Seated Cable Row (V-Grip)",
-            "s": "2"
-          },
-          {
-            "n": "Single-Leg RDL (DB)",
-            "s": "2",
-            "tag": "left-hip / weak-glute work"
-          },
-          {
-            "n": "Copenhagen Plank",
-            "s": "2",
-            "tag": "adductor prehab — starting BENT-KNEE; begin once sprint soreness clears, build lever slowly"
-          },
-          {
-            "n": "Nordic Hamstring Curl",
-            "s": "2",
-            "tag": "hamstring prehab (sprint injury #1) — start band-assisted / top-range only"
-          },
-          {
-            "n": "Back Extension (Weighted)",
-            "s": "2"
-          },
-          {
-            "n": "Face Pull",
-            "s": "2"
-          },
-          {
-            "n": "Single-Arm Tricep Extension",
-            "s": "2"
-          },
-          {
-            "n": "Overhead Tricep Extension",
-            "s": "2"
-          },
-          {
-            "n": "Standing Calf Raise",
-            "s": "2"
-          }
-        ]
-      },
-      {
-        "name": "Anterior",
-        "slot": "Tue",
-        "focus": "BENCH DAY · chest · delts · biceps · quads · tib · abs",
-        "lifts": [
-          {
-            "n": "Barbell Bench Press",
-            "s": "3",
-            "tag": "primary — HEAVY, comp-style (leg drive), full ROM"
-          },
-          {
-            "n": "Paused Bench Press",
-            "s": "2",
-            "tag": "bottom-end weak link — 2-3s dead stop"
-          },
-          {
-            "n": "Shoulder Press (DB) / Push Press",
-            "s": "2"
-          },
-          {
-            "n": "Lateral Raise (Machine)",
-            "s": "2"
-          },
-          {
-            "n": "Goblet / Barbell Squat",
-            "s": "2"
-          },
-          {
-            "n": "Step-Up (DB)",
-            "s": "2"
-          },
-          {
-            "n": "Cross-Body Hammer Curl",
-            "s": "2"
-          },
-          {
-            "n": "Barbell / DB Curl",
-            "s": "2"
-          },
-          {
-            "n": "Tibialis Raise",
-            "s": "2"
-          }
-        ]
-      },
-      {
-        "name": "Upper",
-        "slot": "Sat",
-        "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
-        "lifts": [
-          {
-            "n": "Barbell Bench (volume/rep, comp-style, full ROM)",
-            "s": "2"
-          },
-          {
-            "n": "Bent-Over Row (Smith)",
-            "s": "2"
-          },
-          {
-            "n": "Lat Pulldown / Pull-Up",
-            "s": "2"
-          },
-          {
-            "n": "Incline Chest Press / Dip",
-            "s": "2"
-          },
-          {
-            "n": "Lateral Raise / Shoulder Press",
-            "s": "2"
-          },
-          {
-            "n": "Curl",
-            "s": "2"
-          },
-          {
-            "n": "Tricep Pushdown / Extension",
-            "s": "2"
-          },
-          {
-            "n": "Hanging Leg Raise",
-            "s": "2"
-          }
-        ],
-        "note": "wk3+ (was Fri while at 2 swims)"
-      }
-    ]
+  {
+   "id": "lthr",
+   "label": "LTHR",
+   "value": "180",
+   "unit": "bpm",
+   "sport": "run",
+   "note": "Aug 26 · long-run cap 172 · easy cap 162"
   },
-  "run_targets": {
-    "easy": {
-      "label": "Easy / recovery",
-      "hr": "≤150–158",
-      "note": "mornings; slow pace to hold HR"
-    },
-    "long": {
-      "label": "Long run",
-      "hr": "≤172",
-      "note": "start easy; race-pace segments only from wk 9"
-    },
-    "speed_short": {
-      "label": "Speed — short reps (400–1000m)",
-      "pace": "~5:50 /km",
-      "note": "LT pace; honest at this distance"
-    },
-    "speed_cruise": {
-      "label": "Speed — cruise (1600–3000m)",
-      "pace": "HR just under 182",
-      "note": "let pace land ~6:00–6:20; don't force 5:50"
-    }
+  {
+   "id": "swim_css",
+   "label": "Swim CSS",
+   "value": "2:18",
+   "unit": "/100m",
+   "sport": "swim",
+   "trend": "flat",
+   "note": "Aug 22 test · 400 8:35 / 192 3:47 · endur ~2:26, thresh 2:18, speed ~2:14"
   },
-  "run_zones": {
-    "hr": [
-      {
-        "z": "Z2 · Easy",
-        "use": "true easy",
-        "r": "122–140"
-      },
-      {
-        "z": "Z3 · Aerobic",
-        "use": "long-run sweet spot",
-        "r": "141–160"
-      },
-      {
-        "z": "Z4 · Sub-threshold",
-        "use": "steady → LT (180)",
-        "r": "161–180"
-      },
-      {
-        "z": "Z5 · VO2 / anaerobic",
-        "use": "intervals · surges",
-        "r": "181+"
-      }
-    ],
-    "hr_note": "<b>Easy / long-run cap ~162</b> (aim 150–158 avg, govern by HR not pace). LTHR 180 · max ~203 · RHR ~60.",
-    "paces": [
-      {
-        "l": "Comp-pace (sub-172)",
-        "v": "~7:00/km"
-      },
-      {
-        "l": "HM (to earn)",
-        "v": "~6:47/km"
-      },
-      {
-        "l": "Threshold / LT",
-        "v": "~5:40/km"
-      },
-      {
-        "l": "Easy / long",
-        "v": "HR-governed"
-      }
-    ],
-    "pace_note": "Off the Aug 26 speed run (LT 5:40) + Aug 23 long run. Re-validate after the Sep 2 5K TT."
-  },
-  "week_template_full": [
-    {
-      "day": "Mon",
-      "sessions": [
-        {
-          "sport": "run",
-          "title": "Sprint session",
-          "detail": "6×12s hill sprints + easy volume (wk5+)"
-        }
-      ]
-    },
-    {
-      "day": "Tue",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Anterior (bench)",
-          "detail": "bench focus"
-        }
-      ]
-    },
-    {
-      "day": "Wed",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim — threshold",
-          "swim_id": "S3",
-          "detail": "threshold/speed"
-        },
-        {
-          "sport": "run",
-          "slot": "PM",
-          "title": "Speed run",
-          "detail": "LT intervals"
-        }
-      ]
-    },
-    {
-      "day": "Thu",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Posterior",
-          "detail": "auto-regulate"
-        }
-      ]
-    },
-    {
-      "day": "Fri",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim — endurance",
-          "swim_id": "S2",
-          "detail": "aerobic base"
-        },
-        {
-          "sport": "run",
-          "slot": "PM",
-          "title": "Easy / recovery run",
-          "detail": "HR ≤150–158, short"
-        }
-      ]
-    },
-    {
-      "day": "Sat",
-      "sessions": [
-        {
-          "sport": "run",
-          "slot": "AM",
-          "title": "Long run",
-          "detail": "HR ≤172 (run AM for the heat)"
-        },
-        {
-          "sport": "strength",
-          "slot": "PM",
-          "title": "Upper",
-          "detail": "rep-focused bench"
-        }
-      ]
-    },
-    {
-      "day": "Sun",
-      "sessions": [
-        {
-          "sport": "swim",
-          "title": "Swim — technique",
-          "swim_id": "S1",
-          "detail": "easy/recovery swim"
-        }
-      ]
-    }
-  ],
-  "week_template_wk2": [
-    {
-      "day": "Mon",
-      "sessions": [
-        {
-          "sport": "run",
-          "title": "Easy / recovery run",
-          "detail": "AM · HR ≤150–158"
-        }
-      ]
-    },
-    {
-      "day": "Tue",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Anterior (bench)",
-          "detail": "bench focus"
-        }
-      ]
-    },
-    {
-      "day": "Wed",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim",
-          "detail": "aerobic"
-        },
-        {
-          "sport": "run",
-          "slot": "PM",
-          "title": "Speed run",
-          "detail": "LT intervals"
-        }
-      ]
-    },
-    {
-      "day": "Thu",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Posterior",
-          "detail": "auto-regulate"
-        }
-      ]
-    },
-    {
-      "day": "Fri",
-      "sessions": [
-        {
-          "sport": "swim",
-          "slot": "AM",
-          "title": "Swim",
-          "detail": "aerobic"
-        }
-      ]
-    },
-    {
-      "day": "Sat",
-      "sessions": [
-        {
-          "sport": "strength",
-          "title": "Upper",
-          "detail": "rep-focused bench"
-        }
-      ]
-    },
-    {
-      "day": "Sun",
-      "sessions": [
-        {
-          "sport": "run",
-          "title": "Long run",
-          "detail": "HR ≤172"
-        }
-      ]
-    }
-  ],
-  "bench_progression": {
-    "title": "Bench Progression — Weekly Targets",
-    "why": "Weak link confirmed Aug 29: bottom-end / starting strength (feet-up paused 70×4 vs 70×9 touch-and-go; close-grip paused 60×12 strong = triceps fine). Fix = paused-bench accessory + a real progression to aim at.",
-    "how": "Double progression. Anterior main bench is comp-style (feet planted, use leg drive), full ROM every rep. Hit the top rep target at a load → add 2.5 kg next session. In a cut: aim high, but if a set stalls, REPEAT the weight next week rather than grind — goal is a heavy signal + steady climb, primed to jump to 100 kg post-cut. e1RM climbs 87→96 across the block.",
-    "cols": [
-      "Wk",
-      "Anterior — main bench (3 sets)",
-      "Paused bench (2 sets)",
-      "Upper — volume bench (2 sets)"
-    ],
-    "weeks": [
-      {
-        "wk": 4,
-        "deload": true,
-        "main": "72.5×4 · 67.5×5,5",
-        "paused": "60×4,4",
-        "upper": "65×6,6"
-      },
-      {
-        "wk": 5,
-        "main": "77.5×4 · 72.5×5,5",
-        "paused": "62.5×4,4",
-        "upper": "70×6,6"
-      },
-      {
-        "wk": 6,
-        "main": "77.5×5 · 72.5×6,6",
-        "paused": "62.5×5,5",
-        "upper": "70×7,7"
-      },
-      {
-        "wk": 7,
-        "main": "80×4 · 75×5,5",
-        "paused": "65×4,4",
-        "upper": "72.5×6,6"
-      },
-      {
-        "wk": 8,
-        "deload": true,
-        "main": "72.5×3 · 65×5,5",
-        "paused": "60×4,4",
-        "upper": "65×6,6"
-      },
-      {
-        "wk": 9,
-        "main": "80×5 · 75×6,6",
-        "paused": "65×5,5",
-        "upper": "72.5×7,7"
-      },
-      {
-        "wk": 10,
-        "main": "82.5×4 · 77.5×5,5",
-        "paused": "67.5×4,4",
-        "upper": "75×6,6"
-      },
-      {
-        "wk": 11,
-        "main": "82.5×5 · 77.5×6,6",
-        "paused": "67.5×5,5",
-        "upper": "75×7,7"
-      },
-      {
-        "wk": 12,
-        "deload": true,
-        "main": "work to heavy 3 @ 85 (e1RM check) · 70×5",
-        "paused": "— (or light)",
-        "upper": "65×6,6"
-      }
-    ]
-  },
-  "running_history": {
-    "note": "Full running history: Huawei Health (Nov 2025–Jun 2026, de-duplicated from the Apple Health export — Huawei/Strava/Runna triple-logged every run) + Garmin (Jul 2026+). Mar & Jun run totals are Huawei's own authoritative monthly figures.",
-    "monthly": [
-      {
-        "m": "Nov '25",
-        "km": 1.7,
-        "longest": 1.7
-      },
-      {
-        "m": "Jan '26",
-        "km": 2.3,
-        "longest": 1.3
-      },
-      {
-        "m": "Feb",
-        "km": 31.9,
-        "longest": 7.1,
-        "flag": "real start"
-      },
-      {
-        "m": "Mar",
-        "km": 56.4,
-        "longest": 10.1,
-        "auth": true
-      },
-      {
-        "m": "Apr",
-        "km": 16.3,
-        "longest": 9.6,
-        "flag": "patellar tendon"
-      },
-      {
-        "m": "May",
-        "km": 29.7,
-        "longest": 7.5
-      },
-      {
-        "m": "Jun",
-        "km": 35.2,
-        "longest": 8.2,
-        "auth": true
-      },
-      {
-        "m": "Jul",
-        "km": 59.4,
-        "longest": 14.6,
-        "flag": "Garmin era"
-      },
-      {
-        "m": "Aug",
-        "km": 98.1,
-        "longest": 18.0,
-        "flag": "biggest ever"
-      }
-    ]
-  },
-  "pre_garmin_runs": [
-    {
-      "date": "2026-02-28",
-      "km": 7.1,
-      "pace": "7:37",
-      "hr": 164,
-      "max": 191,
-      "cad": 140,
-      "gct": 330,
-      "vo2": 35,
-      "note": "first real ~7k — baseline"
-    },
-    {
-      "date": "2026-03-12",
-      "km": 7.7,
-      "pace": "8:05",
-      "hr": 169,
-      "max": 192,
-      "cad": 142,
-      "gct": 329,
-      "vo2": 35,
-      "note": ""
-    },
-    {
-      "date": "2026-03-21",
-      "km": 10.1,
-      "pace": "7:29",
-      "hr": 167,
-      "max": 186,
-      "cad": 147,
-      "gct": 326,
-      "vo2": 36,
-      "note": "first-ever 10k"
-    },
-    {
-      "date": "2026-03-23",
-      "km": 7.1,
-      "pace": "7:57",
-      "hr": 161,
-      "max": 175,
-      "cad": 144,
-      "gct": 332,
-      "vo2": 36,
-      "note": ""
-    },
-    {
-      "date": "2026-03-25",
-      "km": 9.1,
-      "pace": "7:21",
-      "hr": 165,
-      "max": 187,
-      "cad": 142,
-      "gct": 310,
-      "vo2": 36,
-      "note": ""
-    },
-    {
-      "date": "2026-03-29",
-      "km": 9.9,
-      "pace": "6:51",
-      "hr": 173,
-      "max": 194,
-      "cad": 150,
-      "gct": 312,
-      "vo2": 37,
-      "note": "fastest longish run — but HR 173 = hard, near threshold"
-    },
-    {
-      "date": "2026-04-17",
-      "km": 9.6,
-      "pace": "7:54",
-      "hr": 172,
-      "max": 198,
-      "cad": 135,
-      "gct": 313,
-      "vo2": 37,
-      "note": "patellar-tendon month — high HR, laboring"
-    },
-    {
-      "date": "2026-05-08",
-      "km": 5.9,
-      "pace": "9:28",
-      "hr": 161,
-      "max": 181,
-      "cad": 135,
-      "gct": 343,
-      "vo2": 37,
-      "note": "slow shuffle — yet still HR 161"
-    },
-    {
-      "date": "2026-05-27",
-      "km": 7.4,
-      "pace": "7:28",
-      "hr": 180,
-      "max": 194,
-      "cad": 151,
-      "gct": 323,
-      "vo2": 35,
-      "note": "HR 180 (threshold) for an easy run"
-    },
-    {
-      "date": "2026-05-31",
-      "km": 5.0,
-      "pace": "7:28",
-      "hr": 169,
-      "max": 189,
-      "cad": 143,
-      "gct": 319,
-      "vo2": 35,
-      "note": ""
-    },
-    {
-      "date": "2026-06-05",
-      "km": 7.9,
-      "pace": "8:59",
-      "hr": 165,
-      "max": 187,
-      "cad": 143,
-      "gct": 342,
-      "vo2": 35,
-      "note": "slow + hot HR"
-    },
-    {
-      "date": "2026-06-15",
-      "km": 2.0,
-      "pace": "6:44",
-      "hr": 161,
-      "max": 180,
-      "cad": 145,
-      "gct": 315,
-      "vo2": 35,
-      "note": "short + fast top-end"
-    },
-    {
-      "date": "2026-06-24",
-      "km": 6.2,
-      "pace": "7:39",
-      "hr": 162,
-      "max": 183,
-      "cad": 139,
-      "gct": 327,
-      "vo2": 36,
-      "note": "last run before Garmin"
-    }
-  ],
-  "efficiency": {
-    "note": "Each point = one aerobic run (avg HR vs avg pace). Huawei era (Feb–Jun) in amber, Garmin era (Jul–Aug) in green. The story: pre-Garmin every run sat at HR 160–180 regardless of pace (ran hot from day one); Garmin-era long runs cluster at 153–156 — the discipline shift — AND run faster for a given HR (efficiency).",
-    "points": [
-      {
-        "d": "Feb 28",
-        "hr": 164,
-        "s": 457,
-        "km": 7.1,
-        "era": "huawei"
-      },
-      {
-        "d": "Mar 12",
-        "hr": 169,
-        "s": 485,
-        "km": 7.7,
-        "era": "huawei"
-      },
-      {
-        "d": "Mar 21",
-        "hr": 167,
-        "s": 449,
-        "km": 10.1,
-        "era": "huawei"
-      },
-      {
-        "d": "Mar 23",
-        "hr": 161,
-        "s": 477,
-        "km": 7.1,
-        "era": "huawei"
-      },
-      {
-        "d": "Mar 25",
-        "hr": 165,
-        "s": 441,
-        "km": 9.1,
-        "era": "huawei"
-      },
-      {
-        "d": "Mar 29",
-        "hr": 173,
-        "s": 411,
-        "km": 9.9,
-        "era": "huawei"
-      },
-      {
-        "d": "Apr 17",
-        "hr": 172,
-        "s": 474,
-        "km": 9.6,
-        "era": "huawei"
-      },
-      {
-        "d": "May 8",
-        "hr": 161,
-        "s": 568,
-        "km": 5.9,
-        "era": "huawei"
-      },
-      {
-        "d": "May 27",
-        "hr": 180,
-        "s": 448,
-        "km": 7.4,
-        "era": "huawei"
-      },
-      {
-        "d": "May 31",
-        "hr": 169,
-        "s": 448,
-        "km": 5.0,
-        "era": "huawei"
-      },
-      {
-        "d": "Jun 5",
-        "hr": 165,
-        "s": 539,
-        "km": 7.9,
-        "era": "huawei"
-      },
-      {
-        "d": "Jun 24",
-        "hr": 162,
-        "s": 459,
-        "km": 6.2,
-        "era": "huawei"
-      },
-      {
-        "d": "Jul 19",
-        "hr": 172,
-        "s": 472,
-        "km": 14.6,
-        "era": "garmin"
-      },
-      {
-        "d": "Aug 9",
-        "hr": 161,
-        "s": 478,
-        "km": 15.0,
-        "era": "garmin"
-      },
-      {
-        "d": "Aug 16",
-        "hr": 156,
-        "s": 470,
-        "km": 17.0,
-        "era": "garmin"
-      },
-      {
-        "d": "Aug 23",
-        "hr": 153,
-        "s": 469,
-        "km": 16.0,
-        "era": "garmin"
-      },
-      {
-        "d": "Aug 29",
-        "hr": 156,
-        "s": 504,
-        "km": 18.0,
-        "era": "garmin"
-      }
-    ]
-  },
-  "speed_block": {
-    "title": "100m Speed Block — Monday sprint progression",
-    "why": "Athlete-driven side-quest: develop a genuine 100m. Baseline (Aug 31) confirmed real sprint gear — GCT 167ms, vertical ratio 4.0%, peak 842W. Now periodize: acceleration → max velocity → test. Runs in the Monday slot, ~5k total, low recovery cost (Body Battery ~−3). Injury frame: hills/sled protect the patellar knee on accel weeks; flat max-velocity flying sprints are the hamstring-risk piece — ramp in, thorough warmup, small doses. Not a plan change to the HIM block; a bolt-on that shares the Monday slot.",
-    "warmup": "Every session: 2–2.5k easy + drills (A-skips, wall drives, 3–4 build-up strides 70→90%). Never sprint cold — hamstring protection.",
-    "cols": [
-      "Wk",
-      "Focus",
-      "Session",
-      "Start type"
-    ],
-    "weeks": [
-      {
-        "wk": 6,
-        "focus": "Acceleration",
-        "session": "6×20m standing-start sprints, full recovery (~2.5min)",
-        "start": "standing (hill/ramp)"
-      },
-      {
-        "wk": 7,
-        "focus": "Max velocity (intro)",
-        "session": "4–6×20m flying sprints (15m jog-in → 20m max), full recovery",
-        "start": "flying (flat)"
-      },
-      {
-        "wk": 8,
-        "focus": "Acceleration + power",
-        "session": "5×20m standing starts + 4–6 sled pushes (gym)",
-        "start": "standing + sled"
-      },
-      {
-        "wk": 9,
-        "focus": "Speed + TEST",
-        "session": "2×accel + 2×flying, then 1× timed 100m (measured flat) — first benchmark",
-        "start": "mixed + test"
-      }
-    ],
-    "support": "Anterior day: keep jump squats / add broad jumps (explosive, low volume) — feeds the drive phase. Mechanics drills in every warmup. Track peak power + GCT + (from wk8) the 100m time.",
-    "note": "Starts Week 6 (Mon Sep 14) — Week 5 skips the standalone sprint since the 5K TT is that week's speed work. Re-assess after the wk9 100m test; build the next block off a real time."
-  },
-  "run_prep": {
-    "warmup": [
-      "Glute-med activation: banded lateral walks OR 10 single-leg glute bridges/side (wake the left hip)",
-      "Leg swings + easy dynamic mobility",
-      "3–4 build-up strides (70→90%) before any quality/speed"
-    ],
-    "cues": [
-      "Arm drive: punch the ELBOW BACK (not hands forward) — 'elbow to hip pocket'",
-      "Arms front-to-back, never cross the midline; shoulders down, hands loose",
-      "Quick cadence, light feet — shorter stride protects the patellar tendon",
-      "Easy = 'hip to lip' arm swing · Sprint/finish = aggressive 'cheek to pocket'"
-    ]
+  {
+   "id": "bench",
+   "label": "Bench",
+   "value": "82.5",
+   "unit": "kg",
+   "sport": "strength",
+   "target": 100,
+   "from": 82.5,
+   "note": "working → 100 kg (~Feb 2027)"
   }
+ ],
+ "races": [
+  {
+   "id": "blr_hm",
+   "name": "Bangalore Half Marathon",
+   "short": "Bangalore HM",
+   "date": "2026-12-13",
+   "distance_km": 21.1,
+   "priority": "B",
+   "role": "Near-term target · local, ideal temp"
+  },
+  {
+   "id": "goa703",
+   "name": "Goa 70.3 (Half-Ironman)",
+   "short": "Goa 70.3",
+   "date": "2027-11-01",
+   "distance_km": 113,
+   "priority": "A",
+   "role": "A-race — the whole plan points here"
+  }
+ ],
+ "week_template": [
+  {
+   "day": "Mon",
+   "sessions": [
+    {
+     "sport": "run",
+     "title": "Easy / recovery run",
+     "detail": "AM · HR ≤150–158"
+    }
+   ]
+  },
+  {
+   "day": "Tue",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Anterior (bench)",
+     "detail": "bench focus"
+    }
+   ]
+  },
+  {
+   "day": "Wed",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim",
+     "detail": "aerobic"
+    },
+    {
+     "sport": "run",
+     "slot": "PM",
+     "title": "Speed run",
+     "detail": "LT intervals"
+    }
+   ]
+  },
+  {
+   "day": "Thu",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Posterior",
+     "detail": "auto-regulate"
+    }
+   ]
+  },
+  {
+   "day": "Fri",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim",
+     "detail": "aerobic"
+    },
+    {
+     "sport": "strength",
+     "slot": "PM",
+     "title": "Upper",
+     "detail": "bench"
+    }
+   ]
+  },
+  {
+   "day": "Sat",
+   "sessions": [
+    {
+     "sport": "rest",
+     "title": "Rest",
+     "detail": "nothing scheduled"
+    }
+   ]
+  },
+  {
+   "day": "Sun",
+   "sessions": [
+    {
+     "sport": "run",
+     "title": "Long run",
+     "detail": "HR ≤172"
+    }
+   ]
+  }
+ ],
+ "phases": [
+  {
+   "id": "A",
+   "name": "Reset & Base",
+   "weeks": [
+    1,
+    4
+   ],
+   "note": "Re-establish the triplet; ramp swim volume; easy long runs."
+  },
+  {
+   "id": "B",
+   "name": "Build",
+   "weeks": [
+    5,
+    8
+   ],
+   "note": "Threshold volume, longer reps, long runs to 20k."
+  },
+  {
+   "id": "C",
+   "name": "HM-Specific",
+   "weeks": [
+    9,
+    12
+   ],
+   "note": "Race-pace long-run segments, LT cruise work, long continuous swims."
+  }
+ ],
+ "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
+ "block": [
+  {
+   "week": 1,
+   "start": "2026-08-10",
+   "phase": "A",
+   "deload": false,
+   "run": {
+    "long_km": 17,
+    "long_note": "HR ≤172, bias aerobic (post-illness) — 12k easy ≤160, last 5k may drift toward 172",
+    "speed": "6×800 @ 5:50–5:55",
+    "easy_km": 6
+   },
+   "swim": {
+    "total_m": 4000,
+    "sessions": 2,
+    "split": "1.8k + 2.2k",
+    "note": "hold at 2 sessions wk 1–2"
+   },
+   "strength": {
+    "focus": "Upper (bench) + Lower",
+    "bench": "82.5 × 3×5"
+   },
+   "actuals": [
+    {
+     "day": "Mon",
+     "sport": "run",
+     "status": "done",
+     "tgt": "2.7k recovery · avg HR 134 (textbook)"
+    },
+    {
+     "day": "Tue",
+     "sport": "strength",
+     "status": "done",
+     "tgt": "bench (Aug 11, on low sleep)"
+    },
+    {
+     "day": "Wed",
+     "sport": "swim",
+     "slot": "AM",
+     "status": "modified",
+     "badge": "600 m",
+     "tgt": "600 m only — short session"
+    },
+    {
+     "day": "Wed",
+     "sport": "run",
+     "slot": "PM",
+     "status": "done",
+     "tgt": "fartlek · overshot pace, strong effort"
+    },
+    {
+     "day": "Fri",
+     "sport": "swim",
+     "slot": "AM",
+     "status": "missed"
+    },
+    {
+     "day": "Sun",
+     "sport": "run",
+     "status": "done",
+     "tgt": "17k · avg HR 156 · morning, post-illness"
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "start": "2026-08-17",
+   "phase": "A",
+   "deload": false,
+   "run": {
+    "long_km": 16,
+    "long_note": "HR ≤172, mostly easy",
+    "speed": "5×1000 @ 5:55",
+    "easy_km": 6
+   },
+   "swim": {
+    "total_m": 4500,
+    "sessions": 2,
+    "split": "2.0k + 2.5k",
+    "note": "CSS test this week (400+200 TT)"
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "85 × 3×4–5"
+   }
+  },
+  {
+   "week": 3,
+   "start": "2026-08-24",
+   "phase": "A",
+   "deload": false,
+   "run": {
+    "long_km": 18,
+    "long_note": "HR ≤172",
+    "speed": "4×1200 @ 5:55",
+    "easy_km": 7
+   },
+   "swim": {
+    "total_m": 6100,
+    "sessions": 3,
+    "split": "1.5 / 2.0 / 1.5k",
+    "note": "add 3rd swim session",
+    "reps": {
+     "s1_200": 2,
+     "s2_800": 1,
+     "s3_100": 5,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "85 × 3×5"
+   }
+  },
+  {
+   "week": 4,
+   "start": "2026-08-31",
+   "phase": "A",
+   "deload": true,
+   "run": {
+    "long_km": 12,
+    "long_note": "easy deload",
+    "speed": "5K TT — 28:30 target (replaces reps)",
+    "easy_km": 5
+   },
+   "swim": {
+    "total_m": 6000,
+    "sessions": 3,
+    "split": "1.0 / 1.5 / 1.0k",
+    "note": "deload volume",
+    "reps": {
+     "s1_200": 2,
+     "s2_800": 1,
+     "s3_100": 4,
+     "deload": true
+    }
+   },
+   "strength": {
+    "focus": "Deload",
+    "bench": "67.5 × 2×5"
+   }
+  },
+  {
+   "week": 5,
+   "start": "2026-09-07",
+   "phase": "B",
+   "deload": false,
+   "run": {
+    "long_km": 17,
+    "long_note": "HR ≤172",
+    "speed": "5×1000 @ 5:30",
+    "easy_km": 7
+   },
+   "swim": {
+    "total_m": 6400,
+    "sessions": 3,
+    "split": "1.3 / 2.0 / 1.7k",
+    "note": "",
+    "reps": {
+     "s1_200": 3,
+     "s2_800": 1,
+     "s3_100": 6,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "85 × 3×5"
+   }
+  },
+  {
+   "week": 6,
+   "start": "2026-09-14",
+   "phase": "B",
+   "deload": false,
+   "run": {
+    "long_km": 19,
+    "long_note": "HR ≤172",
+    "speed": "3×2000 cruise @ ~5:50 (HR <182)",
+    "easy_km": 7
+   },
+   "swim": {
+    "total_m": 7200,
+    "sessions": 3,
+    "split": "1.4 / 2.2 / 1.9k",
+    "note": "",
+    "reps": {
+     "s1_200": 3,
+     "s2_800": 2,
+     "s3_100": 6,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "87.5 × 3×4"
+   }
+  },
+  {
+   "week": 7,
+   "start": "2026-09-21",
+   "phase": "B",
+   "deload": false,
+   "run": {
+    "long_km": 20,
+    "long_note": "HR ≤172",
+    "speed": "6×1000 @ 5:30",
+    "easy_km": 8
+   },
+   "swim": {
+    "total_m": 7400,
+    "sessions": 3,
+    "split": "1.5 / 2.5 / 2.0k",
+    "note": "",
+    "reps": {
+     "s1_200": 3,
+     "s2_800": 2,
+     "s3_100": 8,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "87.5 × 3×4"
+   }
+  },
+  {
+   "week": 8,
+   "start": "2026-09-28",
+   "phase": "B",
+   "deload": true,
+   "run": {
+    "long_km": 13,
+    "long_note": "easy deload",
+    "speed": "5×400 @ 5:00",
+    "easy_km": 5
+   },
+   "swim": {
+    "total_m": 6100,
+    "sessions": 3,
+    "split": "1.0 / 1.5 / 1.5k",
+    "note": "deload volume",
+    "reps": {
+     "s1_200": 2,
+     "s2_800": 1,
+     "s3_100": 5,
+     "deload": true
+    }
+   },
+   "strength": {
+    "focus": "Deload",
+    "bench": "70 × 2×5"
+   }
+  },
+  {
+   "week": 9,
+   "start": "2026-10-05",
+   "phase": "C",
+   "deload": false,
+   "run": {
+    "long_km": 19,
+    "long_note": "last 4k @ comp pace (~7:35)",
+    "speed": "4×1600 @ 5:45",
+    "easy_km": 8
+   },
+   "swim": {
+    "total_m": 8000,
+    "sessions": 3,
+    "split": "1.5 / 2.5 / 2.0k",
+    "note": "bias to long continuous (HIM prep)",
+    "reps": {
+     "s1_200": 3,
+     "s2_800": 3,
+     "s3_100": 6,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "90 × 3×3–4"
+   }
+  },
+  {
+   "week": 10,
+   "start": "2026-10-12",
+   "phase": "C",
+   "deload": false,
+   "run": {
+    "long_km": 21,
+    "long_note": "full HM distance, HR-capped",
+    "speed": "5×1000 @ 5:25",
+    "easy_km": 8
+   },
+   "swim": {
+    "total_m": 8400,
+    "sessions": 3,
+    "split": "1.5 / 2.5 / 2.5k",
+    "note": "",
+    "reps": {
+     "s1_200": 4,
+     "s2_800": 3,
+     "s3_100": 8,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "90 × 3×3"
+   }
+  },
+  {
+   "week": 11,
+   "start": "2026-10-19",
+   "phase": "C",
+   "deload": false,
+   "run": {
+    "long_km": 18,
+    "long_note": "8k @ comp pace inside",
+    "speed": "3×2000 @ 5:50 + strides",
+    "easy_km": 8
+   },
+   "swim": {
+    "total_m": 8400,
+    "sessions": 3,
+    "split": "1.5 / 3.0 / 2.5k",
+    "note": "peak swim volume",
+    "reps": {
+     "s1_200": 4,
+     "s2_800": 3,
+     "s3_100": 8,
+     "deload": false
+    }
+   },
+   "strength": {
+    "focus": "Upper + Lower",
+    "bench": "92.5 × 3×3"
+   }
+  },
+  {
+   "week": 12,
+   "start": "2026-10-26",
+   "phase": "C",
+   "deload": true,
+   "run": {
+    "long_km": 12,
+    "long_note": "deload; transition to HM sharpen",
+    "speed": "short sharpening reps @ ~5:00",
+    "easy_km": 5
+   },
+   "swim": {
+    "total_m": 6900,
+    "sessions": 3,
+    "split": "1.0 / 2.0 / 1.5k",
+    "note": "deload volume",
+    "reps": {
+     "s1_200": 2,
+     "s2_800": 2,
+     "s3_100": 5,
+     "deload": true
+    }
+   },
+   "strength": {
+    "focus": "Deload",
+    "bench": "70 × 2×5"
+   }
+  }
+ ],
+ "sessions": [
+  {
+   "date": "2026-09-12",
+   "sport": "run",
+   "week": 5,
+   "title": "Garmin Coach 'Base' 8.5k — VO2max hits 45, status flips to PRODUCTIVE. Milestone.",
+   "verdict": "Strong threshold-effort run (coach-prescribed ~6:40/km, ran 6:21 @ HR 169), metronomic km splits, negative drift. Crossed VO2max 45 (precise 44.6) and flipped Recovery→Productive. Run in Hosapete (~490m, travel) so the lower altitude flatters the numbers a touch — but the engine is genuinely climbing ahead of schedule.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "8.56 km"
+    },
+    {
+     "l": "Pace",
+     "v": "~6:21/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "169 · max 183"
+    },
+    {
+     "l": "TE",
+     "v": "4.0 Threshold"
+    },
+    {
+     "l": "VO2max",
+     "v": "44.3→44.6 (disp 45)"
+    },
+    {
+     "l": "Status",
+     "v": "PRODUCTIVE"
+    }
+   ],
+   "headline": "First run of the Garmin Coach era on the road in Hosapete. Coach labeled it 'Base' but prescribes his Base pace at ~6:40/km, so this ran as a threshold session (HR 169 avg, TE 4.0). Held 6:20s/km pinned at ~170 across every km with a negative drift (fastest km 6:09), then crossed the VO2max 45 line and flipped to Productive.",
+   "insight": [
+    "Pace-at-HR is materially up: comp anchor was ~7:00/km @ ≤172; today held 6:20s/km at ~170. Metronomic splits (6:09–6:31), HR pinned ~170, negative-drifting — controlled, strong.",
+    "VO2max 45 (precise 44.6) + PRODUCTIVE status (ACWR 1.0, optimal). The load-building through the week paid off exactly as planned; the milestone landed ~5 weeks ahead of the mid-Oct estimate.",
+    "Altitude context: run at ~490m (Hosapete) vs Bengaluru ~920m — more O2/breath lowers HR-for-pace and flatters the VO2max reading. The fitness gain is real but expect slightly harder splits back home. It'll calibrate.",
+    "Ran as coach-prescribed (~6:40/km Base target) — this is NOT the old 'runs easy days too hard' flaw; Garmin's Base runs are meant to be run at a moderate clip. Followed the plan.",
+    "Elevation caveat: athlete reports significant elevation changes, but the watch logged only ~20m gain (reads flat) — likely barometric under-recording. If genuinely hilly, the pace-at-HR is even more impressive; flag when comparing this run to others.",
+    "SAME-COURSE PROOF (shared May 25 Hosapete run, same ~490m ground): May 25 was 7:28/km @ HR 180 (VO2max 35); today 6:21/km @ HR 169 (VO2max 45) — ~67 s/km faster at 11 bpm lower HR on identical terrain. Altitude is controlled here, so this delta is pure fitness. The earlier 'altitude flattered it' caveat only applies vs Bengaluru runs, not vs his own history here.",
+    "Also ~30°C: heat inflates HR-for-pace, so it works AGAINST the VO2max reading (Firstbeat under-reads in heat), partly offsetting the altitude boost. Net: the 45 isn't purely altitude-flattered — he held 6:20s/km @ 169 in real heat."
+   ]
+  },
+  {
+   "date": "2026-09-11",
+   "sport": "strength",
+   "week": 5,
+   "title": "Back + triceps day (coach sprint apparently not recorded)",
+   "verdict": "Light-moderate upper pull day (back/triceps, no leg work by design). Ran off the plan to keep the posterior chain fresh; RDLs deferred to Sunday's upper day. The Garmin 'Sprint' session was NOT done — no time.",
+   "stats": [
+    {
+     "l": "Type",
+     "v": "Strength (back+tri)"
+    },
+    {
+     "l": "Duration",
+     "v": "32 min"
+    },
+    {
+     "l": "Avg HR",
+     "v": "131 · max 155"
+    },
+    {
+     "l": "Calories",
+     "v": "253"
+    }
+   ],
+   "headline": "Upper pull day — back + triceps only, no leg work (deliberate: keep legs fresh, RDLs moved to Sunday). Skipped the AM run (knee scrape reopened — skin only, tendon fine).",
+   "insight": [
+    "Knee = surface scrape from the Aug 26 fall reopened; tendon asymptomatic, so purely a skin/hygiene skip, no training impact.",
+    "The coach's re-adapted 'Sprint' session (6×15s @ ~3:30/km) was not done — no time. No sprint data; the coach will re-slot the speed work.",
+    "Lifting detail (sets/reps/load) lives in Hevy, not Garmin — needs a fresh export to update the Lifting page; this card is the Garmin-side summary only."
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "sport": "run",
+   "week": 5,
+   "title": "Recovery run 4.2k — cadence 161, VO2max recovers 43.5→44.3, perf condition +3 to +5",
+   "verdict": "Clean light aerobic run that recovered the Sep 7 heat-dip and lifted VO2max to a new precise high. Cadence a standout 160.8. Ran a touch warm/fast for a true 'recovery' label but felt great; acute load climbed toward Productive.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "4.18 km"
+    },
+    {
+     "l": "Pace",
+     "v": "7:55/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "152 · max 168"
+    },
+    {
+     "l": "Cadence",
+     "v": "160.8"
+    },
+    {
+     "l": "VO2max",
+     "v": "43.5→44.3"
+    },
+    {
+     "l": "Perf cond",
+     "v": "+3 to +5"
+    }
+   ],
+   "headline": "Coach 'Recovery' run. Held cadence 158–162 the whole way (a genuine step up from his old 145–155 easy cadence) on a shorter, quicker stride (78.5cm). Performance condition sat +3 to +5 the entire run — engine above baseline throughout.",
+   "insight": [
+    "VO2max 43.5→44.3 (new precise high) — the flip-side of the Sep 7 heat-dip: good pace-for-HR (later ~8pm start, cooler, better economy from the higher cadence) gave Firstbeat a favorable reading. Nothing physiological changed in 3 days; conditions did.",
+    "Cadence is genuinely sticking — 160.8 avg on an easy run with low vertical ratio (10.1%) and 300ms GCT. The quicker-turnover/shorter-stride pattern he's chased is now his default.",
+    "Ran a bit warm for 'recovery' (152 avg drifting to 163 vs a ≤150 recovery cap) — a light aerobic run more than a pure flush. Felt strong (RPE 3); no harm, just noting the label vs execution.",
+    "Load re-entry working: acute 380→443, ACWR ~0.7 — this run + the week's work flipped him to Productive by Sep 12."
+   ]
+  },
+  {
+   "date": "2026-09-08",
+   "sport": "swim",
+   "week": 5,
+   "title": "Swim S1 technique ~1.7k — efficient freestyle (~2m/stroke), paddle sets the aerobic edge",
+   "verdict": "Did the whole quality portion (WU + drills + pull + 2×200), only skipped the cooldown (running late). Not a pure flush — HR ran warm and the paddle sets added real intensity (anaerobic TE 1.9). Efficient stroke throughout; aerobic durability is the developing quality.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "1.66k (+64m)"
+    },
+    {
+     "l": "Moving",
+     "v": "37 min"
+    },
+    {
+     "l": "Avg HR",
+     "v": "144 · max 186"
+    },
+    {
+     "l": "TE",
+     "v": "3.1 aer + 1.9 anaer"
+    },
+    {
+     "l": "SWOLF",
+     "v": "~29 · 8.7 str/16m"
+    }
+   ],
+   "headline": "Technique swim (16m pool): 320 WU + 8×48 fist/catch-up/paddle drills + 6×~96 pull(paddles) + 2×~200 smooth. Only the 200 cooldown was cut (late). Stroke length ~2m/stroke — technique is not a limiter.",
+   "insight": [
+    "Drills measurably sharpened the catch — lowest SWOLF (25–26) came DURING the drill set. The paddle-pull reps loosened it (SWOLF 33–36, 10+ strokes/length) at HR 150–168, i.e. he was WORKING them: top-end there, fatigue-resistance the growth edge (same signature as his sprints/1200s).",
+    "Garmin misclassified drill lengths as breaststroke/butterfly — it was all freestyle (catch-up glide fools the classifier). Data-hygiene note: ignore stroke-type labels on drill days; use straight-freestyle laps for clean SWOLF benchmarks.",
+    "Solid load (117) for a 'recovery' swim due to the paddle intensity — helped the Recovery→Productive push, zero leg cost (TT-/run-safe)."
+   ]
+  },
+  {
+   "date": "2026-09-07",
+   "sport": "run",
+   "week": 5,
+   "title": "5k easy flush (hot, sore quads) — HR cap honored. VO2max heat artifact, shrugged off.",
+   "verdict": "Textbook re-entry run: genuinely easy, quads-flushing, acute load nudged back up toward Productive. A hot-evening heat artifact ticked the VO2max estimate down 44.2→43.5 — noise, not fitness, and he correctly refused to let it get to him.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "5.01 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "148 (cap 155)"
+    },
+    {
+     "l": "Max HR",
+     "v": "161"
+    },
+    {
+     "l": "Pace",
+     "v": "~9:06/km"
+    },
+    {
+     "l": "Shoes",
+     "v": "Novablast 6"
+    },
+    {
+     "l": "VO2max",
+     "v": "44.2→43.5 (artifact)"
+    }
+   ],
+   "headline": "First proper run back after the deload finisher — a deliberately easy 5k to flush still-sore quads (from Sunday's back-half stride-lengthening) and pull acute load back up (380, climbing toward Productive). Hot evening, second run in the new ASICS Novablast 6. Held HR 148 avg / 161 max under the 155 cap.",
+   "insight": [
+    "Load did its job: acute load 338→380, ACWR ~0.6 and rising — on track to flip Recovery→Productive by mid-week with Wednesday's TT as the trigger. Fitness (VO2max) unaffected by design; the TT is the fitness lever, not this.",
+    "Hot-evening VO2max artifact: HR 148 at a slow heat-inflated ~9:06/km pace was just intense enough for Firstbeat to take a reading, and read it badly (heat inflates HR-for-pace), docking 44.2→43.5. It's a thermometer reading, not lost fitness — one bad hot-day point washes out in days, and the TT erases it.",
+    "Protocol going forward (see easy-run boundary): easy runs in the MORNING, HR ≤150 / avg ≤145 → stays under his ~142–148 Firstbeat boundary and can't dent the estimate. His Aug 24 recovery run at 142 avg generated no data point at all; this one at 148 did. Never run easy days harder to 'protect' the number.",
+    "Right mindset: he considered scrubbing the reading (deleting/editing the run for a bet) then chose to let it go — 'shouldn't let a made-up reading get to me.' Exactly the watch-anxiety defused.",
+    "Coach's read on true VO2max: probably ~45–46, a touch above Garmin — Firstbeat under-reads athletes whose limiter is economy not engine, which is his exact profile (strong top-end, runs hot for pace)."
+   ]
+  },
+  {
+   "date": "2026-09-06",
+   "sport": "run",
+   "week": 4,
+   "title": "12k easy deload (hot day) — clean negative split, VO2max +0.2. New Novablast 6.",
+   "verdict": "Ideal deload closer. Controlled, heat-managed 12k that ran the back half 30 s/km faster at identical HR, nudged VO2max 44.0→44.2, and left fatigue low. Exactly the last piece before a taper-week TT should look like.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "12.01 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "161 (cap 168)"
+    },
+    {
+     "l": "Pace",
+     "v": "7:32/km"
+    },
+    {
+     "l": "Cadence",
+     "v": "155 avg"
+    },
+    {
+     "l": "TE",
+     "v": "3.5 Tempo"
+    },
+    {
+     "l": "Temp",
+     "v": "30°C, DP 17.8"
+    }
+   ],
+   "headline": "First run in the new ASICS Novablast 6, on a warm (30°C, feels 30.6) but breathable evening. Ran a textbook negative split: first 5k of the main block 7:49/km @ HR 162.6, second 5k 7:19/km @ HR 162.6 — 30 s/km faster in the back half at IDENTICAL heart rate — then a 6:16/km final 500m (HR to 170, max 192 on the kick). Felt great, exactly as the data reads.",
+   "insight": [
+    "Negative split at matched HR is the headline — the signature of properly-paced aerobic running: controlled start, free speed as the engine warmed. The finish accelerated into the line, didn't survive it.",
+    "Cadence held 158–161 for the first 8k (target band) then drifted to 148–152 as pace rose — back-half speed came from lengthening stride (81→85 cm), not turnover. Same overstride reflex that fed the April patellar issue; fine on a surge, but lean on cadence for easy volume. Vertical oscillation stayed low (8.1 cm) so it was controlled.",
+    "Walked very little — confirmed: 32 micro-walks totaling just 397 m / 219 s across 90 min. The ~5.5 min gap in km 7 was the park eviction (standing), not walking.",
+    "Ran a touch warm as expected: Z4 48% of the run, avg 161 on the Z3/Z4 line — slightly hot for deload easy but respected the 168 cap, consistent with 30°C + his lifelong run-hot tendency. Garmin labeled it TEMPO.",
+    "Watch updates: VO2max 44.0→44.2 precise, still PEAKING, ACWR 0.70 (LOW), chronic load 593 (optimal band). Readiness fell to 35 but only drag is sleep (6.4 h, history POOR) — every other recovery lever green. Highest-leverage lever before Wed's TT is two good nights."
+   ]
+  },
+  {
+   "date": "2026-09-02",
+   "sport": "run",
+   "week": 4,
+   "title": "5K TT aborted at 1.8k — legs cooked, not cardio. Right call.",
+   "verdict": "Warmup + first 1.5k felt good cardio-wise, but legs were muscularly shot from Mon's first sprints. Stopped at 1.8k. HR only 150 at 'TT' effort = legs quit before the engine. Postpone, no loss.",
+   "stats": [
+    {
+     "l": "Reached",
+     "v": "1.8 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "150"
+    },
+    {
+     "l": "Max HR",
+     "v": "184"
+    },
+    {
+     "l": "Then",
+     "v": "432m easy swim"
+    },
+    {
+     "l": "Weight",
+     "v": "79.7"
+    }
+   ],
+   "headline": "Toed the line, warmed up, ran the first ~1.5k feeling fine aerobically — but the legs were still cooked from Monday's first-ever max sprint session (peak DOMS at 48h). Called it at 1.8k. The tell: avg HR only 150 at max-TT intent (would be 175+ if the engine were the limiter) — the legs stopped him, not the cardio. Textbook right decision; a max effort on dead legs is a bad number and an injury risk for nothing.",
+   "insight": [
+    "Not a fitness signal — a fatigue-stacking one. First sprint session (novel stimulus) + poor sleep the night before = legs not available for a 5K max. The engine was fine (HR sat low).",
+    "Bony inner-shin spot: no longer flagged (didn't hurt on palpation yesterday, didn't stop the run today) — it was adductor/insertional soreness, now settling.",
+    "TT postponed. Rebook it fresh: 2+ good nights AND legs recovered from sprint DOMS — realistically early-mid Week 5. It's a benchmark, not a race; costs nothing to slide, and he'll run faster rested.",
+    "Rest of the deload (through Sep 6) kept very easy, as intended. Good discipline pulling the plug rather than grinding a junk TT."
+   ]
+  },
+  {
+   "date": "2026-09-01",
+   "sport": "run",
+   "week": 4,
+   "title": "Shakeout cut short — leg niggle + poor sleep (TT go/no-go)",
+   "verdict": "Stopped ~950m in: DOMS from Mon's first sprints (quad/adductor) + a proximal-medial-tibia niggle. No bony tenderness = stress-reaction unlikely. TT gated on tomorrow's warmup jog.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "0.95 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "140"
+    },
+    {
+     "l": "Sleep",
+     "v": "5.1h · POOR"
+    },
+    {
+     "l": "Readiness",
+     "v": "POOR / 17"
+    },
+    {
+     "l": "HRV",
+     "v": "42 (good)"
+    }
+   ],
+   "headline": "Pre-TT shakeout, stopped early when the leg complained. Triaged: mid-quad + adductor SORENESS is benign DOMS from Monday's first-ever max sprints; the flag was a 'bone' spot at the proximal medial tibia (where the adductor/gracilis inserts) — but it does NOT hurt on firm palpation, which makes a bone stress-reaction unlikely and points to adductor insertional traction instead. Poor sleep (5.1h) drove readiness to 17, but HRV is fine (42), so it's acute sleep-debt, not overreaching.",
+   "insight": [
+    "Muscle soreness (rectus femoris + adductors) = expected DOMS 2 days after the first max sprint session; fades, does not stop a TT.",
+    "The deciding factor is the inner-shin bony spot — NO pain on pressing it (key: pinpoint bony tenderness is the stress-reaction hallmark, and it's absent), so most likely gracilis/adductor traction at the pes-anserine insertion, not bone stress.",
+    "Sleep protocol in place (caffeine cutoff <12pm, big carby dinner, magnesium, early night) + HRV already good → should wake recovered. Sleep is no longer the gate; the leg is.",
+    "TT DECISION: kept on Wed. Final gate = tomorrow's warmup jog. If legs loosen and the bony spot stays quiet WHILE running → send the PR. If that spot sharpens specifically during running → postpone a few days (no cost to a benchmark TT). Lean: green."
+   ]
+  },
+  {
+   "date": "2026-08-31",
+   "sport": "run",
+   "week": 4,
+   "title": "Sprint session 6×12s — baseline. Real sprint gear, confirmed.",
+   "verdict": "First max sprints. GPS speed soft, but form data is elite-flavoured (167ms GCT, 4.0% vertical ratio) — a genuine, biomechanically-legit sprint gear at near-zero cost.",
+   "stats": [
+    {
+     "l": "Reps",
+     "v": "6×12s"
+    },
+    {
+     "l": "Peak power",
+     "v": "842 W"
+    },
+    {
+     "l": "Ground contact",
+     "v": "167 ms"
+    },
+    {
+     "l": "Stride",
+     "v": "178 cm"
+    },
+    {
+     "l": "Vert ratio",
+     "v": "4.0%"
+    },
+    {
+     "l": "Max cadence",
+     "v": "234 spm"
+    }
+   ],
+   "headline": "You said you can book it — the form data screams it. First-ever max sprint session, flat ground, and the accelerometer metrics (which don't lie, unlike the GPS speed) are genuinely fast-athlete territory: ground contact halved to 167ms, stride opened to 178cm, vertical ratio a superb 4.0%, peak power 842W. And it cost almost nothing — Body Battery −3. The underused sprint ability isn't a feeling; it's measurable and real.",
+   "insight": [
+    "Form dynamics (reliable, accelerometer-derived) vs easy pace: GCT 167ms (vs 311), stride 178cm (vs 72), vertical ratio 4.0% (vs 10.6%), oscillation actually dropped to 6.7cm. You can't fake these — they're the signature of a genuinely fast athlete.",
+    "Per-rep AVG pace over the full 12s (watch Intervals — the honest number, incl. standstill start): 4:15 → 3:06 → 3:11 → 2:57 → 2:44 (best) → 3:07 /km. Peak instantaneous speed hit ~8.3 m/s (2:00/km) but that's a flattering single-sample max. Fastest whole rep was #5; a rolling start would push all of these quicker by skipping the acceleration tax.",
+    "Garmin labeled it SPEED (aerobic TE 2.0 / anaerobic 2.7) — correct. Body Battery −3, load 87: a high-value neuromuscular stimulus at near-zero recovery cost. Repeatable weekly, no dent to the endurance work.",
+    "Housekeeping: reps were 12s windows but ~8–9s of actual sprinting (standstill start eats time). A rolling start next time = cleaner data + gentler on the patellar tendon. Track peak power + GCT week to week, not the wobbly GPS speed."
+   ]
+  },
+  {
+   "date": "2026-08-29",
+   "sport": "run",
+   "week": 3,
+   "title": "Long run 18k — two-block, humid rain, strong negative split",
+   "verdict": "18k clean aerobic (TE 3.6, Z5 zero) in oppressive rain; HR ran hot for pace (weather), then negative-split into a good-feeling steady 6k.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "18.0 km"
+    },
+    {
+     "l": "Time",
+     "v": "2:31 (2:29 mov)"
+    },
+    {
+     "l": "Avg HR",
+     "v": "156 (max 176)"
+    },
+    {
+     "l": "Block 1 (10k)",
+     "v": "~8:36 @ 153"
+    },
+    {
+     "l": "Block 2 (6k)",
+     "v": "~7:37 @ 168"
+    },
+    {
+     "l": "TE",
+     "v": "3.6 aerobic"
+    }
+   ],
+   "headline": "18k banked in genuinely bad air — 26C, dew point 20, light rain. HR ran hot at slow paces for the first 10k (the humidity tax, self-diagnosed), then he found rhythm and negative-split the steady 6k at 7:37 @ 168 with cadence jumping to 153. Fully aerobic (Z5 zero, anaerobic TE 0.0), HR-disciplined, and a strong-feeling finish. Slower than a cool day, but that's the weather, not fitness.",
+   "insight": [
+    "Block 1 (easy 10k): ~8:36/km moving @ HR 153 — high HR for that slow a pace, the fingerprint of 26C + dew point 20 + rain (saturated air, no evaporative cooling). ~2.27 km of walk-breaks to hold the cap, all in this half.",
+    "Block 2 (steady 6k): ~7:37/km @ HR 168 under the 172 cap, cadence up to 153 — a clean ~1 min/km negative split. This is the half that 'felt good,' and the data agrees.",
+    "Humidity tax quantified: block 2 today 7:37 @ 168 vs Aug 23 block 2 7:05 @ 166 — same effort, ~30 s/km slower purely from conditions. Don't read the slower pace as lost fitness.",
+    "Fully aerobic quality: TE 3.6 'TEMPO', anaerobic 0.0, Z5 time zero, load 135, Body Battery only −12. Comp surges dropped for the healing knee; the ≤172 steady finish kept the stimulus without high-force turnover.",
+    "Ongoing limiter: ~2.27 km walking again shows easy running still pushes HR to the cap in heat — aerobic base is still the thing being built. On track."
+   ]
+  },
+  {
+   "date": "2026-08-26",
+   "sport": "run",
+   "week": 3,
+   "title": "Speed 4×1200 @ 5:40 — nailed it, VO2 up to 44",
+   "verdict": "Hit a self-chosen faster target on the number (5:42 avg), strong cadence, shrugged off a fall. Breakthrough-quality.",
+   "stats": [
+    {
+     "l": "Reps",
+     "v": "4×1200"
+    },
+    {
+     "l": "Avg pace",
+     "v": "5:42/km"
+    },
+    {
+     "l": "Target",
+     "v": "5:40"
+    },
+    {
+     "l": "Cadence",
+     "v": "167–172 early"
+    },
+    {
+     "l": "Avg HR",
+     "v": "180 (max 193)"
+    },
+    {
+     "l": "VO₂max",
+     "v": "43 → 44"
+    }
+   ],
+   "headline": "This is what the top-end you keep talking about looks like on the clock. You asked to run it faster than planned and then did exactly that — 5:42 against a 5:40 target, right in the band on all four reps. Cadence hit 167–172 (your easy runs sit ~145), stride opened to ~105 cm, and you drove VO2max to a new high of 44. You even fell in rep 3 and still closed rep 4 at 5:47. Genuinely strong day.",
+   "insight": [
+    "On target, all four: R1 5:35 (cad 167) / R2 5:41 (cad 172) / R3 5:45 (cad 161, the fall) / R4 5:47 (cad 162). A controlled positive split from fatigue, not a fade — you held the band even after going down.",
+    "Your in-run feel was spot on: cadence WAS best early (167→172) and settled to 161 late. Reading your own turnover that accurately is a real skill, and 167+ at speed is a big step up from ~145 easy.",
+    "Real VO2 stimulus: reps at HR 180 (your new recalculated LTHR) with a 193 max is exactly the intensity that pushes the number UP — hence 43→44 (new high), plus LTHR 182→180 and FTP 326→333 W. The engine is climbing.",
+    "Resilience banked: fell and scraped the knee in rep 3, took the hit, and still ran rep 4 on pace. That's the kind of day that builds more than fitness."
+   ]
+  },
+  {
+   "date": "2026-08-25",
+   "sport": "swim",
+   "week": 3,
+   "title": "Technique Day 1.3k — muggy-air morning",
+   "verdict": "Easy technique work but HR ran hot (active 150 avg, 184 max). Environmental, not fitness — confirmed muggy low-pressure + Hebbal PM2.5 morning.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "1.30 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "138"
+    },
+    {
+     "l": "Active HR",
+     "v": "150 (max 184)"
+    },
+    {
+     "l": "Active time",
+     "v": "19 min"
+    },
+    {
+     "l": "Air",
+     "v": "AQI ~140"
+    }
+   ],
+   "headline": "Technique/drill session where the whole pool — and a swimmer in a neighbouring complex — was out of breath. HR sat high for the low effort, traced to a humid, overcast, low-pressure morning with elevated particulate at a 7:27am open-air rooftop pool. Not a fitness red flag.",
+   "insight": [
+    "Active-work HR 150 avg / 184 max is high for technique swimming (should sit low 130s); rests also stayed up (133 avg, 177 max) instead of dropping fast — the fingerprint of harder-to-move air, not threshold effort.",
+    "Environmental cause confirmed (web-checked): overcast 23C / 73% RH (dew point ~18C) low-pressure morning + Hebbal AQI ~140 at 07:27, peak inversion window, open-air 13th-floor pool. Neighbouring-complex swimmer felt identical — rules out pool chloramine, ventilation, and personal fitness.",
+    "Not hypoxia: barometric dips shave only ~1-2% off O2 partial pressure; it's the perception of air hunger (humidity + particulate) driving breathing rate and HR up. Bengaluru's ~920m baseline amplifies the dip vs a lowland city.",
+    "Protocol: on still, overcast monsoon mornings, check PM2.5 before an open-air swim. If 130+, treat as easy/technique by default and ignore the elevated HR."
+   ]
+  },
+  {
+   "date": "2026-08-24",
+   "sport": "run",
+   "week": 3,
+   "title": "Easy / recovery run 4.7k — HR-capped (VO2-safe)",
+   "verdict": "Cap honored perfectly (142 avg / 157 max). Stopped at 4.7 of 6k on tired legs — correct call the day after the 16k, not a miss.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "4.7 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "142"
+    },
+    {
+     "l": "Max HR",
+     "v": "157"
+    },
+    {
+     "l": "Cadence",
+     "v": "146 spm"
+    },
+    {
+     "l": "Pace",
+     "v": "~9:10/km"
+    }
+   ],
+   "headline": "Day-after-16k recovery run, executed exactly as designed. HR never came near the ceiling so the watch generated no VO2max data point — legs, not lungs, were the limiter, and stopping early was the right call.",
+   "insight": [
+    "HR discipline: running blocks 142 avg / max 157, fully under the 150 easy cap and the 160 ceiling. This is the VO2-safe easy run we scheduled — no VO2max data point generated, as intended.",
+    "Legs, not lungs, ended it: 18 short walk breaks and stopped at 4.7 of 6k, but max HR only 157 — so the walks were leg fatigue from the 16k, not HR-ceiling driven. Bailing early on tired legs was correct, not a miss.",
+    "Running-only cadence 145.5 spm — solid for recovery pace and cleaner than walk-diluted long-run numbers; form held (GCT 330ms, vertical ratio 10.6, 206W).",
+    "Pace ~9:10/km (running) is slow, but pace is irrelevant on a capped recovery day — HR and how the legs feel are the only metrics. Muggy Bengaluru evening also taxed it."
+   ]
+  },
+  {
+   "date": "2026-08-23",
+   "sport": "run",
+   "week": 2,
+   "title": "Long run 16k — two-block HR-capped (base)",
+   "verdict": "Textbook execution: block 1 sat at 151, clean negative split. Target behavior, repeated.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "16.0 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "153"
+    },
+    {
+     "l": "Block 1",
+     "v": "7:59 @ 151"
+    },
+    {
+     "l": "Block 2",
+     "v": "7:05 @ 166"
+    },
+    {
+     "l": "Pace",
+     "v": "7:49/km"
+    }
+   ],
+   "headline": "The two-block structure held almost exactly as drawn. Block 1 sat at 151 avg across 9 km — dead center of target — then a clean negative split into a stronger block 2. Second disciplined HR-capped long run in a row; the Jul 19 Z4 blow-up is firmly in the past.",
+   "insight": [
+    "Block 1 easy base (km3-11, 9k): 7:59/km @ avg HR 151, max 168 — bang on the 150-158 band, cap 160. The bulk of the run held the number the whole way.",
+    "Block 2 steady (km12-16, 5k): 7:05/km @ avg HR 166 under the 172 cap. 7:05 at 166 is quicker than the Aug 9 comp pace (7:37 at 171) — base work showing up as pace-at-HR.",
+    "Walk-recovery fix worked: ~70 short walks let HR settle to ~150 before running again (vs Aug 16's tag-and-go), so block 1 held instead of sawtoothing. Self-diagnosed and applied.",
+    "Flags: a max-195 (Z5) spike late in block 2 — a hill or finish surge, brief but 'steady' means no near-max pops. And ~29 min total walking = easy running pace still drives HR to the ceiling; aerobic base is still the limiter, so watch for walking LESS as the block progresses."
+   ]
+  },
+  {
+   "date": "2026-08-22",
+   "sport": "swim",
+   "week": 2,
+   "title": "CSS TEST — 400 + 192 TT (+ 3×336 aerobic)",
+   "verdict": "First real swim benchmark: CSS = 2:18/100m. Clean, valid test.",
+   "stats": [
+    {
+     "l": "CSS",
+     "v": "2:18/100m"
+    },
+    {
+     "l": "400 TT",
+     "v": "8:35 (2:09)"
+    },
+    {
+     "l": "192 TT",
+     "v": "3:47 (1:58)"
+    },
+    {
+     "l": "Distance",
+     "v": "2512 m"
+    },
+    {
+     "l": "Avg HR",
+     "v": "155"
+    }
+   ],
+   "headline": "The number this whole exercise was for: CSS = 2:18/100m. Both TTs honest (HR 171–173, redlined to 190 on the 192), full recovery between so they didn't contaminate each other. Breaststroke stayed in the WU/first-336/CD — never the TTs — so the test is clean.",
+   "insight": [
+    "Training paces off CSS: speed ~2:14, threshold (CSS) 2:18, endurance ~2:26 per 100m (per 16 m length: ~21.5 / ~22 / ~23.5 s). Apply S2 @ ~2:26, S3 @ ~2:18, speed reps just under CSS.",
+    "11 s/100m spread between the 400 (2:09) and 192 (1:58) = big fatigue slope. Top-end speed is there; fatigue resistance over distance is the developing quality — exactly the profile. As base builds, the 400 pace creeps toward the 192 and CSS drops.",
+    "Best qualitative note: 'most unbroken I've swum — rest between sets, not within.' Continuous hold of form and pace IS the aerobic quality we want, worth more than any single fast split. 3×336 done continuous.",
+    "3×336 pace vs HR (20s rest): rep2 2:20/100m @ HR 168, rep3 ~2:24 @ HR 158. Pace sat at CSS but effort didn't — rep3 was cleanly aerobic (13–15 bpm under threshold HR), so the set was mixed, not a threshold grind. It felt easy because it was broken, swim HR reads low, and it's his best discipline — in the pool, trust pace + HR over RPE.",
+    "Feedback: keep the 3×336 and any aerobic filler freestyle so the pace means something — breaststroke there just makes it easier filler and won't build the freestyle engine."
+   ]
+  },
+  {
+   "date": "2026-08-20",
+   "sport": "swim",
+   "week": 2,
+   "title": "Swim — endurance + speed (NOT the CSS test)",
+   "verdict": "Even-paced main set on a tired body; CSS test still pending",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "1616 m"
+    },
+    {
+     "l": "Main set",
+     "v": "2×272 m"
+    },
+    {
+     "l": "Pace",
+     "v": "~2:16/100m"
+    },
+    {
+     "l": "Avg HR",
+     "v": "152"
+    },
+    {
+     "l": "SWOLF",
+     "v": "31"
+    }
+   ],
+   "headline": "Endurance + speed swim the morning after the train-sleep run. The two big reps were paced beautifully; efficiency held. This was NOT a valid CSS test — that 400+200 TT is still owed on a rested day.",
+   "insight": [
+    "Highlight: 2×272 m at 2:16.3 and 2:16.8/100m — half a second apart across 272 m each. Same pacing discipline as the run reps, now showing in the pool too.",
+    "Efficiency held: SWOLF 31 on both big reps (no decay under distance) — technique held, not just muscled.",
+    "Speed set 5×32 m descended then wobbled (1:40→1:47→1:52→2:01→1:45), HR to 178 — mid-set fade is fatigue from the week, not form.",
+    "NOT a CSS test: the session was controlled 272 m reps, not the maximal 400+200 TT the plan wants. No valid CSS number produced. Testing max on a depleted body would give a garbage number anyway — do it rested this week.",
+    "Load flag: VO2 run at 188 bpm on no sleep + this swim (TE 3.3 aerobic / 2.2 anaerobic) inside ~24 h. System is stacking — keep the Posterior lift light and tomorrow genuinely easy."
+   ]
+  },
+  {
+   "date": "2026-08-19",
+   "sport": "run",
+   "week": 2,
+   "title": "Speed 5×1000 @ 5:55 (LT reps)",
+   "verdict": "Textbook even pacing — but run on no sleep, HR redlined",
+   "stats": [
+    {
+     "l": "Reps",
+     "v": "5×1000"
+    },
+    {
+     "l": "Pace",
+     "v": "5:56–6:01"
+    },
+    {
+     "l": "Rep HR",
+     "v": "182–189"
+    },
+    {
+     "l": "TE",
+     "v": "4.2 VO2max"
+    },
+    {
+     "l": "Load",
+     "v": "190"
+    }
+   ],
+   "headline": "Ran the same session from a few weeks ago on a wrecked battery (slept upright on a train). Pacing was near-perfect; HR blew past threshold because of the sleep debt — not a fitness read.",
+   "insight": [
+    "Pacing was the win: 5:58 / 6:01 / 5:58 / 5:59 / 5:56 — dead-even, no rep-1 surge, no fade. The pacing discipline held.",
+    "HR was the story: reps ran 182–189 avg (LTHR 182), maxing 196 — at/above threshold the whole time. Garmin logged it VO2max (TE 4.2), i.e. run harder than the sub-LT cruise it was written as.",
+    "Cause: no real sleep (train) + evening heat + AM load. Same pace cost far more cardiovascularly. Effort read is invalid as a fitness signal — discard the bad execution score.",
+    "Cadence decayed under fatigue: 158→162→156→154→154, dropping under the 155 floor on the last two reps while pace held — i.e. overstriding crept in (GCT 287 ms). A fatigue signature, not a form regression.",
+    "Re-test value pending: when rested, expect this exact session at LOWER HR with cadence held >155. Today's is too compromised to compare fairly."
+   ]
+  },
+  {
+   "date": "2026-08-16",
+   "sport": "run",
+   "week": 1,
+   "title": "Long run 17k (HR-capped, aerobic)",
+   "verdict": "Longer and lower HR — base trending right",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "17.0 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "156"
+    },
+    {
+     "l": "Pace",
+     "v": "~7:50/km"
+    },
+    {
+     "l": "TE",
+     "v": "4.1 Aerobic"
+    },
+    {
+     "l": "Load",
+     "v": "185"
+    }
+   ],
+   "headline": "Ran 2k longer than Aug 9 at a lower average HR — post-illness, in the morning. The aerobic base is trending exactly right.",
+   "insight": [
+    "First morning-start run of the block: no evening-heat HR tax, so this is the cleanest aerobic read yet.",
+    "Block 1 easy (km1-12) avg HR 154 at ~7:55/km; Block 2 steady (km13-17) avg HR 163 at ~7:39/km. HR discipline held on both.",
+    "17k at avg HR 156 vs the Aug 9 15k at 161: longer AND lower — the aerobic-base signal these runs are built to produce.",
+    "Cadence 138 avg (overstriding on easy pace) but climbed to 150+ on the faster kms. Keep nudging easy-pace turnover toward 155+."
+   ]
+  },
+  {
+   "date": "2026-08-12",
+   "sport": "run",
+   "week": 1,
+   "title": "Speed repeats (fartlek)",
+   "verdict": "Strong top-end · overshot pace",
+   "stats": [
+    {
+     "l": "Dist",
+     "v": "5.0k"
+    },
+    {
+     "l": "Avg HR",
+     "v": "148"
+    },
+    {
+     "l": "Max HR",
+     "v": "189"
+    },
+    {
+     "l": "TE",
+     "v": "3.1a / 2.8an"
+    },
+    {
+     "l": "Load",
+     "v": "153"
+    }
+   ],
+   "headline": "Ignoring compliance — an encouraging session. Top-end is in better shape than easy-run HR suggests.",
+   "insight": [
+    "First non-zero anaerobic TE (2.8) in ages — the fartlek does what HR-capped long runs structurally can't.",
+    "Held 4:40–5:00/km reps at HR only 165–172 (under 182 LTHR) — genuine speed produced sub-threshold. Confirms the limiter is aerobic base, not top-end.",
+    "Cadence hit 163–168 on the good reps (vs habitual 143); power 340–410W. Mechanics wake up when you ask for speed.",
+    "Overshot nearly every rep — ran 20–40s/km faster than target. 'Not hard physiologically' tricked you into pushing. Load 153 ≈ a 15k long run.",
+    "Fix is a skill: aim for the SLOW end of the band. Pacing accuracy > pace. Next quality = 5×1000 @ 5:55 (distance polices the overshoot)."
+   ]
+  },
+  {
+   "date": "2026-08-10",
+   "sport": "run",
+   "week": 1,
+   "title": "Recovery run (HR-capped)",
+   "verdict": "Textbook restraint",
+   "stats": [
+    {
+     "l": "Dist",
+     "v": "2.7k"
+    },
+    {
+     "l": "Avg HR",
+     "v": "134"
+    },
+    {
+     "l": "Max HR",
+     "v": "145"
+    },
+    {
+     "l": "TE",
+     "v": "0.9 Recovery"
+    },
+    {
+     "l": "Load",
+     "v": "12"
+    }
+   ],
+   "headline": "The easy-day discipline that's been the hard part — nailed.",
+   "insight": [
+    "Avg HR 134, max 145 — never near the 150–158 cap, one day off a 15k. Exactly the restraint that was missing pre-pivot.",
+    "Load 11.7 aids recovery rather than adding fatigue. Pace ~10:40/km is an output here, not a fitness signal.",
+    "Cadence 143 — low-stakes on recovery days, but the standing nudge toward 155+ still applies."
+   ]
+  },
+  {
+   "date": "2026-08-09",
+   "sport": "run",
+   "week": 0,
+   "title": "Long progression (5+5+5)",
+   "verdict": "HR discipline held — the breakthrough",
+   "stats": [
+    {
+     "l": "Dist",
+     "v": "15.0k"
+    },
+    {
+     "l": "Avg HR",
+     "v": "161"
+    },
+    {
+     "l": "Max HR",
+     "v": "179"
+    },
+    {
+     "l": "TE",
+     "v": "3.9a / 0.0an"
+    },
+    {
+     "l": "Load",
+     "v": "160"
+    }
+   ],
+   "headline": "The behaviour change that matters: sub-172 held for the whole run.",
+   "insight": [
+    "Block 3 comp-pace avg never crossed 172 — a complete reversal of the Jul 19 Z4 blow-up.",
+    "At the sub-172 ceiling, comp pace was ~7:37/km (not the 7:10 predictor) — sustainable pace anchored to 7:35.",
+    "Anaerobic 0.0 is correct by design for an HR-capped sub-threshold run. VO₂max ticked 41→43; status Productive."
+   ]
+  }
+ ],
+ "swim": {
+  "css_test": "Swim a 400m TT and a 200m TT (full rest between). CSS/100 = (400−200 dist) ÷ (400time − 200time). Sets the threshold pace for quality reps.",
+  "zones": [
+   {
+    "id": "easy",
+    "label": "Easy / recovery",
+    "pace": "2:15–2:25 /100m",
+    "rpe": "4–5",
+    "use": "Tue swim, warm-ups, cool-downs"
+   },
+   {
+    "id": "aerobic",
+    "label": "Aerobic / steady",
+    "pace": "2:05–2:15 /100m",
+    "rpe": "6",
+    "use": "Thu main-volume swim"
+   },
+   {
+    "id": "quality",
+    "label": "Threshold / quality",
+    "pace": "1:55–2:05 /100m",
+    "rpe": "7–8",
+    "use": "Sat quality swim reps"
+   }
+  ],
+  "templates": [
+   {
+    "id": "easy",
+    "title": "Easy aerobic (Tue, ~1.5k)",
+    "role": "Recovery / technique",
+    "sets": [
+     "WU 200 easy mixed",
+     "Main 800–1000 smooth — 4×200 @ RPE 4–5 (15s rest), + 2×50 drill",
+     "CD 100 easy"
+    ]
+   },
+   {
+    "id": "aerobic",
+    "title": "Main aerobic (Thu, ~2.5k)",
+    "role": "Volume builder",
+    "sets": [
+     "WU 300 (swim + 4×50 build)",
+     "Main ~1600–1800 — 3×400 @ RPE 6 (20s rest) → 2×600 / 1×1000 as weeks progress",
+     "CD 200 easy"
+    ]
+   },
+   {
+    "id": "quality",
+    "title": "Quality (Sat, ~2.0k)",
+    "role": "The one hard swim",
+    "sets": [
+     "WU 300 + 6×50 build",
+     "Main ~1200–1400 — 8×100 @ RPE 7–8 (15–20s rest) → or 4×200 hard / 10×100 descending",
+     "CD 200 easy"
+    ]
+   }
+  ]
+ },
+ "swim_sessions": [
+  {
+   "id": "S1",
+   "name": "Technique",
+   "slot": "Mon AM",
+   "focus": "technique + aerobic, easy",
+   "fixed": [
+    "400 wu easy",
+    "8×50 drills (catch-up · single-arm · fist · scull) 15s",
+    "6×100 pull buoy+paddles 20s",
+    "200 cd"
+   ],
+   "scaled": {
+    "key": "s1_200",
+    "label": "{n}×200 smooth 20s",
+    "range": "2 → 4 reps across the block"
+   }
+  },
+  {
+   "id": "S2",
+   "name": "Endurance",
+   "slot": "Fri AM",
+   "focus": "aerobic base — the keeper for HIM",
+   "fixed": [
+    "400 + 4×50 build wu",
+    "400 pull easy (buoy)",
+    "200 cd"
+   ],
+   "scaled": {
+    "key": "s2_800",
+    "label": "{n}×800 continuous 30s",
+    "range": "1 → 3 reps across the block"
+   }
+  },
+  {
+   "id": "S3",
+   "name": "Threshold + speed",
+   "slot": "Wed AM",
+   "focus": "quality — pairs with PM speed run (one hard day)",
+   "fixed": [
+    "400 + 4×50 build wu",
+    "6×50 sprint 20s",
+    "400 pull+paddles strong",
+    "300 cd"
+   ],
+   "scaled": {
+    "key": "s3_100",
+    "label": "{n}×100 @ threshold 15–20s (hold pace)",
+    "range": "4 → 8 reps; deloads go easy, no sprint"
+   }
+  }
+ ],
+ "strength_split": {
+  "framework": "Posterior / Anterior / Upper",
+  "rule": "Bench is the priority lift, trained 2x/wk: Anterior = HEAVY (comp-style main + paused-bench accessory for the bottom-end weak link), Upper = VOLUME/rep. 2 sets/exercise except main bench = 3 on Anterior.",
+  "note": "Built lopsided on purpose: swimming (2-3x/wk) already floods back, lats and rear delts, so the gym protects pressing and arms. Bench stays actual barbell on both exposures; keep heavy leg work off long-run and hardest-swim days.",
+  "volume_note": "Back (~8 gym sets + 2-3 swims) is by far the most-trained region. If shoulders feel stacked, the Upper-day pulldown is the first thing to trim.",
+  "days": [
+   {
+    "name": "Posterior",
+    "slot": "Thu",
+    "focus": "back · triceps · glutes/hams · rear delt · calves · adductor + hamstring prehab",
+    "lifts": [
+     {
+      "n": "Weighted Pull-Up",
+      "s": "2"
+     },
+     {
+      "n": "Seated Cable Row (V-Grip)",
+      "s": "2"
+     },
+     {
+      "n": "Single-Leg RDL (DB)",
+      "s": "2",
+      "tag": "left-hip / weak-glute work"
+     },
+     {
+      "n": "Copenhagen Plank",
+      "s": "2",
+      "tag": "adductor prehab — starting BENT-KNEE; begin once sprint soreness clears, build lever slowly"
+     },
+     {
+      "n": "Nordic Hamstring Curl",
+      "s": "2",
+      "tag": "hamstring prehab (sprint injury #1) — start band-assisted / top-range only"
+     },
+     {
+      "n": "Back Extension (Weighted)",
+      "s": "2"
+     },
+     {
+      "n": "Face Pull",
+      "s": "2"
+     },
+     {
+      "n": "Single-Arm Tricep Extension",
+      "s": "2"
+     },
+     {
+      "n": "Overhead Tricep Extension",
+      "s": "2"
+     },
+     {
+      "n": "Standing Calf Raise",
+      "s": "2"
+     }
+    ]
+   },
+   {
+    "name": "Anterior",
+    "slot": "Tue",
+    "focus": "BENCH DAY · chest · delts · biceps · quads · tib · abs",
+    "lifts": [
+     {
+      "n": "Barbell Bench Press",
+      "s": "3",
+      "tag": "primary — HEAVY, comp-style (leg drive), full ROM"
+     },
+     {
+      "n": "Paused Bench Press",
+      "s": "2",
+      "tag": "bottom-end weak link — 2-3s dead stop"
+     },
+     {
+      "n": "Shoulder Press (DB) / Push Press",
+      "s": "2"
+     },
+     {
+      "n": "Lateral Raise (Machine)",
+      "s": "2"
+     },
+     {
+      "n": "Goblet / Barbell Squat",
+      "s": "2"
+     },
+     {
+      "n": "Step-Up (DB)",
+      "s": "2"
+     },
+     {
+      "n": "Cross-Body Hammer Curl",
+      "s": "2"
+     },
+     {
+      "n": "Barbell / DB Curl",
+      "s": "2"
+     },
+     {
+      "n": "Tibialis Raise",
+      "s": "2"
+     }
+    ]
+   },
+   {
+    "name": "Upper",
+    "slot": "Sat",
+    "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
+    "lifts": [
+     {
+      "n": "Barbell Bench (volume/rep, comp-style, full ROM)",
+      "s": "2"
+     },
+     {
+      "n": "Bent-Over Row (Smith)",
+      "s": "2"
+     },
+     {
+      "n": "Lat Pulldown / Pull-Up",
+      "s": "2"
+     },
+     {
+      "n": "Incline Chest Press / Dip",
+      "s": "2"
+     },
+     {
+      "n": "Lateral Raise / Shoulder Press",
+      "s": "2"
+     },
+     {
+      "n": "Curl",
+      "s": "2"
+     },
+     {
+      "n": "Tricep Pushdown / Extension",
+      "s": "2"
+     },
+     {
+      "n": "Hanging Leg Raise",
+      "s": "2"
+     }
+    ],
+    "note": "wk3+ (was Fri while at 2 swims)"
+   }
+  ]
+ },
+ "run_targets": {
+  "easy": {
+   "label": "Easy / recovery",
+   "hr": "≤150–158",
+   "note": "mornings; slow pace to hold HR"
+  },
+  "long": {
+   "label": "Long run",
+   "hr": "≤172",
+   "note": "start easy; race-pace segments only from wk 9"
+  },
+  "speed_short": {
+   "label": "Speed — short reps (400–1000m)",
+   "pace": "~5:50 /km",
+   "note": "LT pace; honest at this distance"
+  },
+  "speed_cruise": {
+   "label": "Speed — cruise (1600–3000m)",
+   "pace": "HR just under 182",
+   "note": "let pace land ~6:00–6:20; don't force 5:50"
+  }
+ },
+ "run_zones": {
+  "hr": [
+   {
+    "z": "Z2 · Easy",
+    "use": "true easy",
+    "r": "122–140"
+   },
+   {
+    "z": "Z3 · Aerobic",
+    "use": "long-run sweet spot",
+    "r": "141–160"
+   },
+   {
+    "z": "Z4 · Sub-threshold",
+    "use": "steady → LT (180)",
+    "r": "161–180"
+   },
+   {
+    "z": "Z5 · VO2 / anaerobic",
+    "use": "intervals · surges",
+    "r": "181+"
+   }
+  ],
+  "hr_note": "<b>Easy / long-run cap ~162</b> (aim 150–158 avg, govern by HR not pace). LTHR 180 · max ~203 · RHR ~60.",
+  "paces": [
+   {
+    "l": "Comp-pace (sub-172)",
+    "v": "~7:00/km"
+   },
+   {
+    "l": "HM (to earn)",
+    "v": "~6:47/km"
+   },
+   {
+    "l": "Threshold / LT",
+    "v": "~5:40/km"
+   },
+   {
+    "l": "Easy / long",
+    "v": "HR-governed"
+   }
+  ],
+  "pace_note": "Off the Aug 26 speed run (LT 5:40) + Aug 23 long run. Re-validate after the Sep 2 5K TT."
+ },
+ "week_template_full": [
+  {
+   "day": "Mon",
+   "sessions": [
+    {
+     "sport": "run",
+     "title": "Sprint session",
+     "detail": "6×12s hill sprints + easy volume (wk5+)"
+    }
+   ]
+  },
+  {
+   "day": "Tue",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Anterior (bench)",
+     "detail": "bench focus"
+    }
+   ]
+  },
+  {
+   "day": "Wed",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim — threshold",
+     "swim_id": "S3",
+     "detail": "threshold/speed"
+    },
+    {
+     "sport": "run",
+     "slot": "PM",
+     "title": "Speed run",
+     "detail": "LT intervals"
+    }
+   ]
+  },
+  {
+   "day": "Thu",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Posterior",
+     "detail": "auto-regulate"
+    }
+   ]
+  },
+  {
+   "day": "Fri",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim — endurance",
+     "swim_id": "S2",
+     "detail": "aerobic base"
+    },
+    {
+     "sport": "run",
+     "slot": "PM",
+     "title": "Easy / recovery run",
+     "detail": "HR ≤150–158, short"
+    }
+   ]
+  },
+  {
+   "day": "Sat",
+   "sessions": [
+    {
+     "sport": "run",
+     "slot": "AM",
+     "title": "Long run",
+     "detail": "HR ≤172 (run AM for the heat)"
+    },
+    {
+     "sport": "strength",
+     "slot": "PM",
+     "title": "Upper",
+     "detail": "rep-focused bench"
+    }
+   ]
+  },
+  {
+   "day": "Sun",
+   "sessions": [
+    {
+     "sport": "swim",
+     "title": "Swim — technique",
+     "swim_id": "S1",
+     "detail": "easy/recovery swim"
+    }
+   ]
+  }
+ ],
+ "week_template_wk2": [
+  {
+   "day": "Mon",
+   "sessions": [
+    {
+     "sport": "run",
+     "title": "Easy / recovery run",
+     "detail": "AM · HR ≤150–158"
+    }
+   ]
+  },
+  {
+   "day": "Tue",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Anterior (bench)",
+     "detail": "bench focus"
+    }
+   ]
+  },
+  {
+   "day": "Wed",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim",
+     "detail": "aerobic"
+    },
+    {
+     "sport": "run",
+     "slot": "PM",
+     "title": "Speed run",
+     "detail": "LT intervals"
+    }
+   ]
+  },
+  {
+   "day": "Thu",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Posterior",
+     "detail": "auto-regulate"
+    }
+   ]
+  },
+  {
+   "day": "Fri",
+   "sessions": [
+    {
+     "sport": "swim",
+     "slot": "AM",
+     "title": "Swim",
+     "detail": "aerobic"
+    }
+   ]
+  },
+  {
+   "day": "Sat",
+   "sessions": [
+    {
+     "sport": "strength",
+     "title": "Upper",
+     "detail": "rep-focused bench"
+    }
+   ]
+  },
+  {
+   "day": "Sun",
+   "sessions": [
+    {
+     "sport": "run",
+     "title": "Long run",
+     "detail": "HR ≤172"
+    }
+   ]
+  }
+ ],
+ "bench_progression": {
+  "title": "Bench Progression — Weekly Targets",
+  "why": "Weak link confirmed Aug 29: bottom-end / starting strength (feet-up paused 70×4 vs 70×9 touch-and-go; close-grip paused 60×12 strong = triceps fine). Fix = paused-bench accessory + a real progression to aim at.",
+  "how": "Double progression. Anterior main bench is comp-style (feet planted, use leg drive), full ROM every rep. Hit the top rep target at a load → add 2.5 kg next session. In a cut: aim high, but if a set stalls, REPEAT the weight next week rather than grind — goal is a heavy signal + steady climb, primed to jump to 100 kg post-cut. e1RM climbs 87→96 across the block.",
+  "cols": [
+   "Wk",
+   "Anterior — main bench (3 sets)",
+   "Paused bench (2 sets)",
+   "Upper — volume bench (2 sets)"
+  ],
+  "weeks": [
+   {
+    "wk": 4,
+    "deload": true,
+    "main": "72.5×4 · 67.5×5,5",
+    "paused": "60×4,4",
+    "upper": "65×6,6"
+   },
+   {
+    "wk": 5,
+    "main": "77.5×4 · 72.5×5,5",
+    "paused": "62.5×4,4",
+    "upper": "70×6,6"
+   },
+   {
+    "wk": 6,
+    "main": "77.5×5 · 72.5×6,6",
+    "paused": "62.5×5,5",
+    "upper": "70×7,7"
+   },
+   {
+    "wk": 7,
+    "main": "80×4 · 75×5,5",
+    "paused": "65×4,4",
+    "upper": "72.5×6,6"
+   },
+   {
+    "wk": 8,
+    "deload": true,
+    "main": "72.5×3 · 65×5,5",
+    "paused": "60×4,4",
+    "upper": "65×6,6"
+   },
+   {
+    "wk": 9,
+    "main": "80×5 · 75×6,6",
+    "paused": "65×5,5",
+    "upper": "72.5×7,7"
+   },
+   {
+    "wk": 10,
+    "main": "82.5×4 · 77.5×5,5",
+    "paused": "67.5×4,4",
+    "upper": "75×6,6"
+   },
+   {
+    "wk": 11,
+    "main": "82.5×5 · 77.5×6,6",
+    "paused": "67.5×5,5",
+    "upper": "75×7,7"
+   },
+   {
+    "wk": 12,
+    "deload": true,
+    "main": "work to heavy 3 @ 85 (e1RM check) · 70×5",
+    "paused": "— (or light)",
+    "upper": "65×6,6"
+   }
+  ]
+ },
+ "running_history": {
+  "note": "Full running history: Huawei Health (Nov 2025–Jun 2026, de-duplicated from the Apple Health export — Huawei/Strava/Runna triple-logged every run) + Garmin (Jul 2026+). Mar & Jun run totals are Huawei's own authoritative monthly figures.",
+  "monthly": [
+   {
+    "m": "Nov '25",
+    "km": 1.7,
+    "longest": 1.7
+   },
+   {
+    "m": "Jan '26",
+    "km": 2.3,
+    "longest": 1.3
+   },
+   {
+    "m": "Feb",
+    "km": 31.9,
+    "longest": 7.1,
+    "flag": "real start"
+   },
+   {
+    "m": "Mar",
+    "km": 56.4,
+    "longest": 10.1,
+    "auth": true
+   },
+   {
+    "m": "Apr",
+    "km": 16.3,
+    "longest": 9.6,
+    "flag": "patellar tendon"
+   },
+   {
+    "m": "May",
+    "km": 29.7,
+    "longest": 7.5
+   },
+   {
+    "m": "Jun",
+    "km": 35.2,
+    "longest": 8.2,
+    "auth": true
+   },
+   {
+    "m": "Jul",
+    "km": 59.4,
+    "longest": 14.6,
+    "flag": "Garmin era"
+   },
+   {
+    "m": "Aug",
+    "km": 98.1,
+    "longest": 18.0,
+    "flag": "biggest ever"
+   }
+  ]
+ },
+ "pre_garmin_runs": [
+  {
+   "date": "2026-02-28",
+   "km": 7.1,
+   "pace": "7:37",
+   "hr": 164,
+   "max": 191,
+   "cad": 140,
+   "gct": 330,
+   "vo2": 35,
+   "note": "first real ~7k — baseline"
+  },
+  {
+   "date": "2026-03-12",
+   "km": 7.7,
+   "pace": "8:05",
+   "hr": 169,
+   "max": 192,
+   "cad": 142,
+   "gct": 329,
+   "vo2": 35,
+   "note": ""
+  },
+  {
+   "date": "2026-03-21",
+   "km": 10.1,
+   "pace": "7:29",
+   "hr": 167,
+   "max": 186,
+   "cad": 147,
+   "gct": 326,
+   "vo2": 36,
+   "note": "first-ever 10k"
+  },
+  {
+   "date": "2026-03-23",
+   "km": 7.1,
+   "pace": "7:57",
+   "hr": 161,
+   "max": 175,
+   "cad": 144,
+   "gct": 332,
+   "vo2": 36,
+   "note": ""
+  },
+  {
+   "date": "2026-03-25",
+   "km": 9.1,
+   "pace": "7:21",
+   "hr": 165,
+   "max": 187,
+   "cad": 142,
+   "gct": 310,
+   "vo2": 36,
+   "note": ""
+  },
+  {
+   "date": "2026-03-29",
+   "km": 9.9,
+   "pace": "6:51",
+   "hr": 173,
+   "max": 194,
+   "cad": 150,
+   "gct": 312,
+   "vo2": 37,
+   "note": "fastest longish run — but HR 173 = hard, near threshold"
+  },
+  {
+   "date": "2026-04-17",
+   "km": 9.6,
+   "pace": "7:54",
+   "hr": 172,
+   "max": 198,
+   "cad": 135,
+   "gct": 313,
+   "vo2": 37,
+   "note": "patellar-tendon month — high HR, laboring"
+  },
+  {
+   "date": "2026-05-08",
+   "km": 5.9,
+   "pace": "9:28",
+   "hr": 161,
+   "max": 181,
+   "cad": 135,
+   "gct": 343,
+   "vo2": 37,
+   "note": "slow shuffle — yet still HR 161"
+  },
+  {
+   "date": "2026-05-27",
+   "km": 7.4,
+   "pace": "7:28",
+   "hr": 180,
+   "max": 194,
+   "cad": 151,
+   "gct": 323,
+   "vo2": 35,
+   "note": "HR 180 (threshold) for an easy run"
+  },
+  {
+   "date": "2026-05-31",
+   "km": 5.0,
+   "pace": "7:28",
+   "hr": 169,
+   "max": 189,
+   "cad": 143,
+   "gct": 319,
+   "vo2": 35,
+   "note": ""
+  },
+  {
+   "date": "2026-06-05",
+   "km": 7.9,
+   "pace": "8:59",
+   "hr": 165,
+   "max": 187,
+   "cad": 143,
+   "gct": 342,
+   "vo2": 35,
+   "note": "slow + hot HR"
+  },
+  {
+   "date": "2026-06-15",
+   "km": 2.0,
+   "pace": "6:44",
+   "hr": 161,
+   "max": 180,
+   "cad": 145,
+   "gct": 315,
+   "vo2": 35,
+   "note": "short + fast top-end"
+  },
+  {
+   "date": "2026-06-24",
+   "km": 6.2,
+   "pace": "7:39",
+   "hr": 162,
+   "max": 183,
+   "cad": 139,
+   "gct": 327,
+   "vo2": 36,
+   "note": "last run before Garmin"
+  }
+ ],
+ "efficiency": {
+  "note": "Each point = one aerobic run (avg HR vs avg pace). Huawei era (Feb–Jun) in amber, Garmin era (Jul–Aug) in green. The story: pre-Garmin every run sat at HR 160–180 regardless of pace (ran hot from day one); Garmin-era long runs cluster at 153–156 — the discipline shift — AND run faster for a given HR (efficiency). · Same-course check (Hosapete ~490m): May 25 7:28/km @ HR180 → Sep 12 6:21/km @ HR169 — ~67 s/km faster at 11 bpm lower on identical ground, altitude controlled.",
+  "points": [
+   {
+    "d": "Feb 28",
+    "hr": 164,
+    "s": 457,
+    "km": 7.1,
+    "era": "huawei"
+   },
+   {
+    "d": "Mar 12",
+    "hr": 169,
+    "s": 485,
+    "km": 7.7,
+    "era": "huawei"
+   },
+   {
+    "d": "Mar 21",
+    "hr": 167,
+    "s": 449,
+    "km": 10.1,
+    "era": "huawei"
+   },
+   {
+    "d": "Mar 23",
+    "hr": 161,
+    "s": 477,
+    "km": 7.1,
+    "era": "huawei"
+   },
+   {
+    "d": "Mar 25",
+    "hr": 165,
+    "s": 441,
+    "km": 9.1,
+    "era": "huawei"
+   },
+   {
+    "d": "Mar 29",
+    "hr": 173,
+    "s": 411,
+    "km": 9.9,
+    "era": "huawei"
+   },
+   {
+    "d": "Apr 17",
+    "hr": 172,
+    "s": 474,
+    "km": 9.6,
+    "era": "huawei"
+   },
+   {
+    "d": "May 8",
+    "hr": 161,
+    "s": 568,
+    "km": 5.9,
+    "era": "huawei"
+   },
+   {
+    "d": "May 27",
+    "hr": 180,
+    "s": 448,
+    "km": 7.4,
+    "era": "huawei"
+   },
+   {
+    "d": "May 31",
+    "hr": 169,
+    "s": 448,
+    "km": 5.0,
+    "era": "huawei"
+   },
+   {
+    "d": "Jun 5",
+    "hr": 165,
+    "s": 539,
+    "km": 7.9,
+    "era": "huawei"
+   },
+   {
+    "d": "Jun 24",
+    "hr": 162,
+    "s": 459,
+    "km": 6.2,
+    "era": "huawei"
+   },
+   {
+    "d": "Jul 19",
+    "hr": 172,
+    "s": 472,
+    "km": 14.6,
+    "era": "garmin"
+   },
+   {
+    "d": "Aug 9",
+    "hr": 161,
+    "s": 478,
+    "km": 15.0,
+    "era": "garmin"
+   },
+   {
+    "d": "Aug 16",
+    "hr": 156,
+    "s": 470,
+    "km": 17.0,
+    "era": "garmin"
+   },
+   {
+    "d": "Aug 23",
+    "hr": 153,
+    "s": 469,
+    "km": 16.0,
+    "era": "garmin"
+   },
+   {
+    "d": "Aug 29",
+    "hr": 156,
+    "s": 504,
+    "km": 18.0,
+    "era": "garmin"
+   },
+   {
+    "d": "May 25",
+    "hr": 180,
+    "s": 448,
+    "km": 7.43,
+    "era": "huawei",
+    "loc": "Hosapete"
+   },
+   {
+    "d": "Sep 12",
+    "hr": 169,
+    "s": 381,
+    "km": 8.56,
+    "era": "garmin",
+    "loc": "Hosapete"
+   }
+  ]
+ },
+ "speed_block": {
+  "title": "100m Speed Block — Monday sprint progression",
+  "why": "Athlete-driven side-quest: develop a genuine 100m. Baseline (Aug 31) confirmed real sprint gear — GCT 167ms, vertical ratio 4.0%, peak 842W. Now periodize: acceleration → max velocity → test. Runs in the Monday slot, ~5k total, low recovery cost (Body Battery ~−3). Injury frame: hills/sled protect the patellar knee on accel weeks; flat max-velocity flying sprints are the hamstring-risk piece — ramp in, thorough warmup, small doses. Not a plan change to the HIM block; a bolt-on that shares the Monday slot.",
+  "warmup": "Every session: 2–2.5k easy + drills (A-skips, wall drives, 3–4 build-up strides 70→90%). Never sprint cold — hamstring protection.",
+  "cols": [
+   "Wk",
+   "Focus",
+   "Session",
+   "Start type"
+  ],
+  "weeks": [
+   {
+    "wk": 6,
+    "focus": "Acceleration",
+    "session": "6×20m standing-start sprints, full recovery (~2.5min)",
+    "start": "standing (hill/ramp)"
+   },
+   {
+    "wk": 7,
+    "focus": "Max velocity (intro)",
+    "session": "4–6×20m flying sprints (15m jog-in → 20m max), full recovery",
+    "start": "flying (flat)"
+   },
+   {
+    "wk": 8,
+    "focus": "Acceleration + power",
+    "session": "5×20m standing starts + 4–6 sled pushes (gym)",
+    "start": "standing + sled"
+   },
+   {
+    "wk": 9,
+    "focus": "Speed + TEST",
+    "session": "2×accel + 2×flying, then 1× timed 100m (measured flat) — first benchmark",
+    "start": "mixed + test"
+   }
+  ],
+  "support": "Anterior day: keep jump squats / add broad jumps (explosive, low volume) — feeds the drive phase. Mechanics drills in every warmup. Track peak power + GCT + (from wk8) the 100m time.",
+  "note": "Starts Week 6 (Mon Sep 14) — Week 5 skips the standalone sprint since the 5K TT is that week's speed work. Re-assess after the wk9 100m test; build the next block off a real time."
+ },
+ "run_prep": {
+  "warmup": [
+   "Glute-med activation: banded lateral walks OR 10 single-leg glute bridges/side (wake the left hip)",
+   "Leg swings + easy dynamic mobility",
+   "3–4 build-up strides (70→90%) before any quality/speed"
+  ],
+  "cues": [
+   "Arm drive: punch the ELBOW BACK (not hands forward) — 'elbow to hip pocket'",
+   "Arms front-to-back, never cross the midline; shoulders down, hands loose",
+   "Quick cadence, light feet — shorter stride protects the patellar tendon",
+   "Easy = 'hip to lip' arm swing · Sprint/finish = aggressive 'cheek to pocket'"
+  ]
+ }
 }

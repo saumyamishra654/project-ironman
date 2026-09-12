@@ -286,6 +286,10 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Flags:** ~2.27 km walking again — easy running still drives HR up in the heat, so the aerobic-base limiter persists (expected, on track). Comp surges were deliberately dropped (knee scrape from the Aug 26 fall); the ≤172 steady finish kept it aerobic without high-force turnover.
 - **Verdict:** strong close to Week 3. Banked 18k of clean aerobic work in bad air, held HR discipline, and negative-split into a good-feeling steady finish with sharp cadence. Slower paces are the humidity tax, not regression.
 
+## Block 1 · Week 4 — Phase A Deload (Aug 31 – Sep 6)
+
+### Session Log
+
 **Aug 31 (Mon) — Run — Short Sprint Session 6×12s (BASELINE) [DONE]**
 - First-ever max sprint session. Evening, flat ground (elev ~0 — hill governor not in play, so true top-end). 2.5k WU → 6×12s → CD. Ran the full 6 (not the priming-4 I'd suggested; knee was fine). Cooldown flush logged as a separate 0.43k activity.
 - **Per-rep AVG pace over full 12s (watch Intervals — the honest number, incl. standstill start):** 4:15 → 3:06 → 3:11 → 2:57 → **2:44 (best)** → 3:07 /km. ~60–70m covered per rep. By whole-rep average the fastest was R5, not R4.
@@ -301,6 +305,60 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Read:** the GPS speed is soft, but the form data independently confirms a genuine, biomechanically-legit sprint gear (you can't fake 167ms GCT + 4.0% vertical ratio). Same signature as the swim/1200s: big top-end, **repeatable-speed endurance is the developing quality** (reps 5–6 fade). Cadence in the aggregate reads artificially low (98) because standstill-start steps skew it — 234 max is the true ceiling.
 - **BASELINE LOCKED:** peak 8.33 m/s (soft) / **842 W peak power** / 167 ms GCT. Track session-best power + GCT week to week (more reliable than GPS speed). Knee: reportedly fine during + after.
 - **Verdict:** most encouraging dataset he's produced. Real sprint ability, confirmed by hard form metrics, at near-zero recovery cost. The "underused sprint" thesis is now data-backed.
+
+**Sep 2 (Wed) — Run — 5K TT aborted at 1.8k [DONE — aborted, right call]**
+- Toed the line, warmed up, ran the first ~1.5k feeling fine aerobically — but legs were still cooked from Monday's (Aug 31) first-ever max sprint session (peak DOMS at 48h). Called it at 1.8k. Then 432 m easy swim. Weight 79.7.
+- **The tell: avg HR only 150 at max-TT intent** (would be 175+ if the engine were the limiter) — the legs quit before the cardio. Textbook right decision; a max effort on dead legs is a bad number and an injury risk for nothing.
+- Bony inner-shin spot no longer flagged (didn't hurt on palpation or stop the run) — it was adductor/insertional soreness, now settling.
+- **Action:** TT rescheduled fresh for **Wed Sep 9**, rebuilt HR-governed / no pace ceiling, sub-28 open. Scheduling lesson banked: keep hard runs ≥2 days off still-novel sprints.
+- **Verdict:** not a fitness signal, a fatigue-stacking one. Aborting was the correct, mature call.
+
+**Sep 6 (Sun) — Run — long run 12k, easy deload (hot day) [DONE — new shoes]**
+- 12.01 km, avg HR **161** (cap was 168 ✓), avg pace 7:32/km moving, cadence 155, power 246 W / NP 251. TE **3.5 TEMPO**, load 132, Body Battery −11. Evening start 18:01 in **30.0°C (feels 30.6), dew point 17.8, 49% RH** — warm but breathable air (unlike the muggy pool mornings). **First run in the new ASICS Novablast 6.**
+- **Clean negative split at matched HR — the headline.** First 5k of the main block: **7:49/km @ HR 162.6.** Second 5k: **7:19/km @ HR 162.6** — 30 s/km faster in the back half at *identical* heart rate. Final 500m dropped to 6:16/km (HR to 170, max 192 on the kick). Textbook aerobic pacing shape; felt great, exactly as the data reads.
+- **Cadence — his highlight, with a note.** Held 158–161 through the first 8k (target band), then drifted to 148–152 over the last 4k while pace *rose* — i.e. the back-half speed came from **lengthening stride (81→85 cm), not turnover.** That's the same overstride reflex that fed the April patellar issue; fine on a finishing surge, but keep leaning on cadence for easy volume. Vertical oscillation stayed low (8.1 cm) so it was controlled, not bounding.
+- **Walked very little — confirmed.** Split data: 32 micro-walks totaling just **397 m / 219 s** across 90 min. The big ~5.5 min gap in km 7 was the **park eviction (standing, clock ran)**, not walking. Strip that and he ran almost continuously.
+- **Ran a touch warm (expected):** HR zones Z3 39 min / **Z4 49 min (48%)** / Z5 <1 min. Avg 161 sat on the Z3/Z4 line — slightly hot for a deload easy run, but respected the 168 cap and consistent with 30°C + his lifelong run-hot tendency. Garmin labeled it TEMPO for that reason. Power well-governed (81% in Z1, brief Z4–5 only on the finish). GCT 301 ms, vertical ratio 9.68% (efficient).
+- **Watch updates:** VO₂max ticked **44.0 → 44.2 precise** (sustained Z4 time). Status still **PEAKING**, ACWR 0.70 (LOW, 29%), chronic load 593 (inside optimal 474–889). Running Tolerance load ratio 1.35 ("above tolerance") — the run-hot intensity inflating per-km cost, the familiar signature, fine in deload. Readiness dropped to 35 (LOW) but every recovery lever is green (HRV 38 balanced, HRV + load factors 100%) — **only drag is sleep (6.4 h, sleep history POOR 37%).**
+- **Verdict:** ideal deload closer. Controlled, negative-split, heat-managed 12k that nudged VO₂max up and left fatigue low — exactly what the last piece before a taper-week TT should look like. Watchlist: back-half stride-lengthening vs cadence, and sleep before Wednesday's TT.
+
+**Sep 7 (Mon) — Run — easy 5k flush, HR-capped (hot, sore quads) [DONE]**
+- 5.01 km, avg HR **148** (cap 155 ✓), max 161, ~9:06/km, 366 kcal. Evening start 19:25, hot. Second run in the new ASICS Novablast 6. First proper run back after the deload; feet fine now, quads still sore from Sunday's back-half stride-lengthening — this was a deliberate flush + acute-load re-entry (strides dropped to protect Wed's TT).
+- **Load re-entry working:** acute load 338→380, ACWR ~0.6 and climbing — on track Recovery→Productive by mid-week, TT the trigger. Cap honored cleanly; textbook easy day.
+- **Hot-evening VO₂max artifact:** HR 148 at a slow heat-inflated pace was just intense enough for Firstbeat to take a reading and read it badly → precise VO₂max **44.2→43.5**. Noise, not fitness (respiration flat, no illness); one hot-day point washes out and the TT erases it. Protocol logged: easy runs in the MORNING, HR ≤150/avg ≤145 keeps him under his ~142–148 Firstbeat boundary (Aug 24 run at 142 avg generated no point; this at 148 did). **Never run easy days harder to protect the number.**
+- **Mindset win:** briefly considered scrubbing the reading (delete/edit for a bet), then chose to let it go — "shouldn't let a made-up reading get to me." Watch-anxiety defused correctly.
+- Context: quads still sore + sleep run-down from Fri/Sat drinking (REM crushed, HRV weekly 42→36, but respiration flat = not illness, self-inflicted + clearing). Two alcohol-free nights (Mon/Tue) to rebuild before the TT.
+- **Verdict:** exactly the run this day needed — easy, flushing, load-building, TT-protecting. The VO₂max tick-down is a thermometer reading, not a fitness one.
+
+**Sep 8 (Tue) — Swim — S1 technique ~1.7k (all freestyle) [DONE]**
+- 1664m main (+64m accidental start) = ~1.7k, moving 37 min / elapsed 58 min, avg HR 144 / max 186. **TE 3.1 aerobic + 1.9 anaerobic**, load 117. 16m pool.
+- Did the whole quality portion — 320 WU + 8×48 drills (fist/catch-up/paddle) + 6×~96 pull (paddles) + 2×~200 smooth — **only the 200 cooldown was cut** (running late). So not really "cut short."
+- **Efficient stroke:** ~2m/stroke, SWOLF avg ~29, ~8.7 strokes/16m. Drills sharpened the catch (lowest SWOLF 25–26 during the drill set). Paddle-pull reps loosened it (SWOLF 33–36, 10+ strokes/length) at HR 150–168 — he was WORKING them: top-end there, fatigue-resistance the growth edge.
+- **Not a pure flush** — paddle intensity + warm HR gave it real load (117), which helped the Recovery→Productive push at zero leg cost.
+- Data-hygiene: Garmin misclassified drill lengths as breaststroke/butterfly — it was ALL freestyle (catch-up glide fools the classifier). Ignore stroke-type labels on drill days.
+
+**Sep 10 (Thu) — Run — Coach "Recovery" 4.2k [DONE] — VO₂max recovers 43.5→44.3, perf cond +3 to +5**
+- 4.18 km, 7:55/km, avg HR 152 / max 168, **cadence 160.8**, stride 78.5cm, GCT 300ms, power 243/NP245. TE 2.4 (Recovery), load 47, RPE 3. Later ~8pm start.
+- **Cadence standout** — held 158–162 the whole way (genuine step up from his old 145–155 easy cadence), shorter/quicker stride. Vertical ratio 10.1%, clean.
+- **VO₂max 43.5→44.3** (new precise high) — the flip-side of the Sep 7 heat-dip: good pace-for-HR (cooler evening + better economy from the cadence) → favorable Firstbeat reading. Nothing physiological changed in 3 days; conditions did.
+- **Performance condition +3 to +5 the entire run** (confirmed by athlete) — engine above baseline throughout. Consistent with "felt great."
+- Ran a touch warm/fast for a "recovery" label (152 avg drifting to 163 vs ≤150 cap) — a light aerobic run more than a pure flush. No harm. Load re-entry: acute 380→443, flipped to Productive by Sep 12.
+
+**Sep 11 (Fri) — Strength — Back + triceps day [DONE]; AM run skipped (knee scrape); coach Sprint NOT done (no time)**
+- Strength (back + triceps, no leg work by design), 32 min, avg HR 131 / max 155, 253 kcal. Kept legs fresh; RDLs deferred to Sunday's upper day.
+- **AM run skipped** — Aug 26 knee scrape reopened; skin only, tendon asymptomatic → hygiene skip, no training impact.
+- **Coach's re-adapted "Sprint" (6×15s @ ~3:30/km) NOT done — no time.** No sprint data; the adaptive plan re-slots the speed work (it did — became Sep 11's session, then rolled).
+- Lifting detail (sets/reps/load) lives in Hevy, not Garmin — needs a fresh export to update the Lifting page.
+
+**Sep 12 (Sat) — Run — Garmin Coach "Base" 8.5k (threshold effort), Hosapete [DONE] — VO₂MAX 45 + PRODUCTIVE**
+- 8.56 km, moving pace **~6:21/km**, avg HR **169** / max 183, cadence 159, stride 96cm, power 294/NP 293. **TE 4.0 (Lactate Threshold)**, RPE 8, load 179. Evening start 17:28, in **Hosapete (~490m — travel, well below Bengaluru's ~920m)**. First run of the Garmin Coach era.
+- **MILESTONE: VO₂max crossed 45** (precise 44.3→44.6), and **training status flipped Recovery→PRODUCTIVE** (status 7, acute load 572 ≈ chronic 558, ACWR 1.0 / optimal). The week's load-building worked; milestone ~5 weeks ahead of the mid-Oct estimate.
+- **Pace-at-HR materially up:** comp anchor was ~7:00/km @ ≤172; today held **6:20s/km pinned at ~170** across every km, negative-drifting (fastest km 6:09). Metronomic, controlled, strong.
+- **Ran as coach-prescribed.** Garmin labels it "Base" but prescribes his Base pace at ~6:40/km (moderate, not an easy shuffle) — so the HR 169 / TE 4.0 threshold character was *following the plan*, NOT the old "runs easy days too hard" flaw. It'll calibrate as the adaptive plan reads his responses.
+- **Two calibrations:** (1) ~490m altitude gives more O₂/breath → lowers HR-for-pace and flatters the VO₂max reading; expect slightly harder splits back at 920m. (2) Athlete reports significant elevation changes but the watch logged only ~20m gain (reads flat) → likely barometric under-recording; if genuinely hilly, the pace-at-HR is even better. Flag when comparing runs.
+- **Hot day (~30°C):** heat inflates HR-for-pace, so it works AGAINST the VO₂max reading (Firstbeat under-reads in heat) — partly offsetting the altitude boost. Net: the 45 isn't purely altitude-flattered; he held 6:20s/km @ 169 in real heat.
+- **SAME-COURSE PROOF (athlete shared his May 25 run on this same ~490m Hosapete ground):** May 25 was **7:28/km @ HR 180** (Huawei VO₂max 35); today **6:21/km @ HR 169** (VO₂max 45). ~67 s/km faster at 11 bpm lower HR on identical terrain — altitude is CONTROLLED in this comparison, so the delta is pure fitness (also cadence 151→159, GCT 323→287ms). The 'altitude flattered it' caveat only applies vs Bengaluru runs, not vs his own history here.
+- **Verdict:** breakthrough-feeling run and a real milestone (45 + Productive) executed cleanly to the coach's targets. Altitude flatters it vs Bengaluru, but the same-course May-vs-Sep comparison proves the engine is genuinely climbing ahead of schedule.
 
 <!-- Copy this template for each session:
 

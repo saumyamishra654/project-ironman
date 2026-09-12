@@ -18,7 +18,7 @@
 | DOB / Age | 2004-05-06 · **22** |
 | Sex | Male |
 | Height | 182.9 cm (6'0") |
-| Bodyweight | ~80–81 kg (cutting toward 75 kg over 3–4 months) |
+| Bodyweight | ~79.5–80 kg (cutting toward 75 kg). New BIA scale (Dr Trust) Sep 2026 reads ~80.0 kg / ~15.75% BF — trust the *trend under fixed conditions*, not the absolute BF% (BIA under-reads fat for muscular builds; true BF likely upper-teens). |
 | Handedness | Right |
 | Location | Bengaluru, India (Asia/Kolkata) — **hot/humid; run mornings** |
 | Life context | Started a full-time office job Jun 15, 2026 — training must fit around work hours (drove the shift to 1-session-per-day phases) |
@@ -37,7 +37,9 @@ Monthly run volume (km): Feb ~32 → **Mar ~56 (peak, first 10k)** → **Apr 16 
 
 **KEY FINDING — he ran hot from day one.** HR recovered off 13 pre-Garmin run detail pages shows **every run at avg HR 160–180 regardless of pace** — a 9:28/km shuffle at HR 161, a 7:28/km "easy" run at **HR 180 (threshold)**. There is not one genuinely easy-HR run in the entire Feb–Jun set. So the "runs easy days too hard" flaw is **not new** (not just the Jul 19 Z4 blow-up) — it is how he has *always* run, dating to his first runs. Pacing discipline, not the engine, was always the limiter. The Garmin-era HR-capped long runs (153–156 avg) are the correction, and it's genuinely new behaviour.
 
-**Efficiency arc (pace at matched ~166 HR):** March ~7:20–7:30/km → Aug 23 **7:05/km @ 166** (faster at same HR) and Aug 16 7:50/km @ **156** (~12 bpm lower at same pace). Real aerobic-efficiency gain *and* new discipline, both. Huawei VO₂max sat flat at **35–37 all spring** while running hard, then climbed 39 → 44 (Garmin) once training got disciplined — the plateau→climb visible across two watch algorithms. Full detail in `plan-him.json` `pre_garmin_runs` / `efficiency` (rendered as the dashboard "Running Journey" section + pace-at-HR scatter).
+**Efficiency arc (pace at matched ~166 HR):** March ~7:20–7:30/km → Aug 23 **7:05/km @ 166** (faster at same HR) and Aug 16 7:50/km @ **156** (~12 bpm lower at same pace). Real aerobic-efficiency gain *and* new discipline, both. Huawei VO₂max sat flat at **35–37 all spring** while running hard, then climbed 39 → 44 → **45 (Sep 12)** (Garmin) once training got disciplined — the plateau→climb visible across two watch algorithms. Full detail in `plan-him.json` `pre_garmin_runs` / `efficiency` (rendered as the dashboard "Running Journey" section + pace-at-HR scatter).
+
+**Same-course proof (Hosapete ~490m, altitude-controlled):** the single cleanest efficiency data point. **May 25, 2026** here — 7.43k at **7:28/km @ HR 180** (Huawei VO₂max 35), cadence 151, GCT 323 ms. **Sep 12, 2026** here — 8.56k at **6:21/km @ HR 169** (Garmin VO₂max 45), cadence 159, GCT 287 ms. Same ground, both ~30°C: **~67 s/km faster at 11 bpm lower HR in ~3.5 months.** Because altitude and terrain are held constant, the entire delta is fitness — the strongest evidence to date that the engine + economy are genuinely transforming, not just responding to conditions.
 
 ## Goals — repriotised 2026-08-09 (Procam Slam cancelled)
 
@@ -77,14 +79,14 @@ Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, 
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| VO₂max (running) | **44** (Aug 26) | 41 → 43 (Aug 9) → 44 after the Aug 26 4×1200 @ 5:42/km speed session (reps avg HR 180, max 193 — a genuine VO2 stimulus). Engine still climbing. |
+| VO₂max (running) | **45** (Sep 12; precise 44.6) | 41 → 43 (Aug 9) → 44 (Aug 26 4×1200) → **45 (Sep 12)**. Crossed 45 on a threshold-effort run in Hosapete (~490m, 30°C). Milestone landed ~5 wk ahead of the mid-Oct projection. Engine climbing faster than expected. Coach estimate of *true* VO2max ~45–46 (Firstbeat under-reads athletes whose limiter is economy, which is him). |
 | Max HR (observed) | **~202–203** | Higher than age-predicted (~198). Hit 202 on Jul 22 final interval. |
 | Resting HR | **~58–62** | 58 on Jul 28 (lowest observed), 7-day avg 62. Ranged 58–67 across Jul 16–28. |
 | HRV (weekly avg) | **38 ms** (Jul 28) | Ranged 35–44 across Jul 22–28; status BALANCED except one UNBALANCED day (Jul 26). |
 | Lactate threshold HR | **180** (Aug 26) | Recalculated off the 4×1200 speed run (was 182, Jul 25). LT pace ~5:40/km (held 5:42 @ HR 180 across the reps). |
 | Threshold / LT pace | **~6:00/km** | From 4×1k intervals (reps 5:47–6:06/km). Does **not** project cleanly to half-marathon distance — see Goal Pace note below. |
 | Running FTP (power) | **333 W** (Aug 26) | 4.19 W/kg (was 326 W / 4.01, Aug 6). |
-| Training status | **Productive** | Chronic load ~548. Acute load **347** on Jul 28 (448 on Jul 27; ~630 on Jul 23) → **ACWR ~0.63** — carrying notably less fatigue than baseline following the Jul 23–26 disruption. Was ACWR ~1.1 (optimal) on Jul 23. VO₂max trend +2 over the window (partly calibration). |
+| Training status | **Productive** (Sep 12) | Flipped Recovery→Productive Sep 12 as post-deload load rebuilt (acute 572 ≈ chronic 558, ACWR 1.0 / optimal). Earlier: chronic ~548, ACWR ~0.63 late Jul. Endurance Score ~5119 (Intermediate). |
 
 ### Garmin race predictions (2026-08-26)
 
@@ -107,6 +109,10 @@ Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, 
 | Z5 | 181+ | VO₂ / anaerobic |
 
 **Easy/long-run HR cap: ~162 bpm** (70% HRR, off max ~203 / RHR 62), aim to average 150–158. Individualised Jul 23, 2026 (replaced a too-strict flat 150). Govern long runs by HR, not pace.
+
+### Coaching model — changed 2026-09-10 (running → Garmin Coach)
+
+**Run programming moved to Garmin Coach** (the adaptive "Bangalore Times Half Marathon Plan"). Reason: athlete has heard too many times that AI coaches aren't reliable and prefers a load-adaptive, non-hallucinating system for run structure. **The AI role is now: analysis, lifting (bench progression / P-A-U split / Hevy), swimming, nutrition, body-comp, the dashboard, and explaining opaque Garmin metrics — NOT building or scheduling runs unless explicitly asked.** Also **canned the Sep 9 5K TT.** Implications observed: (1) Garmin Coach is *running-only aware* — it programmed ~6 run days / ~42k in the Sep 8–14 week, blind to his 3 lifts + 3 swims, and even flagged an above-tolerance rest day; he must self-reconcile which runs to keep. (2) Its "Base" runs are prescribed at a **moderate ~6:40/km**, not an easy shuffle — do NOT mis-read a coach Base run as him "running easy too hard"; check the prescribed target first. (3) Its mix leans more anaerobic/threshold than the HR-capped aerobic diet the AI had been steering — a valid, different philosophy. Trust "it'll calibrate." **Do not over-caution injury on his sprints** (the Aug 31 sprints were clean); flag tendon/hamstring only on reported symptoms.
 
 ### Behavioural coaching note
 

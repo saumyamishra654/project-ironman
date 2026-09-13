@@ -84,18 +84,18 @@
   {
    "id": "lt_pace",
    "label": "LT pace",
-   "value": "5:40",
+   "value": "5:33",
    "unit": "/km",
    "sport": "run",
-   "note": "4×1200 Aug 26 @ 5:42/km, HR 180 (=LTHR)"
+   "note": "Sep 13 watch update (was 5:40); FTP 339W / 4.25 W·kg⁻¹"
   },
   {
    "id": "lthr",
    "label": "LTHR",
-   "value": "180",
+   "value": "181",
    "unit": "bpm",
    "sport": "run",
-   "note": "Aug 26 · long-run cap 172 · easy cap 162"
+   "note": "Sep 13 (was 180) · long-run cap 172 · easy cap 162"
   },
   {
    "id": "swim_css",
@@ -621,6 +621,46 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-09-13",
+   "sport": "run",
+   "week": 5,
+   "title": "Coach 'Base' 7.3k (2nd threshold day) — LTHR 181, FTP 339W, LT pace 5:33",
+   "verdict": "Second straight threshold-effort 'Base' run. Where Sep 12 negative-split on fresh legs, today drifted UP (HR climbed to hold pace) — the accumulating load showing. Bumped LTHR 180→181, running FTP 333→339W (4.25 W/kg), LT pace 5:40→5:33. VO2max flat (44.7). Fix applied: switched Garmin Coach to HR-based targets so Base runs stop being prescribed at tempo pace.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "7.30 km"
+    },
+    {
+     "l": "Pace",
+     "v": "~6:44/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "170 · max 183"
+    },
+    {
+     "l": "TE",
+     "v": "3.6 Threshold"
+    },
+    {
+     "l": "LTHR",
+     "v": "180→181"
+    },
+    {
+     "l": "FTP",
+     "v": "333→339 W"
+    }
+   ],
+   "headline": "Third run in three days at Hosapete (~490m), and the 2nd taken to threshold. Positive HR drift this time — 146→169→173→174→168→179→176→180 — same ~6:40s pace but HR climbing to hold it, i.e. tired legs doing the same work (felt harder: workout-feel 75 vs 100 on Sep 12).",
+   "insight": [
+    "Markers up: LTHR 180→181, running FTP 333→339W (4.25 W/kg, was 4.19), LT pace 5:40→5:33 (watch figure; the API's 5:00 was a placeholder glitch). VO2max flat at precise 44.7 — the effort held the number, didn't push it.",
+    "Load is climbing fast: acute 670 (from 572), chronic 569, ratio 1.1 (top of optimal). Two threshold days back-to-back = the drift. An easy/rest day is due — the coach's Sep 15 rest is timely.",
+    "ROOT CAUSE identified: Garmin's 'Base' runs are prescribed at ~6:40/km = HR 170 (sub-threshold), NOT easy base. Driven by (1) altitude-inflated fitness estimate at 490m, (2) Garmin's 'Base'='moderate' definition, (3) it reinforces his run-easy-too-hard flaw. FIX: switched Coach preference to HR-based targets (pending overnight regen); govern easy days by HR ≤155-160, quality days by pace.",
+    "Same run-hot-vs-fresh contrast in two days: Sep 12 fresh → negative split; Sep 13 tired → positive drift. Clean illustration of why the easy days need to actually be easy."
+   ]
+  },
   {
    "date": "2026-09-12",
    "sport": "run",

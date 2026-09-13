@@ -83,9 +83,9 @@ Moved to **2 upper / 1 lower / 2 swim / 3 runs**: Mon Upper A, Tue quality run, 
 | Max HR (observed) | **~202–203** | Higher than age-predicted (~198). Hit 202 on Jul 22 final interval. |
 | Resting HR | **~58–62** | 58 on Jul 28 (lowest observed), 7-day avg 62. Ranged 58–67 across Jul 16–28. |
 | HRV (weekly avg) | **38 ms** (Jul 28) | Ranged 35–44 across Jul 22–28; status BALANCED except one UNBALANCED day (Jul 26). |
-| Lactate threshold HR | **180** (Aug 26) | Recalculated off the 4×1200 speed run (was 182, Jul 25). LT pace ~5:40/km (held 5:42 @ HR 180 across the reps). |
-| Threshold / LT pace | **~6:00/km** | From 4×1k intervals (reps 5:47–6:06/km). Does **not** project cleanly to half-marathon distance — see Goal Pace note below. |
-| Running FTP (power) | **333 W** (Aug 26) | 4.19 W/kg (was 326 W / 4.01, Aug 6). |
+| Lactate threshold HR | **181** (Sep 13) | 182 (Jul) → 180 (Aug 26) → 181 (Sep 13, off threshold-effort runs in Hosapete). LT pace ~5:33/km (watch). |
+| Threshold / LT pace | **~5:33/km** (Sep 13) | Watch figure (was 5:40). NB: Garmin's API sometimes returns a 3.333 m/s = 5:00/km placeholder — ignore it (faster than his actual max speed). Real threshold efforts run 6:20–6:45/km @ HR 180. |
+| Running FTP (power) | **339 W** (Sep 13) | 4.25 W/kg (was 333 W / 4.19, Aug 26; 326 / 4.01, Aug 6). |
 | Training status | **Productive** (Sep 12) | Flipped Recovery→Productive Sep 12 as post-deload load rebuilt (acute 572 ≈ chronic 558, ACWR 1.0 / optimal). Earlier: chronic ~548, ACWR ~0.63 late Jul. Endurance Score ~5119 (Intermediate). |
 
 ### Garmin race predictions (2026-08-26)

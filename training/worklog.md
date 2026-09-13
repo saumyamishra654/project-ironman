@@ -360,6 +360,14 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **SAME-COURSE PROOF (athlete shared his May 25 run on this same ~490m Hosapete ground):** May 25 was **7:28/km @ HR 180** (Huawei VO₂max 35); today **6:21/km @ HR 169** (VO₂max 45). ~67 s/km faster at 11 bpm lower HR on identical terrain — altitude is CONTROLLED in this comparison, so the delta is pure fitness (also cadence 151→159, GCT 323→287ms). The 'altitude flattered it' caveat only applies vs Bengaluru runs, not vs his own history here.
 - **Verdict:** breakthrough-feeling run and a real milestone (45 + Productive) executed cleanly to the coach's targets. Altitude flatters it vs Bengaluru, but the same-course May-vs-Sep comparison proves the engine is genuinely climbing ahead of schedule.
 
+**Sep 13 (Sun) — Run — Coach "Base" 7.3k (2nd threshold day), Hosapete [DONE] — LTHR 181, FTP 339W**
+- 7.30 km, moving ~6:44/km, avg HR **170** / max 183, cadence 158, GCT 290ms, power 275/NP 278. TE **3.6 (Lactate Threshold)**, RPE 7, load 142. Hosapete (~490m).
+- **Positive HR drift** (opposite of Sep 12's negative split): 146→169→173→174→168→179→176→180 — same ~6:40s pace but HR climbing to hold it = tired legs, 2nd threshold day running. Felt harder (workout-feel 75 vs 100 Sep 12).
+- **Markers up:** LTHR 180→**181**, running FTP 333→**339W** (4.25 W/kg), LT pace 5:40→**5:33** (watch figure; API's 5:00/3.333 m/s was a placeholder glitch — impossible, faster than today's max speed). VO2max flat at precise 44.7 — effort held the number.
+- **Load climbing:** acute 572→**670**, ratio **1.1** (top of optimal). Two threshold days back-to-back drove the drift. Easy/rest day due — coach's Sep 15 rest is timely.
+- **ROOT CAUSE + FIX:** Garmin's "Base" runs prescribed at ~6:40/km = HR 170 (sub-threshold, NOT easy base) — from (1) altitude-inflated fitness at 490m, (2) Garmin "Base"="moderate" definition, (3) reinforces his run-easy-too-hard flaw. **Switched Coach preference to HR-based targets** (applies next overnight regen). Going forward: govern easy days by HR ≤155–160, quality days by pace.
+- **Verdict:** strong threshold work but the load's stacking — the too-fast Base paces are the thing to fix, now addressed. Good markers (LTHR/FTP up); needs a genuinely easy day next.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

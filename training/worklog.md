@@ -368,6 +368,19 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **ROOT CAUSE + FIX:** Garmin's "Base" runs prescribed at ~6:40/km = HR 170 (sub-threshold, NOT easy base) — from (1) altitude-inflated fitness at 490m, (2) Garmin "Base"="moderate" definition, (3) reinforces his run-easy-too-hard flaw. **Switched Coach preference to HR-based targets** (applies next overnight regen). Going forward: govern easy days by HR ≤155–160, quality days by pace.
 - **Verdict:** strong threshold work but the load's stacking — the too-fast Base paces are the thing to fix, now addressed. Good markers (LTHR/FTP up); needs a genuinely easy day next.
 
+**Sep 23 (Wed) — Run — Coach "VO2 Max" 8×2min / 2min walk-recovery, 6.1k [DONE] — rated 8/10, form held under fatigue**
+- 6.11 km in 41 min, avg HR 171 / max 192, TE **3.8 aerobic + 3.0 anaerobic (VO2MAX)**, load 207, Body Battery −10. RPE 7, workout-feel 100 ("very strong"). HR zones: Z3 8 min / Z4 19 min / **Z5 13.6 min**. Evening start 19:52, **26.7°C, dew point 19.4** (muggy), ~80 min after a 50-min strength session (avg HR 119).
+- **Reps (pace / HR):** 5:09·183 → 5:08·179 → 5:05·183 → 5:03·176 → **4:42·176** → 4:55·177 → 5:00·176 → 4:56·178. Pace rose while HR fell — no fade; rep-1 HR was heat + post-lift, not the rep. Big step vs Aug 26 4×1200 @ 5:40.
+- **Form per rep (cadence / GCT / stride / VO / vertical ratio):**
+  - R1 170 / 260ms / 113cm / 9.1 / 8.0% · R2 165 / 262 / 111 / 9.0 / 8.1% · R3 161 / 264 / 115 / 9.4 / 8.1% · R4 166 / 260 / 117 / 9.3 / 7.9%
+  - R5 168 / **255** / 119 / 9.2 / **7.8%** · R6 162 / 260 / **120** / **9.5** / 7.9% · R7 165 / 262 / 116 / 9.3 / 8.0% · R8 168 / 256 / 115 / 9.1 / 7.9%
+- **Headline — cadence did NOT decay.** First-half reps avg 165.5, second-half 165.75. Contrast Aug 26 (167–172 → 161 late) and Aug 19 (158 → 154, stride lengthening = overstride creep). GCT flat 255–264 ms across all 8 (vs ~287 on Aug 19 @ 5:55, ~300 easy) — no fatigue creep. Vertical ratio 7.8–8.1% = best outside the sprint session (easy ~9–10%).
+- **His in-run cues showed up in the data:** R6 (right after the R5 surge) was the loosest rep — lowest cadence, longest stride, most bounce — then R7–R8 tightened back (cadence 165/168, VO 9.1, GCT 256). Consistent with him consciously controlling rotation/form in the second half. Rotation itself is NOT measured (no chest strap → no torso data or GCT balance); only indirect proxies.
+- **Speed source:** mostly stride (~95cm easy → 111–120cm), cadence ~158 → ~165. Normal at this pace; 170+ is the next lever (hit it on R1/R5/R8).
+- **Deductions:** (1) cooldown skipped — watch stopped after 40 s with HR still 180; (2) R5 4:42 hero surge (~20 s/km off the others); (3) walked recoveries (11–13 min/km) but HR only fell to 163–167 — heat + pre-lift made it costlier than the paces suggest.
+- **Caveat:** cadence/GCT/VR all improve naturally with speed, so the averages flatter any fast session — the real signal is the *lack of drift* over 8 reps in heat after a lift.
+- **Verdict:** strong, well-executed VO2 session (8/10). Engine and mechanics both held; the only real miss is the skipped cooldown.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

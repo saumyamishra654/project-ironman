@@ -286,3 +286,28 @@
     .runprep .rp-list li::before { content: '▸'; position: absolute; left: 0; color: var(--run); }
     .runprep .rp-list.cues li::before { content: '◆'; font-size: 0.7rem; }
     .runprep .rp-list li b { color: var(--text); }
+
+    /* Sleep protocol */
+    .sleep-panel { margin-top: 0.25rem; margin-bottom: 1.25rem; background: var(--surface); border: 1px solid var(--strength); border-radius: 12px; padding: 1.1rem 1.25rem; }
+    .sleep-panel .sp-h { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--strength); font-weight: 700; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+    .sleep-panel .sp-sub { color: var(--faint); font-weight: 600; letter-spacing: 0.04em; }
+    .sleep-panel .sp-now { margin-top: 0.4rem; font-size: 0.85rem; color: var(--text); font-weight: 600; }
+    .sp-steps { list-style: none; margin-top: 0.75rem; display: grid; gap: 0.4rem; }
+    .sp-steps li { display: grid; grid-template-columns: 3.4rem 1fr; column-gap: 0.75rem; background: var(--surface-2); border-left: 3px solid var(--border); border-radius: 8px; padding: 0.55rem 0.8rem; }
+    .sp-steps li b { grid-row: span 2; color: var(--muted); font-size: 0.85rem; }
+    .sp-steps .sp-t { font-weight: 700; font-size: 0.88rem; }
+    .sp-steps .sp-d { font-size: 0.76rem; color: var(--muted); line-height: 1.4; }
+    .sp-steps li.cur { border-left-color: var(--strength); background: var(--surface-3); }
+    .sp-steps li.cur b { color: var(--strength); }
+    .sp-steps li.off { opacity: 0.4; }
+    .sp-snacks { margin-top: 0.9rem; }
+    .sp-snacks summary { cursor: pointer; font-size: 0.8rem; font-weight: 700; color: var(--muted); }
+    .sp-snacks summary:hover { color: var(--text); }
+    .sp-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; margin-top: 0.6rem; }
+    .sp-cols ul { list-style: none; font-size: 0.78rem; color: var(--muted); display: grid; gap: 0.2rem; margin-top: 0.3rem; }
+    .sp-lh { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
+    .sp-lh.ok { color: var(--run); }
+    .sp-lh.mid { color: var(--amber); }
+    .sp-lh.no { color: var(--red); }
+    .sp-cal { display: inline-block; margin-top: 0.9rem; font-size: 0.75rem; font-weight: 700; text-decoration: none; color: var(--strength); border: 1px solid var(--strength); border-radius: 6px; padding: 0.4rem 0.75rem; }
+    .sp-cal:hover { background: rgba(167,139,250,0.1); }

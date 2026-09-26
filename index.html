@@ -22,7 +22,7 @@
   window.IRONMAN_PAGE = "dashboard";
 })();
   </script>
-  <link rel="stylesheet" href="app.css?v=28">
+  <link rel="stylesheet" href="app.css?v=29">
 </head>
 <body>
 <div class="container">
@@ -36,6 +36,61 @@
     <nav class="topnav" id="topnav"></nav>
   </header>
 
+  <section class="sleep-panel" id="sleep">
+    <div class="sp-h">
+      <span>Sleep protocol</span>
+      <span class="sp-sub">Wake 06:30 · Lights out 22:30 · 8 h in bed</span>
+    </div>
+    <div class="sp-now" id="sleep-now"></div>
+    <ol class="sp-steps">
+      <li data-t="06:30"><b>06:30</b><span class="sp-t">Wake</span><span class="sp-d">Same time every day, weekends ±30 min. Outdoor light within an hour (morning run/swim covers it).</span></li>
+      <li data-t="12:00"><b>12:00</b><span class="sp-t">Caffeine cutoff</span><span class="sp-d">Includes chai, green tea, dark chocolate.</span></li>
+      <li data-t="18:00" data-days="1,3,5"><b>18:00</b><span class="sp-t">Lift (Mon/Wed/Fri)</span><span class="sp-d">Done by 18:45. Hard cardio stays in the morning.</span></li>
+      <li data-t="19:30"><b>19:30</b><span class="sp-t">Dinner done</span><span class="sp-d">Most filling meal: protein + veg + slow carbs. Don't take the day's deficit out of dinner.</span></li>
+      <li data-t="20:30"><b>20:30</b><span class="sp-t">Taper fluids</span><span class="sp-d">Most water before this, to avoid waking up to pee.</span></li>
+      <li data-t="21:30"><b>21:30</b><span class="sp-t">Screens off · magnesium · optional snack</span><span class="sp-d">Dim lights. Read, brush, prep oats, podcasts. Snack from the list below, if hungry.</span></li>
+      <li data-t="22:15"><b>22:15</b><span class="sp-t">In bed</span><span class="sp-d">Book or audio only. Phone out of reach.</span></li>
+      <li data-t="22:30"><b>22:30</b><span class="sp-t">Lights out</span><span class="sp-d">Cool, dark, quiet room.</span></li>
+    </ol>
+    <details class="sp-snacks">
+      <summary>Pre-bed snacks (~150–250 kcal, mostly protein, ~21:30)</summary>
+      <div class="sp-cols">
+        <div>
+          <div class="sp-lh ok">Go-to</div>
+          <ul>
+            <li>Greek yogurt / hung curd</li>
+            <li>Amul HP milk / a glass of milk</li>
+            <li>Dahi (plain)</li>
+            <li>Paneer, a few cubes</li>
+            <li>1–2 boiled eggs</li>
+            <li>Chia pudding made with milk</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sp-lh mid">Fine, keep it small</div>
+          <ul>
+            <li>Blueberries / berries (a handful, ideally with yogurt)</li>
+            <li>Kiwi (1–2), half a banana</li>
+            <li>Almonds / walnuts (~15–20 g)</li>
+            <li>Peanut butter (1 tbsp)</li>
+            <li>David bar (if it sits well; sweeteners bother some guts)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="sp-lh no">Avoid</div>
+          <ul>
+            <li>Big carb meals, desserts, ice cream</li>
+            <li>Spicy / fried / heavy</li>
+            <li>Chai, coffee, dark chocolate</li>
+            <li>Alcohol (&lt; 3 h before bed)</li>
+            <li>Big drinks (watermelon, juice)</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+    <a class="sp-cal" href="sleep-schedule.ics" download>+ Add weekday alerts to calendar</a>
+  </section>
+
   <div id="toolbar"></div>
   <div id="app"></div>
 
@@ -43,9 +98,39 @@
     Project Ironman · <span id="updated"></span> · driven by <code>training/plan-him.json</code>
   </div>
 </div>
-<script src="app.js?v=28"></script>
+<script src="app.js?v=29"></script>
 <script>
-if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=28")).catch(function() {}); }
+(function() {
+  // Highlight the current step of the sleep protocol and count down to the next one.
+  var steps = Array.prototype.slice.call(document.querySelectorAll("#sleep .sp-steps li"));
+  var nowEl = document.getElementById("sleep-now");
+  function mins(t) { var p = t.split(":"); return +p[0] * 60 + +p[1]; }
+  function fmt(m) { var h = Math.floor(m / 60), r = m % 60; return (h ? h + " h " : "") + r + " min"; }
+  function tick() {
+    var d = new Date(), now = d.getHours() * 60 + d.getMinutes(), dow = d.getDay();
+    var live = steps.filter(function(li) {
+      var days = li.getAttribute("data-days");
+      var on = !days || days.split(",").indexOf(String(dow)) !== -1;
+      li.classList.toggle("off", !on);
+      return on;
+    });
+    var cur = null, next = null;
+    live.forEach(function(li) {
+      li.classList.remove("cur");
+      if (mins(li.getAttribute("data-t")) <= now) cur = li; else if (!next) next = li;
+    });
+    if (!cur) cur = live[live.length - 1];
+    cur.classList.add("cur");
+    var n = next || live[0];
+    var wait = (mins(n.getAttribute("data-t")) - now + 1440) % 1440;
+    nowEl.textContent = "Next: " + n.querySelector(".sp-t").textContent + " in " + fmt(wait);
+  }
+  tick();
+  setInterval(tick, 60000);
+})();
+</script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=29")).catch(function() {}); }
 </script>
 </body>
 </html>

@@ -5,8 +5,8 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-09-02",
-  "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
+  "updated": "2026-10-05",
+  "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
   "name": "Saumya Mishra",
@@ -58,20 +58,20 @@
   {
    "id": "vo2max",
    "label": "VO₂max",
-   "value": "45",
+   "value": "46",
    "unit": "",
    "sport": "run",
    "trend": "up",
-   "note": "43→44→45 (precise 44.6) · Sep 12 threshold run; Productive"
+   "note": "38.9 (Jul 8) → 46.0 precise (Oct 4) · 'Good' for 20–29 · Productive"
   },
   {
    "id": "endurance",
    "label": "Endurance Score",
-   "value": "5119",
+   "value": "5294",
    "unit": "",
    "sport": "run",
    "trend": "up",
-   "note": "Intermediate · crossed 5100 tier (Aug 26); 4809→5119 this month"
+   "note": "Intermediate · 4774 (mid-Jul) → 5294 (Oct 5); 'Trained' at 5800"
   },
   {
    "id": "comp_pace",
@@ -84,10 +84,10 @@
   {
    "id": "lt_pace",
    "label": "LT pace",
-   "value": "5:33",
+   "value": "5:24",
    "unit": "/km",
    "sport": "run",
-   "note": "Sep 13 watch update (was 5:40); FTP 339W / 4.25 W·kg⁻¹"
+   "note": "Oct 4 app value (API speed field disagrees — trust app) · FTP 347 W / 4.39 W·kg⁻¹"
   },
   {
    "id": "lthr",
@@ -95,7 +95,7 @@
    "value": "181",
    "unit": "bpm",
    "sport": "run",
-   "note": "Sep 13 (was 180) · long-run cap 172 · easy cap 162"
+   "note": "181 (stable since Sep 13) · long-run cap 172 · easy cap 162"
   },
   {
    "id": "swim_css",
@@ -119,10 +119,19 @@
  ],
  "races": [
   {
+   "id": "namma10k",
+   "name": "Namma Run 10K (NICE Road)",
+   "short": "Namma 10K",
+   "date": "2026-10-11",
+   "distance_km": 10,
+   "priority": "C",
+   "role": "Tune-up · hilly NICE Rd out-and-back (~250 m gain) · hill-adjusted plan ~56:30"
+  },
+  {
    "id": "blr_hm",
    "name": "Bangalore Half Marathon",
    "short": "Bangalore HM",
-   "date": "2026-12-13",
+   "date": "2026-12-20",
    "distance_km": 21.1,
    "priority": "B",
    "role": "Near-term target · local, ideal temp"
@@ -252,7 +261,7 @@
    "note": "Race-pace long-run segments, LT cruise work, long continuous swims."
   }
  ],
- "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
+ "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 20) into the Bangalore HM (date moved from Dec 13). Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
  "block": [
   {
    "week": 1,
@@ -621,6 +630,284 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-10-05",
+   "sport": "run",
+   "week": 9,
+   "title": "Coach 'Recovery' 3.7k + 49 s stride — cadence 198, the 180→192 switch caught in the data",
+   "verdict": "Textbook recovery (avg HR 143 in 93% humidity, RPE 2) finished with the best non-sprint stride yet: ~4:05/km, cadence 183 avg / 198 peak, GCT 211 ms. Per-second FIT shows him locked at 180 on a 180-bpm song, then a one-second step to 192 when 180 'felt slow' — same speed, shorter quicker steps.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "3.73 km"
+    },
+    {
+     "l": "Run pace",
+     "v": "~8:55/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "143 · max 191"
+    },
+    {
+     "l": "Stride",
+     "v": "49 s · ~4:05/km"
+    },
+    {
+     "l": "Cadence",
+     "v": "183 avg · 198 pk"
+    },
+    {
+     "l": "GCT min",
+     "v": "211 ms"
+    }
+   ],
+   "headline": "Easy part: 2.95 km running at ~8:55/km, HR 137–146 per segment, running-only cadence 161 even at 9:00/km (short 61–71 cm stride). Stride: 0–22 s pinned at 178–183 (song beat) while accelerating 4:31→4:08 on stride length; at 23 s cadence jumped 180→192, peaked 198, held 190–198 for ~12 s with GCT dropping 228→211 ms at unchanged speed (step 1.33→1.23 m); last 14 s faded back to ~179 at 4:30–4:38 as HR hit 191.",
+   "insight": [
+    "Second-half cadence 185.8 vs first-half 180.8 (whole 183.3). Quarters: 179.6 / 181.9 / 192.8 / 179.4.",
+    "At ~4:00/km his natural cadence is 190+; 180 now feels slow at speed — the cadence work (151 in May) has gone automatic.",
+    "vs Aug 31 sprints (12 s, all-out): sprint peaks 7.0–8.3 m/s at 223–234 spm, ~1.9–2.2 m steps, 600–840 W, HR never >148 (alactic). Today was ~55% of sprint speed held for 4× as long at HR 191 — a different gear (speed-endurance). Speed gain from stride→sprint is mostly step length (+60%) vs cadence (+17%).",
+    "Race-week note: 56 s at HR 191 is a rep, not a stride — keep strides 15–20 s @ ~90% until Sunday's 10K."
+   ]
+  },
+  {
+   "date": "2026-10-04",
+   "sport": "run",
+   "week": 8,
+   "title": "Coach 'Base' 5.4k (AM) — cadence 163 @ 7:00/km, rising late; kick peaked 191 spm",
+   "verdict": "Clean base run in humid morning air (24.4°C, dew 20). Best easy-pace cadence on record: 163 spm at 7:00/km vs 155 on the Sep 25 long run, and it ROSE through the run (157–159 → 165–170) instead of decaying. 55 s finishing kick: 4:38 avg / 4:26 peak, 191 spm, GCT 241 ms, VR 7.3%.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "5.37 km"
+    },
+    {
+     "l": "Run pace",
+     "v": "~7:04/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "157 · max 187"
+    },
+    {
+     "l": "Cadence @7:00",
+     "v": "163 spm"
+    },
+    {
+     "l": "TE",
+     "v": "3.0 Aerobic"
+    },
+    {
+     "l": "VO₂max",
+     "v": "46.0"
+    }
+   ],
+   "headline": "4.7 km running at ~7:04/km with 18 short walk breaks (685 m). Running segments: first 4 at 157–159, middle 160–165, last 5 at 165–170 spm — turnover held/increased as he tired; stride shortened rather than lengthened (the old overstride reflex reversed).",
+   "insight": [
+    "HR drifted 145→163 across the run; pace didn't rise, so the late cadence was shorter steps, not faster running.",
+    "VO₂max new high 46.0 (precise). Watch LT pace 5:24 (app) / FTP 347 W."
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "sport": "run",
+   "week": 8,
+   "title": "Coach 'Tempo' 4×5 min @ 5:35–5:40 — best threshold session yet (9/10)",
+   "verdict": "4×5 min at 5:40 / 5:35 / 5:38 / 5:36 at HR 181–185 (= LTHR) in 27.8°C evening heat, within 5 s/km of each other. Form held: GCT 265–270, VR 8.3–8.4%; cadence 173→167 within reps. Cooldown done. Came off his one early night of the week (23:51, 7.2 h, HRV 51).",
+   "stats": [
+    {
+     "l": "Reps",
+     "v": "4×5 min"
+    },
+    {
+     "l": "Rep pace",
+     "v": "5:35–5:40"
+    },
+    {
+     "l": "Rep HR",
+     "v": "181–185"
+    },
+    {
+     "l": "Cadence",
+     "v": "169 @ 5:40 (best)"
+    },
+    {
+     "l": "TE",
+     "v": "4.0 / 0.7"
+    },
+    {
+     "l": "Load",
+     "v": "174"
+    }
+   ],
+   "headline": "In August the comp anchor was 7:00/km @ ≤172; now 20 min at 5:37 at threshold in heat. Cadence at 5:40/km = 169 spm, highest at matched pace (VO2 sessions 163–167).",
+   "insight": [
+    "Walk-jog recoveries (~9:30/km) — fine for tempo.",
+    "Sleep link: best session of the week followed the only good night (sleep avg 5.5 h that week, bedtimes 23:51–02:43)."
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "sport": "run",
+   "week": 8,
+   "title": "Coach 'Base' — canned at 11 min (1.35 km) after Posterior lift",
+   "verdict": "Correct call. Run started 20:04 straight after a 41-min Posterior session; HR wouldn't settle and legs were dead. Same-evening lift→run is exactly what the new AM-cardio / PM-lift layout avoids.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "1.35 km"
+    },
+    {
+     "l": "Time",
+     "v": "11 min"
+    },
+    {
+     "l": "Avg HR",
+     "v": "153 · max 170"
+    }
+   ],
+   "headline": "Also the first night home after a 4.6 h train night — two reasons stacked.",
+   "insight": [
+    "Lesson logged: don't stack a hinge-heavy lift directly before a run."
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "sport": "run",
+   "week": 7,
+   "title": "Coach 'VO2 Max' 8×2 min, Hosapete (31°C eve) — every rep in band (8/10)",
+   "verdict": "Reps 5:05 / 4:56 / 5:00 / 5:09 / 5:05 / 4:57 / 4:59 / 5:13 — avg 5:03 vs 5:05 target, no hero surge (fixed vs Sep 23's 4:42). GCT 250–262, VR 7.7–8.1%. Same paces cost ~3–4 bpm more than Wed (heat vs ~490 m altitude + tired legs). Deductions: recoveries walked from rep 3, cooldown ~4 min, cadence 177→~165.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "6.44 km"
+    },
+    {
+     "l": "Rep avg",
+     "v": "5:03/km"
+    },
+    {
+     "l": "Rep HR",
+     "v": "174–185"
+    },
+    {
+     "l": "Z5",
+     "v": "17.8 min"
+    },
+    {
+     "l": "TE",
+     "v": "3.8 / 2.9"
+    },
+    {
+     "l": "Load",
+     "v": "216"
+    }
+   ],
+   "headline": "Run in the evening (planned AM) at 31.1°C, dew 18.9 — the morning plan would have been ~8°C cooler. Ran on the 3rd straight leg day (long run + legs Fri, upper Sat).",
+   "insight": [
+    "VO₂max 45.7→45.5 (heat reading) — still 46 displayed / Good.",
+    "7-day load 708 vs chronic 494 (ratio 1.4) → easy week next was well-timed."
+   ]
+  },
+  {
+   "date": "2026-09-25",
+   "sport": "run",
+   "week": 7,
+   "title": "Coach 'Long Run' 77 min (10.3 km) AM — VO₂max 45.7 → 'Good'; form held on heavy legs",
+   "verdict": "Under-fuelled 3rd session in ~36 h (VO2 Wed, run-walk Thu evening) — legs 'like lead' after km 8, but running mechanics held: cadence 154–157, stride ~93 cm, GCT ~290 throughout. Fatigue showed as more walk breaks, not form decay. HR 159 avg in 90% humidity.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "10.27 km"
+    },
+    {
+     "l": "Run pace",
+     "v": "~6:58/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "159 · max 176"
+    },
+    {
+     "l": "Walks",
+     "v": "1.74 km"
+    },
+    {
+     "l": "TE",
+     "v": "3.4 Aerobic"
+    },
+    {
+     "l": "VO₂max",
+     "v": "45.7 (46)"
+    }
+   ],
+   "headline": "Morning start 07:06 (21.7°C, dew 19.4). Two watch-paused bathroom stops. VO₂max crossed into Garmin's 'Good' band for 20–29 (45.4+).",
+   "insight": [
+    "Fuel note: carb dinner the night before long runs; post-run breakfast reached ~82 g carbs."
+   ]
+  },
+  {
+   "date": "2026-09-24",
+   "sport": "run",
+   "week": 7,
+   "title": "Coach 'Run-Walk' 8×3 min — HR-governed, cadence held (8/10)",
+   "verdict": "Pace 6:15→7:35 across pieces at flat HR 155–162 — correct HR-capped execution; slowed via stride (99→78 cm) not cadence (158–171). Ran the top of the 136–163 band; piece 1 spiked to 177.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "5.64 km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "147 · max 177"
+    },
+    {
+     "l": "TE",
+     "v": "2.8 Aerobic"
+    },
+    {
+     "l": "VO₂max",
+     "v": "44.6→45.3"
+    }
+   ],
+   "headline": "Evening (19:25, 25.6°C). Run pieces averaged ~158 HR → 18 min Z4; VO₂max still jumped +0.7.",
+   "insight": []
+  },
+  {
+   "date": "2026-09-23",
+   "sport": "run",
+   "week": 7,
+   "title": "Coach 'VO2 Max' 8×2 min / 2 min — form held under fatigue (8/10)",
+   "verdict": "Reps 5:09→4:56 with HR falling 183→178, no fade. Cadence held ~165 first vs second half (no decay, unlike Aug 19/26); GCT flat 255–264; VR 7.8–8.1%. Deductions: skipped cooldown, 4:42 surge on rep 5, walked recoveries.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "6.11 km"
+    },
+    {
+     "l": "Rep avg",
+     "v": "~5:00/km"
+    },
+    {
+     "l": "Rep HR",
+     "v": "176–183"
+    },
+    {
+     "l": "Z5",
+     "v": "13.6 min"
+    },
+    {
+     "l": "TE",
+     "v": "3.8 / 3.0"
+    },
+    {
+     "l": "Load",
+     "v": "207"
+    }
+   ],
+   "headline": "Evening, 26.7°C / dew 19.4, ~80 min after a lift. Full detail in worklog.",
+   "insight": []
+  },
   {
    "date": "2026-09-13",
    "sport": "run",

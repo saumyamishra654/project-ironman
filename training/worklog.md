@@ -381,6 +381,84 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Caveat:** cadence/GCT/VR all improve naturally with speed, so the averages flatter any fast session — the real signal is the *lack of drift* over 8 reps in heat after a lift.
 - **Verdict:** strong, well-executed VO2 session (8/10). Engine and mechanics both held; the only real miss is the skipped cooldown.
 
+**Sep 24 (Thu) — Run — Coach "Run-Walk" 8×3 min run / 2 min walk [DONE] — 8/10**
+- 5.64 km, 48 min, avg HR 147 / max 177, TE 2.8 (Aerobic Base), load 60, RPE 3. Evening 19:25, 25.6°C, dew 17.2.
+- Run pieces 6:15 → 6:28 → 6:44 → 6:47 → 7:02 → 7:28 → 7:15 → 7:35 at HR 155–162 — pace fell, HR flat = correct HR-governed execution in heat/after Wed's VO2.
+- Slowed via stride (99 → 78 cm), not cadence (158–171; pure-run segments confirm 158.8 → 165). Ran the top of the 136–163 band (18 min Z4); piece 1 spiked to 177.
+- VO₂max 44.6 → **45.3** (steady run pieces gave a good pace-at-HR read).
+
+**Sep 25 (Fri) — Run — Coach "Long Run" 77 min, 10.27 km (AM) [DONE] — 8/10 — VO₂max 45.7 ("Good")**
+- 07:06 start, 21.7°C but 90% RH (dew 19.4). Avg HR 159 / max 176, TE 3.4 Aerobic, load 117, RPE 6. Two watch-paused bathroom stops (km 3, km 10).
+- Running-only: 8.51 km at ~6:58/km, cadence 154–157, stride ~93 cm, GCT ~290 — **form held** despite "legs like lead" after km 8; fatigue showed as more walk breaks (1.74 km walked), not stride decay.
+- Cause of heavy legs: 3rd session in ~36 h + <12 h since Thu evening run + under-fuelled. Fix: carb dinner the night before long runs. Post-run day tallied ~1,000 kcal / 112 g carbs / 57 g protein by midday; day ≈ maintenance.
+- VO₂max **45.7** (46 displayed) → crossed Garmin's "Good" band for 20–29 (45.4+).
+- PM: legs-only lift (combined leg volume from P + A; moderate; Copenhagens skipped). Overnight train to Hosapete.
+- Right knee: possible mild pes anserine bursitis (inner knee, hamstring/gracilis insertion), improving — 2/10 rule; skip Copenhagens while it settles.
+
+**Sep 26 (Sat) — Strength — Upper (P + A upper halves), Hosapete [DONE]**
+- Bench **75 × 6** (e1RM ~90–91 — holding, not a PR; best 93.3 Jul 27), pull-ups, rows, shoulder press, pec deck, laterals, one arm superset. Face pulls + 2nd arm superset dropped (pump/time).
+- Train-night recovery was excellent: HRV 55 (above 35–53 range), RHR 59, 7.5 h (light, broken).
+
+**Sep 27 (Sun) — Run — Coach "VO2 Max" 8×2 min, Hosapete [DONE] — 8/10**
+- Evening 18:18, **31.1°C**, dew 18.9 (planned AM). 6.44 km, avg HR 173 / max 194, TE 3.8 / 2.9, load 216, Z5 17.8 min.
+- Reps 5:05 / 4:56 / 5:00 / 5:09 / 5:05 / 4:57 / 4:59 / 5:13 — all inside 4:50–5:21, avg 5:03, **no hero surge**. GCT 250–262, VR 7.7–8.1%. Cadence 177 → settled 162–169.
+- Same paces cost ~3–4 bpm more than Wed: lower altitude (~483 m) helped, 31°C + 3rd leg day hurt → roughly equal performance.
+- Deductions: recoveries walked from rep 3 (11–16 min/km), cooldown ~4 min, evening heat. VO₂max 45.7 → 45.5 (heat read). Acute load 708 vs chronic 494 (ratio 1.4) → easy week well-timed.
+- Coach run days switched to **Tue/Thu/Sat/Sun** (lift M/W/F) — confirmed live.
+
+## Block 1 · Week 8 — Easy week (Sep 28 – Oct 4)
+
+### Session Log
+
+**Sep 28–Oct 2 summary**
+- **Mon Sep 28:** travel-wrecked night (4.6 h; Garmin REM ≈0 was a tracking artefact — vivid dreams). HRV 44 / RHR 61 fine.
+- **Tue Sep 29:** Posterior lift 18:43 → Coach "Base" at 20:04 **canned after 11 min / 1.35 km** — HR wouldn't settle, legs dead. Right call; same-evening hinge lift → run is what the AM-cardio/PM-lift layout avoids.
+- **Wed Sep 30:** Coach Run-Walk (Thu's, moved) 07:09 — 4.43 km, 38 min, avg HR 147. On target.
+- **Thu Oct 1:** lift 18:51 (bench attempt — set data not captured by Garmin) + **padel 22:32–23:49** → 02:43 lights-out.
+- **Sleep this week: avg 5.5 h; lights-out 23:51–02:43; never near the 22:30 target.** HRV dipped to 33 (below range) after the 02:05/02:43 nights; the one 23:51 night (7.2 h, HRV 51) preceded the best session of the week.
+
+**Oct 3 (Sat) — Run — Coach "Tempo" 4×5 min [DONE] — 9/10 — best threshold session yet**
+- 17:18, 27.8°C, dew 17.8. 6.36 km, avg HR 175 / max 190, TE 4.0 / 0.7, load 174, RPE 7, feel "very strong".
+- Reps **5:40 / 5:35 / 5:38 / 5:36** at HR 181 / 181 / 185 / 184 (= LTHR 181). Cadence 173 / 170 / 168 / 167; GCT 265–270; VR 8.3–8.4%. 10-min WU (6:44 @163), ~5-min CD done.
+- Context: Aug comp anchor was 7:00/km @ ≤172 — now 20 min at 5:37 at threshold in heat. Cadence at matched 5:40 pace = **169** (best; VO2 sessions 163–167).
+
+**Oct 4 (Sun) — Run — Coach "Base" 40 min, 5.37 km (AM) [DONE]**
+- 08:36, 24.4°C, dew 20. Avg HR 157 (band 136–163), TE 3.0, RPE 3. 4.68 km running at ~7:04/km, 18 short walk breaks (685 m).
+- **Cadence: 163 @ 7:00/km** (vs 155 on Sep 25 long run at same pace), and it **rose** through the run: first segments 157–159 → last five 165–170. Stride shortened as he tired — the old overstride drift (Sep 6: 158–161 → 148–152) reversed.
+- 55 s finishing kick: 4:38 avg / 4:26 peak, cadence 174 avg / **191 peak**, GCT 241 ms, VR 7.3%, 437 W peak.
+- Watch markers: VO₂max **46.0** (new high), LTHR 181, LT pace **5:24** (app; the MCP API speed field reads 5:08 — mismatch, trust the app), FTP 347 W (4.39 W/kg). Training balance now "on target" (low-aerobic shortage resolved). Garmin HM prediction 2:13:36 (10K 58:04, 5K 27:03).
+
+**Trend check (Jul → Oct, from Garmin):**
+- Beats/km on easy/long/steady runs ~1,330 (Jul) → ~1,225 (Sep) → 1,172 (Oct 4): **~10–12% less cardiac cost per km** (e.g. Jul 12 10.6 km 7:43 @171 vs Sep 25 10.3 km 7:30 @159). Partly cooler AM runs, mostly fitness.
+- HRV period avg 39.4 → 39.2 → **41.7 ms**; sub-30 crash nights 4 → 3 → **0** in the last 4 weeks.
+- RHR (daily, 94 days): monthly avg flat ~63.2–63.4 Jul–Sep; floor 58–59 unchanged. **66% of nights since July were "disrupted"** (<6 h, lights-out after 01:00, or travel); 23 of 27 days at RHR 65+ followed one. Clean-night RHR ≈ 62; each extra hour of sleep ≈ −0.8 bpm. Last 10 days (easy week): avg 61.3, 3 sub-60 days, only one 65+.
+- Form, easy runs Jul → Oct: GCT 319 → 286 ms, vertical ratio 10.0 → 8.8%. Running tolerance 20.8 → 29.5 km (+42%). Endurance score 4,774 → 5,294. Fitness age 18. Hill score components slipping (flat training): strength 32 → 26, endurance 18 → 13.
+
+## Block 1 · Week 9 — Race week: Namma Run 10K (Oct 5 – Oct 11)
+
+### Session Log
+
+**Oct 5 (Mon) — Meditation 10.5 min (AM) + Run — Coach "Recovery" 3.73 km + 49 s stride (PM) [DONE]**
+- Meditation 08:41: stress 55 → ~25 during → 18 after; HR ~90 → 60. Breathing stayed 12–16/min (try ~6/min slow breathing). Body Battery started the night at **13** (lights-out 00:43).
+- Run 19:07, 21.7°C, **93% RH, dew 20.6**, thunderstorm. 2.95 km running at ~8:55/km + 21 short walks; avg HR **143** (segments 137–146), RPE 2, TE 1.6. Running-only cadence **161 at ~9:00/km** (stride 61–71 cm).
+- **Stride (49 s @ >3.0 m/s, per-second FIT):** 0–22 s locked at **178–183** on a 180-bpm song while accelerating 4:31 → 4:08 (speed from stride length); at **23 s cadence stepped 180 → 192 in one second** ("180 felt slow"), peaked **198** at 26–27 s, held 190–198 for ~12 s at 4:06–4:13 with GCT dropping 228 → **211 ms** (step 1.33 → 1.23 m at the same speed); last 14 s faded to ~179 at 4:30–4:38 as HR hit 191.
+  - Halves: **180.8 → 185.8 spm** (whole 183.3). Quarters 179.6 / 181.9 / 192.8 / 179.4. Peak power 451 W.
+- **vs Aug 31 sprint session (6×12 s, per-second FIT):**
+
+  | | Aug 31 sprints (reps 2–6) | Oct 5 stride (best 12 s / whole 49 s) |
+  |---|---|---|
+  | Peak speed | 7.0–8.3 m/s (2:00–2:22/km; GPS soft) | 4.05 m/s (4:06/km) |
+  | Cadence avg / peak | 213–234 / 223–234 | 189 / 198 (whole 183) |
+  | Step at peak speed | 1.89–2.16 m | 1.27 m |
+  | GCT | 157 ms every rep (looks like the sensor floor) | 221 avg / 211 min |
+  | Vertical ratio | 3.2–4.6% | 6.6–6.9% |
+  | Power avg / peak | 566–722 / 724–842 W | 439 / 451 W |
+  | HR at end | 122–148 (too short to rise — alactic) | 183 → 191 (glycolytic/VO₂) |
+
+  - Today ≈ 55% of top speed, held 4× longer — a speed-endurance gear, not the sprint gear. From stride → sprint, speed rises ~85%: cadence +17%, step length +60% → top speed is mostly force/step length; turnover is already high.
+  - Cadence-vs-speed is a clean line: ~161 @ 9:00/km → 169 @ 5:40 → 190+ @ 4:05 → ~230 @ 2:10.
+- Race-week note: 56 s at HR 191 is a rep — keep strides 15–20 s @ ~90% until Sunday. Mile-PR attempt planned after the 10K (est. ~7:20; start at ~185 spm, not 180).
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

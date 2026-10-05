@@ -48,19 +48,19 @@ Monthly run volume (km): Feb ~32 → **Mar ~56 (peak, first 10k)** → **Apr 16 
 | Priority | Goal | Target | When |
 |----------|------|--------|------|
 | 1 (A-race) | **Goa 70.3 half-ironman** | Completion (train directly toward it) | ~Nov 2027 (TBD) |
-| 2 | **Bangalore Half Marathon** (near-term focus / tune-up) | Race well — local, ideal conditions | **Dec 13, 2026** |
+| 2 | **Bangalore Half Marathon** (near-term focus / tune-up) | Race well — local, ideal conditions | **Dec 20, 2026** (moved from Dec 13) |
 | 3 | **Bench 1RM** | 100 kg floor / 105 kg reach | ~Feb 2027 |
 | Ongoing | Body composition | Leaner at ~80 → 75 kg | — |
 | Optional | Sprinkled road races | HM / 10k tune-ups en route to the HIM | TBD |
 
-Next race: **Bangalore Half Marathon, Dec 13, 2026** (in Bengaluru itself — ideal temp, no travel, home conditions).
+Next race: **Bangalore Half Marathon, Dec 20, 2026** (moved from Dec 13) (in Bengaluru itself — ideal temp, no travel, home conditions).
 
 > ⚠️ **Dashboard not yet reworked:** `database.json`, `plan.md`, and `workout-ui.js` still encode the old Procam Slam calendar (phase week-ranges, bench-peak / 10k-sharpen logic). They need a separate replanning pass to match this pivot; until then, treat this file + `context.md` + `worklog.md` as the source of truth for direction, not the dashboard.
 
 ### Goal / training pace — revised 2026-08-09
 
 - **Comp-pace training anchor is now ~7:00/km @ HR ≤172** (revised Aug 26, down from 7:35). The Aug 23 16k long run held **7:05/km at avg HR 166** on tired km12–16 legs — pace-at-HR dropped ~30 s/km in two weeks, base arriving fast. Govern comp/long-run segments by *"7:00 or 172, whichever comes first,"* not a fixed number; on hot/humid mornings HR caps it and pace gives. **Do not use the Garmin race-prediction pace for long-run segments** — that assumes a maximal, rested threshold effort (~182 HR), a different session.
-- **Target race for pace validation is now the Bangalore HM, Dec 13, 2026** (was Delhi HM Oct 18, cancelled). HM race goal remains aspirational, not yet earned: Garmin predicts 7:09/km (2:30:51); Riegel off the March 10K gives ~6:41/km; earlier 6:40 and 6:00 targets both over-project (6:00 was derived from 4×1k intervals, which don't extend to 21 km). The gap between ~7:35 sustainable and ~7:09 predicted *is* the aerobic-base deficit — closing it is the block's job.
+- **Target race for pace validation is now the Bangalore HM, Dec 20, 2026** (moved from Dec 13) (was Delhi HM Oct 18, cancelled). HM race goal remains aspirational, not yet earned: Garmin predicts 7:09/km (2:30:51); Riegel off the March 10K gives ~6:41/km; earlier 6:40 and 6:00 targets both over-project (6:00 was derived from 4×1k intervals, which don't extend to 21 km). The gap between ~7:35 sustainable and ~7:09 predicted *is* the aerobic-base deficit — closing it is the block's job.
 - **Still provisional** — no clean race-effort time trial exists yet. Pace zones in `plan.md` / `hm-plan-delhi-oct18.md` remain unvalidated.
 
 ### Lifting split — changed 2026-08-16 (Posterior / Anterior / Upper)

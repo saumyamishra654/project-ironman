@@ -24,7 +24,7 @@ This file is the live state document. Update it after every session or at minimu
 
 | # | Race | Date | Notes |
 |---|------|------|-------|
-| 1 | **Bangalore Half Marathon** | **Dec 13, 2026** | Near-term focus. Local, ideal temp, no travel. |
+| 1 | **Bangalore Half Marathon** | **Dec 20, 2026** (moved from Dec 13) | Near-term focus. Local, ideal temp, no travel. |
 | — | Bench 1RM test | ~Feb 8–14, 2027 | Strength goal (100 kg) still stands. |
 | A | **Goa 70.3 (half-ironman)** | ~Nov 2027 (TBD) | A-race — direct target of the whole plan. |
 | opt | Sprinkled HM / 10k tune-ups | TBD | Optional road races en route to the HIM. |
@@ -63,7 +63,7 @@ This file is the live state document. Update it after every session or at minimu
 | Easy/long HR cap | ~162 bpm (70% HRR), aim avg 150–158. Individualised Jul 23 off observed max ~203 / RHR 62 (was flat 150). See plan.md. |
 | Watch note | Garmin only ~2–3 weeks old, still calibrating — VO₂max 41 & zone/max-HR estimates provisional. Reset zones at the Week-8 5k TT. |
 | Current running zones | See plan.md Running Zones + database.json |
-| Next race | Bangalore HM — Dec 13, 2026 (was VDHM Oct 18, cancelled with Procam Slam) |
+| Next race | Bangalore HM — **Dec 20, 2026** (moved from Dec 13; was VDHM Oct 18, cancelled with Procam Slam) |
 
 ## Swimming Status
 

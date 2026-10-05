@@ -6,7 +6,7 @@
   "block_start": "2026-08-10",
   "block_weeks": 12,
   "updated": "2026-10-05",
-  "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
+  "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
   "name": "Saumya Mishra",
@@ -131,7 +131,7 @@
    "id": "blr_hm",
    "name": "Bangalore Half Marathon",
    "short": "Bangalore HM",
-   "date": "2026-12-13",
+   "date": "2026-12-20",
    "distance_km": 21.1,
    "priority": "B",
    "role": "Near-term target · local, ideal temp"
@@ -261,7 +261,7 @@
    "note": "Race-pace long-run segments, LT cruise work, long continuous swims."
   }
  ],
- "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 13) into the Bangalore HM. Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
+ "next_phase_note": "After wk 12 (Oct 26): a ~4-week HM sharpen phase (Nov 2 – Dec 20) into the Bangalore HM (date moved from Dec 13). Bike folds in as 1 Z2 session/week from Phase C as HIM prep. Built closer to the date.",
  "block": [
   {
    "week": 1,

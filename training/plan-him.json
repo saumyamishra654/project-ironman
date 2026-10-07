@@ -58,11 +58,11 @@
   {
    "id": "vo2max",
    "label": "VO₂max",
-   "value": "46",
+   "value": "46.7",
    "unit": "",
    "sport": "run",
    "trend": "up",
-   "note": "38.9 (Jul 8) → 46.0 precise (Oct 4) · 'Good' for 20–29 · Productive"
+   "note": "38.9 (Jul 8) → 46.7 precise (Oct 7) · 'Good' for 20–29 · Productive"
   },
   {
    "id": "endurance",
@@ -109,12 +109,12 @@
   {
    "id": "bench",
    "label": "Bench",
-   "value": "82.5",
+   "value": "93",
    "unit": "kg",
    "sport": "strength",
    "target": 100,
    "from": 82.5,
-   "note": "working → 100 kg (~Feb 2027)"
+   "note": "e1RM — feet-up 70×10 (Oct 6) = regular best 70×10 / 75×6 · → 100 kg (~Feb 2027)"
   }
  ],
  "races": [
@@ -630,6 +630,123 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-10-07",
+   "sport": "run",
+   "week": 9,
+   "title": "Coach 'Tempo' — bailed after 1.4 reps; VO₂max still ticks to 46.7",
+   "verdict": "Felt awful from the warm-up and stopped 2 min into rep 2. Not a fitness problem: reps ran 5:20 (target 5:35) at HR 164–165, 17–20 bpm under Saturday's tempo at a faster pace. Short sleep (asleep 00:06, 6.25 h) on top of 4 sessions in 36 h with a carb gap, no water/food, and a hot first rep.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "2.40 km"
+    },
+    {
+     "l": "Rep 1",
+     "v": "5:00 @ 5:20 · HR 164"
+    },
+    {
+     "l": "Rep 2",
+     "v": "2:00 @ 5:21 · HR 165"
+    },
+    {
+     "l": "Warm-up cad",
+     "v": "148 (vs 164)"
+    },
+    {
+     "l": "Sleep",
+     "v": "6.25 h · 68"
+    },
+    {
+     "l": "VO₂max",
+     "v": "46.7"
+    }
+   ],
+   "headline": "Plan 4×5:00 @ 5:35 (band 5:21–5:53). Warm-up 6 of 10 min with a ~6 min stop, cadence 148. Rep 1 at 5:20/km, rep 2 abandoned at 2:00. Walked home 1.5 km.",
+   "insight": [
+    "Low HR + very high effort is the short-sleep / under-fuelled signature (sleep loss mainly raises perceived effort — Fullagar 2015), not lost fitness.",
+    "Oct 6 burned 3,286 kcal (3rd-highest of 27 days) and he ate ~2,820 with 4.2 g/kg carbs — below the 5–7 g/kg guideline for ~1 h/day training.",
+    "Fixes: ~400+ g carbs and eat at burn on double days; water + a small carb snack before AM quality; run the middle of the band, not the fast edge.",
+    "No make-up — race week. VO₂max rose anyway (best pace:HR on record)."
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "sport": "strength",
+   "week": 9,
+   "title": "Upper — three PRs: feet-up bench 70×10 (e1RM 93), lateral raise 25×16, pushdown 55×13",
+   "verdict": "Best upper session of the block. Feet-up bench now matches the regular-bench best with no leg drive; the Aug 29 bottom-end weak link has closed.",
+   "stats": [
+    {
+     "l": "Feet-up bench",
+     "v": "70×10, 70×6"
+    },
+    {
+     "l": "e1RM",
+     "v": "93 (79 on Aug 29)"
+    },
+    {
+     "l": "Lat raise",
+     "v": "25×16 ×2"
+    },
+    {
+     "l": "Pushdown",
+     "v": "55×13, 55×12"
+    },
+    {
+     "l": "Close-grip",
+     "v": "65×9 (84)"
+    },
+    {
+     "l": "Tonnage",
+     "v": "8,985 kg"
+    }
+   ],
+   "headline": "Feet-up bench 70×10/70×6 · iso-lateral row 120×10/9 · close-grip 65×9/8 · reverse-grip pulldown 75×11/80×8 · DB lateral raise 25×16/16 · cross-body hammer 35×12×2 · triceps pushdown 55×12/13.",
+   "insight": [
+    "Feet-up e1RM 79 → 72 → 78 → 88 → 93 since Aug 29; regular bench has sat at 90–93 since June → a 95+ regular e1RM is the next fresh test (after the 10K).",
+    "Daily creatine resumed — plausible small contributor to the 10–16-rep PRs; full muscle saturation takes ~3–4 weeks at 3–5 g/day.",
+    "Weak spots from the Hevy refresh: pull-ups (BW max ~20 → 10–15) and DB shoulder press (e1RM 65 → 58) — first slots on the new Upper B."
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "sport": "run",
+   "week": 9,
+   "title": "Coach 'Run-Walk' 5.8k — first nasal-strip night (score 85, RHR 58)",
+   "verdict": "Easy session done right after the best night in weeks: 7.9 h, 1 wake-up, HRV 49, RHR 58. Run pieces slightly faster at lower HR than the same session on Sep 30.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "5.77 km"
+    },
+    {
+     "l": "Time",
+     "v": "48:01"
+    },
+    {
+     "l": "Avg HR",
+     "v": "147 · max 176"
+    },
+    {
+     "l": "Run pieces",
+     "v": "~6:38 @ 156"
+    },
+    {
+     "l": "Sleep",
+     "v": "7.9 h · 85"
+    },
+    {
+     "l": "RHR",
+     "v": "58"
+    }
+   ],
+   "headline": "Run-walk 07:50. vs Sep 30: 6:38 @ 156 vs 6:44 @ 159. Night before: strips + 20 °C + magnesium + early dinner + lights-out 22:30 (asleep 23:11).",
+   "insight": [
+    "Takeaway is 'the full protocol works', not strips alone — several changes landed the same night.",
+    "Strip A/B plan: 2 weeks strips + fixed 22:30 lights-out, then 3–4 nights without at the same bedtime."
+   ]
+  },
   {
    "date": "2026-10-05",
    "sport": "run",

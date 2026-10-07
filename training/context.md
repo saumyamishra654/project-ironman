@@ -8,15 +8,16 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current week | 11 |
-| Current phase | 2 — Build |
-| Week start date | 2026-08-03 |
-| Bodyweight | ~80 kg |
-| Sleep quality | — |
-| Overall fatigue (1–10) | — |
-| Injury / pain notes | Shin cleared — no longer symptom-gating running (hm_block can be retired). |
-| Weight target | 75 kg over ~3–4 months (mild deficit) |
-| Calorie target | 2500 kcal/day |
+| Current week | 9 — race week (Namma Run 10K Sun Oct 11) |
+| Current phase | HM-Specific (block weeks 9–12) · periodisation Meso 1.1 (Oct 6 – Dec 20) |
+| Week start date | 2026-10-05 (block start 2026-08-10) |
+| Bodyweight | ~81.5 kg (Oct 7, fasted after fluids) — +~2 kg in a week: creatine water + glycogen refill + fluids. Standard fasted weigh-ins 3–4×/wk from Oct 12, judge 7-day averages. |
+| Sleep quality | Protocol live (lights-out 22:30, 20 °C, nasal strips from Oct 5). Oct 5→6: 7.9 h / 85; Oct 6→7: 6.25 h / 68 (~1 h latency). Judge weekly. |
+| Overall fatigue (1–10) | ~5 — Oct 7 tempo bailed (sleep + fuel), HRV balanced, load ratio 0.9 |
+| Injury / pain notes | None active. Shin cleared (Jul). Mild right medial-knee / hamstring-insertion niggle (Sep 25) — no reports since. |
+| Supplements | Creatine monohydrate daily (resumed ~early Oct) · iron (alternate-day AM) · magnesium (~21:30) |
+| Weight target | Maintenance through the HM (Dec 20) — no deficit while avg sleep < 7 h; lean bulk from Dec 21 (bench block) |
+| Calorie target | Eat to burn: ~2,700–2,900 single-session days, ~3,100–3,300 double days (≥400 g carbs); protein ~170 g |
 
 ## Race Calendar — revised 2026-08-09 (Procam Slam cancelled)
 
@@ -35,6 +36,10 @@ This file is the live state document. Update it after every session or at minimu
 
 | Date | Milestone |
 |------|-----------|
+| 2026-10-06 | Feet-up bench **70×10** (e1RM 93) · DB lateral raise 25×16 · triceps pushdown 55×13 |
+| 2026-10-07 | VO₂max **46.7** (from 38.9 on Jul 8) |
+| 2026-10-05 | Stride peak cadence 198 spm at ~4:05/km |
+| 2026-10-03 | Best threshold session: 4×5 min @ 5:35–5:40 |
 | 2026-05-31 | Week 1 complete — 12 km running (7k + 5k) |
 | 2026-05-27 | 7 km at 7:24 /km RPE 8 |
 | 2026-03 | 10k in 1:07:00 |
@@ -43,13 +48,13 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current working weight | 77 kg × 6 (clean, Jun 30 + Jul 6) → 80 kg 3×5 planned this week (wk 9) |
+| Current working weight | Regular 75×6 / 70×10 (Sep 26, Oct 1) · feet-up 70×10 (Oct 6) |
 | Last tested 1RM | 85 kg (stale — likely underrated) |
-| Projected 1RM | ~93 kg — confirmed from Hevy: 80×3 and 77×6 both give e1RM ≈ 93 |
-| Stall weeks | 0 (e1RM has held 90–93 since late Mar; the real climb to 100 starts with the wk 9–28 ramp) |
-| Data source | Hevy manual export (`training/hevy-export.csv`, 55 sessions Mar 1 – Jul 20 2026) |
+| Projected 1RM | ~93 kg e1RM on both regular and feet-up (feet-up 79 → 93 since Aug 29) |
+| Stall weeks | Regular bench capped at 93 since June; feet-up now level with it → test 80×5 / 82.5×4 regular after the 10K |
+| Data source | Hevy manual export (`training/hevy-export.csv`, 74 sessions Mar 1 – Oct 6 2026) |
 | Year-end target | Projected 100 kg by Dec (92.5×3 / 90×4) |
-| Real 1RM target | 100–105 kg, test ~Feb 2027 (after Mumbai) |
+| Real 1RM target | 100 kg, test ~Feb 8–14 2027 (end of the Dec 21 – Feb 14 lean-bulk bench block) |
 
 ## Running Status
 
@@ -59,11 +64,11 @@ This file is the live state document. Update it after every session or at minimu
 | Competition pace (HM) | **~7:00 /km** working anchor @ HR ≤172 (revised down from 7:35 on Aug 26). Basis: Aug 23 long run held **7:05/km at avg HR 166** on tired km12–16 legs, i.e. pace-at-HR dropped ~30 s/km in two weeks — base arriving fast. Govern comp/long-run segments by *"7:00 or 172, whichever comes first"*, not by a fixed number. **Do NOT use the Garmin race pace for long-run segments** — that's a maximal threshold effort (~182 HR). Garmin predictor (Aug 26): HM **2:22:58 (6:47/km)**, 10K 1:01:25, 5K 28:34 — up ~8 min on the HM vs Aug 7 (2:30:51); still a watch projection, not a proven TT. LTHR 182. VO₂max 43 (trending up, 39→43 over 6 wk). |
 | Week 1 actual volume | 12 km (7 km Wed + 5 km Sun) |
 | Current easy pace | ~7:24 /km (but HR too high at this pace — see easy HR cap below) |
-| Last quality session | Jul 22 "7K Threshold" — 6 km, moving 6:51/km, in-band tempo. Correctly run. |
+| Last quality session | Oct 3 tempo 4×5 min @ 5:35–5:40, HR 181–185 (best yet). Oct 7 tempo bailed after 1.4 reps (sleep/fuel). |
 | Easy/long HR cap | ~162 bpm (70% HRR), aim avg 150–158. Individualised Jul 23 off observed max ~203 / RHR 62 (was flat 150). See plan.md. |
-| Watch note | Garmin only ~2–3 weeks old, still calibrating — VO₂max 41 & zone/max-HR estimates provisional. Reset zones at the Week-8 5k TT. |
+| Watch note | VO₂max **46.7** (Oct 7), LTHR 181, LT pace 5:24 (app; API reads 5:08 — trust app), endurance score 5,294. Runs programmed by Garmin Coach. |
 | Current running zones | See plan.md Running Zones + database.json |
-| Next race | Bangalore HM — **Dec 20, 2026** (moved from Dec 13; was VDHM Oct 18, cancelled with Procam Slam) |
+| Next race | **Namma Run 10K — Sun Oct 11, 05:30, NICE Rd** (plan 55:30) → Bangalore HM **Dec 20, 2026** |
 
 ## Swimming Status
 
@@ -85,16 +90,16 @@ This file is the live state document. Update it after every session or at minimu
 
 ## Nutrition Notes
 
-- **Mild deficit:** targeting 2500 kcal/day average to cut from ~80 kg → 75 kg over 3–4 months
-- **Carb cycling:** reduce carbs on non-eating-out days so weekly average stays in deficit even with 2 higher-calorie social meals. On training days keep ~30–40 g carbs peri-workout; cut starchy carbs from other meals on low days. Protein and fats stay constant.
-- Protein: ~169 g/day (6 eggs + paneer block + Amul HP milk + 1 scoop whey)
-- 3 meals, no snack: breakfast (protein anchor, ~42g), lunch (calorie anchor, ~55g), dinner (light/sleep-friendly, ~72g)
-- HP milk (35g protein) is at dinner, not breakfast
-- Chia seeds: 25 g with water every morning (breakfast)
-- If weight loss stalls after 3 weeks, drop to 2400 kcal average. Do not go below 2300.
-- Prioritise protein and carbs around long run days and heavy bench days
-- If bench stalls, re-evaluate deficit before dropping calories further
-- **Eating-out buffer:** ~2 days/week at 3000–3200 kcal; remaining 5 days at ~2200–2300 kcal to average out to ~2500
+_Updated Oct 7 2026 — supersedes the May–Aug 2,500 kcal deficit notes (see git history)._
+
+- **Phase: maintenance through the HM (Dec 20).** Periodisation rule: no deficit while average sleep < 7 h. Lean bulk (10–20% surplus, +0.25–0.5% BW/wk) starts Dec 21 with the bench block.
+- **Eat to burn.** Single-session days ~2,700–2,900 kcal; double days (run + lift) ~3,100–3,300 with **≥400 g carbs** (5–7 g/kg). Oct 6 showed what a ~470 kcal / low-carb gap on a double day does to the next morning's quality run.
+- **Protein ~170 g/day**; typical anchors: HP paneer, Amul HP milk (35 g), skyr/Greek yoghurt, protein atta rotis, David bar.
+- **Before AM quality:** water + a small carb snack (banana / toast + honey) 30–45 min before.
+- **Sleep-friendly evenings:** dinner done by 19:30 (most filling meal), optional protein-only snack ~21:30, no late sugar (Sep 24 REM hit). Caffeine cap 12:00 — watch large cold brews (200–300+ mg).
+- **Race fuelling (<90 min races):** ~7 g/kg carbs the day before (~550 g), low fat/fibre after breakfast; race morning 50–70 g carbs ~60–90 min pre-start.
+- **Creatine:** 3–5 g/day monohydrate; expect +1–2 kg water on the scale over 3–4 wk; tell the doctor at the Dec bloodwork (raises creatinine / lowers eGFR).
+- Iron: alternate-day AM, away from coffee/dairy/training (see iron protocol).
 
 ## Active Adjustments
 

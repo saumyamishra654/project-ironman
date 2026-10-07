@@ -5,7 +5,7 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-10-05",
+  "updated": "2026-10-07",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
@@ -1847,41 +1847,115 @@
   }
  ],
  "strength_split": {
-  "framework": "Posterior / Anterior / Upper",
-  "rule": "Bench is the priority lift, trained 2x/wk: Anterior = HEAVY (comp-style main + paused-bench accessory for the bottom-end weak link), Upper = VOLUME/rep. 2 sets/exercise except main bench = 3 on Anterior.",
-  "note": "Built lopsided on purpose: swimming (2-3x/wk) already floods back, lats and rear delts, so the gym protects pressing and arms. Bench stays actual barbell on both exposures; keep heavy leg work off long-run and hardest-swim days.",
-  "volume_note": "Back (~8 gym sets + 2-3 swims) is by far the most-trained region. If shoulders feel stacked, the Upper-day pulldown is the first thing to trim.",
+  "framework": "Upper / Upper / Lower",
+  "rule": "Dedicated Lower day with NO run the next day (Mon PM, Tue run-free). Bench 2x/wk: Upper A heavy barbell, Upper B moderate incline. The slipping lifts (weighted pull-up, overhead press) get the first slots on Upper B, fresh.",
+  "note": "From Oct 12 2026 (replaces Posterior/Anterior/Upper, Aug 16 - Oct 11): legs were too easy to skip (mid-Sept on: 0-5 quad / 0-2 posterior sets per week; last full anterior day Sep 17). Runs Wed/Thu/Sat/Sun via Garmin Coach, so the Sunday long run is 6 days after Lower. Swims optional Tue/Fri AM. First Lower (Oct 12, day after the 10K) is a light re-intro at RIR 3-4 because squats return after a June break; full loads from Oct 19.",
+  "volume_note": "~14-17 sets per session, 2-3 per exercise. Keep Lower heavy and short: heavy (>=80% 1RM) lower-body strength has the best running-economy evidence (Llanos-Lagos 2024).",
   "days": [
    {
-    "name": "Posterior",
-    "slot": "Thu",
-    "focus": "back · triceps · glutes/hams · rear delt · calves · adductor + hamstring prehab",
+    "name": "Lower",
+    "slot": "Mon",
+    "focus": "squat · leg press · hinge · calves — no run next day",
     "lifts": [
      {
-      "n": "Weighted Pull-Up",
-      "s": "2"
+      "n": "Barbell Squat",
+      "s": "3",
+      "tag": "heavy, 5-6 reps; Oct 12 = light re-intro"
      },
      {
-      "n": "Seated Cable Row (V-Grip)",
-      "s": "2"
+      "n": "Leg Press",
+      "s": "3",
+      "tag": "10-12"
      },
      {
-      "n": "Single-Leg RDL (DB)",
-      "s": "2",
-      "tag": "left-hip / weak-glute work"
-     },
-     {
-      "n": "Copenhagen Plank",
-      "s": "2",
-      "tag": "adductor prehab — starting BENT-KNEE; begin once sprint soreness clears, build lever slowly"
-     },
-     {
-      "n": "Nordic Hamstring Curl",
-      "s": "2",
-      "tag": "hamstring prehab (sprint injury #1) — start band-assisted / top-range only"
+      "n": "Romanian Deadlift / Single-Leg RDL",
+      "s": "3",
+      "tag": "6-8"
      },
      {
       "n": "Back Extension (Weighted)",
+      "s": "2",
+      "tag": "12-15"
+     },
+     {
+      "n": "Seated Calf Raise",
+      "s": "2",
+      "tag": "soleus — the running calf"
+     },
+     {
+      "n": "Standing Calf Raise",
+      "s": "2"
+     },
+     {
+      "n": "Tibialis Raise",
+      "s": "2",
+      "tag": "optional"
+     }
+    ]
+   },
+   {
+    "name": "Upper A",
+    "slot": "Tue",
+    "focus": "BENCH DAY · rows · close-grip · arms",
+    "lifts": [
+     {
+      "n": "Barbell Bench Press",
+      "s": "3",
+      "tag": "primary — heavy, comp-style (leg drive)"
+     },
+     {
+      "n": "Feet-Up / Paused Bench",
+      "s": "2",
+      "tag": "bottom-end strength (feet-up e1RM 79 to 93 since Aug 29)"
+     },
+     {
+      "n": "Iso-Lateral / Chest-Supported Row",
+      "s": "2"
+     },
+     {
+      "n": "Close-Grip Bench",
+      "s": "2"
+     },
+     {
+      "n": "Lat Pulldown",
+      "s": "2"
+     },
+     {
+      "n": "Lateral Raise",
+      "s": "2"
+     },
+     {
+      "n": "Hammer Curl",
+      "s": "2"
+     },
+     {
+      "n": "Triceps Pushdown",
+      "s": "2"
+     }
+    ]
+   },
+   {
+    "name": "Upper B",
+    "slot": "Fri",
+    "focus": "PULL + PRESS · weak lifts first",
+    "lifts": [
+     {
+      "n": "Weighted Pull-Up",
+      "s": "3",
+      "tag": "FIRST — BW max slid ~20 to 10-15 reps since July"
+     },
+     {
+      "n": "Overhead Press (BB) / DB Shoulder Press",
+      "s": "3",
+      "tag": "fresh, before any bench (DB press e1RM 65 to 58)"
+     },
+     {
+      "n": "Incline DB Press",
+      "s": "2",
+      "tag": "2nd chest exposure, moderate"
+     },
+     {
+      "n": "Seated Cable Row",
       "s": "2"
      },
      {
@@ -1889,87 +1963,7 @@
       "s": "2"
      },
      {
-      "n": "Single-Arm Tricep Extension",
-      "s": "2"
-     },
-     {
-      "n": "Overhead Tricep Extension",
-      "s": "2"
-     },
-     {
-      "n": "Standing Calf Raise",
-      "s": "2"
-     }
-    ]
-   },
-   {
-    "name": "Anterior",
-    "slot": "Tue",
-    "focus": "BENCH DAY · chest · delts · biceps · quads · tib · abs",
-    "lifts": [
-     {
-      "n": "Barbell Bench Press",
-      "s": "3",
-      "tag": "primary — HEAVY, comp-style (leg drive), full ROM"
-     },
-     {
-      "n": "Paused Bench Press",
-      "s": "2",
-      "tag": "bottom-end weak link — 2-3s dead stop"
-     },
-     {
-      "n": "Shoulder Press (DB) / Push Press",
-      "s": "2"
-     },
-     {
-      "n": "Lateral Raise (Machine)",
-      "s": "2"
-     },
-     {
-      "n": "Goblet / Barbell Squat",
-      "s": "2"
-     },
-     {
-      "n": "Step-Up (DB)",
-      "s": "2"
-     },
-     {
-      "n": "Cross-Body Hammer Curl",
-      "s": "2"
-     },
-     {
-      "n": "Barbell / DB Curl",
-      "s": "2"
-     },
-     {
-      "n": "Tibialis Raise",
-      "s": "2"
-     }
-    ]
-   },
-   {
-    "name": "Upper",
-    "slot": "Sat",
-    "focus": "2nd bench exposure · back-heavy · 3rd arm hit",
-    "lifts": [
-     {
-      "n": "Barbell Bench (volume/rep, comp-style, full ROM)",
-      "s": "2"
-     },
-     {
-      "n": "Bent-Over Row (Smith)",
-      "s": "2"
-     },
-     {
-      "n": "Lat Pulldown / Pull-Up",
-      "s": "2"
-     },
-     {
-      "n": "Incline Chest Press / Dip",
-      "s": "2"
-     },
-     {
-      "n": "Lateral Raise / Shoulder Press",
+      "n": "Lateral Raise",
       "s": "2"
      },
      {
@@ -1977,15 +1971,10 @@
       "s": "2"
      },
      {
-      "n": "Tricep Pushdown / Extension",
-      "s": "2"
-     },
-     {
-      "n": "Hanging Leg Raise",
+      "n": "Overhead Triceps Extension",
       "s": "2"
      }
-    ],
-    "note": "wk3+ (was Fri while at 2 swims)"
+    ]
    }
   ]
  },
@@ -2060,9 +2049,10 @@
    "day": "Mon",
    "sessions": [
     {
-     "sport": "run",
-     "title": "Sprint session",
-     "detail": "6×12s hill sprints + easy volume (wk5+)"
+     "sport": "strength",
+     "title": "Lower",
+     "detail": "squat · leg press · RDL · calves",
+     "slot": "PM"
     }
    ]
   },
@@ -2070,9 +2060,16 @@
    "day": "Tue",
    "sessions": [
     {
+     "sport": "swim",
+     "title": "Swim (optional)",
+     "detail": "aerobic",
+     "slot": "AM"
+    },
+    {
      "sport": "strength",
-     "title": "Anterior (bench)",
-     "detail": "bench focus"
+     "title": "Upper A (bench)",
+     "detail": "heavy bench",
+     "slot": "PM"
     }
    ]
   },
@@ -2080,17 +2077,10 @@
    "day": "Wed",
    "sessions": [
     {
-     "sport": "swim",
-     "slot": "AM",
-     "title": "Swim — threshold",
-     "swim_id": "S3",
-     "detail": "threshold/speed"
-    },
-    {
      "sport": "run",
-     "slot": "PM",
-     "title": "Speed run",
-     "detail": "LT intervals"
+     "title": "Easy run (Coach)",
+     "detail": "Garmin Coach · easy, ~36 h after Lower",
+     "slot": "AM"
     }
    ]
   },
@@ -2098,9 +2088,10 @@
    "day": "Thu",
    "sessions": [
     {
-     "sport": "strength",
-     "title": "Posterior",
-     "detail": "auto-regulate"
+     "sport": "run",
+     "title": "Quality run (Coach)",
+     "detail": "Garmin Coach · tempo/intervals",
+     "slot": "AM"
     }
    ]
   },
@@ -2109,16 +2100,15 @@
    "sessions": [
     {
      "sport": "swim",
-     "slot": "AM",
-     "title": "Swim — endurance",
-     "swim_id": "S2",
-     "detail": "aerobic base"
+     "title": "Swim (optional)",
+     "detail": "aerobic",
+     "slot": "AM"
     },
     {
-     "sport": "run",
-     "slot": "PM",
-     "title": "Easy / recovery run",
-     "detail": "HR ≤150–158, short"
+     "sport": "strength",
+     "title": "Upper B (pull + press)",
+     "detail": "pull-ups · OHP first",
+     "slot": "PM"
     }
    ]
   },
@@ -2127,15 +2117,9 @@
    "sessions": [
     {
      "sport": "run",
-     "slot": "AM",
-     "title": "Long run",
-     "detail": "HR ≤172 (run AM for the heat)"
-    },
-    {
-     "sport": "strength",
-     "slot": "PM",
-     "title": "Upper",
-     "detail": "rep-focused bench"
+     "title": "Easy run (Coach)",
+     "detail": "Garmin Coach · easy",
+     "slot": "AM"
     }
    ]
   },
@@ -2143,10 +2127,10 @@
    "day": "Sun",
    "sessions": [
     {
-     "sport": "swim",
-     "title": "Swim — technique",
-     "swim_id": "S1",
-     "detail": "easy/recovery swim"
+     "sport": "run",
+     "title": "Long run (Coach)",
+     "detail": "Garmin Coach · long, 6 days after Lower",
+     "slot": "AM"
     }
    ]
   }

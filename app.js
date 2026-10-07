@@ -65,6 +65,7 @@
     if (!wkData) return s.detail;
     if (s.sport === "run") {
       var t = s.title || "";
+      if (t.indexOf("(Coach)") !== -1) return s.detail; // Garmin Coach owns run programming
       if (t.indexOf("Long") !== -1) return "HR ≤172 · " + wkData.run.long_km + "k — " + wkData.run.long_note;
       if (t.indexOf("Speed") !== -1) return wkData.run.speed;
       if (t.indexOf("Sprint") !== -1) return "6×12s hill sprints · full recovery + easy volume";
@@ -72,6 +73,9 @@
     }
     if (s.sport === "swim") return swimTargetFor(s, wkData, data);
     if (s.sport === "strength") {
+      if (s.title.indexOf("Lower") !== -1) return "squat · leg press · RDL · calves";
+      if (s.title.indexOf("Upper A") !== -1) return "heavy bench" + (wkData.strength && wkData.strength.bench ? " " + wkData.strength.bench : "") + " · rows · arms";
+      if (s.title.indexOf("Upper B") !== -1) return "weighted pull-up · OHP · incline · arms";
       if (s.title.indexOf("Anterior") !== -1) return "chest · quads · arms · bench " + wkData.strength.bench;
       if (s.title.indexOf("Posterior") !== -1) return "back · hams · triceps · rear delt";
       if (s.title.indexOf("Upper") !== -1) return "2nd bench · back-heavy · arms";
@@ -158,12 +162,14 @@
   }
   function strengthLines(title, wkData, data) {
     if (!data.strength_split) return [];
-    var name = title.split(" ")[0];
+    // longest split-day name that prefixes the session title ("Upper A (bench)" -> "Upper A")
     var day = null;
-    data.strength_split.days.forEach(function(dd) { if (dd.name === name) day = dd; });
+    data.strength_split.days.forEach(function(dd) {
+      if (title.indexOf(dd.name) === 0 && (!day || dd.name.length > day.name.length)) day = dd;
+    });
     if (!day) return [];
     var lines = [];
-    if (name === "Anterior" && wkData && wkData.strength) lines.push("Bench today: " + wkData.strength.bench);
+    if ((day.name === "Anterior" || day.name === "Upper A") && wkData && wkData.strength) lines.push("Bench today: " + wkData.strength.bench);
     day.lifts.forEach(function(x) { lines.push(x.n + " · " + x.s + " set" + (parseInt(x.s, 10) > 1 ? "s" : "") + (x.tag ? " (" + x.tag + ")" : "")); });
     return lines;
   }
@@ -1012,7 +1018,7 @@
       "<b>Weak spots: vertical pull + overhead press.</b> Bodyweight pull-up max reps slid from ~20 (July) to 10–15 (Sept) and weighted pull-ups stopped in June; DB shoulder press e1RM drifted 65 → 58 kg (always after bench). Both are lifetime-goal lifts — give pull-ups a first-slot day.",
       "<b>Legs are minimum-dose.</b> Since mid-Sept, 0–5 quad and 0–2 posterior sets/week (last real anterior day Sep 17). That's enough to maintain strength in race weeks (1 session/wk at held intensity — Spiering 2021), but the running-economy benefit of heavy lower-body work needs it back after the 10K.",
       "<b>Volume is back/shoulder heavy by design.</b> Pressing + arms are protected while standalone back stays leaner than it looks, because swimming (2×/wk) already floods lats/rear-delt. The body-part shares reflect that intentional lopsidedness.",
-      "<b>Watch the collision points.</b> Heavy posterior-chain days (SL-RDL, calves) share tissue with running. Keep the Thursday Posterior lift off-max in the 48 h before the Sunday long run, and never stack a hard leg day into a quality run day.",
+      "<b>Watch the collision points.</b> Heavy posterior-chain days (SL-RDL, calves) share tissue with running. From Oct 12 the Lower day sits on Monday with no run Tuesday, so heavy legs are ~36 h before the easy run, ~60 h before quality and 6 days before the long run.",
       "<b>Frequency is realistic.</b> ~2.4 lifting sessions/week through a demanding run block — sustainable hybrid load, not overreaching. The cut is being paid for out of bench numbers, which is the right muscle to sacrifice temporarily."
     ];
     var ul = el("ul", { class: "log-insight", style: "--sport:var(--strength)" });

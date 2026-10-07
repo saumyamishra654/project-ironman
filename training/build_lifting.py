@@ -46,7 +46,7 @@ GROUP = {
     "biceps": [
         "Bicep Curl (Dumbbell)", "Hammer Curl (Dumbbell)",
         "Cross Body Hammer Curl", "Seated Incline Curl (Dumbbell)",
-        "Preacher Curl (Barbell)", "EZ Bar Biceps Curl", "Spider Curl (Dumbbell)",
+        "Preacher Curl (Barbell)", "Preacher Curl (Machine)", "EZ Bar Biceps Curl", "Spider Curl (Dumbbell)",
     ],
     "triceps": [
         "Overhead Triceps Extension (Cable)", "Triceps Pushdown",
@@ -59,21 +59,21 @@ GROUP = {
         "Goblet Squat", "Squat (Barbell)", "Squat (Machine)", "Squat (Suspension)",
         "Hack Squat (Machine)", "Leg Press (Machine)", "Leg Extension (Machine)",
         "Bulgarian Split Squat", "Bulgarian Split Squat (Dumbbell)",
-        "Dumbbell Step Up", "Sissy Squat (Weighted)", "Decline Squat",
+        "Dumbbell Step Up", "Step Up", "Sissy Squat (Weighted)", "Decline Squat",
         "Zercher Squat", "Wall Sit", "Spanish Squat Isometric",
         "Peterson Step Down", "Terminal Knee Extension", "Jump Squat", "Box Jump",
     ],
     "posterior": [  # hamstrings / glutes / lower back
         "Single Leg Romanian Deadlift (Dumbbell)", "Romanian Deadlift (Barbell)",
         "Romanian Deadlift (Dumbbell)", "Straight Leg Deadlift",
-        "Hip Thrust (Barbell)", "Back Extension (Weighted Hyperextension)",
+        "Hip Thrust (Barbell)", "Back Extension (Weighted Hyperextension)", "Back Extension (Hyperextension)",
         "Seated Leg Curl (Machine)", "Hip Abduction (Machine)",
         "Hip Adduction (Machine)",
     ],
     "calves": [
         "Seated Calf Raise", "Standing Calf Raise", "Standing Calf Raise (Smith)",
         "Single Leg Standing Calf Raise", "Single Leg Standing Calf Raise (Dumbbell)",
-        "Calf Extension (Machine)", "Calf Press (Machine)", "Pogo Hops",
+        "Calf Extension (Machine)", "Standing Calf Raise (Machine)", "Calf Press (Machine)", "Pogo Hops",
     ],
     "tibialis": ["Tibialis Raise"],
     "core": [
@@ -93,7 +93,8 @@ for g, lst in GROUP.items():
 
 # key barbell lifts to trace 1RM trajectories for
 KEY_LIFTS = [
-    "Bench Press (Barbell)", "Bent Over Row (Barbell)", "Overhead Press (Barbell)",
+    "Bench Press (Barbell)", "Feet Up Bench Press (Barbell)", "Bent Over Row (Barbell)",
+    "Overhead Press (Barbell)",
     "Push Press", "Single Leg Romanian Deadlift (Dumbbell)", "Pull Up (Weighted)",
 ]
 

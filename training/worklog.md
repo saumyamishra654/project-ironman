@@ -475,6 +475,12 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - Upper #2 (PM): pull-led per plan (pull-ups, rows, moderate incline/OHP, delts, arms) — details pending next Hevy export.
 - Same day: switched lifting to **Upper / Upper / Lower from Oct 12** (see context.md); race plan rebuilt on the real NICE Rd profile → **55:30** (watch id 1722374681, asymmetric pace bands).
 
+**Oct 8 (Thu) — Badminton 58 min (PM) instead of Coach "Recovery" run [SWAP]**
+- 20:05–21:03, avg HR 144 / max 173, 571 kcal. Recovery run skipped (athlete's call; low cost in race week).
+- Night Oct 8→9: asleep **01:11** (~5.8 h), score 71, HRV 41 (balanced, wk avg 43). Late, intense evening sport pushed sleep onset — Fri night is the key night before Sunday.
+
+**Oct 9 (Fri) — Upper (PM) planned; no legs before the race.**
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

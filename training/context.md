@@ -14,7 +14,7 @@ This file is the live state document. Update it after every session or at minimu
 | Bodyweight | ~81.5 kg (Oct 7, fasted after fluids) — +~2 kg in a week: creatine water + glycogen refill + fluids. Standard fasted weigh-ins 3–4×/wk from Oct 12, judge 7-day averages. |
 | Sleep quality | Protocol live (lights-out 22:30, 20 °C, nasal strips from Oct 5). Oct 5→6: 7.9 h / 85; Oct 6→7: 6.25 h / 68 (~1 h latency). Judge weekly. |
 | Overall fatigue (1–10) | ~5 — Oct 7 tempo bailed (sleep + fuel), HRV balanced, load ratio 0.9 |
-| Injury / pain notes | None active. Shin cleared (Jul). Mild right medial-knee / hamstring-insertion niggle (Sep 25) — no reports since. |
+| Injury / pain notes | **Oct 11: cracked left toenail (barefoot finish of the 10K) — can't wear shoes yet; calves very sore (barefoot DOMS).** Runs paused until shoes are pain-free; no make-ups. Shin cleared (Jul). Mild right medial-knee / hamstring-insertion niggle (Sep 25) — no reports since. |
 | Supplements | Creatine monohydrate daily (resumed ~early Oct) · iron (alternate-day AM) · magnesium (~21:30) |
 | Weight target | Maintenance through the HM (Dec 20) — no deficit while avg sleep < 7 h; lean bulk from Dec 21 (bench block) |
 | Calorie target | Eat to burn: ~2,700–2,900 single-session days, ~3,100–3,300 double days (≥400 g carbs); protein ~170 g |

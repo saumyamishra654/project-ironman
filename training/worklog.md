@@ -481,6 +481,13 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 
 **Oct 9 (Fri) — Upper (PM) planned; no legs before the race.**
 
+**Oct 11 (Sun) — RACE: Namma Run 10K, NICE Rd — 1:03:28 (elapsed 1:04:27) [DONE, plan abandoned]**
+- Race-eve sleep **2.65 h** (score 36, 0 REM, HRV 34). Flag-off 06:10; weather 22.8 °C, dew 19.4, 81% RH. Fuel: Monster + caffeine gel (~260 mg caffeine, ~85 g carbs).
+- Splits: 5:53 · 6:04 · 5:58 · 5:32 · 6:12 · 7:08 · 7:37 (+53 s stopped) · 6:49 · 5:59 · 6:08 (plan 5:42 · 6:00 · 5:39 · 5:08 · 5:21 · 5:37 · 5:59 · 5:29 · 5:11 · 5:24). HR: 158 · 178 · **194** · 189 · 190 · 191 · 194 (max 203) · 185 · 187 · 191; avg 186. Cadence 166 · 168 · 165 · 162 · 156 · 142 · 149 · 155 · 163 · **169**. Gain 109 m (matches the real-profile model). TE 5.0, load 325, RPE 10/10.
+- What happened: HR 194 by km 3 at ~6:00/km (vs 181–185 at 5:35 in the Oct 3 tempo) → redlined early on no sleep. **Feet cramped from km 4** (on the descent), numbness ("couldn't tell if blood supply had gone") → shoes off around km 6–7, last ~4 km barefoot; **cracked left toenail (slight)**. Barefoot km 9–10 back to ~6:00/km with the race's highest cadence (169).
+- Read: the 115 m of hills weren't the main problem (the plan priced them in). It was 2.6 h of sleep (higher HR and effort at every pace) plus cramp from running above sustainable intensity, plus likely lace compression as feet swelled. Shoes/lacing to check.
+- Follow-ups: toenail care; postpone the mile-PR attempt; Mon Oct 12 Lower re-intro only if feet are fine.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

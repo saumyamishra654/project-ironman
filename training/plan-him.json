@@ -5,7 +5,7 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-10-07",
+  "updated": "2026-10-11",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
@@ -125,7 +125,8 @@
    "date": "2026-10-11",
    "distance_km": 10,
    "priority": "C",
-   "role": "Tune-up · hilly NICE Rd out-and-back (~250 m gain) · hill-adjusted plan ~56:30"
+   "role": "Tune-up · hilly NICE Rd out-and-back (115 m gain) · plan 55:30 · RESULT 1:03:28 (2.6 h sleep, foot cramps km 4, last 4 km barefoot)",
+   "result": "1:03:28"
   },
   {
    "id": "blr_hm",
@@ -630,6 +631,46 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-10-11",
+   "sport": "run",
+   "week": 9,
+   "title": "RACE · Namma Run 10K — 1:03:28 on 2.6 h sleep; feet cramped at km 4, last 4 km barefoot",
+   "verdict": "Finished a 10/10-effort race that went sideways. HR hit 194 by km 3 at ~6:00/km (13 bpm above his best tempo at a slower pace) after only 2.65 h of sleep, feet cramped/numbed from km 4, shoes off around km 6–7, last ~4 km barefoot (cracked left toenail). Engine was redlined early; the feet ended the plan.",
+   "stats": [
+    {
+     "l": "Time",
+     "v": "1:03:28 (elapsed 1:04:27)"
+    },
+    {
+     "l": "Avg HR",
+     "v": "186 · max 203"
+    },
+    {
+     "l": "Gain",
+     "v": "109 m"
+    },
+    {
+     "l": "Sleep",
+     "v": "2.65 h · score 36"
+    },
+    {
+     "l": "Weather",
+     "v": "22.8 °C · dew 19.4"
+    },
+    {
+     "l": "TE",
+     "v": "5.0 · load 325"
+    }
+   ],
+   "headline": "Splits 5:53 · 6:04 · 5:58 · 5:32 · 6:12 · 7:08 · 7:37 (+53 s stopped) · 6:49 · 5:59 · 6:08 vs plan 5:42 · 6:00 · 5:39 · 5:08 · 5:21 · 5:37 · 5:59 · 5:29 · 5:11 · 5:24. HR by km: 158 · 178 · 194 · 189 · 190 · 191 · 194 · 185 · 187 · 191.",
+   "insight": [
+    "km 1–3 ran ~5–20 s/km slower than plan but HR was already 194 at km 3 (~96% of max) — on normal sleep these paces cost ~181–186. 2.65 h sleep (zero REM) + race nerves + ~260 mg caffeine put him over the edge early; weather (dew 19) was no worse than the Oct 3 tempo.",
+    "Foot cramps from km 4 fit the neuromuscular-fatigue model of exercise-associated cramp (running above sustainable intensity), plus likely dorsal compression from laces as feet swelled on the humid descent — the 'can't feel blood supply' numbness points to lace pressure.",
+    "Barefoot km 9–10 at 5:59 / 6:08 with cadence rising to 169 — the highest of the race (shorter, quicker steps).",
+    "Lessons for the HM: protect race-eve sleep (a bad night can't be fixed on the day, so lower the target); if km 1–2 HR > ~185, switch to the B plan; race in tested shoes, laced for swelling (heel-lock, looser forefoot)."
+   ]
+  },
   {
    "date": "2026-10-07",
    "sport": "run",

@@ -459,6 +459,36 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
   - Cadence-vs-speed is a clean line: ~161 @ 9:00/km → 169 @ 5:40 → 190+ @ 4:05 → ~230 @ 2:10.
 - Race-week note: 56 s at HR 191 is a rep — keep strides 15–20 s @ ~90% until Sunday. Mile-PR attempt planned after the 10K (est. ~7:20; start at ~185 spm, not 180).
 
+**Oct 6 (Tue) — Coach "Run-Walk" 5.77 km (AM) + Upper (PM) [DONE]**
+- First night with **nasal strips** (Oct 5→6): lights-out 22:30, asleep 23:11 (~40 min latency), 7.9 h, score 85, awake 19 min / 1 wake-up, HRV 49, RHR **58** (= all-time floor). Also 20 °C room, magnesium, dinner done ~20:30 → the full protocol, not strips alone.
+- Run-walk 07:50: 5.77 km in 48 min, avg HR 147 / max 176. Run pieces ~6:38/km @ 156 vs 6:44 @ 159 on Sep 30 (same session) — slightly faster at lower HR.
+- **Upper 18:25–19:21 (Hevy): three PRs.** Feet-up bench **70×10**, 70×6 (e1RM **93**, = regular-bench best with no leg drive; feet-up went 79 → 93 e1RM since Aug 29). DB lateral raise **25×16, 25×16** (prev best 25×15). Triceps pushdown **55×13, 55×12** (e1RM ~75 → ~79). Also close-grip 65×9/8 (84, steady), iso-lateral row 120×10/9, reverse-grip pulldown 75×11/80×8, cross-body hammer 35×12×2.
+- Creatine back daily (monohydrate) — plausible small contributor to the 10–16-rep PRs; full saturation takes ~3–4 wk at 3–5 g/d.
+- Day total: 3,286 kcal burned (3rd-highest of 27 days), 15,023 steps; ate ~2,820 kcal / 187 g P / 331 g C (4.2 g/kg) → ~470 kcal and ~60–200 g carbs short for a double day.
+
+**Oct 7 (Wed) — Coach "Tempo" 4×5 min @ 5:35 — bailed after 1.4 reps (AM) [PARTIAL] + Upper #2 (PM)**
+- Night Oct 6→7: asleep **00:06** (~1 h latency), 6.25 h, awake 33 min / 4 wake-ups, HRV 39 (balanced, wk avg 42), RHR 63, score 68. Suspects: large cold brew at breakfast, later lights-out, evening lift.
+- Run 07:33, no water/food beforehand: warm-up 0.9 km at cadence 148 with a ~6 min stop (vs 164 on Oct 3). Rep 1 5:00 @ **5:20/km**, HR 164 (max 180); rep 2 2:00 @ 5:21, HR 165 → stopped; walked 1.5 km home.
+- vs Oct 3 tempo (evening): reps 5:35–5:38 @ HR 181–185. Today faster at 17–20 bpm lower HR → low HR + high effort = short sleep + 4 sessions in 36 h with a carb/calorie gap (+ cooler morning), not lost fitness. First rep ran 15 s/km faster than the 5:35 target.
+- **VO₂max 46.7 (displays 47)** — the 5:20 @ 164 segment is the best pace:HR on record. Readiness 61 after.
+- Decision: no make-up tempo in race week. Lesson: double days need ~400+ g carbs and eating at burn; small carb snack + water before AM quality.
+- Upper #2 (PM): pull-led per plan (pull-ups, rows, moderate incline/OHP, delts, arms) — details pending next Hevy export.
+- Same day: switched lifting to **Upper / Upper / Lower from Oct 12** (see context.md); race plan rebuilt on the real NICE Rd profile → **55:30** (watch id 1722374681, asymmetric pace bands).
+
+**Oct 8 (Thu) — Badminton 58 min (PM) instead of Coach "Recovery" run [SWAP]**
+- 20:05–21:03, avg HR 144 / max 173, 571 kcal. Recovery run skipped (athlete's call; low cost in race week).
+- Night Oct 8→9: asleep **01:11** (~5.8 h), score 71, HRV 41 (balanced, wk avg 43). Late, intense evening sport pushed sleep onset — Fri night is the key night before Sunday.
+
+**Oct 9 (Fri) — Upper (PM) planned; no legs before the race.**
+
+**Oct 11 (Sun) — RACE: Namma Run 10K, NICE Rd — 1:03:28 (elapsed 1:04:27) [DONE, plan abandoned]**
+- Race-eve sleep **2.65 h** (score 36, 0 REM, HRV 34). Flag-off 06:10; weather 22.8 °C, dew 19.4, 81% RH. Fuel: Monster + caffeine gel (~260 mg caffeine, ~85 g carbs).
+- Splits: 5:53 · 6:04 · 5:58 · 5:32 · 6:12 · 7:08 · 7:37 (+53 s stopped) · 6:49 · 5:59 · 6:08 (plan 5:42 · 6:00 · 5:39 · 5:08 · 5:21 · 5:37 · 5:59 · 5:29 · 5:11 · 5:24). HR: 158 · 178 · **194** · 189 · 190 · 191 · 194 (max 203) · 185 · 187 · 191; avg 186. Cadence 166 · 168 · 165 · 162 · 156 · 142 · 149 · 155 · 163 · **169**. Gain 109 m (matches the real-profile model). TE 5.0, load 325, RPE 10/10.
+- What happened: HR 194 by km 3 at ~6:00/km (vs 181–185 at 5:35 in the Oct 3 tempo) → redlined early on no sleep. **Feet cramped from km 4** (on the descent), numbness ("couldn't tell if blood supply had gone") → shoes off around km 6–7, last ~4 km barefoot; **cracked left toenail (slight)**. Barefoot km 9–10 back to ~6:00/km with the race's highest cadence (169).
+- **Per-second FIT review (correction):** wrist HR jumped **172 → 196 in ~10 s at km 1.55** (water station) at a constant 6:15/km and cadence → optical artifact; HR after that is unreliable (so "194 at km 3" was overstated). **Power** is reliable: running pieces 330–356 W every km (95–103% of running FTP 347 W; Oct 3 tempo reps 325–332 W). **31 walk bouts, ~9.5 min total, starting at the top of the first climb (km 2.76)** before the cramps; run-only paces 5:53 · 6:04 · 5:50 · 5:05 · 5:32 · 6:02 · 6:33 · 6:12 · 5:27 · 5:54. Walking cost ~4–4.5 min → continuous-running equivalent ≈ 59 min. Shoe stop 53 s (auto-paused) at km 6.25. Barefoot vs shod at matched 2.7–3.1 m/s: cadence 168.5 → 171.3, GCT 272 → 268 ms, step 1.03 → 1.01 m, VR 8.5 → 8.5. Post-race VO₂max 46.7 → 46.4 (artifact HR), acute:chronic load 1.3.
+- Read: the 115 m of hills weren't the main problem (the plan priced them in). It was 2.6 h of sleep (higher HR and effort at every pace) plus cramp from running above sustainable intensity, plus likely lace compression as feet swelled. Shoes/lacing to check.
+- Follow-ups: toenail care; postpone the mile-PR attempt; Mon Oct 12 Lower re-intro only if feet are fine.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

@@ -5,7 +5,7 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
@@ -2210,7 +2210,7 @@
     {
      "sport": "strength",
      "title": "Lower",
-     "detail": "squat · leg press · RDL · calves",
+     "detail": "squat · leg press · RDL · calves (or Tue AM)",
      "slot": "PM"
     }
    ]
@@ -2227,7 +2227,7 @@
     {
      "sport": "strength",
      "title": "Upper A (bench)",
-     "detail": "heavy bench",
+     "detail": "heavy bench · Coach no-run day",
      "slot": "PM"
     }
    ]
@@ -2237,8 +2237,8 @@
    "sessions": [
     {
      "sport": "run",
-     "title": "Easy run (Coach)",
-     "detail": "Garmin Coach · easy, ~36 h after Lower",
+     "title": "Run (Coach)",
+     "detail": "Garmin Coach · usually base/easy, first run after Lower",
      "slot": "AM"
     }
    ]
@@ -2248,8 +2248,8 @@
    "sessions": [
     {
      "sport": "run",
-     "title": "Quality run (Coach)",
-     "detail": "Garmin Coach · tempo/intervals",
+     "title": "Run (Coach)",
+     "detail": "Garmin Coach",
      "slot": "AM"
     }
    ]
@@ -2258,9 +2258,9 @@
    "day": "Fri",
    "sessions": [
     {
-     "sport": "swim",
-     "title": "Swim (optional)",
-     "detail": "aerobic",
+     "sport": "run",
+     "title": "Run (Coach)",
+     "detail": "Garmin Coach · often quality (sprints/tempo)",
      "slot": "AM"
     },
     {
@@ -2276,8 +2276,8 @@
    "sessions": [
     {
      "sport": "run",
-     "title": "Easy run (Coach)",
-     "detail": "Garmin Coach · easy",
+     "title": "Long run (Coach)",
+     "detail": "Garmin Coach · long-run day · ladder to 19–20 km by Nov 28",
      "slot": "AM"
     }
    ]
@@ -2286,9 +2286,9 @@
    "day": "Sun",
    "sessions": [
     {
-     "sport": "run",
-     "title": "Long run (Coach)",
-     "detail": "Garmin Coach · long, 6 days after Lower",
+     "sport": "rest",
+     "title": "Rest / Coach",
+     "detail": "Coach rest or easy run · optional swim",
      "slot": "AM"
     }
    ]

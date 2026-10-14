@@ -472,14 +472,15 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - vs Oct 3 tempo (evening): reps 5:35–5:38 @ HR 181–185. Today faster at 17–20 bpm lower HR → low HR + high effort = short sleep + 4 sessions in 36 h with a carb/calorie gap (+ cooler morning), not lost fitness. First rep ran 15 s/km faster than the 5:35 target.
 - **VO₂max 46.7 (displays 47)** — the 5:20 @ 164 segment is the best pace:HR on record. Readiness 61 after.
 - Decision: no make-up tempo in race week. Lesson: double days need ~400+ g carbs and eating at burn; small carb snack + water before AM quality.
-- Upper #2 (PM): pull-led per plan (pull-ups, rows, moderate incline/OHP, delts, arms) — details pending next Hevy export.
+- Upper #2 (PM): **not done** (no Hevy or Garmin record). The week's second upper ran Sat Oct 10 instead.
 - Same day: switched lifting to **Upper / Upper / Lower from Oct 12** (see context.md); race plan rebuilt on the real NICE Rd profile → **55:30** (watch id 1722374681, asymmetric pace bands).
 
 **Oct 8 (Thu) — Badminton 58 min (PM) instead of Coach "Recovery" run [SWAP]**
 - 20:05–21:03, avg HR 144 / max 173, 571 kcal. Recovery run skipped (athlete's call; low cost in race week).
 - Night Oct 8→9: asleep **01:11** (~5.8 h), score 71, HRV 41 (balanced, wk avg 43). Late, intense evening sport pushed sleep onset — Fri night is the key night before Sunday.
 
-**Oct 9 (Fri) — Upper (PM) planned; no legs before the race.**
+**Oct 10 (Sat) — "Pre-10K upper" 12:34 (Hevy; Garmin 45 min, avg HR 117) [DONE]**
+- Weighted pull-up +10×7, +15×4, BW×12 · machine chest press 100×6/5 · iso-lateral row 120×10, 100×9 · DB shoulder press 45×12 ×2 · seated incline hammer curl 35×7 ×2 (new) · cable overhead triceps 40×13/15. No legs before the race.
 
 **Oct 11 (Sun) — RACE: Namma Run 10K, NICE Rd — 1:03:28 (elapsed 1:04:27) [DONE, plan abandoned]**
 - Race-eve sleep **2.65 h** (score 36, 0 REM, HRV 34). Flag-off 06:10; weather 22.8 °C, dew 19.4, 81% RH. Fuel: Monster + caffeine gel (~260 mg caffeine, ~85 g carbs).
@@ -488,6 +489,25 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - **Per-second FIT review (correction):** wrist HR jumped **172 → 196 in ~10 s at km 1.55** (water station) at a constant 6:15/km and cadence → optical artifact; HR after that is unreliable (so "194 at km 3" was overstated). **Power** is reliable: running pieces 330–356 W every km (95–103% of running FTP 347 W; Oct 3 tempo reps 325–332 W). **31 walk bouts, ~9.5 min total, starting at the top of the first climb (km 2.76)** before the cramps; run-only paces 5:53 · 6:04 · 5:50 · 5:05 · 5:32 · 6:02 · 6:33 · 6:12 · 5:27 · 5:54. Walking cost ~4–4.5 min → continuous-running equivalent ≈ 59 min. Shoe stop 53 s (auto-paused) at km 6.25. Barefoot vs shod at matched 2.7–3.1 m/s: cadence 168.5 → 171.3, GCT 272 → 268 ms, step 1.03 → 1.01 m, VR 8.5 → 8.5. Post-race VO₂max 46.7 → 46.4 (artifact HR), acute:chronic load 1.3.
 - Read: the 115 m of hills weren't the main problem (the plan priced them in). It was 2.6 h of sleep (higher HR and effort at every pace) plus cramp from running above sustainable intensity, plus likely lace compression as feet swelled. Shoes/lacing to check.
 - Follow-ups: toenail care; postpone the mile-PR attempt; Mon Oct 12 Lower re-intro only if feet are fine.
+
+## Block 1 · Week 10 — Post-race: toe + bike week (Oct 12 – Oct 18)
+
+**Oct 12–13 (Mon–Tue) — Rest [toe + race recovery]**
+- No training. Mon Lower re-intro skipped (feet/calves), so the first Lower moves to Mon Oct 19. Tue is now a Coach no-run day (set by athlete) for future Mon-PM/Tue-AM leg days.
+- Night Oct 11→12: 23:35–07:42, 7.5 h, score 80, **REM 97 min** (rebound after 0 on race night), HRV 39.
+- Oct 13 toe photo: nail intact, distal corner broken off, ~5 mm raw spot with a clean fibrin base, no spreading redness or swelling, no pain → plaster + Vaseline in shoes, file the jagged corner. Runs only once it has skinned over; cardio on bike/cross-trainer meanwhile.
+
+**Oct 14 (Wed) — Upper "greatest upper day of 2026" 11:55–12:53 (Hevy; 9 PRs) + indoor bike 38 min [DONE]**
+- Weighted pull-up **+15×5, +15×5** (+ BW×7 drop): rep PR at +15 (prev +15×4, Oct 10), e1RM 17.5.
+- Bench **70×11** (e1RM **95.7**, the first regular-bench e1RM PR since Mar 26; the 93.3 cap held Mar–Oct), 75×5, drop 55×8.
+- Iso-lateral row 120×**12**, **130×8**: heaviest, e1RM 168, best set volume.
+- DB shoulder press **50×10**, 50×8: ties the all-time best (50×10, May 17); e1RM 66.7 vs 57–63 since Aug.
+- Seated incline hammer curl 35×**10**, 35×8 (35×7 ×2 on Oct 10).
+- Cable overhead triceps 40×**20**, **50×12**: heaviest, e1RM 70 (prev 67.5, Mar 26), best set volume.
+- Tonnage 7,145 kg. Garmin: 63 min, avg HR 124 / max 162, rests 2.5–7.5 min.
+- Bike 13:01, 38 min, avg HR 140 (116–155), aerobic TE 2.3, load 44, RPE 2/10. Replaces the Coach Base run (toe).
+- Why today: 3 days off after the race, 7.5 h sleep Mon, creatine ~2.5 weeks in (upper-body strength is where creatine shows most, Lanhers 2017), maintenance kcal.
+- Garmin export test: Garmin recognised none of the exercises, so the Hevy sets were written into activity 24717908243 (exercise, reps, weight; iso-lateral row as generic ROW).
 
 <!-- Copy this template for each session:
 

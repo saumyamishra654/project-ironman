@@ -45,7 +45,7 @@ GROUP = {
     ],
     "biceps": [
         "Bicep Curl (Dumbbell)", "Hammer Curl (Dumbbell)",
-        "Cross Body Hammer Curl", "Seated Incline Curl (Dumbbell)",
+        "Cross Body Hammer Curl", "Seated Incline Curl (Dumbbell)", "Seated Incline Hammer Curl (Dumbbell)",
         "Preacher Curl (Barbell)", "Preacher Curl (Machine)", "EZ Bar Biceps Curl", "Spider Curl (Dumbbell)",
     ],
     "triceps": [

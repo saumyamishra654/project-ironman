@@ -36,6 +36,7 @@ This file is the live state document. Update it after every session or at minimu
 
 | Date | Milestone |
 |------|-----------|
+| 2026-10-14 | Bench **70×11** (e1RM **95.7**, first since March) · iso-lateral row 130×8 · cable OH triceps 50×12 · weighted pull-up +15×5 ×2 · DB press 50×10 (= all-time best) · 9 Hevy PRs |
 | 2026-10-06 | Feet-up bench **70×10** (e1RM 93) · DB lateral raise 25×16 · triceps pushdown 55×13 |
 | 2026-10-07 | VO₂max **46.7** (from 38.9 on Jul 8) |
 | 2026-10-05 | Stride peak cadence 198 spm at ~4:05/km |
@@ -48,11 +49,11 @@ This file is the live state document. Update it after every session or at minimu
 
 | Field | Value |
 |-------|-------|
-| Current working weight | Regular 75×6 / 70×10 (Sep 26, Oct 1) · feet-up 70×10 (Oct 6) |
+| Current working weight | Regular **70×11** / 75×5 (Oct 14) · feet-up 70×10 (Oct 6) |
 | Last tested 1RM | 85 kg (stale — likely underrated) |
-| Projected 1RM | ~93 kg e1RM on both regular and feet-up (feet-up 79 → 93 since Aug 29) |
-| Stall weeks | Regular bench capped at 93 since June; feet-up now level with it → test 80×5 / 82.5×4 regular after the 10K |
-| Data source | Hevy manual export (`training/hevy-export.csv`, 74 sessions Mar 1 – Oct 6 2026) |
+| Projected 1RM | **~96 kg e1RM** regular (70×11, Oct 14); feet-up 93 (79 → 93 since Aug 29) |
+| Stall weeks | **Broken Oct 14** (93.3 cap Mar–Oct). Confirm with a heavy 3–5 (80×5 / 82.5×4) in an Upper A |
+| Data source | Hevy manual export (`training/hevy-export.csv`, 76 sessions Mar 1 – Oct 14 2026) |
 | Year-end target | Projected 100 kg by Dec (92.5×3 / 90×4) |
 | Real 1RM target | 100 kg, test ~Feb 8–14 2027 (end of the Dec 21 – Feb 14 lean-bulk bench block) |
 
@@ -105,6 +106,7 @@ _Updated Oct 7 2026 — supersedes the May–Aug 2,500 kcal deficit notes (see g
 
 List any deviations from the plan here:
 
+- **Oct 14 — week so far:** Mon/Tue no training (Lower re-intro postponed to **Mon Oct 19**). Wed: Upper (9 PRs, bench e1RM 95.7) + 38-min easy bike for the Coach Base run. Rest of the week: Coach runs → **bike or cross-trainer** (cross-trainer at the run HR 134–161; bike ~125–145); **Fri sprints skipped**; running resumes once the toe has skinned over. PPL idea dropped; U/U/L kept. **Strength logging → Garmin (exploring):** Hevy has no official Garmin sync (Garmin refused Hevy API access). Oct 14 Hevy sets written into Garmin activity 24717908243 via the MCP as a test; Hevy remains the logbook until the athlete decides.
 - **Oct 12 — Tuesday set as a Garmin Coach no-run day (athlete)** so Lower can be **Mon PM or Tue AM** with no run the next morning. This resolves the Oct 11 Mon-Lower → Tue-run conflict. First Coach week as generated: Mon rest (post-race) · Tue no-run · Wed Base 38 min · Thu Base 38 min · **Fri Sprint** (15 min easy, 5×10 s @ ~3:20/km, 3 min rests, 10 min easy) · **Sat Long Run 83 min / ~12.8 km** (HR 134–161) · Sun rest (above running tolerance). **Long-run day = Saturday.** Runs this week only once shoes are pain-free (toe). Dashboard week grid updated (Wed–Sat Coach runs, Sat long, Sun rest/Coach).
 - **Week of Oct 12 — no running (cracked toenail) + likely home (parents') Sat–Sun Oct 17–18 → max one session/day there.** Lifting this week as **Push / Pull / Legs** (athlete's call, one-off while not running): Push + Pull early in the week, **Legs last (~Thu/Fri) as a light re-intro** once calves recover (RIR 3–4; closed shoes needed). Optional gym bike with the heel on the pedal. At home: one easy session/day or rest. Upper/Upper/Lower resumes Oct 19.
 - **Oct 11 — HM long-run ladder (athlete agreed). Coach's long runs have been only ~65–80 min / ~10 km since mid-Sep (vs 16–18 km in Aug), so he extends the SATURDAY long run himself with easy minutes; Coach weekday runs as given.** Ladder: Oct 17 skip (toe) · **Oct 24 12 km** · Oct 31 14 · Nov 7 16 · Nov 14 12 (down) · **Nov 21 18 km, last 4 km @ ~5:45 (sub-2:00 checkpoint)** · **Nov 28 19–20 km easy (peak)** · Dec 5 14 incl. 6 km @ 5:41–5:45 · Dec 12 10 easy · **Dec 20 race**. Rules: easy = HR ≤ ~160 / conversational; if Coach's long run ≥ ladder, do Coach's; a bad long run → repeat that distance, don't jump; never > 21 km. Rationale: rebuilds (not new) distance, ~2 km/wk steps (Nielsen 2014: big weekly jumps raise injury risk in novices).

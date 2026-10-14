@@ -5,7 +5,7 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "athlete": {
@@ -109,12 +109,12 @@
   {
    "id": "bench",
    "label": "Bench",
-   "value": "93",
+   "value": "95.7",
    "unit": "kg",
    "sport": "strength",
    "target": 100,
    "from": 82.5,
-   "note": "e1RM — feet-up 70×10 (Oct 6) = regular best 70×10 / 75×6 · → 100 kg (~Feb 2027)"
+   "note": "e1RM — 70×11 (Oct 14), first regular-bench PR since March (93.3 cap) · → 100 kg (~Feb 2027)"
   }
  ],
  "races": [
@@ -631,6 +631,46 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-10-14",
+   "sport": "strength",
+   "week": 10,
+   "title": "Upper — 9 PRs: bench 70×11 (e1RM 95.7, first since March), row 130×8, overhead triceps 50×12",
+   "verdict": "Best upper session of the year. The 93 bench e1RM ceiling (Mar–Oct) is broken, and both slipping lifts (weighted pull-up, DB press) bounced back.",
+   "stats": [
+    {
+     "l": "Bench",
+     "v": "70×11, 75×5"
+    },
+    {
+     "l": "e1RM",
+     "v": "95.7 (93.3 since Mar)"
+    },
+    {
+     "l": "Iso row",
+     "v": "120×12, 130×8"
+    },
+    {
+     "l": "OH triceps",
+     "v": "40×20, 50×12"
+    },
+    {
+     "l": "Pull-up",
+     "v": "+15×5 ×2"
+    },
+    {
+     "l": "Tonnage",
+     "v": "7,145 kg"
+    }
+   ],
+   "headline": "Weighted pull-up +15×5 ×2 (BW×7 drop) · bench 70×11 / 75×5 / 55×8 drop · iso-lateral row 120×12 / 130×8 · DB shoulder press 50×10 / 50×8 · seated incline hammer curl 35×10 / 35×8 · cable overhead triceps 40×20 / 50×12. Then 38 min easy bike (avg HR 140) in place of the Coach Base run (toe).",
+   "insight": [
+    "Bench e1RM 93.3 → 95.7 (+2.6%). 100 kg by the Feb test needs ~4 kg more in 17 weeks. An 11-rep estimate overstates a true single a little, so confirm with a heavy 3–5 (e.g. 82.5×4) in an Upper A.",
+    "Weighted pull-up +15×4 → +15×5 ×2, and DB press back to its all-time best 50×10 (e1RM 57–63 since Aug): putting the slipping lifts first on Upper B is working.",
+    "Why now: 3 days off after the race, 7.5 h sleep Mon, creatine ~2.5 weeks in (upper-body strength responds most, Lanhers 2017), maintenance calories.",
+    "Garmin recognised none of the exercises; the Hevy sets were written into the Garmin activity as a test of moving strength logging to Garmin."
+   ]
+  },
   {
    "date": "2026-10-11",
    "sport": "run",

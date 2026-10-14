@@ -1,13 +1,13 @@
 {
  "meta": {
-  "generated": "2026-10-07",
+  "generated": "2026-10-14",
   "source": "hevy-export.csv",
   "first_session": "2026-03-01",
-  "last_session": "2026-10-06",
-  "span_days": 219,
-  "session_count": 74,
-  "total_tonnage": 542144,
-  "unique_exercises": 112
+  "last_session": "2026-10-14",
+  "span_days": 227,
+  "session_count": 76,
+  "total_tonnage": 555309,
+  "unique_exercises": 113
  },
  "sessions": [
   {
@@ -9714,6 +9714,229 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-10-10",
+   "title": "pre 10k upper",
+   "sets": 13,
+   "tonnage": 6020,
+   "exercises": [
+    {
+     "name": "Pull Up (Weighted)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 10.0,
+       "reps": 7,
+       "rpe": null
+      },
+      {
+       "w": 15.0,
+       "reps": 4,
+       "rpe": null
+      },
+      {
+       "w": 0.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Chest Press (Machine)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 100.0,
+       "reps": 6,
+       "rpe": null
+      },
+      {
+       "w": 100.0,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Iso-Lateral Row (Machine)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 120.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 100.0,
+       "reps": 9,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Shoulder Press (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 45.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 45.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Hammer Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 7,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 7,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Overhead Triceps Extension (Cable)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 40.0,
+       "reps": 13,
+       "rpe": null
+      },
+      {
+       "w": 40.0,
+       "reps": 15,
+       "rpe": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "title": "greatest upper day of 2026",
+   "sets": 14,
+   "tonnage": 7145,
+   "exercises": [
+    {
+     "name": "Pull Up (Weighted)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 15.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 15.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 0.0,
+       "reps": 7,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 70.0,
+       "reps": 11,
+       "rpe": null
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 55.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Iso-Lateral Row (Machine)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 120.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 130.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Shoulder Press (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 50.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Hammer Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Overhead Triceps Extension (Cable)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 40.0,
+       "reps": 20,
+       "rpe": null
+      },
+      {
+       "w": 50.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    }
+   ]
   }
  ],
  "weekly_volume": [
@@ -10094,11 +10317,21 @@
   {
    "week": "2026-10-05",
    "groups": {
-    "back": 3745,
-    "biceps": 840,
-    "chest": 2225,
-    "shoulders": 800,
-    "triceps": 1375
+    "back": 5975,
+    "biceps": 1330,
+    "chest": 3325,
+    "shoulders": 1880,
+    "triceps": 2495
+   }
+  },
+  {
+   "week": "2026-10-12",
+   "groups": {
+    "back": 2630,
+    "biceps": 630,
+    "chest": 1585,
+    "shoulders": 900,
+    "triceps": 1400
    }
   }
  ],
@@ -10203,6 +10436,10 @@
    {
     "date": "2026-10-01",
     "e1rm": 93.3
+   },
+   {
+    "date": "2026-10-14",
+    "e1rm": 95.7
    }
   ],
   "Feet Up Bench Press (Barbell)": [
@@ -10359,21 +10596,29 @@
    {
     "date": "2026-06-28",
     "e1rm": 15.0
+   },
+   {
+    "date": "2026-10-10",
+    "e1rm": 17.0
+   },
+   {
+    "date": "2026-10-14",
+    "e1rm": 17.5
    }
   ]
  },
  "exercises": [
   {
    "name": "Bench Press (Barbell)",
-   "sets": 92,
-   "best_e1rm": 93.3,
+   "sets": 95,
+   "best_e1rm": 95.7,
    "group": "chest",
    "first": "2026-03-01",
-   "last": "2026-10-01",
+   "last": "2026-10-14",
    "last_top": {
     "w": 70.0,
-    "reps": 10,
-    "date": "2026-10-01"
+    "reps": 11,
+    "date": "2026-10-14"
    }
   },
   {
@@ -10391,15 +10636,15 @@
   },
   {
    "name": "Shoulder Press (Dumbbell)",
-   "sets": 50,
+   "sets": 54,
    "best_e1rm": 66.7,
    "group": "shoulders",
    "first": "2026-03-01",
-   "last": "2026-10-01",
+   "last": "2026-10-14",
    "last_top": {
     "w": 50.0,
-    "reps": 5,
-    "date": "2026-10-01"
+    "reps": 10,
+    "date": "2026-10-14"
    }
   },
   {
@@ -10413,6 +10658,19 @@
     "w": 80.0,
     "reps": 10,
     "date": "2026-09-29"
+   }
+  },
+  {
+   "name": "Overhead Triceps Extension (Cable)",
+   "sets": 35,
+   "best_e1rm": 70.0,
+   "group": "triceps",
+   "first": "2026-03-01",
+   "last": "2026-10-14",
+   "last_top": {
+    "w": 50.0,
+    "reps": 12,
+    "date": "2026-10-14"
    }
   },
   {
@@ -10439,19 +10697,6 @@
     "w": 40.0,
     "reps": 10,
     "date": "2026-09-26"
-   }
-  },
-  {
-   "name": "Overhead Triceps Extension (Cable)",
-   "sets": 31,
-   "best_e1rm": 67.5,
-   "group": "triceps",
-   "first": "2026-03-01",
-   "last": "2026-10-01",
-   "last_top": {
-    "w": 35.0,
-    "reps": 12,
-    "date": "2026-10-01"
    }
   },
   {
@@ -10598,6 +10843,19 @@
    }
   },
   {
+   "name": "Iso-Lateral Row (Machine)",
+   "sets": 20,
+   "best_e1rm": 168.0,
+   "group": "back",
+   "first": "2026-05-27",
+   "last": "2026-10-14",
+   "last_top": {
+    "w": 120.0,
+    "reps": 12,
+    "date": "2026-10-14"
+   }
+  },
+  {
    "name": "Single Arm Tricep Extension (Dumbbell)",
    "sets": 19,
    "best_e1rm": 53.3,
@@ -10634,19 +10892,6 @@
     "w": 30.0,
     "reps": 9,
     "date": "2026-06-09"
-   }
-  },
-  {
-   "name": "Iso-Lateral Row (Machine)",
-   "sets": 16,
-   "best_e1rm": 160.0,
-   "group": "back",
-   "first": "2026-05-27",
-   "last": "2026-10-06",
-   "last_top": {
-    "w": 120.0,
-    "reps": 10,
-    "date": "2026-10-06"
    }
   },
   {
@@ -10764,6 +11009,19 @@
     "w": 20.0,
     "reps": 15,
     "date": "2026-06-10"
+   }
+  },
+  {
+   "name": "Pull Up (Weighted)",
+   "sets": 13,
+   "best_e1rm": 17.5,
+   "group": "back",
+   "first": "2026-05-20",
+   "last": "2026-10-14",
+   "last_top": {
+    "w": 15.0,
+    "reps": 5,
+    "date": "2026-10-14"
    }
   },
   {
@@ -10972,19 +11230,6 @@
     "w": 125.0,
     "reps": 8,
     "date": "2026-04-04"
-   }
-  },
-  {
-   "name": "Pull Up (Weighted)",
-   "sets": 7,
-   "best_e1rm": 17.0,
-   "group": "back",
-   "first": "2026-05-20",
-   "last": "2026-06-28",
-   "last_top": {
-    "w": 12.5,
-    "reps": 6,
-    "date": "2026-06-28"
    }
   },
   {
@@ -11274,6 +11519,19 @@
    }
   },
   {
+   "name": "Chest Press (Machine)",
+   "sets": 4,
+   "best_e1rm": 120.0,
+   "group": "chest",
+   "first": "2026-05-29",
+   "last": "2026-10-10",
+   "last_top": {
+    "w": 100.0,
+    "reps": 6,
+    "date": "2026-10-10"
+   }
+  },
+  {
    "name": "Rear Delt Reverse Fly (Dumbbell)",
    "sets": 4,
    "best_e1rm": 21.0,
@@ -11375,6 +11633,19 @@
     "w": 40.0,
     "reps": 12,
     "date": "2026-09-25"
+   }
+  },
+  {
+   "name": "Seated Incline Hammer Curl (Dumbbell)",
+   "sets": 4,
+   "best_e1rm": 46.7,
+   "group": "biceps",
+   "first": "2026-10-10",
+   "last": "2026-10-14",
+   "last_top": {
+    "w": 35.0,
+    "reps": 10,
+    "date": "2026-10-14"
    }
   },
   {
@@ -11661,19 +11932,6 @@
     "w": 27.5,
     "reps": 10,
     "date": "2026-05-28"
-   }
-  },
-  {
-   "name": "Chest Press (Machine)",
-   "sets": 2,
-   "best_e1rm": 82.3,
-   "group": "chest",
-   "first": "2026-05-29",
-   "last": "2026-05-29",
-   "last_top": {
-    "w": 65.0,
-    "reps": 8,
-    "date": "2026-05-29"
    }
   },
   {

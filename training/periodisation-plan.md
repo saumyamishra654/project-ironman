@@ -1,6 +1,6 @@
 # Decade Periodisation Plan 2026-2036 (annotated)
 
-*Version 2, 6 Oct 2026. Every element carries an evidence tag, a rationale and citations. Re-plan every December.*
+*Version 2.1, 15 Oct 2026 (strength ladders rebuilt from the Oct 15 squat/deadlift tests and previous powerlifting bests). Every element carries an evidence tag, a rationale and citations. Re-plan every December.*
 
 ## Evidence tags
 
@@ -107,11 +107,19 @@ In a large sample of recreational runners, Riegel-type predictions were well cal
 
 ### Strength ladders
 
-**Plan:** Bench 91 (e1RM now) -> 95-100 (Feb 2027) -> 105-110 (2028) -> 110-115 (2030) -> 115-124 (2034). Squat and deadlift are provisional until 2028 baselines.
+**Plan (likely path):** Bench 96 (e1RM, Oct 2026) -> 98-100 (Feb 2027) -> 107-110 (Jul 2028) -> 112-114 (2030) -> 117 (2032). Squat 107 (e1RM, Oct 2026; previous best ~125) -> 120 (Dec 2026) -> 125-130 (Feb 2027) -> 145 (Jul 2028) -> 155-159 (2030). Deadlift 139 (e1RM, Oct 2026; previous best ~145) -> 148 (Dec 2026) -> 150-155 (Feb 2027) -> 170 (Jul 2028) -> 182-186 (2030).
 
-**Evidence: ASSUMPTION** · Sources: [14], [51], [61]
+| Lift | e1RM Oct 2026 | Previous best | Back to previous best (fast / likely / slow) | Lower-end Advanced (fast / likely / slow) |
+|---|---|---|---|---|
+| Bench | 96 | - | - | early 2029 / ~2031 / 2033-34 |
+| Squat | 107 | ~125 | Dec 2026 / Feb 2027 / spring 2027 | late 2028 / ~2030 / ~2032 |
+| Deadlift | 139 | ~145 | Nov 2026 / Dec 2026 / Feb 2027 | late 2028 / ~2030 / ~2032-33 |
 
-Competitive powerlifters gain ~7.5-12.5% in year one and ~20% over ten years [14]; your bench has sat at 84-93 kg for six months in a deficit [61]. The ladder assumes faster gains in surplus/strength blocks and near-maintenance elsewhere. Advanced (80th percentile) at 75-80 kg is bench 117-124, squat 159-168, deadlift 186-196 [51]. There are no squat or deadlift baselines yet; the first strength block tests them.
+Fast assumes the previous bests are back by Dec 2026, heavy lower 2x/wk in the bench block, gains held through the 70.3 year, and +15% in the strength year. Likely assumes +10-12% in the strength year, then +4-5% per winter block. Slow assumes +8%, then 3-4% a year.
+
+**Evidence: ASSUMPTION** · Sources: [4], [14], [51], [61], [62], [63]
+
+Strength lost in a layoff comes back faster than it was first built. After 30-32 weeks off, trained women's strength had not fallen to untrained levels, and 6 weeks of retraining quickly restored fast-fibre size [62]. Evidence for a lasting "muscle memory" advantage beyond that is mixed [63], and no study covers a 2-3-year layoff, so the climb back to your previous bests (squat ~125, deadlift ~145 [61]) is an estimate. Beyond those bests, rates fall to normal intermediate levels: competitive powerlifters gain ~7.5-12.5% in year one and ~20% over ten years [14], and lower-body gains are blunted under concurrent training [4]. Most new-territory progress is therefore placed in lifting-priority blocks (the Dec-Feb bench block, the strength year, winter blocks). Bench gets no retraining credit: it has been trained continuously at 84-96 kg since March [61]. Advanced (80th percentile) at 75-80 kg is bench 117-124, squat 159-168, deadlift 186-196 [51]. The lower end applies at ~75 kg (about 124 / 168 / 196 at 80 kg), so test at 76-77 kg rather than at the ~80 kg bulk peak.
 
 ### Sprint ladder
 
@@ -125,8 +133,8 @@ Specific sprint training improves times by about 3.2% per intervention, non-spec
 
 | Meso | Dates | Focus | Weekly shape | Nutrition | Targets (likely / reach) |
 |---|---|---|---|---|---|
-| 1.1 | Oct 6 - Dec 20 2026 | Namma 10K, mile TT, Bangalore HM | Garmin Coach runs T/Th/Sa/Su; lift M/W/F; swim Mon/Wed AM + weekend | Maintenance; gentle cut 0.3-0.5%/wk once sleep >=7 h | NICE 10K 56:00-57:30 / sub-56; mile 7:15-7:30 / sub-7:10; HM 2:02-2:06 / sub-2:00 |
-| 1.2 | Dec 21 - Feb 14 | Bench 1RM test (Feb 8-14) | Lift 4x (bench heavy + volume); run 3x easy + strides; swim 2x | Lean bulk +0.25-0.4%/wk | Bench 95-97.5 / 100 |
+| 1.1 | Oct 6 - Dec 20 2026 | Namma 10K, mile TT, Bangalore HM | Garmin Coach runs T/Th/Sa/Su; lift M/W/F; swim Mon/Wed AM + weekend | Maintenance; gentle cut 0.3-0.5%/wk once sleep >=7 h | NICE 10K 56:00-57:30 / sub-56; mile 7:15-7:30 / sub-7:10; HM 2:02-2:06 / sub-2:00; squat e1RM 120 / 125; deadlift 148 / 155 |
+| 1.2 | Dec 21 - Feb 14 | Bench 1RM test (Feb 8-14) | Lift 4x (bench heavy + volume); run 3x easy + strides; swim 2x | Lean bulk +0.25-0.4%/wk | Bench 98-100 / 102.5; squat 125-130 / 135; deadlift 150-155 / 160 |
 | 1.3 | Feb 15 - Apr 25 | Cut; start cycling; rebuild running | Run 3-4x (30-45 km); bike 2-3x Z2; swim 2-3x; lift 2x | Cut 0.5-0.7%/wk to 76-77 kg | 5K 23:00-24:00 / sub-22:40; first timed 100 m + 30 m fly |
 | 1.4 | Apr 26 - Jul 31 | 70.3 base | Swim 3, bike 3 (long ride to 3 h), run 4 (40-55 km), lift 2; 3:1 loading | Maintenance; carbs to load | Optional Olympic tri 2:40-2:55 |
 | 1.5 | Aug 1 - Goa 70.3 | 70.3 build, bricks, heat, taper | Swim 3, bike 3, run 3-4, lift 1-2; 2-wk taper | Maintenance at 75-77; race fuel 60-90 g/h | Goa 70.3 5:50-6:20 / sub-5:35 |
@@ -195,13 +203,13 @@ Hypertrophy rises with weekly sets (~0.37% per added set; >=10 sets/week is the 
 
 A 10-20% surplus gaining about 0.25-0.5% of bodyweight per week is the recommended rate for novice-intermediate lifters to limit fat gain [27]. Protein near 1.6 g/kg is the point beyond which extra protein adds little muscle [30].
 
-### Bench target 95-97.5 likely, 100 reach
+### Bench target 98-100 likely, 102.5 reach
 
 **Plan:** Feb 2027 1RM test.
 
 **Evidence: ASSUMPTION** · Sources: [14], [61]
 
-From an e1RM of ~91 [61], +4-7% in eight weeks of surplus and higher volume is consistent with typical intermediate gains but faster than powerlifters' yearly average [14]. 100 kg needs about +10%, plausible only if the surplus and sleep both go well.
+From an e1RM of 96 (70x11, Oct 14 2026) [61], 98-100 by the Feb test needs +2-4% from eight weeks of surplus and higher volume, consistent with typical intermediate gains [14]. 102.5 needs about +7%, faster than powerlifters' yearly average [14] and plausible only if the surplus and sleep both go well. A tested single usually lands a little below a high-rep e1RM.
 
 ### Cut at 0.5-0.7%/week after the bench test
 
@@ -295,8 +303,8 @@ Consumer bioelectrical impedance scales systematically underestimate fat mass an
 
 | Meso | Dates | Focus | Shape | Nutrition | Targets (likely / reach) |
 |---|---|---|---|---|---|
-| 2.1 | Dec 2027 - Mar 2028 (16 wk) | Hypertrophy | 4-day P/A/P/A, 12-16 sets/muscle; run 3x (25-35 km) + strides; swim 1-2x | Lean bulk +0.25%/wk to ~80 kg | Week-1 baselines: squat, deadlift, pull-up 3-5RM |
-| 2.2 | Apr - Jul 2028 (16 wk) | Strength + acceleration | 4-day, 6-10 sets, 3-6 reps, 4-wk waves; sprint 1x/wk; run 3x | Maintenance ~80 kg | Bench 105-110 / 115; squat 135-145 / 155; deadlift 165-175 / 185; pull-up +30 / +40 kg |
+| 2.1 | Dec 2027 - Mar 2028 (16 wk) | Hypertrophy | 4-day P/A/P/A, 12-16 sets/muscle; run 3x (25-35 km) + strides; swim 1-2x | Lean bulk +0.25%/wk to ~80 kg | Week-1 re-test: squat, deadlift, pull-up 3-5RM (baselines set Oct 2026) |
+| 2.2 | Apr - Jul 2028 (16 wk) | Strength + acceleration | 4-day, 6-10 sets, 3-6 reps, 4-wk waves; sprint 1x/wk; run 3x | Maintenance ~80 kg | Bench 107-110 / 114; squat 145 / 158; deadlift 170 / 184; pull-up +30 / +40 kg |
 | 2.3 | Aug - Nov 2028 (14 wk) | Cut, rebuild running, sprint test | Lift 3x; run 4x (35-50 km); sprint 1x | Cut 0.5-0.7%/wk to 76-77 | Mile 6:15-6:30 / sub-6:00; 100 m -2-3% vs 2027 |
 
 ### Four lifting days (P/A/P/A) with 12-16 sets per muscle in the hypertrophy block
@@ -503,7 +511,9 @@ Your ferritin was 27 (iron deficiency without anaemia) in Sep 2026 [61]; low ene
 | Half marathon | 1:48 / 1:44 | 1:44 / 1:38 | 1:35 / 1:28 | 1:30 / 1:24 | 1:27 / 1:22 |
 | Marathon (padded) | - | - | - | 3:15 / 3:00 | 3:07 / 2:55 |
 | 70.3 | 6:05 / 5:35 | - | 5:15 / 4:55 | 5:05 / 4:45 | 4:55 / 4:35 |
-| Bench | 95-100 / 100 | 105-110 / 115 | 110 / 117 | 112 / 120 | 115 / 124 |
+| Bench | 98-100 / 103 | 107-110 / 115 | 112-114 / 117 | 117 / 120 | 117-120 / 124 |
+| Squat | 125-130 / 137 | 145 / 159 | 155-159 / 168 | 159-165 / 168 | 159-168 / 168+ |
+| Deadlift | 150-155 / 162 | 170-175 / 186 | 182-186 / 196 | 186-190 / 196 | 186-196 / 196+ |
 | 100 m | baseline | -2-3% | 12.6-12.9 / 12.3 | maintain | - |
 | Bodyweight | 76-77 | 76-77 | 75-77 | 74-76 (race) | 75-77 |
 
@@ -571,4 +581,6 @@ ASSUMPTION: the ladder is the VDOT and strength trajectories in section B conver
 58. Daniels J, Gilbert J. 1979. Oxygen Power: Performance Tables for Distance Runners (VDOT formula). https://en.wikipedia.org/wiki/Jack_Daniels_(coach)
 59. Eddens L et al. 2018. The role of intra-session exercise sequence in the interference effect: meta-analysis. Sports Med. https://link.springer.com/article/10.1007/s40279-017-0784-1
 60. Held S et al. 2026. Maximizing adaptations in concurrent training: an umbrella review (abstract). Sports Med. https://fis.dshs-koeln.de/en/publications/maximizing-adaptations-in-concurrent-training-an-umbrella-review-/
-61. Project data: Garmin Connect (VO2max 38.9 -> 46.0 Jul-Oct 2026; LTHR 181; tempo 4x5 min @ 5:35-5:40) and Hevy log (bench e1RM 84-93 kg since Mar 2026). training/worklog.md
+61. Project data: Garmin Connect (VO2max 38.9 -> 46.0 Jul-Oct 2026; LTHR 181; tempo 4x5 min @ 5:35-5:40) and Hevy log (bench e1RM 84-96 kg since Mar 2026; Oct 15 2026 tests: squat 100x2 and deadlift 130x2 @ RPE 8.5, e1RM 107 / 139). Athlete-reported previous bests from powerlifting 2-3 years earlier: squat ~125, deadlift ~145. training/worklog.md
+62. Staron RS et al. 1991. Strength and skeletal muscle adaptations in heavy-resistance-trained women after detraining and retraining. J Appl Physiol 70(2). https://doi.org/10.1152/jappl.1991.70.2.631
+63. Psilander N et al. 2019. Effects of training, detraining, and retraining on strength, hypertrophy, and myonuclear number in human skeletal muscle. J Appl Physiol. https://doi.org/10.1152/japplphysiol.00917.2018

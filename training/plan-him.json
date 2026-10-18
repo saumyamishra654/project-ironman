@@ -8,6 +8,33 @@
   "updated": "2026-10-14",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
+ "bloodwork": {
+  "panel_date": "2026-09-13",
+  "lab": "Dr Lal PathLabs — SwasthFit Super 4",
+  "headline": "Healthy panel overall — elite lipids, normal liver/kidney/thyroid/glucose. One actionable finding: iron.",
+  "highlights": {
+   "hdl": "78.8 (excellent)",
+   "ldl": "63",
+   "triglycerides": "66",
+   "total_chol": "155",
+   "fasting_glucose": "75",
+   "hba1c": "5.6% (top-of-normal; likely nudged up by low iron)",
+   "vitamin_d": "139.86 nmol/L (sufficient)",
+   "b12": "534",
+   "tsh": "2.95",
+   "egfr": "103 (G1)",
+   "hemoglobin": "14.1 (was ~15.6–16 in March)",
+   "mch": "26.9 (low)",
+   "mchc": "28.3 (low)",
+   "mentzer": "18.1 (>13 → iron, not thalassemia)"
+  },
+  "recheck": {
+   "date": "2026-09-15",
+   "ferritin": "27 — mildly low for an athlete (target >40–50); iron deficiency WITHOUT anemia confirmed. Started ferrous bisglycinate 29mg every other day; recheck ~Dec 2026.",
+   "potassium": "6.0 flagged high but RULED ARTIFACT (pseudohyperkalemia) — phlebotomist had him clench fist during draw + first sample already rejected. Perfect kidneys, no symptoms, clean HR/HRV. Not a health concern."
+  },
+  "action": "Iron: 1 tablet (29mg) alt-day, morning + vit C, away from coffee/dairy/training. Hold off blood donation until stores rebuilt. Recheck ferritin ~Dec 2026 (target >40–50)."
+ },
  "athlete": {
   "name": "Saumya Mishra",
   "age": 22,

@@ -1,0 +1,502 @@
+<title>Hybrid Progress Curves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700;800&display=swap">
+<style>
+  /* Dark-first, matching the Project Ironman dashboard (app.css). Chart hues are validated steps of its discipline colours. */
+  :root {
+    color-scheme: dark;
+    --bg: #0f1620; --surface: #16212e; --surface-2: #1d2b3a; --border: #2a3b4d; --grid: #223142;
+    --text: #e8f0f7; --muted: #8ba3b8; --faint: #6b8196; --accent: #22d3ee;
+    --run: #2aa37a; --swim: #1499b8; --bike: #c9832a; --strength: #8f74e3; --transit: #5f7488; --ref: #7d93a8;
+    --on-fill: #0b1219;
+    --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      color-scheme: light;
+      --bg: #f3f6f9; --surface: #ffffff; --surface-2: #eef2f6; --border: #d6dee6; --grid: #e7ecf1;
+      --text: #102030; --muted: #4a5f72; --faint: #74889a; --accent: #0b84a5;
+      --run: #1f9670; --swim: #0b84a5; --bike: #b8741c; --strength: #6b4fd3; --transit: #9aa9b7; --ref: #6b7f91;
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f3f6f9; --surface: #ffffff; --surface-2: #eef2f6; --border: #d6dee6; --grid: #e7ecf1;
+    --text: #102030; --muted: #4a5f72; --faint: #74889a; --accent: #0b84a5;
+    --run: #1f9670; --swim: #0b84a5; --bike: #b8741c; --strength: #6b4fd3; --transit: #9aa9b7; --ref: #6b7f91;
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0f1620; --surface: #16212e; --surface-2: #1d2b3a; --border: #2a3b4d; --grid: #223142;
+    --text: #e8f0f7; --muted: #8ba3b8; --faint: #6b8196; --accent: #22d3ee;
+    --run: #2aa37a; --swim: #1499b8; --bike: #c9832a; --strength: #8f74e3; --transit: #5f7488; --ref: #7d93a8;
+  }
+
+  body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 56px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, svg:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3 { font-family: var(--mono); text-wrap: balance; line-height: 1.2; }
+  h1 { font-size: clamp(28px, 4.6vw, 44px); font-weight: 800; letter-spacing: -0.02em; }
+  h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
+  h3 { font-size: 15px; font-weight: 700; }
+  p { max-width: 68ch; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .lede { font-size: 18px; color: var(--muted); max-width: 64ch; }
+  .muted { color: var(--muted); }
+  .small { font-size: 13.5px; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+  header.top { display: grid; gap: 16px; }
+  .verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 8px; }
+  .verdict { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; display: grid; gap: 6px; }
+  .verdict b { font-family: var(--mono); font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 700; }
+  .verdict span { font-size: 15.5px; }
+
+  section { display: grid; gap: 20px; }
+  .section-head { display: grid; gap: 8px; }
+  .disc { display: inline-flex; align-items: center; gap: 8px; }
+  .disc i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .tile { background: var(--surface); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+  .tile .lab { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .tile .val { font-size: 26px; font-weight: 600; line-height: 1.15; }
+  .tile .val small { font-size: 14px; font-weight: 500; color: var(--muted); }
+  .tile .src { font-size: 12.5px; color: var(--faint); line-height: 1.4; }
+
+  .scen { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .scen div { border-top: 2px solid var(--border); padding-top: 10px; }
+  .scen h3 { margin-bottom: 4px; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 18px 14px; display: grid; gap: 10px; }
+  .card-title { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+  .card-title h3 { font-size: 14px; }
+  .key { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--muted); font-family: var(--mono); }
+  .key span { display: inline-flex; align-items: center; gap: 6px; }
+  .key .ln { width: 16px; height: 2px; display: inline-block; }
+  .key .band { width: 16px; height: 10px; display: inline-block; border-radius: 2px; opacity: 0.35; }
+  .key .sw { width: 12px; height: 12px; display: inline-block; border-radius: 2px; }
+  .chart { position: relative; width: 100%; }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+  .chart svg text { font-family: var(--mono); font-size: 11px; fill: var(--muted); }
+  .chart svg text.end { fill: var(--text); font-weight: 500; }
+  .chart svg text.reflab { fill: var(--ref); font-size: 10.5px; }
+  .tip { position: absolute; pointer-events: none; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-family: var(--mono); font-size: 12px; min-width: 150px; box-shadow: 0 6px 18px rgba(0,0,0,0.25); z-index: 2; }
+  .tip[hidden] { display: none; }
+  .tip .when { color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+  .tip .row { display: flex; align-items: center; gap: 8px; justify-content: space-between; }
+  .tip .row strong { color: var(--text); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .tip .row em { color: var(--muted); font-style: normal; display: inline-flex; align-items: center; gap: 6px; }
+  .tip .row em i { width: 12px; height: 2px; display: inline-block; }
+
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 9px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--grid); }
+  th { color: var(--muted); font-weight: 500; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; background: var(--surface-2); }
+  th:first-child, td:first-child { text-align: left; }
+  tr:last-child td { border-bottom: none; }
+  td.mid { color: var(--text); font-weight: 700; }
+  td.dim { color: var(--muted); }
+  thead tr.grp th { text-align: center; border-bottom: 1px solid var(--border); }
+
+  details summary { cursor: pointer; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+  details[open] summary { margin-bottom: 10px; }
+
+  ul.why { display: grid; gap: 10px; padding-left: 18px; max-width: 72ch; }
+  ul.why li::marker { color: var(--faint); }
+
+  .levers { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .lever { border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; background: var(--surface); display: grid; gap: 4px; }
+  .lever .eff { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+  .conf { display: grid; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .conf > div { display: grid; grid-template-columns: 120px 90px 1fr; gap: 12px; padding: 12px 16px; background: var(--surface); border-bottom: 1px solid var(--grid); align-items: baseline; }
+  .conf > div:last-child { border-bottom: none; }
+  .conf .d { font-family: var(--mono); font-weight: 700; font-size: 13px; }
+  .dots { font-family: var(--mono); letter-spacing: 2px; color: var(--text); font-size: 13px; }
+  .dots .off { color: var(--faint); }
+  @media (max-width: 560px) { .conf > div { grid-template-columns: 1fr; gap: 2px; } }
+
+  .sources { columns: 2 320px; column-gap: 32px; font-size: 13.5px; }
+  .sources li { break-inside: avoid; margin-bottom: 6px; }
+  footer { font-size: 13px; color: var(--faint); border-top: 1px solid var(--border); padding-top: 16px; }
+  @media (prefers-reduced-motion: no-preference) { .tip { transition: opacity 80ms linear; } }
+</style>
+
+<main class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Project Ironman · projection report · 12 Oct 2026 · age 22</div>
+    <h1>Ten years of progress, three ways it could go</h1>
+    <p class="lede">Slow, median and fast curves for your running, lifting, swim and bike, from now (22) to 32. They start from your own sessions, not Garmin's VO₂max, and bend the way published training studies say adult athletes improve.</p>
+    <div class="verdicts">
+      <div class="verdict"><b>So far</b><span>Running VDOT went <span class="num">28 → 37</span> in 7 months. That's <span class="num">+26%</span> speed, well above the <span class="num">15.8%</span> average for new runners. You're tracking at the fast end.</span></div>
+      <div class="verdict"><b>Median by 32</b><span>HM <span class="num">~1:34</span> · 10K <span class="num">~42:10</span> · bench <span class="num">~115</span> · squat <span class="num">~143</span> · deadlift <span class="num">~179</span> kg.</span></div>
+      <div class="verdict"><b>Your big goals</b><span>HM sub-1:25 and marathon sub-3 arrive on the <em>fast</em> curve around 27–30. The median lands near HM 1:34. Race weight and run-focused blocks are what move you up a curve.</span></div>
+    </div>
+  </header>
+
+  <section id="now" aria-labelledby="now-h">
+    <div class="section-head">
+      <h2 id="now-h">Where you are now</h2>
+      <p class="muted">Each starting point comes from a real session or log entry. Where a number is estimated, the note under it says so.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="lab">Running VDOT</span><span class="val">37 <small>36–38</small></span><span class="src">From threshold pace 5:24 · Oct 7 rep at threshold power (347 W) ran 5:20</span></div>
+      <div class="tile"><span class="lab">HM equivalent</span><span class="val">1:58</span><span class="src">From VDOT 37 · Oct 11 10K (cramps, walking) was slower</span></div>
+      <div class="tile"><span class="lab">Threshold pace</span><span class="val">5:24<small>/km</small></span><span class="src">Watch LT pace (app) · running FTP 348 W · Z2 ≈ 6:36–6:54</span></div>
+      <div class="tile"><span class="lab">Bench e1RM</span><span class="val">96 <small>kg</small></span><span class="src">70×11 on Oct 14 (Hevy) · was flat at 91–93 Mar→Sep in a deficit</span></div>
+      <div class="tile"><span class="lab">Squat e1RM</span><span class="val">~90 <small>kg</small></span><span class="src">75×5 on Jun 7 · old best ~120</span></div>
+      <div class="tile"><span class="lab">Deadlift</span><span class="val">~125 <small>kg</small></span><span class="src">Estimate · not logged · old best ~150</span></div>
+      <div class="tile"><span class="lab">Swim CSS</span><span class="val">2:18<small>/100m</small></span><span class="src">Aug 22 test · 400 TT 8:35</span></div>
+      <div class="tile"><span class="lab">Bike FTP</span><span class="val">~2.4 <small>W/kg</small></span><span class="src">Estimate · no power data yet</span></div>
+    </div>
+  </section>
+
+  <section id="scenarios" aria-labelledby="sc-h">
+    <div class="section-head">
+      <h2 id="sc-h">How to read the three curves</h2>
+      <p class="muted">All three assume the same thing: you keep training consistently on your current hybrid plan, with no long breaks. What changes is how strongly your body responds. In the big training studies, people on identical programmes ranged from "almost nothing" to more than double the average gain. About half of that spread is genetic.</p>
+    </div>
+    <div class="scen">
+      <div><h3>Slow</h3><p class="small muted">Gains stall early, roughly the bottom fifth of responders. Also what injuries or long interruptions look like.</p></div>
+      <div><h3>Median</h3><p class="small muted">A typical responder on your plan. The line to set expectations by.</p></div>
+      <div><h3>Fast</h3><p class="small muted">Roughly the top fifth of responders. Your running so far has been close to this pace.</p></div>
+    </div>
+  </section>
+
+  <section id="running" aria-labelledby="run-h">
+    <div class="section-head">
+      <div class="eyebrow disc"><i style="background: var(--run)"></i>Running</div>
+      <h2 id="run-h">Half-marathon equivalent, 2026 → 2036</h2>
+      <p class="muted">Speed = engine size (VO₂max) × how much of it you can hold (threshold) ÷ cost per km (economy). The engine grows fast in years 1–2. Threshold and economy keep improving for a decade.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><h3>HM time · faster is up</h3>
+        <div class="key"><span><i class="band" style="background: var(--run)"></i>slow–fast range</span><span><i class="ln" style="background: var(--run)"></i>median</span><span><i class="ln" style="background: var(--muted)"></i>so far</span></div>
+      </div>
+      <div class="chart" id="c-run" aria-label="Half-marathon equivalent time projected from 2026 to 2036 under slow, median and fast scenarios"></div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr class="grp"><th></th><th></th><th colspan="3">Half marathon</th><th colspan="3">10K</th><th colspan="3">Threshold pace /km</th></tr>
+          <tr><th>When</th><th>Age</th><th>slow</th><th>median</th><th>fast</th><th>slow</th><th>median</th><th>fast</th><th>slow</th><th>median</th><th>fast</th></tr>
+        </thead>
+        <tbody id="t-run"></tbody>
+      </table>
+    </div>
+    <ul class="why">
+      <li><strong>Year one is front-loaded.</strong> Untrained adults gained a median 16% VO₂max in a year, with half of it in the first 3 months. On a constant dose, nothing changed after month 6 (Scharhag-Rosenberger 2009). You're about 8 months in, which is why the curves bend now.</li>
+      <li><strong>More dose restarts it.</strong> Every "non-responder" improved once training rose by about 2 h/week (Montero &amp; Lundby 2017).</li>
+      <li><strong>Later gains come from threshold and economy.</strong> A world-class runner got 8% faster while her VO₂max <em>fell</em>, because her threshold speed rose 20% (Jones 1998). Runners doing over 100 km/week were 19% faster at the same %VO₂max, purely through economy (Scrimgeour 1986).</li>
+      <li><strong>The tail is small.</strong> World top-100 distance runners improve only 3–5% across their last five years before peaking (Haugen 2018). There's no age decline before about 35 (Tanaka &amp; Seals 2008).</li>
+    </ul>
+  </section>
+
+  <section id="lifting" aria-labelledby="lift-h">
+    <div class="section-head">
+      <div class="eyebrow disc"><i style="background: var(--strength)"></i>Lifting</div>
+      <h2 id="lift-h">Estimated 1RM, 2026 → 2036</h2>
+      <p class="muted">You're an intermediate: several years of loose lifting, focused since Nov 2025. Bench sat at 91–93 for seven months in a calorie deficit, then hit 70×11 (e1RM 96) on Oct 14 at maintenance. Squat and deadlift start below your old bests (≈120 / 150), and muscle memory should return those within months.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><div class="card-title"><h3>Bench press</h3></div><div class="chart" id="c-bench" aria-label="Bench press estimated 1RM projection"></div></div>
+      <div class="card"><div class="card-title"><h3>Squat</h3></div><div class="chart" id="c-squat" aria-label="Squat estimated 1RM projection"></div></div>
+      <div class="card"><div class="card-title"><h3>Deadlift</h3></div><div class="chart" id="c-deadlift" aria-label="Deadlift estimated 1RM projection"></div></div>
+    </div>
+    <div class="key" style="padding-inline: 4px"><span><i class="band" style="background: var(--strength)"></i>slow–fast range</span><span><i class="ln" style="background: var(--strength)"></i>median</span><span><i class="ln" style="background: var(--muted)"></i>logged e1RM</span><span><i class="ln" style="background: var(--ref)"></i>goal / "advanced" standard at 75–80 kg</span></div>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr class="grp"><th></th><th></th><th colspan="3">Bench</th><th colspan="3">Squat</th><th colspan="3">Deadlift</th></tr>
+          <tr><th>When</th><th>Age</th><th>slow</th><th>median</th><th>fast</th><th>slow</th><th>median</th><th>fast</th><th>slow</th><th>median</th><th>fast</th></tr>
+        </thead>
+        <tbody id="t-lift"></tbody>
+      </table>
+    </div>
+    <ul class="why">
+      <li><strong>Gains shrink as you get stronger.</strong> Among 1,897 powerlifters, the strongest men gained at about half the rate of the weakest (Latella 2020). World-level lifters added about 12% in their last five years before peaking, around age 35 (Solberg 2019).</li>
+      <li><strong>Responses vary wildly.</strong> Over 12 weeks, 1RM gains ranged from 0 to +250% (Hubal 2005). In a second sample, 12% were high responders and 7% low (Ahtiainen 2016).</li>
+      <li><strong>A deficit stalls muscle more than strength.</strong> Strength gains held up in a deficit, but lean-mass gains didn't. A deficit of about 500 kcal/day stopped them (Murphy &amp; Koehler 2022). Over years, strength follows muscle.</li>
+      <li><strong>Old strength comes back fast</strong> because the extra nuclei your muscle fibres built persist through time off (Staron 1991; Cumming 2024). Running costs the most on lower-body gains in men, unless sessions are kept hours apart.</li>
+    </ul>
+  </section>
+
+  <section id="tri" aria-labelledby="tri-h">
+    <div class="section-head">
+      <div class="eyebrow disc"><i style="background: var(--swim)"></i><i style="background: var(--bike)"></i><i style="background: var(--run)"></i>Swim · bike · 70.3</div>
+      <h2 id="tri-h">What the Goa 70.3 could look like</h2>
+      <p class="muted">Lower confidence. There's no FTP yet and your youth swim times aren't known. Assumptions: no wetsuit (warm sea), swim at CSS + 6 s/100 m, bike at 78% of FTP on a flat course, run = your HM × 1.10, and 6 minutes for transitions.</p>
+    </div>
+    <div class="card">
+      <div class="card-title"><h3>Race time by leg · hover a segment</h3>
+        <div class="key"><span><i class="sw" style="background: var(--swim)"></i>swim</span><span><i class="sw" style="background: var(--transit)"></i>transitions</span><span><i class="sw" style="background: var(--bike)"></i>bike</span><span><i class="sw" style="background: var(--run)"></i>run</span></div>
+      </div>
+      <div class="chart" id="c-tri" aria-label="Projected half-ironman splits by scenario for Goa 2027 and at age 27"></div>
+    </div>
+    <div class="grid2">
+      <div class="card"><div class="card-title"><h3>Swim CSS per 100 m · faster is up</h3><div class="key"><span><i class="ln" style="background: var(--swim)"></i>median</span></div></div><div class="chart" id="c-css" aria-label="Critical swim speed projection"></div></div>
+      <div class="card"><div class="card-title"><h3>Bike FTP · W/kg</h3><div class="key"><span><i class="ln" style="background: var(--bike)"></i>median</span></div></div><div class="chart" id="c-ftp" aria-label="Cycling FTP projection in watts per kilogram"></div></div>
+    </div>
+    <ul class="why">
+      <li><strong>The bike decides a 70.3.</strong> It's 50–60% of race time and the best single predictor of the total. FTP alone explained 64% of bike-split variance (70.3 systematic review, 2026). It's also your least developed leg, so it's your biggest lever.</li>
+      <li><strong>Fitness doesn't fully carry across sports.</strong> Runners hit a lower VO₂max on a bike than on a treadmill (Millet 2009). Novices respond strongly, though: about +17% in 20 weeks on average (HERITAGE). Trained riders on about 8 h/week sit near 4.2 W/kg, and hours explain most of the gap (r = 0.86).</li>
+      <li><strong>Swimming is mostly regaining.</strong> Long breaks erase recent gains but leave a floor above untrained (Mujika &amp; Padilla 2000), and your technique is intact. Masters swimmers don't decline until 35–40. A wetsuit (Norseman) is worth 3–5% (Cordain 1991).</li>
+    </ul>
+  </section>
+
+  <section id="levers" aria-labelledby="lev-h">
+    <div class="section-head">
+      <h2 id="lev-h">What moves you between curves</h2>
+      <p class="muted">Genetics sets the band. These decide where in it you land.</p>
+    </div>
+    <div class="levers">
+      <div class="lever"><h3>Dose</h3><span class="eff">≈ +1 band</span><p class="small muted">Progressive volume beats a fixed routine. Non-response disappears with about 2 h/week more training.</p></div>
+      <div class="lever"><h3>Run volume</h3><span class="eff">50–80 km/wk blocks</span><p class="small muted">Weekly km and training pace explain about 77% of marathon-time variance (Tanda 2011). The fast-curve goals need run-focused blocks.</p></div>
+      <div class="lever"><h3>Race weight</h3><span class="eff">≤ +5% speed</span><p class="small muted">80 → 76 kg of fat raises VO₂max per kg by about 5% (my arithmetic). That's the upper bound.</p></div>
+      <div class="lever"><h3>Eat to train</h3><span class="eff">muscle, long-term strength</span><p class="small muted">Long deficits block muscle gain and with it the strength ceiling. Your bench plateau is the live example.</p></div>
+      <div class="lever"><h3>Keep legs apart from runs</h3><span class="eff">squat / deadlift</span><p class="small muted">Concurrent interference mostly disappears when sessions are 2–3+ hours apart. Upper/Upper/Lower already does this.</p></div>
+      <div class="lever"><h3>Stay uninjured</h3><span class="eff">avoids the slow curve</span><p class="small muted">April's tendon reset cost about a month. Years 1–3 hold about 75% of the median gain, so consistency there matters most.</p></div>
+    </div>
+  </section>
+
+  <section id="confidence" aria-labelledby="conf-h">
+    <div class="section-head">
+      <h2 id="conf-h">How much to trust this</h2>
+      <p class="muted">The research is solid on year one and on elite athletes. The years in between (2–6) for adults who start late are inferred, not measured. These are bands for calibrating expectations, not predictions.</p>
+    </div>
+    <div class="conf">
+      <div><span class="d">Running</span><span class="dots" aria-label="medium confidence">●●<span class="off">●</span></span><span class="small muted">Baseline from real efforts. Biggest unknowns: your threshold as a % of VO₂max, and your economy. A lab test or a clean HM on Dec 20 would sharpen both.</span></div>
+      <div><span class="d">Lifting</span><span class="dots" aria-label="medium confidence">●●<span class="off">●</span></span><span class="small muted">Bench is well logged. Squat and deadlift lean on remembered old bests; re-baseline them after the first Lower block.</span></div>
+      <div><span class="d">Swim</span><span class="dots" aria-label="low confidence">●<span class="off">●●</span></span><span class="small muted">Your youth PBs would set the ceiling far better than population data. Send them over.</span></div>
+      <div><span class="d">Bike</span><span class="dots" aria-label="low confidence">●<span class="off">●●</span></span><span class="small muted">No power data at all. One ramp test replaces the whole starting estimate.</span></div>
+    </div>
+  </section>
+
+  <section id="sources" aria-labelledby="src-h">
+    <h2 id="src-h">Research behind this</h2>
+    <p class="small muted">Full notes, evidence tables and model parameters live in <span class="num">training/research/</span>: <span class="num">progression-running.md</span>, <span class="num">progression-strength.md</span>, <span class="num">progression-swim.md</span>, <span class="num">progression-cycling.md</span>.</p>
+    <ul class="sources">
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/19346973/">Scharhag-Rosenberger 2009</a>: 1-year VO₂max time course</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10484570/">Bouchard 1999</a>: HERITAGE trainability, 47% heritable</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5451738/">Montero &amp; Lundby 2017</a>: non-responders respond to more dose</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/23954885/">Stevinson &amp; Hickson 2014</a>: parkrun, +15.8% for new runners</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2375555/">Joyner &amp; Coyle 2008</a>: VO₂max × threshold × economy</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1756052/">Jones 1998</a>: threshold and economy improve while VO₂max falls</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/3699009/">Scrimgeour 1986</a>: volume, economy, performance</li>
+      <li><a href="https://www.researchgate.net/publication/262686102_Prediction_of_marathon_performance_time_on_the_basis_of_training_indices">Tanda 2011</a>: km/week + pace → marathon time</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/29543080/">Haugen 2018</a>: peak age and the last 5 years before peak</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2375571/">Tanaka &amp; Seals 2008</a>: no endurance decline before ~35</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7448836/">Latella 2020</a>: 15 years of powerlifting progression</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/30958059/">Solberg 2019</a>: powerlifting peak age 35 ± 7</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/35591809/">Steele 2023</a>: strength plateau curve, n = 14,690</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/15947721/">Hubal 2005</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5005877/">Ahtiainen 2016</a>: how much strength responses vary</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/34623696/">Murphy &amp; Koehler 2022</a>: deficit vs muscle and strength</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/1827108/">Staron 1991</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/39159314/">Cumming 2024</a>: muscle memory</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/19290675/">Millet 2009</a>: cycling vs running fitness</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7560916/">Trained vs untrained critical power, 2020</a></li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13379040/">IRONMAN 70.3 systematic review, 2026</a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/10999420/">Mujika &amp; Padilla 2000</a>: detraining</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1478803/">Cordain 1991</a>: wetsuit effect</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3781853/">Rubin 2010</a>: masters swimming decline</li>
+    </ul>
+  </section>
+
+  <footer>Model: race times = baseline ÷ (VO₂max × threshold × economy multipliers), each component rising as G·(1 − e^(−t/τ)). Lifts: muscle-memory regain, then G·(1 − e^(−t/τ)). Daniels VDOT formulas for race equivalents. Parameters and their sources are in the research notes. Built 12 Oct 2026.</footer>
+</main>
+
+<script>
+const D = {"t":[0.0,0.25,0.5,0.75,1.0,1.25,1.5,1.75,2.0,2.25,2.5,2.75,3.0,3.25,3.5,3.75,4.0,4.25,4.5,4.75,5.0,5.25,5.5,5.75,6.0,6.25,6.5,6.75,7.0,7.25,7.5,7.75,8.0,8.25,8.5,8.75,9.0,9.25,9.5,9.75,10.0],"hm":{"slow":[117.97,116.21,114.77,113.57,112.57,111.72,111.0,110.38,109.84,109.37,108.96,108.6,108.27,107.99,107.73,107.5,107.29,107.1,106.93,106.77,106.63,106.5,106.37,106.26,106.16,106.07,105.98,105.91,105.83,105.76,105.7,105.64,105.59,105.54,105.5,105.45,105.41,105.38,105.34,105.31,105.28],"median":[117.97,114.28,111.33,108.94,106.97,105.34,103.96,102.79,101.79,100.92,100.16,99.5,98.91,98.39,97.93,97.51,97.13,96.79,96.48,96.2,95.95,95.71,95.5,95.3,95.12,94.96,94.8,94.66,94.53,94.41,94.3,94.2,94.1,94.01,93.93,93.85,93.78,93.71,93.65,93.6,93.54],"fast":[117.97,112.15,107.64,104.07,101.18,98.82,96.86,95.21,93.81,92.61,91.57,90.67,89.87,89.17,88.54,87.99,87.49,87.03,86.63,86.26,85.92,85.61,85.33,85.07,84.84,84.62,84.42,84.23,84.06,83.91,83.76,83.62,83.5,83.38,83.28,83.18,83.08,83.0,82.92,82.84,82.78]},"k10":{"slow":[53.2,52.41,51.76,51.22,50.77,50.38,50.06,49.78,49.54,49.33,49.14,48.98,48.83,48.7,48.58,48.48,48.39,48.3,48.22,48.15,48.09,48.03,47.97,47.92,47.88,47.84,47.8,47.76,47.73,47.7,47.67,47.64,47.62,47.6,47.58,47.56,47.54,47.52,47.51,47.49,47.48],"median":[53.2,51.54,50.21,49.13,48.24,47.51,46.88,46.36,45.9,45.51,45.17,44.87,44.61,44.37,44.16,43.97,43.81,43.65,43.51,43.39,43.27,43.17,43.07,42.98,42.9,42.82,42.76,42.69,42.63,42.58,42.53,42.48,42.44,42.4,42.36,42.33,42.29,42.26,42.24,42.21,42.19],"fast":[53.2,50.58,48.55,46.93,45.63,44.57,43.68,42.94,42.31,41.77,41.3,40.89,40.53,40.21,39.93,39.68,39.46,39.25,39.07,38.9,38.75,38.61,38.48,38.37,38.26,38.16,38.07,37.99,37.91,37.84,37.77,37.71,37.66,37.61,37.56,37.51,37.47,37.43,37.4,37.36,37.33]},"k5":{"slow":[25.63,25.25,24.93,24.67,24.45,24.27,24.11,23.98,23.86,23.76,23.67,23.59,23.52,23.46,23.4,23.35,23.31,23.27,23.23,23.19,23.16,23.13,23.11,23.08,23.06,23.04,23.02,23.01,22.99,22.98,22.96,22.95,22.94,22.93,22.92,22.91,22.9,22.89,22.88,22.88,22.87],"median":[25.63,24.83,24.19,23.67,23.24,22.88,22.58,22.33,22.11,21.92,21.76,21.61,21.49,21.37,21.27,21.18,21.1,21.03,20.96,20.9,20.84,20.79,20.75,20.7,20.66,20.63,20.59,20.56,20.54,20.51,20.49,20.46,20.44,20.42,20.4,20.39,20.37,20.36,20.34,20.33,20.32],"fast":[25.63,24.36,23.38,22.61,21.98,21.47,21.04,20.68,20.38,20.12,19.89,19.7,19.52,19.37,19.24,19.11,19.01,18.91,18.82,18.74,18.66,18.6,18.54,18.48,18.43,18.38,18.34,18.3,18.26,18.23,18.2,18.17,18.14,18.11,18.09,18.07,18.05,18.03,18.01,18.0,17.98]},"mar":{"slow":[243.7,240.1,237.1,234.6,232.5,230.8,229.3,228.0,226.9,225.9,225.1,224.3,223.7,223.1,222.6,222.1,221.6,221.3,220.9,220.6,220.3,220.0,219.8,219.5,219.3,219.1,218.9,218.8,218.6,218.5,218.4,218.2,218.1,218.0,217.9,217.9,217.8,217.7,217.6,217.6,217.5],"median":[243.7,236.1,230.0,225.1,221.0,217.6,214.8,212.3,210.3,208.5,206.9,205.5,204.3,203.3,202.3,201.4,200.7,200.0,199.3,198.7,198.2,197.7,197.3,196.9,196.5,196.2,195.9,195.6,195.3,195.0,194.8,194.6,194.4,194.2,194.0,193.9,193.7,193.6,193.5,193.4,193.2],"fast":[243.7,231.7,222.4,215.0,209.0,204.1,200.1,196.7,193.8,191.3,189.2,187.3,185.7,184.2,182.9,181.8,180.7,179.8,179.0,178.2,177.5,176.9,176.3,175.7,175.3,174.8,174.4,174.0,173.7,173.3,173.0,172.8,172.5,172.3,172.0,171.8,171.6,171.5,171.3,171.1,171.0]},"thr":{"slow":[5.398,5.317,5.251,5.196,5.15,5.112,5.079,5.05,5.026,5.004,4.985,4.969,4.954,4.941,4.929,4.918,4.909,4.9,4.892,4.885,4.879,4.873,4.867,4.862,4.857,4.853,4.849,4.846,4.842,4.839,4.836,4.834,4.831,4.829,4.827,4.825,4.823,4.821,4.82,4.818,4.817],"median":[5.398,5.229,5.094,4.984,4.894,4.82,4.757,4.703,4.657,4.617,4.583,4.552,4.526,4.502,4.48,4.461,4.444,4.429,4.415,4.402,4.39,4.379,4.37,4.361,4.352,4.345,4.338,4.331,4.325,4.32,4.315,4.31,4.305,4.301,4.298,4.294,4.291,4.288,4.285,4.282,4.28],"fast":[5.398,5.132,4.925,4.761,4.629,4.521,4.432,4.356,4.292,4.237,4.19,4.148,4.112,4.08,4.051,4.026,4.003,3.982,3.964,3.947,3.931,3.917,3.904,3.892,3.882,3.872,3.862,3.854,3.846,3.839,3.832,3.826,3.82,3.815,3.81,3.806,3.801,3.798,3.794,3.79,3.787]},"vdot":{"slow":[37.2,37.9,38.4,38.9,39.3,39.7,40.0,40.2,40.5,40.7,40.8,41.0,41.1,41.3,41.4,41.5,41.6,41.7,41.7,41.8,41.9,41.9,42.0,42.0,42.1,42.1,42.2,42.2,42.3,42.3,42.3,42.3,42.4,42.4,42.4,42.4,42.4,42.5,42.5,42.5,42.5],"median":[37.2,38.6,39.8,40.8,41.7,42.5,43.1,43.7,44.2,44.7,45.1,45.4,45.7,46.0,46.3,46.5,46.7,46.9,47.1,47.2,47.4,47.5,47.6,47.8,47.9,48.0,48.1,48.1,48.2,48.3,48.4,48.4,48.5,48.5,48.6,48.6,48.7,48.7,48.7,48.8,48.8],"fast":[37.2,39.5,41.4,43.1,44.5,45.8,46.9,47.8,48.6,49.4,50.0,50.6,51.2,51.6,52.0,52.4,52.8,53.1,53.4,53.7,53.9,54.1,54.3,54.5,54.7,54.9,55.0,55.2,55.3,55.4,55.5,55.6,55.7,55.8,55.9,56.0,56.1,56.1,56.2,56.3,56.3]},"bench":{"slow":[96.0,96.9,97.7,98.5,99.2,99.8,100.3,100.8,101.3,101.7,102.1,102.4,102.7,103.0,103.2,103.5,103.7,103.8,104.0,104.2,104.3,104.4,104.5,104.6,104.7,104.8,104.9,105.0,105.0,105.1,105.1,105.2,105.2,105.2,105.3,105.3,105.3,105.4,105.4,105.4,105.4],"median":[96.0,97.8,99.5,101.0,102.3,103.6,104.7,105.7,106.6,107.4,108.1,108.8,109.4,110.0,110.5,110.9,111.3,111.7,112.0,112.3,112.6,112.8,113.1,113.3,113.5,113.6,113.8,113.9,114.0,114.1,114.2,114.3,114.4,114.5,114.6,114.6,114.7,114.7,114.8,114.8,114.8],"fast":[96.0,98.9,101.6,104.0,106.1,108.1,109.9,111.5,112.9,114.2,115.4,116.5,117.5,118.3,119.1,119.9,120.5,121.1,121.6,122.1,122.6,123.0,123.3,123.6,123.9,124.2,124.4,124.7,124.9,125.0,125.2,125.3,125.5,125.6,125.7,125.8,125.9,126.0,126.0,126.1,126.2]},"squat":{"slow":[90.0,94.0,97.0,99.3,101.1,102.5,103.5,104.4,105.1,105.7,106.2,106.6,106.9,107.2,107.5,107.7,107.9,108.1,108.3,108.5,108.6,108.7,108.8,109.0,109.1,109.1,109.2,109.3,109.4,109.4,109.5,109.5,109.6,109.6,109.7,109.7,109.8,109.8,109.8,109.8,109.9],"median":[90.0,103.4,112.3,118.3,122.5,125.5,127.8,129.6,131.1,132.3,133.3,134.3,135.1,135.8,136.5,137.1,137.7,138.2,138.6,139.1,139.5,139.8,140.2,140.5,140.8,141.0,141.3,141.5,141.7,141.9,142.0,142.2,142.3,142.5,142.6,142.7,142.8,142.9,143.0,143.1,143.1],"fast":[90.0,108.3,119.0,125.8,130.3,133.8,136.5,138.9,140.9,142.7,144.4,145.9,147.3,148.6,149.7,150.8,151.8,152.7,153.6,154.3,155.0,155.7,156.3,156.8,157.4,157.8,158.3,158.6,159.0,159.3,159.7,159.9,160.2,160.4,160.7,160.9,161.0,161.2,161.4,161.5,161.7]},"deadlift":{"slow":[125.0,126.4,127.6,128.5,129.4,130.1,130.7,131.2,131.7,132.1,132.5,132.8,133.1,133.4,133.6,133.9,134.1,134.3,134.4,134.6,134.7,134.9,135.0,135.1,135.2,135.3,135.4,135.5,135.6,135.6,135.7,135.8,135.8,135.9,135.9,135.9,136.0,136.0,136.0,136.1,136.1],"median":[125.0,137.0,145.1,150.8,154.9,158.0,160.5,162.4,164.1,165.5,166.8,167.9,168.9,169.8,170.6,171.4,172.1,172.7,173.3,173.8,174.3,174.8,175.2,175.6,175.9,176.3,176.6,176.8,177.1,177.3,177.5,177.7,177.9,178.1,178.2,178.4,178.5,178.6,178.7,178.8,178.9],"fast":[125.0,141.4,151.3,157.8,162.5,166.1,169.1,171.7,174.0,176.1,178.0,179.7,181.3,182.7,184.1,185.3,186.5,187.5,188.5,189.3,190.2,190.9,191.6,192.2,192.8,193.3,193.8,194.3,194.7,195.1,195.4,195.8,196.1,196.3,196.6,196.8,197.0,197.2,197.4,197.6,197.7]},"css":{"slow":[138.0,136.1,134.5,133.1,132.0,131.0,130.1,129.4,128.9,128.4,127.9,127.6,127.3,127.0,126.8,126.6,126.4,126.3,126.2,126.1,126.0,126.0,125.9,125.8,125.8,125.8,125.7,125.7,125.7,125.7,125.7,125.7,125.6,125.6,125.6,125.6,125.6,125.6,125.6,125.6,125.6],"median":[138.0,134.5,131.5,129.0,126.9,125.1,123.6,122.3,121.2,120.3,119.5,118.9,118.3,117.8,117.4,117.1,116.8,116.6,116.4,116.2,116.0,115.9,115.8,115.7,115.6,115.6,115.5,115.5,115.4,115.4,115.4,115.4,115.3,115.3,115.3,115.3,115.3,115.3,115.3,115.3,115.3],"fast":[138.0,132.9,128.6,125.0,121.9,119.3,117.1,115.2,113.6,112.3,111.1,110.2,109.4,108.7,108.1,107.6,107.2,106.8,106.5,106.3,106.1,105.9,105.7,105.6,105.5,105.4,105.3,105.2,105.2,105.1,105.1,105.1,105.0,105.0,105.0,105.0,105.0,104.9,104.9,104.9,104.9]},"ftp":{"slow":[2.4,2.47,2.53,2.59,2.64,2.68,2.72,2.75,2.78,2.81,2.83,2.85,2.87,2.88,2.9,2.91,2.92,2.93,2.94,2.94,2.95,2.96,2.96,2.97,2.97,2.97,2.98,2.98,2.98,2.98,2.99,2.99,2.99,2.99,2.99,2.99,2.99,2.99,2.99,3.0,3.0],"median":[2.4,2.53,2.64,2.75,2.83,2.91,2.98,3.04,3.1,3.15,3.19,3.22,3.26,3.29,3.31,3.33,3.35,3.37,3.39,3.4,3.41,3.42,3.43,3.44,3.45,3.46,3.46,3.47,3.47,3.47,3.48,3.48,3.48,3.49,3.49,3.49,3.49,3.49,3.49,3.5,3.5],"fast":[2.4,2.6,2.77,2.93,3.06,3.18,3.29,3.38,3.46,3.53,3.6,3.66,3.71,3.75,3.79,3.82,3.85,3.88,3.9,3.92,3.94,3.96,3.97,3.99,4.0,4.01,4.01,4.02,4.03,4.04,4.04,4.05,4.05,4.05,4.06,4.06,4.06,4.06,4.07,4.07,4.07]},"tri":{"slow":[{"t":1.1,"swim":43.7,"bike":167.2,"run":123.8,"total":340.8},{"t":3,"swim":42.2,"bike":161.9,"run":119.1,"total":329.2},{"t":5,"swim":41.8,"bike":160.1,"run":117.3,"total":325.2},{"t":8,"swim":41.7,"bike":159.3,"run":116.1,"total":323.1},{"t":10,"swim":41.7,"bike":159.2,"run":115.8,"total":322.6}],"median":[{"t":1.1,"swim":42.1,"bike":162.6,"run":117.7,"total":328.4},{"t":3,"swim":39.4,"bike":154.1,"run":108.8,"total":308.3},{"t":5,"swim":38.6,"bike":151.4,"run":105.5,"total":301.6},{"t":8,"swim":38.4,"bike":150.2,"run":103.5,"total":298.2},{"t":10,"swim":38.4,"bike":150.0,"run":102.9,"total":297.3}],"fast":[{"t":1.1,"swim":40.5,"bike":157.8,"run":111.3,"total":315.6},{"t":3,"swim":36.5,"bike":146.8,"run":98.9,"total":288.2},{"t":5,"swim":35.5,"bike":143.4,"run":94.5,"total":279.4},{"t":8,"swim":35.2,"bike":142.0,"run":91.9,"total":275.0},{"t":10,"swim":35.1,"bike":141.7,"run":91.1,"total":273.9}]}};
+const T0 = 2026 + 9.5/12, AGE0 = 22.43;
+const S = ['slow','median','fast'];
+
+function hms(min){ const s=Math.round(min*60), h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return h? `${h}:${String(m).padStart(2,'0')}:${String(x).padStart(2,'0')}` : `${m}:${String(x).padStart(2,'0')}`; }
+function hm(min){ const s=Math.round(min*60), h=Math.floor(s/3600), m=Math.round(s%3600/60); return `${h}:${String(m).padStart(2,'0')}`; }
+function pace(minPerKm){ const s=Math.round(minPerKm*60); return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`; }
+function css(sec){ const s=Math.round(sec); return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`; }
+function when(t){ const y=T0+t; const yr=Math.floor(y+1e-6); const mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Math.floor((y-yr)*12+1e-6)]; return `${mo} ${yr} · age ${Math.floor(AGE0+t)}`; }
+const NS='http://www.w3.org/2000/svg';
+function el(tag, attrs, parent){ const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k, attrs[k]); if(parent) parent.appendChild(e); return e; }
+function cssVar(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+
+function niceTicks(lo, hi, n){
+  const span=hi-lo, step0=span/n, mag=Math.pow(10,Math.floor(Math.log10(step0)));
+  const step=[1,2,2.5,5,10].map(f=>f*mag).find(s=>s>=step0) || 10*mag;
+  const out=[]; for(let v=Math.ceil(lo/step)*step; v<=hi+1e-9; v+=step) out.push(+v.toFixed(6)); return out;
+}
+
+function fanChart(id, cfg){
+  const host=document.getElementById(id);
+  const tip=document.createElement('div'); tip.className='tip'; tip.hidden=true; host.appendChild(tip);
+  let svg=null, idx=null;
+  function draw(){
+    if(svg) svg.remove();
+    const W=Math.max(280, host.clientWidth), H=cfg.height || 300;
+    const m={l:52, r:cfg.right || 92, t:14, b:40};
+    svg=el('svg',{viewBox:`0 0 ${W} ${H}`, tabindex:0, role:'img', 'aria-label':host.getAttribute('aria-label')+'. Use left and right arrow keys to read values.'});
+    host.insertBefore(svg, tip);
+    const xs=D.t, xmin=cfg.xmin ?? 0, xmax=10;
+    const all=[...S.flatMap(s=>cfg.data[s]), ...(cfg.history||[]).map(h=>h.v), ...(cfg.refs||[]).flatMap(r=>r.band? r.band : [r.v])];
+    let lo=Math.min(...all), hi=Math.max(...all); const pad=(hi-lo)*0.06; lo-=pad; hi+=pad;
+    if(cfg.yDomain){ lo=cfg.yDomain[0]; hi=cfg.yDomain[1]; }
+    const X=t=> m.l + (t-xmin)/(xmax-xmin)*(W-m.l-m.r);
+    const Y=v=> cfg.invert ? m.t + (v-lo)/(hi-lo)*(H-m.t-m.b) : H-m.b - (v-lo)/(hi-lo)*(H-m.t-m.b);
+    // grid + y ticks
+    const g=el('g',{},svg);
+    niceTicks(lo,hi,cfg.ticks||5).forEach(v=>{ el('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),stroke:'var(--grid)','stroke-width':1},g); const tx=el('text',{x:m.l-8,y:Y(v)+3.5,'text-anchor':'end'},g); tx.textContent=cfg.yFmt(v); });
+    // x ticks
+    const xt=[...(xmin<0?[xmin]:[]),0,2,4,6,8,10];
+    xt.forEach(t=>{ const x=X(t); el('line',{x1:x,x2:x,y1:H-m.b,y2:H-m.b+4,stroke:'var(--grid)'},g);
+      if(t<0) return;
+      const a=el('text',{x, y:H-m.b+16,'text-anchor':'middle'},g); a.textContent=String(Math.floor(T0+t+1e-6));
+      const b=el('text',{x, y:H-m.b+30,'text-anchor':'middle', style:'fill:var(--faint)'},g); b.textContent='age '+Math.floor(AGE0+t); });
+    el('line',{x1:m.l,x2:W-m.r,y1:H-m.b,y2:H-m.b,stroke:'var(--border)'},g);
+    // reference lines / bands
+    (cfg.refs||[]).forEach(r=>{
+      if(r.band){ el('rect',{x:m.l,width:W-m.l-m.r,y:Math.min(Y(r.band[0]),Y(r.band[1])),height:Math.abs(Y(r.band[0])-Y(r.band[1])),fill:'var(--ref)','fill-opacity':0.10},g);
+        const t=el('text',{x:m.l+6,y:Math.min(Y(r.band[0]),Y(r.band[1]))-4,class:'reflab'},g); t.textContent=r.label; }
+      else { el('line',{x1:m.l,x2:W-m.r,y1:Y(r.v),y2:Y(r.v),stroke:'var(--ref)','stroke-width':1,'stroke-opacity':0.7},g);
+        const t=el('text',{x:m.l+6,y:Y(r.v)-4,class:'reflab'},g); t.textContent=r.label; }
+    });
+    const col=cfg.color;
+    const path=arr=> arr.map((v,i)=>`${i?'L':'M'}${X(xs[i]).toFixed(1)},${Y(v).toFixed(1)}`).join('');
+    const band=path(cfg.data.fast)+cfg.data.slow.slice().reverse().map((v,i,a)=>`L${X(xs[a.length-1-i]).toFixed(1)},${Y(v).toFixed(1)}`).join('')+'Z';
+    el('path',{d:band,fill:col,'fill-opacity':0.13,stroke:'none'},svg);
+    ['slow','fast'].forEach(s=> el('path',{d:path(cfg.data[s]),fill:'none',stroke:col,'stroke-width':1,'stroke-opacity':0.6,'stroke-linejoin':'round'},svg));
+    el('path',{d:path(cfg.data.median),fill:'none',stroke:col,'stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'},svg);
+    // history
+    if(cfg.history && cfg.history.length){
+      const hp=cfg.history.map((h,i)=>`${i?'L':'M'}${X(h.t)},${Y(h.v)}`).join('');
+      el('path',{d:hp,fill:'none',stroke:'var(--muted)','stroke-width':1.5},svg);
+      cfg.history.forEach(h=>{ el('circle',{cx:X(h.t),cy:Y(h.v),r:3.5,fill:'var(--muted)',stroke:'var(--surface)','stroke-width':2},svg); });
+      if(cfg.historyLabel){ const h0=cfg.history[0]; const tl=el('text',{x:X(h0.t)+2,y:Y(h0.v)+(cfg.invert?-10:16)},svg); tl.textContent=cfg.historyLabel; }
+    }
+    // end markers + labels (leader lines if nudged)
+    const n=xs.length-1; const ends=['fast','median','slow'].map(s=>({s,v:cfg.data[s][n],y:Y(cfg.data[s][n])})).sort((a,b)=>a.y-b.y);
+    for(let i=1;i<ends.length;i++){ if(ends[i].ly===undefined) ends[i].ly=ends[i].y; }
+    ends[0].ly=ends[0].y; for(let i=1;i<ends.length;i++){ ends[i].ly=Math.max(ends[i].y, ends[i-1].ly+14); }
+    ends.forEach(e=>{
+      el('circle',{cx:X(10),cy:e.y,r:e.s==='median'?4.5:3.5,fill:col,stroke:'var(--surface)','stroke-width':2},svg);
+      if(Math.abs(e.ly-e.y)>3) el('line',{x1:X(10)+5,y1:e.y,x2:X(10)+10,y2:e.ly,stroke:'var(--faint)','stroke-width':1},svg);
+      const t=el('text',{x:X(10)+12,y:e.ly+4,class:e.s==='median'?'end':''},svg); t.textContent=`${e.s} ${cfg.fmt(e.v)}`;
+    });
+    // crosshair layer
+    const ch=el('line',{y1:m.t,y2:H-m.b,stroke:'var(--faint)','stroke-width':1,visibility:'hidden'},svg);
+    const hl=S.map(s=>el('circle',{r:4,fill:col,stroke:'var(--surface)','stroke-width':2,visibility:'hidden'},svg));
+    const hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent'},svg);
+    function show(i){
+      idx=i; const x=X(xs[i]);
+      ch.setAttribute('x1',x); ch.setAttribute('x2',x); ch.setAttribute('visibility','visible');
+      S.forEach((s,k)=>{ hl[k].setAttribute('cx',x); hl[k].setAttribute('cy',Y(cfg.data[s][i])); hl[k].setAttribute('visibility','visible'); });
+      tip.replaceChildren();
+      const w=document.createElement('div'); w.className='when'; w.textContent=when(xs[i]) + (xs[i]>0?` · +${xs[i]} y`:''); tip.appendChild(w);
+      ['fast','median','slow'].forEach(s=>{ const r=document.createElement('div'); r.className='row';
+        const st=document.createElement('strong'); st.textContent=cfg.fmt(cfg.data[s][i]);
+        const em=document.createElement('em'); const k=document.createElement('i'); k.style.background=col; k.style.opacity=s==='median'?1:0.6; em.appendChild(k); em.appendChild(document.createTextNode(s));
+        r.appendChild(st); r.appendChild(em); tip.appendChild(r); });
+      tip.hidden=false;
+      const scale=host.clientWidth/W; const px=x*scale; const tw=tip.offsetWidth;
+      tip.style.left = (px+12+tw > host.clientWidth ? px-12-tw : px+12) + 'px';
+      tip.style.top = (m.t*scale) + 'px';
+    }
+    function hide(){ ch.setAttribute('visibility','hidden'); hl.forEach(h=>h.setAttribute('visibility','hidden')); tip.hidden=true; }
+    function nearest(evt){ const r=svg.getBoundingClientRect(); const x=(evt.clientX-r.left)*(W/r.width); let best=0,bd=1e9; xs.forEach((t,i)=>{ const d=Math.abs(X(t)-x); if(d<bd){bd=d;best=i;} }); return best; }
+    hit.addEventListener('pointermove',e=>show(nearest(e)));
+    hit.addEventListener('pointerdown',e=>show(nearest(e)));
+    hit.addEventListener('pointerleave',hide);
+    svg.addEventListener('focus',()=>show(idx ?? 4));
+    svg.addEventListener('blur',hide);
+    svg.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){ show(Math.min(xs.length-1,(idx??0)+1)); e.preventDefault(); } if(e.key==='ArrowLeft'){ show(Math.max(0,(idx??0)-1)); e.preventDefault(); } if(e.key==='Escape') hide(); });
+  }
+  draw();
+  if('ResizeObserver' in window){ let w=host.clientWidth; new ResizeObserver(()=>{ if(Math.abs(host.clientWidth-w)>2){ w=host.clientWidth; draw(); } }).observe(host); }
+}
+
+function triChart(id){
+  const host=document.getElementById(id);
+  const tip=document.createElement('div'); tip.className='tip'; tip.hidden=true; host.appendChild(tip);
+  let svg=null;
+  const groups=[{label:'Goa 70.3 · Nov 2027 (age 23)', i:0},{label:'Same race at 27 · 2031', i:2}];
+  const legs=[['swim','var(--swim)'],['trans','var(--transit)'],['bike','var(--bike)'],['run','var(--run)']];
+  function draw(){
+    if(svg) svg.remove();
+    const W=Math.max(300, host.clientWidth); const bar=22, rowGap=12, groupGap=34, labW=Math.min(70, W*0.16);
+    const H=24 + groups.length*(3*bar+2*rowGap) + (groups.length-1)*groupGap + 52;
+    const m={l:labW, r:64, t:22, b:30};
+    svg=el('svg',{viewBox:`0 0 ${W} ${H}`},null); host.insertBefore(svg, tip);
+    const maxMin=420; const X=v=> m.l + v/maxMin*(W-m.l-m.r);
+    for(let h=0; h<=7; h++){ const x=X(h*60); el('line',{x1:x,x2:x,y1:m.t,y2:H-m.b,stroke:'var(--grid)'},svg); const t=el('text',{x,y:H-m.b+16,'text-anchor':'middle'},svg); t.textContent=h+'h'; }
+    let y=m.t;
+    groups.forEach((gp,gi)=>{
+      const head=el('text',{x:0,y:y-8,style:'fill:var(--text);font-weight:500'},svg); head.textContent=gp.label;
+      ['fast','median','slow'].forEach(s=>{
+        const r=D.tri[s][gp.i]; const segs=[['swim',r.swim],['trans',6],['bike',r.bike],['run',r.run]];
+        const lab=el('text',{x:0,y:y+bar/2+4},svg); lab.textContent=s;
+        let acc=0;
+        segs.forEach(([k,v],j)=>{
+          const x0=X(acc), x1=X(acc+v); const w=Math.max(1,x1-x0-(j<segs.length-1?2:0)); const color=legs.find(l=>l[0]===k)[1];
+          let d;
+          if(j===segs.length-1){ const rr=4; d=`M${x0},${y}H${x0+w-rr}Q${x0+w},${y} ${x0+w},${y+rr}V${y+bar-rr}Q${x0+w},${y+bar} ${x0+w-rr},${y+bar}H${x0}Z`; }
+          else d=`M${x0},${y}H${x0+w}V${y+bar}H${x0}Z`;
+          const p=el('path',{d,fill:color,tabindex:0},svg);
+          const name={swim:'Swim 1.9 km',trans:'Transitions',bike:'Bike 90 km',run:'Run 21.1 km'}[k];
+          const txt=hms(v);
+          if(w>58 && k!=='trans'){ const tl=el('text',{x:x0+w/2,y:y+bar/2+4,'text-anchor':'middle',style:'fill:var(--on-fill);font-weight:500;pointer-events:none'},svg); tl.textContent=txt; }
+          const showTip=(evt)=>{ tip.replaceChildren(); const w1=document.createElement('div'); w1.className='when'; w1.textContent=`${gp.label} · ${s}`; tip.appendChild(w1);
+            const row=document.createElement('div'); row.className='row'; const st=document.createElement('strong'); st.textContent=txt; const em=document.createElement('em'); const kk=document.createElement('i'); kk.style.background=color; em.appendChild(kk); em.appendChild(document.createTextNode(name)); row.appendChild(st); row.appendChild(em); tip.appendChild(row);
+            tip.hidden=false; const scale=host.clientWidth/W; const px=(x0+w/2)*scale; const tw=tip.offsetWidth; tip.style.left=Math.max(0,Math.min(host.clientWidth-tw, px-tw/2))+'px'; tip.style.top=((y+bar+6)*scale)+'px';
+            p.setAttribute('fill-opacity',0.8); };
+          p.addEventListener('pointermove',showTip); p.addEventListener('focus',showTip);
+          const off=()=>{ tip.hidden=true; p.setAttribute('fill-opacity',1); }; p.addEventListener('pointerleave',off); p.addEventListener('blur',off);
+          acc+=v;
+        });
+        const tot=el('text',{x:X(acc)+8,y:y+bar/2+4,class:'end'},svg); tot.textContent=hms(r.total);
+        y+=bar+rowGap;
+      });
+      y+=groupGap-rowGap;
+    });
+  }
+  draw();
+  if('ResizeObserver' in window){ let w=host.clientWidth; new ResizeObserver(()=>{ if(Math.abs(host.clientWidth-w)>2){ w=host.clientWidth; draw(); } }).observe(host); }
+}
+
+// ---- running ----
+fanChart('c-run',{ data:D.hm, color:'var(--run)', invert:true, xmin:-0.6, height:320,
+  yFmt:v=>hm(v), fmt:v=>hms(v), ticks:6,
+  history:[{t:-0.58,v:148.2},{t:0,v:D.hm.median[0]}],
+  historyLabel:'Mar 10K', refs:[{v:120,label:'sub-2:00'},{v:105,label:'sub-1:45'},{v:85,label:'sub-1:25 · 95th-pct goal'}] });
+// ---- lifting ----
+const benchHist=[93.3,91,91,93,93.3,91,93.3,95.7].map((v,i)=>({t:-0.58+i*(0.58/7),v}));
+fanChart('c-bench',{ data:D.bench, color:'var(--strength)', height:240, right:78, xmin:-0.6, yFmt:v=>v, fmt:v=>Math.round(v)+' kg', ticks:4,
+  history:benchHist, historyLabel:'Hevy log', refs:[{v:100,label:'100 kg goal'},{band:[117,124],label:'advanced 117–124'}] });
+fanChart('c-squat',{ data:D.squat, color:'var(--strength)', height:240, right:78, xmin:-0.6, yFmt:v=>v, fmt:v=>Math.round(v)+' kg', ticks:4,
+  history:[{t:-0.33,v:87.5}], refs:[{v:120,label:'old best ~120'},{band:[159,168],label:'advanced 159–168'}] });
+fanChart('c-deadlift',{ data:D.deadlift, color:'var(--strength)', height:240, right:78, yFmt:v=>v, fmt:v=>Math.round(v)+' kg', ticks:4,
+  refs:[{v:150,label:'old best ~150'},{band:[186,196],label:'advanced 186–196'}] });
+// ---- swim & bike ----
+fanChart('c-css',{ data:D.css, color:'var(--swim)', invert:true, height:230, right:84, yFmt:v=>css(v), fmt:v=>css(v), ticks:4 });
+fanChart('c-ftp',{ data:D.ftp, color:'var(--bike)', height:230, right:84, yFmt:v=>v.toFixed(1), fmt:v=>v.toFixed(2), ticks:4,
+  refs:[{v:3.19,label:'active, cycling-untrained · 3.2'},{v:4.17,label:'trained ~8 h/wk · 4.2'}] });
+triChart('c-tri');
+
+// ---- tables ----
+const MIL=[[0,'Now'],[1,'+1 y'],[2,'+2 y'],[3,'+3 y'],[5,'+5 y'],[8,'+8 y'],[10,'+10 y']];
+const ix=t=>D.t.findIndex(x=>Math.abs(x-t)<1e-6);
+function fill(id, cols){
+  const tb=document.getElementById(id);
+  MIL.forEach(([t,lab])=>{ const i=ix(t); const tr=document.createElement('tr');
+    const c0=document.createElement('td'); c0.textContent=`${lab} · ${Math.floor(T0+t)}`; tr.appendChild(c0);
+    const c1=document.createElement('td'); c1.className='dim'; c1.textContent=Math.floor(AGE0+t); tr.appendChild(c1);
+    cols.forEach(([key,f])=> S.forEach(s=>{ const td=document.createElement('td'); td.className= s==='median'?'mid':'dim'; td.textContent=f(D[key][s][i]); tr.appendChild(td); }));
+    tb.appendChild(tr); });
+}
+fill('t-run',[['hm',hms],['k10',hms],['thr',pace]]);
+fill('t-lift',[['bench',v=>Math.round(v)],['squat',v=>Math.round(v)],['deadlift',v=>Math.round(v)]]);
+</script>

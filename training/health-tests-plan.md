@@ -85,3 +85,39 @@ Skip: foreign mail-in kits (since Mar 2024 an export NOC is required), Strand Nu
 
 - Resting BP once or twice a year (home cuff or pharmacy).
 - Family history: no cancer; BP/cholesterol issues alongside poor lifestyle. Ask about early heart events (<55), very high cholesterol and blood disorders.
+
+## Prep for the May 6 Pro test (agreed Oct 19 2026)
+
+The test lands 11 days after the Feb 15 – Apr 25 cut (76–77 kg, 12–13% fat) and at the start of the 70.3 base block (1.4). The real levers are below; test-day prep only makes the measurement accurate.
+
+**Real levers (Dec → Apr):**
+- **Iron/haemoglobin:** get ferritin >50 and Hb back toward ~15.5 (14.1 in Sep). More haemoglobin carries more oxygen, the biggest single VO2max lever available.
+- **The cut, done right:** 0.5–0.7%/wk, protein 150–180 g, keep lifting heavy. Relative VO2max (ml/kg/min) rises as weight falls. Don't cut faster to chase numbers (REDs risk, bone, iron).
+- **Aerobic fitness:** Coach runs + Z2 bike volume (raises VT1); a weekly VO2max session in Mar–Apr, e.g. the bike 4×4 (raises VO2max/VT2). Coach owns the run sessions.
+- **HbA1c:** iron fix, post-meal walks, carbs with protein and fibre, sleep.
+- **Strength/power:** keep squat, DL and bench heavy through the cut; deadlifts and heavy holds for grip; jumps/sprints for the force-plate test (100 m baseline Apr 2027).
+- **Mobility:** hip flexor work, ankle dorsiflexion (motion analysis).
+- **Bone:** heavy lifting + impact, adequate energy, calcium/vitamin D. Little change expected in 6 months; just don't harm it.
+- **Teeth:** dental cleaning in Mar–Apr; rinse with water after gels/sports drinks/energy drinks; fluoride toothpaste.
+- **Hearing:** keep headphone volume moderate; earplugs at loud events.
+- **Sleep:** the 7.5 h target. It affects cognition, HbA1c, BP and the CPET.
+
+**Final 2 weeks:**
+- Maintenance calories from Apr 26 (no deficit going into the CPET).
+- Nothing new: no new supplements, foods or training.
+- Creatine: keep taking it, and tell the doctor (it explains creatinine/eGFR and some of the lean mass).
+
+**Final 72 h:**
+- Easy training only: no long run, no heavy lifting, no intervals. Hard sessions raise CK, AST/ALT, CRP and BP, and blunt the CPET.
+- No alcohol. Sleep 8 h.
+- Biotin supplements, if any, off 72 h (they interfere with thyroid/hormone assays).
+- Avoid very loud noise for 24–48 h (temporary hearing shift).
+- Day before: normal carbs (full glycogen for the CPET), hydrate, caffeine cutoff noon.
+
+**Test morning:**
+- Fasted 10–12 h; water OK.
+- No caffeine until after RMR and BP.
+- Iron dose after the blood draw.
+- Ask for this order: bloods → RMR → DEXA/vitals/BP → ECG → cognition → PFT/hearing/eyes → strength → **CPET last**.
+- Bring running shoes. Wear the FR970 (+ armband if bought) during the CPET to compare its HR and zones with the lab's.
+- DEXA conditions: morning, fasted, bladder empty, no workout. Match the December scan as closely as possible.

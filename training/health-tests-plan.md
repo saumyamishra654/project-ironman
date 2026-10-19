@@ -56,14 +56,16 @@ Plan: buy sequencing **with raw data** and analyse it together:
 - APOE, only if opted in
 - ancestry
 
+Raw-data prices are from the store's variant data (Oct 19 2026); confirm on a call.
+
 **Rules:**
 - Get **FASTQ + BAM + VCF** and the QC metrics. Download on day one and keep two copies.
 - Confirm any actionable hit at a clinical lab (Strand / MedGenome) before acting on it.
 
 | Option | Price | Notes |
 |---|---|---|
-| Mapmygenome whole exome + raw data | ₹26–31k | ≥100× expected. FASTQ deleted 1 month after the report |
-| Mapmygenome whole genome 30× + raw data | ₹89k | Makes Strand GHI unnecessary |
+| **Mapmygenome whole exome + raw data (chosen direction)** | **₹31k** (₹26k without raw data) | ≥100× expected. FASTQ deleted 1 month after the report |
+| Mapmygenome whole genome 30× + raw data | ₹99k (₹89k without raw data) | Adds structural variants, alpha-thal deletions, CYP2D6/CYP2C19*17, non-coding |
 | Strand Genomic Health Insights | ₹18k | Clinical-grade alternative if no raw-data route; CAP + NABL |
 
 Skip: foreign mail-in kits (since Mar 2024 an export NOC is required), Strand NutriDNA, SNP chips, fitness/diet/sleep genes, MTHFR, HFE, epigenetic clocks, multi-cancer blood tests, full-body MRI.

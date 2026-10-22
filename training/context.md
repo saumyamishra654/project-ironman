@@ -36,6 +36,7 @@ This file is the live state document. Update it after every session or at minimu
 
 | Date | Milestone |
 |------|-----------|
+| 2026-10-22 | Bench **85×1**: heaviest bench in Hevy (matches the untracked Mar 1RM test), done on a poor-sleep, post-swim day |
 | 2026-10-14 | Bench **70×11** (e1RM **95.7**, first since March) · iso-lateral row 130×8 · cable OH triceps 50×12 · weighted pull-up +15×5 ×2 · DB press 50×10 (= all-time best) · 9 Hevy PRs |
 | 2026-10-06 | Feet-up bench **70×10** (e1RM 93) · DB lateral raise 25×16 · triceps pushdown 55×13 |
 | 2026-10-07 | VO₂max **46.7** (from 38.9 on Jul 8) |

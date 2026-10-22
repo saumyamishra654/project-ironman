@@ -6,7 +6,7 @@
 
 **Read order for coaching:** this file (background) → `context.md` (live weekly state) → `plan-him.json` (the current HIM plan, machine-readable) → `worklog.md` (session history) → `lifting.json` (strength history). (`plan.md` / `database.json` are archived pre-pivot legacy — see repo-root `CLAUDE.md`.)
 
-**Data sources:** Garmin (via MCP — cardio, HR, sleep, VO₂max, training status) + `training/hevy-export.csv` (manual Hevy export — every lifting set/rep/weight/RPE, **61 lifting sessions Mar 1 – Aug 27 2026**, 105 exercises, ~445 t cumulative tonnage; re-export periodically to refresh). Re-run `python3 training/build_lifting.py` after each fresh export to regenerate `training/lifting.json`, which drives the **Lifting dashboard page** (`lifting.html`).
+**Data sources:** Garmin (via MCP — cardio, HR, sleep, VO₂max, training status) + `training/hevy-export.csv` (manual Hevy export — every lifting set/rep/weight/RPE, **61 lifting sessions Mar 1 – Aug 27 2026**, 105 exercises, ~445 t cumulative tonnage; **standard flow from Oct 22 2026: after each lift run `python3 training/hevy_pull.py`**, which pulls the latest workout from the public Hevy profile `saumya654` (only the most recent workout is visible without login), prepends it to the CSV, dedupes, warns on a missed workout via `training/hevy-sync.json`, and rebuilds the JSON; a full CSV export from the app is only needed to recover missed workouts). Re-run `python3 training/build_lifting.py` after each fresh export to regenerate `training/lifting.json`, which drives the **Lifting dashboard page** (`lifting.html`).
 
 ---
 

@@ -1,4 +1,23 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",0,"warmup",50,10,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",1,"warmup",60,3,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",2,"warmup",70,2,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",3,"normal",80,1,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",4,"normal",85,1,,,9.5
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",5,"dropset",70,8,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",6,"normal",70,7,,,8
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Lat Pulldown (Cable)",,"",0,"normal",80,9,,,8.5
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Lat Pulldown (Cable)",,"",1,"normal",80,8,,,8.5
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press - Close Grip (Barbell)",,"",0,"normal",60,8,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press - Close Grip (Barbell)",,"",1,"normal",60,8,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Seated Cable Row - Bar Wide Grip",,"",0,"normal",75,10,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Seated Cable Row - Bar Wide Grip",,"",1,"normal",65,12,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Lateral Raise (Dumbbell)",,"",0,"normal",30,10,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Lateral Raise (Dumbbell)",,"",1,"normal",30,10,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Seated Incline Curl (Dumbbell)",,"",0,"normal",30,10,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Seated Incline Curl (Dumbbell)",,"",1,"normal",30,10,,,9.5
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Triceps Pushdown",,"",0,"normal",50,12,,,
+"upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Triceps Pushdown",,"",1,"normal",60,10,,,
 "greatest upper day of 2026","14 Oct 2026, 11:55","14 Oct 2026, 12:53","","Pull Up (Weighted)",,"",0,"normal",15,5,,,
 "greatest upper day of 2026","14 Oct 2026, 11:55","14 Oct 2026, 12:53","","Pull Up (Weighted)",,"",1,"normal",15,5,,,
 "greatest upper day of 2026","14 Oct 2026, 11:55","14 Oct 2026, 12:53","","Pull Up (Weighted)",,"",2,"dropset",,7,,,

@@ -28,7 +28,7 @@ GROUP = {
     "back": [
         "Pull Up", "Pull Up (Weighted)", "Bent Over Row (Barbell)",
         "Bent Over Row (Smith Machine)", "Dumbbell Row", "Seated Row (Machine)",
-        "Seated Cable Row - V Grip (Cable)", "Single Arm Cable Row",
+        "Seated Cable Row - V Grip (Cable)", "Seated Cable Row - Bar Wide Grip", "Single Arm Cable Row",
         "Lat Pulldown (Cable)", "Lat Pulldown (Machine)",
         "Lat Pulldown - Close Grip (Cable)", "Single Arm Lat Pulldown",
         "Reverse Grip Lat Pulldown (Cable)", "Iso-Lateral Row (Machine)",

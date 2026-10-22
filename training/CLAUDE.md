@@ -26,7 +26,7 @@
 ## Athletic Background
 
 - **Swimming — strongest discipline.** State-level background. Technique is *not* a bottleneck; the 1.9 km Goa 70.3 swim is not a limiter. Swim work in the current block is aerobic conditioning/maintenance, not skill acquisition.
-- **Strength — well-developed.** Bench 1RM tested at **85 kg**; best barbell-bench e1RM **~93 kg** (touched Mar, Jun 30, Jul 27). Targeting a real **100 kg** 1RM (~Feb 2027). **Honest read of the Hevy data (Mar–Aug):** bench e1RM has *oscillated 84–93 kg for 6 months — a maintenance plateau, not progression*, which is expected given the cut + climbing run/swim volume. Working sets have drifted from 80×3 (Jul) to 70–75×6 (Aug) as bodyweight fell ~82→79.5. The 100 kg goal needs barbell-bench intensity/frequency *protected* through the cut, or it slips. Meanwhile the **posterior chain is genuinely progressing** (single-leg RDL and loaded calf work climbing hard through Aug) — directly useful for running durability. Trains as a genuine hybrid athlete; split consolidated to **Posterior / Anterior / Upper** from ~Aug 18.
+- **Strength — well-developed.** Bench: first logged **85×1 on Oct 22 2026** (the earlier "tested 85 kg" in the May 28 baseline has no record and the athlete doesn't recall it; Hevy top before Oct 22 was 80×5); best barbell-bench e1RM **~93 kg** (touched Mar, Jun 30, Jul 27). Targeting a real **100 kg** 1RM (~Feb 2027). **Honest read of the Hevy data (Mar–Aug):** bench e1RM has *oscillated 84–93 kg for 6 months — a maintenance plateau, not progression*, which is expected given the cut + climbing run/swim volume. Working sets have drifted from 80×3 (Jul) to 70–75×6 (Aug) as bodyweight fell ~82→79.5. The 100 kg goal needs barbell-bench intensity/frequency *protected* through the cut, or it slips. Meanwhile the **posterior chain is genuinely progressing** (single-leg RDL and loaded calf work climbing hard through Aug) — directly useful for running durability. Trains as a genuine hybrid athlete; split consolidated to **Posterior / Anterior / Upper** from ~Aug 18.
 - **Running — the developing discipline.** Good raw engine and top-end speed (see physiology), but **aerobic base and running economy are the weak points** — carries lifting mass (80–81 kg) that taxes economy, and historically runs easy efforts too hard. This is the main growth area of the current block.
 
 ### Full running history (recovered Aug 2026 from Huawei + Garmin)
@@ -135,7 +135,7 @@ The long-deferred calibration 5K time trial is scheduled for **2026-07-28** (eve
 ### Known real efforts (pre-watch / race context)
 - **10K: 1:07:00** (March 2026) — the reliable race-effort reference.
 - **7 km @ 7:24/km, RPE 8** (May 27, 2026) — showed the old "easy" band was actually hard.
-- **Bench 1RM: 85 kg** tested; ~93 kg projected from volume.
+- **Bench: 85×1 (Oct 22 2026), heaviest logged**; ~93–96 kg e1RM from rep sets.
 
 ### Watch-recorded PRs (provisional — all since ~Jul 2026, mostly *within workouts*, NOT race efforts)
 | Record | Value | Context |

@@ -5,9 +5,9 @@
   "first_session": "2026-03-01",
   "last_session": "2026-10-22",
   "span_days": 235,
-  "session_count": 77,
-  "total_tonnage": 563594,
-  "unique_exercises": 114
+  "session_count": 79,
+  "total_tonnage": 571694,
+  "unique_exercises": 115
  },
  "sessions": [
   {
@@ -9939,6 +9939,182 @@
    ]
   },
   {
+   "date": "2026-10-17",
+   "title": "upper",
+   "sets": 11,
+   "tonnage": 5920,
+   "exercises": [
+    {
+     "name": "Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 70.0,
+       "reps": 10,
+       "rpe": "8.5"
+      },
+      {
+       "w": 70.0,
+       "reps": 9,
+       "rpe": "8"
+      }
+     ]
+    },
+    {
+     "name": "Lat Pulldown (Cable)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 75.0,
+       "reps": 12,
+       "rpe": "8"
+      },
+      {
+       "w": 80.0,
+       "reps": 9,
+       "rpe": "9"
+      }
+     ]
+    },
+    {
+     "name": "Bench Press - Close Grip (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 60.0,
+       "reps": 15,
+       "rpe": "8"
+      },
+      {
+       "w": 65.0,
+       "reps": 8,
+       "rpe": "8.5"
+      }
+     ]
+    },
+    {
+     "name": "T Bar Row",
+     "group": "back",
+     "sets": [
+      {
+       "w": 40.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 40.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Lateral Raise (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 30.0,
+       "reps": 9,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 30.0,
+       "reps": 9,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Single Arm Tricep Extension (Dumbbell)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 30.0,
+       "reps": 7,
+       "rpe": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "title": "lower",
+   "sets": 9,
+   "tonnage": 2180,
+   "exercises": [
+    {
+     "name": "Deadlift (Barbell)",
+     "group": "posterior",
+     "sets": [
+      {
+       "w": 120.0,
+       "reps": 3,
+       "rpe": null
+      },
+      {
+       "w": 130.0,
+       "reps": 2,
+       "rpe": null
+      },
+      {
+       "w": 120.0,
+       "reps": 3,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Squat (Barbell)",
+     "group": "quads",
+     "sets": [
+      {
+       "w": 85.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 85.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 70.0,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Hanging Knee Raise",
+     "group": "core",
+     "sets": [
+      {
+       "w": 0.0,
+       "reps": 11,
+       "rpe": null
+      },
+      {
+       "w": 0.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 0.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    }
+   ]
+  },
+  {
    "date": "2026-10-22",
    "title": "upper",
    "sets": 19,
@@ -10472,11 +10648,11 @@
   {
    "week": "2026-10-12",
    "groups": {
-    "back": 2630,
-    "biceps": 630,
-    "chest": 1585,
-    "shoulders": 900,
-    "triceps": 1400
+    "back": 5050,
+    "biceps": 900,
+    "chest": 4335,
+    "shoulders": 1170,
+    "triceps": 1610
    }
   },
   {
@@ -10485,6 +10661,9 @@
     "back": 2890,
     "biceps": 600,
     "chest": 2995,
+    "core": 0,
+    "posterior": 980,
+    "quads": 1200,
     "shoulders": 600,
     "triceps": 1200
    }
@@ -10595,6 +10774,10 @@
    {
     "date": "2026-10-14",
     "e1rm": 95.7
+   },
+   {
+    "date": "2026-10-17",
+    "e1rm": 93.3
    },
    {
     "date": "2026-10-22",
@@ -10764,12 +10947,28 @@
     "date": "2026-10-14",
     "e1rm": 17.5
    }
+  ],
+  "Squat (Barbell)": [
+   {
+    "date": "2026-06-07",
+    "e1rm": 87.5
+   },
+   {
+    "date": "2026-10-19",
+    "e1rm": 99.2
+   }
+  ],
+  "Deadlift (Barbell)": [
+   {
+    "date": "2026-10-19",
+    "e1rm": 138.7
+   }
   ]
  },
  "exercises": [
   {
    "name": "Bench Press (Barbell)",
-   "sets": 102,
+   "sets": 104,
    "best_e1rm": 95.7,
    "group": "chest",
    "first": "2026-03-01",
@@ -10860,7 +11059,7 @@
   },
   {
    "name": "Lateral Raise (Dumbbell)",
-   "sets": 30,
+   "sets": 31,
    "best_e1rm": 66.7,
    "group": "shoulders",
    "first": "2026-03-01",
@@ -10950,6 +11149,19 @@
    }
   },
   {
+   "name": "Lat Pulldown (Cable)",
+   "sets": 22,
+   "best_e1rm": 105.0,
+   "group": "back",
+   "first": "2026-03-30",
+   "last": "2026-10-22",
+   "last_top": {
+    "w": 80.0,
+    "reps": 9,
+    "date": "2026-10-22"
+   }
+  },
+  {
    "name": "Cross Body Hammer Curl",
    "sets": 22,
    "best_e1rm": 56.0,
@@ -11002,16 +11214,16 @@
    }
   },
   {
-   "name": "Lat Pulldown (Cable)",
+   "name": "Single Arm Tricep Extension (Dumbbell)",
    "sets": 20,
-   "best_e1rm": 104.0,
-   "group": "back",
-   "first": "2026-03-30",
-   "last": "2026-10-22",
+   "best_e1rm": 53.3,
+   "group": "triceps",
+   "first": "2026-05-06",
+   "last": "2026-10-17",
    "last_top": {
-    "w": 80.0,
-    "reps": 9,
-    "date": "2026-10-22"
+    "w": 30.0,
+    "reps": 7,
+    "date": "2026-10-17"
    }
   },
   {
@@ -11028,21 +11240,8 @@
    }
   },
   {
-   "name": "Single Arm Tricep Extension (Dumbbell)",
-   "sets": 19,
-   "best_e1rm": 53.3,
-   "group": "triceps",
-   "first": "2026-05-06",
-   "last": "2026-09-23",
-   "last_top": {
-    "w": 25.0,
-    "reps": 12,
-    "date": "2026-09-23"
-   }
-  },
-  {
    "name": "Seated Incline Curl (Dumbbell)",
-   "sets": 18,
+   "sets": 19,
    "best_e1rm": 49.0,
    "group": "biceps",
    "first": "2026-03-14",
@@ -11051,6 +11250,32 @@
     "w": 30.0,
     "reps": 10,
     "date": "2026-10-22"
+   }
+  },
+  {
+   "name": "Bench Press - Close Grip (Barbell)",
+   "sets": 18,
+   "best_e1rm": 90.0,
+   "group": "chest",
+   "first": "2026-08-29",
+   "last": "2026-10-22",
+   "last_top": {
+    "w": 60.0,
+    "reps": 8,
+    "date": "2026-10-22"
+   }
+  },
+  {
+   "name": "Hanging Knee Raise",
+   "sets": 16,
+   "best_e1rm": 0.0,
+   "group": "core",
+   "first": "2026-03-15",
+   "last": "2026-10-19",
+   "last_top": {
+    "w": 0.0,
+    "reps": 11,
+    "date": "2026-10-19"
    }
   },
   {
@@ -11064,19 +11289,6 @@
     "w": 75.0,
     "reps": 10,
     "date": "2026-09-05"
-   }
-  },
-  {
-   "name": "Bench Press - Close Grip (Barbell)",
-   "sets": 16,
-   "best_e1rm": 84.5,
-   "group": "chest",
-   "first": "2026-08-29",
-   "last": "2026-10-22",
-   "last_top": {
-    "w": 60.0,
-    "reps": 8,
-    "date": "2026-10-22"
    }
   },
   {
@@ -11129,19 +11341,6 @@
     "w": 22.0,
     "reps": 20,
     "date": "2026-09-25"
-   }
-  },
-  {
-   "name": "Hanging Knee Raise",
-   "sets": 13,
-   "best_e1rm": 0.0,
-   "group": "core",
-   "first": "2026-03-15",
-   "last": "2026-06-07",
-   "last_top": {
-    "w": 0.0,
-    "reps": 10,
-    "date": "2026-06-07"
    }
   },
   {
@@ -11392,6 +11591,19 @@
    }
   },
   {
+   "name": "T Bar Row",
+   "sets": 7,
+   "best_e1rm": 53.3,
+   "group": "back",
+   "first": "2026-05-27",
+   "last": "2026-10-17",
+   "last_top": {
+    "w": 40.0,
+    "reps": 10,
+    "date": "2026-10-17"
+   }
+  },
+  {
    "name": "Seated Leg Curl (Machine)",
    "sets": 7,
    "best_e1rm": 151.2,
@@ -11574,19 +11786,6 @@
    }
   },
   {
-   "name": "T Bar Row",
-   "sets": 5,
-   "best_e1rm": 53.3,
-   "group": "back",
-   "first": "2026-05-27",
-   "last": "2026-09-26",
-   "last_top": {
-    "w": 40.0,
-    "reps": 10,
-    "date": "2026-09-26"
-   }
-  },
-  {
    "name": "Standing Calf Raise (Smith)",
    "sets": 5,
    "best_e1rm": 56.0,
@@ -11597,6 +11796,19 @@
     "w": 40.0,
     "reps": 12,
     "date": "2026-06-07"
+   }
+  },
+  {
+   "name": "Squat (Barbell)",
+   "sets": 5,
+   "best_e1rm": 99.2,
+   "group": "quads",
+   "first": "2026-06-07",
+   "last": "2026-10-19",
+   "last_top": {
+    "w": 85.0,
+    "reps": 5,
+    "date": "2026-10-19"
    }
   },
   {
@@ -11964,6 +12176,19 @@
    }
   },
   {
+   "name": "Deadlift (Barbell)",
+   "sets": 3,
+   "best_e1rm": 138.7,
+   "group": "posterior",
+   "first": "2026-10-19",
+   "last": "2026-10-19",
+   "last_top": {
+    "w": 130.0,
+    "reps": 2,
+    "date": "2026-10-19"
+   }
+  },
+  {
    "name": "Triceps Pressdown",
    "sets": 2,
    "best_e1rm": 45.0,
@@ -12104,19 +12329,6 @@
     "w": 140.0,
     "reps": 7,
     "date": "2026-06-05"
-   }
-  },
-  {
-   "name": "Squat (Barbell)",
-   "sets": 2,
-   "best_e1rm": 87.5,
-   "group": "quads",
-   "first": "2026-06-07",
-   "last": "2026-06-07",
-   "last_top": {
-    "w": 75.0,
-    "reps": 5,
-    "date": "2026-06-07"
    }
   },
   {

@@ -64,7 +64,7 @@ GROUP = {
         "Peterson Step Down", "Terminal Knee Extension", "Jump Squat", "Box Jump",
     ],
     "posterior": [  # hamstrings / glutes / lower back
-        "Single Leg Romanian Deadlift (Dumbbell)", "Romanian Deadlift (Barbell)",
+        "Deadlift (Barbell)", "Single Leg Romanian Deadlift (Dumbbell)", "Romanian Deadlift (Barbell)",
         "Romanian Deadlift (Dumbbell)", "Straight Leg Deadlift",
         "Hip Thrust (Barbell)", "Back Extension (Weighted Hyperextension)", "Back Extension (Hyperextension)",
         "Seated Leg Curl (Machine)", "Hip Abduction (Machine)",
@@ -96,6 +96,7 @@ KEY_LIFTS = [
     "Bench Press (Barbell)", "Feet Up Bench Press (Barbell)", "Bent Over Row (Barbell)",
     "Overhead Press (Barbell)",
     "Push Press", "Single Leg Romanian Deadlift (Dumbbell)", "Pull Up (Weighted)",
+    "Squat (Barbell)", "Deadlift (Barbell)",
 ]
 
 def pdate(s):

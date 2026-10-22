@@ -870,7 +870,9 @@
     "Overhead Press (Barbell)": "#fbbf24",
     "Push Press": "#a78bfa",
     "Single Leg Romanian Deadlift (Dumbbell)": "#4ade80",
-    "Pull Up (Weighted)": "#f472b6"
+    "Pull Up (Weighted)": "#f472b6",
+    "Squat (Barbell)": "#60a5fa",
+    "Deadlift (Barbell)": "#a3e635"
   };
   function shortLift(n) {
     return n.replace(" (Barbell)", "").replace(" (Dumbbell)", " (DB)")

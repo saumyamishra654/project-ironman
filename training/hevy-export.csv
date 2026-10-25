@@ -1,4 +1,19 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",0,"normal",75,5,,,8
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",1,"normal",75,5,,,8.5
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",2,"normal",75,5,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",3,"normal",75,4,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Pull Up (Weighted)",,"",0,"normal",17.5,4,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Pull Up (Weighted)",,"",1,"normal",12.5,5,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Pull Up (Weighted)",,"",2,"normal",12.5,5,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Iso-Lateral Row (Machine)",,"",0,"normal",120,11,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Iso-Lateral Row (Machine)",,"",1,"normal",120,11,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Shoulder Press (Dumbbell)",,"",0,"normal",50,8,,,7.5
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Shoulder Press (Dumbbell)",,"",1,"normal",50,8,,,7
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Seated Incline Hammer Curl (Dumbbell)",,"",0,"normal",35,10,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Seated Incline Hammer Curl (Dumbbell)",,"",1,"normal",35,10,,,
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Overhead Triceps Extension (Cable)",,"mindblowing first set",0,"normal",50,15,,,8
+"Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Overhead Triceps Extension (Cable)",,"mindblowing first set",1,"normal",60,10,,,9.5
 "upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",0,"warmup",50,10,,,
 "upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",1,"warmup",60,3,,,
 "upper","22 Oct 2026, 08:21","22 Oct 2026, 09:08","","Bench Press (Barbell)",,"",2,"warmup",70,2,,,

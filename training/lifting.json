@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-22",
+  "generated": "2026-10-25",
   "source": "hevy-export.csv",
   "first_session": "2026-03-01",
-  "last_session": "2026-10-22",
-  "span_days": 235,
-  "session_count": 79,
-  "total_tonnage": 571694,
+  "last_session": "2026-10-25",
+  "span_days": 238,
+  "session_count": 80,
+  "total_tonnage": 578804,
   "unique_exercises": 115
  },
  "sessions": [
@@ -10258,6 +10258,125 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "title": "Upper 2",
+   "sets": 15,
+   "tonnage": 7110,
+   "exercises": [
+    {
+     "name": "Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": "8"
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": "8.5"
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 75.0,
+       "reps": 4,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Pull Up (Weighted)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 17.5,
+       "reps": 4,
+       "rpe": null
+      },
+      {
+       "w": 12.5,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 12.5,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Iso-Lateral Row (Machine)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 120.0,
+       "reps": 11,
+       "rpe": null
+      },
+      {
+       "w": 120.0,
+       "reps": 11,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Shoulder Press (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 8,
+       "rpe": "7.5"
+      },
+      {
+       "w": 50.0,
+       "reps": 8,
+       "rpe": "7"
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Hammer Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Overhead Triceps Extension (Cable)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 15,
+       "rpe": "8"
+      },
+      {
+       "w": 60.0,
+       "reps": 10,
+       "rpe": "9.5"
+      }
+     ]
+    }
+   ]
   }
  ],
  "weekly_volume": [
@@ -10658,14 +10777,14 @@
   {
    "week": "2026-10-19",
    "groups": {
-    "back": 2890,
-    "biceps": 600,
-    "chest": 2995,
+    "back": 5725,
+    "biceps": 1300,
+    "chest": 4420,
     "core": 0,
     "posterior": 980,
     "quads": 1200,
-    "shoulders": 600,
-    "triceps": 1200
+    "shoulders": 1400,
+    "triceps": 2550
    }
   }
  ],
@@ -10782,6 +10901,10 @@
    {
     "date": "2026-10-22",
     "e1rm": 88.7
+   },
+   {
+    "date": "2026-10-25",
+    "e1rm": 87.5
    }
   ],
   "Feet Up Bench Press (Barbell)": [
@@ -10946,6 +11069,10 @@
    {
     "date": "2026-10-14",
     "e1rm": 17.5
+   },
+   {
+    "date": "2026-10-25",
+    "e1rm": 19.8
    }
   ],
   "Squat (Barbell)": [
@@ -10968,15 +11095,15 @@
  "exercises": [
   {
    "name": "Bench Press (Barbell)",
-   "sets": 104,
+   "sets": 108,
    "best_e1rm": 95.7,
    "group": "chest",
    "first": "2026-03-01",
-   "last": "2026-10-22",
+   "last": "2026-10-25",
    "last_top": {
-    "w": 70.0,
-    "reps": 8,
-    "date": "2026-10-22"
+    "w": 75.0,
+    "reps": 5,
+    "date": "2026-10-25"
    }
   },
   {
@@ -10994,15 +11121,15 @@
   },
   {
    "name": "Shoulder Press (Dumbbell)",
-   "sets": 54,
+   "sets": 56,
    "best_e1rm": 66.7,
    "group": "shoulders",
    "first": "2026-03-01",
-   "last": "2026-10-14",
+   "last": "2026-10-25",
    "last_top": {
     "w": 50.0,
-    "reps": 10,
-    "date": "2026-10-14"
+    "reps": 8,
+    "date": "2026-10-25"
    }
   },
   {
@@ -11020,15 +11147,15 @@
   },
   {
    "name": "Overhead Triceps Extension (Cable)",
-   "sets": 35,
-   "best_e1rm": 70.0,
+   "sets": 37,
+   "best_e1rm": 80.0,
    "group": "triceps",
    "first": "2026-03-01",
-   "last": "2026-10-14",
+   "last": "2026-10-25",
    "last_top": {
-    "w": 50.0,
-    "reps": 12,
-    "date": "2026-10-14"
+    "w": 60.0,
+    "reps": 10,
+    "date": "2026-10-25"
    }
   },
   {
@@ -11162,6 +11289,19 @@
    }
   },
   {
+   "name": "Iso-Lateral Row (Machine)",
+   "sets": 22,
+   "best_e1rm": 168.0,
+   "group": "back",
+   "first": "2026-05-27",
+   "last": "2026-10-25",
+   "last_top": {
+    "w": 120.0,
+    "reps": 11,
+    "date": "2026-10-25"
+   }
+  },
+  {
    "name": "Cross Body Hammer Curl",
    "sets": 22,
    "best_e1rm": 56.0,
@@ -11227,19 +11367,6 @@
    }
   },
   {
-   "name": "Iso-Lateral Row (Machine)",
-   "sets": 20,
-   "best_e1rm": 168.0,
-   "group": "back",
-   "first": "2026-05-27",
-   "last": "2026-10-14",
-   "last_top": {
-    "w": 120.0,
-    "reps": 12,
-    "date": "2026-10-14"
-   }
-  },
-  {
    "name": "Seated Incline Curl (Dumbbell)",
    "sets": 19,
    "best_e1rm": 49.0,
@@ -11276,6 +11403,19 @@
     "w": 0.0,
     "reps": 11,
     "date": "2026-10-19"
+   }
+  },
+  {
+   "name": "Pull Up (Weighted)",
+   "sets": 16,
+   "best_e1rm": 19.8,
+   "group": "back",
+   "first": "2026-05-20",
+   "last": "2026-10-25",
+   "last_top": {
+    "w": 17.5,
+    "reps": 4,
+    "date": "2026-10-25"
    }
   },
   {
@@ -11367,19 +11507,6 @@
     "w": 20.0,
     "reps": 15,
     "date": "2026-06-10"
-   }
-  },
-  {
-   "name": "Pull Up (Weighted)",
-   "sets": 13,
-   "best_e1rm": 17.5,
-   "group": "back",
-   "first": "2026-05-20",
-   "last": "2026-10-14",
-   "last_top": {
-    "w": 15.0,
-    "reps": 5,
-    "date": "2026-10-14"
    }
   },
   {
@@ -11747,6 +11874,19 @@
    }
   },
   {
+   "name": "Seated Incline Hammer Curl (Dumbbell)",
+   "sets": 6,
+   "best_e1rm": 46.7,
+   "group": "biceps",
+   "first": "2026-10-10",
+   "last": "2026-10-25",
+   "last_top": {
+    "w": 35.0,
+    "reps": 10,
+    "date": "2026-10-25"
+   }
+  },
+  {
    "name": "Cable Fly Crossovers",
    "sets": 5,
    "best_e1rm": 37.5,
@@ -12004,19 +12144,6 @@
     "w": 40.0,
     "reps": 12,
     "date": "2026-09-25"
-   }
-  },
-  {
-   "name": "Seated Incline Hammer Curl (Dumbbell)",
-   "sets": 4,
-   "best_e1rm": 46.7,
-   "group": "biceps",
-   "first": "2026-10-10",
-   "last": "2026-10-14",
-   "last_top": {
-    "w": 35.0,
-    "reps": 10,
-    "date": "2026-10-14"
    }
   },
   {

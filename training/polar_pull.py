@@ -115,12 +115,18 @@ def auth():
     print(f"Token saved to {TOKEN} (mode 600).")
 
 
+def g(d, key, default=None):
+    """AccessLink returns snake_case keys; the docs show hyphenated ones."""
+    return d.get(key, d.get(key.replace("-", "_"), default))
+
+
 def parse_samples(ex):
     out = {}
     for s in ex.get("samples") or []:
-        key = SAMPLE_TYPES.get(str(s.get("sample-type")), "type_" + str(s.get("sample-type")))
+        st = str(g(s, "sample-type"))
+        key = SAMPLE_TYPES.get(st, "type_" + st)
         vals = [float(v) if v not in ("", "NaN") else None for v in (s.get("data") or "").split(",")]
-        out[key] = {"rate_s": s.get("recording-rate"), "values": vals}
+        out[key] = {"rate_s": g(s, "recording-rate"), "values": vals}
     return out
 
 
@@ -131,8 +137,8 @@ def pull():
     exercises = json.loads(body) if body else []
     new = 0
     for ex in exercises:
-        sport = (ex.get("detailed-sport-info") or ex.get("sport") or "exercise").lower()
-        stem = f"{ex['start-time'][:10]}_{sport}_{ex['id']}"
+        sport = (g(ex, "detailed-sport-info") or ex.get("sport") or "exercise").lower()
+        stem = f"{g(ex, 'start-time')[:16].replace(':', '')}_{sport}_{ex['id']}"
         path = os.path.join(OUT, stem + ".json")
         if os.path.exists(path):
             continue

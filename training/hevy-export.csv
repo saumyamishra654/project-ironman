@@ -1,4 +1,22 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",0,"warmup",50,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",1,"warmup",70,5,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",2,"normal",80,3,,,8.5
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",3,"dropset",70,8,,,8
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",4,"normal",70,8,,,9
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",5,"normal",70,6,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Lat Pulldown (Cable)",,"",0,"normal",80,10,,,9
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Lat Pulldown (Cable)",,"",1,"normal",80,9,,,9.5
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press - Close Grip (Barbell)",,"",0,"normal",65,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press - Close Grip (Barbell)",,"",1,"normal",65,8,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Seated Cable Row - Bar Wide Grip",,"",0,"normal",75,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Seated Cable Row - Bar Wide Grip",,"",1,"normal",75,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Lateral Raise (Dumbbell)",,"",0,"normal",30,12,,,9.5
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Lateral Raise (Dumbbell)",,"",1,"normal",30,12,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Seated Incline Curl (Dumbbell)",,"",0,"normal",30,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Seated Incline Curl (Dumbbell)",,"",1,"normal",30,10,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Triceps Pushdown",,"",0,"normal",60,11,,,
+"upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Triceps Pushdown",,"",1,"normal",60,11,,,
 "Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",0,"normal",75,5,,,8
 "Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",1,"normal",75,5,,,8.5
 "Upper 2","25 Oct 2026, 11:29","25 Oct 2026, 12:35","","Bench Press (Barbell)",,"",2,"normal",75,5,,,

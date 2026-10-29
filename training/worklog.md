@@ -509,6 +509,30 @@ Apply: S2 endurance @ ~2:26, S3 threshold @ ~2:18, speed reps a touch under CSS.
 - Why today: 3 days off after the race, 7.5 h sleep Mon, creatine ~2.5 weeks in (upper-body strength is where creatine shows most, Lanhers 2017), maintenance kcal.
 - Garmin export test: Garmin recognised none of the exercises, so the Hevy sets were written into activity 24717908243 (exercise, reps, weight; iso-lateral row as generic ROW).
 
+## Block 1 · Week 12 — Restart week (Oct 26 – Nov 1)
+
+**Oct 28 (Wed) — Upper A 19:06–19:57 (Hevy; Garmin 51 min, avg HR 127 / max 161, Polar) [DONE]**
+- Bench 50×10, 70×5 → **80×3 @ RPE 8.5**, back-offs 70×8 (8), 70×8 (9), 70×6. Prescribed 80×3 @ 8 + 70×8 ×3.
+- Lat pulldown 80×10, 9 · close-grip bench **65**×10, 8 (prescribed 60) · wide cable row 75×10 ×2 · DB lateral raise 30×12 ×2 · incline DB curl 30×10 ×2 · pushdown **60**×11 ×2 (prescribed 55).
+- Next: bench 80×3, hold 70 until 8/8/8; row → 80; lateral raise → 35.
+
+**Oct 28 (Wed) — Coach Base 20:05 (Polar, first strap run) [DONE]**
+- 6.5 km, 51:06, **7:52/km, avg HR 158** / max 173. Splits 8:11 · 8:24 · 7:52 · 7:58 · 7:49 · 7:32, HR 157–159 throughout; decoupling −4.6%.
+- 1,243 beats/km vs usual ~1,195 → ~4% off; post-lift evening effect (Oct 22 similar at 1,258).
+- Day: ~3,150 kcal in (incl. Phab bar) vs ~3,300 burned; ~128 g protein. Sleep before: 5.5 h.
+
+**Oct 29 (Thu) — Coach Base 07:14 (Polar) [DONE]; swim cancelled (unrelated)**
+- 6.58 km, 49:04, **7:27/km, avg HR 154** / max 170. Splits 7:06 · 7:17 · 7:03 · 7:36 · 7:42 · 7:58; HR 147 → 157; cadence 163 → ~150.
+- Fast start → 10.5% decoupling; 7.8 min stopped (4:43 in km 2). Second half 1,211 vs 1,229 beats/km the night before → ~1.5% better, fitness steady.
+- Next: first 2 km at 7:45–8:10, HR ≤150, even split.
+- Sleep: 6.6 h, score 76, HRV 37, RHR 66.
+
+**Oct 29 (Thu) — Lower 19:01 (Hevy) [DONE]**
+- Squat **80×5 ×3 @ RPE 7** · deadlift 60×6, 100×3 → **130×3 @ RPE 8**, 120×3 ×2.
+- Standing leg curl 35×12 ×2 · DB split squat 25×10 · machine calf raise 50×12 ×2 · tibialis raise ×22 ×2 · hanging knee raise ×12 ×2.
+- Next: squat 85×5 ×3, DL 135×3 + 125×3 ×2.
+- Fri Coach Anaerobic: evening or skipped (train home Fri night; parents moving out). Long run (~10 km) likely Sun AM; Upper B possibly Mon.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

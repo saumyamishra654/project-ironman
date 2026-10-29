@@ -5,7 +5,7 @@
   "block_name": "Block 1 — HIM Base → Build",
   "block_start": "2026-08-10",
   "block_weeks": 12,
-  "updated": "2026-10-14",
+  "updated": "2026-10-29",
   "note": "Procam Slam cancelled Aug 2026. Training now serves the Goa 70.3 half-ironman; Bangalore HM (Dec 20 — moved from Dec 13) is the near-term target. Run and swim are equal priorities; no running past 21k. Old 48-week Procam plan archived in database.json."
  },
  "bloodwork": {
@@ -658,6 +658,146 @@
   }
  ],
  "sessions": [
+  {
+   "date": "2026-10-29",
+   "sport": "strength",
+   "week": 12,
+   "title": "Lower — squat 80×5 ×3 @ RPE 7, deadlift 130×3 @ RPE 8 + 120×3 ×2",
+   "verdict": "Every prescribed set hit, at manageable RPEs, on the evening of a morning run. Squat has room; both lifts move up 5 kg.",
+   "stats": [
+    {
+     "l": "Squat",
+     "v": "80×5 ×3 @ 7"
+    },
+    {
+     "l": "DL top",
+     "v": "130×3 @ 8"
+    },
+    {
+     "l": "DL back-off",
+     "v": "120×3 ×2"
+    },
+    {
+     "l": "Next",
+     "v": "85×5 ×3 · 135×3"
+    }
+   ],
+   "headline": "Squat 80×5 ×3 (RPE 7) · deadlift warm-ups 60×6, 100×3 → 130×3 (RPE 8), 120×3 ×2 · standing leg curl 35×12 ×2 · DB split squat 25×10 · machine calf raise 50×12 ×2 · tibialis raise ×22 ×2 · hanging knee raise ×12 ×2.",
+   "insight": [
+    "Squat at RPE 7 for all three sets → 85×5 ×3 next Lower (5 kg steps only).",
+    "Deadlift 130×3 at RPE 8 → 135×3 top, back-offs 125×3 ×2.",
+    "Friday's Coach Anaerobic session would land ~12 h after heavy pulls; moved to the evening or skipped (weekend train trip)."
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "sport": "run",
+   "week": 12,
+   "title": "Coach Base (AM, Polar) — 6.58 km @ 7:27/km, avg HR 154; fast start, faded",
+   "verdict": "Looked like a breakthrough on the whole-run numbers (1,148 beats/km) but that was a fast first 3 km plus 7.8 min of stops. Like-for-like second half was only ~1.5% better than the night before.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "6.58 km · 49:04"
+    },
+    {
+     "l": "Pace",
+     "v": "7:27/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "154 (max 170)"
+    },
+    {
+     "l": "Decoupling",
+     "v": "10.5%"
+    },
+    {
+     "l": "Stopped",
+     "v": "7.8 min"
+    },
+    {
+     "l": "Sleep",
+     "v": "6.6 h · 76 · HRV 37"
+    }
+   ],
+   "headline": "Splits 7:06 · 7:17 · 7:03 · 7:36 · 7:42 · 7:58 · (0.57) 7:28. HR 147 · 152 · 156 · 155 · 156 · 157 · 160. Cadence 163 → ~150; power 270 → ~220 W. One 4:43 stop in km 2, ~50 s stops in km 3–5.",
+   "insight": [
+    "km 1–3 7:09 @ 152 vs km 4–6 7:45 @ 156 → 10.5% pace:HR decoupling (>5% = too hard a start). Km 4–5 were net downhill, so terrain doesn't explain it.",
+    "Second half 1,211 beats/km vs 1,229 the evening before (~1.5% better): morning effect is real but small; fitness steady after the post-race break.",
+    "Fix: first 2 km at 7:45–8:10 with HR ≤150, even or negative split, cadence ~160.",
+    "First Polar-vs-wrist check (5 runs): strap removes false spikes (max 170–173 vs 184–187 on wrist easy runs) and cuts cadence lock (5–10% vs 11–14% of samples)."
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "sport": "run",
+   "week": 12,
+   "title": "Coach Base (PM, after Upper, Polar) — 6.5 km @ 7:52/km, avg HR 158; well-paced negative split",
+   "verdict": "~4% less efficient than his usual easy run, explained by running ~1 h after Upper in the evening with two caffeinated drinks in, not lost fitness. Pacing was textbook.",
+   "stats": [
+    {
+     "l": "Distance",
+     "v": "6.5 km · 51:06"
+    },
+    {
+     "l": "Pace",
+     "v": "7:52/km"
+    },
+    {
+     "l": "Avg HR",
+     "v": "158 (max 173)"
+    },
+    {
+     "l": "Beats/km",
+     "v": "1,243 (usual ~1,195)"
+    },
+    {
+     "l": "Decoupling",
+     "v": "−4.6%"
+    }
+   ],
+   "headline": "Splits 8:11 · 8:24 · 7:52 · 7:58 · 7:49 · 7:32 + 0.5 km pick-up at 162–169. HR 157–159 every km. First run with the Verity Sense paired to the watch (BLE).",
+   "insight": [
+    "Two worst beats/km since Aug are both post-lift evening runs after the ~10-day post-race gap (Oct 22: 1,258; Oct 28: 1,243).",
+    "Negative split at flat HR (−4.6% decoupling) is how a Base run should look; the next morning's faster start faded instead.",
+    "Garmin counted ~0 intensity minutes: easy runs never hold zone 3+ (164) in the LTHR zones; by design (Oct 17 decision, target 75/wk)."
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "sport": "strength",
+   "week": 12,
+   "title": "Upper A — bench 80×3 @ 8.5, back-offs 70×8/8/6; close-grip and pushdown up a step",
+   "verdict": "Bench back on track after the flat Oct 22 single. Nearly everything hit; two accessories went heavier than prescribed.",
+   "stats": [
+    {
+     "l": "Bench top",
+     "v": "80×3 @ 8.5"
+    },
+    {
+     "l": "Back-offs",
+     "v": "70×8, 8, 6"
+    },
+    {
+     "l": "Close-grip",
+     "v": "65×10, 8"
+    },
+    {
+     "l": "Pushdown",
+     "v": "60×11 ×2"
+    },
+    {
+     "l": "Garmin",
+     "v": "51 min · avg HR 127 (Polar)"
+    }
+   ],
+   "headline": "Bench 50×10, 70×5 → 80×3 (RPE 8.5), 70×8 (8), 70×8 (9), 70×6 · lat pulldown 80×10, 9 · close-grip bench 65×10, 8 · wide-grip seated cable row 75×10 ×2 · DB lateral raise 30×12 ×2 · seated incline DB curl 30×10 ×2 · triceps pushdown 60×11 ×2.",
+   "insight": [
+    "Next Upper A: bench 80×3, then hold 70 until all three back-offs hit 8; pulldown stays 80 until 10 ×2; close-grip 65 for 10 ×2; row → 80; lateral raise → 35 or 15s; pushdown stays 60.",
+    "Polar vs wrist on lifting: about half the HR noise and 12–16 bpm higher average than wrist sessions, but lifting isn't HR-programmed, so the watch is fine; wear the strap when a run follows."
+   ]
+  },
   {
    "date": "2026-10-14",
    "sport": "strength",

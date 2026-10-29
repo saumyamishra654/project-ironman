@@ -58,7 +58,7 @@ GROUP = {
     "quads": [
         "Goblet Squat", "Squat (Barbell)", "Squat (Machine)", "Squat (Suspension)",
         "Hack Squat (Machine)", "Leg Press (Machine)", "Leg Extension (Machine)",
-        "Bulgarian Split Squat", "Bulgarian Split Squat (Dumbbell)",
+        "Bulgarian Split Squat", "Bulgarian Split Squat (Dumbbell)", "Split Squat (Dumbbell)",
         "Dumbbell Step Up", "Step Up", "Sissy Squat (Weighted)", "Decline Squat",
         "Zercher Squat", "Wall Sit", "Spanish Squat Isometric",
         "Peterson Step Down", "Terminal Knee Extension", "Jump Squat", "Box Jump",
@@ -67,7 +67,7 @@ GROUP = {
         "Deadlift (Barbell)", "Single Leg Romanian Deadlift (Dumbbell)", "Romanian Deadlift (Barbell)",
         "Romanian Deadlift (Dumbbell)", "Straight Leg Deadlift",
         "Hip Thrust (Barbell)", "Back Extension (Weighted Hyperextension)", "Back Extension (Hyperextension)",
-        "Seated Leg Curl (Machine)", "Hip Abduction (Machine)",
+        "Seated Leg Curl (Machine)", "Standing Leg Curls", "Hip Abduction (Machine)",
         "Hip Adduction (Machine)",
     ],
     "calves": [

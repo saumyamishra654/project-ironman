@@ -1,4 +1,21 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",0,"normal",80,5,,,7
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",1,"normal",80,5,,,7
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",2,"normal",80,5,,,7
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Deadlift (Barbell)",,"fucking hate liquid chalk",0,"normal",130,3,,,8
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Deadlift (Barbell)",,"fucking hate liquid chalk",1,"normal",120,3,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Deadlift (Barbell)",,"fucking hate liquid chalk",2,"normal",120,3,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Deadlift (Barbell)",,"fucking hate liquid chalk",3,"warmup",60,6,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Deadlift (Barbell)",,"fucking hate liquid chalk",4,"warmup",100,3,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Standing Leg Curls",,"",0,"normal",35,12,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Standing Leg Curls",,"",1,"normal",35,12,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Split Squat (Dumbbell)",,"bad idea",0,"normal",25,10,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Standing Calf Raise (Machine)",,"",0,"normal",50,12,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Standing Calf Raise (Machine)",,"",1,"normal",50,12,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Tibialis Raise",,"",0,"normal",10,22,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Tibialis Raise",,"",1,"normal",10,22,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Hanging Knee Raise",,"",0,"normal",,12,,,
+"leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Hanging Knee Raise",,"",1,"normal",,12,,,
 "upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",0,"warmup",50,10,,,
 "upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",1,"warmup",70,5,,,
 "upper","28 Oct 2026, 19:06","28 Oct 2026, 19:57","","Bench Press (Barbell)",,"",2,"normal",80,3,,,8.5

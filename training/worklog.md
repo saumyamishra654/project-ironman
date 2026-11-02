@@ -51,6 +51,16 @@ Weeks run **Monday → Sunday** (matches `plan.md` and the dashboard schedule).
 - RPE: —
 - Notes: Long-run day; planned 8 km not done. Add pace when available.
 
+**Oct 31 – Nov 1 (weekend): Upper B + 10 km long run MISSED (work).** Garmin Coach dropped; the fixed 7-week HM block (Nov 2 – Dec 20) starts. Easy and long runs go in his own Z2 (155–163).
+
+**Nov 2 (Mon): W1 Z2 5k, 19:25 [DONE]**
+- 5.12 km in Z2, average HR 159 / max 184.
+- **Pace: 7:05/km with the stop removed.** ~50 s was spent helping kids find a ball in km 4. The watch shows 7:15 including stops.
+- Splits: 6:56 · 7:29 · 7:28 · 6:54 (km 4, moving) · 7:02.
+- Zones: Z1 16% · Z2 56% · Z3 26%. TE 3.0 aerobic base, load 85. Cadence 157, GCT 284 ms. Felt good, RPE 3.
+- **~1,130–1,140 beats/km with the stop removed**, vs usual ~1,195 → ~5% better, best clean number yet. Caveats: evening run, 4 days' rest.
+- **Final 120 m kick:** 3:54/km average, peak 3:31. Cadence 157 → 184 (+17%), stride 0.87 → ~1.40 m (+60%), so ~75% of the speed gain came from stride. He accelerated on purpose by lengthening his stride. Cue: push the ground away behind you, don't reach forward.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

@@ -66,8 +66,14 @@ Weeks run **Monday → Sunday** (matches `plan.md` and the dashboard schedule).
 - **HR at the end of each rep: 187 · 189 · 195** (target ≤184). Max 196. Rep averages were 177–178 because HR lags.
 - Recoveries were walked (HR 161–173). Warm-up ~10 min instead of 15. Cool-down 1.5 min instead of 10.
 - TE 3.3, labelled "VO2max". Load 114. Felt "weak", RPE 6. Sleep before: 5.8 h, score 66, HRV 35.
-- **Read:** pacing was right, but this was slightly above threshold, not at it. Reps were ~5–10 s/km faster than the top of the band, and short sleep added cardiac strain. Rep-end HR of 187–189 at ~5:18 is consistent with LTHR ~182 at ~5:24.
-- **Next threshold (W4, 3×10 min):** aim 5:25–5:30 and keep rep-end HR ≤186. Full 15 min warm-up and 10 min cool-down.
+- **Detailed read (corrects the quick take):** by power, the reps were spot on threshold.
+  - Power: **359 / 352 / 348 W** = 100–103% of running FTP 347.
+  - Compared with the Oct 3 tempo (5:35–5:38 at 325–332 W, HR 181–185): **~20 s/km faster and +20–27 W at a similar or lower average HR.** That's a real fitness gain.
+  - The HR overshoot came from a short warm-up (10 min at 8:23/km, HR 144), walked recoveries, 5.8 h sleep and humidity (20.6 °C, dew point 18.9, 89%). Pace wasn't the cause.
+  - Output slipped in rep 3: power −3%, cadence 172 → 169 → **163**, stride 108 → 110, GCT 256 → 262. Grade-adjusted pace went 5:24 → 5:31 → 5:36. Rep 3 had a short stop; its second half was 5:24 at HR 188.
+  - HR between reps rose: recovery averages 161 → 163 → 173.
+  - Z5 12.9 min, Z4 4.4 min. Zones now read 118/154/163/172/181 (was 118/155/164/173/182), i.e. LTHR 182 → 181?
+- **Next threshold (W4, 3×10 min):** use **power 340–355 W** as the main target (pace ~5:20–5:30). Full 15 min warm-up and 10 min cool-down.
 - **Lower PM:** hold squat 80 / DL 130. The run felt weak, which fails the progression gate.
 
 <!-- Copy this template for each session:

@@ -61,6 +61,15 @@ Weeks run **Monday → Sunday** (matches `plan.md` and the dashboard schedule).
 - **~1,130–1,140 beats/km with the stop removed**, vs usual ~1,195 → ~5% better, best clean number yet. Caveats: evening run, 4 days' rest.
 - **Final 120 m kick:** 3:54/km average, peak 3:31. Cadence 157 → 184 (+17%), stride 0.87 → ~1.40 m (+60%), so ~75% of the speed gain came from stride. He accelerated on purpose by lengthening his stride. Cue: push the ground away behind you, don't reach forward.
 
+**Nov 3 (Tue): W1 Threshold 3×6 min, 07:16 [DONE]**
+- Reps: **5:16 · 5:20 · 5:17 /km**, about 1.14 / 1.12 / 1.14 km each. Target was 5:20–5:35. Even pacing, no fade.
+- **HR at the end of each rep: 187 · 189 · 195** (target ≤184). Max 196. Rep averages were 177–178 because HR lags.
+- Recoveries were walked (HR 161–173). Warm-up ~10 min instead of 15. Cool-down 1.5 min instead of 10.
+- TE 3.3, labelled "VO2max". Load 114. Felt "weak", RPE 6. Sleep before: 5.8 h, score 66, HRV 35.
+- **Read:** pacing was right, but this was slightly above threshold, not at it. Reps were ~5–10 s/km faster than the top of the band, and short sleep added cardiac strain. Rep-end HR of 187–189 at ~5:18 is consistent with LTHR ~182 at ~5:24.
+- **Next threshold (W4, 3×10 min):** aim 5:25–5:30 and keep rep-end HR ≤186. Full 15 min warm-up and 10 min cool-down.
+- **Lower PM:** hold squat 80 / DL 130. The run felt weak, which fails the progression gate.
+
 <!-- Copy this template for each session:
 
 **[Date] — [Session Name]**

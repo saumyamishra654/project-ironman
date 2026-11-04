@@ -1,4 +1,20 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",0,"warmup",50,10,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",1,"warmup",70,5,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",2,"normal",80,4,,,9.5
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",3,"dropset",70,8,,,8
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",4,"normal",70,8,,,8.5
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",5,"normal",70,7,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Lat Pulldown (Cable)",,"",0,"normal",80,10,,,9
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Lat Pulldown (Cable)",,"",1,"normal",80,9,,,9.5
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press - Close Grip (Barbell)",,"",0,"normal",65,10,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press - Close Grip (Barbell)",,"",1,"normal",65,8,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Lateral Raise (Dumbbell)",,"",0,"normal",30,12,,,8
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Lateral Raise (Dumbbell)",,"",1,"normal",30,11,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Seated Incline Curl (Dumbbell)",,"",0,"normal",35,10,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Seated Incline Curl (Dumbbell)",,"",1,"normal",35,10,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Triceps Pushdown",,"",0,"normal",60,12,,,
+"upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Triceps Pushdown",,"",1,"normal",60,10,,,
 "leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",0,"normal",80,5,,,7
 "leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",1,"normal",80,5,,,7
 "leg day","29 Oct 2026, 19:01","29 Oct 2026, 20:05","","Squat (Barbell)",,"",2,"normal",80,5,,,7

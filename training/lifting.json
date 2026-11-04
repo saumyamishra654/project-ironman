@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated": "2026-10-29",
+  "generated": "2026-11-04",
   "source": "hevy-export.csv",
   "first_session": "2026-03-01",
-  "last_session": "2026-10-29",
-  "span_days": 242,
-  "session_count": 82,
-  "total_tonnage": 593964,
+  "last_session": "2026-11-04",
+  "span_days": 248,
+  "session_count": 83,
+  "total_tonnage": 602144,
   "unique_exercises": 117
  },
  "sessions": [
@@ -10652,6 +10652,130 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "title": "upper",
+   "sets": 16,
+   "tonnage": 8180,
+   "exercises": [
+    {
+     "name": "Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 70.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 80.0,
+       "reps": 4,
+       "rpe": "9.5"
+      },
+      {
+       "w": 70.0,
+       "reps": 8,
+       "rpe": "8"
+      },
+      {
+       "w": 70.0,
+       "reps": 8,
+       "rpe": "8.5"
+      },
+      {
+       "w": 70.0,
+       "reps": 7,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Lat Pulldown (Cable)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 80.0,
+       "reps": 10,
+       "rpe": "9"
+      },
+      {
+       "w": 80.0,
+       "reps": 9,
+       "rpe": "9.5"
+      }
+     ]
+    },
+    {
+     "name": "Bench Press - Close Grip (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 65.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 65.0,
+       "reps": 8,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Lateral Raise (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 30.0,
+       "reps": 12,
+       "rpe": "8"
+      },
+      {
+       "w": 30.0,
+       "reps": 11,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Triceps Pushdown",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 60.0,
+       "reps": 12,
+       "rpe": null
+      },
+      {
+       "w": 60.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    }
+   ]
   }
  ],
  "weekly_volume": [
@@ -11076,6 +11200,16 @@
     "tibialis": 440,
     "triceps": 1320
    }
+  },
+  {
+   "week": "2026-11-02",
+   "groups": {
+    "back": 1520,
+    "biceps": 700,
+    "chest": 3950,
+    "shoulders": 690,
+    "triceps": 1320
+   }
   }
  ],
  "trajectories": {
@@ -11199,6 +11333,10 @@
    {
     "date": "2026-10-28",
     "e1rm": 88.7
+   },
+   {
+    "date": "2026-11-04",
+    "e1rm": 90.7
    }
   ],
   "Feet Up Bench Press (Barbell)": [
@@ -11397,15 +11535,15 @@
  "exercises": [
   {
    "name": "Bench Press (Barbell)",
-   "sets": 114,
+   "sets": 120,
    "best_e1rm": 95.7,
    "group": "chest",
    "first": "2026-03-01",
-   "last": "2026-10-28",
+   "last": "2026-11-04",
    "last_top": {
-    "w": 70.0,
-    "reps": 8,
-    "date": "2026-10-28"
+    "w": 80.0,
+    "reps": 4,
+    "date": "2026-11-04"
    }
   },
   {
@@ -11462,15 +11600,15 @@
   },
   {
    "name": "Lateral Raise (Dumbbell)",
-   "sets": 33,
+   "sets": 35,
    "best_e1rm": 66.7,
    "group": "shoulders",
    "first": "2026-03-01",
-   "last": "2026-10-28",
+   "last": "2026-11-04",
    "last_top": {
     "w": 30.0,
     "reps": 12,
-    "date": "2026-10-28"
+    "date": "2026-11-04"
    }
   },
   {
@@ -11500,6 +11638,19 @@
    }
   },
   {
+   "name": "Triceps Pushdown",
+   "sets": 27,
+   "best_e1rm": 84.0,
+   "group": "triceps",
+   "first": "2026-03-14",
+   "last": "2026-11-04",
+   "last_top": {
+    "w": 60.0,
+    "reps": 12,
+    "date": "2026-11-04"
+   }
+  },
+  {
    "name": "Bicep Curl (Dumbbell)",
    "sets": 26,
    "best_e1rm": 53.3,
@@ -11513,6 +11664,19 @@
    }
   },
   {
+   "name": "Lat Pulldown (Cable)",
+   "sets": 26,
+   "best_e1rm": 106.7,
+   "group": "back",
+   "first": "2026-03-30",
+   "last": "2026-11-04",
+   "last_top": {
+    "w": 80.0,
+    "reps": 10,
+    "date": "2026-11-04"
+   }
+  },
+  {
    "name": "Bent Over Row (Barbell)",
    "sets": 26,
    "best_e1rm": 105.0,
@@ -11523,19 +11687,6 @@
     "w": 60.0,
     "reps": 12,
     "date": "2026-07-13"
-   }
-  },
-  {
-   "name": "Triceps Pushdown",
-   "sets": 25,
-   "best_e1rm": 82.0,
-   "group": "triceps",
-   "first": "2026-03-14",
-   "last": "2026-10-28",
-   "last_top": {
-    "w": 60.0,
-    "reps": 11,
-    "date": "2026-10-28"
    }
   },
   {
@@ -11578,16 +11729,16 @@
    }
   },
   {
-   "name": "Lat Pulldown (Cable)",
-   "sets": 24,
-   "best_e1rm": 106.7,
-   "group": "back",
-   "first": "2026-03-30",
-   "last": "2026-10-28",
+   "name": "Seated Incline Curl (Dumbbell)",
+   "sets": 23,
+   "best_e1rm": 49.0,
+   "group": "biceps",
+   "first": "2026-03-14",
+   "last": "2026-11-04",
    "last_top": {
-    "w": 80.0,
+    "w": 35.0,
     "reps": 10,
-    "date": "2026-10-28"
+    "date": "2026-11-04"
    }
   },
   {
@@ -11617,16 +11768,16 @@
    }
   },
   {
-   "name": "Seated Incline Curl (Dumbbell)",
-   "sets": 21,
-   "best_e1rm": 49.0,
-   "group": "biceps",
-   "first": "2026-03-14",
-   "last": "2026-10-28",
+   "name": "Bench Press - Close Grip (Barbell)",
+   "sets": 22,
+   "best_e1rm": 90.0,
+   "group": "chest",
+   "first": "2026-08-29",
+   "last": "2026-11-04",
    "last_top": {
-    "w": 30.0,
+    "w": 65.0,
     "reps": 10,
-    "date": "2026-10-28"
+    "date": "2026-11-04"
    }
   },
   {
@@ -11679,19 +11830,6 @@
     "w": 30.0,
     "reps": 7,
     "date": "2026-10-17"
-   }
-  },
-  {
-   "name": "Bench Press - Close Grip (Barbell)",
-   "sets": 20,
-   "best_e1rm": 90.0,
-   "group": "chest",
-   "first": "2026-08-29",
-   "last": "2026-10-28",
-   "last_top": {
-    "w": 65.0,
-    "reps": 10,
-    "date": "2026-10-28"
    }
   },
   {

@@ -1,4 +1,24 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Squat (Barbell)",,"",0,"normal",80,6,,,6
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Squat (Barbell)",,"",1,"normal",80,6,,,7
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Squat (Barbell)",,"",2,"normal",80,5,,,7
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Squat (Barbell)",,"",3,"warmup",50,6,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Squat (Barbell)",,"",4,"warmup",70,3,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Deadlift (Barbell)",,"did not forget straps",0,"normal",130,3,,,8
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Deadlift (Barbell)",,"did not forget straps",1,"normal",130,3,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Deadlift (Barbell)",,"did not forget straps",2,"normal",120,3,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Deadlift (Barbell)",,"did not forget straps",3,"warmup",60,6,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Deadlift (Barbell)",,"did not forget straps",4,"warmup",100,3,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Standing Leg Curls",,"",0,"normal",40,10,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Standing Leg Curls",,"",1,"normal",40,10,,,7.5
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Split Squat (Dumbbell)",,"bad idea",0,"normal",25,10,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Split Squat (Dumbbell)",,"bad idea",1,"normal",25,10,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Standing Calf Raise (Machine)",,"",0,"normal",55,11,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Standing Calf Raise (Machine)",,"",1,"normal",60,10,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Tibialis Raise",,"",0,"normal",22,17,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Tibialis Raise",,"",1,"normal",22,12,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Hanging Knee Raise",,"",0,"normal",,13,,,
+"leg day","11 Nov 2026, 19:14","11 Nov 2026, 20:14","solid","Hanging Knee Raise",,"",1,"normal",,13,,,
 "upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",0,"warmup",50,10,,,
 "upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",1,"warmup",70,5,,,
 "upper","4 Nov 2026, 18:32","4 Nov 2026, 19:21","","Bench Press (Barbell)",,"warmups felt damn heavy",2,"normal",80,4,,,9.5

@@ -1,12 +1,12 @@
 {
  "meta": {
-  "generated": "2026-11-12",
+  "generated": "2026-11-16",
   "source": "hevy-export.csv",
   "first_session": "2026-03-01",
-  "last_session": "2026-11-12",
-  "span_days": 256,
-  "session_count": 85,
-  "total_tonnage": 618717,
+  "last_session": "2026-11-16",
+  "span_days": 260,
+  "session_count": 86,
+  "total_tonnage": 625935,
   "unique_exercises": 117
  },
  "sessions": [
@@ -11066,6 +11066,125 @@
      ]
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Upper 2",
+   "sets": 15,
+   "tonnage": 7218,
+   "exercises": [
+    {
+     "name": "Bench Press (Barbell)",
+     "group": "chest",
+     "sets": [
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": "8"
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": "8.5"
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 75.0,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Pull Up (Weighted)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 17.5,
+       "reps": 3,
+       "rpe": null
+      },
+      {
+       "w": 10.0,
+       "reps": 5,
+       "rpe": null
+      },
+      {
+       "w": 10.0,
+       "reps": 5,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Iso-Lateral Row (Machine)",
+     "group": "back",
+     "sets": [
+      {
+       "w": 95.0,
+       "reps": 15,
+       "rpe": null
+      },
+      {
+       "w": 115.0,
+       "reps": 12,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Shoulder Press (Dumbbell)",
+     "group": "shoulders",
+     "sets": [
+      {
+       "w": 50.0,
+       "reps": 8,
+       "rpe": "7.5"
+      },
+      {
+       "w": 50.0,
+       "reps": 8,
+       "rpe": "8"
+      }
+     ]
+    },
+    {
+     "name": "Seated Incline Hammer Curl (Dumbbell)",
+     "group": "biceps",
+     "sets": [
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      },
+      {
+       "w": 35.0,
+       "reps": 10,
+       "rpe": null
+      }
+     ]
+    },
+    {
+     "name": "Overhead Triceps Extension (Cable)",
+     "group": "triceps",
+     "sets": [
+      {
+       "w": 60.0,
+       "reps": 11,
+       "rpe": "8"
+      },
+      {
+       "w": 60.0,
+       "reps": 10,
+       "rpe": "9.5"
+      }
+     ]
+    }
+   ]
   }
  ],
  "weekly_volume": [
@@ -11515,6 +11634,16 @@
     "tibialis": 638,
     "triceps": 1320
    }
+  },
+  {
+   "week": "2026-11-16",
+   "groups": {
+    "back": 2958,
+    "biceps": 700,
+    "chest": 1500,
+    "shoulders": 800,
+    "triceps": 1260
+   }
   }
  ],
  "trajectories": {
@@ -11646,6 +11775,10 @@
    {
     "date": "2026-11-12",
     "e1rm": 93.3
+   },
+   {
+    "date": "2026-11-16",
+    "e1rm": 87.5
    }
   ],
   "Feet Up Bench Press (Barbell)": [
@@ -11814,6 +11947,10 @@
    {
     "date": "2026-10-25",
     "e1rm": 19.8
+   },
+   {
+    "date": "2026-11-16",
+    "e1rm": 19.2
    }
   ],
   "Squat (Barbell)": [
@@ -11852,15 +11989,15 @@
  "exercises": [
   {
    "name": "Bench Press (Barbell)",
-   "sets": 126,
+   "sets": 130,
    "best_e1rm": 95.7,
    "group": "chest",
    "first": "2026-03-01",
-   "last": "2026-11-12",
+   "last": "2026-11-16",
    "last_top": {
-    "w": 80.0,
+    "w": 75.0,
     "reps": 5,
-    "date": "2026-11-12"
+    "date": "2026-11-16"
    }
   },
   {
@@ -11878,15 +12015,15 @@
   },
   {
    "name": "Shoulder Press (Dumbbell)",
-   "sets": 56,
+   "sets": 58,
    "best_e1rm": 66.7,
    "group": "shoulders",
    "first": "2026-03-01",
-   "last": "2026-10-25",
+   "last": "2026-11-16",
    "last_top": {
     "w": 50.0,
     "reps": 8,
-    "date": "2026-10-25"
+    "date": "2026-11-16"
    }
   },
   {
@@ -11904,15 +12041,15 @@
   },
   {
    "name": "Overhead Triceps Extension (Cable)",
-   "sets": 37,
-   "best_e1rm": 80.0,
+   "sets": 39,
+   "best_e1rm": 82.0,
    "group": "triceps",
    "first": "2026-03-01",
-   "last": "2026-10-25",
+   "last": "2026-11-16",
    "last_top": {
     "w": 60.0,
-    "reps": 10,
-    "date": "2026-10-25"
+    "reps": 11,
+    "date": "2026-11-16"
    }
   },
   {
@@ -12059,6 +12196,19 @@
    }
   },
   {
+   "name": "Iso-Lateral Row (Machine)",
+   "sets": 24,
+   "best_e1rm": 168.0,
+   "group": "back",
+   "first": "2026-05-27",
+   "last": "2026-11-16",
+   "last_top": {
+    "w": 115.0,
+    "reps": 12,
+    "date": "2026-11-16"
+   }
+  },
+  {
    "name": "Bench Press - Close Grip (Barbell)",
    "sets": 24,
    "best_e1rm": 90.0,
@@ -12069,19 +12219,6 @@
     "w": 65.0,
     "reps": 10,
     "date": "2026-11-12"
-   }
-  },
-  {
-   "name": "Iso-Lateral Row (Machine)",
-   "sets": 22,
-   "best_e1rm": 168.0,
-   "group": "back",
-   "first": "2026-05-27",
-   "last": "2026-10-25",
-   "last_top": {
-    "w": 120.0,
-    "reps": 11,
-    "date": "2026-10-25"
    }
   },
   {
@@ -12163,6 +12300,19 @@
    }
   },
   {
+   "name": "Pull Up (Weighted)",
+   "sets": 19,
+   "best_e1rm": 19.8,
+   "group": "back",
+   "first": "2026-05-20",
+   "last": "2026-11-16",
+   "last_top": {
+    "w": 17.5,
+    "reps": 3,
+    "date": "2026-11-16"
+   }
+  },
+  {
    "name": "Tibialis Raise",
    "sets": 18,
    "best_e1rm": 36.7,
@@ -12173,19 +12323,6 @@
     "w": 22.0,
     "reps": 17,
     "date": "2026-11-11"
-   }
-  },
-  {
-   "name": "Pull Up (Weighted)",
-   "sets": 16,
-   "best_e1rm": 19.8,
-   "group": "back",
-   "first": "2026-05-20",
-   "last": "2026-10-25",
-   "last_top": {
-    "w": 17.5,
-    "reps": 4,
-    "date": "2026-10-25"
    }
   },
   {
@@ -12488,6 +12625,19 @@
    }
   },
   {
+   "name": "Seated Incline Hammer Curl (Dumbbell)",
+   "sets": 8,
+   "best_e1rm": 46.7,
+   "group": "biceps",
+   "first": "2026-10-10",
+   "last": "2026-11-16",
+   "last_top": {
+    "w": 35.0,
+    "reps": 10,
+    "date": "2026-11-16"
+   }
+  },
+  {
    "name": "Romanian Deadlift (Dumbbell)",
    "sets": 7,
    "best_e1rm": 93.3,
@@ -12667,19 +12817,6 @@
     "w": 45.0,
     "reps": 14,
     "date": "2026-09-11"
-   }
-  },
-  {
-   "name": "Seated Incline Hammer Curl (Dumbbell)",
-   "sets": 6,
-   "best_e1rm": 46.7,
-   "group": "biceps",
-   "first": "2026-10-10",
-   "last": "2026-10-25",
-   "last_top": {
-    "w": 35.0,
-    "reps": 10,
-    "date": "2026-10-25"
    }
   },
   {

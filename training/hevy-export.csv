@@ -1,4 +1,21 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",0,"normal",80,4,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",1,"normal",70,8,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",2,"normal",70,8,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Squat (Barbell)",,"",0,"normal",85,5,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Squat (Barbell)",,"",1,"normal",85,5,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Squat (Barbell)",,"",2,"normal",85,5,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Squat (Barbell)",,"",3,"warmup",50,10,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Squat (Barbell)",,"",4,"warmup",70,3,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Deadlift (Barbell)",,"",0,"normal",120,5,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Deadlift (Barbell)",,"",1,"normal",120,5,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Deadlift (Barbell)",,"",2,"normal",120,2,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Deadlift (Barbell)",,"",3,"warmup",40,10,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Deadlift (Barbell)",,"",4,"warmup",70,6,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Lat Pulldown (Cable)",,"",0,"normal",80,10,,,8.5
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Lat Pulldown (Cable)",,"",1,"normal",80,10,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Hanging Knee Raise",,"",0,"normal",,15,,,
+"everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Hanging Knee Raise",,"",1,"normal",,15,,,
 "Upper 2","16 Nov 2026, 18:34","16 Nov 2026, 19:35","","Bench Press (Barbell)",,"",0,"normal",75,5,,,8
 "Upper 2","16 Nov 2026, 18:34","16 Nov 2026, 19:35","","Bench Press (Barbell)",,"",1,"normal",75,5,,,8.5
 "Upper 2","16 Nov 2026, 18:34","16 Nov 2026, 19:35","","Bench Press (Barbell)",,"",2,"normal",75,5,,,

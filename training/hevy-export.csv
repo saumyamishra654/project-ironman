@@ -1,4 +1,19 @@
 "title","start_time","end_time","description","exercise_title","superset_id","exercise_notes","set_index","set_type","weight_kg","reps","distance_km","duration_seconds","rpe"
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Bench Press (Barbell)",,"",0,"normal",75,6,,,8
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Bench Press (Barbell)",,"",1,"normal",75,5,,,8.5
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Bench Press (Barbell)",,"",2,"normal",75,4,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Bench Press (Barbell)",,"",3,"normal",65,8,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Pull Up (Weighted)",,"",0,"normal",17.5,4,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Pull Up (Weighted)",,"",1,"normal",10,6,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Pull Up (Weighted)",,"",2,"normal",10,5,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Iso-Lateral Row (Machine)",,"",0,"normal",120,12,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Iso-Lateral Row (Machine)",,"",1,"normal",120,12,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Shoulder Press (Dumbbell)",,"",0,"normal",50,8,,,7.5
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Shoulder Press (Dumbbell)",,"",1,"normal",50,9,,,8
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Seated Incline Hammer Curl (Dumbbell)",,"",0,"normal",35,11,,,
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Overhead Triceps Extension (Cable)",,"",0,"normal",60,12,,,8
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Overhead Triceps Extension (Cable)",,"",1,"normal",50,12,,,7
+"Upper 2","23 Nov 2026, 18:37","23 Nov 2026, 19:28","","Hammer Curl (Dumbbell)",,"",0,"normal",35,11,,,
 "everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",0,"normal",80,4,,,
 "everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",1,"normal",70,8,,,
 "everything day","19 Nov 2026, 18:49","19 Nov 2026, 19:54","","Bench Press (Barbell)",,"",2,"normal",70,8,,,

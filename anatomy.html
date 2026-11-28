@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f1620">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-192.svg">
+  <title>Project Ironman — Anatomy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+(function() {
+  var parts = location.pathname.split("/").filter(Boolean);
+  if (parts.length && parts[parts.length - 1].indexOf(".") !== -1) parts.pop();
+  window.APP_BASE = parts.length ? "/" + parts.join("/") + "/" : "/";
+  window.appUrl = function(path) { return APP_BASE + String(path).replace(/^\//, ""); };
+  window.IRONMAN_PAGE = "anatomy";
+})();
+  </script>
+  <link rel="stylesheet" href="app.css?v=31">
+</head>
+<body>
+<div class="container">
+  <header class="topbar">
+    <div class="brand">
+      <div>
+        <h1>Project <span>Ironman</span></h1>
+        <div class="sub" id="subtitle">Which muscles your lifts hit</div>
+      </div>
+    </div>
+    <nav class="topnav" id="topnav"></nav>
+  </header>
+
+  <div id="app"></div>
+
+  <div class="footer">
+    Project Ironman · <span id="updated"></span> · muscles from <code>training/muscle-map.json</code> · sets from <code>training/lifting.json</code>
+  </div>
+</div>
+<script src="anatomy.js?v=31"></script>
+<script src="app.js?v=31"></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register(appUrl("sw.js?v=31")).catch(function() {}); }
+</script>
+</body>
+</html>

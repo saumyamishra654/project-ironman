@@ -514,6 +514,7 @@
       { id: "dashboard", label: "Dashboard", href: "index.html" },
       { id: "plan", label: "Plan", href: "plan.html" },
       { id: "lifting", label: "Lifting", href: "lifting.html" },
+      { id: "anatomy", label: "Anatomy", href: "anatomy.html" },
       { id: "log", label: "Log", href: "log.html" },
       { id: "plan5k", label: "5K Draft", href: "plan-5k.html", alt: true }
     ];
@@ -1139,6 +1140,10 @@
     }
     if (PAGE === "lifting") {
       mountLifting(data);
+      return;
+    }
+    if (PAGE === "anatomy") {
+      if (window.IronmanAnatomy) window.IronmanAnatomy.mount(app);
       return;
     }
     if (PAGE === "log") {

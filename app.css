@@ -311,3 +311,69 @@
     .sp-lh.no { color: var(--red); }
     .sp-cal { display: inline-block; margin-top: 0.9rem; font-size: 0.75rem; font-weight: 700; text-decoration: none; color: var(--strength); border: 1px solid var(--strength); border-radius: 6px; padding: 0.4rem 0.75rem; }
     .sp-cal:hover { background: rgba(167,139,250,0.1); }
+
+    /* Anatomy viewer (anatomy.html / anatomy.js) */
+    .ana-controls { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+    .ana-ctx { flex: 1; min-width: 0; display: flex; }
+    .ana-seg { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 2px; }
+    .ana-seg button, .ana-chip { font-family: inherit; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); background: transparent; border: 0; border-radius: 6px; padding: 0.42rem 0.8rem; cursor: pointer; }
+    .ana-seg button.on { background: var(--accent); color: #04141a; }
+    .ana-seg.small button { font-size: 0.68rem; padding: 0.35rem 0.65rem; }
+    .ana-chip { border: 1px solid var(--border); background: var(--surface-2); }
+    .ana-chip.on { color: var(--accent); border-color: var(--accent); }
+    .ana-select { font-family: inherit; font-size: 0.8rem; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 0.45rem 0.6rem; width: 100%; max-width: 420px; }
+    .ana-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+    @media (max-width: 820px) { .ana-grid { grid-template-columns: 1fr; } }
+    .ana-fig { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0.75rem 0.5rem 0.25rem; }
+    .ana-svg { width: 100%; height: auto; display: block; max-height: 640px; touch-action: manipulation; }
+    .ana-sil { fill: var(--surface-2); stroke: var(--border); stroke-width: 1; }
+    .ana-view { fill: var(--faint); font-size: 9px; font-weight: 700; letter-spacing: 0.14em; }
+    .ana-deco { fill: none; stroke: var(--bg); stroke-width: 1.2; opacity: 0.55; pointer-events: none; }
+    .ana-m { fill: var(--surface-3); stroke: var(--bg); stroke-width: 1.4; cursor: pointer; transition: fill 0.18s, opacity 0.18s; }
+    .ana-m:hover, .ana-m:focus-visible { stroke: var(--text); outline: none; }
+    .ana-m.pri { fill: var(--strength); }
+    .ana-m.sec { fill: rgba(167, 139, 250, 0.42); }
+    .ana-m.sel { fill: var(--accent); }
+    .ana-m.zero { fill: var(--surface-3); }
+    .ana-m.ring { stroke: var(--text); stroke-width: 2; }
+    .ana-m.deep { display: none; }
+    .deep-on .ana-m.deep { display: inline; stroke: var(--muted); }
+    .deep-on .ana-m:not(.deep) { opacity: 0.22; pointer-events: none; }
+    .ana-tip { position: absolute; pointer-events: none; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-size: 0.72rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 6px; white-space: nowrap; z-index: 2; }
+    .ana-legend { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.6rem; font-size: 0.7rem; color: var(--muted); }
+    .ana-legend .lg { display: inline-flex; align-items: center; gap: 0.35rem; }
+    .ana-legend .muted { color: var(--faint); }
+    .sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; background: var(--surface-3); flex: none; }
+    .sw.pri { background: var(--strength); } .sw.sec { background: rgba(167, 139, 250, 0.42); } .sw.sel { background: var(--accent); } .sw.zero { background: var(--surface-3); border: 1px solid var(--border); }
+    .ana-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; min-width: 0; }
+    .ana-kicker { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--faint); font-weight: 700; }
+    .ana-title { font-size: 1.1rem; font-weight: 800; margin: 0.15rem 0 0.4rem; letter-spacing: -0.01em; }
+    .ana-cue { color: var(--muted); font-size: 0.82rem; line-height: 1.45; }
+    .ana-note { color: var(--faint); font-size: 0.75rem; margin-top: 0.6rem; }
+    .ana-lab { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 700; margin: 0.95rem 0 0.4rem; }
+    .ana-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .ana-mchip, .ana-xchip { font-family: inherit; font-size: 0.74rem; font-weight: 600; border-radius: 100px; padding: 0.28rem 0.7rem; cursor: pointer; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); }
+    .ana-mchip.pri { border-color: var(--strength); }
+    .ana-mchip.sec { border-style: dashed; color: var(--muted); }
+    .ana-mchip.is-deep::after { content: " · deep"; color: var(--faint); }
+    .ana-xchip { color: var(--muted); font-size: 0.7rem; }
+    .ana-xchip.on { color: var(--strength); border-color: var(--strength); }
+    .ana-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-top: 1rem; }
+    @media (max-width: 460px) { .ana-stats { grid-template-columns: repeat(2, 1fr); } }
+    .ana-stat { background: var(--surface-2); border-radius: 8px; padding: 0.5rem 0.6rem; }
+    .ana-stat .k { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--faint); font-weight: 700; }
+    .ana-stat .v { font-size: 0.9rem; font-weight: 700; margin-top: 0.1rem; }
+    .ana-list { display: flex; flex-direction: column; gap: 0.25rem; margin-top: 0.8rem; }
+    .ana-row, .ana-brow { font-family: inherit; display: flex; align-items: center; gap: 0.55rem; width: 100%; text-align: left; background: transparent; border: 0; border-radius: 6px; padding: 0.38rem 0.45rem; color: var(--text); cursor: pointer; font-size: 0.78rem; }
+    .ana-row:hover, .ana-brow:hover, .ana-brow.on { background: var(--surface-2); }
+    .ana-row .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ana-row .mt, .ana-crow .mt { color: var(--faint); font-size: 0.7rem; white-space: nowrap; }
+    .ana-bars { margin-top: 0.9rem; display: flex; flex-direction: column; gap: 1px; }
+    .ana-brow .nm { width: 9.5rem; flex: none; font-size: 0.74rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ana-brow .track { flex: 1; height: 8px; position: relative; }
+    .ana-brow .bar { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 4px 4px 0; min-width: 0; }
+    .ana-brow .val { width: 2.6rem; text-align: right; font-size: 0.74rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+    @media (max-width: 460px) { .ana-brow .nm { width: 7.5rem; } }
+    .ana-detail { margin-top: 0.4rem; background: var(--surface-2); border-radius: 8px; padding: 0.2rem 0.7rem 0.55rem; }
+    .ana-crow { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 0.76rem; padding: 0.18rem 0; }
+    @media (max-width: 560px) { .ana-ctx { order: 3; flex-basis: 100%; } .ana-select { max-width: none; } }

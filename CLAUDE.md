@@ -36,6 +36,7 @@ Each HTML file is a lean shell (head + topbar with `#topnav` + `#app` + footer) 
 - **`index.html`** (dashboard): Today (pinned, visible) → This Week (with week-nav) → Race Countdown → Fitness & Body metrics → Bodyweight trajectory → Recent Sessions (last 3, links to Log).
 - **`plan.html`**: The Block (phase bands + build charts + 12-week table) → Strength split → Swim CSS zones → Run HR-zones & pace anchors.
 - **`log.html`**: full Session Log & Insights (all `sessions[]` cards).
+- **`anatomy.html`** + **`anatomy.js`**: lifting anatomy viewer — original SVG front/back figure; Exercise / Muscle / Volume (weekly sets per muscle) views. Reads `training/muscle-map.json` (exercise → primary/secondary muscles, cues; unmapped exercises fall back by Hevy group) + `training/lifting.json`. Add new Hevy exercises to `muscle-map.json`.
 - **`plan-5k.html`**: standalone, hardcoded draft for the *next* block (post-HIM 5K speed plan) — not data-driven, not active; keeps its own `<style>`.
 
 The shared top nav (`Dashboard · Plan · Log · 5K Draft`) is built by `renderNav()` on the data-driven pages and hardcoded in `plan-5k.html`.
